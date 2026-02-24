@@ -3,11 +3,11 @@ import ContactForm from "@/components/contact/ContactForm";
 import ContactInfo from "@/components/contact/ContactInfo";
 
 export const metadata: Metadata = {
-  title: "Contact Workforce Next — AI & IoT Consulting",
+  title: "Contact Workforce Next - AI & IoT Consulting",
   description:
-    "Get in touch with Workforce Next for AI automation, agentic AI, workflow automation, or IoT cloud platform consulting. We respond within 24 hours.",
+    "Get in touch with Workforce Next for AI automation, agentic AI, workflow automation, or IoT cloud platform consulting. We respond within an hour.",
   openGraph: {
-    title: "Contact Workforce Next — AI & IoT Consulting",
+    title: "Contact Workforce Next - AI & IoT Consulting",
     description:
       "Get in touch with Workforce Next for AI automation, agentic AI, workflow automation, or IoT cloud platform consulting.",
   },

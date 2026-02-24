@@ -7,6 +7,7 @@ import ProcessSteps from "@/components/services/ProcessSteps";
 import UseCases from "@/components/services/UseCases";
 import TechStack from "@/components/services/TechStack";
 import ServiceCTA from "@/components/services/ServiceCTA";
+import { generateServiceSchema } from "@/lib/jsonLd";
 
 const service = services.find((s) => s.slug === "iot")!;
 
@@ -18,11 +19,20 @@ export const metadata: Metadata = {
     title: service.metaTitle,
     description: service.metaDescription,
   },
+  alternates: {
+    canonical: `https://workforcenext.in/services/${service.slug}`,
+  },
 };
 
 export default function IoTPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(generateServiceSchema(service)),
+        }}
+      />
       <ServiceHero
         badge="CLOUDIQ PLATFORM"
         title={service.heroTitle}
@@ -38,7 +48,7 @@ export default function IoTPage() {
       <TechStack technologies={service.techStack} />
       <ServiceCTA
         title="Launch Your IoT Platform"
-        description="From pilot to production with CloudIQ. Vendor-agnostic, real-time analytics, enterprise security — built to scale with your business."
+        description="From pilot to production with CloudIQ. Vendor-agnostic, real-time analytics, enterprise security - built to scale with your business."
       />
     </>
   );

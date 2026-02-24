@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { mainNavItems } from "@/data/navigation";
 import Button from "@/components/ui/Button";
 import MobileNav from "./MobileNav";
@@ -29,11 +30,15 @@ export default function Header() {
         <div className="container-custom">
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2">
-              <div className={`font-heading font-bold text-xl md:text-2xl transition-colors ${scrolled ? "text-primary-500" : "text-white"}`}>
-                <span>Workforce</span>
-                <span className="text-accent-500"> Next</span>
-              </div>
+            <Link href="/" className="flex items-center">
+              <Image
+                src="/images/logo.png"
+                alt="Workforce Next"
+                width={160}
+                height={40}
+                className={`h-8 md:h-10 w-auto transition-all ${scrolled ? "brightness-100" : "brightness-0 invert"}`}
+                priority
+              />
             </Link>
 
             {/* Desktop Nav */}
@@ -64,16 +69,18 @@ export default function Header() {
                       </svg>
                     </button>
                     {servicesOpen && (
-                      <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-xl shadow-xl border border-slate-100 py-2 animate-fade-in">
-                        {item.children.map((child) => (
-                          <Link
-                            key={child.href}
-                            href={child.href}
-                            className="block px-4 py-2.5 text-sm text-slate-700 hover:bg-primary-50 hover:text-primary-600 transition-colors"
-                          >
-                            {child.label}
-                          </Link>
-                        ))}
+                      <div className="absolute top-full left-0 pt-2 w-56">
+                        <div className="bg-white rounded-xl shadow-xl border border-slate-100 py-2 animate-fade-in">
+                          {item.children.map((child) => (
+                            <Link
+                              key={child.href}
+                              href={child.href}
+                              className="block px-4 py-2.5 text-sm text-slate-700 hover:bg-primary-50 hover:text-primary-600 transition-colors"
+                            >
+                              {child.label}
+                            </Link>
+                          ))}
+                        </div>
                       </div>
                     )}
                   </div>

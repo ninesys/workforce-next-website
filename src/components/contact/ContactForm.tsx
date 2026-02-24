@@ -5,17 +5,44 @@ import Button from "@/components/ui/Button";
 
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState("");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    whatsapp: "",
     company: "",
     service: "",
     message: "",
   });
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setSubmitting(true);
+    setError("");
+
+    try {
+      const body = new URLSearchParams({
+        "form-name": "contact",
+        ...formData,
+      });
+
+      const res = await fetch("/__forms.html", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: body.toString(),
+      });
+
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        setError("Something went wrong. Please try again or email us directly.");
+      }
+    } catch {
+      setError("Network error. Please check your connection and try again.");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   if (submitted) {
@@ -30,12 +57,12 @@ export default function ContactForm() {
           Message Sent!
         </h3>
         <p className="mt-2 text-slate-600">
-          Thank you for reaching out. We&apos;ll get back to you within 24 hours.
+          Thank you for reaching out. We&apos;ll get back to you within an hour.
         </p>
         <button
           onClick={() => {
             setSubmitted(false);
-            setFormData({ name: "", email: "", company: "", service: "", message: "" });
+            setFormData({ name: "", email: "", whatsapp: "", company: "", service: "", message: "" });
           }}
           className="mt-4 text-accent-600 text-sm font-medium hover:underline"
         >
@@ -46,13 +73,20 @@ export default function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-5">
+    <form onSubmit={handleSubmit} name="contact" className="space-y-5">
+      <input type="hidden" name="form-name" value="contact" />
+      {error && (
+        <div className="bg-red-50 text-red-700 text-sm rounded-lg p-4">
+          {error}
+        </div>
+      )}
       <div>
         <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-1">
           Full Name *
         </label>
         <input
           id="name"
+          name="name"
           type="text"
           required
           value={formData.name}
@@ -68,6 +102,7 @@ export default function ContactForm() {
         </label>
         <input
           id="email"
+          name="email"
           type="email"
           required
           value={formData.email}
@@ -78,11 +113,27 @@ export default function ContactForm() {
       </div>
 
       <div>
+        <label htmlFor="whatsapp" className="block text-sm font-medium text-slate-700 mb-1">
+          WhatsApp Number
+        </label>
+        <input
+          id="whatsapp"
+          name="whatsapp"
+          type="tel"
+          value={formData.whatsapp}
+          onChange={(e) => setFormData({ ...formData, whatsapp: e.target.value })}
+          className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-accent-500 focus:border-accent-500 outline-none transition-all text-slate-900"
+          placeholder="+91 98765 43210"
+        />
+      </div>
+
+      <div>
         <label htmlFor="company" className="block text-sm font-medium text-slate-700 mb-1">
           Company
         </label>
         <input
           id="company"
+          name="company"
           type="text"
           value={formData.company}
           onChange={(e) => setFormData({ ...formData, company: e.target.value })}
@@ -97,6 +148,7 @@ export default function ContactForm() {
         </label>
         <select
           id="service"
+          name="service"
           required
           value={formData.service}
           onChange={(e) => setFormData({ ...formData, service: e.target.value })}
@@ -117,6 +169,7 @@ export default function ContactForm() {
         </label>
         <textarea
           id="message"
+          name="message"
           required
           rows={5}
           value={formData.message}
@@ -126,8 +179,8 @@ export default function ContactForm() {
         />
       </div>
 
-      <Button type="submit" variant="primary" size="lg" className="w-full">
-        Send Message
+      <Button type="submit" variant="primary" size="lg" className="w-full" disabled={submitting}>
+        {submitting ? "Sending..." : "Send Message"}
       </Button>
     </form>
   );

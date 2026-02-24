@@ -7,7 +7,7 @@ export const services: Service[] = [
     tagline: "Intelligent AI agents built for enterprise scale",
     heroTitle: "Custom AI Agents Built for Enterprise Scale",
     heroDescription:
-      "Deploy production-ready AI agents with built-in governance, guardrails, and seamless legacy integration. We turn the 95% failure rate on its head — delivering measurable ROI in 90 days.",
+      "Deploy production-ready AI agents with built-in governance, guardrails, and seamless legacy integration. We turn the 95% failure rate on its head - delivering measurable ROI in 90 days.",
     metaTitle: "Agentic AI Solutions & Custom AI Agents for Enterprise",
     metaDescription:
       "Deploy custom AI agents that deliver ROI. Workforce Next builds agentic AI solutions with governance, guardrails, and seamless legacy integration for enterprise.",
@@ -24,13 +24,13 @@ export const services: Service[] = [
         icon: "brain",
         title: "Custom Agent Design",
         description:
-          "Purpose-built AI agents tailored to your specific workflows, data, and business rules — not generic chatbots.",
+          "Purpose-built AI agents tailored to your specific workflows, data, and business rules - not generic chatbots.",
       },
       {
         icon: "network",
         title: "Multi-Agent Orchestration",
         description:
-          "Coordinate teams of specialized agents that collaborate, delegate, and escalate — handling complex business processes end-to-end.",
+          "Coordinate teams of specialized agents that collaborate, delegate, and escalate - handling complex business processes end-to-end.",
       },
       {
         icon: "database",
@@ -54,7 +54,7 @@ export const services: Service[] = [
         icon: "plug",
         title: "Legacy Integration",
         description:
-          "Connect AI agents to your existing ERP, CRM, and data systems. No rip-and-replace — we work with what you have.",
+          "Connect AI agents to your existing ERP, CRM, and data systems. No rip-and-replace - we work with what you have.",
       },
     ],
     processSteps: [
@@ -88,13 +88,13 @@ export const services: Service[] = [
         industry: "Finance",
         title: "Automated Compliance Review",
         description:
-          "AI agents that review regulatory filings, flag anomalies, and generate compliance reports — reducing review time by 80%.",
+          "AI agents that review regulatory filings, flag anomalies, and generate compliance reports - reducing review time by 80%.",
       },
       {
         industry: "Healthcare",
         title: "Clinical Documentation",
         description:
-          "Agents that assist clinicians with documentation, coding, and prior authorization — freeing 2+ hours per provider per day.",
+          "Agents that assist clinicians with documentation, coding, and prior authorization - freeing 2+ hours per provider per day.",
       },
       {
         industry: "Manufacturing",
@@ -127,7 +127,7 @@ export const services: Service[] = [
     heroTitle:
       "Workflow Automation That Integrates with Everything You Already Use",
     heroDescription:
-      "Stop wrestling with disconnected tools and manual handoffs. We design and implement end-to-end workflow automation that connects your entire tech stack — reducing manual processing by 70%.",
+      "Stop wrestling with disconnected tools and manual handoffs. We design and implement end-to-end workflow automation that connects your entire tech stack - reducing manual processing by 70%.",
     metaTitle: "Workflow Automation & Business Process Automation Services",
     metaDescription:
       "End-to-end workflow automation consulting and implementation. Reduce manual processes by 70% with intelligent automation that integrates with your existing systems.",
@@ -169,7 +169,7 @@ export const services: Service[] = [
         icon: "decision",
         title: "Decision Automation",
         description:
-          "Rule engines and ML models that route, approve, and escalate based on your business logic — consistently and instantly.",
+          "Rule engines and ML models that route, approve, and escalate based on your business logic - consistently and instantly.",
       },
       {
         icon: "monitor",
@@ -195,7 +195,7 @@ export const services: Service[] = [
         step: 3,
         title: "Integrate",
         description:
-          "Connect to your existing tools — ERP, CRM, HRIS, email, databases — with secure, monitored integrations.",
+          "Connect to your existing tools - ERP, CRM, HRIS, email, databases - with secure, monitored integrations.",
       },
       {
         step: 4,
@@ -209,7 +209,7 @@ export const services: Service[] = [
         industry: "HR & Operations",
         title: "Employee Onboarding",
         description:
-          "Automate the entire onboarding journey — from offer letter to Day 1 setup — across HR, IT, and facilities systems.",
+          "Automate the entire onboarding journey - from offer letter to Day 1 setup - across HR, IT, and facilities systems.",
       },
       {
         industry: "Finance",
@@ -233,7 +233,7 @@ export const services: Service[] = [
     techStack: [
       "n8n",
       "Power Automate",
-      "UiPath",
+      "Camunda",
       "Zapier",
       "Make",
       "Python",
@@ -247,8 +247,8 @@ export const services: Service[] = [
     tagline: "Vendor-agnostic IoT cloud platform built for scale",
     heroTitle: "CloudIQ: The IoT Cloud Platform That Scales Beyond the Pilot",
     heroDescription:
-      "Most IoT platforms fail after pilots due to data volume, security gaps, and rising costs. CloudIQ is our vendor-agnostic IoT cloud platform — built for real-time analytics, edge computing, and enterprise-grade security from day one.",
-    metaTitle: "CloudIQ — Industrial IoT Cloud Platform & Solutions",
+      "Most IoT platforms fail after pilots due to data volume, security gaps, and rising costs. CloudIQ is our vendor-agnostic IoT cloud platform - built for real-time analytics, edge computing, and enterprise-grade security from day one.",
+    metaTitle: "CloudIQ - Industrial IoT Cloud Platform & Solutions",
     metaDescription:
       "CloudIQ is a vendor-agnostic IoT cloud platform built for manufacturing, energy, and logistics. Real-time analytics, edge computing, and enterprise-grade security.",
     keywords: [
@@ -288,7 +288,7 @@ export const services: Service[] = [
         icon: "scale",
         title: "Scalable Architecture",
         description:
-          "From 100 devices to 100,000 — our architecture scales linearly without performance degradation or cost explosions.",
+          "From 100 devices to 100,000 - our architecture scales linearly without performance degradation or cost explosions.",
       },
       {
         icon: "openlock",
@@ -302,7 +302,7 @@ export const services: Service[] = [
         step: 1,
         title: "Connect",
         description:
-          "Onboard devices with our protocol-agnostic gateway. MQTT, HTTP, CoAP, LoRaWAN — we speak every IoT language.",
+          "Onboard devices with our protocol-agnostic gateway. MQTT, HTTP, CoAP, LoRaWAN - we speak every IoT language.",
       },
       {
         step: 2,

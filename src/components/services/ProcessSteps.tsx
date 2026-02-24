@@ -11,7 +11,7 @@ export default function ProcessSteps({ steps }: ProcessStepsProps) {
       <div className="container-custom">
         <SectionHeading
           title="Our Methodology"
-          subtitle="A proven, structured approach that delivers results — not experiments."
+          subtitle="A proven, structured approach that delivers results - not experiments."
         />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step) => (

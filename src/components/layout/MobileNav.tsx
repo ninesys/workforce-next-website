@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { mainNavItems } from "@/data/navigation";
 import Button from "@/components/ui/Button";
 
@@ -20,9 +21,13 @@ export default function MobileNav({ open, onClose }: MobileNavProps) {
       {/* Drawer */}
       <div className="absolute right-0 top-0 bottom-0 w-80 max-w-[85vw] bg-white shadow-2xl animate-slide-in-right">
         <div className="flex items-center justify-between p-4 border-b border-slate-100">
-          <span className="font-heading font-bold text-lg text-primary-500">
-            Workforce<span className="text-accent-500"> Next</span>
-          </span>
+          <Image
+            src="/images/logo.png"
+            alt="Workforce Next"
+            width={130}
+            height={32}
+            className="h-7 w-auto"
+          />
           <button onClick={onClose} className="p-2" aria-label="Close menu">
             <svg className="w-6 h-6 text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />

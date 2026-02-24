@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { footerLinks } from "@/data/navigation";
 import { siteMetadata } from "@/data/siteMetadata";
 
@@ -10,9 +11,13 @@ export default function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <Link href="/" className="inline-block">
-              <span className="font-heading font-bold text-xl">
-                Workforce<span className="text-accent-400"> Next</span>
-              </span>
+              <Image
+                src="/images/logo.png"
+                alt="Workforce Next"
+                width={160}
+                height={40}
+                className="h-8 w-auto brightness-0 invert"
+              />
             </Link>
             <p className="mt-4 text-sm text-slate-400 leading-relaxed">
               Enterprise AI automation services, agentic AI solutions, workflow
@@ -92,11 +97,11 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Workforce Next. All rights reserved.
           </p>
           <div className="flex gap-6">
-            <Link href="/contact" className="text-sm text-slate-500 hover:text-white transition-colors">
+            <Link href="/privacy-policy" className="text-sm text-slate-500 hover:text-white transition-colors">
               Privacy Policy
             </Link>
-            <Link href="/contact" className="text-sm text-slate-500 hover:text-white transition-colors">
-              Terms of Service
+            <Link href="/terms-of-use" className="text-sm text-slate-500 hover:text-white transition-colors">
+              Terms of Use
             </Link>
           </div>
         </div>

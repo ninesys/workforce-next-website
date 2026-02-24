@@ -10,7 +10,7 @@ export const heroSlides: HeroSlide[] = [
     ctaHref: "/services/ai-agents",
     secondaryCtaText: "See Case Studies",
     secondaryCtaHref: "/#case-studies",
-    gradientClass: "from-primary-900 via-primary-800 to-primary-700",
+    gradientClass: "from-primary-500 via-primary-800 to-primary-950",
   },
   {
     badge: "AUTOMATION",
@@ -21,17 +21,17 @@ export const heroSlides: HeroSlide[] = [
     ctaHref: "/services/automation",
     secondaryCtaText: "View Our Process",
     secondaryCtaHref: "/services/automation#process",
-    gradientClass: "from-primary-800 via-primary-700 to-success-600",
+    gradientClass: "from-primary-500 via-primary-800 to-primary-950",
   },
   {
     badge: "CLOUDIQ PLATFORM",
     headline: "IoT That Scales Past the Pilot",
     subheading:
-      "82% of enterprises demand real-time IoT analytics. CloudIQ delivers vendor-agnostic device management, edge computing, and enterprise security — so your IoT investment grows with your business.",
+      "82% of enterprises demand real-time IoT analytics. CloudIQ delivers vendor-agnostic device management, edge computing, and enterprise security - so your IoT investment grows with your business.",
     ctaText: "Explore CloudIQ",
     ctaHref: "/services/iot",
     secondaryCtaText: "See Architecture",
     secondaryCtaHref: "/services/iot#tech",
-    gradientClass: "from-primary-950 via-primary-800 to-accent-700",
+    gradientClass: "from-primary-500 via-primary-800 to-primary-950",
   },
 ];

@@ -7,6 +7,7 @@ import ProcessSteps from "@/components/services/ProcessSteps";
 import UseCases from "@/components/services/UseCases";
 import TechStack from "@/components/services/TechStack";
 import ServiceCTA from "@/components/services/ServiceCTA";
+import { generateServiceSchema } from "@/lib/jsonLd";
 
 const service = services.find((s) => s.slug === "ai-agents")!;
 
@@ -18,11 +19,20 @@ export const metadata: Metadata = {
     title: service.metaTitle,
     description: service.metaDescription,
   },
+  alternates: {
+    canonical: `https://workforcenext.in/services/${service.slug}`,
+  },
 };
 
 export default function AIAgentsPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(generateServiceSchema(service)),
+        }}
+      />
       <ServiceHero
         badge="AI AGENTS"
         title={service.heroTitle}

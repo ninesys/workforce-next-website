@@ -5,6 +5,7 @@ import { blogPosts } from "@/data/blogPosts";
 import Badge from "@/components/ui/Badge";
 import Button from "@/components/ui/Button";
 import { formatDate } from "@/lib/utils";
+import { generateArticleSchema } from "@/lib/jsonLd";
 
 interface Props {
   params: { slug: string };
@@ -31,6 +32,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       publishedTime: post.publishedAt,
       authors: [post.author],
     },
+    alternates: {
+      canonical: `https://workforcenext.in/blog/${post.slug}`,
+    },
   };
 }
 
@@ -44,6 +48,13 @@ export default function BlogPostPage({ params }: Props) {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(generateArticleSchema(post)),
+        }}
+      />
+
       {/* Header */}
       <section className="gradient-dark pt-32 pb-16 md:pt-40 md:pb-20">
         <div className="container-custom max-w-4xl">

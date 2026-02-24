@@ -6,11 +6,12 @@ export const mainNavItems: NavItem[] = [
     href: "/services",
     children: [
       { label: "AI Agents", href: "/services/ai-agents" },
-      { label: "Automation", href: "/services/automation" },
+      { label: "Workflow & Automation", href: "/services/automation" },
       { label: "IoT - CloudIQ", href: "/services/iot" },
     ],
   },
   { label: "Blog", href: "/blog" },
+  { label: "FAQ", href: "/faq" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -22,6 +23,7 @@ export const footerLinks = {
   ],
   resources: [
     { label: "Blog", href: "/blog" },
+    { label: "FAQ", href: "/faq" },
     { label: "Case Studies", href: "/#case-studies" },
     { label: "Contact", href: "/contact" },
   ],

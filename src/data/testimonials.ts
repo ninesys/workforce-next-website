@@ -17,7 +17,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      "CloudIQ took our IoT deployment from a 200-device pilot to 15,000 sensors across 12 facilities — without a single architecture overhaul. The real-time analytics alone saved us $2M in preventive maintenance costs.",
+      "CloudIQ took our IoT deployment from a 200-device pilot to 15,000 sensors across 12 facilities - without a single architecture overhaul. The real-time analytics alone saved us $2M in preventive maintenance costs.",
     name: "Dr. Priya Sharma",
     title: "CTO",
     company: "NexGen Manufacturing",

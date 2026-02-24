@@ -87,6 +87,15 @@ export interface BlogPost {
   keywords: string[];
 }
 
+export type FAQCategory = "ai" | "automation" | "iot";
+
+export interface FAQ {
+  question: string;
+  answer: string;
+  category: FAQCategory;
+  categoryLabel: string;
+}
+
 export interface SiteMetadata {
   name: string;
   tagline: string;
@@ -94,5 +103,6 @@ export interface SiteMetadata {
   url: string;
   email: string;
   phone: string;
+  whatsapp: string;
   address: string;
 }

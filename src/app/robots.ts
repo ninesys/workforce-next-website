@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://workforcenext.com/sitemap.xml",
+    sitemap: "https://workforcenext.in/sitemap.xml",
   };
 }
