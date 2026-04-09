@@ -20,7 +20,7 @@ export const metadata: Metadata = {
       "Practical insights on hiring developers, building remote teams, and engineering leadership.",
   },
   alternates: {
-    canonical: "https://workforcenext.in/blog",
+    canonical: "https://workforcenext.in/blog/",
   },
 };
 

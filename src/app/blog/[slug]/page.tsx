@@ -25,7 +25,7 @@ export function generateMetadata({ params }: Props): Metadata {
       title: post.title,
       description: post.metaDescription,
       type: "article",
-      url: `https://workforcenext.in/blog/${post.slug}`,
+      url: `https://workforcenext.in/blog/${post.slug}/`,
       publishedTime: post.publishedAt,
     },
     twitter: {
@@ -34,7 +34,7 @@ export function generateMetadata({ params }: Props): Metadata {
       description: post.metaDescription,
     },
     alternates: {
-      canonical: `https://workforcenext.in/blog/${post.slug}`,
+      canonical: `https://workforcenext.in/blog/${post.slug}/`,
     },
   };
 }
@@ -45,8 +45,8 @@ export default function BlogPostPage({ params }: Props) {
 
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: "https://workforcenext.in" },
-    { name: "Blog", url: "https://workforcenext.in/blog" },
-    { name: post.title, url: `https://workforcenext.in/blog/${post.slug}` },
+    { name: "Blog", url: "https://workforcenext.in/blog/" },
+    { name: post.title, url: `https://workforcenext.in/blog/${post.slug}/` },
   ]);
 
   const articleSchema = {
@@ -77,7 +77,7 @@ export default function BlogPostPage({ params }: Props) {
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://workforcenext.in/blog/${post.slug}`,
+      "@id": `https://workforcenext.in/blog/${post.slug}/`,
     },
     keywords: post.keywords.join(", "),
   };

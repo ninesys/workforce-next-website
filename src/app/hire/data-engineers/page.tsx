@@ -26,7 +26,7 @@ export const metadata: Metadata = {
       "Hire pre-vetted data engineers from India. SethAI-screened for skills and longevity.",
   },
   alternates: {
-    canonical: `${siteMetadata.url}/hire/data-engineers`,
+    canonical: `${siteMetadata.url}/hire/data-engineers/`,
   },
 };
 
@@ -96,13 +96,13 @@ export default function HireDataEngineersPage() {
   const serviceSchema = generateServiceSchema(
     "Hire Data Engineers from India",
     "Hire pre-vetted data engineers from India. dbt, Apache Spark, Airflow, Snowflake, Kafka, BigQuery. SethAI-screened for skills and longevity.",
-    `${siteMetadata.url}/hire/data-engineers`
+    `${siteMetadata.url}/hire/data-engineers/`
   );
 
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: siteMetadata.url },
-    { name: "Hire", url: `${siteMetadata.url}/hire` },
-    { name: "Data Engineers", url: `${siteMetadata.url}/hire/data-engineers` },
+    { name: "Hire", url: `${siteMetadata.url}/hire/` },
+    { name: "Data Engineers", url: `${siteMetadata.url}/hire/data-engineers/` },
   ]);
 
   return (

@@ -24,7 +24,7 @@ export const metadata: Metadata = {
       "Expert on-demand, staff augmentation, and fixed-scope consulting for enterprise teams.",
   },
   alternates: {
-    canonical: "https://workforcenext.in/for/enterprise",
+    canonical: "https://workforcenext.in/for/enterprise/",
   },
 };
 
@@ -79,12 +79,12 @@ export default function EnterprisePage() {
   const serviceSchema = generateServiceSchema(
     "Enterprise Engineering Services",
     "Expert on-demand, staff augmentation, and fixed-scope consulting for enterprise teams. Free 2-hour architecture assessment.",
-    "https://workforcenext.in/for/enterprise"
+    "https://workforcenext.in/for/enterprise/"
   );
 
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: "https://workforcenext.in" },
-    { name: "For Enterprise", url: "https://workforcenext.in/for/enterprise" },
+    { name: "For Enterprise", url: "https://workforcenext.in/for/enterprise/" },
   ]);
 
   return (

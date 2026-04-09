@@ -24,7 +24,7 @@ export const metadata: Metadata = {
       "Build a dedicated 3-8 person engineering pod in 30 days. 48-hour profile delivery via SethAI.",
   },
   alternates: {
-    canonical: "https://workforcenext.in/for/startups",
+    canonical: "https://workforcenext.in/for/startups/",
   },
 };
 
@@ -115,12 +115,12 @@ export default function StartupsPage() {
   const serviceSchema = generateServiceSchema(
     "Engineering Pods for Startups",
     "Dedicated 3-8 person engineering pods for startups. 48-hour profile delivery via SethAI, 1-week paid trial per developer, and Context Continuity Guarantee.",
-    "https://workforcenext.in/for/startups"
+    "https://workforcenext.in/for/startups/"
   );
 
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: "https://workforcenext.in" },
-    { name: "For Startups", url: "https://workforcenext.in/for/startups" },
+    { name: "For Startups", url: "https://workforcenext.in/for/startups/" },
   ]);
 
   return (

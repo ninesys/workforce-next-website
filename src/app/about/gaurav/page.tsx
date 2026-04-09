@@ -25,15 +25,15 @@ export const metadata: Metadata = {
       "Gaurav is the founder of Workforce Next with 20 years in solution architecture and enterprise software.",
   },
   alternates: {
-    canonical: `${siteMetadata.url}/about/gaurav`,
+    canonical: `${siteMetadata.url}/about/gaurav/`,
   },
 };
 
 export default function GauravPage() {
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: siteMetadata.url },
-    { name: "About", url: `${siteMetadata.url}/about` },
-    { name: "Gaurav", url: `${siteMetadata.url}/about/gaurav` },
+    { name: "About", url: `${siteMetadata.url}/about/` },
+    { name: "Gaurav", url: `${siteMetadata.url}/about/gaurav/` },
   ]);
 
   const personSchema = {
@@ -46,7 +46,7 @@ export default function GauravPage() {
       name: siteMetadata.name,
       url: siteMetadata.url,
     },
-    url: `${siteMetadata.url}/about/gaurav`,
+    url: `${siteMetadata.url}/about/gaurav/`,
     sameAs: [
       "https://www.linkedin.com/in/gaurav-workforce-next",
     ],

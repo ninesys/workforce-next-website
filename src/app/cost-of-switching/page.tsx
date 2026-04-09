@@ -27,7 +27,7 @@ export const metadata: Metadata = {
       "Switching offshore tech partners costs more than you think. Here is the real breakdown.",
   },
   alternates: {
-    canonical: "https://workforcenext.in/cost-of-switching",
+    canonical: "https://workforcenext.in/cost-of-switching/",
   },
 };
 
@@ -94,7 +94,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
   { name: "Home", url: "https://workforcenext.in" },
   {
     name: "Cost of Switching",
-    url: "https://workforcenext.in/cost-of-switching",
+    url: "https://workforcenext.in/cost-of-switching/",
   },
 ]);
 

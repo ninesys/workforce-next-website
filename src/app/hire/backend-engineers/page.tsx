@@ -25,7 +25,7 @@ export const metadata: Metadata = {
       "Hire pre-vetted backend engineers from India. SethAI-screened for skills and longevity.",
   },
   alternates: {
-    canonical: `${siteMetadata.url}/hire/backend-engineers`,
+    canonical: `${siteMetadata.url}/hire/backend-engineers/`,
   },
 };
 
@@ -95,15 +95,15 @@ export default function HireBackendEngineersPage() {
   const serviceSchema = generateServiceSchema(
     "Hire Backend Engineers from India",
     "Hire pre-vetted backend engineers from India. FastAPI, Node.js, Go, PostgreSQL, Redis, Docker, Kubernetes. SethAI-screened for skills and longevity.",
-    `${siteMetadata.url}/hire/backend-engineers`
+    `${siteMetadata.url}/hire/backend-engineers/`
   );
 
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: siteMetadata.url },
-    { name: "Hire", url: `${siteMetadata.url}/hire` },
+    { name: "Hire", url: `${siteMetadata.url}/hire/` },
     {
       name: "Backend Engineers",
-      url: `${siteMetadata.url}/hire/backend-engineers`,
+      url: `${siteMetadata.url}/hire/backend-engineers/`,
     },
   ]);
 

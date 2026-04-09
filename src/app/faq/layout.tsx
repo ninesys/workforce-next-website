@@ -23,7 +23,7 @@ export const metadata: Metadata = {
       "Answers about hiring dedicated developers from India, SethAI matching, vibe coding, engagement models, and remote team management.",
   },
   alternates: {
-    canonical: "https://workforcenext.in/faq",
+    canonical: "https://workforcenext.in/faq/",
   },
 };
 

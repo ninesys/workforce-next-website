@@ -24,7 +24,7 @@ export const metadata: Metadata = {
       "QA engineers who care about quality, not just test cases. Manual, automation, performance, and security testing.",
   },
   alternates: {
-    canonical: "https://workforcenext.in/hire/qa-testers",
+    canonical: "https://workforcenext.in/hire/qa-testers/",
   },
 };
 
@@ -95,13 +95,13 @@ export default function QATestersPage() {
   const serviceSchema = generateServiceSchema(
     "Hire QA Engineers & Software Testers from India",
     "QA engineers and software testers matched by product context and industry experience. Manual testing, automation, performance, security, and API testing.",
-    "https://workforcenext.in/hire/qa-testers"
+    "https://workforcenext.in/hire/qa-testers/"
   );
 
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: "https://workforcenext.in" },
-    { name: "Hire Developers", url: "https://workforcenext.in/hire/ai-developers" },
-    { name: "QA Engineers & Testers", url: "https://workforcenext.in/hire/qa-testers" },
+    { name: "Hire Developers", url: "https://workforcenext.in/hire/ai-developers/" },
+    { name: "QA Engineers & Testers", url: "https://workforcenext.in/hire/qa-testers/" },
   ]);
 
   return (

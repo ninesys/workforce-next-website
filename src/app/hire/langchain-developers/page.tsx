@@ -26,7 +26,7 @@ export const metadata: Metadata = {
       "Hire pre-vetted LangChain developers from India. SethAI-screened for skills and longevity.",
   },
   alternates: {
-    canonical: `${siteMetadata.url}/hire/langchain-developers`,
+    canonical: `${siteMetadata.url}/hire/langchain-developers/`,
   },
 };
 
@@ -96,15 +96,15 @@ export default function HireLangChainDevelopersPage() {
   const serviceSchema = generateServiceSchema(
     "Hire LangChain Developers from India",
     "Hire pre-vetted LangChain developers from India. LangGraph, LangSmith, chains, agents, tools, retrieval, memory. SethAI-screened for skills and longevity.",
-    `${siteMetadata.url}/hire/langchain-developers`
+    `${siteMetadata.url}/hire/langchain-developers/`
   );
 
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: siteMetadata.url },
-    { name: "Hire", url: `${siteMetadata.url}/hire` },
+    { name: "Hire", url: `${siteMetadata.url}/hire/` },
     {
       name: "LangChain Developers",
-      url: `${siteMetadata.url}/hire/langchain-developers`,
+      url: `${siteMetadata.url}/hire/langchain-developers/`,
     },
   ]);
 

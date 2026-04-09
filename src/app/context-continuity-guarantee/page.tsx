@@ -22,7 +22,7 @@ export const metadata: Metadata = {
       "If a developer leaves, our context docs get a replacement productive in days, not months.",
   },
   alternates: {
-    canonical: "https://workforcenext.in/context-continuity-guarantee",
+    canonical: "https://workforcenext.in/context-continuity-guarantee/",
   },
 };
 
@@ -93,7 +93,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
   { name: "Home", url: "https://workforcenext.in" },
   {
     name: "Context Continuity Guarantee",
-    url: "https://workforcenext.in/context-continuity-guarantee",
+    url: "https://workforcenext.in/context-continuity-guarantee/",
   },
 ]);
 

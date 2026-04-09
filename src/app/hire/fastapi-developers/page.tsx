@@ -25,7 +25,7 @@ export const metadata: Metadata = {
       "Hire pre-vetted FastAPI developers from India. SethAI-screened for skills and longevity.",
   },
   alternates: {
-    canonical: `${siteMetadata.url}/hire/fastapi-developers`,
+    canonical: `${siteMetadata.url}/hire/fastapi-developers/`,
   },
 };
 
@@ -94,15 +94,15 @@ export default function HireFastAPIDevelopersPage() {
   const serviceSchema = generateServiceSchema(
     "Hire FastAPI Developers from India",
     "Hire pre-vetted FastAPI developers from India. Pydantic, SQLAlchemy, async Python, WebSocket, OAuth2. SethAI-screened for skills and longevity.",
-    `${siteMetadata.url}/hire/fastapi-developers`
+    `${siteMetadata.url}/hire/fastapi-developers/`
   );
 
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: siteMetadata.url },
-    { name: "Hire", url: `${siteMetadata.url}/hire` },
+    { name: "Hire", url: `${siteMetadata.url}/hire/` },
     {
       name: "FastAPI Developers",
-      url: `${siteMetadata.url}/hire/fastapi-developers`,
+      url: `${siteMetadata.url}/hire/fastapi-developers/`,
     },
   ]);
 

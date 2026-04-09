@@ -27,7 +27,7 @@ export const metadata: Metadata = {
       "Workforce Next builds dedicated remote engineering teams matched by SethAI for longevity. Founded 2020, based in Noida, India.",
   },
   alternates: {
-    canonical: `${siteMetadata.url}/about`,
+    canonical: `${siteMetadata.url}/about/`,
   },
 };
 
@@ -53,7 +53,7 @@ export default function AboutPage() {
   const orgSchema = generateOrganizationSchema();
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: siteMetadata.url },
-    { name: "About", url: `${siteMetadata.url}/about` },
+    { name: "About", url: `${siteMetadata.url}/about/` },
   ]);
 
   return (

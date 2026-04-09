@@ -27,7 +27,7 @@ export const metadata: Metadata = {
       "Hire pre-vetted AI and agentic developers from India. SethAI-screened for skills and longevity.",
   },
   alternates: {
-    canonical: `${siteMetadata.url}/hire/ai-developers`,
+    canonical: `${siteMetadata.url}/hire/ai-developers/`,
   },
 };
 
@@ -97,13 +97,13 @@ export default function HireAIDevelopersPage() {
   const serviceSchema = generateServiceSchema(
     "Hire AI & Agentic Developers from India",
     "Hire pre-vetted AI and agentic developers from India. LangChain, AutoGen, CrewAI, RAG pipelines, multi-agent systems. SethAI-screened for skills and longevity.",
-    `${siteMetadata.url}/hire/ai-developers`
+    `${siteMetadata.url}/hire/ai-developers/`
   );
 
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: siteMetadata.url },
-    { name: "Hire", url: `${siteMetadata.url}/hire` },
-    { name: "AI Developers", url: `${siteMetadata.url}/hire/ai-developers` },
+    { name: "Hire", url: `${siteMetadata.url}/hire/` },
+    { name: "AI Developers", url: `${siteMetadata.url}/hire/ai-developers/` },
   ]);
 
   return (

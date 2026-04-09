@@ -27,7 +27,7 @@ export const metadata: Metadata = {
       "Hire an engineer who reviews and productionises AI-generated code. Make vibe-coded projects production-ready.",
   },
   alternates: {
-    canonical: `${siteMetadata.url}/hire/vibe-code-engineer`,
+    canonical: `${siteMetadata.url}/hire/vibe-code-engineer/`,
   },
 };
 
@@ -95,15 +95,15 @@ export default function HireVibeCodeEngineerPage() {
   const serviceSchema = generateServiceSchema(
     "Hire a Vibe-Code Optimisation Engineer",
     "Hire an engineer who reviews and productionises AI-generated code. Cursor, Copilot, code review, security auditing, performance optimization.",
-    `${siteMetadata.url}/hire/vibe-code-engineer`
+    `${siteMetadata.url}/hire/vibe-code-engineer/`
   );
 
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: siteMetadata.url },
-    { name: "Hire", url: `${siteMetadata.url}/hire` },
+    { name: "Hire", url: `${siteMetadata.url}/hire/` },
     {
       name: "Vibe-Code Engineer",
-      url: `${siteMetadata.url}/hire/vibe-code-engineer`,
+      url: `${siteMetadata.url}/hire/vibe-code-engineer/`,
     },
   ]);
 

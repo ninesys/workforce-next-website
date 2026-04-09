@@ -27,7 +27,7 @@ export const metadata: Metadata = {
       "Hire a FinOps specialist who reduces your cloud spend. SethAI-screened for skills and longevity.",
   },
   alternates: {
-    canonical: `${siteMetadata.url}/hire/cloud-cost-engineer`,
+    canonical: `${siteMetadata.url}/hire/cloud-cost-engineer/`,
   },
 };
 
@@ -95,15 +95,15 @@ export default function HireCloudCostEngineerPage() {
   const serviceSchema = generateServiceSchema(
     "Hire a Cloud Cost Optimisation Engineer",
     "Hire a FinOps specialist who reduces your cloud spend. AWS, Azure, GCP cost optimization, Kubernetes rightsizing, and Terraform cost estimation.",
-    `${siteMetadata.url}/hire/cloud-cost-engineer`
+    `${siteMetadata.url}/hire/cloud-cost-engineer/`
   );
 
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: siteMetadata.url },
-    { name: "Hire", url: `${siteMetadata.url}/hire` },
+    { name: "Hire", url: `${siteMetadata.url}/hire/` },
     {
       name: "Cloud Cost Engineer",
-      url: `${siteMetadata.url}/hire/cloud-cost-engineer`,
+      url: `${siteMetadata.url}/hire/cloud-cost-engineer/`,
     },
   ]);
 

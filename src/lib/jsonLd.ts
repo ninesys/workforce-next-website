@@ -158,7 +158,7 @@ export function generateContactPageSchema() {
     name: "Contact Workforce Next",
     description:
       "Get in touch with Workforce Next to build your dedicated remote engineering team.",
-    url: `${siteMetadata.url}/contact`,
+    url: `${siteMetadata.url}/contact/`,
     mainEntity: {
       "@type": "Organization",
       name: siteMetadata.name,

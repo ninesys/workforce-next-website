@@ -25,7 +25,7 @@ export const metadata: Metadata = {
       "Hire pre-vetted frontend engineers from India. SethAI-screened for skills and longevity.",
   },
   alternates: {
-    canonical: `${siteMetadata.url}/hire/frontend-engineers`,
+    canonical: `${siteMetadata.url}/hire/frontend-engineers/`,
   },
 };
 
@@ -94,15 +94,15 @@ export default function HireFrontendEngineersPage() {
   const serviceSchema = generateServiceSchema(
     "Hire Frontend Engineers from India",
     "Hire pre-vetted frontend engineers from India. React, Next.js 14+, TypeScript, Tailwind CSS. SethAI-screened for skills and longevity.",
-    `${siteMetadata.url}/hire/frontend-engineers`
+    `${siteMetadata.url}/hire/frontend-engineers/`
   );
 
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: siteMetadata.url },
-    { name: "Hire", url: `${siteMetadata.url}/hire` },
+    { name: "Hire", url: `${siteMetadata.url}/hire/` },
     {
       name: "Frontend Engineers",
-      url: `${siteMetadata.url}/hire/frontend-engineers`,
+      url: `${siteMetadata.url}/hire/frontend-engineers/`,
     },
   ]);
 

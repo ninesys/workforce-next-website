@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical:
-      "https://workforcenext.in/products/employee-productivity-intelligence",
+      "https://workforcenext.in/products/employee-productivity-intelligence/",
   },
 };
 
@@ -138,15 +138,15 @@ export default function EmployeeProductivityIntelligencePage() {
   const serviceSchema = generateServiceSchema(
     "Employee Productivity Intelligence",
     "AI-powered productivity intelligence that gives employees visibility into their own data, coaching nudges, and managers weekly AI reports. Not surveillance, clarity.",
-    "https://workforcenext.in/products/employee-productivity-intelligence"
+    "https://workforcenext.in/products/employee-productivity-intelligence/"
   );
 
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: "https://workforcenext.in" },
-    { name: "Products", url: "https://workforcenext.in/products" },
+    { name: "Products", url: "https://workforcenext.in/products/" },
     {
       name: "Employee Productivity Intelligence",
-      url: "https://workforcenext.in/products/employee-productivity-intelligence",
+      url: "https://workforcenext.in/products/employee-productivity-intelligence/",
     },
   ]);
 

@@ -25,7 +25,7 @@ export const metadata: Metadata = {
       "Our 7-step process for building dedicated remote engineering teams that stay.",
   },
   alternates: {
-    canonical: "https://workforcenext.in/how-we-work",
+    canonical: "https://workforcenext.in/how-we-work/",
   },
 };
 
@@ -75,7 +75,7 @@ const howToSchema = generateHowToSchema(
 
 const breadcrumbSchema = generateBreadcrumbSchema([
   { name: "Home", url: "https://workforcenext.in" },
-  { name: "How We Work", url: "https://workforcenext.in/how-we-work" },
+  { name: "How We Work", url: "https://workforcenext.in/how-we-work/" },
 ]);
 
 export default function HowWeWorkPage() {

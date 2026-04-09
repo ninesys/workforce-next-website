@@ -27,7 +27,7 @@ export const metadata: Metadata = {
       "Hire pre-vetted RAG pipeline developers from India. SethAI-screened for skills and longevity.",
   },
   alternates: {
-    canonical: `${siteMetadata.url}/hire/rag-developers`,
+    canonical: `${siteMetadata.url}/hire/rag-developers/`,
   },
 };
 
@@ -96,15 +96,15 @@ export default function HireRAGDevelopersPage() {
   const serviceSchema = generateServiceSchema(
     "Hire RAG Pipeline Developers from India",
     "Hire pre-vetted RAG pipeline developers from India. Vector databases, embedding models, chunking strategies, hybrid search, re-ranking. SethAI-screened.",
-    `${siteMetadata.url}/hire/rag-developers`
+    `${siteMetadata.url}/hire/rag-developers/`
   );
 
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: siteMetadata.url },
-    { name: "Hire", url: `${siteMetadata.url}/hire` },
+    { name: "Hire", url: `${siteMetadata.url}/hire/` },
     {
       name: "RAG Developers",
-      url: `${siteMetadata.url}/hire/rag-developers`,
+      url: `${siteMetadata.url}/hire/rag-developers/`,
     },
   ]);
 

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
       "Our retention approach is built on three mechanisms: SethAI screening, context docs, and monthly advisory.",
   },
   alternates: {
-    canonical: "https://workforcenext.in/why-teams-stay",
+    canonical: "https://workforcenext.in/why-teams-stay/",
   },
 };
 
@@ -91,7 +91,7 @@ const mechanisms = [
 
 const breadcrumbSchema = generateBreadcrumbSchema([
   { name: "Home", url: "https://workforcenext.in" },
-  { name: "Why Teams Stay", url: "https://workforcenext.in/why-teams-stay" },
+  { name: "Why Teams Stay", url: "https://workforcenext.in/why-teams-stay/" },
 ]);
 
 export default function WhyTeamsStayPage() {

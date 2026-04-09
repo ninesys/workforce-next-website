@@ -26,7 +26,7 @@ export const metadata: Metadata = {
       "SethAI screens developers for technical skills and longevity signals. Join the waitlist.",
   },
   alternates: {
-    canonical: "https://workforcenext.in/products/seth-ai-recruiter",
+    canonical: "https://workforcenext.in/products/seth-ai-recruiter/",
   },
 };
 
@@ -76,10 +76,10 @@ export default function SethAIRecruiterPage() {
 
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: "https://workforcenext.in" },
-    { name: "Products", url: "https://workforcenext.in/products" },
+    { name: "Products", url: "https://workforcenext.in/products/" },
     {
       name: "SethAI Recruiter",
-      url: "https://workforcenext.in/products/seth-ai-recruiter",
+      url: "https://workforcenext.in/products/seth-ai-recruiter/",
     },
   ]);
 

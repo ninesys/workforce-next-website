@@ -20,7 +20,7 @@ export const metadata: Metadata = {
       "Join Workforce Next. Remote-first, ownership-driven engineering work on AI, data, and cloud projects.",
   },
   alternates: {
-    canonical: "https://workforcenext.in/careers",
+    canonical: "https://workforcenext.in/careers/",
   },
 };
 

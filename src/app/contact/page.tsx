@@ -20,7 +20,7 @@ export const metadata: Metadata = {
       "Get in touch with Workforce Next to build your dedicated remote engineering team.",
   },
   alternates: {
-    canonical: "https://workforcenext.in/contact",
+    canonical: "https://workforcenext.in/contact/",
   },
 };
 

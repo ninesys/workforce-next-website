@@ -253,6 +253,316 @@
   to = "/hire/ai-developers"
   status = 301
 
+# --- Old .html pages ---
+[[redirects]]
+  from = "/about.html"
+  to = "/about"
+  status = 301
+
+[[redirects]]
+  from = "/privacy-policy.html"
+  to = "/privacy-policy"
+  status = 301
+
+[[redirects]]
+  from = "/terms.html"
+  to = "/terms-of-use"
+  status = 301
+
+[[redirects]]
+  from = "/cancellation-refund.html"
+  to = "/terms-of-use"
+  status = 301
+
+[[redirects]]
+  from = "/careers.html"
+  to = "/careers"
+  status = 301
+
+[[redirects]]
+  from = "/book-demo.html"
+  to = "/contact"
+  status = 301
+
+[[redirects]]
+  from = "/features.html"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/security.html"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/use-cases.html"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/blog.html"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/employeemonitoring-faq.html"
+  to = "/faq"
+  status = 301
+
+[[redirects]]
+  from = "/workforce-analytics-software.html"
+  to = "/products/employee-productivity-intelligence"
+  status = 301
+
+[[redirects]]
+  from = "/fieldforce-analytics-software.html"
+  to = "/products/employee-productivity-intelligence"
+  status = 301
+
+[[redirects]]
+  from = "/time-tracking-software.html"
+  to = "/products/employee-productivity-intelligence"
+  status = 301
+
+[[redirects]]
+  from = "/why-workforce-next.html"
+  to = "/why-teams-stay"
+  status = 301
+
+[[redirects]]
+  from = "/task-management.html"
+  to = "/products/employee-productivity-intelligence"
+  status = 301
+
+[[redirects]]
+  from = "/labs.html"
+  to = "/"
+  status = 301
+
+# --- Old /topics/ pages ---
+[[redirects]]
+  from = "/topics/monitoring.html"
+  to = "/products/employee-productivity-intelligence"
+  status = 301
+
+[[redirects]]
+  from = "/topics/automated-timesheets.html"
+  to = "/products/employee-productivity-intelligence"
+  status = 301
+
+[[redirects]]
+  from = "/topics/productivity-analytics.html"
+  to = "/products/employee-productivity-intelligence"
+  status = 301
+
+[[redirects]]
+  from = "/topics/workforce-analytics.html"
+  to = "/products/employee-productivity-intelligence"
+  status = 301
+
+[[redirects]]
+  from = "/topics/dlp.html"
+  to = "/products/employee-productivity-intelligence"
+  status = 301
+
+[[redirects]]
+  from = "/topics/how-to-create-work-culture.html"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/topics/sofware.html"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/topics/*"
+  to = "/"
+  status = 301
+
+# --- Old /blogs/ paths (note: different from /blog/) ---
+[[redirects]]
+  from = "/blogs/*"
+  to = "/blog"
+  status = 301
+
+# --- Old blog pagination & posts ---
+[[redirects]]
+  from = "/blog/page/*"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/page2/"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/page4/"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/stealth-employee-monitoring-software/"
+  to = "/blog"
+  status = 301
+
+# --- Old top-level service/category pages ---
+[[redirects]]
+  from = "/cloud-and-devops/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/software-development-services/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/data-engineering-and-analytics/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/ai-and-machine-learning/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/quality-assurance-and-testing/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/hire-data-and-ai-experts/"
+  to = "/hire/ai-developers"
+  status = 301
+
+[[redirects]]
+  from = "/category/*"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/author/*"
+  to = "/blog"
+  status = 301
+
+# --- Old job pages ---
+[[redirects]]
+  from = "/jobs/*"
+  to = "/careers"
+  status = 301
+
+[[redirects]]
+  from = "/current-jobs/"
+  to = "/careers"
+  status = 301
+
+[[redirects]]
+  from = "/job-openings/"
+  to = "/careers"
+  status = 301
+
+# --- Old employee monitoring blog posts (top-level) ---
+[[redirects]]
+  from = "/top-employee-monitoring-tools/"
+  to = "/products/employee-productivity-intelligence"
+  status = 301
+
+[[redirects]]
+  from = "/software-to-monitor-employees-working-from-home/"
+  to = "/products/employee-productivity-intelligence"
+  status = 301
+
+[[redirects]]
+  from = "/stealth-employee-monitoring-software/"
+  to = "/products/employee-productivity-intelligence"
+  status = 301
+
+[[redirects]]
+  from = "/best-employee-monitoring-software/"
+  to = "/products/employee-productivity-intelligence"
+  status = 301
+
+# --- Old /about/ with trailing slash ---
+[[redirects]]
+  from = "/about/"
+  to = "/about"
+  status = 301
+
+# --- Terms with trailing slash ---
+[[redirects]]
+  from = "/terms-and-conditions/"
+  to = "/terms-of-use"
+  status = 301
+
+# --- More old blog posts under /blog/ ---
+[[redirects]]
+  from = "/blog/software-to-monitor-employees-working-from-home/"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/screen-monitoring-software/"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/top-employee-monitoring-tools/"
+  to = "/blog"
+  status = 301
+
+# --- More old top-level pages ---
+[[redirects]]
+  from = "/automation-consulting/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/employee-monitoring.html"
+  to = "/products/employee-productivity-intelligence"
+  status = 301
+
+[[redirects]]
+  from = "/hire-frontend-developers/"
+  to = "/hire/frontend-engineers"
+  status = 301
+
+[[redirects]]
+  from = "/software-maintenance-services/"
+  to = "/"
+  status = 301
+
+# --- Explicit /services/ (wildcard may not match empty splat) ---
+[[redirects]]
+  from = "/services/"
+  to = "/"
+  status = 301
+
+# --- Old WordPress feeds ---
+[[redirects]]
+  from = "/feed/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/*/feed/"
+  to = "/"
+  status = 301
+
+# --- More old top-level pages ---
+[[redirects]]
+  from = "/software-consulting/"
+  to = "/"
+  status = 301
+
+# --- Assets (gone) ---
+[[redirects]]
+  from = "/assets/downloadble/*"
+  to = "/"
+  status = 301
+
 # --- Utility redirects ---
 [[redirects]]
   from = "/home"

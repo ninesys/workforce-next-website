@@ -23,7 +23,7 @@ export const metadata: Metadata = {
       "Engineers matched by industry context, not just tech stack. Fintech, logistics, healthtech, SaaS and more.",
   },
   alternates: {
-    canonical: "https://workforcenext.in/hire/product-engineers",
+    canonical: "https://workforcenext.in/hire/product-engineers/",
   },
 };
 
@@ -91,13 +91,13 @@ export default function ProductEngineersPage() {
   const serviceSchema = generateServiceSchema(
     "Hire Product Engineers from India",
     "Product engineers matched by industry context and domain experience. Vibe coding or traditional engineering, your choice.",
-    "https://workforcenext.in/hire/product-engineers"
+    "https://workforcenext.in/hire/product-engineers/"
   );
 
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: "https://workforcenext.in" },
-    { name: "Hire Developers", url: "https://workforcenext.in/hire/ai-developers" },
-    { name: "Product Engineers", url: "https://workforcenext.in/hire/product-engineers" },
+    { name: "Hire Developers", url: "https://workforcenext.in/hire/ai-developers/" },
+    { name: "Product Engineers", url: "https://workforcenext.in/hire/product-engineers/" },
   ]);
 
   return (
