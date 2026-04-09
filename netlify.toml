@@ -79,15 +79,56 @@
   to = "/"
   status = 301
 
-# --- Old blog -> homepage ---
+# --- Old blog posts -> new blog listing ---
 [[redirects]]
-  from = "/blog"
-  to = "/"
+  from = "/blog/ai-driven-soil-testing-spectroscopy-iot"
+  to = "/blog"
   status = 301
 
 [[redirects]]
-  from = "/blog/*"
-  to = "/"
+  from = "/blog/convert-electronic-product-to-iot-smart-device"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/how-to-hire-developers-in-india"
+  to = "/blog/dedicated-developer-vs-freelancer-vs-agency-total-cost"
+  status = 301
+
+[[redirects]]
+  from = "/blog/why-enterprise-ai-projects-fail"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/agentic-ai-vs-traditional-automation"
+  to = "/blog/vibe-coding-explained-when-to-use-it"
+  status = 301
+
+[[redirects]]
+  from = "/blog/workflow-automation-upgrade-signs"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/iot-platform-vendor-lock-in"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/real-time-analytics-manufacturing"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/hidden-cost-legacy-integration"
+  to = "/blog/real-cost-of-switching-tech-partners"
+  status = 301
+
+# --- Old blog categories -> blog listing ---
+[[redirects]]
+  from = "/blog/category/*"
+  to = "/blog"
   status = 301
 
 # --- Legacy page redirects from prompt ---
