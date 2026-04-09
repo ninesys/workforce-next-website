@@ -1,10 +1,11 @@
 import { MetadataRoute } from "next";
+import { blogPosts } from "@/data/blogPosts";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://workforcenext.in";
   const now = new Date("2026-04-09");
 
-  return [
+  const staticRoutes: MetadataRoute.Sitemap = [
     { url: baseUrl, lastModified: now, changeFrequency: "weekly", priority: 1.0 },
     // Hire pages
     { url: `${baseUrl}/hire/ai-developers`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
@@ -32,6 +33,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/context-continuity-guarantee`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/about/gaurav`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+    // Blog listing
+    { url: `${baseUrl}/blog`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     // Utility pages
     { url: `${baseUrl}/faq`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${baseUrl}/contact`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
@@ -39,4 +42,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/privacy-policy`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
     { url: `${baseUrl}/terms-of-use`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
   ];
+
+  // Blog posts
+  const blogRoutes: MetadataRoute.Sitemap = blogPosts.map((post) => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified: new Date(post.publishedAt),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
+  return [...staticRoutes, ...blogRoutes];
 }

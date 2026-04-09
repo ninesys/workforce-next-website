@@ -1,0 +1,72 @@
+# Workforce Next
+
+> Workforce Next is a remote engineering staffing company based in India that builds dedicated development teams for founders, funded startups, and enterprises. Developers are matched by industry context and longevity signals using SethAI, an AI-powered recruiter. Headquartered in DLF Cyber City, Gurugram with a tech office in Noida.
+
+## What Workforce Next Does
+
+Workforce Next provides dedicated remote developers from India who work full-time on your product. Unlike traditional staffing that matches on tech stack alone, Workforce Next uses context-first matching: a Java developer who built banking systems is matched to fintech clients, not just any Java project.
+
+## Developer Specialisms
+
+- AI & Agentic Developers: LangChain, AutoGen, CrewAI, RAG pipelines, multi-agent systems
+- Data Engineers: dbt, Spark, Airflow, Snowflake, data lakehouses
+- Frontend Engineers: React, Next.js, TypeScript, Tailwind CSS
+- Backend Engineers: FastAPI, Node.js, Go, PostgreSQL, microservices
+- Product Engineers: Full-stack engineers matched by industry context (fintech, logistics, healthtech, SaaS)
+- Vibe-Code Optimisation Engineers: Review and productionise AI-generated code from Cursor and Copilot
+- Cloud Cost Optimisation Engineers: FinOps, AWS/Azure/GCP rightsizing, Kubernetes cost reduction
+- QA Engineers & Testers: Manual, automation, performance, security, and API testing
+- LangChain Developers, RAG Pipeline Developers, FastAPI Developers
+
+## Engagement Models
+
+- MVP Sprint: 1 senior developer, 4 weeks, fixed price (INR 1.2-1.8L / $1,500-$2,200). For founders building their first AI product.
+- Engineering Pod: 3-8 dedicated developers, 48-hour matching. For funded startups scaling their product team.
+- Enterprise Consulting: Expert on-demand, staff augmentation, or fixed-scope projects. Free 2-hour architecture assessment.
+
+## Key Differentiators
+
+- SethAI: AI recruiter that screens for technical skills AND longevity signals (ownership mindset, career alignment, communication reliability). Generates a 1-page match report per candidate.
+- Context-First Matching: Developers matched by industry experience and product type, not just programming language.
+- Context Continuity Guarantee: If a developer leaves, documentation (codebase walkthrough, domain glossary, architecture decisions) enables replacement to be productive in days.
+- Monthly Engineering Advisory: Proactive check-in asking what the team needs in the next 90 days.
+- 48-hour matching, 1-week paid trial, zero recruitment fees.
+
+## Products
+
+- SethAI Recruiter: AI-powered developer screening tool (currently in development, waitlist open)
+- Employee Productivity Intelligence: AI-driven productivity insights for teams. Not surveillance. Pricing from INR 299/user/month.
+
+## Contact
+
+- Website: https://workforcenext.in
+- Email: hello@workforcenext.in
+- Phone: +91-8929251081
+- Office: DLF Cyber City, Gurugram, Haryana, India
+- Tech Office: NPX Urbtech, Sector 153, Noida, U.P., India
+- LinkedIn: https://www.linkedin.com/company/workforce-next
+
+## Detailed Pages
+
+- [Hire AI Developers](https://workforcenext.in/hire/ai-developers)
+- [Hire Data Engineers](https://workforcenext.in/hire/data-engineers)
+- [Hire Frontend Engineers](https://workforcenext.in/hire/frontend-engineers)
+- [Hire Backend Engineers](https://workforcenext.in/hire/backend-engineers)
+- [Hire Product Engineers](https://workforcenext.in/hire/product-engineers)
+- [Hire Vibe-Code Engineer](https://workforcenext.in/hire/vibe-code-engineer)
+- [Hire Cloud Cost Engineer](https://workforcenext.in/hire/cloud-cost-engineer)
+- [Hire QA Engineers](https://workforcenext.in/hire/qa-testers)
+- [For Founders (MVP Sprint)](https://workforcenext.in/for/founders)
+- [For Startups (Engineering Pod)](https://workforcenext.in/for/startups)
+- [For Enterprise](https://workforcenext.in/for/enterprise)
+- [SethAI Recruiter](https://workforcenext.in/products/seth-ai-recruiter)
+- [Employee Productivity Intelligence](https://workforcenext.in/products/employee-productivity-intelligence)
+- [How We Work](https://workforcenext.in/how-we-work)
+- [Why Teams Stay](https://workforcenext.in/why-teams-stay)
+- [Cost of Switching](https://workforcenext.in/cost-of-switching)
+- [Context Continuity Guarantee](https://workforcenext.in/context-continuity-guarantee)
+- [About](https://workforcenext.in/about)
+- [FAQ](https://workforcenext.in/faq)
+- [Blog](https://workforcenext.in/blog)
+- [Contact](https://workforcenext.in/contact)
+- [Careers](https://workforcenext.in/careers)

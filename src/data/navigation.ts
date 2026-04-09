@@ -27,6 +27,7 @@ export const mainNavItems: NavItem[] = [
     ],
   },
   { label: "How We Work", href: "/how-we-work" },
+  { label: "Blog", href: "/blog" },
   { label: "About", href: "/about" },
   { label: "Careers", href: "/careers" },
 ];

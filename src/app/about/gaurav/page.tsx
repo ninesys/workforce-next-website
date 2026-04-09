@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
 import {
@@ -71,20 +72,34 @@ export default function GauravPage() {
       {/* Hero */}
       <section className="bg-gradient-to-br from-primary-50 via-white to-primary-50/50 dark:from-dark-900 dark:via-dark-900 dark:to-dark-800 pt-32 pb-16 md:pt-40 md:pb-20">
         <div className="container-custom max-w-4xl">
-          <Badge variant="primary" className="mb-4">
-            FOUNDER
-          </Badge>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-dark-900 dark:text-dark-50 leading-tight">
-            Gaurav
-          </h1>
-          <p className="mt-2 text-lg text-primary-500 font-semibold">
-            Founder and Solution Architect
-          </p>
-          <p className="mt-4 text-lg text-dark-400 dark:text-dark-300 max-w-2xl">
-            20 years in solution architecture and enterprise software. Based in
-            Noida, India. Building Workforce Next to solve the retention problem
-            that nobody else wants to talk about.
-          </p>
+          <div className="flex flex-col md:flex-row md:items-center gap-8">
+            <div className="shrink-0">
+              <Image
+                src="/images/gaurav.jpeg"
+                alt="Gaurav, Founder and Solution Architect at Workforce Next"
+                width={180}
+                height={180}
+                className="rounded-2xl object-cover w-36 h-36 md:w-44 md:h-44 shadow-card"
+                priority
+              />
+            </div>
+            <div>
+              <Badge variant="primary" className="mb-4">
+                FOUNDER
+              </Badge>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-dark-900 dark:text-dark-50 leading-tight">
+                Gaurav
+              </h1>
+              <p className="mt-2 text-lg text-primary-500 font-semibold">
+                Founder and Solution Architect
+              </p>
+              <p className="mt-4 text-lg text-dark-400 dark:text-dark-300 max-w-2xl">
+                20 years in solution architecture and enterprise software. Based in
+                Noida, India. Building Workforce Next to solve the retention problem
+                that nobody else wants to talk about.
+              </p>
+            </div>
+          </div>
           <div className="mt-6">
             <Link
               href="https://www.linkedin.com/in/gaurav-workforce-next"

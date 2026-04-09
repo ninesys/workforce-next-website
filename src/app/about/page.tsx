@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
 import {
@@ -157,25 +158,36 @@ export default function AboutPage() {
           <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 mb-6">
             Leadership
           </h2>
-          <div className="p-6 rounded-xl border border-dark-50 dark:border-dark-700">
-            <h3 className="text-lg font-bold text-dark-900 dark:text-dark-50">
-              Gaurav
-            </h3>
-            <p className="text-sm text-primary-500 font-medium mb-3">
-              Founder and Solution Architect
-            </p>
-            <p className="text-dark-400 dark:text-dark-300 leading-relaxed mb-4">
-              20 years in solution architecture and enterprise software. Gaurav
-              built Workforce Next because he was tired of watching good teams
-              fall apart due to bad hiring processes. He designed SethAI to fix
-              the screening problem at its root.
-            </p>
-            <Link
-              href="/about/gaurav"
-              className="text-primary-500 hover:text-primary-600 font-medium text-sm transition-colors"
-            >
-              Read full bio
-            </Link>
+          <div className="flex flex-col sm:flex-row gap-6 p-6 rounded-xl border border-dark-50 dark:border-dark-700">
+            <div className="shrink-0">
+              <Image
+                src="/images/gaurav.jpeg"
+                alt="Gaurav, Founder of Workforce Next"
+                width={120}
+                height={120}
+                className="rounded-xl object-cover w-24 h-24 sm:w-28 sm:h-28 shadow-card"
+              />
+            </div>
+            <div>
+              <h3 className="text-lg font-bold text-dark-900 dark:text-dark-50">
+                Gaurav
+              </h3>
+              <p className="text-sm text-primary-500 font-medium mb-3">
+                Founder and Solution Architect
+              </p>
+              <p className="text-dark-400 dark:text-dark-300 leading-relaxed mb-4">
+                20 years in solution architecture and enterprise software. Gaurav
+                built Workforce Next because he was tired of watching good teams
+                fall apart due to bad hiring processes. He designed SethAI to fix
+                the screening problem at its root.
+              </p>
+              <Link
+                href="/about/gaurav"
+                className="text-primary-500 hover:text-primary-600 font-medium text-sm transition-colors"
+              >
+                Read full bio
+              </Link>
+            </div>
           </div>
         </div>
       </section>
