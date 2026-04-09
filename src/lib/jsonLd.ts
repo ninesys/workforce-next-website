@@ -1,5 +1,5 @@
 import { siteMetadata } from "@/data/siteMetadata";
-import { BlogPost, FAQ } from "@/types";
+import { FAQ } from "@/types";
 
 export function generateOrganizationSchema() {
   return {
@@ -28,6 +28,54 @@ export function generateOrganizationSchema() {
       "https://www.linkedin.com/company/workforce-next",
       "https://www.clutch.co/profile/workforce-next",
     ],
+    knowsAbout: [
+      "AI Developer Staffing",
+      "Remote Engineering Teams",
+      "Staff Augmentation India",
+      "Agentic AI Development",
+      "LangChain and RAG Pipelines",
+      "Vibe Coding and AI-Assisted Development",
+      "Cloud Cost Optimisation",
+      "Product Engineering",
+      "Context-First Developer Matching",
+      "Offshore Development Team Management",
+    ],
+  };
+}
+
+export function generateHomepageHowToSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "How to hire dedicated remote developers from India with Workforce Next",
+    description:
+      "A step-by-step process to build your dedicated remote engineering team, matched for longevity by SethAI.",
+    step: [
+      {
+        "@type": "HowToStep",
+        position: 1,
+        name: "Share your role and team context",
+        text: "Tell us the role, stack, product stage, and industry. The more context, the better SethAI's match.",
+      },
+      {
+        "@type": "HowToStep",
+        position: 2,
+        name: "SethAI screens for skills and longevity",
+        text: "SethAI evaluates technical depth, ownership mindset, and career alignment. You receive a 1-page match report per candidate.",
+      },
+      {
+        "@type": "HowToStep",
+        position: 3,
+        name: "You interview the shortlist",
+        text: "2 to 3 candidates. Direct interviews. You choose the best fit for your team.",
+      },
+      {
+        "@type": "HowToStep",
+        position: 4,
+        name: "Start with a one-week paid trial",
+        text: "Real work on your actual codebase. If it is not right, we rematch at no cost.",
+      },
+    ],
   };
 }
 
@@ -38,41 +86,6 @@ export function generateWebSiteSchema() {
     name: siteMetadata.name,
     url: siteMetadata.url,
     description: siteMetadata.description,
-  };
-}
-
-export function generateArticleSchema(post: BlogPost) {
-  return {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline: post.title,
-    description: post.metaDescription,
-    author: {
-      "@type": "Person",
-      name: post.author,
-      url: `${siteMetadata.url}/about/gaurav/`,
-      jobTitle: post.authorRole,
-      worksFor: {
-        "@type": "Organization",
-        name: siteMetadata.name,
-      },
-    },
-    publisher: {
-      "@type": "Organization",
-      name: siteMetadata.name,
-      url: siteMetadata.url,
-      logo: {
-        "@type": "ImageObject",
-        url: `${siteMetadata.url}/images/logo.webp`,
-      },
-    },
-    datePublished: post.publishedAt,
-    dateModified: post.publishedAt,
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": `${siteMetadata.url}/blog/${post.slug}`,
-    },
-    keywords: post.keywords.join(", "),
   };
 }
 

@@ -24,21 +24,6 @@ export interface Specialism {
   isNew?: boolean;
 }
 
-export interface BlogPost {
-  slug: string;
-  title: string;
-  excerpt: string;
-  body: string;
-  category: "ai" | "automation" | "iot" | "insights" | "hiring";
-  categoryLabel: string;
-  author: string;
-  authorRole: string;
-  publishedAt: string;
-  readTime: number;
-  metaDescription: string;
-  keywords: string[];
-}
-
 export type FAQCategory = "ai" | "automation" | "hiring";
 
 export interface FAQ {
@@ -46,13 +31,6 @@ export interface FAQ {
   answer: string;
   category: FAQCategory;
   categoryLabel: string;
-}
-
-export interface Testimonial {
-  quote: string;
-  name: string;
-  title: string;
-  company: string;
 }
 
 export interface HirePageData {

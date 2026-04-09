@@ -13,21 +13,52 @@ import "./globals.css";
 const dmSans = DM_Sans({
   subsets: ["latin"],
   variable: "--font-dm-sans",
+  display: "swap",
   weight: ["400", "500", "600", "700", "800"],
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://workforcenext.in"),
   title: {
-    default: "Workforce Next | Your Remote Team. Built to Stay.",
+    default: "Workforce Next | Hire Dedicated Remote Developers from India",
     template: "%s | Workforce Next",
   },
   description:
-    "Workforce Next builds dedicated AI-era remote engineering teams for founders, funded startups, and enterprises . Matched for longevity by SethAI, our AI recruiter, and retained by design.",
+    "Hire dedicated AI developers, data engineers, frontend and backend engineers from India. Context-matched by SethAI for longevity. 48-hour matching, 1-week paid trial, zero recruitment fees.",
+  keywords: [
+    "hire dedicated developers India",
+    "remote engineering team India",
+    "hire AI developers",
+    "SethAI recruiter",
+    "staff augmentation India",
+    "offshore development team",
+    "hire product engineers",
+    "vibe coding engineer",
+    "context-first developer matching",
+    "dedicated development team",
+  ],
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large" as const,
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: "https://workforcenext.in",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
+    url: "https://workforcenext.in",
     siteName: "Workforce Next",
+    title: "Workforce Next | Hire Dedicated Remote Developers from India",
+    description:
+      "Hire dedicated AI developers, data engineers, and product engineers from India. Context-matched by SethAI. 48-hour matching, zero recruitment fees.",
     images: [
       {
         url: "https://workforcenext.in/images/og-default.png",
@@ -37,11 +68,14 @@ export const metadata: Metadata = {
       },
     ],
   },
-  twitter: { card: "summary_large_image" },
-  robots: { index: true, follow: true },
+  twitter: {
+    card: "summary_large_image",
+    title: "Workforce Next | Hire Dedicated Remote Developers from India",
+    description:
+      "Hire dedicated AI developers, data engineers, and product engineers from India. Context-matched by SethAI.",
+  },
 };
 
-// Inline script to prevent flash of wrong theme
 const themeScript = `
 (function(){
   try {
