@@ -1,34 +1,42 @@
 import { MetadataRoute } from "next";
-import { blogPosts } from "@/data/blogPosts";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://workforcenext.in";
+  const now = new Date("2026-04-09");
 
-  const staticRoutes = [
-    "",
-    "/services/ai-agents",
-    "/services/automation",
-    "/services/iot",
-    "/blog",
-    "/faq",
-    "/contact",
-    "/privacy-policy",
-    "/terms-of-use",
-  ].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date(),
-    changeFrequency: (route === "/blog" ? "weekly" : "monthly") as
-      | "weekly"
-      | "monthly",
-    priority: route === "" ? 1.0 : 0.8,
-  }));
-
-  const blogRoutes = blogPosts.map((post) => ({
-    url: `${baseUrl}/blog/${post.slug}`,
-    lastModified: new Date(post.publishedAt),
-    changeFrequency: "monthly" as const,
-    priority: 0.6,
-  }));
-
-  return [...staticRoutes, ...blogRoutes];
+  return [
+    { url: baseUrl, lastModified: now, changeFrequency: "weekly", priority: 1.0 },
+    // Hire pages
+    { url: `${baseUrl}/hire/ai-developers`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${baseUrl}/hire/data-engineers`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${baseUrl}/hire/frontend-engineers`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${baseUrl}/hire/backend-engineers`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${baseUrl}/hire/product-engineers`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${baseUrl}/hire/vibe-code-engineer`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${baseUrl}/hire/cloud-cost-engineer`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${baseUrl}/hire/qa-testers`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${baseUrl}/hire/langchain-developers`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/hire/rag-developers`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/hire/fastapi-developers`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    // Segment pages
+    { url: `${baseUrl}/for/founders`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${baseUrl}/for/startups`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${baseUrl}/for/enterprise`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    // Products
+    { url: `${baseUrl}/products/seth-ai-recruiter`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/products/employee-productivity-intelligence`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    // Core pages
+    { url: `${baseUrl}/how-we-work`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/why-teams-stay`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/cost-of-switching`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/context-continuity-guarantee`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/about/gaurav`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+    // Utility pages
+    { url: `${baseUrl}/faq`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${baseUrl}/contact`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/careers`, lastModified: now, changeFrequency: "weekly", priority: 0.6 },
+    { url: `${baseUrl}/privacy-policy`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
+    { url: `${baseUrl}/terms-of-use`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
+  ];
 }

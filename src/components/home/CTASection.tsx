@@ -2,22 +2,20 @@ import Button from "@/components/ui/Button";
 
 export default function CTASection() {
   return (
-    <section className="gradient-primary py-16 md:py-24">
-      <div className="container-custom text-center">
-        <h2 className="text-3xl md:text-4xl font-heading font-bold text-white">
-          Ready to Transform Your Operations?
+    <section className="relative overflow-hidden bg-gradient-to-br from-dark-900 to-dark-800 py-16 sm:py-20 md:py-28">
+      <div className="absolute inset-0 bg-gradient-to-br from-primary-900/30 via-dark-900 to-dark-900" />
+      <div className="absolute top-0 right-0 w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] bg-primary-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
+
+      <div className="container-custom relative text-center">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-dark-100">
+          Build the team you keep.
         </h2>
-        <p className="mt-4 text-lg text-primary-200 max-w-2xl mx-auto">
-          Join 150+ enterprises that have accelerated their business with
-          intelligent AI agents, seamless automation, and scalable IoT. Let&apos;s
-          talk about what we can build together.
+        <p className="mt-4 sm:mt-5 text-base sm:text-lg text-dark-300 max-w-xl mx-auto">
+          One-week paid trial. No recruitment fee. 48-hour matching.
         </p>
-        <div className="mt-8 flex flex-wrap gap-4 justify-center">
-          <Button href="/contact" variant="white" size="lg">
-            Schedule a Consultation
-          </Button>
-          <Button href="/#services" variant="ghost" size="lg">
-            Explore Services
+        <div className="mt-6 sm:mt-8">
+          <Button href="/contact" variant="primary" size="lg">
+            Start building
           </Button>
         </div>
       </div>

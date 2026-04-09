@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  darkMode: "class",
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -10,43 +11,51 @@ const config: Config = {
     extend: {
       colors: {
         primary: {
-          50: "#EEF2FF",
-          100: "#DDE4FF",
-          200: "#B3C1FF",
-          300: "#8099FF",
-          400: "#4D6BFF",
-          500: "#1B3A8C",
-          600: "#152E6E",
-          700: "#0F2252",
-          800: "#0A1737",
-          900: "#060D1F",
-          950: "#030713",
+          50: "#F0F6FF",
+          100: "#E0EDFF",
+          200: "#C2DBFF",
+          300: "#93BFFF",
+          400: "#5B9AFF",
+          500: "#146EF5",
+          600: "#026AD3",
+          700: "#0256AD",
+          800: "#034589",
+          900: "#022E5E",
+          950: "#011D3D",
         },
-        accent: {
-          50: "#EFF8FF",
-          100: "#DAEEFF",
-          200: "#BDE0FF",
-          300: "#8ACEFF",
-          400: "#4FB4FF",
-          500: "#2196F3",
-          600: "#0B79D0",
-          700: "#0960A8",
-          800: "#0D5089",
-          900: "#104271",
-        },
-        success: {
-          50: "#F0FDFA",
-          500: "#0D9488",
-          600: "#0F766E",
+        dark: {
+          DEFAULT: "#1a1a2e",
+          50: "#F5F5F7",
+          100: "#E8E8ED",
+          200: "#D1D1DA",
+          300: "#A9A9B8",
+          400: "#7E7E91",
+          500: "#55556A",
+          600: "#3D3D52",
+          700: "#2D2D42",
+          800: "#232338",
+          900: "#1a1a2e",
         },
       },
       fontFamily: {
-        sans: ["var(--font-inter)", "system-ui", "sans-serif"],
-        heading: ["var(--font-geist-sans)", "system-ui", "sans-serif"],
+        sans: ["var(--font-dm-sans)", "system-ui", "sans-serif"],
+      },
+      borderRadius: {
+        DEFAULT: "10px",
+        sm: "8px",
+        md: "12px",
+        lg: "16px",
+        xl: "20px",
+        "2xl": "24px",
+      },
+      boxShadow: {
+        soft: "0 0 45px rgba(0, 0, 0, 0.07)",
+        card: "0 2px 20px rgba(0, 0, 0, 0.06)",
+        hover: "0 8px 40px rgba(20, 110, 245, 0.15)",
       },
       animation: {
         "fade-in": "fadeIn 0.5s ease-in-out",
-        "slide-up": "slideUp 0.5s ease-out",
+        "slide-up": "slideUp 0.6s ease-out",
         "slide-in-right": "slideInRight 0.3s ease-out",
       },
       keyframes: {
@@ -55,7 +64,7 @@ const config: Config = {
           "100%": { opacity: "1" },
         },
         slideUp: {
-          "0%": { opacity: "0", transform: "translateY(20px)" },
+          "0%": { opacity: "0", transform: "translateY(24px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
         slideInRight: {

@@ -4,72 +4,24 @@ export interface NavItem {
   children?: NavItem[];
 }
 
-export interface HeroSlide {
-  badge: string;
-  headline: string;
-  subheading: string;
-  ctaText: string;
-  ctaHref: string;
-  secondaryCtaText: string;
-  secondaryCtaHref: string;
-  gradientClass: string;
-}
-
-export interface ServiceFeature {
-  icon: string;
-  title: string;
-  description: string;
-}
-
-export interface ProcessStep {
-  step: number;
-  title: string;
-  description: string;
-}
-
-export interface UseCase {
-  industry: string;
-  title: string;
-  description: string;
-}
-
-export interface Service {
-  slug: string;
+export interface SiteMetadata {
   name: string;
+  legalName: string;
   tagline: string;
-  heroTitle: string;
-  heroDescription: string;
-  metaTitle: string;
-  metaDescription: string;
-  keywords: string[];
-  features: ServiceFeature[];
-  processSteps: ProcessStep[];
-  useCases: UseCase[];
-  techStack: string[];
-  painPointStat: string;
-  painPointDescription: string;
+  description: string;
+  url: string;
+  email: string;
+  phone: string;
+  whatsapp: string;
+  address: string;
+  techOffice: string;
 }
 
-export interface Testimonial {
-  quote: string;
+export interface Specialism {
   name: string;
-  title: string;
-  company: string;
-}
-
-export interface CaseStudy {
-  industry: string;
-  challenge: string;
-  solution: string;
-  result: string;
-  metric: string;
-}
-
-export interface Stat {
-  value: string;
-  numericValue: number;
-  suffix: string;
-  label: string;
+  slug: string;
+  description: string;
+  isNew?: boolean;
 }
 
 export interface BlogPost {
@@ -77,7 +29,7 @@ export interface BlogPost {
   title: string;
   excerpt: string;
   body: string;
-  category: "ai" | "automation" | "iot" | "insights";
+  category: "ai" | "automation" | "iot" | "insights" | "hiring";
   categoryLabel: string;
   author: string;
   authorRole: string;
@@ -87,7 +39,7 @@ export interface BlogPost {
   keywords: string[];
 }
 
-export type FAQCategory = "ai" | "automation" | "iot";
+export type FAQCategory = "ai" | "automation" | "hiring";
 
 export interface FAQ {
   question: string;
@@ -96,13 +48,25 @@ export interface FAQ {
   categoryLabel: string;
 }
 
-export interface SiteMetadata {
+export interface Testimonial {
+  quote: string;
   name: string;
-  tagline: string;
+  title: string;
+  company: string;
+}
+
+export interface HirePageData {
+  slug: string;
+  badge: string;
+  title: string;
   description: string;
-  url: string;
-  email: string;
-  phone: string;
-  whatsapp: string;
-  address: string;
+  metaTitle: string;
+  metaDescription: string;
+  keywords: string[];
+  painPoints: { icon: string; title: string; description: string }[];
+  whyUs: { title: string; description: string }[];
+  skills: string[];
+  processSteps: { step: number; title: string; description: string }[];
+  ctaTitle: string;
+  ctaDescription: string;
 }

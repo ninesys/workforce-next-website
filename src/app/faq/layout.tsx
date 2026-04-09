@@ -3,20 +3,24 @@ import { faqs } from "@/data/faqs";
 import { generateFAQPageSchema } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
-  title: "FAQ - AI Agents, Workflow Automation & IoT Cloud Platform",
+  title: "FAQ - Hire Developers India, SethAI, Vibe Coding, Remote Teams",
   description:
-    "Get answers to frequently asked questions about agentic AI, enterprise AI agents, workflow automation, RPA, IoT cloud platforms, edge computing, and predictive maintenance.",
+    "Answers to common questions about hiring dedicated developers from India, how SethAI matches candidates by context, vibe coding vs traditional engineering, engagement models like MVP Sprint and Engineering Pod, and how remote teams work at Workforce Next.",
   keywords: [
-    "agentic AI FAQ",
-    "workflow automation FAQ",
-    "IoT cloud platform FAQ",
-    "enterprise AI questions",
-    "business process automation questions",
+    "hire developers India FAQ",
+    "SethAI AI recruiter FAQ",
+    "dedicated developer cost India",
+    "vibe coding explained",
+    "offshore developer questions",
+    "context-first matching",
+    "remote engineering team FAQ",
+    "MVP Sprint FAQ",
+    "Engineering Pod FAQ",
   ],
   openGraph: {
-    title: "FAQ - AI Agents, Workflow Automation & IoT Cloud Platform",
+    title: "FAQ - Hire Developers, SethAI, Remote Teams",
     description:
-      "Get answers to frequently asked questions about agentic AI, workflow automation, and IoT cloud platforms.",
+      "Answers about hiring dedicated developers from India, SethAI matching, vibe coding, engagement models, and remote team management.",
   },
   alternates: {
     canonical: "https://workforcenext.in/faq",

@@ -2,6 +2,9 @@
   command = "npm run build"
   publish = ".next"
 
+[build.processing.images]
+  compress = true
+
 [build.environment]
   NODE_VERSION = "20"
   NEXT_TELEMETRY_DISABLED = "1"
@@ -19,11 +22,197 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
+# --- Old hire pages -> new /hire/* URLs ---
 [[redirects]]
-  from = "/services"
-  to = "/#services"
-  status = 302
+  from = "/hire-ai-developers"
+  to = "/hire/ai-developers"
+  status = 301
 
+[[redirects]]
+  from = "/hire-ai-developers/"
+  to = "/hire/ai-developers"
+  status = 301
+
+[[redirects]]
+  from = "/hire-dedicated-developers"
+  to = "/hire/ai-developers"
+  status = 301
+
+[[redirects]]
+  from = "/hire-dedicated-developers/"
+  to = "/hire/ai-developers"
+  status = 301
+
+[[redirects]]
+  from = "/hire-mobile-app-developers"
+  to = "/hire/frontend-engineers"
+  status = 301
+
+[[redirects]]
+  from = "/hire-mobile-app-developers/"
+  to = "/hire/frontend-engineers"
+  status = 301
+
+[[redirects]]
+  from = "/hire-software-developers-india"
+  to = "/hire/backend-engineers"
+  status = 301
+
+[[redirects]]
+  from = "/hire-software-developers-india/"
+  to = "/hire/backend-engineers"
+  status = 301
+
+[[redirects]]
+  from = "/hire-software-testers"
+  to = "/hire/backend-engineers"
+  status = 301
+
+[[redirects]]
+  from = "/hire-software-testers/"
+  to = "/hire/backend-engineers"
+  status = 301
+
+# --- Old service pages -> homepage ---
+[[redirects]]
+  from = "/services/*"
+  to = "/"
+  status = 301
+
+# --- Old blog -> homepage ---
+[[redirects]]
+  from = "/blog"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/*"
+  to = "/"
+  status = 301
+
+# --- Legacy page redirects from prompt ---
+[[redirects]]
+  from = "/pricing.html"
+  to = "/products/employee-productivity-intelligence"
+  status = 301
+
+[[redirects]]
+  from = "/clients.html"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/contact.html"
+  to = "/contact"
+  status = 301
+
+[[redirects]]
+  from = "/screen-monitoring-software/"
+  to = "/products/employee-productivity-intelligence"
+  status = 301
+
+[[redirects]]
+  from = "/workforce-analytics.html"
+  to = "/products/employee-productivity-intelligence"
+  status = 301
+
+[[redirects]]
+  from = "/employee-productivity-analytics.html"
+  to = "/products/employee-productivity-intelligence"
+  status = 301
+
+[[redirects]]
+  from = "/how-employee-monitoring-works.html"
+  to = "/products/employee-productivity-intelligence"
+  status = 301
+
+# --- Old hire slugs from previous site ---
+[[redirects]]
+  from = "/hire-an-ai-developer/"
+  to = "/hire/ai-developers"
+  status = 301
+
+[[redirects]]
+  from = "/hire-dedicated-llm-developers/"
+  to = "/hire/ai-developers"
+  status = 301
+
+[[redirects]]
+  from = "/services/hire-data-and-ai-experts/"
+  to = "/hire/ai-developers"
+  status = 301
+
+[[redirects]]
+  from = "/hire-android-developer/"
+  to = "/hire/frontend-engineers"
+  status = 301
+
+[[redirects]]
+  from = "/hire-unity-developer/"
+  to = "/hire/frontend-engineers"
+  status = 301
+
+[[redirects]]
+  from = "/how-to-hire-mobile-app-developers/"
+  to = "/hire/frontend-engineers"
+  status = 301
+
+[[redirects]]
+  from = "/services/hire-qa-testers/"
+  to = "/hire/backend-engineers"
+  status = 301
+
+[[redirects]]
+  from = "/how-to-hire-developers-in-india/"
+  to = "/hire/backend-engineers"
+  status = 301
+
+[[redirects]]
+  from = "/it-staffing-companies-in-india/"
+  to = "/hire/backend-engineers"
+  status = 301
+
+[[redirects]]
+  from = "/cost-to-hire-a-software-developer/"
+  to = "/hire/backend-engineers"
+  status = 301
+
+[[redirects]]
+  from = "/how-to-hire-a-full-stack-developer/"
+  to = "/hire/backend-engineers"
+  status = 301
+
+[[redirects]]
+  from = "/hire-python-developers/"
+  to = "/hire/backend-engineers"
+  status = 301
+
+[[redirects]]
+  from = "/hire-react-developers/"
+  to = "/hire/frontend-engineers"
+  status = 301
+
+[[redirects]]
+  from = "/services/hire-frontend-developers/"
+  to = "/hire/frontend-engineers"
+  status = 301
+
+[[redirects]]
+  from = "/hire-remote-developers/"
+  to = "/hire/ai-developers"
+  status = 301
+
+[[redirects]]
+  from = "/hire-specialized-developers/"
+  to = "/hire/ai-developers"
+  status = 301
+
+[[redirects]]
+  from = "/complete-guide-to-hiring-developers/"
+  to = "/hire/ai-developers"
+  status = 301
+
+# --- Utility redirects ---
 [[redirects]]
   from = "/home"
   to = "/"

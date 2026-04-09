@@ -4,6 +4,12 @@ export const metadata: Metadata = {
   title: "Terms of Use - Workforce Next",
   description:
     "Terms of Use for Workforce Next website and services. Read our terms governing the use of workforcenext.in.",
+  keywords: ["terms of use", "terms of service", "workforce next terms"],
+  openGraph: {
+    title: "Terms of Use - Workforce Next",
+    description:
+      "Terms of Use for Workforce Next website and services.",
+  },
   alternates: {
     canonical: "https://workforcenext.in/terms-of-use",
   },
@@ -42,7 +48,7 @@ export default function TermsOfUsePage() {
             <p className="text-slate-600 leading-relaxed">
               This website is provided for informational purposes about
               Workforce Next&apos;s services, including AI agents, workflow
-              automation, and IoT cloud platform solutions. You agree to use
+              automation, and staff augmentation services. You agree to use
               this website only for lawful purposes and in a manner that does
               not infringe upon the rights of others.
             </p>
