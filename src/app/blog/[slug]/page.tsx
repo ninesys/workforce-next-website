@@ -24,13 +24,16 @@ export function generateMetadata({ params }: Props): Metadata {
       : `https://workforcenext.in${post.image.startsWith("/") ? "" : "/"}${post.image}`
     : "https://workforcenext.in/images/og-default.png";
 
+  const socialTitle = post.ogTitle ?? post.title;
+  const socialDescription = post.ogDescription ?? post.metaDescription;
+
   return {
     title: post.title,
     description: post.metaDescription,
     keywords: post.keywords,
     openGraph: {
-      title: post.title,
-      description: post.metaDescription,
+      title: socialTitle,
+      description: socialDescription,
       type: "article",
       url: `https://workforcenext.in/blog/${post.slug}/`,
       publishedTime: post.publishedAt,
@@ -45,8 +48,8 @@ export function generateMetadata({ params }: Props): Metadata {
     },
     twitter: {
       card: "summary_large_image",
-      title: post.title,
-      description: post.metaDescription,
+      title: socialTitle,
+      description: socialDescription,
       images: [ogImageUrl],
     },
     alternates: {

@@ -18,6 +18,8 @@ export interface BlogPost {
   keywords: string[];
   faq: BlogFAQ[];
   image?: string;
+  ogTitle?: string;
+  ogDescription?: string;
 }
 
 export const blogCategories = [
@@ -57,6 +59,9 @@ export const blogPosts: BlogPost[] = [
     readTime: 6,
     metaDescription:
       "Why offshore developers leave engagements early and the 3 retention strategies that actually work: dedicated engagement, ownership screening, and compounding context.",
+    ogTitle: "Why Offshore Developers Leave and How to Keep Them",
+    ogDescription:
+      "3 retention strategies that actually work: dedicated engagement, ownership screening, and compounding context.",
     keywords: [
       "why offshore developers leave",
       "offshore developer retention",
@@ -123,6 +128,8 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     metaDescription:
       "What is vibe coding? An honest guide to AI-assisted development: when it speeds up your team, when it creates risk, and the hybrid approach most teams actually use.",
+    ogDescription:
+      "When AI-assisted coding speeds your team up, when it creates risk, and the hybrid approach that most teams actually adopt.",
     keywords: [
       "what is vibe coding",
       "vibe coding explained",
@@ -185,6 +192,9 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     metaDescription:
       "Why matching developers by tech stack alone leads to slow onboarding and high turnover. How context-first matching by industry and product type produces better hires.",
+    ogTitle: "Context-First Matching: Why Tech Stack Is Not Enough",
+    ogDescription:
+      "Matching by tech alone leads to slow onboarding and churn. Context-first matching by industry and product builds better hires.",
     keywords: [
       "context first developer matching",
       "hire developers by industry experience",
@@ -248,6 +258,9 @@ export const blogPosts: BlogPost[] = [
     readTime: 6,
     metaDescription:
       "The 5 hidden costs of switching offshore tech partners: onboarding, velocity dip, re-explanation, cultural alignment, and opportunity cost. Total: 3 months of lost productivity.",
+    ogTitle: "The Real Cost of Switching Your Offshore Tech Partner",
+    ogDescription:
+      "5 hidden costs: onboarding, velocity dip, re-explanation, cultural alignment, and opportunity cost — roughly 3 months of lost productivity.",
     keywords: [
       "cost of switching tech partners",
       "offshore team switching cost",
@@ -314,6 +327,9 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     metaDescription:
       "A practical 4-week guide to building an AI MVP with one offshore developer from India. Week-by-week breakdown: scope, AI pipeline, interface, deploy. Costs $1,500 to $2,200.",
+    ogTitle: "How to Build an AI MVP in 4 Weeks with One Developer",
+    ogDescription:
+      "A practical 4-week guide to shipping an AI MVP with one offshore developer: scope, pipeline, interface, deploy. Budget $1,500 to $2,200.",
     keywords: [
       "build AI MVP 4 weeks",
       "AI MVP offshore developer",
@@ -381,6 +397,9 @@ export const blogPosts: BlogPost[] = [
     readTime: 7,
     metaDescription:
       "Honest cost comparison: freelancer vs agency vs dedicated developer over 12 months. Freelancer ~$100K, agency ~$165K, dedicated developer ~$54K. Here is why.",
+    ogTitle: "Freelancer vs Agency vs Dedicated Developer: Real Cost",
+    ogDescription:
+      "Honest 12-month cost comparison: freelancer ~$100K, agency ~$165K, dedicated developer ~$54K. Why the rate is the least useful number.",
     keywords: [
       "dedicated developer vs freelancer",
       "agency vs dedicated developer cost",
