@@ -17,6 +17,7 @@ export interface BlogPost {
   metaDescription: string;
   keywords: string[];
   faq: BlogFAQ[];
+  image?: string;
 }
 
 export const blogCategories = [
@@ -30,6 +31,7 @@ export const blogCategories = [
 export const blogPosts: BlogPost[] = [
   {
     slug: "why-offshore-developers-keep-leaving",
+    image: "/images/blog/why-offshore-developers-keep-leaving.webp",
     title: "Why Offshore Developers Keep Leaving and 3 Things That Make Them Stay",
     excerpt:
       "Most offshore teams reset context every few months. Here is why developers leave and what actually works to keep them.",
@@ -90,6 +92,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "vibe-coding-explained-when-to-use-it",
+    image: "/images/blog/vibe-coding-explained-when-to-use-it.webp",
     title: "Vibe Coding Explained: When to Use It and When to Avoid It",
     excerpt:
       "AI-assisted coding is changing how software gets built. Here is an honest breakdown of when vibe coding works and when it will hurt you.",
@@ -155,6 +158,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "context-first-matching-why-tech-stack-is-not-enough",
+    image: "/images/blog/context-first-matching-why-tech-stack-is-not-enough.webp",
     title: "Context-First Matching: Why Tech Stack Alone Is Not Enough to Hire Good Developers",
     excerpt:
       "A Java developer who built banking systems is a completely different hire than one who built logistics software. Here is why context matters more than stack.",
@@ -216,6 +220,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "real-cost-of-switching-tech-partners",
+    image: "/images/blog/real-cost-of-switching-tech-partners.webp",
     title: "The Real Cost of Switching Tech Partners (It Is Way More Than You Think)",
     excerpt:
       "Switching your offshore team feels like a fresh start. But the hidden costs add up to months of lost progress. Here is the full breakdown.",
@@ -278,6 +283,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "how-to-build-ai-mvp-4-weeks-offshore-developer",
+    image: "/images/blog/how-to-build-ai-mvp-4-weeks-offshore-developer.webp",
     title: "How to Build an AI MVP in 4 Weeks with an Offshore Developer",
     excerpt:
       "You have an AI product idea and limited budget. Here is a practical guide to shipping a working MVP in 4 weeks with one dedicated developer from India.",
@@ -343,6 +349,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "dedicated-developer-vs-freelancer-vs-agency-total-cost",
+    image: "/images/blog/dedicated-developer-vs-freelancer-vs-agency-total-cost.webp",
     title: "Dedicated Developer vs Freelancer vs Agency: The Real Total Cost of Ownership",
     excerpt:
       "The hourly rate is just the beginning. Here is an honest comparison of what you actually end up paying for each model over 12 months.",

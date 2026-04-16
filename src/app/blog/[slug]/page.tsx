@@ -17,6 +17,12 @@ export function generateMetadata({ params }: Props): Metadata {
   const post = blogPosts.find((p) => p.slug === params.slug);
   if (!post) return {};
 
+  const ogImageUrl = post.image
+    ? post.image.startsWith("http")
+      ? post.image
+      : `https://workforcenext.in${post.image.startsWith("/") ? "" : "/"}${post.image}`
+    : "https://workforcenext.in/images/og-default.png";
+
   return {
     title: post.title,
     description: post.metaDescription,
@@ -27,11 +33,20 @@ export function generateMetadata({ params }: Props): Metadata {
       type: "article",
       url: `https://workforcenext.in/blog/${post.slug}/`,
       publishedTime: post.publishedAt,
+      images: [
+        {
+          url: ogImageUrl,
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: post.title,
       description: post.metaDescription,
+      images: [ogImageUrl],
     },
     alternates: {
       canonical: `https://workforcenext.in/blog/${post.slug}/`,
