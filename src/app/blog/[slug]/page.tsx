@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { blogPosts } from "@/data/blogPosts";
@@ -64,11 +65,18 @@ export default function BlogPostPage({ params }: Props) {
     { name: post.title, url: `https://workforcenext.in/blog/${post.slug}/` },
   ]);
 
+  const articleImageUrl = post.image
+    ? post.image.startsWith("http")
+      ? post.image
+      : `https://workforcenext.in${post.image.startsWith("/") ? "" : "/"}${post.image}`
+    : "https://workforcenext.in/images/og-default.png";
+
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: post.title,
     description: post.metaDescription,
+    image: articleImageUrl,
     datePublished: post.publishedAt,
     dateModified: post.publishedAt,
     author: {
@@ -172,6 +180,19 @@ export default function BlogPostPage({ params }: Props) {
             </span>
             <span>{post.readTime} min read</span>
           </div>
+          {post.image && (
+            <div className="mt-8 overflow-hidden rounded-2xl shadow-card border border-dark-50 dark:border-dark-700">
+              <Image
+                src={post.image}
+                alt={post.title}
+                width={1200}
+                height={630}
+                priority
+                sizes="(max-width: 768px) 100vw, 768px"
+                className="w-full h-auto"
+              />
+            </div>
+          )}
         </div>
       </section>
 

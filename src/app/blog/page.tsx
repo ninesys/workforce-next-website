@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { blogPosts, blogCategories } from "@/data/blogPosts";
 import Badge from "@/components/ui/Badge";
@@ -61,6 +62,18 @@ export default function BlogPage() {
                 href={`/blog/${post.slug}`}
                 className="group block bg-white dark:bg-dark-800 rounded-xl border border-dark-50 dark:border-dark-700 shadow-card hover:shadow-hover hover:-translate-y-1 transition-all duration-300 overflow-hidden"
               >
+                {post.image && (
+                  <div className="aspect-[1200/630] overflow-hidden bg-dark-50 dark:bg-dark-700">
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      width={1200}
+                      height={630}
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                )}
                 <div className="p-6">
                   <div className="flex items-center gap-3 mb-3">
                     <span className="px-3 py-1 text-xs font-semibold bg-primary-50 dark:bg-primary-500/10 text-primary-600 dark:text-primary-400 rounded-full">
