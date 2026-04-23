@@ -11,6 +11,7 @@ export default function WaitlistForm() {
     name: "",
     email: "",
     role: "",
+    website: "", // honeypot — leave empty
   });
 
   const handleSubmit = async (e: FormEvent) => {
@@ -65,6 +66,18 @@ export default function WaitlistForm() {
       className="space-y-5 bg-primary-50 dark:bg-dark-800 p-6 md:p-8 rounded-2xl border border-primary-100 dark:border-dark-700"
     >
       <input type="hidden" name="form-name" value="seth-waitlist" />
+      <div aria-hidden="true" style={{ position: "absolute", left: "-9999px", top: "-9999px", width: 0, height: 0, overflow: "hidden" }}>
+        <label htmlFor="waitlist-website">Leave this field blank</label>
+        <input
+          id="waitlist-website"
+          name="website"
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+          value={formData.website}
+          onChange={(e) => setFormData({ ...formData, website: e.target.value })}
+        />
+      </div>
       {error && (
         <div className="bg-red-50 dark:bg-red-500/10 text-red-700 dark:text-red-400 text-sm rounded-[10px] p-4">
           {error}

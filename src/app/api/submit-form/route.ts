@@ -7,6 +7,27 @@ export const dynamic = "force-dynamic";
 const FORM_NAMES = ["contact", "careers", "seth-waitlist"] as const;
 type FormName = (typeof FORM_NAMES)[number];
 
+// Honeypot field name. Kept innocuous so naive bots happily fill it.
+const HONEYPOT_FIELD = "website";
+
+const ALLOWED_ORIGIN_HOSTS = new Set([
+  "workforcenext.in",
+  "www.workforcenext.in",
+]);
+
+const isAllowedOrigin = (origin: string | null) => {
+  if (!origin) return false;
+  try {
+    const url = new URL(origin);
+    if (ALLOWED_ORIGIN_HOSTS.has(url.hostname)) return true;
+    // Allow Vercel preview deployments (workforce-next-website-*.vercel.app)
+    if (url.hostname.endsWith(".vercel.app")) return true;
+    return false;
+  } catch {
+    return false;
+  }
+};
+
 const INTERNAL_SUBJECTS: Record<FormName, string> = {
   contact: "New contact enquiry — workforcenext.in",
   careers: "New career application — workforcenext.in",
@@ -121,11 +142,29 @@ const ACK_BODY_HTML: Record<FormName, (greeting: string) => string> = {
 };
 
 export async function POST(req: Request) {
+  // Origin check: only accept POSTs from our own site. Bots posting
+  // directly from their own server will have Origin set to something else
+  // (or missing it entirely). Returning a fake ok response so the bot
+  // thinks it succeeded and moves on.
+  const origin = req.headers.get("origin");
+  if (!isAllowedOrigin(origin)) {
+    console.warn("Blocked: bad origin", origin);
+    return NextResponse.json({ ok: true });
+  }
+
   let payload: Record<string, unknown>;
   try {
     payload = await req.json();
   } catch {
     return NextResponse.json({ error: "Invalid JSON body" }, { status: 400 });
+  }
+
+  // Honeypot check: if the hidden field was filled, it's a bot. Return
+  // ok to avoid tipping them off that the trap exists.
+  const honeypot = payload[HONEYPOT_FIELD];
+  if (typeof honeypot === "string" && honeypot.trim().length > 0) {
+    console.warn("Blocked: honeypot tripped", honeypot.slice(0, 80));
+    return NextResponse.json({ ok: true });
   }
 
   const formName = payload["form-name"];
@@ -138,7 +177,7 @@ export async function POST(req: Request) {
 
   const fields: Record<string, string> = {};
   for (const [k, v] of Object.entries(payload)) {
-    if (k === "form-name") continue;
+    if (k === "form-name" || k === HONEYPOT_FIELD) continue;
     if (typeof v === "string") fields[k] = v.slice(0, 5000);
   }
 
