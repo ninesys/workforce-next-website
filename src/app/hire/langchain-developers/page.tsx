@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     "LangChain staff augmentation",
   ],
   openGraph: {
+    images: ["/images/og-default.png"],
     title: "Hire LangChain Developers from India",
     description:
       "Hire pre-vetted LangChain developers from India. SethAI-screened for skills and longevity.",

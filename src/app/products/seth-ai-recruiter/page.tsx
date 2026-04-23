@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     "developer match report",
   ],
   openGraph: {
+    images: ["/images/og-default.png"],
     title: "SethAI - The AI Recruiter That Screens for What Matters",
     description:
       "SethAI screens developers for technical skills and longevity signals. Join the waitlist.",

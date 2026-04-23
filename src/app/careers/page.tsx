@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "data engineer jobs",
   ],
   openGraph: {
+    images: ["/images/og-default.png"],
     title: "Careers at Workforce Next - Join Our Engineering Team",
     description:
       "Join Workforce Next. Remote-first, ownership-driven engineering work on AI, data, and cloud projects.",

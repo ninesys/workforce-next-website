@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     "software company Noida",
   ],
   openGraph: {
+    images: ["/images/og-default.png"],
     title: "About Workforce Next - Remote Teams That Stay",
     description:
       "Workforce Next builds dedicated remote engineering teams matched by SethAI for longevity. Founded 2020, based in Noida, India.",

@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     "microservices developers",
   ],
   openGraph: {
+    images: ["/images/og-default.png"],
     title: "Hire Backend Engineers from India",
     description:
       "Hire pre-vetted backend engineers from India. SethAI-screened for skills and longevity.",

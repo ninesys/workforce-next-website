@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "offshore development best practices",
   ],
   openGraph: {
+    images: ["/images/og-default.png"],
     title: "Blog - Workforce Next",
     description:
       "Practical insights on hiring developers, building remote teams, and engineering leadership.",

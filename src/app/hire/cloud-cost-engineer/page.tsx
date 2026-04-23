@@ -24,6 +24,7 @@ export const metadata: Metadata = {
     "cloud savings engineer",
   ],
   openGraph: {
+    images: ["/images/og-default.png"],
     title: "Hire Cloud Cost Engineers from India",
     description:
       "Cloud cost engineers who typically save 30-60% on cloud bills. AWS, Azure, GCP FinOps specialists. SethAI-screened.",

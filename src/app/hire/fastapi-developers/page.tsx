@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     "FastAPI staff augmentation",
   ],
   openGraph: {
+    images: ["/images/og-default.png"],
     title: "Hire FastAPI Developers from India",
     description:
       "Hire pre-vetted FastAPI developers from India. SethAI-screened for skills and longevity.",

@@ -32,6 +32,7 @@ export const metadata: Metadata = {
     canonical: "https://workforcenext.in",
   },
   openGraph: {
+    images: ["/images/og-default.png"],
     title: "Workforce Next | Hire Dedicated Remote Developers from India",
     description:
       "Hire dedicated AI developers, data engineers, and product engineers from India. Context-matched by SethAI. 48-hour matching, zero recruitment fees.",

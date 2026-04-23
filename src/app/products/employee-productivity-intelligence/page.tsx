@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     "AI coaching tool",
   ],
   openGraph: {
+    images: ["/images/og-default.png"],
     title: "Employee Productivity Intelligence - Visibility Without Surveillance",
     description:
       "AI-powered productivity intelligence. Employees see their own data. Managers get weekly AI reports. Not surveillance.",

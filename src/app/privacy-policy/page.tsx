@@ -6,6 +6,7 @@ export const metadata: Metadata = {
     "Privacy Policy for Workforce Next. Learn how we handle your data. We do not use cookies or share data with third parties.",
   keywords: ["privacy policy", "data protection", "workforce next privacy"],
   openGraph: {
+    images: ["/images/og-default.png"],
     title: "Privacy Policy - Workforce Next",
     description:
       "Privacy Policy for Workforce Next. Learn how we handle your data.",

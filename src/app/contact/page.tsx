@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "staff augmentation India",
   ],
   openGraph: {
+    images: ["/images/og-default.png"],
     title: "Contact Workforce Next - Build Your Remote Team",
     description:
       "Get in touch with Workforce Next to build your dedicated remote engineering team.",

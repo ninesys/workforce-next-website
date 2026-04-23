@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     "hire developers India process",
   ],
   openGraph: {
+    images: ["/images/og-default.png"],
     title: "How We Work - Build Your Remote Engineering Team",
     description:
       "Our 7-step process for building dedicated remote engineering teams that stay.",

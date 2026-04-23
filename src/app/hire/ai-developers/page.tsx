@@ -24,6 +24,7 @@ export const metadata: Metadata = {
     "AI staff augmentation India",
   ],
   openGraph: {
+    images: ["/images/og-default.png"],
     title: "Hire AI & Agentic Developers from India",
     description:
       "Hire pre-vetted AI and agentic developers from India. SethAI-screened for skills and longevity.",

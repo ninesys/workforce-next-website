@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     "hire remote full stack engineers",
   ],
   openGraph: {
+    images: ["/images/og-default.png"],
     title: "Hire Full Stack Developers from India",
     description:
       "Pre-vetted full stack engineers skilled in Node.js, Python, React, and AWS. SethAI-screened for skills and longevity.",

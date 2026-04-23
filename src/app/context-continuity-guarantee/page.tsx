@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     "developer transition plan",
   ],
   openGraph: {
+    images: ["/images/og-default.png"],
     title: "Context Continuity Guarantee",
     description:
       "If a developer leaves, our context docs get a replacement productive in days, not months.",

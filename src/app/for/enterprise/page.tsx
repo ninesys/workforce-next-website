@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     "enterprise engineering services",
   ],
   openGraph: {
+    images: ["/images/og-default.png"],
     title: "Enterprise Engineering Services - The Right Specialist for Your Exact Problem",
     description:
       "Expert on-demand, staff augmentation, and fixed-scope consulting for enterprise teams.",

@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     "dedicated QA team India",
   ],
   openGraph: {
+    images: ["/images/og-default.png"],
     title: "Hire QA Engineers & Software Testers from India",
     description:
       "QA engineers who care about quality, not just test cases. Manual, automation, performance, and security testing.",

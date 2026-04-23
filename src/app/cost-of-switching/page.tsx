@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     "staff augmentation transition",
   ],
   openGraph: {
+    images: ["/images/og-default.png"],
     title: "Cost of Switching Tech Partners",
     description:
       "Switching offshore tech partners costs more than you think. Here is the real breakdown.",

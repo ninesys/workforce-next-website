@@ -24,6 +24,7 @@ export const metadata: Metadata = {
     "RAG evaluation",
   ],
   openGraph: {
+    images: ["/images/og-default.png"],
     title: "Hire RAG Pipeline Developers from India",
     description:
       "Hire pre-vetted RAG pipeline developers from India. SethAI-screened for skills and longevity.",

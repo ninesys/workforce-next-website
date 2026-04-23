@@ -24,6 +24,7 @@ export const metadata: Metadata = {
     "Kafka developers India",
   ],
   openGraph: {
+    images: ["/images/og-default.png"],
     title: "Hire Data Engineers from India",
     description:
       "Pre-vetted data engineers skilled in dbt, Airflow, Spark, Snowflake, and modern data lakehouses. SethAI-screened.",

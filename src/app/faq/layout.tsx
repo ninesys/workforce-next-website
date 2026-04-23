@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     "Engineering Pod FAQ",
   ],
   openGraph: {
+    images: ["/images/og-default.png"],
     title: "FAQ - Hire Developers, SethAI, Remote Teams",
     description:
       "Answers about hiring dedicated developers from India, SethAI matching, vibe coding, engagement models, and remote team management.",

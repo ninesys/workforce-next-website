@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     "dedicated team retention",
   ],
   openGraph: {
+    images: ["/images/og-default.png"],
     title: "Why Teams Stay",
     description:
       "Our retention approach is built on three mechanisms: SethAI screening, context docs, and monthly advisory.",

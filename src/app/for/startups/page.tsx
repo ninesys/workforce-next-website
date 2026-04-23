@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     "staff augmentation for startups",
   ],
   openGraph: {
+    images: ["/images/og-default.png"],
     title: "Engineering Pods for Startups - Build Your Product Team in 30 Days",
     description:
       "Build a dedicated 3-8 person engineering pod in 30 days. 48-hour profile delivery via SethAI.",

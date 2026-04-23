@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     "SethAI matched developer",
   ],
   openGraph: {
+    images: ["/images/og-default.png"],
     title: "MVP Sprint for Founders - Idea to Working AI Product in 4 Weeks",
     description:
       "Get a senior developer matched by SethAI for a 4-week MVP sprint. Fixed scope, 1-week paid trial.",

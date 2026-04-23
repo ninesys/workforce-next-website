@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     "Workforce Next leadership",
   ],
   openGraph: {
+    images: ["/images/og-default.png"],
     title: "Gaurav - Founder and Solution Architect",
     description:
       "Gaurav is the founder of Workforce Next with 20 years in solution architecture and enterprise software.",

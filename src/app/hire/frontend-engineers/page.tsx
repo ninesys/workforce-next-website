@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     "performance optimization engineers",
   ],
   openGraph: {
+    images: ["/images/og-default.png"],
     title: "Hire Frontend Engineers from India",
     description:
       "Hire pre-vetted React, Next.js, and TypeScript engineers from India. SethAI-screened for skills and longevity.",

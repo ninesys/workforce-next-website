@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     "production AI code engineers",
   ],
   openGraph: {
+    images: ["/images/og-default.png"],
     title: "Hire Vibe-Code Optimisation Engineers from India",
     description:
       "Engineers who turn AI-generated drafts into production-ready code. Cursor, Copilot, v0 audit specialists.",

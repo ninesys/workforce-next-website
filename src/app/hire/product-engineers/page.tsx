@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     "hire SaaS developers India",
   ],
   openGraph: {
+    images: ["/images/og-default.png"],
     title: "Hire Product Engineers from India",
     description:
       "Engineers matched by industry context, not just tech stack. Fintech, logistics, healthtech, SaaS and more.",

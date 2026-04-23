@@ -6,6 +6,7 @@ export const metadata: Metadata = {
     "Terms of Use for Workforce Next website and services. Read our terms governing the use of workforcenext.in.",
   keywords: ["terms of use", "terms of service", "workforce next terms"],
   openGraph: {
+    images: ["/images/og-default.png"],
     title: "Terms of Use - Workforce Next",
     description:
       "Terms of Use for Workforce Next website and services.",
