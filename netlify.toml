@@ -22,55 +22,79 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
+# --- Canonicalize www and http to https+apex (consolidates duplicate discovery) ---
+[[redirects]]
+  from = "https://www.workforcenext.in/*"
+  to = "https://workforcenext.in/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.workforcenext.in/*"
+  to = "https://workforcenext.in/:splat"
+  status = 301
+  force = true
+
+# --- Legacy root-level slugs that Google still has indexed ---
+[[redirects]]
+  from = "/how-to-hire-developers-in-india"
+  to = "/hire/ai-developers/"
+  status = 301
+
+[[redirects]]
+  from = "/how-to-hire-developers-in-india/"
+  to = "/hire/ai-developers/"
+  status = 301
+
 # --- Old hire pages -> new /hire/* URLs ---
 [[redirects]]
   from = "/hire-ai-developers"
-  to = "/hire/ai-developers"
+  to = "/hire/ai-developers/"
   status = 301
 
 [[redirects]]
   from = "/hire-ai-developers/"
-  to = "/hire/ai-developers"
+  to = "/hire/ai-developers/"
   status = 301
 
 [[redirects]]
   from = "/hire-dedicated-developers"
-  to = "/hire/ai-developers"
+  to = "/hire/ai-developers/"
   status = 301
 
 [[redirects]]
   from = "/hire-dedicated-developers/"
-  to = "/hire/ai-developers"
+  to = "/hire/ai-developers/"
   status = 301
 
 [[redirects]]
   from = "/hire-mobile-app-developers"
-  to = "/hire/frontend-engineers"
+  to = "/hire/frontend-engineers/"
   status = 301
 
 [[redirects]]
   from = "/hire-mobile-app-developers/"
-  to = "/hire/frontend-engineers"
+  to = "/hire/frontend-engineers/"
   status = 301
 
 [[redirects]]
   from = "/hire-software-developers-india"
-  to = "/hire/backend-engineers"
+  to = "/hire/backend-engineers/"
   status = 301
 
 [[redirects]]
   from = "/hire-software-developers-india/"
-  to = "/hire/backend-engineers"
+  to = "/hire/backend-engineers/"
   status = 301
 
 [[redirects]]
   from = "/hire-software-testers"
-  to = "/hire/backend-engineers"
+  to = "/hire/backend-engineers/"
   status = 301
 
 [[redirects]]
   from = "/hire-software-testers/"
-  to = "/hire/backend-engineers"
+  to = "/hire/backend-engineers/"
   status = 301
 
 # --- Old service pages -> homepage ---
@@ -82,59 +106,59 @@
 # --- Old blog posts -> new blog listing ---
 [[redirects]]
   from = "/blog/ai-driven-soil-testing-spectroscopy-iot"
-  to = "/blog"
+  to = "/blog/"
   status = 301
 
 [[redirects]]
   from = "/blog/convert-electronic-product-to-iot-smart-device"
-  to = "/blog"
+  to = "/blog/"
   status = 301
 
 [[redirects]]
   from = "/blog/how-to-hire-developers-in-india"
-  to = "/blog/dedicated-developer-vs-freelancer-vs-agency-total-cost"
+  to = "/blog/dedicated-developer-vs-freelancer-vs-agency-total-cost/"
   status = 301
 
 [[redirects]]
   from = "/blog/why-enterprise-ai-projects-fail"
-  to = "/blog"
+  to = "/blog/"
   status = 301
 
 [[redirects]]
   from = "/blog/agentic-ai-vs-traditional-automation"
-  to = "/blog/vibe-coding-explained-when-to-use-it"
+  to = "/blog/vibe-coding-explained-when-to-use-it/"
   status = 301
 
 [[redirects]]
   from = "/blog/workflow-automation-upgrade-signs"
-  to = "/blog"
+  to = "/blog/"
   status = 301
 
 [[redirects]]
   from = "/blog/iot-platform-vendor-lock-in"
-  to = "/blog"
+  to = "/blog/"
   status = 301
 
 [[redirects]]
   from = "/blog/real-time-analytics-manufacturing"
-  to = "/blog"
+  to = "/blog/"
   status = 301
 
 [[redirects]]
   from = "/blog/hidden-cost-legacy-integration"
-  to = "/blog/real-cost-of-switching-tech-partners"
+  to = "/blog/real-cost-of-switching-tech-partners/"
   status = 301
 
 # --- Old blog categories -> blog listing ---
 [[redirects]]
   from = "/blog/category/*"
-  to = "/blog"
+  to = "/blog/"
   status = 301
 
 # --- Legacy page redirects from prompt ---
 [[redirects]]
   from = "/pricing.html"
-  to = "/products/employee-productivity-intelligence"
+  to = "/products/employee-productivity-intelligence/"
   status = 301
 
 [[redirects]]
@@ -144,144 +168,144 @@
 
 [[redirects]]
   from = "/contact.html"
-  to = "/contact"
+  to = "/contact/"
   status = 301
 
 [[redirects]]
   from = "/screen-monitoring-software/"
-  to = "/products/employee-productivity-intelligence"
+  to = "/products/employee-productivity-intelligence/"
   status = 301
 
 [[redirects]]
   from = "/workforce-analytics.html"
-  to = "/products/employee-productivity-intelligence"
+  to = "/products/employee-productivity-intelligence/"
   status = 301
 
 [[redirects]]
   from = "/employee-productivity-analytics.html"
-  to = "/products/employee-productivity-intelligence"
+  to = "/products/employee-productivity-intelligence/"
   status = 301
 
 [[redirects]]
   from = "/how-employee-monitoring-works.html"
-  to = "/products/employee-productivity-intelligence"
+  to = "/products/employee-productivity-intelligence/"
   status = 301
 
 # --- Old hire slugs from previous site ---
 [[redirects]]
   from = "/hire-an-ai-developer/"
-  to = "/hire/ai-developers"
+  to = "/hire/ai-developers/"
   status = 301
 
 [[redirects]]
   from = "/hire-dedicated-llm-developers/"
-  to = "/hire/ai-developers"
+  to = "/hire/ai-developers/"
   status = 301
 
 [[redirects]]
   from = "/services/hire-data-and-ai-experts/"
-  to = "/hire/ai-developers"
+  to = "/hire/ai-developers/"
   status = 301
 
 [[redirects]]
   from = "/hire-android-developer/"
-  to = "/hire/frontend-engineers"
+  to = "/hire/frontend-engineers/"
   status = 301
 
 [[redirects]]
   from = "/hire-unity-developer/"
-  to = "/hire/frontend-engineers"
+  to = "/hire/frontend-engineers/"
   status = 301
 
 [[redirects]]
   from = "/how-to-hire-mobile-app-developers/"
-  to = "/hire/frontend-engineers"
+  to = "/hire/frontend-engineers/"
   status = 301
 
 [[redirects]]
   from = "/services/hire-qa-testers/"
-  to = "/hire/backend-engineers"
+  to = "/hire/backend-engineers/"
   status = 301
 
 [[redirects]]
   from = "/how-to-hire-developers-in-india/"
-  to = "/hire/backend-engineers"
+  to = "/hire/backend-engineers/"
   status = 301
 
 [[redirects]]
   from = "/it-staffing-companies-in-india/"
-  to = "/hire/backend-engineers"
+  to = "/hire/backend-engineers/"
   status = 301
 
 [[redirects]]
   from = "/cost-to-hire-a-software-developer/"
-  to = "/hire/backend-engineers"
+  to = "/hire/backend-engineers/"
   status = 301
 
 [[redirects]]
   from = "/how-to-hire-a-full-stack-developer/"
-  to = "/hire/backend-engineers"
+  to = "/hire/backend-engineers/"
   status = 301
 
 [[redirects]]
   from = "/hire-python-developers/"
-  to = "/hire/backend-engineers"
+  to = "/hire/backend-engineers/"
   status = 301
 
 [[redirects]]
   from = "/hire-react-developers/"
-  to = "/hire/frontend-engineers"
+  to = "/hire/frontend-engineers/"
   status = 301
 
 [[redirects]]
   from = "/services/hire-frontend-developers/"
-  to = "/hire/frontend-engineers"
+  to = "/hire/frontend-engineers/"
   status = 301
 
 [[redirects]]
   from = "/hire-remote-developers/"
-  to = "/hire/ai-developers"
+  to = "/hire/ai-developers/"
   status = 301
 
 [[redirects]]
   from = "/hire-specialized-developers/"
-  to = "/hire/ai-developers"
+  to = "/hire/ai-developers/"
   status = 301
 
 [[redirects]]
   from = "/complete-guide-to-hiring-developers/"
-  to = "/hire/ai-developers"
+  to = "/hire/ai-developers/"
   status = 301
 
 # --- Old .html pages ---
 [[redirects]]
   from = "/about.html"
-  to = "/about"
+  to = "/about/"
   status = 301
 
 [[redirects]]
   from = "/privacy-policy.html"
-  to = "/privacy-policy"
+  to = "/privacy-policy/"
   status = 301
 
 [[redirects]]
   from = "/terms.html"
-  to = "/terms-of-use"
+  to = "/terms-of-use/"
   status = 301
 
 [[redirects]]
   from = "/cancellation-refund.html"
-  to = "/terms-of-use"
+  to = "/terms-of-use/"
   status = 301
 
 [[redirects]]
   from = "/careers.html"
-  to = "/careers"
+  to = "/careers/"
   status = 301
 
 [[redirects]]
   from = "/book-demo.html"
-  to = "/contact"
+  to = "/contact/"
   status = 301
 
 [[redirects]]
@@ -301,37 +325,37 @@
 
 [[redirects]]
   from = "/blog.html"
-  to = "/blog"
+  to = "/blog/"
   status = 301
 
 [[redirects]]
   from = "/employeemonitoring-faq.html"
-  to = "/faq"
+  to = "/faq/"
   status = 301
 
 [[redirects]]
   from = "/workforce-analytics-software.html"
-  to = "/products/employee-productivity-intelligence"
+  to = "/products/employee-productivity-intelligence/"
   status = 301
 
 [[redirects]]
   from = "/fieldforce-analytics-software.html"
-  to = "/products/employee-productivity-intelligence"
+  to = "/products/employee-productivity-intelligence/"
   status = 301
 
 [[redirects]]
   from = "/time-tracking-software.html"
-  to = "/products/employee-productivity-intelligence"
+  to = "/products/employee-productivity-intelligence/"
   status = 301
 
 [[redirects]]
   from = "/why-workforce-next.html"
-  to = "/why-teams-stay"
+  to = "/why-teams-stay/"
   status = 301
 
 [[redirects]]
   from = "/task-management.html"
-  to = "/products/employee-productivity-intelligence"
+  to = "/products/employee-productivity-intelligence/"
   status = 301
 
 [[redirects]]
@@ -342,32 +366,32 @@
 # --- Old /topics/ pages ---
 [[redirects]]
   from = "/topics/monitoring.html"
-  to = "/products/employee-productivity-intelligence"
+  to = "/products/employee-productivity-intelligence/"
   status = 301
 
 [[redirects]]
   from = "/topics/automated-timesheets.html"
-  to = "/products/employee-productivity-intelligence"
+  to = "/products/employee-productivity-intelligence/"
   status = 301
 
 [[redirects]]
   from = "/topics/productivity-analytics.html"
-  to = "/products/employee-productivity-intelligence"
+  to = "/products/employee-productivity-intelligence/"
   status = 301
 
 [[redirects]]
   from = "/topics/workforce-analytics.html"
-  to = "/products/employee-productivity-intelligence"
+  to = "/products/employee-productivity-intelligence/"
   status = 301
 
 [[redirects]]
   from = "/topics/dlp.html"
-  to = "/products/employee-productivity-intelligence"
+  to = "/products/employee-productivity-intelligence/"
   status = 301
 
 [[redirects]]
   from = "/topics/how-to-create-work-culture.html"
-  to = "/blog"
+  to = "/blog/"
   status = 301
 
 [[redirects]]
@@ -383,28 +407,28 @@
 # --- Old /blogs/ paths (note: different from /blog/) ---
 [[redirects]]
   from = "/blogs/*"
-  to = "/blog"
+  to = "/blog/"
   status = 301
 
 # --- Old blog pagination & posts ---
 [[redirects]]
   from = "/blog/page/*"
-  to = "/blog"
+  to = "/blog/"
   status = 301
 
 [[redirects]]
   from = "/blog/page2/"
-  to = "/blog"
+  to = "/blog/"
   status = 301
 
 [[redirects]]
   from = "/blog/page4/"
-  to = "/blog"
+  to = "/blog/"
   status = 301
 
 [[redirects]]
   from = "/blog/stealth-employee-monitoring-software/"
-  to = "/blog"
+  to = "/blog/"
   status = 301
 
 # --- Old top-level service/category pages ---
@@ -435,82 +459,82 @@
 
 [[redirects]]
   from = "/hire-data-and-ai-experts/"
-  to = "/hire/ai-developers"
+  to = "/hire/ai-developers/"
   status = 301
 
 [[redirects]]
   from = "/category/*"
-  to = "/blog"
+  to = "/blog/"
   status = 301
 
 [[redirects]]
   from = "/author/*"
-  to = "/blog"
+  to = "/blog/"
   status = 301
 
 # --- Old job pages ---
 [[redirects]]
   from = "/jobs/*"
-  to = "/careers"
+  to = "/careers/"
   status = 301
 
 [[redirects]]
   from = "/current-jobs/"
-  to = "/careers"
+  to = "/careers/"
   status = 301
 
 [[redirects]]
   from = "/job-openings/"
-  to = "/careers"
+  to = "/careers/"
   status = 301
 
 # --- Old employee monitoring blog posts (top-level) ---
 [[redirects]]
   from = "/top-employee-monitoring-tools/"
-  to = "/products/employee-productivity-intelligence"
+  to = "/products/employee-productivity-intelligence/"
   status = 301
 
 [[redirects]]
   from = "/software-to-monitor-employees-working-from-home/"
-  to = "/products/employee-productivity-intelligence"
+  to = "/products/employee-productivity-intelligence/"
   status = 301
 
 [[redirects]]
   from = "/stealth-employee-monitoring-software/"
-  to = "/products/employee-productivity-intelligence"
+  to = "/products/employee-productivity-intelligence/"
   status = 301
 
 [[redirects]]
   from = "/best-employee-monitoring-software/"
-  to = "/products/employee-productivity-intelligence"
+  to = "/products/employee-productivity-intelligence/"
   status = 301
 
 # --- Old /about/ with trailing slash ---
 [[redirects]]
   from = "/about/"
-  to = "/about"
+  to = "/about/"
   status = 301
 
 # --- Terms with trailing slash ---
 [[redirects]]
   from = "/terms-and-conditions/"
-  to = "/terms-of-use"
+  to = "/terms-of-use/"
   status = 301
 
 # --- More old blog posts under /blog/ ---
 [[redirects]]
   from = "/blog/software-to-monitor-employees-working-from-home/"
-  to = "/blog"
+  to = "/blog/"
   status = 301
 
 [[redirects]]
   from = "/blog/screen-monitoring-software/"
-  to = "/blog"
+  to = "/blog/"
   status = 301
 
 [[redirects]]
   from = "/blog/top-employee-monitoring-tools/"
-  to = "/blog"
+  to = "/blog/"
   status = 301
 
 # --- More old top-level pages ---
@@ -521,12 +545,12 @@
 
 [[redirects]]
   from = "/employee-monitoring.html"
-  to = "/products/employee-productivity-intelligence"
+  to = "/products/employee-productivity-intelligence/"
   status = 301
 
 [[redirects]]
   from = "/hire-frontend-developers/"
-  to = "/hire/frontend-engineers"
+  to = "/hire/frontend-engineers/"
   status = 301
 
 [[redirects]]
