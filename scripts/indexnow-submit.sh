@@ -38,6 +38,20 @@ URLS=(
   "https://${HOST}/careers/"
   "https://${HOST}/privacy-policy/"
   "https://${HOST}/terms-of-use/"
+  # Blog listing
+  "https://${HOST}/blog/"
+  # Blog posts
+  "https://${HOST}/blog/how-does-ai-developer-matching-actually-work/"
+  "https://${HOST}/blog/best-ai-developer-matching-tools-2026/"
+  "https://${HOST}/blog/what-is-lifestyle-fit-matching-in-developer-hiring/"
+  "https://${HOST}/blog/why-offshore-developers-keep-leaving/"
+  "https://${HOST}/blog/vibe-coding-explained-when-to-use-it/"
+  "https://${HOST}/blog/context-first-matching-why-tech-stack-is-not-enough/"
+  "https://${HOST}/blog/real-cost-of-switching-tech-partners/"
+  "https://${HOST}/blog/how-to-build-ai-mvp-4-weeks-offshore-developer/"
+  "https://${HOST}/blog/dedicated-developer-vs-freelancer-vs-agency-total-cost/"
+  "https://${HOST}/blog/ai-developer-interview-questions-what-to-ask/"
+  "https://${HOST}/blog/rag-vs-fine-tuning-when-to-use-which/"
 )
 
 # Build JSON payload
