@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { blogPosts } from "@/data/blogPosts";
 import { generateBreadcrumbSchema } from "@/lib/jsonLd";
+import { generateTocAndInjectIds } from "@/lib/blogToc";
 import Button from "@/components/ui/Button";
 
 interface Props {
@@ -129,6 +130,9 @@ export default function BlogPostPage({ params }: Props) {
     .filter((p) => p.category === post.category && p.slug !== post.slug)
     .slice(0, 3);
 
+  // Generate Table of Contents from H2s and inject IDs into body for anchor navigation
+  const { body: bodyWithIds, toc } = generateTocAndInjectIds(post.body);
+
   return (
     <>
       <script
@@ -202,9 +206,34 @@ export default function BlogPostPage({ params }: Props) {
       {/* Article */}
       <article className="py-12 md:py-16 bg-white dark:bg-dark-900">
         <div className="container-custom max-w-3xl">
+          {toc.length >= 3 && (
+            <nav
+              aria-label="Table of contents"
+              className="mb-10 p-5 sm:p-6 rounded-xl border border-dark-50 dark:border-dark-700 bg-primary-50/40 dark:bg-dark-800/60"
+            >
+              <h2 className="text-sm font-extrabold uppercase tracking-wide text-dark-700 dark:text-dark-200 mb-4">
+                In this article
+              </h2>
+              <ol className="space-y-2 list-decimal list-inside marker:text-primary-500 marker:font-bold">
+                {toc.map((entry) => (
+                  <li
+                    key={entry.id}
+                    className="text-dark-700 dark:text-dark-200 leading-relaxed"
+                  >
+                    <a
+                      href={`#${entry.id}`}
+                      className="text-dark-700 dark:text-dark-200 hover:text-primary-500 dark:hover:text-primary-400 hover:underline"
+                    >
+                      {entry.text}
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </nav>
+          )}
           <div
-            className="prose prose-lg dark:prose-invert max-w-none prose-headings:font-extrabold prose-headings:text-dark-900 dark:prose-headings:text-dark-50 prose-p:text-dark-500 dark:prose-p:text-dark-300 prose-p:leading-relaxed prose-a:text-primary-500 prose-a:no-underline hover:prose-a:underline prose-strong:text-dark-900 dark:prose-strong:text-dark-100"
-            dangerouslySetInnerHTML={{ __html: post.body }}
+            className="prose prose-lg dark:prose-invert max-w-none prose-headings:font-extrabold prose-headings:text-dark-900 dark:prose-headings:text-dark-50 prose-h2:scroll-mt-24 prose-p:text-dark-600 dark:prose-p:text-dark-200 prose-p:leading-relaxed prose-a:text-primary-500 prose-a:no-underline hover:prose-a:underline prose-strong:text-dark-900 dark:prose-strong:text-dark-100"
+            dangerouslySetInnerHTML={{ __html: bodyWithIds }}
           />
         </div>
       </article>
