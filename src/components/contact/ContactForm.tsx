@@ -22,15 +22,10 @@ export default function ContactForm() {
     setError("");
 
     try {
-      const body = new URLSearchParams({
-        "form-name": "contact",
-        ...formData,
-      });
-
-      const res = await fetch("/__forms.html", {
+      const res = await fetch("/api/submit-form", {
         method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: body.toString(),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ "form-name": "contact", ...formData }),
       });
 
       if (res.ok) {

@@ -95,11 +95,11 @@ export default function PrivacyPolicyPage() {
               Data Storage & Security
             </h2>
             <p className="text-slate-600 leading-relaxed">
-              Form submissions are securely processed through our hosting
-              provider (Netlify). We take reasonable measures to protect your
-              information from unauthorized access, alteration, or destruction.
-              However, no method of electronic transmission or storage is 100%
-              secure.
+              Form submissions are delivered over HTTPS to our serverless
+              backend on Vercel and emailed through Amazon SES. We take
+              reasonable measures to protect your information from unauthorized
+              access, alteration, or destruction. However, no method of
+              electronic transmission or storage is 100% secure.
             </p>
 
             <h2 className="text-2xl font-heading font-bold text-slate-900 mt-10">
