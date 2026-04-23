@@ -49,7 +49,7 @@ export default function GauravPage() {
     },
     url: `${siteMetadata.url}/about/gaurav/`,
     sameAs: [
-      "https://www.linkedin.com/in/gaurav-workforce-next",
+      "https://www.linkedin.com/in/post2seth",
     ],
     address: {
       "@type": "PostalAddress",
@@ -103,7 +103,7 @@ export default function GauravPage() {
           </div>
           <div className="mt-6">
             <Link
-              href="https://www.linkedin.com/in/gaurav-workforce-next"
+              href="https://www.linkedin.com/in/post2seth"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-primary-500 hover:text-primary-600 font-medium transition-colors"
