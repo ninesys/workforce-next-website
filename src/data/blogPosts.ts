@@ -37,9 +37,9 @@ export const blogPosts: BlogPost[] = [
     title: "How Does AI Developer Matching Actually Work?",
     excerpt:
       "AI developer matching has two generations. Gen 1 parses resumes for skills. Gen 2 evaluates lifestyle and behavioral fit. Here is the step-by-step pipeline each uses, where each one breaks, and how to tell them apart.",
-    body: `<p>AI developer matching is the automated process of scoring and ranking candidates against a role using structured signals instead of manual resume review. In 2026, two generations of tools do this very differently: Gen 1 matches on skills extracted from resumes, Gen 2 matches on 12 lifestyle and behavioral parameters alongside skills. Both follow a similar pipeline but disagree on what data counts as signal.</p>
+    body: `<p>AI developer matching is the automated process of scoring and ranking candidates against a role using structured signals instead of manual resume review. In 2026, <a href="/blog/what-is-lifestyle-fit-matching-in-developer-hiring/#why-does-skills-only-ai-matching-keep-failing">two generations of tools</a> do this very differently: Gen 1 matches on skills extracted from resumes, Gen 2 matches on 12 lifestyle and behavioral parameters alongside skills. Both follow a similar pipeline but disagree on what data counts as signal.</p>
 
-<p>This post walks through the actual steps inside a modern AI matching system, shows where each step breaks in Gen 1 tools, and explains how to evaluate which generation of tool your team actually needs.</p>
+<p>If the Gen 1 and Gen 2 terminology is new to you, start with our primer on <a href="/blog/what-is-lifestyle-fit-matching-in-developer-hiring">what lifestyle-fit matching is and why skills-only AI keeps failing</a>. That post defines the category and names the Gen 1 tools (Eightfold, SeekOut, HireEZ) and why the industry is shifting toward Gen 2. This post picks up from there and walks through the actual six-stage pipeline inside every AI matching system and where each stage breaks.</p>
 
 <h2>What happens when you submit a role to an AI matching tool?</h2>
 <p>Every AI developer matching system, Gen 1 or Gen 2, follows the same six-stage pipeline. The stages are the same. The inputs and scoring weights are what differ.</p>
@@ -185,6 +185,9 @@ export const blogPosts: BlogPost[] = [
   <li><strong>Best for.</strong> The type of buyer this tool genuinely serves, not the one it claims.</li>
 </ol>
 <p>Data comes from public documentation, vendor disclosures, customer reviews on G2 and Capterra, and our own experience as a competitor in the same category. Where we disagree with a vendor's positioning, we say so.</p>
+
+<h2>A note on "Gen 1" and "Gen 2" before the table</h2>
+<p>The Category column below uses two labels you will see throughout this post: Gen 1 and Gen 2. Gen 1 tools (Eightfold, SeekOut, HireEZ) match candidates to roles using skills parsed from resumes and public profile data. Gen 2 tools (SethAI and a few emerging others) add behavioral and lifestyle parameters such as timezone overlap, communication style, industry depth, and retention signals. If this is new to you, read our full primer on <a href="/blog/what-is-lifestyle-fit-matching-in-developer-hiring">what lifestyle-fit matching is and why skills-only AI keeps failing</a> before continuing.</p>
 
 <h2>Quick comparison table</h2>
 <table>
