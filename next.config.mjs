@@ -1,9 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   trailingSlash: true,
-  // Let middleware.ts be the sole source of redirects so legacy
-  // URLs resolve in a single hop regardless of trailing slash.
-  skipTrailingSlashRedirect: true,
   images: { unoptimized: true },
   async redirects() {
     // Host-level canonicalization only. All path-based legacy redirects

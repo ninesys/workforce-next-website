@@ -123,8 +123,6 @@ const PREFIX: Array<[string, string]> = [
 const stripTrailingSlash = (p: string) =>
   p.length > 1 && p.endsWith("/") ? p.slice(0, -1) : p;
 
-const HAS_EXTENSION = /\.[a-zA-Z0-9]+$/;
-
 export function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;
 
@@ -135,33 +133,25 @@ export function middleware(req: NextRequest) {
 
   const key = stripTrailingSlash(pathname);
 
-  // 1. Exact legacy match (single hop regardless of trailing slash).
+  // Exact legacy match.
   const exact = EXACT[key];
   if (exact) {
     return NextResponse.redirect(new URL(exact, req.url), 308);
   }
 
-  // 2. Prefix legacy match.
+  // Prefix legacy match.
   for (const [prefix, target] of PREFIX) {
     if (key === prefix || key.startsWith(prefix + "/")) {
       return NextResponse.redirect(new URL(target, req.url), 308);
     }
   }
 
-  // 3. Old WordPress feeds at any depth.
+  // Old WordPress feeds at any depth (except exact /feed, handled above).
   if (key.endsWith("/feed") && key !== "/feed") {
     return NextResponse.redirect(new URL("/", req.url), 308);
   }
 
-  // 4. Trailing-slash canonicalization for content pages.
-  // Next's built-in redirect is off (skipTrailingSlashRedirect), so we
-  // add the slash here. Skip file-like paths.
-  if (!pathname.endsWith("/") && !HAS_EXTENSION.test(pathname)) {
-    const url = req.nextUrl.clone();
-    url.pathname = pathname + "/";
-    return NextResponse.redirect(url, 308);
-  }
-
+  // Trailing-slash normalization is delegated to Next.js (trailingSlash: true).
   return NextResponse.next();
 }
 
