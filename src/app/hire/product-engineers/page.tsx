@@ -1,7 +1,8 @@
 import { Metadata } from "next";
 import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
-import { generateServiceSchema, generateBreadcrumbSchema } from "@/lib/jsonLd";
+import { generateServiceSchema, generateBreadcrumbSchema, generateFAQPageSchema } from "@/lib/jsonLd";
+import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
   title: "Hire Product Engineers from India",
@@ -87,6 +88,64 @@ const process = [
   { step: "04", title: "One-week paid trial", description: "Real work on your actual codebase. You see how they think, communicate, and ship. If it is not a fit, we rematch at no cost." },
 ];
 
+const responsibilities = [
+  "Shipping features end-to-end: frontend, backend, database, and deployment, without waiting on handoffs",
+  "Reading the product roadmap and pushing back when specs will not serve real users",
+  "Owning code from first commit to production incident response, including on-call rotations when appropriate",
+  "Writing integration tests that catch regressions across the full stack, not just the layer they touched",
+  "Partnering with designers on interaction details and with PMs on scope tradeoffs before scope balloons",
+  "Refactoring legacy code incrementally while continuing to ship new features the business needs",
+  "Designing for the industry context: compliance in healthtech, auditability in fintech, reliability in logistics",
+  "Documenting architectural decisions so the next engineer inherits context rather than starting from zero",
+  "Shipping with AI-assisted tools (Cursor, Copilot) when appropriate and traditional craft when it is not",
+  "Operating as a teammate, not a contractor: showing up to standups, challenging bad ideas respectfully, caring about outcomes",
+];
+
+const faqItems: FAQ[] = [
+  {
+    question: "What is a product engineer and how is it different from a full stack engineer?",
+    answer:
+      "Full stack engineers are matched on technical stack: you need React and Node.js, they can write React and Node.js. Product engineers are matched on product and industry context: you are building a fintech platform, they have built fintech platforms. The overlap is real but the mental model differs. Product engineers ship faster because they already understand the problem space, not just the language.",
+    category: "hiring",
+    categoryLabel: "Hiring",
+  },
+  {
+    question: "How much does it cost to hire a product engineer in India?",
+    answer:
+      "Mid-level product engineers in India typically cost between 4,000 and 7,000 USD per month for full-time engagement. Senior engineers with deep industry expertise (fintech, healthtech, logistics) range from 7,000 to 11,000 USD per month. Pricing at Workforce Next includes an engineering manager, context docs, and PTO backup coverage.",
+    category: "hiring",
+    categoryLabel: "Hiring",
+  },
+  {
+    question: "What industries do your product engineers specialize in?",
+    answer:
+      "We have engineers with shipped experience in fintech (payments, lending, neobanks), healthtech (EHR, telemedicine, clinical workflows), logistics and supply chain (route optimization, warehouse, fleet), SaaS and B2B platforms (multi-tenant, billing, permissioning), e-commerce and retail (catalog, checkout, inventory), and edtech (LMS, adaptive learning, content delivery). We match you with engineers whose past products align with yours.",
+    category: "hiring",
+    categoryLabel: "Hiring",
+  },
+  {
+    question: "Can I choose between vibe coding and traditional engineering?",
+    answer:
+      "Yes. We support three modes. Vibe coding uses Cursor, Copilot, and AI-assisted tools for speed, best for MVPs and rapid prototyping. Traditional engineering is architecture-first, deliberate, test-driven, best for regulated industries and complex systems. Hybrid mixes AI-assisted scaffolding with hand-crafted business logic, which is where most of our teams land. You pick the approach and we match engineers who fit it.",
+    category: "hiring",
+    categoryLabel: "Hiring",
+  },
+  {
+    question: "How is industry context actually verified during screening?",
+    answer:
+      "SethAI cross-references candidates' past projects, roles, and descriptions against industry context signals. We also do human verification during the interview: asking candidates to walk through a feature they shipped in your industry, explain domain-specific tradeoffs, and critique an industry-specific architectural decision. Candidates who cannot discuss your domain fluently do not reach your shortlist.",
+    category: "hiring",
+    categoryLabel: "Hiring",
+  },
+  {
+    question: "How long does it take to hire a product engineer?",
+    answer:
+      "From intake call to trial week start, our median is 7 to 10 business days. SethAI returns a shortlist within 48 hours. Industry-specific matches may take 1 to 2 extra days depending on how rare the domain is. For common industries (SaaS, e-commerce, fintech), we often match within 48 hours.",
+    category: "hiring",
+    categoryLabel: "Hiring",
+  },
+];
+
 export default function ProductEngineersPage() {
   const serviceSchema = generateServiceSchema(
     "Hire Product Engineers from India",
@@ -100,6 +159,8 @@ export default function ProductEngineersPage() {
     { name: "Product Engineers", url: "https://workforcenext.in/hire/product-engineers/" },
   ]);
 
+  const faqSchema = generateFAQPageSchema(faqItems);
+
   return (
     <>
       <script
@@ -109,6 +170,10 @@ export default function ProductEngineersPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       {/* Hero */}
@@ -122,7 +187,7 @@ export default function ProductEngineersPage() {
             <br />
             <span className="text-primary-500">Not just your tech stack.</span>
           </h1>
-          <p className="mt-5 text-lg text-dark-400 dark:text-dark-300 max-w-2xl">
+          <p className="mt-5 text-lg text-dark-600 dark:text-dark-200 max-w-2xl">
             We don&apos;t put a Java developer on a Java project and call it a match.
             We find someone who has built products like yours, in your industry,
             and knows the problems your users actually face.
@@ -144,7 +209,7 @@ export default function ProductEngineersPage() {
           <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 mb-6">
             A Java developer is not just a Java developer
           </h2>
-          <div className="prose prose-lg dark:prose-invert max-w-none text-dark-500 dark:text-dark-300">
+          <div className="prose prose-lg dark:prose-invert max-w-none text-dark-700 dark:text-dark-200">
             <p>
               Most staffing companies match on technology. You need Java, they send
               you someone who writes Java. But that misses the point entirely.
@@ -187,12 +252,40 @@ export default function ProductEngineersPage() {
                 <h3 className="font-bold text-dark-900 dark:text-dark-50 mb-2">
                   {ind.name}
                 </h3>
-                <p className="text-sm text-dark-400 dark:text-dark-300 leading-relaxed">
+                <p className="text-sm text-dark-600 dark:text-dark-200 leading-relaxed">
                   {ind.example}
                 </p>
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Responsibilities */}
+      <section className="section-padding bg-white dark:bg-dark-900">
+        <div className="container-custom max-w-4xl">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 mb-6">
+            What a product engineer actually does
+          </h2>
+          <p className="text-dark-600 dark:text-dark-200 leading-relaxed mb-8">
+            The job description matters more than the job title. When you hire
+            a product engineer through Workforce Next, here is the work they
+            take ownership of:
+          </p>
+          <ul className="space-y-3">
+            {responsibilities.map((item) => (
+              <li
+                key={item}
+                className="flex gap-3 text-dark-600 dark:text-dark-200 leading-relaxed"
+              >
+                <span
+                  aria-hidden
+                  className="mt-2 h-1.5 w-1.5 rounded-full bg-primary-500 flex-shrink-0"
+                />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
@@ -206,7 +299,7 @@ export default function ProductEngineersPage() {
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-dark-900 dark:text-dark-50">
               Vibe coding, traditional, or both
             </h2>
-            <p className="mt-4 text-dark-400 dark:text-dark-300 max-w-2xl mx-auto">
+            <p className="mt-4 text-dark-600 dark:text-dark-200 max-w-2xl mx-auto">
               Your product engineers can work however you prefer. Fast AI-assisted
               development, deliberate hand-crafted code, or a mix of both.
             </p>
@@ -224,7 +317,7 @@ export default function ProductEngineersPage() {
                 <h3 className="text-xl font-bold text-dark-900 dark:text-dark-50">
                   {approach.title}
                 </h3>
-                <p className="mt-3 text-sm text-dark-400 dark:text-dark-300 leading-relaxed">
+                <p className="mt-3 text-sm text-dark-600 dark:text-dark-200 leading-relaxed">
                   {approach.description}
                 </p>
               </div>
@@ -251,7 +344,7 @@ export default function ProductEngineersPage() {
                 <h3 className="font-bold text-dark-900 dark:text-dark-50 mb-2">
                   {item.title}
                 </h3>
-                <p className="text-sm text-dark-400 dark:text-dark-300 leading-relaxed">
+                <p className="text-sm text-dark-600 dark:text-dark-200 leading-relaxed">
                   {item.description}
                 </p>
               </div>
@@ -282,10 +375,34 @@ export default function ProductEngineersPage() {
                   <h3 className="font-bold text-dark-900 dark:text-dark-50">
                     {step.title}
                   </h3>
-                  <p className="mt-1 text-sm text-dark-400 dark:text-dark-300 leading-relaxed">
+                  <p className="mt-1 text-sm text-dark-600 dark:text-dark-200 leading-relaxed">
                     {step.description}
                   </p>
                 </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="section-padding bg-primary-50 dark:bg-dark-800">
+        <div className="container-custom max-w-4xl">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 mb-8">
+            Common questions about hiring product engineers
+          </h2>
+          <div className="space-y-4">
+            {faqItems.map((faq) => (
+              <div
+                key={faq.question}
+                className="p-6 rounded-xl bg-white dark:bg-dark-900 border border-dark-50 dark:border-dark-700"
+              >
+                <h3 className="font-bold text-dark-900 dark:text-dark-50">
+                  {faq.question}
+                </h3>
+                <p className="mt-3 text-dark-600 dark:text-dark-200 leading-relaxed">
+                  {faq.answer}
+                </p>
               </div>
             ))}
           </div>

@@ -1,7 +1,8 @@
 import { Metadata } from "next";
 import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
-import { generateServiceSchema, generateBreadcrumbSchema } from "@/lib/jsonLd";
+import { generateServiceSchema, generateBreadcrumbSchema, generateFAQPageSchema } from "@/lib/jsonLd";
+import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
   title: "Hire QA Engineers & Software Testers from India",
@@ -91,6 +92,64 @@ const process = [
   { step: "04", title: "One-week paid trial", description: "Your QA engineer works on real bugs and real test cases for a week. If you are not happy, we rematch at no cost. No risk." },
 ];
 
+const responsibilities = [
+  "Writing and executing manual test plans that cover the happy path, the expected edges, and the user actions nobody predicted",
+  "Building automated test suites in Playwright, Cypress, Selenium, or Appium that stay green when the UI changes reasonably",
+  "Reviewing PRs for testability: flagging missing test coverage, unclear error handling, and risky patterns before they ship",
+  "Creating API test suites in Postman, REST Assured, or Pact to validate contracts between services and third parties",
+  "Designing load tests with k6, JMeter, or Locust that simulate realistic traffic and surface bottlenecks before customers do",
+  "Running security tests against OWASP Top 10: SQL injection, XSS, CSRF, SSRF, auth bypasses, and data exposure",
+  "Maintaining CI/CD quality gates: preventing broken builds from reaching staging and flaky tests from blocking releases",
+  "Filing detailed bug reports with reproduction steps, environment details, and suggested root cause when possible",
+  "Partnering with product and engineering on test strategy for new features before code gets written",
+  "Investigating intermittent failures that nobody else has time to debug, often the most valuable work a QA engineer does",
+];
+
+const faqItems: FAQ[] = [
+  {
+    question: "How much does it cost to hire a QA engineer in India?",
+    answer:
+      "Mid-level QA engineers in India typically cost between 2,800 and 4,500 USD per month for full-time engagement. Senior automation engineers with performance and security testing depth range from 4,500 to 7,500 USD per month. Pricing at Workforce Next includes an engineering manager, context docs, and PTO backup coverage.",
+    category: "hiring",
+    categoryLabel: "Hiring",
+  },
+  {
+    question: "Should I hire a manual tester, an automation engineer, or both?",
+    answer:
+      "It depends on product maturity. New products benefit from manual and exploratory testing to find UX and flow issues. Stable products benefit from automation to catch regressions. Most teams need both: manual for edge cases and new features, automation for regression. Our QA engineers are usually comfortable with both and will recommend the right mix for your stage.",
+    category: "hiring",
+    categoryLabel: "Hiring",
+  },
+  {
+    question: "What test automation frameworks do your QA engineers use?",
+    answer:
+      "Our engineers work in Playwright and Cypress for web, Appium and Espresso for mobile, REST Assured and Postman for APIs, and Pact for contract testing. They also have experience with k6, JMeter, and Locust for performance testing. We match engineers whose primary framework aligns with your stack rather than forcing a migration.",
+    category: "hiring",
+    categoryLabel: "Hiring",
+  },
+  {
+    question: "Can your QA engineers do security testing?",
+    answer:
+      "Yes, though depth varies. Every senior QA engineer we place can run OWASP Top 10 checks, use Burp Suite and ZAP, and handle baseline authentication and injection testing. For deep penetration testing, we match engineers with specific security certifications and experience. Security testing is often combined with our vibe-code audit work for AI-generated code.",
+    category: "hiring",
+    categoryLabel: "Hiring",
+  },
+  {
+    question: "Can your QA engineers work in my timezone?",
+    answer:
+      "Yes. Our QA engineers routinely overlap with US Eastern, US Pacific, UK, and European timezones. Standard engagements include at least 4 hours of daily overlap. For US Pacific customers we arrange shifted schedules to cover standups, sprint reviews, and bug triage.",
+    category: "hiring",
+    categoryLabel: "Hiring",
+  },
+  {
+    question: "How long does it take to hire a QA engineer?",
+    answer:
+      "From intake call to trial week start, our median is 7 to 10 business days. SethAI returns a shortlist within 48 hours. Industry-specific matches (fintech, healthtech) may take 1 to 2 extra days. For common test automation needs, we often match within 48 hours from a pre-screened bench.",
+    category: "hiring",
+    categoryLabel: "Hiring",
+  },
+];
+
 export default function QATestersPage() {
   const serviceSchema = generateServiceSchema(
     "Hire QA Engineers & Software Testers from India",
@@ -104,6 +163,8 @@ export default function QATestersPage() {
     { name: "QA Engineers & Testers", url: "https://workforcenext.in/hire/qa-testers/" },
   ]);
 
+  const faqSchema = generateFAQPageSchema(faqItems);
+
   return (
     <>
       <script
@@ -113,6 +174,10 @@ export default function QATestersPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       {/* Hero */}
@@ -126,7 +191,7 @@ export default function QATestersPage() {
             <br />
             <span className="text-primary-500">before your customers do.</span>
           </h1>
-          <p className="mt-5 text-lg text-dark-400 dark:text-dark-300 max-w-2xl">
+          <p className="mt-5 text-lg text-dark-600 dark:text-dark-200 max-w-2xl">
             Not script-followers. Testers who actually care about quality. They
             explore your product like a real user, automate what matters, and catch
             the bugs that cost you customers.
@@ -163,7 +228,7 @@ export default function QATestersPage() {
                 <h3 className="text-lg sm:text-xl font-bold text-dark-900 dark:text-dark-50">
                   {type.title}
                 </h3>
-                <p className="mt-2 text-dark-400 dark:text-dark-300 leading-relaxed">
+                <p className="mt-2 text-dark-600 dark:text-dark-200 leading-relaxed">
                   {type.description}
                 </p>
                 <div className="mt-4 flex flex-wrap gap-2">
@@ -179,6 +244,34 @@ export default function QATestersPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Responsibilities */}
+      <section className="section-padding bg-white dark:bg-dark-900">
+        <div className="container-custom max-w-4xl">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 mb-6">
+            What a QA engineer actually does
+          </h2>
+          <p className="text-dark-600 dark:text-dark-200 leading-relaxed mb-8">
+            The job description matters more than the job title. When you hire
+            a QA engineer through Workforce Next, here is the work they take
+            ownership of:
+          </p>
+          <ul className="space-y-3">
+            {responsibilities.map((item) => (
+              <li
+                key={item}
+                className="flex gap-3 text-dark-600 dark:text-dark-200 leading-relaxed"
+              >
+                <span
+                  aria-hidden
+                  className="mt-2 h-1.5 w-1.5 rounded-full bg-primary-500 flex-shrink-0"
+                />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
@@ -203,7 +296,7 @@ export default function QATestersPage() {
                 <h3 className="font-bold text-dark-900 dark:text-dark-50 mb-2">
                   {item.title}
                 </h3>
-                <p className="text-sm text-dark-400 dark:text-dark-300 leading-relaxed">
+                <p className="text-sm text-dark-600 dark:text-dark-200 leading-relaxed">
                   {item.description}
                 </p>
               </div>
@@ -234,10 +327,34 @@ export default function QATestersPage() {
                   <h3 className="font-bold text-dark-900 dark:text-dark-50">
                     {step.title}
                   </h3>
-                  <p className="mt-1 text-sm text-dark-400 dark:text-dark-300 leading-relaxed">
+                  <p className="mt-1 text-sm text-dark-600 dark:text-dark-200 leading-relaxed">
                     {step.description}
                   </p>
                 </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="section-padding bg-primary-50 dark:bg-dark-800">
+        <div className="container-custom max-w-4xl">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 mb-8">
+            Common questions about hiring QA engineers
+          </h2>
+          <div className="space-y-4">
+            {faqItems.map((faq) => (
+              <div
+                key={faq.question}
+                className="p-6 rounded-xl bg-white dark:bg-dark-900 border border-dark-50 dark:border-dark-700"
+              >
+                <h3 className="font-bold text-dark-900 dark:text-dark-50">
+                  {faq.question}
+                </h3>
+                <p className="mt-3 text-dark-600 dark:text-dark-200 leading-relaxed">
+                  {faq.answer}
+                </p>
               </div>
             ))}
           </div>
