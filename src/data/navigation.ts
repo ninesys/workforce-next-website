@@ -5,10 +5,12 @@ export const mainNavItems: NavItem[] = [
     label: "Hire Developers",
     href: "/hire",
     children: [
+      { label: "Full Stack Developers", href: "/hire/fullstack-developers" },
       { label: "AI & Agentic Developers", href: "/hire/ai-developers" },
       { label: "Data Engineers", href: "/hire/data-engineers" },
       { label: "Frontend Engineers", href: "/hire/frontend-engineers" },
       { label: "Backend Engineers", href: "/hire/backend-engineers" },
+      { label: "FastAPI Developers", href: "/hire/fastapi-developers" },
       { label: "Product Engineers", href: "/hire/product-engineers" },
       { label: "Vibe-Code Engineer", href: "/hire/vibe-code-engineer" },
       { label: "Cloud Cost Engineer", href: "/hire/cloud-cost-engineer" },
@@ -34,10 +36,12 @@ export const mainNavItems: NavItem[] = [
 
 export const footerLinks = {
   services: [
+    { label: "Full Stack Developers", href: "/hire/fullstack-developers" },
     { label: "AI & Agentic Developers", href: "/hire/ai-developers" },
     { label: "Data Engineers", href: "/hire/data-engineers" },
     { label: "Frontend Engineers", href: "/hire/frontend-engineers" },
     { label: "Backend Engineers", href: "/hire/backend-engineers" },
+    { label: "FastAPI Developers", href: "/hire/fastapi-developers" },
     { label: "Product Engineers", href: "/hire/product-engineers" },
     { label: "Vibe-Code Engineer", href: "/hire/vibe-code-engineer" },
     { label: "Cloud Cost Engineer", href: "/hire/cloud-cost-engineer" },

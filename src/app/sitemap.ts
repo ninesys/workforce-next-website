@@ -3,7 +3,7 @@ import { blogPosts } from "@/data/blogPosts";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://workforcenext.in";
-  const now = new Date("2026-04-09");
+  const now = new Date();
 
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: `${baseUrl}/`, lastModified: now, changeFrequency: "weekly", priority: 1.0 },
@@ -19,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/hire/langchain-developers/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/hire/rag-developers/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/hire/fastapi-developers/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/hire/fullstack-developers/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     // Segment pages
     { url: `${baseUrl}/for/founders/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/for/startups/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
