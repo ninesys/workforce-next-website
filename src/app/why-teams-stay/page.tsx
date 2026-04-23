@@ -4,7 +4,7 @@ import Badge from "@/components/ui/Badge";
 import { generateBreadcrumbSchema } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
-  title: "Why Teams Stay - Retention Philosophy | Workforce Next",
+  title: "Why Teams Stay - Retention Philosophy",
   description:
     "Our retention approach is built on three mechanisms: SethAI screening for longevity, context documentation, and monthly engineering advisory check-ins. Here is why teams stay.",
   keywords: [
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "dedicated team retention",
   ],
   openGraph: {
-    title: "Why Teams Stay | Workforce Next",
+    title: "Why Teams Stay",
     description:
       "Our retention approach is built on three mechanisms: SethAI screening, context docs, and monthly advisory.",
   },

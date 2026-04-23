@@ -4,7 +4,7 @@ import Badge from "@/components/ui/Badge";
 import { generateBreadcrumbSchema } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
-  title: "Context Continuity Guarantee | Workforce Next",
+  title: "Context Continuity Guarantee",
   description:
     "If a developer ever leaves, our context documentation ensures a replacement is productive in days, not months. Codebase walkthroughs, domain glossaries, and architecture decision logs maintained for every engagement.",
   keywords: [
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "developer transition plan",
   ],
   openGraph: {
-    title: "Context Continuity Guarantee | Workforce Next",
+    title: "Context Continuity Guarantee",
     description:
       "If a developer leaves, our context docs get a replacement productive in days, not months.",
   },

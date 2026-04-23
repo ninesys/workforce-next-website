@@ -8,8 +8,7 @@ import {
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title:
-    "Cost of Switching Tech Partners - What It Actually Takes | Workforce Next",
+  title: "Cost of Switching Tech Partners - What It Actually Takes",
   description:
     "Switching offshore tech partners costs more than you think. Onboarding time, velocity dips, re-explanation overhead, and lost momentum. Here is the real breakdown.",
   keywords: [
@@ -22,7 +21,7 @@ export const metadata: Metadata = {
     "staff augmentation transition",
   ],
   openGraph: {
-    title: "Cost of Switching Tech Partners | Workforce Next",
+    title: "Cost of Switching Tech Partners",
     description:
       "Switching offshore tech partners costs more than you think. Here is the real breakdown.",
   },

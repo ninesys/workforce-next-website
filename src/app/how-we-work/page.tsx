@@ -7,7 +7,7 @@ import {
 } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
-  title: "How We Work - Build Your Remote Engineering Team | Workforce Next",
+  title: "How We Work - Build Your Remote Engineering Team",
   description:
     "Our 7-step process for building dedicated remote engineering teams that stay. From SethAI screening to structured onboarding and monthly advisory check-ins.",
   keywords: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     "hire developers India process",
   ],
   openGraph: {
-    title: "How We Work - Build Your Remote Engineering Team | Workforce Next",
+    title: "How We Work - Build Your Remote Engineering Team",
     description:
       "Our 7-step process for building dedicated remote engineering teams that stay.",
   },

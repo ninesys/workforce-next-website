@@ -9,7 +9,7 @@ import {
 import { siteMetadata } from "@/data/siteMetadata";
 
 export const metadata: Metadata = {
-  title: "Gaurav - Founder and Solution Architect | Workforce Next",
+  title: "Gaurav - Founder and Solution Architect",
   description:
     "Gaurav is the founder of Workforce Next and a solution architect with 20 years of experience in enterprise software. Based in Noida, India. He built SethAI to fix how teams are hired.",
   keywords: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     "Workforce Next leadership",
   ],
   openGraph: {
-    title: "Gaurav - Founder and Solution Architect | Workforce Next",
+    title: "Gaurav - Founder and Solution Architect",
     description:
       "Gaurav is the founder of Workforce Next with 20 years in solution architecture and enterprise software.",
   },
