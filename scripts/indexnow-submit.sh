@@ -41,6 +41,7 @@ URLS=(
   # Blog listing
   "https://${HOST}/blog/"
   # Blog posts
+  "https://${HOST}/blog/12-parameters-ai-matching-tools-should-evaluate/"
   "https://${HOST}/blog/how-does-ai-developer-matching-actually-work/"
   "https://${HOST}/blog/best-ai-developer-matching-tools-2026/"
   "https://${HOST}/blog/what-is-lifestyle-fit-matching-in-developer-hiring/"
@@ -52,6 +53,10 @@ URLS=(
   "https://${HOST}/blog/dedicated-developer-vs-freelancer-vs-agency-total-cost/"
   "https://${HOST}/blog/ai-developer-interview-questions-what-to-ask/"
   "https://${HOST}/blog/rag-vs-fine-tuning-when-to-use-which/"
+  "https://${HOST}/blog/how-to-choose-ai-agent-framework/"
+  "https://${HOST}/blog/do-you-still-need-a-prompt-engineer-in-2026/"
+  "https://${HOST}/blog/best-workflow-automation-tools-2026/"
+  "https://${HOST}/blog/ai-mvp-tech-stack-2026/"
 )
 
 # Build JSON payload
