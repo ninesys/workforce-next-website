@@ -80,14 +80,14 @@ const roles = [
 ];
 
 const jobRoles = [
-  { title: "Full-Stack Developer (React / Node.js)", value: "full-stack-developer" },
-  { title: "AI / ML Engineer", value: "ai-ml-engineer" },
-  { title: "Data Engineer (Spark / Airflow)", value: "data-engineer" },
-  { title: "Vibe-Code Optimisation Engineer", value: "vibe-code-engineer" },
-  { title: "Cloud & DevOps Engineer", value: "cloud-devops" },
-  { title: "Mobile Developer (React Native / Flutter)", value: "mobile-developer" },
-  { title: "QA / Test Automation Engineer", value: "qa-engineer" },
-  { title: "UI/UX Designer", value: "ui-ux-designer" },
+  { title: "Full-Stack Developer (React / Node.js)", value: "full-stack-developer", minSalary: 1500000, maxSalary: 4000000 },
+  { title: "AI / ML Engineer", value: "ai-ml-engineer", minSalary: 2000000, maxSalary: 5500000 },
+  { title: "Data Engineer (Spark / Airflow)", value: "data-engineer", minSalary: 1800000, maxSalary: 4500000 },
+  { title: "Vibe-Code Optimisation Engineer", value: "vibe-code-engineer", minSalary: 1500000, maxSalary: 4000000 },
+  { title: "Cloud & DevOps Engineer", value: "cloud-devops", minSalary: 1800000, maxSalary: 4500000 },
+  { title: "Mobile Developer (React Native / Flutter)", value: "mobile-developer", minSalary: 1400000, maxSalary: 3500000 },
+  { title: "QA / Test Automation Engineer", value: "qa-engineer", minSalary: 1000000, maxSalary: 2800000 },
+  { title: "UI/UX Designer", value: "ui-ux-designer", minSalary: 1000000, maxSalary: 2800000 },
 ];
 
 export default function CareersPage() {

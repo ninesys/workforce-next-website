@@ -175,7 +175,12 @@ export function generateContactPageSchema() {
 }
 
 export function generateJobPostingSchema(
-  roles: { title: string; value: string }[]
+  roles: {
+    title: string;
+    value: string;
+    minSalary: number;
+    maxSalary: number;
+  }[]
 ) {
   const datePosted = "2026-04-01";
   const validThrough = "2027-04-01";
@@ -212,8 +217,8 @@ export function generateJobPostingSchema(
       currency: "INR",
       value: {
         "@type": "QuantitativeValue",
-        minValue: 1500000,
-        maxValue: 4000000,
+        minValue: role.minSalary,
+        maxValue: role.maxSalary,
         unitText: "YEAR",
       },
     },
