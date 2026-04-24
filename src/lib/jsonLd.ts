@@ -177,12 +177,15 @@ export function generateContactPageSchema() {
 export function generateJobPostingSchema(
   roles: { title: string; value: string }[]
 ) {
+  const datePosted = "2026-04-01";
+  const validThrough = "2027-04-01";
   return roles.map((role) => ({
     "@context": "https://schema.org",
     "@type": "JobPosting",
     title: role.title,
     description: `Join Workforce Next as a ${role.title}. Work on cutting-edge AI and engineering projects for global clients. Remote-first culture with ownership-driven engineering.`,
-    datePosted: "2026-04-01",
+    datePosted,
+    validThrough,
     hiringOrganization: {
       "@type": "Organization",
       name: siteMetadata.name,
@@ -204,6 +207,16 @@ export function generateJobPostingSchema(
       name: "India",
     },
     employmentType: "FULL_TIME",
+    baseSalary: {
+      "@type": "MonetaryAmount",
+      currency: "INR",
+      value: {
+        "@type": "QuantitativeValue",
+        minValue: 1500000,
+        maxValue: 4000000,
+        unitText: "YEAR",
+      },
+    },
   }));
 }
 
