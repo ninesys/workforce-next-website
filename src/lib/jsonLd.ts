@@ -199,6 +199,10 @@ export function generateJobPostingSchema(
       },
     },
     jobLocationType: "TELECOMMUTE",
+    applicantLocationRequirements: {
+      "@type": "Country",
+      name: "India",
+    },
     employmentType: "FULL_TIME",
   }));
 }
