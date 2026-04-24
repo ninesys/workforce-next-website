@@ -193,8 +193,8 @@ export function generateJobPostingSchema(
       "@type": "Place",
       address: {
         "@type": "PostalAddress",
-        addressLocality: "Noida",
-        addressRegion: "Uttar Pradesh",
+        addressLocality: "Gurugram",
+        addressRegion: "Haryana",
         addressCountry: "IN",
       },
     },
