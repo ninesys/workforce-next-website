@@ -34,6 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/context-continuity-guarantee/`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/not-another-body-shop/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/ai-native-india/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/india-handled/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/about/`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/about/gaurav/`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     // Blog listing

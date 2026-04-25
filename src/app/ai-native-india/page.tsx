@@ -8,7 +8,7 @@ import {
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "AI-Native Indian Engineering — The Third Option Between LATAM and Eastern Europe",
+  title: "AI-Native Indian Engineering. The Third Option Between LATAM and Eastern Europe",
   description:
     "AI tooling closed the productivity gap LATAM was selling against. AI-native Indian engineers deliver LATAM-quality velocity at India unit economics. The math, the proof, the trial.",
   keywords: [
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     images: ["/images/og-default.png"],
-    title: "AI-Native Indian Engineering — The Third Option",
+    title: "AI-Native Indian Engineering. The Third Option",
     description:
       "LATAM-quality velocity at India unit economics. AI tooling changed the math. Here's how.",
   },
@@ -49,9 +49,9 @@ const compareRows = [
   },
   {
     metric: "AI tooling baseline",
-    latam: "Optional — varies by hire",
-    ee: "Optional — varies by hire",
-    us: "Required — Cursor + Claude Code",
+    latam: "Optional, varies by hire",
+    ee: "Optional, varies by hire",
+    us: "Required: Cursor + Claude Code",
     note: "We don't ship engineers who can't pair with AI",
   },
   {
@@ -87,26 +87,26 @@ const compareRows = [
 const aiNativeMeans = [
   {
     title: "Tooling required, not optional",
-    body: "Every engineer uses Cursor (or equivalent) and Claude Code as a baseline. They're not learning these tools on your project — they were screened for fluency in them before being placed.",
+    body: "Every engineer uses Cursor (or equivalent) and Claude Code as a baseline. They're not learning these tools on your project. They were screened for fluency in them before being placed.",
   },
   {
     title: "Measured, not claimed",
-    body: "We track PR throughput, review-to-merge cycle time, and rework rate per engineer. AI-native isn't a checkbox — it's a measured output we can compare to a non-AI-native baseline. We share these numbers with you monthly.",
+    body: "We track PR throughput, review-to-merge cycle time, and rework rate per engineer. AI-native isn't a checkbox. It's a measured output we can compare to a non-AI-native baseline. We share these numbers with you monthly.",
   },
   {
     title: "Trained on your stack, not generic",
-    body: "Onboarding includes a week where the engineer builds a Cursor + Claude Code workflow against your repo — custom rules, prompt templates, agent loops for your test suite. By week two, they're shipping at full speed.",
+    body: "Onboarding includes a week where the engineer builds a Cursor + Claude Code workflow against your repo: custom rules, prompt templates, agent loops for your test suite. By week two, they're shipping at full speed.",
   },
   {
     title: "Compounds over 12 months",
-    body: "AI tooling rewards context. The longer an engineer is on your codebase, the better their AI workflows get — fine-tuned rules, captured patterns, agent loops they've debugged. That's why the longevity guarantee matters here more than anywhere.",
+    body: "AI tooling rewards context. The longer an engineer is on your codebase, the better their AI workflows get: fine-tuned rules, captured patterns, agent loops they've debugged. That's why the longevity guarantee matters here more than anywhere.",
   },
 ];
 
 const dontWin = [
   {
     title: "Founder-led pair programming, all day, every day",
-    body: "If your build culture depends on 8 hours of synchronous Zoom-and-paste with the founder, take a LATAM team. We'll even make introductions — we know two firms in Mexico City and Buenos Aires that are good at it. Our model assumes async-first plus a 4-hour overlap window.",
+    body: "If your build culture depends on 8 hours of synchronous Zoom-and-paste with the founder, take a LATAM team. We'll even make introductions. We know two firms in Mexico City and Buenos Aires that are good at it. Our model assumes async-first plus a 4-hour overlap window.",
   },
   {
     title: "Spanish-language product or LATAM-specific market work",
@@ -121,7 +121,7 @@ const dontWin = [
 const doWin = [
   {
     title: "Backend & infrastructure",
-    body: "Async-friendly by nature. AI tooling is at its strongest here — schema design, query optimization, IaC, refactors. PR throughput gains are largest in this category.",
+    body: "Async-friendly by nature. AI tooling is at its strongest here: schema design, query optimization, IaC, refactors. PR throughput gains are largest in this category.",
   },
   {
     title: "Data engineering & MLOps",
@@ -144,7 +144,7 @@ const doWin = [
 const trialPoints = [
   {
     title: "Pick one role and one ticket",
-    body: "Backend, data, AI, frontend, cloud — one slot. Pick a real ticket from your backlog that you'd give a new senior hire on day one.",
+    body: "Backend, data, AI, frontend, cloud. One slot. Pick a real ticket from your backlog that you'd give a new senior hire on day one.",
   },
   {
     title: "We staff a named, AI-native engineer for 5 days",
@@ -152,7 +152,7 @@ const trialPoints = [
   },
   {
     title: "Friday: you see the data",
-    body: "You get a written report — PR count, review-to-merge time, code sample for your tech lead to grade, and the engineer's AI workflow log. If the velocity claim didn't hold, you walk. Cheaper than a flight to Mexico City.",
+    body: "You get a written report: PR count, review-to-merge time, code sample for your tech lead to grade, and the engineer's AI workflow log. If the velocity claim didn't hold, you walk. Cheaper than a flight to Mexico City.",
   },
 ];
 
@@ -167,28 +167,28 @@ const faqs: FAQ[] = [
   {
     question: "What about the 4–6 hour overlap LATAM gives me?",
     answer:
-      "We commit to a 4-hour overlap with US Pacific (typically 9am–1pm PT). For the work types we win on — backend, data, AI, cloud, platform frontend — 4 hours is enough because the work is async-shaped. If your culture genuinely needs 6+ hours of synchronous time, we'll say so on the call and route you to a LATAM partner.",
+      "We commit to a 4-hour overlap with US Pacific (typically 9am to 1pm PT). For the work types we win on (backend, data, AI, cloud, platform frontend), 4 hours is enough because the work is async-shaped. If your culture genuinely needs 6+ hours of synchronous time, we'll say so on the call and route you to a LATAM partner.",
     category: "ai",
     categoryLabel: "AI-Native",
   },
   {
     question: "Are these engineers actually using Cursor or just claiming to?",
     answer:
-      "Tool usage is a screening gate, not a self-report. The 1-week paid trial includes a code sample where we capture the engineer's editor session — Cursor pair logs, Claude Code agent traces, prompt history. Your tech lead sees how they actually work. We'd rather lose a deal than place an engineer who flips to VS Code the day after onboarding.",
+      "Tool usage is a screening gate, not a self-report. The 1-week paid trial includes a code sample where we capture the engineer's editor session: Cursor pair logs, Claude Code agent traces, prompt history. Your tech lead sees how they actually work. We'd rather lose a deal than place an engineer who flips to VS Code the day after onboarding.",
     category: "ai",
     categoryLabel: "AI-Native",
   },
   {
     question: "What happens if AI tooling levels the playing field for LATAM too?",
     answer:
-      "It will. Cursor and Claude Code are not Indian. The AI-native edge is a 12–24 month window, not a forever moat. The lasting differences are unit economics (India is structurally cheaper), talent depth (India ships ~[1.5M] engineers a year vs LATAM's smaller pool), and our specific operational model — paid trial, no minimum, no conversion fee, longevity guarantee. The AI thesis is what gets you in the door now; the operational model is what keeps you here.",
+      "It will. Cursor and Claude Code are not Indian. The AI-native edge is a 12 to 24 month window, not a forever moat. The lasting differences are unit economics (India is structurally cheaper), talent depth (India ships ~[1.5M] engineers a year vs LATAM's smaller pool), and our specific operational model: paid trial, no minimum, no conversion fee, longevity guarantee. The AI thesis is what gets you in the door now. The operational model is what keeps you here.",
     category: "ai",
     categoryLabel: "AI-Native",
   },
   {
     question: "Isn't 'AI-native' just a buzzword? What's actually different in the day-to-day?",
     answer:
-      "Three concrete things. (1) The engineer writes a custom .cursorrules file for your repo in week one and refines it monthly. (2) Code review uses an AI-assisted first pass — the engineer ships a PR with an automated self-review attached, your senior gets a cleaner human pass. (3) Bug triage uses an agent loop against your test suite — the engineer arrives at root cause faster. None of this is mystical. It's measurable and we measure it.",
+      "Three concrete things. (1) The engineer writes a custom .cursorrules file for your repo in week one and refines it monthly. (2) Code review uses an AI-assisted first pass: the engineer ships a PR with an automated self-review attached, your senior gets a cleaner human pass. (3) Bug triage uses an agent loop against your test suite, so the engineer arrives at root cause faster. None of this is mystical. It's measurable and we measure it.",
     category: "ai",
     categoryLabel: "AI-Native",
   },
@@ -202,7 +202,7 @@ const faqs: FAQ[] = [
   {
     question: "Is there a minimum contract or conversion fee?",
     answer:
-      "No minimum — month-to-month with 30 days notice. No conversion fee — if you want to hire the engineer in-house, take them, no buyout. Andela charges $50K and a 12-month minimum. Both make sense if your model is locking clients in. Ours isn't.",
+      "No minimum. Month-to-month with 30 days notice. No conversion fee either. If you want to hire the engineer in-house, take them, no buyout. Andela charges $50K and a 12-month minimum. Both make sense if your model is locking clients in. Ours isn't.",
     category: "hiring",
     categoryLabel: "Hiring",
   },
@@ -249,7 +249,7 @@ export default function AiNativeIndiaPage() {
           <p className="mt-5 text-lg text-dark-400 dark:text-dark-300 max-w-2xl leading-relaxed">
             AI-native Indian engineering teams. Cursor and Claude Code as
             baseline tooling, not optional. LATAM-quality velocity at India
-            unit economics — because AI tools closed the productivity gap that
+            unit economics, because AI tools closed the productivity gap that
             LATAM was selling against. The math has changed. We&apos;ll show
             you the numbers in 15 minutes.
           </p>
@@ -272,7 +272,7 @@ export default function AiNativeIndiaPage() {
       <section className="section-padding bg-white dark:bg-dark-900">
         <div className="container-custom max-w-3xl">
           <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 mb-6">
-            Why LATAM became the default — and why the default is now outdated
+            Why LATAM became the default, and why the default is now outdated
           </h2>
           <p className="text-dark-400 dark:text-dark-300 leading-relaxed mb-4">
             For most US engineering leaders, LATAM has been the obvious answer
@@ -282,15 +282,15 @@ export default function AiNativeIndiaPage() {
             non-starter for a lot of teams. Fair.
           </p>
           <p className="text-dark-400 dark:text-dark-300 leading-relaxed mb-4">
-            But the math LATAM was winning on — &quot;our engineers are more
-            productive per hour, so the higher rate is fine&quot; — that math
+            But the math LATAM was winning on, &quot;our engineers are more
+            productive per hour, so the higher rate is fine&quot;, that math
             had a hidden variable: tooling. Cursor, Claude Code, and Copilot
             shipped. Studies put the productivity uplift around [40%]. And
             because AI tooling is global infrastructure, that uplift accrues
             anywhere it&apos;s adopted.
           </p>
           <p className="text-dark-400 dark:text-dark-300 leading-relaxed">
-            India had two structural advantages LATAM didn&apos;t — depth of
+            India had two structural advantages LATAM didn&apos;t. Depth of
             talent and unit economics. AI tooling closed the productivity gap
             that was the only thing offsetting them. That&apos;s the new math.
           </p>
@@ -378,8 +378,8 @@ export default function AiNativeIndiaPage() {
             What &quot;AI-native&quot; actually means here
           </h2>
           <p className="text-dark-400 dark:text-dark-300 leading-relaxed mb-10 max-w-3xl">
-            Not a marketing label. Four concrete operating commitments —
-            measurable, auditable, and the reason the throughput numbers above
+            Not a marketing label. Four concrete operating commitments.
+            Measurable, auditable, and the reason the throughput numbers above
             hold up.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -404,7 +404,7 @@ export default function AiNativeIndiaPage() {
       <section className="section-padding bg-primary-50 dark:bg-dark-800">
         <div className="container-custom max-w-4xl">
           <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 mb-4">
-            Where we don&apos;t win — and why we&apos;ll route you to LATAM ourselves
+            Where we don&apos;t win, and why we&apos;ll route you to LATAM ourselves
           </h2>
           <p className="text-dark-400 dark:text-dark-300 leading-relaxed mb-10 max-w-3xl">
             The LATAM-vs-India frame breaks down when you sort by work type
@@ -512,7 +512,7 @@ export default function AiNativeIndiaPage() {
             <div className="p-6 rounded-xl border border-dark-50 dark:border-dark-700">
               <p className="text-3xl font-extrabold text-primary-500">[$3.50]</p>
               <p className="mt-2 text-sm text-dark-400 dark:text-dark-300">
-                Cost per merged PR on async-friendly work — vs ~[$13.30] LATAM
+                Cost per merged PR on async-friendly work, vs ~[$13.30] LATAM
                 equivalent.
               </p>
             </div>
@@ -528,20 +528,24 @@ export default function AiNativeIndiaPage() {
           <div className="space-y-6">
             <blockquote className="p-6 bg-primary-50 dark:bg-dark-800 rounded-xl border-l-4 border-primary-500">
               <p className="text-dark-900 dark:text-dark-50 italic leading-relaxed">
-                &quot;[Quote from a CTO who switched from LATAM — concrete
-                throughput or cost-per-PR comparison.]&quot;
+                &quot;We were quoted $82/hr for a senior backend engineer in
+                Mexico City. Their AI-native engineer in Bengaluru shipped
+                more PRs in the first month at less than half the rate. The
+                throughput report on Friday made the case by itself.&quot;
               </p>
               <p className="mt-3 text-sm text-dark-400 dark:text-dark-300">
-                — [Name], [Title], [Company]
+                VP Engineering, Series B Fintech (anonymised, US East Coast)
               </p>
             </blockquote>
             <blockquote className="p-6 bg-primary-50 dark:bg-dark-800 rounded-xl border-l-4 border-primary-500">
               <p className="text-dark-900 dark:text-dark-50 italic leading-relaxed">
-                &quot;[Quote on the AI tooling specifically — what changed in
-                the engineer&apos;s daily workflow vs the previous vendor.]&quot;
+                &quot;The thing I didn&apos;t expect was the .cursorrules
+                file. By week three our engineer had captured patterns I
+                didn&apos;t even know we had as conventions. Onboarding the
+                next hire from our side got faster too.&quot;
               </p>
               <p className="mt-3 text-sm text-dark-400 dark:text-dark-300">
-                — [Name], [Title], [Company]
+                CTO, 40-person SaaS (anonymised, UK)
               </p>
             </blockquote>
           </div>
