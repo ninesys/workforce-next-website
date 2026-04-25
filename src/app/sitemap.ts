@@ -32,6 +32,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/why-teams-stay/`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/cost-of-switching/`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/context-continuity-guarantee/`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/not-another-body-shop/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/ai-native-india/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/about/`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/about/gaurav/`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     // Blog listing
