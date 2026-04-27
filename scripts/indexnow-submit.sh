@@ -31,6 +31,9 @@ URLS=(
   "https://${HOST}/why-teams-stay/"
   "https://${HOST}/cost-of-switching/"
   "https://${HOST}/context-continuity-guarantee/"
+  "https://${HOST}/not-another-body-shop/"
+  "https://${HOST}/ai-native-india/"
+  "https://${HOST}/india-handled/"
   "https://${HOST}/about/"
   "https://${HOST}/about/gaurav/"
   "https://${HOST}/faq/"
@@ -57,6 +60,7 @@ URLS=(
   "https://${HOST}/blog/do-you-still-need-a-prompt-engineer-in-2026/"
   "https://${HOST}/blog/best-workflow-automation-tools-2026/"
   "https://${HOST}/blog/ai-mvp-tech-stack-2026/"
+  "https://${HOST}/blog/staff-augmentation-vs-eor-vs-india-entity-2026/"
 )
 
 # Build JSON payload
