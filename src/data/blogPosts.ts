@@ -19,6 +19,7 @@ import aiMvpTechStack2026 from "./blog/ai-mvp-tech-stack-2026";
 import staffAugmentationVsEorVsIndiaEntity2026 from "./blog/staff-augmentation-vs-eor-vs-india-entity-2026";
 import toptalVsAndelaVsTuringVsWorkforcenextComparison2026 from "./blog/toptal-vs-andela-vs-turing-vs-workforcenext-comparison-2026";
 import seniorIndianDeveloperSalary2026 from "./blog/senior-indian-developer-salary-2026";
+import verifyIndianDeveloperExperienceChecklist2026 from "./blog/verify-indian-developer-experience-checklist-2026";
 
 export type { BlogPost, BlogFAQ };
 
@@ -53,4 +54,5 @@ export const blogPosts: BlogPost[] = [
   staffAugmentationVsEorVsIndiaEntity2026,
   toptalVsAndelaVsTuringVsWorkforcenextComparison2026,
   seniorIndianDeveloperSalary2026,
+  verifyIndianDeveloperExperienceChecklist2026,
 ];
