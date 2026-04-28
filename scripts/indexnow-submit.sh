@@ -62,6 +62,7 @@ URLS=(
   "https://${HOST}/blog/ai-mvp-tech-stack-2026/"
   "https://${HOST}/blog/staff-augmentation-vs-eor-vs-india-entity-2026/"
   "https://${HOST}/blog/toptal-vs-andela-vs-turing-vs-workforcenext-comparison-2026/"
+  "https://${HOST}/blog/senior-indian-developer-salary-2026/"
 )
 
 # Build JSON payload
