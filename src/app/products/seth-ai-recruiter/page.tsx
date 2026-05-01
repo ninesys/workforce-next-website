@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
 import WaitlistForm from "@/components/contact/WaitlistForm";
+import SethAIIllustration from "@/components/products/SethAIIllustration";
 import {
   generateSoftwareApplicationSchema,
   generateBreadcrumbSchema,
@@ -97,27 +98,34 @@ export default function SethAIRecruiterPage() {
 
       {/* Hero */}
       <section className="bg-gradient-to-br from-primary-50 via-white to-primary-50/50 dark:from-dark-900 dark:via-dark-900 dark:to-dark-800 pt-32 pb-16 md:pt-40 md:pb-20">
-        <div className="container-custom max-w-4xl">
-          <Badge variant="primary" className="mb-4">
-            PRODUCT
-          </Badge>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-dark-900 dark:text-dark-50 leading-tight">
-            SethAI: the AI recruiter that screens for what matters.
-          </h1>
-          <p className="mt-4 text-lg text-dark-400 dark:text-dark-300 max-w-2xl">
-            Hiring AI developers is broken. SethAI fixes it by screening for
-            technical depth and ownership mindset, not just keywords and years of
-            experience.
-          </p>
-          <div className="mt-6">
-            <Badge variant="accent" className="text-sm">
-              Currently in development
-            </Badge>
-          </div>
-          <div className="mt-6">
-            <Button href="#waitlist" size="lg">
-              Join the SethAI waitlist
-            </Button>
+        <div className="container-custom">
+          <div className="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+            <div className="lg:col-span-7">
+              <Badge variant="primary" className="mb-4">
+                PRODUCT
+              </Badge>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-dark-900 dark:text-dark-50 leading-tight">
+                SethAI: the AI recruiter that screens for what matters.
+              </h1>
+              <p className="mt-4 text-lg text-dark-400 dark:text-dark-300 max-w-2xl">
+                Hiring AI developers is broken. SethAI fixes it by screening for
+                technical depth and ownership mindset, not just keywords and
+                years of experience.
+              </p>
+              <div className="mt-6">
+                <Badge variant="accent" className="text-sm">
+                  Currently in development
+                </Badge>
+              </div>
+              <div className="mt-6">
+                <Button href="#waitlist" size="lg">
+                  Join the SethAI waitlist
+                </Button>
+              </div>
+            </div>
+            <div className="lg:col-span-5">
+              <SethAIIllustration className="max-w-[560px] mx-auto" />
+            </div>
           </div>
         </div>
       </section>
