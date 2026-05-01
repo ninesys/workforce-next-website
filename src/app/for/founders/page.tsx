@@ -7,7 +7,7 @@ import {
 } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
-  title: "MVP Sprint for Founders - Idea to Working AI Product in 4 Weeks",
+  title: "MVP Sprint for Founders - AI Product in 4 Weeks",
   description:
     "Get a senior developer matched by SethAI for a 4-week MVP sprint. Fixed scope, 1-week paid trial, and a developer who stays with you past launch. INR 1.2-1.8L / $1,500-$2,200.",
   keywords: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     images: ["/images/og-default.png"],
-    title: "MVP Sprint for Founders - Idea to Working AI Product in 4 Weeks",
+    title: "MVP Sprint for Founders - AI Product in 4 Weeks",
     description:
       "Get a senior developer matched by SethAI for a 4-week MVP sprint. Fixed scope, 1-week paid trial.",
   },

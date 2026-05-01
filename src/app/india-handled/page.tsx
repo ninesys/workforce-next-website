@@ -5,13 +5,14 @@ import Badge from "@/components/ui/Badge";
 import {
   generateBreadcrumbSchema,
   generateFAQPageSchema,
+  generateArticleSchema,
 } from "@/lib/jsonLd";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "India-Handled. Managed Staff Augmentation With Payroll, Compliance, and Benefits Done For You",
+  title: "India-Handled: Managed Staff Augmentation Done For You",
   description:
-    "DIY hiring through SethAI. The engineer is our employee. We run their payroll, PF, gratuity, equipment, and benefits in India. You get a dedicated engineer through one B2B services contract. No entity, no EOR, no payroll burden on your side.",
+    "Pick the engineer through SethAI. We run their payroll, PF, gratuity, and benefits in India. One B2B contract. No entity, no EOR, no payroll burden on you.",
   keywords: [
     "managed staff augmentation India",
     "dedicated developers India staff aug",
@@ -236,6 +237,14 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 
 const faqSchema = generateFAQPageSchema(faqs);
 
+const articleSchema = generateArticleSchema({
+  headline: "India-Handled: Managed Staff Augmentation Done For You",
+  description:
+    "Pick the engineer through SethAI. We run their payroll, PF, gratuity, and benefits in India. One B2B contract. No entity, no EOR, no payroll burden on you.",
+  url: "https://workforcenext.in/india-handled/",
+  datePublished: "2026-04-10",
+});
+
 export default function IndiaHandledPage() {
   return (
     <>
@@ -246,6 +255,10 @@ export default function IndiaHandledPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
 
       {/* Hero */}

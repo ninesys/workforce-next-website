@@ -4,6 +4,7 @@ import Badge from "@/components/ui/Badge";
 import {
   generateFAQPageSchema,
   generateBreadcrumbSchema,
+  generateArticleSchema,
 } from "@/lib/jsonLd";
 import { FAQ } from "@/types";
 
@@ -98,6 +99,14 @@ const breadcrumbSchema = generateBreadcrumbSchema([
   },
 ]);
 
+const articleSchema = generateArticleSchema({
+  headline: "The Real Cost of Switching Tech Partners",
+  description:
+    "The hidden context loss, ramp-up time, and cumulative drag of replacing your offshore engineering partner.",
+  url: "https://workforcenext.in/cost-of-switching/",
+  datePublished: "2026-03-15",
+});
+
 export default function CostOfSwitchingPage() {
   return (
     <>
@@ -108,6 +117,10 @@ export default function CostOfSwitchingPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
 
       {/* Hero */}

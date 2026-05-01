@@ -4,11 +4,12 @@ import Badge from "@/components/ui/Badge";
 import {
   generateBreadcrumbSchema,
   generateFAQPageSchema,
+  generateArticleSchema,
 } from "@/lib/jsonLd";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "AI-Native Indian Engineering. The Third Option Between LATAM and Eastern Europe",
+  title: "AI-Native Indian Engineering: The Third Option",
   description:
     "AI tooling closed the productivity gap LATAM was selling against. AI-native Indian engineers deliver LATAM-quality velocity at India unit economics. The math, the proof, the trial.",
   keywords: [
@@ -225,6 +226,14 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 
 const faqSchema = generateFAQPageSchema(faqs);
 
+const articleSchema = generateArticleSchema({
+  headline: "AI-Native Indian Engineering: The Third Option",
+  description:
+    "AI tooling closed the productivity gap LATAM was selling against. Here is how AI-native Indian engineers deliver LATAM-quality velocity at India unit economics.",
+  url: "https://workforcenext.in/ai-native-india/",
+  datePublished: "2026-04-05",
+});
+
 export default function AiNativeIndiaPage() {
   return (
     <>
@@ -235,6 +244,10 @@ export default function AiNativeIndiaPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
 
       {/* Hero */}

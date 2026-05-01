@@ -11,9 +11,9 @@ import CTASection from "@/components/home/CTASection";
 import { generateHomepageHowToSchema } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
-  title: "Workforce Next | Hire Dedicated Remote Developers from India",
+  title: "Hire Dedicated Remote Developers from India | Workforce Next",
   description:
-    "Hire dedicated AI developers, data engineers, frontend and backend engineers from India. Context-matched by SethAI for longevity. 48-hour matching, 1-week paid trial, zero recruitment fees.",
+    "Hire dedicated AI, data, frontend and backend developers from India. Context-matched by SethAI. 48-hour matching, 1-week paid trial, zero recruitment fees.",
   keywords: [
     "hire AI developers India",
     "dedicated remote engineering team",
@@ -33,9 +33,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: ["/images/og-default.png"],
-    title: "Workforce Next | Hire Dedicated Remote Developers from India",
+    title: "Hire Dedicated Remote Developers from India | Workforce Next",
     description:
-      "Hire dedicated AI developers, data engineers, and product engineers from India. Context-matched by SethAI. 48-hour matching, zero recruitment fees.",
+      "Hire dedicated AI, data, frontend and backend developers from India. Context-matched by SethAI. 48-hour matching, zero recruitment fees.",
     url: "https://workforcenext.in",
   },
 };

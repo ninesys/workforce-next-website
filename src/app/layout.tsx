@@ -21,11 +21,11 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL("https://workforcenext.in"),
   title: {
-    default: "Workforce Next | Hire Dedicated Remote Developers from India",
+    default: "Hire Dedicated Remote Developers from India | Workforce Next",
     template: "%s | Workforce Next",
   },
   description:
-    "Hire dedicated AI developers, data engineers, frontend and backend engineers from India. Context-matched by SethAI for longevity. 48-hour matching, 1-week paid trial, zero recruitment fees.",
+    "Hire dedicated AI, data, frontend and backend developers from India. Context-matched by SethAI. 48-hour matching, 1-week paid trial, zero recruitment fees.",
   keywords: [
     "hire dedicated developers India",
     "remote engineering team India",
@@ -57,9 +57,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://workforcenext.in",
     siteName: "Workforce Next",
-    title: "Workforce Next | Hire Dedicated Remote Developers from India",
+    title: "Hire Dedicated Remote Developers from India | Workforce Next",
     description:
-      "Hire dedicated AI developers, data engineers, and product engineers from India. Context-matched by SethAI. 48-hour matching, zero recruitment fees.",
+      "Hire dedicated AI, data, frontend and backend developers from India. Context-matched by SethAI. 48-hour matching, zero recruitment fees.",
     images: [
       {
         url: "https://workforcenext.in/images/og-default.png",
@@ -71,9 +71,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Workforce Next | Hire Dedicated Remote Developers from India",
+    title: "Hire Dedicated Remote Developers from India | Workforce Next",
     description:
-      "Hire dedicated AI developers, data engineers, and product engineers from India. Context-matched by SethAI.",
+      "Hire dedicated AI, data, frontend and backend developers from India. Context-matched by SethAI.",
+    images: ["https://workforcenext.in/images/og-default.png"],
   },
 };
 

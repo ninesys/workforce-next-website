@@ -259,6 +259,44 @@ export function generateFAQPageSchema(faqItems: FAQ[]) {
   };
 }
 
+export function generateArticleSchema(args: {
+  headline: string;
+  description: string;
+  url: string;
+  datePublished: string;
+  dateModified?: string;
+  image?: string;
+  author?: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: args.headline,
+    description: args.description,
+    mainEntityOfPage: { "@type": "WebPage", "@id": args.url },
+    url: args.url,
+    image: args.image
+      ? `${siteMetadata.url}${args.image}`
+      : `${siteMetadata.url}/images/og-default.png`,
+    datePublished: args.datePublished,
+    dateModified: args.dateModified ?? args.datePublished,
+    author: {
+      "@type": args.author ? "Person" : "Organization",
+      name: args.author ?? siteMetadata.name,
+      url: siteMetadata.url,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: siteMetadata.name,
+      url: siteMetadata.url,
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteMetadata.url}/images/logo.webp`,
+      },
+    },
+  };
+}
+
 export function generateBreadcrumbSchema(
   items: { name: string; url: string }[]
 ) {

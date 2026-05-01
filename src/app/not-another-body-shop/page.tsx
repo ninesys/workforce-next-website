@@ -4,13 +4,14 @@ import Badge from "@/components/ui/Badge";
 import {
   generateBreadcrumbSchema,
   generateFAQPageSchema,
+  generateArticleSchema,
 } from "@/lib/jsonLd";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "Not Another Indian Body Shop. Managed Remote Engineers for VPs Who've Been Burned",
+  title: "Not Another Indian Body Shop - Managed Remote Engineers",
   description:
-    "If TCS, Infosys, or a tier-2 vendor wasted six months of your roadmap, this page is for you. Dedicated engineers, 1-week paid trial, no account-manager buffer, no subcontracting.",
+    "If TCS, Infosys, or a tier-2 vendor wasted six months of your roadmap, this page is for you. Dedicated engineers, 1-week trial, no account-manager buffer.",
   keywords: [
     "alternative to TCS Infosys Wipro",
     "burned by Indian outsourcing",
@@ -195,6 +196,14 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 
 const faqSchema = generateFAQPageSchema(faqs);
 
+const articleSchema = generateArticleSchema({
+  headline: "Not Another Indian Body Shop",
+  description:
+    "Why managed remote engineers from Workforce Next are different from the TCS, Infosys, and tier-2 vendor experience VPs of Engineering have been burned by.",
+  url: "https://workforcenext.in/not-another-body-shop/",
+  datePublished: "2026-03-20",
+});
+
 export default function NotAnotherBodyShopPage() {
   return (
     <>
@@ -205,6 +214,10 @@ export default function NotAnotherBodyShopPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
 
       {/* Hero */}

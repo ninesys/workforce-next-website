@@ -1,12 +1,15 @@
 import { Metadata } from "next";
 import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
-import { generateBreadcrumbSchema } from "@/lib/jsonLd";
+import {
+  generateBreadcrumbSchema,
+  generateArticleSchema,
+} from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
   title: "Context Continuity Guarantee",
   description:
-    "If a developer ever leaves, our context documentation ensures a replacement is productive in days, not months. Codebase walkthroughs, domain glossaries, and architecture decision logs maintained for every engagement.",
+    "If a developer ever leaves, our context docs get a replacement productive in days, not months. Codebase walkthroughs, glossaries, and decision logs.",
   keywords: [
     "developer replacement guarantee",
     "context continuity offshore",
@@ -98,12 +101,24 @@ const breadcrumbSchema = generateBreadcrumbSchema([
   },
 ]);
 
+const articleSchema = generateArticleSchema({
+  headline: "Context Continuity Guarantee",
+  description:
+    "How we keep replacement developers productive in days, not months: living codebase walkthroughs, domain glossaries, and architecture decision logs.",
+  url: "https://workforcenext.in/context-continuity-guarantee/",
+  datePublished: "2026-03-10",
+});
+
 export default function ContextContinuityGuaranteePage() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
 
       {/* Hero */}
