@@ -6,6 +6,7 @@ import { blogPosts } from "@/data/blogPosts";
 import { generateBreadcrumbSchema } from "@/lib/jsonLd";
 import { generateTocAndInjectIds } from "@/lib/blogToc";
 import Button from "@/components/ui/Button";
+import AuthorBio from "@/components/blog/AuthorBio";
 
 interface Props {
   params: { slug: string };
@@ -82,7 +83,7 @@ export default function BlogPostPage({ params }: Props) {
     description: post.metaDescription,
     image: articleImageUrl,
     datePublished: post.publishedAt,
-    dateModified: post.publishedAt,
+    dateModified: post.updatedAt ?? post.publishedAt,
     author: {
       "@type": "Person",
       name: post.author,
@@ -107,6 +108,21 @@ export default function BlogPostPage({ params }: Props) {
       "@id": `https://workforcenext.in/blog/${post.slug}/`,
     },
     keywords: post.keywords.join(", "),
+  };
+
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: post.author,
+    jobTitle: post.authorRole,
+    url: "https://workforcenext.in/about/gaurav/",
+    image: "https://workforcenext.in/images/gaurav.jpeg",
+    worksFor: {
+      "@type": "Organization",
+      name: "Workforce Next",
+      url: "https://workforcenext.in",
+    },
+    sameAs: ["https://www.linkedin.com/in/gaurav-singh-workforcenext"],
   };
 
   const faqSchema =
@@ -142,6 +158,10 @@ export default function BlogPostPage({ params }: Props) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
       />
       {faqSchema && (
         <script
@@ -206,6 +226,19 @@ export default function BlogPostPage({ params }: Props) {
       {/* Article */}
       <article className="py-12 md:py-16 bg-white dark:bg-dark-900">
         <div className="container-custom max-w-3xl">
+          {post.tldr && (
+            <aside
+              aria-label="Summary"
+              className="mb-10 p-5 sm:p-6 rounded-xl border-l-4 border-primary-500 bg-primary-50/60 dark:bg-primary-500/10"
+            >
+              <p className="text-xs font-extrabold uppercase tracking-wide text-primary-600 dark:text-primary-400 mb-2">
+                TL;DR
+              </p>
+              <p className="text-base leading-relaxed text-dark-700 dark:text-dark-100">
+                {post.tldr}
+              </p>
+            </aside>
+          )}
           {toc.length >= 3 && (
             <nav
               aria-label="Table of contents"
@@ -235,6 +268,7 @@ export default function BlogPostPage({ params }: Props) {
             className="prose prose-lg dark:prose-invert max-w-none prose-headings:font-extrabold prose-headings:text-dark-900 dark:prose-headings:text-dark-50 prose-h2:scroll-mt-24 prose-p:text-dark-600 dark:prose-p:text-dark-200 prose-p:leading-relaxed prose-a:text-primary-500 prose-a:no-underline hover:prose-a:underline prose-strong:text-dark-900 dark:prose-strong:text-dark-100"
             dangerouslySetInnerHTML={{ __html: bodyWithIds }}
           />
+          <AuthorBio name={post.author} role={post.authorRole} />
         </div>
       </article>
 

@@ -20,4 +20,6 @@ export interface BlogPost {
   image?: string;
   ogTitle?: string;
   ogDescription?: string;
+  tldr?: string;
+  updatedAt?: string;
 }

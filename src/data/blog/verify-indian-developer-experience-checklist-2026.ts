@@ -6,6 +6,8 @@ const post: BlogPost = {
   title: "How to Verify an Indian Developer's Real Experience: A 2026 Buyer's Checklist",
   excerpt:
     "A resume from an Indian developer rarely lies, but it almost always smooths the truth. This is the checklist a procurement-savvy VP of Engineering should run before signing any contract: documents, employment history, GitHub forensics, code samples, and reference calls. With concrete red flags for each step.",
+  tldr:
+    "Indian developer resumes rarely lie outright, but they smooth the truth: rounded tenures, inflated titles, stacks barely touched. Verify in five passes: documents (UAN, Form 16, payslips), employment history via UAN, GitHub forensics, code-sample interpretation, and India-aware reference calls. Each step has concrete red flags that should make you walk.",
   body: `<p>A resume from an Indian developer rarely outright lies, but it almost always smooths the truth. Tenure dates get rounded. Job titles get inflated. Tech stacks listed include things the candidate touched once. None of this is unique to India, but the screening processes most foreign buyers run are not built to catch it. This post is the verification checklist that is.</p>
 
 <p>It covers documents to ask for and what they actually prove, how to verify employment history without trusting the resume, how to read a GitHub profile for honest signal, how to interpret a take-home or trial code sample, and how to run reference calls with India-based references that yield real information instead of polite nothing. Each step includes what good looks like and what should make you walk away.</p>

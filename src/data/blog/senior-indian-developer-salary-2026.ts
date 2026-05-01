@@ -6,6 +6,8 @@ const post: BlogPost = {
   title: "What Should You Pay a Senior Indian Developer in 2026? (Real Numbers, Not Ranges)",
   excerpt:
     "A senior Indian developer in 2026 costs a foreign client between $5,500 and $9,000 per month all-in, depending on stack, city, and engagement model. Here is the full breakdown by level, by stack, what 'all-in' actually includes, and what changes the rate within a band.",
+  tldr:
+    "A senior Indian developer in 2026 costs a foreign client between $5,500 and $9,000 per month all-in (median around $7,000). The range is driven by stack, city, engagement model, and seniority within the senior band. This post breaks the number down by level, by stack, and line item.",
   body: `<p>A senior Indian developer in 2026 costs a foreign client between $5,500 and $9,000 per month all-in, with the median around $7,000. That number includes the engineer's gross salary, employer-side PF and gratuity, ESI or insurance, equipment, payroll and compliance ops, and the vendor's margin. The wide range is real and is driven by stack, city, engagement model, and seniority within the senior band.</p>
 
 <p>This post is the unhedged pricing post. Specific numbers, broken down by level, by stack, and by what each line item actually covers. If you are about to negotiate with a vendor or evaluate a quote, this is the cheat sheet to bring into the room.</p>
