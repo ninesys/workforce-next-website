@@ -6,16 +6,17 @@ export default function EntityDefinition() {
           What is Workforce Next?
         </h2>
         <p className="text-dark-500 dark:text-dark-300 leading-relaxed text-lg">
-          <strong>Workforce Next</strong> is a remote engineering staffing company
-          based in India that builds dedicated development teams for founders,
-          funded startups, and enterprises. Unlike traditional staffing firms that
-          match on tech stack alone, Workforce Next uses SethAI, an AI-powered
-          recruiter, to match developers by industry context and longevity signals.
-          The company offers AI developers, data engineers, product engineers,
-          frontend and backend engineers, plus specialised roles like vibe-code
-          optimisation and cloud cost optimisation. Every engagement starts with a
-          one-week paid trial and includes a Context Continuity Guarantee.
-          Headquartered in DLF Cyber City, Gurugram with a tech office in Noida.
+          <strong>Workforce Next</strong> is an IT consulting and IT engineering
+          company that gives growing businesses pre-vetted developers and teams who
+          plug straight into their engineering, consulting, and management
+          functions. Unlike traditional staffing firms that match on tech stack
+          alone, Workforce Next uses SethAI, an AI-powered recruiter, to match
+          people by industry context and longevity signals. The company offers AI
+          developers, data engineers, product engineers, frontend and backend
+          engineers, plus specialised roles like vibe-code optimisation and cloud
+          cost optimisation. Every engagement starts with a one-week paid trial
+          and includes a Context Continuity Guarantee. Headquartered in DLF Cyber
+          City, Gurugram with a tech office in Noida.
         </p>
       </div>
     </article>

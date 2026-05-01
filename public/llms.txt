@@ -1,6 +1,6 @@
 # Workforce Next
 
-> Workforce Next is a remote engineering staffing company based in India that builds dedicated development teams for founders, funded startups, and enterprises. Developers are matched by industry context and longevity signals using SethAI, an AI-powered recruiter. Headquartered in DLF Cyber City, Gurugram with a tech office in Noida.
+> Workforce Next is an IT consulting and IT engineering company based in India that gives growing businesses pre-vetted developers and teams who plug straight into their engineering, consulting, and management functions. People are matched by industry context and longevity signals using SethAI, an AI-powered recruiter. Headquartered in DLF Cyber City, Gurugram with a tech office in Noida.
 
 ## What Workforce Next Does
 
