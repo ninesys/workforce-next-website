@@ -47,6 +47,7 @@ const post: BlogPost = {
   "image": "/images/blog/rag-vs-fine-tuning-when-to-use-which.webp",
   "title": "RAG vs Fine-tuning for Enterprise: When to Use Which",
   "excerpt": "RAG and fine-tuning solve different problems. Here is how to decide which one (or both) fits your use case, without wasting 3 months finding out the hard way.",
+  "tldr": "RAG is about what the model knows; fine-tuning is about how the model behaves. Use RAG when knowledge is the bottleneck (private docs, freshness, citations). Use fine-tuning when behavior is the bottleneck (style, format, narrow task). Most teams reach for fine-tuning when RAG would have done the job because fine-tuning sounds more sophisticated.",
   "category": "engineering",
   "categoryLabel": "Engineering",
   "author": "Gaurav",

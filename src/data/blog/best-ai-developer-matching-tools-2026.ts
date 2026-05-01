@@ -136,6 +136,7 @@ const post: BlogPost = {
   "image": "/images/blog/best-ai-developer-matching-tools-2026.webp",
   "title": "The 11 Best AI Developer Matching Tools in 2026 (Honestly Ranked)",
   "excerpt": "An honest, criteria-based ranking of 11 AI-powered developer matching platforms in 2026. What each tool does well, where it falls short, and which buyer each one actually serves.",
+  "tldr": "Honest 2026 ranking of 11 AI developer matching tools across six criteria: matching depth, shortlist quality, retention outcomes, pricing transparency, ethics and consent, and ideal buyer. No single tool is best for everyone. This is a usable map so you can pick the one that fits your hiring problem, your budget, and your org size.",
   "category": "hiring",
   "categoryLabel": "Hiring & Teams",
   "author": "Gaurav",

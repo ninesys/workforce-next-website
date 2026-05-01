@@ -40,6 +40,7 @@ const post: BlogPost = {
   "image": "/images/blog/dedicated-developer-vs-freelancer-vs-agency-total-cost.webp",
   "title": "Dedicated Developer vs Freelancer vs Agency: The Real Total Cost of Ownership",
   "excerpt": "The hourly rate is just the beginning. Here is an honest comparison of what you actually end up paying for each model over 12 months.",
+  "tldr": "On a 12-month total-cost basis, the hourly rate is the least useful number. Freelancers cost roughly 95 to 100K dollars all-in for a senior role once you factor sourcing, onboarding, churn, and management overhead. Agencies cost similar with rotating developers and worse continuity. A dedicated developer is typically 60 to 80K dollars all-in with one onboarding cycle and full ownership.",
   "category": "hiring",
   "categoryLabel": "Hiring & Teams",
   "author": "Gaurav",

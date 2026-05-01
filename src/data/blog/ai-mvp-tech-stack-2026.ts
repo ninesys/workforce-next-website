@@ -96,6 +96,7 @@ const post: BlogPost = {
   "image": "/images/blog/ai-mvp-tech-stack-2026.webp",
   "title": "The AI MVP Tech Stack in 2026: What We Actually Ship With (and What We Skip)",
   "excerpt": "The exact tool-by-tool stack we use to ship an AI MVP in 4 weeks. Clerk for auth, Stripe for payments, Resend for email, Supabase or Neon for Postgres, pgvector for retrieval, Vercel or Railway for hosting, Anthropic or OpenAI SDK direct. Total infra under $250 a month through the first 1,000 users.",
+  "tldr": "Pick boring, battle-tested services for everything except the AI feature: Clerk for auth, Resend for email, Stripe for payments, Supabase or Neon for Postgres, pgvector for retrieval, Vercel or Railway for hosting, and the Anthropic or OpenAI SDK directly without a framework. That stack ships a working AI MVP in 4 weeks for 25 to 250 dollars a month of infra, leaving engineering time for the actual differentiation.",
   "category": "engineering",
   "categoryLabel": "Engineering",
   "author": "Gaurav",

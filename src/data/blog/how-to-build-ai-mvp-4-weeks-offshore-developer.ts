@@ -24,6 +24,7 @@ const post: BlogPost = {
   "image": "/images/blog/how-to-build-ai-mvp-4-weeks-offshore-developer.webp",
   "title": "How to Build an AI MVP in 4 Weeks with an Offshore Developer",
   "excerpt": "You have an AI product idea and limited budget. Here is a practical guide to shipping a working MVP in 4 weeks with one dedicated developer from India.",
+  "tldr": "One senior offshore developer can take an AI product idea to a working prototype in four weeks: week 1 ruthless scoping, week 2 core AI pipeline, week 3 frontend and integrations, week 4 polish and ship. The trick is constraining scope so the developer ships one workflow well instead of three workflows badly.",
   "category": "product",
   "categoryLabel": "Product",
   "author": "Gaurav",

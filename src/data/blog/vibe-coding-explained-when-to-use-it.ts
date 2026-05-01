@@ -39,6 +39,7 @@ const post: BlogPost = {
   "image": "/images/blog/vibe-coding-explained-when-to-use-it.webp",
   "title": "Vibe Coding Explained: When to Use It and When to Avoid It",
   "excerpt": "AI-assisted coding is changing how software gets built. Here is an honest breakdown of when vibe coding works and when it will hurt you.",
+  "tldr": "Vibe coding is the practice of using AI tools (Cursor, Copilot, Claude) to write production code roughly twice as fast by prompting strategically and reviewing every line. It works well for MVPs, prototypes, and well-understood feature work, and badly for novel algorithms, security-critical code, and deep system design. Most teams should run a hybrid: vibe-coded scaffolding with hand-reviewed core logic.",
   "category": "engineering",
   "categoryLabel": "Engineering",
   "author": "Gaurav",

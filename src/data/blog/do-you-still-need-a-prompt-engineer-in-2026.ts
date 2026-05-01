@@ -63,6 +63,7 @@ const post: BlogPost = {
   "image": "/images/blog/do-you-still-need-a-prompt-engineer-in-2026.webp",
   "title": "Do You Still Need a Prompt Engineer in 2026? (Or Has the Role Disappeared?)",
   "excerpt": "Pure prompt engineer roles are rare in 2026. Here is when to hire one anyway, when an AI developer is the better call, and what the role actually costs now that the 2023 hype has cooled.",
+  "tldr": "Pure prompt engineer roles are rare in 2026. Modern model instruction-following, structured output, and function calling absorbed most of the 2023-era prompt-hacking work. Hire a dedicated prompt engineer when you have a narrow domain, a real eval pipeline, and ongoing prompt versioning needs. Otherwise hire an AI developer who prompt-engineers as part of the job.",
   "category": "hiring",
   "categoryLabel": "Hiring & Teams",
   "author": "Gaurav",

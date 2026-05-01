@@ -34,6 +34,7 @@ const post: BlogPost = {
   "image": "/images/blog/context-first-matching-why-tech-stack-is-not-enough.webp",
   "title": "Context-First Matching: Why Tech Stack Alone Is Not Enough to Hire Good Developers",
   "excerpt": "A Java developer who built banking systems is a completely different hire than one who built logistics software. Here is why context matters more than stack.",
+  "tldr": "Tech-stack matching (you need Python, here is a Python developer) is why an offshore engineer often spends three months understanding the business before adding real value. Context-first matching adds industry, domain, and product-stage signals on top of stack so the developer is productive in week one. The post shows the three context layers SethAI scores on.",
   "category": "hiring",
   "categoryLabel": "Hiring & Teams",
   "author": "Gaurav",

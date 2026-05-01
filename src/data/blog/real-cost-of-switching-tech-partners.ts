@@ -36,6 +36,7 @@ const post: BlogPost = {
   "image": "/images/blog/real-cost-of-switching-tech-partners.webp",
   "title": "The Real Cost of Switching Tech Partners (It Is Way More Than You Think)",
   "excerpt": "Switching your offshore team feels like a fresh start. But the hidden costs add up to months of lost progress. Here is the full breakdown.",
+  "tldr": "Switching development partners costs more than the new vendor's invoice. Five hidden costs add up: 4 to 8 weeks of onboarding, a 30 to 60 percent velocity dip, 2 to 4 weeks of senior re-explanation, 4 to 8 weeks of cultural realignment, and 2 to 3 months of slipped roadmap. Often it is cheaper to fix the current partner than start over.",
   "category": "leadership",
   "categoryLabel": "Leadership",
   "author": "Gaurav",

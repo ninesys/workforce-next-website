@@ -40,6 +40,7 @@ const post: BlogPost = {
   "image": "/images/blog/ai-developer-interview-questions-what-to-ask.webp",
   "title": "AI Developer Interview Questions: What to Actually Ask (and What to Skip)",
   "excerpt": "Most AI developer interviews test memorized trivia. Here are the questions that actually reveal whether a candidate can ship a working product.",
+  "tldr": "Most AI interview banks online ask the wrong things: transformer trivia, backprop derivations, GPT vs Claude. The framework that actually predicts production-ready hires has four layers: practical model judgment, retrieval and eval design, production hardening, and architecture decisions under cost and latency constraints. Each layer has 3 to 5 concrete questions in this post.",
   "category": "hiring",
   "categoryLabel": "Hiring & Teams",
   "author": "Gaurav",

@@ -82,6 +82,7 @@ const post: BlogPost = {
   "image": "/images/blog/how-does-ai-developer-matching-actually-work.webp",
   "title": "How Does AI Developer Matching Actually Work?",
   "excerpt": "AI developer matching has two generations. Gen 1 parses resumes for skills. Gen 2 evaluates lifestyle and behavioral fit. Here is the step-by-step pipeline each uses, where each one breaks, and how to tell them apart.",
+  "tldr": "AI developer matching automates candidate scoring against a role using structured signals instead of resume review. Every system runs the same six-stage pipeline (intake, sourcing, scoring, ranking, shortlist, feedback) but Gen 1 tools score on extracted skills while Gen 2 tools score on 12 lifestyle parameters. This post walks each stage and where it breaks.",
   "category": "hiring",
   "categoryLabel": "Hiring & Teams",
   "author": "Gaurav",

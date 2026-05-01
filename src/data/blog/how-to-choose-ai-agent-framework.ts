@@ -72,6 +72,7 @@ const post: BlogPost = {
   "image": "/images/blog/how-to-choose-ai-agent-framework.webp",
   "title": "How to Choose an AI Agent Framework: LangChain, LlamaIndex, AutoGen, and CrewAI Compared",
   "excerpt": "Picking the wrong AI agent framework silently burns a quarter of engineering time. Here is a direct decision guide for when to use LangChain, LlamaIndex, AutoGen, or CrewAI, and when to skip frameworks entirely.",
+  "tldr": "LangChain, LlamaIndex, AutoGen, and CrewAI each shine at different things. LangChain and LangGraph for stateful, complex agent workflows. LlamaIndex for retrieval-heavy apps. AutoGen for multi-agent collaboration. CrewAI for opinionated role-based agents. If your use case is a single LLM call with no tools, skip the framework entirely and call the SDK directly.",
   "category": "engineering",
   "categoryLabel": "Engineering",
   "author": "Gaurav",

@@ -77,6 +77,7 @@ const post: BlogPost = {
   "image": "/images/blog/what-is-lifestyle-fit-matching-in-developer-hiring.webp",
   "title": "What Is Lifestyle-Fit Matching in Developer Hiring?",
   "excerpt": "Lifestyle-fit matching evaluates developers across timezone, communication style, working hours, and career goals, not just technical skills. Here is what it means, why skills-only AI matching keeps failing, and the 12 parameters that actually predict a good hire.",
+  "tldr": "Lifestyle-fit matching is a Gen 2 AI hiring approach that scores developers across timezone, communication style, career goals, working hours, and domain context, not only technical skills. It exists because skills-only AI keeps placing the wrong person in the right job. The post defines the category, lists the 12 parameters that actually predict a successful hire, and shows when it is and is not the right tool.",
   "category": "hiring",
   "categoryLabel": "Hiring & Teams",
   "author": "Gaurav",

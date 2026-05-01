@@ -34,6 +34,7 @@ const post: BlogPost = {
   "image": "/images/blog/why-offshore-developers-keep-leaving.webp",
   "title": "Why Offshore Developers Keep Leaving and 3 Things That Make Them Stay",
   "excerpt": "Most offshore teams reset context every few months. Here is why developers leave and what actually works to keep them.",
+  "tldr": "Offshore developers leave for three reasons that are rarely about money: they feel like an interchangeable commodity, they have no ownership over what they build, and a contractor role on someone else's product offers no career growth. Retention comes from dedicated (not rotated) engagement, ownership-first screening, and treating the engineer like a teammate, not a billable resource line.",
   "category": "hiring",
   "categoryLabel": "Hiring & Teams",
   "author": "Gaurav",

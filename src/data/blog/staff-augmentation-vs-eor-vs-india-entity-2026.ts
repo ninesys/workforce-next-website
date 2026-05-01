@@ -129,6 +129,7 @@ const post: BlogPost = {
   "image": "/images/blog/staff-augmentation-vs-eor-vs-india-entity-2026.webp",
   "title": "Managed Staff Augmentation vs EOR vs Your Own India Entity: Which Hiring Model Fits Your Stage?",
   "excerpt": "Three ways to hire engineers in India in 2026: managed staff augmentation, an Employer of Record, or your own India entity. Each one solves a different problem. Here is a side-by-side breakdown of cost, time, IP, compliance, and the stage at which each model actually pays off.",
+  "tldr": "Three legitimate ways to hire engineers in India in 2026: managed staff augmentation (vendor employs, you contract B2B; fastest start, lowest exposure), EOR (third party employs, you direct; medium speed, medium cost), or your own India entity (you employ; highest control, 4 to 6 month setup, INR 15 to 40 lakh upfront, ongoing FEMA and compliance). Pick by team size and how long you will be in India, not by which model your last vendor pitched.",
   "category": "hiring",
   "categoryLabel": "Hiring & Teams",
   "author": "Gaurav",

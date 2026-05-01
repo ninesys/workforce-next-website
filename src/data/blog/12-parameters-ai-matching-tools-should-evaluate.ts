@@ -80,6 +80,7 @@ const post: BlogPost = {
   "image": "/images/blog/12-parameters-ai-matching-tools-should-evaluate.webp",
   "title": "The 12 Parameters Modern AI Matching Tools Should Evaluate",
   "excerpt": "Twelve parameters predict developer hiring success beyond technical skills. They cover working rhythm, context depth, career alignment, and environment. Here is each parameter, what it measures, and how to tell if a vendor actually measures it.",
+  "tldr": "Twelve parameters predict developer hiring success beyond raw technical skills: working rhythm, context depth, career alignment, and environment. Most AI matching tools measure two or three of them, which is why so many resume-perfect hires still fail by month six. This post lists all twelve, what each measures, and how to audit a vendor on every one.",
   "category": "hiring",
   "categoryLabel": "Hiring & Teams",
   "author": "Gaurav",
