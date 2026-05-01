@@ -122,7 +122,7 @@ export default function BlogPostPage({ params }: Props) {
       name: "Workforce Next",
       url: "https://workforcenext.in",
     },
-    sameAs: ["https://www.linkedin.com/in/gaurav-singh-workforcenext"],
+    sameAs: ["https://linkedin.com/in/post2seth"],
   };
 
   const faqSchema =

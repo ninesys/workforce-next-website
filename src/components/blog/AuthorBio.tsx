@@ -10,7 +10,7 @@ const authorBios: Record<string, { photo: string; bio: string; profileUrl: strin
   Gaurav: {
     photo: "/images/gaurav.jpeg",
     profileUrl: "/about/gaurav",
-    linkedin: "https://www.linkedin.com/in/gaurav-singh-workforcenext",
+    linkedin: "https://linkedin.com/in/post2seth",
     bio: "Gaurav is the founder of Workforce Next. He has spent the last decade placing and managing dedicated remote engineering teams for US and EU companies, and writes about offshore engineering, AI-native developer hiring, and team retention.",
   },
 };
