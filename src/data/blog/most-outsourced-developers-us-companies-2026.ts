@@ -47,7 +47,7 @@ const post: BlogPost = {
   <li><strong>SRE and Follow-the-Sun:</strong> The biggest driver in this category. A US team with on-call burnout problems pairs an India-based SRE pod for the night shift, so US engineers do not get paged at 3 a.m. The economics are simple: 24/7 coverage with two pods is cheaper than one US team running themselves into the ground.</li>
 </ul>
 
-<p>Workforce Next sees a lot of this work flow through the <a href="/hire/cloud-cost-engineer/">cloud cost engineer</a> path, where the engagement starts with a cost audit and then expands into ongoing platform work. New <code>/hire/devops-engineers</code> and <code>/hire/sre</code> pillar pages are coming for buyers who walk in already knowing they want this.</p>
+<p>Workforce Next sees a lot of this work flow through the <a href="/hire/cloud-cost-engineer/">cloud cost engineer</a> path, where the engagement starts with a cost audit and then expands into ongoing platform and SRE work for the same client.</p>
 
 <h3>3. Data and AI engineers</h3>
 
@@ -56,7 +56,7 @@ const post: BlogPost = {
 <ul>
   <li><strong>Data pipeline engineers.</strong> Ingestion, transformation, vector store population, and the unglamorous data-cleaning work that every AI product depends on. The <a href="/hire/data-engineers/">data engineers</a> page covers this in detail.</li>
   <li><strong>AI and ML engineers.</strong> RAG pipelines, fine-tuning, evaluation harnesses, and production deployment. <a href="/hire/ai-developers/">AI developers</a> are the highest-rate offshore role we see, and demand is outstripping supply globally.</li>
-  <li><strong>LLM integrators and MCP server developers.</strong> The newest sub-role. As Anthropic's Model Context Protocol becomes the default way agents talk to internal systems, companies need engineers who can stand up MCP servers, expose internal APIs to LLM clients safely, and build the agent layer on top. <a href="/hire/langchain-developers/">LangChain</a> and <a href="/hire/rag-developers/">RAG developers</a> are the closest current taxonomy match. A dedicated <code>/hire/mcp-developers</code> page is on the build list.</li>
+  <li><strong>LLM integrators and MCP server developers.</strong> The newest sub-role. As Anthropic's Model Context Protocol becomes the default way agents talk to internal systems, companies need engineers who can stand up MCP servers, expose internal APIs to LLM clients safely, and build the agent layer on top. We staff this work through our <a href="/hire/langchain-developers/">LangChain</a> and <a href="/hire/rag-developers/">RAG developer</a> engagements.</li>
 </ul>
 
 <p>The argument for offshore here is twofold: cost (a senior US AI engineer runs $280K to $380K fully loaded), and supply. Even if you have the budget, you may not be able to find five mid or senior AI engineers in your local market on any reasonable timeline. India and parts of Eastern Europe have built the deepest pools globally outside the FAANG-funded US enclave.</p>
@@ -72,7 +72,7 @@ const post: BlogPost = {
   <li>CI integration so tests fail builds, not next-day Slack messages.</li>
 </ul>
 
-<p>The <a href="/hire/qa-testers/">QA engineers</a> page covers the current offering. A more SDET-specific page is on the build list because the buyer profile is now distinct from manual QA. SDETs in India and Eastern Europe have built deep automation expertise; they are less common in LATAM.</p>
+<p>The <a href="/hire/qa-testers/">QA engineers</a> page covers the current offering, and the SDET-specific work flows through the same intake. SDETs in India and Eastern Europe have built deep automation expertise; they are less common in LATAM.</p>
 
 <h2>How much does outsourcing actually save in 2026?</h2>
 
