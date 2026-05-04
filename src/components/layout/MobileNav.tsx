@@ -41,42 +41,70 @@ export default function MobileNav({ open, onClose }: MobileNavProps) {
         </div>
 
         <nav className="p-4 space-y-1">
-          {mainNavItems.map((item) =>
-            item.children ? (
-              <div key={item.label}>
-                <button
-                  onClick={() =>
-                    setExpandedMenu(expandedMenu === item.label ? null : item.label)
-                  }
-                  className="w-full flex items-center justify-between px-4 py-3 text-dark-700 dark:text-dark-200 font-medium rounded-lg hover:bg-primary-50 dark:hover:bg-primary-500/10 transition-colors"
-                >
-                  {item.label}
-                  <svg
-                    className={`w-4 h-4 text-dark-300 dark:text-dark-400 transition-transform duration-200 ${expandedMenu === item.label ? "rotate-180" : ""}`}
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
+          {mainNavItems.map((item) => {
+            const hasGroups = !!item.groups && item.groups.length > 0;
+            const hasFlatChildren = !!item.children && item.children.length > 0;
+            if (hasGroups || hasFlatChildren) {
+              return (
+                <div key={item.label}>
+                  <button
+                    onClick={() =>
+                      setExpandedMenu(expandedMenu === item.label ? null : item.label)
+                    }
+                    className="w-full flex items-center justify-between px-4 py-3 text-dark-700 dark:text-dark-200 font-medium rounded-lg hover:bg-primary-50 dark:hover:bg-primary-500/10 transition-colors"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-                  </svg>
-                </button>
-                {expandedMenu === item.label && (
-                  <div className="ml-4 mt-1 space-y-0.5 border-l-2 border-primary-200 dark:border-primary-500/30 pl-4">
-                    {item.children.map((child) => (
-                      <Link
-                        key={child.href}
-                        href={child.href}
-                        onClick={onClose}
-                        className="block px-3 py-2.5 text-sm text-dark-400 dark:text-dark-300 hover:text-primary-500 dark:hover:text-primary-400 hover:bg-primary-50 dark:hover:bg-primary-500/10 rounded-lg transition-colors"
-                      >
-                        {child.label}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
-            ) : (
+                    {item.label}
+                    <svg
+                      className={`w-4 h-4 text-dark-300 dark:text-dark-400 transition-transform duration-200 ${expandedMenu === item.label ? "rotate-180" : ""}`}
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                  {expandedMenu === item.label && hasGroups && (
+                    <div className="ml-4 mt-1 space-y-4 border-l-2 border-primary-200 dark:border-primary-500/30 pl-4 pb-2">
+                      {item.groups!.map((group) => (
+                        <div key={group.title}>
+                          <p className="px-3 pt-2 pb-1 text-[10px] font-extrabold uppercase tracking-wider text-primary-500 dark:text-primary-400">
+                            {group.title}
+                          </p>
+                          <div className="space-y-0.5">
+                            {group.items.map((sub) => (
+                              <Link
+                                key={sub.href}
+                                href={sub.href}
+                                onClick={onClose}
+                                className="block px-3 py-2 text-sm text-dark-500 dark:text-dark-300 hover:text-primary-500 dark:hover:text-primary-400 hover:bg-primary-50 dark:hover:bg-primary-500/10 rounded-lg transition-colors"
+                              >
+                                {sub.label}
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                  {expandedMenu === item.label && !hasGroups && hasFlatChildren && (
+                    <div className="ml-4 mt-1 space-y-0.5 border-l-2 border-primary-200 dark:border-primary-500/30 pl-4">
+                      {item.children!.map((child) => (
+                        <Link
+                          key={child.href}
+                          href={child.href}
+                          onClick={onClose}
+                          className="block px-3 py-2.5 text-sm text-dark-400 dark:text-dark-300 hover:text-primary-500 dark:hover:text-primary-400 hover:bg-primary-50 dark:hover:bg-primary-500/10 rounded-lg transition-colors"
+                        >
+                          {child.label}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              );
+            }
+            return (
               <Link
                 key={item.href}
                 href={item.href}
@@ -85,8 +113,8 @@ export default function MobileNav({ open, onClose }: MobileNavProps) {
               >
                 {item.label}
               </Link>
-            )
-          )}
+            );
+          })}
         </nav>
 
         <div className="p-5 border-t border-dark-50 dark:border-dark-700">

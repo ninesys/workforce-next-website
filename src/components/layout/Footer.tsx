@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="bg-dark-900 dark:bg-dark-900 text-dark-200 border-t border-dark-800 dark:border-dark-700/50">
       <div className="container-custom py-14 md:py-20">
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 lg:gap-12">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="inline-block">
@@ -35,13 +35,32 @@ export default function Footer() {
             </a>
           </div>
 
-          {/* Hire Developers */}
+          {/* Hire by skill */}
           <div>
             <h3 className="text-sm font-bold uppercase tracking-wider text-white mb-5">
-              Hire Developers
+              Hire by skill
             </h3>
             <ul className="space-y-3">
               {footerLinks.services.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-dark-300 hover:text-primary-400 transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Hire by region */}
+          <div>
+            <h3 className="text-sm font-bold uppercase tracking-wider text-white mb-5">
+              By region & stage
+            </h3>
+            <ul className="space-y-3">
+              {footerLinks.byRegion.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}

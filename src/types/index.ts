@@ -1,7 +1,15 @@
+export interface NavGroup {
+  title: string;
+  description?: string;
+  items: NavItem[];
+}
+
 export interface NavItem {
   label: string;
   href: string;
+  description?: string;
   children?: NavItem[];
+  groups?: NavGroup[];
 }
 
 export interface SiteMetadata {
