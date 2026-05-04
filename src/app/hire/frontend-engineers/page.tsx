@@ -15,6 +15,8 @@ export const metadata: Metadata = {
     "Hire pre-vetted frontend engineers from India. React, Next.js 14+, TypeScript, Tailwind, performance optimization, and accessibility. SethAI-screened for skills and longevity.",
   keywords: [
     "hire frontend engineers India",
+    "reactjs development service",
+    "hire reactjs developer",
     "hire React developers India",
     "hire Next.js developers India",
     "TypeScript developers India",
@@ -202,6 +204,13 @@ const faqItems: FAQ[] = [
     categoryLabel: "Hiring",
   },
   {
+    question: "Do you offer a dedicated ReactJS development service?",
+    answer:
+      "Yes. When you ask for a React.js developer specifically, the matched engineer has a production React-heavy track record: hooks fluency, state-management taste, performance budgets, accessibility, and component-library discipline. The same intake covers Next.js, Vite, and component-library work on shadcn/ui or a custom design system. Senior React.js developers from India typically cost between 5,500 and 8,500 USD per month all-in. Shortlist in 48 hours, then a one-week paid trial.",
+    category: "hiring",
+    categoryLabel: "Hiring",
+  },
+  {
     question: "Do your frontend engineers work with Next.js 14 and the App Router?",
     answer:
       "Yes. Every senior frontend engineer we place has shipped production apps on Next.js 14 or 15 with the App Router. Server Components, streaming, Suspense, and Cache Components are part of how we screen. If your app is still on Pages Router or Create React App, we match engineers who have done migrations and can guide you through the path.",
@@ -382,6 +391,71 @@ export default function HireFrontendEngineersPage() {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      {/* ReactJS focused section */}
+      <section
+        id="reactjs-development-service"
+        className="section-padding bg-white dark:bg-dark-900 border-t border-dark-50 dark:border-dark-800"
+      >
+        <div className="container-custom max-w-4xl">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 mb-6">
+            ReactJS development service: hire React.js developers from India
+          </h2>
+          <div className="space-y-4 text-dark-600 dark:text-dark-200 leading-relaxed">
+            <p>
+              React is the default UI framework for almost every product team
+              we serve, and the bench we maintain reflects that. When you ask
+              for a React.js developer specifically, the matched engineer is
+              someone who has shipped production React at scale: hooks
+              fluency, state-management taste, performance budgets that
+              actually hold, accessibility as a habit, and the discipline to
+              keep a component library coherent over multiple sprints rather
+              than letting it sprawl.
+            </p>
+            <p>
+              Our ReactJS development service covers the full surface a
+              modern React product needs: a Next.js app router or Vite
+              foundation, TypeScript-first codebase, Tailwind plus a
+              component library like shadcn/ui, server components and
+              streaming where they earn their weight, and the kind of
+              testing pipeline (Vitest, Playwright, Storybook) that keeps
+              the UI from regressing as it grows. Engineers are screened by
+              SethAI for industry context too, so a fintech UI hire has
+              actually shipped fintech UIs before.
+            </p>
+            <p className="font-semibold text-dark-900 dark:text-dark-50">
+              Typical React.js deliverables we ship in the first 90 days:
+            </p>
+            <ul className="space-y-2">
+              {[
+                "Next.js 14+ application with the App Router, server components, and proper streaming for slow data",
+                "Component library on Tailwind plus shadcn/ui or a custom design system, with Storybook coverage and accessibility checks",
+                "State management chosen for the size of the problem: React Query for server state, Zustand or Redux Toolkit only where they are warranted",
+                "Performance budgets enforced by Lighthouse CI and Real User Monitoring, with Core Web Vitals held in the green",
+                "TypeScript end-to-end with strict mode, exhaustive types from API to component props",
+                "Migration of legacy React class components or Pages Router code to modern hooks and the App Router without freezing feature work",
+              ].map((item) => (
+                <li
+                  key={item}
+                  className="flex gap-3 text-dark-600 dark:text-dark-200 leading-relaxed"
+                >
+                  <span
+                    aria-hidden
+                    className="mt-2 h-1.5 w-1.5 rounded-full bg-primary-500 flex-shrink-0"
+                  />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+            <p>
+              If your stack leans toward Vue, Svelte, or vanilla web
+              components, the same engineering manager will match you to
+              engineers in those ecosystems instead. We do not push React
+              where it does not fit.
+            </p>
+          </div>
         </div>
       </section>
 

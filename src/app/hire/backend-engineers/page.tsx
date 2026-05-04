@@ -15,6 +15,8 @@ export const metadata: Metadata = {
     "Hire pre-vetted backend engineers from India. FastAPI, Node.js, Go, PostgreSQL, Redis, Docker, Kubernetes, and more. SethAI-screened for skills and longevity.",
   keywords: [
     "hire backend engineers India",
+    "hire nodejs developer",
+    "hire node.js developer",
     "hire FastAPI developers India",
     "Node.js developers India",
     "Go developers India",
@@ -201,6 +203,13 @@ const faqItems: FAQ[] = [
     categoryLabel: "Hiring",
   },
   {
+    question: "How do I hire a Node.js developer specifically?",
+    answer:
+      "The same intake process. Tell us you want a Node.js developer and SethAI matches engineers whose production track record is Node-heavy: Express, Fastify, NestJS, Bun, real-time features, TypeScript end-to-end, edge deployments. Senior Node.js developers from India typically cost between 5,500 and 8,500 USD per month all-in. The shortlist comes back in 48 hours and you start with a one-week paid trial.",
+    category: "hiring",
+    categoryLabel: "Hiring",
+  },
+  {
     question: "Which backend language should I choose for a new project?",
     answer:
       "Choose Node.js/TypeScript if your team is already TypeScript end-to-end or you are shipping real-time features. Choose Python (FastAPI) if your backend touches AI, ML, data pipelines, or you need async Python. Choose Go if you need low-latency services, high concurrency, or you are building infrastructure and want strong deployment binaries. Most of our engineers are comfortable in at least two of these and will recommend based on your constraints.",
@@ -379,6 +388,70 @@ export default function HireBackendEngineersPage() {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      {/* Node.js focused section */}
+      <section
+        id="hire-nodejs-developer"
+        className="section-padding bg-white dark:bg-dark-900 border-t border-dark-50 dark:border-dark-800"
+      >
+        <div className="container-custom max-w-4xl">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 mb-6">
+            Hire Node.js developers from India
+          </h2>
+          <div className="space-y-4 text-dark-600 dark:text-dark-200 leading-relaxed">
+            <p>
+              Node.js is the default backend choice for product teams that
+              already write TypeScript on the frontend, for real-time features
+              that need event-driven concurrency, and for any team that wants
+              one language across the stack so a backend engineer can also
+              read and reason about the React side. We hire Node.js developers
+              for that profile specifically: engineers who treat the runtime
+              as a first-class production environment, not just a way to spin
+              up a quick API.
+            </p>
+            <p>
+              The frameworks our Node.js engineers ship in production: Express
+              for the simplest services, Fastify for performance-sensitive
+              APIs, NestJS for opinionated multi-team monoliths, and Hono or
+              Bun for edge and serverless deployments. They are fluent in
+              async correctness, event-loop pitfalls, structured logging, and
+              the operational concerns (graceful shutdown, signal handling,
+              memory profiling) that separate a hobby Node service from one
+              that runs at scale.
+            </p>
+            <p className="font-semibold text-dark-900 dark:text-dark-50">
+              Typical Node.js deliverables we ship in the first 90 days:
+            </p>
+            <ul className="space-y-2">
+              {[
+                "Production REST or GraphQL APIs in Express, Fastify, or NestJS with proper auth, rate limiting, and structured logging",
+                "Real-time services using WebSockets, Server-Sent Events, or Socket.IO for chat, notifications, and live dashboards",
+                "Background job systems with BullMQ, Agenda, or Temporal for durable async work",
+                "TypeScript-first codebases with end-to-end type safety from database to client via Prisma, Drizzle, or Kysely",
+                "Edge and serverless functions on Vercel, Cloudflare Workers, or AWS Lambda with cold-start awareness baked in",
+                "Migration from JavaScript to TypeScript without freezing feature work",
+              ].map((item) => (
+                <li
+                  key={item}
+                  className="flex gap-3 text-dark-600 dark:text-dark-200 leading-relaxed"
+                >
+                  <span
+                    aria-hidden
+                    className="mt-2 h-1.5 w-1.5 rounded-full bg-primary-500 flex-shrink-0"
+                  />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+            <p>
+              If your stack is more Python or Go than Node, the same engineering
+              manager will match you to those engineers instead. We do not push
+              Node where it does not fit. The point is to give you the right
+              backend engineer for the work, not to sell a framework.
+            </p>
+          </div>
         </div>
       </section>
 

@@ -22,6 +22,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/hire/fullstack-developers/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/hire/devops-engineers/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/hire/mcp-developers/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/hire/ios-developers/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${baseUrl}/hire/android-developers/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     // Segment pages
     { url: `${baseUrl}/for/founders/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/for/startups/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },

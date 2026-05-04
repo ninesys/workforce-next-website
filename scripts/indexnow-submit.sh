@@ -24,6 +24,8 @@ URLS=(
   "https://${HOST}/hire/fullstack-developers/"
   "https://${HOST}/hire/devops-engineers/"
   "https://${HOST}/hire/mcp-developers/"
+  "https://${HOST}/hire/ios-developers/"
+  "https://${HOST}/hire/android-developers/"
   "https://${HOST}/for/founders/"
   "https://${HOST}/for/startups/"
   "https://${HOST}/for/enterprise/"
