@@ -28,6 +28,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/for/founders/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/for/startups/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/for/enterprise/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${baseUrl}/for/europe/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${baseUrl}/for/usa-canada/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${baseUrl}/for/australia/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${baseUrl}/for/dubai/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     // Products
     { url: `${baseUrl}/products/seth-ai-recruiter/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/products/employee-productivity-intelligence/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
