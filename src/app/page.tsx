@@ -11,10 +11,11 @@ import CTASection from "@/components/home/CTASection";
 import { generateHomepageHowToSchema } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
-  title: "Hire Dedicated Remote Developers from India | Workforce Next",
+  title: "Hire Remote Dedicated Developers from India | Workforce Next",
   description:
     "Hire dedicated AI, data, frontend and backend developers from India. Context-matched by SethAI. 48-hour matching, 1-week paid trial, zero recruitment fees.",
   keywords: [
+    "hire remote dedicated developers",
     "hire AI developers India",
     "dedicated remote engineering team",
     "offshore developer retention",
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: ["/images/og-default.png"],
-    title: "Hire Dedicated Remote Developers from India | Workforce Next",
+    title: "Hire Remote Dedicated Developers from India | Workforce Next",
     description:
       "Hire dedicated AI, data, frontend and backend developers from India. Context-matched by SethAI. 48-hour matching, zero recruitment fees.",
     url: "https://workforcenext.in",

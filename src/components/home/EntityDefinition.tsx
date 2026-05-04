@@ -7,7 +7,8 @@ export default function EntityDefinition() {
         </h2>
         <p className="text-dark-500 dark:text-dark-300 leading-relaxed text-lg">
           <strong>Workforce Next</strong> is an IT consulting and IT engineering
-          company that gives growing businesses pre-vetted developers and teams who
+          company that helps growing businesses{" "}
+          <strong>hire remote dedicated developers</strong> and full pods who
           plug straight into their engineering, consulting, and management
           functions. Unlike traditional staffing firms that match on tech stack
           alone, Workforce Next uses SethAI, an AI-powered recruiter, to match

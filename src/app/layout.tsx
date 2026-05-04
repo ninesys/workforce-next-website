@@ -21,12 +21,13 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL("https://workforcenext.in"),
   title: {
-    default: "Hire Dedicated Remote Developers from India | Workforce Next",
+    default: "Hire Remote Dedicated Developers from India | Workforce Next",
     template: "%s | Workforce Next",
   },
   description:
     "Hire dedicated AI, data, frontend and backend developers from India. Context-matched by SethAI. 48-hour matching, 1-week paid trial, zero recruitment fees.",
   keywords: [
+    "hire remote dedicated developers",
     "hire dedicated developers India",
     "remote engineering team India",
     "hire AI developers",
@@ -57,7 +58,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://workforcenext.in",
     siteName: "Workforce Next",
-    title: "Hire Dedicated Remote Developers from India | Workforce Next",
+    title: "Hire Remote Dedicated Developers from India | Workforce Next",
     description:
       "Hire dedicated AI, data, frontend and backend developers from India. Context-matched by SethAI. 48-hour matching, zero recruitment fees.",
     images: [
@@ -71,7 +72,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hire Dedicated Remote Developers from India | Workforce Next",
+    title: "Hire Remote Dedicated Developers from India | Workforce Next",
     description:
       "Hire dedicated AI, data, frontend and backend developers from India. Context-matched by SethAI.",
     images: ["https://workforcenext.in/images/og-default.png"],
