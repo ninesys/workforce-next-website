@@ -1,6 +1,20 @@
 import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
+  // Each per-bot group needs its own disallow because, per RFC 9309,
+  // a crawler that matches a specific group ignores the wildcard rules.
+  const aiAndSearchBots = [
+    "Googlebot",
+    "Bingbot",
+    "GPTBot",
+    "ChatGPT-User",
+    "Google-Extended",
+    "PerplexityBot",
+    "ClaudeBot",
+    "Amazonbot",
+    "Applebot-Extended",
+  ];
+
   return {
     rules: [
       {
@@ -8,17 +22,12 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
         disallow: ["/api/"],
       },
-      { userAgent: "Googlebot", allow: "/" },
-      { userAgent: "Bingbot", allow: "/" },
-      { userAgent: "GPTBot", allow: "/" },
-      { userAgent: "ChatGPT-User", allow: "/" },
-      { userAgent: "Google-Extended", allow: "/" },
-      { userAgent: "PerplexityBot", allow: "/" },
-      { userAgent: "ClaudeBot", allow: "/" },
-      { userAgent: "Amazonbot", allow: "/" },
-      { userAgent: "Applebot-Extended", allow: "/" },
+      ...aiAndSearchBots.map((userAgent) => ({
+        userAgent,
+        allow: "/",
+        disallow: ["/api/"],
+      })),
     ],
     sitemap: "https://workforcenext.in/sitemap.xml",
-    host: "https://workforcenext.in",
   };
 }
