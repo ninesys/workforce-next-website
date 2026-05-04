@@ -10,10 +10,15 @@ import { cn } from "@/lib/utils";
 export default function BlogPage() {
   const [activeCategory, setActiveCategory] = useState("all");
 
+  const sortedPosts = [...blogPosts].sort(
+    (a, b) =>
+      new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
+  );
+
   const filteredPosts =
     activeCategory === "all"
-      ? blogPosts
-      : blogPosts.filter((post) => post.category === activeCategory);
+      ? sortedPosts
+      : sortedPosts.filter((post) => post.category === activeCategory);
 
   return (
     <>

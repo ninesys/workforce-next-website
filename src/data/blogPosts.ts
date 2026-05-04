@@ -21,6 +21,7 @@ import toptalVsAndelaVsTuringVsWorkforcenextComparison2026 from "./blog/toptal-v
 import seniorIndianDeveloperSalary2026 from "./blog/senior-indian-developer-salary-2026";
 import verifyIndianDeveloperExperienceChecklist2026 from "./blog/verify-indian-developer-experience-checklist-2026";
 import mostOutsourcedDevelopersUsCompanies2026 from "./blog/most-outsourced-developers-us-companies-2026";
+import mcpExplainedHowToHireMcpDevelopers from "./blog/mcp-explained-how-to-hire-mcp-developers";
 
 export type { BlogPost, BlogFAQ };
 
@@ -57,4 +58,5 @@ export const blogPosts: BlogPost[] = [
   seniorIndianDeveloperSalary2026,
   verifyIndianDeveloperExperienceChecklist2026,
   mostOutsourcedDevelopersUsCompanies2026,
+  mcpExplainedHowToHireMcpDevelopers,
 ];
