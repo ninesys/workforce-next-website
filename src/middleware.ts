@@ -131,6 +131,18 @@ export function middleware(req: NextRequest) {
     return NextResponse.next();
   }
 
+  // Markdown alternates: /<path>.md is internally served by /md/<path>.
+  // The user-visible URL stays as .md; the route handler under app/md emits
+  // text/markdown. AI tools (Cursor, Windsurf, Perplexity, ChatGPT custom
+  // GPTs) discover this via <link rel="alternate" type="text/markdown">.
+  if (
+    pathname.endsWith(".md") &&
+    !pathname.startsWith("/md/")
+  ) {
+    const stripped = pathname.slice(0, -3); // drop ".md"
+    return NextResponse.rewrite(new URL(`/md${stripped}`, req.url));
+  }
+
   const key = stripTrailingSlash(pathname);
 
   // Exact legacy match.

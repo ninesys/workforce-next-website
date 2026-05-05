@@ -56,6 +56,9 @@ export function generateMetadata({ params }: Props): Metadata {
     },
     alternates: {
       canonical: `https://workforcenext.in/blog/${post.slug}/`,
+      types: {
+        "text/markdown": `https://workforcenext.in/blog/${post.slug}.md`,
+      },
     },
   };
 }
