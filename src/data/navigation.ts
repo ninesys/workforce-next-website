@@ -23,6 +23,7 @@ export const mainNavItems: NavItem[] = [
           { label: "Product Engineers", href: "/hire/product-engineers" },
           { label: "Vibe-Code Engineer", href: "/hire/vibe-code-engineer" },
           { label: "QA Engineers & Testers", href: "/hire/qa-testers" },
+          { label: "Fractional Project Manager", href: "/hire/fractional-project-manager" },
         ],
       },
       {
@@ -79,6 +80,7 @@ export const footerLinks = {
     { label: "Product Engineers", href: "/hire/product-engineers" },
     { label: "Vibe-Code Engineer", href: "/hire/vibe-code-engineer" },
     { label: "QA Engineers & Testers", href: "/hire/qa-testers" },
+    { label: "Fractional Project Manager", href: "/hire/fractional-project-manager" },
   ],
   byRegion: [
     { label: "For European Companies", href: "/for/europe" },
