@@ -22,6 +22,9 @@ import seniorIndianDeveloperSalary2026 from "./blog/senior-indian-developer-sala
 import verifyIndianDeveloperExperienceChecklist2026 from "./blog/verify-indian-developer-experience-checklist-2026";
 import mostOutsourcedDevelopersUsCompanies2026 from "./blog/most-outsourced-developers-us-companies-2026";
 import mcpExplainedHowToHireMcpDevelopers from "./blog/mcp-explained-how-to-hire-mcp-developers";
+import kotlinVsJavaAndroid2026 from "./blog/kotlin-vs-java-android-2026";
+import hireSoftwareTestingTeam2026 from "./blog/hire-software-testing-team-2026";
+import shortTermIndianDevelopersEuropeanProjects2026 from "./blog/short-term-indian-developers-european-projects-2026";
 
 export type { BlogPost, BlogFAQ };
 
@@ -59,4 +62,7 @@ export const blogPosts: BlogPost[] = [
   verifyIndianDeveloperExperienceChecklist2026,
   mostOutsourcedDevelopersUsCompanies2026,
   mcpExplainedHowToHireMcpDevelopers,
+  kotlinVsJavaAndroid2026,
+  hireSoftwareTestingTeam2026,
+  shortTermIndianDevelopersEuropeanProjects2026,
 ];

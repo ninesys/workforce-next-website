@@ -75,6 +75,9 @@ URLS=(
   "https://${HOST}/blog/verify-indian-developer-experience-checklist-2026/"
   "https://${HOST}/blog/most-outsourced-developers-us-companies-2026/"
   "https://${HOST}/blog/mcp-explained-how-to-hire-mcp-developers/"
+  "https://${HOST}/blog/kotlin-vs-java-android-2026/"
+  "https://${HOST}/blog/hire-software-testing-team-2026/"
+  "https://${HOST}/blog/short-term-indian-developers-european-projects-2026/"
 )
 
 # Build JSON payload
