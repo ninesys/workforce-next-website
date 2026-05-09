@@ -78,6 +78,7 @@ URLS=(
   "https://${HOST}/blog/kotlin-vs-java-android-2026/"
   "https://${HOST}/blog/hire-software-testing-team-2026/"
   "https://${HOST}/blog/short-term-indian-developers-european-projects-2026/"
+  "https://${HOST}/blog/android-app-developer-hiring-guide-2026/"
 )
 
 # Build JSON payload
