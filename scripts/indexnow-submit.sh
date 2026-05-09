@@ -25,6 +25,7 @@ URLS=(
   "https://${HOST}/hire/devops-engineers/"
   "https://${HOST}/hire/mcp-developers/"
   "https://${HOST}/hire/fractional-project-manager/"
+  "https://${HOST}/hire/unity-developers/"
   "https://${HOST}/hire/ios-developers/"
   "https://${HOST}/hire/android-developers/"
   "https://${HOST}/for/founders/"

@@ -3,6 +3,7 @@ import { NextResponse, type NextRequest } from "next/server";
 const AI_DEV = "/hire/ai-developers/";
 const FRONTEND = "/hire/frontend-engineers/";
 const BACKEND = "/hire/backend-engineers/";
+const UNITY = "/hire/unity-developers/";
 const EPI = "/products/employee-productivity-intelligence/";
 
 // Exact-match legacy paths. Keys are stored without trailing slash; lookup
@@ -17,8 +18,8 @@ const EXACT: Record<string, string> = {
   "/hire-software-testers": BACKEND,
   "/hire-an-ai-developer": AI_DEV,
   "/hire-dedicated-llm-developers": AI_DEV,
-  "/hire-android-developer": FRONTEND,
-  "/hire-unity-developer": FRONTEND,
+  "/hire-android-developer": "/hire/android-developers/",
+  "/hire-unity-developer": UNITY,
   "/how-to-hire-mobile-app-developers": FRONTEND,
   "/it-staffing-companies-in-india": BACKEND,
   "/cost-to-hire-a-software-developer": BACKEND,

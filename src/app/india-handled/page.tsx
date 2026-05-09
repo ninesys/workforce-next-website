@@ -10,10 +10,13 @@ import {
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "India-Handled: Managed Staff Augmentation Done For You",
+  title: "Hire an Offshore Development Team from India (Managed)",
   description:
-    "Pick the engineer through SethAI. We run their payroll, PF, gratuity, and benefits in India. One B2B contract. No entity, no EOR, no payroll burden on you.",
+    "Hire a managed offshore development team from India. We employ the engineers and run payroll. One B2B contract, no entity, no EOR, no payroll burden on you.",
   keywords: [
+    "hire offshore development team",
+    "hire offshore development team india",
+    "managed offshore development team",
     "managed staff augmentation India",
     "dedicated developers India staff aug",
     "hire developers in India",
@@ -26,9 +29,9 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     images: ["/images/og-default.png"],
-    title: "India-Handled. Managed Staff Augmentation, Operations Done For You",
+    title: "Hire an Offshore Development Team from India (Managed)",
     description:
-      "Pick the engineer through SethAI. They're our employee. We handle their payroll, compliance, benefits, and equipment. You sign one B2B services contract.",
+      "Pick engineers through SethAI. We employ them, run payroll and compliance, you sign one B2B services contract. The managed offshore development team model done right.",
   },
   alternates: {
     canonical: "https://workforcenext.in/india-handled/",
@@ -238,11 +241,12 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 const faqSchema = generateFAQPageSchema(faqs);
 
 const articleSchema = generateArticleSchema({
-  headline: "India-Handled: Managed Staff Augmentation Done For You",
+  headline: "Hire an Offshore Development Team from India (Managed)",
   description:
-    "Pick the engineer through SethAI. We run their payroll, PF, gratuity, and benefits in India. One B2B contract. No entity, no EOR, no payroll burden on you.",
+    "Hire a managed offshore development team from India. We employ the engineers and run payroll, you sign one B2B contract. No entity, no EOR, no payroll burden on you.",
   url: "https://workforcenext.in/india-handled/",
   datePublished: "2026-04-10",
+  dateModified: "2026-05-08",
 });
 
 export default function IndiaHandledPage() {
@@ -268,14 +272,15 @@ export default function IndiaHandledPage() {
             THE OPERATIONAL MODEL
           </Badge>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-dark-900 dark:text-dark-50 leading-tight">
-            DIY hiring through SethAI. India-handled operations.
+            Hire a managed offshore development team from India.
           </h1>
           <p className="mt-5 text-lg text-dark-400 dark:text-dark-300 max-w-2xl leading-relaxed">
-            You pick the engineer. They&apos;re our full-time employee. We run
-            their payroll, PF, gratuity, equipment, health insurance, and every
-            line of Indian labour law. You sign one B2B services contract and
-            pay one foreign-currency invoice. No India entity, no EOR, no
-            payroll burden on your side.
+            DIY hiring through SethAI, India-handled operations. You pick the
+            engineers. They are our full-time employees. We run their payroll,
+            PF, gratuity, equipment, health insurance, and every line of Indian
+            labour law. You sign one B2B services contract and pay one
+            foreign-currency invoice. No entity, no EOR, no payroll burden on
+            your side.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
             <Button href="/contact" variant="primary" size="lg">
