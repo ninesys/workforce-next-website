@@ -3,7 +3,104 @@
   "version": 1,
   "lastUpdated": "2026-05-10",
   "notes": "Authoritative blog post pipeline. Mirror of the build queue in ~/.claude/projects/.../memory/project_target_keywords_2026-05.md. Update this file when items ship. Keep priority ordering descending: lowest priority number = ships next.",
-  "queue": [],
+  "queue": [
+    {
+      "id": "ai-sec-2",
+      "slug": "prompt-injection-defense-production-llm-apps-2026",
+      "title": "Prompt Injection Defense for Production LLM Apps in 2026",
+      "primaryKeyword": "prompt injection defense",
+      "pairsWith": "/hire/ai-developers/",
+      "priority": 2,
+      "status": "pending",
+      "addedAt": "2026-05-10",
+      "audience": "US/Canada AI engineers, application security leads",
+      "notes": "Direct vs indirect prompt injection, real attack examples (resume-poisoning, doc-poisoning), defenses (input sanitisation, output validation, structured tool-use, sandboxed execution). Reference NIST AI RMF and OWASP. Pair with /hire/ai-developers."
+    },
+    {
+      "id": "ai-sec-3",
+      "slug": "securing-rag-applications-data-isolation-patterns-2026",
+      "title": "Securing RAG Applications: Data Isolation Patterns 2026",
+      "primaryKeyword": "secure rag applications",
+      "pairsWith": "/hire/rag-developers/",
+      "priority": 3,
+      "status": "pending",
+      "addedAt": "2026-05-10",
+      "audience": "US/Canada RAG engineers, data platform leads at multi-tenant SaaS",
+      "notes": "Per-tenant vector store isolation, ACL-aware retrieval, encryption-at-rest patterns for embeddings, audit logging for retrievals. Reference HIPAA technical safeguards and SOC 2 CC6 controls."
+    },
+    {
+      "id": "ai-sec-4",
+      "slug": "ai-code-review-security-enterprise-pipelines-2026",
+      "title": "AI Code Review for Security in Enterprise Pipelines (2026)",
+      "primaryKeyword": "ai code review security",
+      "pairsWith": "/hire/ai-developers/",
+      "priority": 4,
+      "status": "pending",
+      "addedAt": "2026-05-10",
+      "audience": "US/Canada engineering managers, AppSec leads at mid-market and enterprise SaaS",
+      "notes": "Static analysis with LLMs, false-positive management, integrating Semgrep / CodeQL / Snyk with AI assistants, governance (do not let agents merge unsupervised). US-specific: SOX-relevant audit trail patterns."
+    },
+    {
+      "id": "ai-sec-5",
+      "slug": "llm-api-key-rotation-secret-management-2026",
+      "title": "LLM API Key Rotation and Secret Management in 2026",
+      "primaryKeyword": "llm api key rotation",
+      "pairsWith": "/hire/ai-developers/",
+      "priority": 5,
+      "status": "pending",
+      "addedAt": "2026-05-10",
+      "audience": "US/Canada DevOps and platform engineers, SREs at AI-shipping companies",
+      "notes": "Vaulting (HashiCorp Vault, AWS Secrets Manager, Doppler), per-environment scoping, automated rotation, blast-radius containment, monitoring for leaked keys (GitHub secret scanning, TruffleHog). Cost-leak angle: a leaked OpenAI key can run six figures in hours."
+    },
+    {
+      "id": "ai-sec-6",
+      "slug": "compliance-checklist-ai-applications-soc2-hipaa-2026",
+      "title": "Compliance Checklist for AI Applications (SOC 2, HIPAA, 2026)",
+      "primaryKeyword": "ai application compliance checklist",
+      "pairsWith": "/hire/ai-developers/",
+      "priority": 6,
+      "status": "pending",
+      "addedAt": "2026-05-10",
+      "audience": "US/Canada compliance officers, founders of healthcare and fintech AI SaaS",
+      "notes": "Map AI-specific risks to SOC 2 trust services criteria, HIPAA technical and administrative safeguards, and emerging US state AI laws (Colorado AI Act, NYC Local Law 144). Vendor-due-diligence template for evaluating LLM providers."
+    },
+    {
+      "id": "entweb-1",
+      "slug": "enterprise-nextjs-architecture-patterns-2026",
+      "title": "Enterprise Next.js Architecture Patterns for 2026",
+      "primaryKeyword": "enterprise nextjs architecture",
+      "pairsWith": "/hire/frontend-engineers/",
+      "priority": 7,
+      "status": "pending",
+      "addedAt": "2026-05-10",
+      "audience": "US/Canada platform engineers and architects at mid-market SaaS migrating monolithic React to Next.js",
+      "notes": "App Router with module federation, monorepo (Turborepo + pnpm), feature flags (LaunchDarkly, Statsig), edge vs node runtime decision tree, observability (OpenTelemetry, Datadog), CI patterns. Pair with /hire/frontend-engineers."
+    },
+    {
+      "id": "entweb-2",
+      "slug": "headless-cms-evaluation-enterprise-teams-2026",
+      "title": "Headless CMS Evaluation Guide for Enterprise Teams (2026)",
+      "primaryKeyword": "headless cms enterprise",
+      "pairsWith": "/hire/fullstack-developers/",
+      "priority": 8,
+      "status": "pending",
+      "addedAt": "2026-05-10",
+      "audience": "US/Canada content platform leads, marketing engineering at mid-market and enterprise",
+      "notes": "Honest comparison of Sanity, Contentful, Strapi, Payload, Hygraph. Total cost of ownership, content modelling, localisation, role-based access, GraphQL vs REST, AI-content-generation integration. Pair with /hire/fullstack-developers."
+    },
+    {
+      "id": "entweb-3",
+      "slug": "migrating-monolith-to-islands-architecture-2026",
+      "title": "Migrating an Enterprise Site from Monolith to Islands (2026)",
+      "primaryKeyword": "monolith to islands architecture",
+      "pairsWith": "/hire/frontend-engineers/",
+      "priority": 9,
+      "status": "pending",
+      "addedAt": "2026-05-10",
+      "audience": "US/Canada frontend platform leads, engineering managers at content-heavy enterprise sites",
+      "notes": "When to pick islands (Astro, Fresh, Qwik) over Next.js, performance and SEO gains, hybrid migration (route-by-route), cost of incomplete migration, real-world case-study framing."
+    }
+  ],
   "backlog": [],
   "shipped": [
     {
@@ -80,6 +177,15 @@
       "commit": "pending",
       "imageWebp": false,
       "notes": "Inserted dedicated H2 section linking to /blog/hire-software-testing-team-2026/."
+    },
+    {
+      "id": "ai-sec-1",
+      "slug": "owasp-llm-top-10-implementation-checklist-2026",
+      "title": "OWASP LLM Top 10: Implementation Checklist for 2026",
+      "shippedAt": "2026-05-10",
+      "commit": "pending",
+      "imageWebp": false,
+      "notes": "Series opener (AI security). Drafted and registered 2026-05-10. OG WebP image still pending."
     }
   ]
 }

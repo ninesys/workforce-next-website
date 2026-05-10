@@ -30,6 +30,7 @@ import hireNodejsDevelopersFromIndia2026 from "./blog/hire-nodejs-developers-fro
 import hireReactjsDevelopersFromIndia2026 from "./blog/hire-reactjs-developers-from-india-2026";
 import hireMobileAppDevelopersCrossPlatform2026 from "./blog/hire-mobile-app-developers-cross-platform-2026";
 import hireRemoteMobileAppTestingTeam2026 from "./blog/hire-remote-mobile-app-testing-team-2026";
+import owaspLlmTop10ImplementationChecklist2026 from "./blog/owasp-llm-top-10-implementation-checklist-2026";
 
 export type { BlogPost, BlogFAQ };
 
@@ -75,4 +76,5 @@ export const blogPosts: BlogPost[] = [
   hireReactjsDevelopersFromIndia2026,
   hireMobileAppDevelopersCrossPlatform2026,
   hireRemoteMobileAppTestingTeam2026,
+  owaspLlmTop10ImplementationChecklist2026,
 ];
