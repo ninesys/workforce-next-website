@@ -26,6 +26,7 @@ import kotlinVsJavaAndroid2026 from "./blog/kotlin-vs-java-android-2026";
 import hireSoftwareTestingTeam2026 from "./blog/hire-software-testing-team-2026";
 import shortTermIndianDevelopersEuropeanProjects2026 from "./blog/short-term-indian-developers-european-projects-2026";
 import androidAppDeveloperHiringGuide2026 from "./blog/android-app-developer-hiring-guide-2026";
+import hireNodejsDevelopersFromIndia2026 from "./blog/hire-nodejs-developers-from-india-2026";
 
 export type { BlogPost, BlogFAQ };
 
@@ -67,4 +68,5 @@ export const blogPosts: BlogPost[] = [
   hireSoftwareTestingTeam2026,
   shortTermIndianDevelopersEuropeanProjects2026,
   androidAppDeveloperHiringGuide2026,
+  hireNodejsDevelopersFromIndia2026,
 ];
