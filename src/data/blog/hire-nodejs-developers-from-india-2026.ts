@@ -295,50 +295,34 @@ const post: BlogPost = {
     {
       q: "How much does it cost to hire a Node.js developer from India?",
       a: "Senior Node.js developers from India cost USD 5,500 to 8,500 per month, while mid-level developers cost USD 4,000 to 6,500 per month. This includes full benefits, equipment, and team management overhead.",
-      category: "hiring",
-      categoryLabel: "Hiring",
     },
     {
       q: "What Node.js frameworks do Indian developers specialize in?",
       a: "95% of Indian Node.js developers have Express.js experience, 60% of senior developers use NestJS for enterprise applications, 35% work with Fastify for high-performance APIs, and 15% are adopting Bun as a modern runtime alternative.",
-      category: "hiring",
-      categoryLabel: "Hiring",
     },
     {
       q: "How do you screen Node.js developers effectively?",
       a: "Use a 5-stage process: resume review for 3+ Node.js projects, 60-minute coding assessment with REST API building, 45-minute system design discussion, code review of actual project work, and cultural fit interview for communication skills.",
-      category: "hiring",
-      categoryLabel: "Hiring",
     },
     {
       q: "Do Indian Node.js developers use TypeScript by default?",
       a: "85% of senior Indian Node.js developers use TypeScript by default in 2026. They have strong skills in interface design, generic types, strict mode configuration, and integration with Express, NestJS, and Fastify frameworks.",
-      category: "hiring",
-      categoryLabel: "Hiring",
     },
     {
       q: "What are the main challenges when hiring Node.js developers from India?",
       a: "Common challenges include time zone coordination (9.5-12.5 hour difference), ensuring modern async/await patterns over callbacks, security awareness for input validation, and maintaining consistent code documentation standards.",
-      category: "hiring",
-      categoryLabel: "Hiring",
     },
     {
       q: "When should you choose Node.js over other backend technologies?",
       a: "Choose Node.js when your frontend is JavaScript/TypeScript, you need real-time features, have API-heavy architecture, require rapid prototyping, or handle I/O intensive workloads. Consider Go or Python for CPU-intensive processing or machine learning.",
-      category: "hiring",
-      categoryLabel: "Hiring",
     },
     {
       q: "How long does it take to onboard Node.js developers from India?",
       a: "Onboarding typically takes 2 to 4 weeks for project context and codebase familiarity. This includes development environment setup, architecture overview, coding standards review, and initial feature assignments with code review checkpoints.",
-      category: "hiring",
-      categoryLabel: "Hiring",
     },
     {
       q: "What's the difference between hiring Indian developers vs Eastern European developers?",
       a: "Indian developers offer 60-70% cost savings but have larger time zone gaps. Eastern European developers are 6-8 hours closer to US time zones, offer similar cultural alignment, but cost 30-40% more than Indian developers.",
-      category: "hiring",
-      categoryLabel: "Hiring",
     },
   ],
 };
