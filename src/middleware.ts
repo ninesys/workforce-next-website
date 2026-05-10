@@ -124,12 +124,51 @@ const PREFIX: Array<[string, string]> = [
 const stripTrailingSlash = (p: string) =>
   p.length > 1 && p.endsWith("/") ? p.slice(0, -1) : p;
 
+// Hosts that should be indexed by search engines. Anything else
+// (preview.workforcenext.in, Vercel preview URLs, localhost, etc.)
+// gets X-Robots-Tag: noindex on every response and a restrictive
+// robots.txt body on /robots.txt. Production canonical only.
+const PRODUCTION_HOSTS = new Set([
+  "workforcenext.in",
+  "www.workforcenext.in",
+]);
+
+const isProductionHost = (host: string | null | undefined): boolean => {
+  if (!host) return false;
+  // Strip port if present (e.g., localhost:3000).
+  const hostname = host.split(":")[0].toLowerCase();
+  return PRODUCTION_HOSTS.has(hostname);
+};
+
+const NOINDEX_BODY = "User-agent: *\nDisallow: /\n";
+
+const addNoIndexHeaders = (res: NextResponse): NextResponse => {
+  res.headers.set("X-Robots-Tag", "noindex, nofollow, noarchive");
+  return res;
+};
+
 export function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;
+  const isProduction = isProductionHost(req.headers.get("host"));
+
+  // Non-production /robots.txt: serve a restrictive body that blocks
+  // every crawler from every URL on this host. This intentionally
+  // overrides the production robots.ts when the host is preview/staging.
+  if (!isProduction && pathname === "/robots.txt") {
+    return new NextResponse(NOINDEX_BODY, {
+      status: 200,
+      headers: {
+        "content-type": "text/plain; charset=utf-8",
+        "x-robots-tag": "noindex, nofollow, noarchive",
+        "cache-control": "no-store",
+      },
+    });
+  }
 
   // Never rewrite API routes or Next.js internals.
   if (pathname.startsWith("/api/") || pathname.startsWith("/_next/")) {
-    return NextResponse.next();
+    const res = NextResponse.next();
+    return isProduction ? res : addNoIndexHeaders(res);
   }
 
   // Markdown alternates: /<path>.md is internally served by /md/<path>.
@@ -141,7 +180,8 @@ export function middleware(req: NextRequest) {
     !pathname.startsWith("/md/")
   ) {
     const stripped = pathname.slice(0, -3); // drop ".md"
-    return NextResponse.rewrite(new URL(`/md${stripped}`, req.url));
+    const res = NextResponse.rewrite(new URL(`/md${stripped}`, req.url));
+    return isProduction ? res : addNoIndexHeaders(res);
   }
 
   const key = stripTrailingSlash(pathname);
@@ -149,27 +189,34 @@ export function middleware(req: NextRequest) {
   // Exact legacy match.
   const exact = EXACT[key];
   if (exact) {
-    return NextResponse.redirect(new URL(exact, req.url), 308);
+    const res = NextResponse.redirect(new URL(exact, req.url), 308);
+    return isProduction ? res : addNoIndexHeaders(res);
   }
 
   // Prefix legacy match.
   for (const [prefix, target] of PREFIX) {
     if (key === prefix || key.startsWith(prefix + "/")) {
-      return NextResponse.redirect(new URL(target, req.url), 308);
+      const res = NextResponse.redirect(new URL(target, req.url), 308);
+      return isProduction ? res : addNoIndexHeaders(res);
     }
   }
 
   // Old WordPress feeds at any depth (except exact /feed, handled above).
   if (key.endsWith("/feed") && key !== "/feed") {
-    return NextResponse.redirect(new URL("/", req.url), 308);
+    const res = NextResponse.redirect(new URL("/", req.url), 308);
+    return isProduction ? res : addNoIndexHeaders(res);
   }
 
-  // Trailing-slash normalization is delegated to Next.js (trailingSlash: true).
-  return NextResponse.next();
+  // Default: continue, with noindex header on non-production hosts.
+  const res = NextResponse.next();
+  return isProduction ? res : addNoIndexHeaders(res);
 }
 
 export const config = {
   matcher: [
+    // /robots.txt explicitly: middleware overrides the static robots
+    // body on non-production hosts so previews are not indexable.
+    "/robots.txt",
     // Run on every request except Next internals and static asset extensions.
     // Keeps middleware cost minimal while still catching .html legacy URLs.
     "/((?!_next/|favicon\\.ico|.*\\.(?:png|jpg|jpeg|webp|svg|ico|gif|txt|xml|json|js|css|woff|woff2|mp4|webmanifest)$).*)",
