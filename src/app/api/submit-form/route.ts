@@ -78,65 +78,100 @@ const renderInternalText = (
   return `${INTERNAL_SUBJECTS[formName]}\n\n${lines.join("\n")}\n`;
 };
 
-const firstName = (value: string | undefined) => {
+const friendlyName = (value: string | undefined) => {
   if (!value) return "there";
-  const first = value.trim().split(/\s+/)[0];
-  return first || "there";
+  const trimmed = value.trim();
+  return trimmed || "there";
 };
 
-const ACK_BODY_TEXT: Record<FormName, (greeting: string) => string> = {
-  contact: (greeting) =>
+const renderAckSummaryHtml = (fields: Record<string, string>) => {
+  const entries = Object.entries(fields).filter(
+    ([k, v]) => k !== "name" && k !== "email" && v && v.trim().length > 0,
+  );
+  if (entries.length === 0) return "";
+  const rows = entries
+    .map(
+      ([k, v]) =>
+        `<tr><td style="padding:6px 12px;font-weight:600;vertical-align:top;white-space:nowrap;color:#475569">${escapeHtml(
+          k,
+        )}</td><td style="padding:6px 12px;white-space:pre-wrap;color:#0f172a">${escapeHtml(v)}</td></tr>`,
+    )
+    .join("");
+  return `<p style="margin-top:24px;color:#475569;font-size:14px">For your records, here is what you sent us:</p>
+  <table style="border-collapse:collapse;border:1px solid #e2e8f0;font-size:14px;margin-top:6px">${rows}</table>`;
+};
+
+const renderAckSummaryText = (fields: Record<string, string>) => {
+  const entries = Object.entries(fields).filter(
+    ([k, v]) => k !== "name" && k !== "email" && v && v.trim().length > 0,
+  );
+  if (entries.length === 0) return "";
+  const lines = entries.map(([k, v]) => `${k}: ${v}`);
+  return `\n\nFor your records, here is what you sent us:\n\n${lines.join("\n")}\n`;
+};
+
+const ACK_BODY_TEXT: Record<
+  FormName,
+  (greeting: string, summary: string) => string
+> = {
+  contact: (greeting, summary) =>
     `Hi ${greeting},
 
 Thanks for reaching out to Workforce Next. We have received your enquiry and our team will connect with you within the next few hours.
 
-If your request is urgent, you can also reach us directly at hello@workforcenext.in or on WhatsApp via workforcenext.in/contact.
+If your request is urgent, you can also reach us directly at hello@workforcenext.in or on WhatsApp via workforcenext.in/contact.${summary}
 
 Talk soon,
 The Workforce Next team
 https://workforcenext.in
 `,
-  careers: (greeting) =>
+  careers: (greeting, summary) =>
     `Hi ${greeting},
 
 Thanks for applying to Workforce Next. We have received your application and one of our recruiters will review it over the next few days.
 
 If your experience matches what we are currently hiring for, we will reach out with next steps. In the meantime, feel free to explore the blog and what we are building:
-https://workforcenext.in/blog/
+https://workforcenext.in/blog/${summary}
 
 Best,
 The Workforce Next team
 `,
-  "seth-waitlist": (greeting) =>
+  "seth-waitlist": (greeting, summary) =>
     `Hi ${greeting},
 
 Thanks for joining the SethAI waitlist. We will reach out as soon as early access opens so you can start matching engineers for your open roles.
 
 While you wait, you can read how SethAI evaluates candidates here:
-https://workforcenext.in/products/seth-ai-recruiter/
+https://workforcenext.in/products/seth-ai-recruiter/${summary}
 
 Talk soon,
 The Workforce Next team
 `,
 };
 
-const ACK_BODY_HTML: Record<FormName, (greeting: string) => string> = {
-  contact: (greeting) => `<!doctype html><html><body style="font-family:-apple-system,Segoe UI,Roboto,sans-serif;color:#0f172a;max-width:560px;margin:0 auto;padding:24px;line-height:1.55">
+const ACK_BODY_HTML: Record<
+  FormName,
+  (greeting: string, summary: string) => string
+> = {
+  contact: (greeting, summary) => `<!doctype html><html><body style="font-family:-apple-system,Segoe UI,Roboto,sans-serif;color:#0f172a;max-width:560px;margin:0 auto;padding:24px;line-height:1.55">
   <p>Hi ${escapeHtml(greeting)},</p>
   <p>Thanks for reaching out to <strong>Workforce Next</strong>. We have received your enquiry and our team will connect with you within the next few hours.</p>
   <p>If your request is urgent, you can also reach us directly at <a href="mailto:hello@workforcenext.in">hello@workforcenext.in</a>.</p>
+  ${summary}
   <p>Talk soon,<br/>The Workforce Next team<br/><a href="https://workforcenext.in">workforcenext.in</a></p>
 </body></html>`,
-  careers: (greeting) => `<!doctype html><html><body style="font-family:-apple-system,Segoe UI,Roboto,sans-serif;color:#0f172a;max-width:560px;margin:0 auto;padding:24px;line-height:1.55">
+  careers: (greeting, summary) => `<!doctype html><html><body style="font-family:-apple-system,Segoe UI,Roboto,sans-serif;color:#0f172a;max-width:560px;margin:0 auto;padding:24px;line-height:1.55">
   <p>Hi ${escapeHtml(greeting)},</p>
   <p>Thanks for applying to <strong>Workforce Next</strong>. We have received your application and one of our recruiters will review it over the next few days.</p>
   <p>If your experience matches what we are currently hiring for, we will reach out with next steps. In the meantime, feel free to explore what we are building on the <a href="https://workforcenext.in/blog/">blog</a>.</p>
+  ${summary}
   <p>Best,<br/>The Workforce Next team</p>
 </body></html>`,
-  "seth-waitlist": (greeting) => `<!doctype html><html><body style="font-family:-apple-system,Segoe UI,Roboto,sans-serif;color:#0f172a;max-width:560px;margin:0 auto;padding:24px;line-height:1.55">
+  "seth-waitlist": (greeting, summary) => `<!doctype html><html><body style="font-family:-apple-system,Segoe UI,Roboto,sans-serif;color:#0f172a;max-width:560px;margin:0 auto;padding:24px;line-height:1.55">
   <p>Hi ${escapeHtml(greeting)},</p>
   <p>Thanks for joining the <strong>SethAI</strong> waitlist. We will reach out as soon as early access opens so you can start matching engineers for your open roles.</p>
   <p>While you wait, read how SethAI evaluates candidates: <a href="https://workforcenext.in/products/seth-ai-recruiter/">SethAI Recruiter</a>.</p>
+  ${summary}
   <p>Talk soon,<br/>The Workforce Next team</p>
 </body></html>`,
 };
@@ -199,7 +234,9 @@ export async function POST(req: Request) {
 
   const client = new SESv2Client({ region });
   const name = formName as FormName;
-  const greeting = firstName(fields.name);
+  const greeting = friendlyName(fields.name);
+  const ackSummaryHtml = renderAckSummaryHtml(fields);
+  const ackSummaryText = renderAckSummaryText(fields);
 
   const internalEmail = client.send(
     new SendEmailCommand({
@@ -234,11 +271,11 @@ export async function POST(req: Request) {
           Subject: { Data: ACK_SUBJECTS[name], Charset: "UTF-8" },
           Body: {
             Html: {
-              Data: ACK_BODY_HTML[name](greeting),
+              Data: ACK_BODY_HTML[name](greeting, ackSummaryHtml),
               Charset: "UTF-8",
             },
             Text: {
-              Data: ACK_BODY_TEXT[name](greeting),
+              Data: ACK_BODY_TEXT[name](greeting, ackSummaryText),
               Charset: "UTF-8",
             },
           },
