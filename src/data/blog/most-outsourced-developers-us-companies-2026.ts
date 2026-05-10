@@ -115,7 +115,7 @@ const post: BlogPost = {
   </tbody>
 </table>
 
-<p>These are 2026 figures, calibrated against actual offers we see in our pipeline and against the <a href="https://survey.stackoverflow.co/2024/" rel="noopener">Stack Overflow 2024 Developer Survey</a> for US compensation, the <a href="https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm" rel="noopener">US Bureau of Labor Statistics Occupational Outlook for software developers</a>, and the <a href="https://www.linkedin.com/business/talent/blog/talent-strategy/global-talent-trends" rel="noopener">LinkedIn Global Talent Trends</a> reports.</p>
+<p>These are 2026 figures, calibrated against actual offers we see in our pipeline and against the <a href="https://survey.stackoverflow.co/2024/" rel="noopener">Stack Overflow 2024 Developer Survey</a> for US compensation and the <a href="https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm" rel="noopener">US Bureau of Labor Statistics Occupational Outlook for software developers</a>.</p>
 
 <p>The numbers shock buyers who have not priced their own US headcount honestly. A US software developer who lists base salary of $180,000 on LinkedIn costs the company closer to $260,000 once everything is loaded in. The full breakdown by level is in <a href="/blog/senior-indian-developer-salary-2026/">what you should pay a senior Indian developer in 2026</a>.</p>
 

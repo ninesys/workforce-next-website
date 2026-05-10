@@ -38,8 +38,6 @@ const post: BlogPost = {
 
 <p>Smaller pods (3 people total) collapse the manual role into the SDET workload and lose some exploratory coverage but ship cheaper. Larger pods (6+) start to need an internal QA manager, which is a different shape of hire and a different cost line.</p>
 
-<p>For team structure thinking generally, the <a href="https://martinfowler.com/articles/2024-test-shapes.html" rel="noopener">Martin Fowler 2024 piece on test shapes</a> remains the cleanest framing for how automation, integration, and exploratory testing should split work.</p>
-
 <h2>What does an SDET actually do that a manual tester does not?</h2>
 
 <p>SDET stands for Software Development Engineer in Test. The term has been overused, so the honest definition: an SDET is an engineer who writes code that tests code. They are not running test cases by hand; they are writing and maintaining the automation suites, the CI integration, the test data fixtures, and the infrastructure that catches regressions before a human ever sees them.</p>
