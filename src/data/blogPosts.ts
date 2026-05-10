@@ -28,6 +28,8 @@ import shortTermIndianDevelopersEuropeanProjects2026 from "./blog/short-term-ind
 import androidAppDeveloperHiringGuide2026 from "./blog/android-app-developer-hiring-guide-2026";
 import hireNodejsDevelopersFromIndia2026 from "./blog/hire-nodejs-developers-from-india-2026";
 import hireReactjsDevelopersFromIndia2026 from "./blog/hire-reactjs-developers-from-india-2026";
+import hireMobileAppDevelopersCrossPlatform2026 from "./blog/hire-mobile-app-developers-cross-platform-2026";
+import hireRemoteMobileAppTestingTeam2026 from "./blog/hire-remote-mobile-app-testing-team-2026";
 
 export type { BlogPost, BlogFAQ };
 
@@ -71,4 +73,6 @@ export const blogPosts: BlogPost[] = [
   androidAppDeveloperHiringGuide2026,
   hireNodejsDevelopersFromIndia2026,
   hireReactjsDevelopersFromIndia2026,
+  hireMobileAppDevelopersCrossPlatform2026,
+  hireRemoteMobileAppTestingTeam2026,
 ];

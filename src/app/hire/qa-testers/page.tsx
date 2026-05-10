@@ -338,6 +338,34 @@ export default function QATestersPage() {
         </div>
       </section>
 
+      {/* Software testing team H2 absorb */}
+      <section className="section-padding bg-white dark:bg-dark-900 border-t border-dark-50 dark:border-dark-700/50">
+        <div className="container-custom max-w-4xl">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-dark-900 dark:text-dark-50 mb-6">
+            Hire a software testing team, not just a tester
+          </h2>
+          <p className="text-base sm:text-lg text-dark-600 dark:text-dark-200 leading-relaxed mb-5">
+            One QA engineer rarely covers a real product. Most growing teams need a
+            small testing pod: a manual QA lead who owns release readiness, an
+            automation engineer who keeps the regression suite green, and a part-time
+            performance or accessibility specialist who steps in for releases. We
+            staff this pod, manage it, and integrate it with your existing engineering
+            workflow.
+          </p>
+          <p className="text-base sm:text-lg text-dark-600 dark:text-dark-200 leading-relaxed mb-5">
+            A typical Workforce Next testing pod has three engineers covering manual
+            exploratory testing, end-to-end automation in Playwright or Cypress, and
+            API testing in Postman or REST Assured. The pod plugs into your sprint
+            cadence, pairs with a fractional QA lead for strategy, and reports the
+            same Core Web Vitals, defect-leakage, and flake-rate metrics every week.
+          </p>
+          <p className="text-base sm:text-lg text-dark-600 dark:text-dark-200 leading-relaxed mb-2">
+            For the full pod structure, hiring loop, and 2026 cost benchmarks, read
+            our <a className="text-primary-600 dark:text-primary-400 underline underline-offset-2 hover:text-primary-700" href="/blog/hire-software-testing-team-2026/">guide to hiring a software testing team in 2026</a>.
+          </p>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="section-padding bg-primary-50 dark:bg-dark-800">
         <div className="container-custom max-w-4xl">

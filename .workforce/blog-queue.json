@@ -4,36 +4,7 @@
   "lastUpdated": "2026-05-10",
   "notes": "Authoritative blog post pipeline. Mirror of the build queue in ~/.claude/projects/.../memory/project_target_keywords_2026-05.md. Update this file when items ship. Keep priority ordering descending: lowest priority number = ships next.",
   "queue": [],
-  "backlog": [
-    {
-      "id": "backlog-mobile-app-developers",
-      "slug": "tbd",
-      "title": "Hire Mobile App Developers (cross-platform: React Native + Flutter + KMP)",
-      "primaryKeyword": "hire mobile app developers",
-      "pairsWith": "/hire/ios-developers/ + /hire/android-developers/",
-      "status": "backlog",
-      "notes": "Optional cross-platform companion. iOS and Android pillars already shipped; this would consolidate the cross-platform hiring conversation in one place. Confirm with user before drafting."
-    },
-    {
-      "id": "backlog-mobile-app-testing-team",
-      "slug": "hire-remote-mobile-app-testing-team-2026",
-      "title": "How to Hire a Remote Mobile App Testing Team in 2026",
-      "primaryKeyword": "hire remote mobile app testing team",
-      "pairsWith": "/hire/qa-testers/",
-      "status": "backlog",
-      "addedAt": "2026-05-10",
-      "notes": "Pod-style hiring guide for mobile-specific QA: device labs, real devices vs cloud (BrowserStack, Sauce Labs, AWS Device Farm), Espresso / XCUITest / Appium / Maestro, iOS vs Android testing differences, accessibility (TalkBack, VoiceOver), performance + battery + crash analytics (Firebase Crashlytics, Sentry, Instabug), App Store / Play Store release readiness, beta channels (TestFlight, Play Internal Testing). Cost benchmark senior mobile QA India USD 4,500 to 7,000 per month. Internal link to /hire/qa-testers, /hire/ios-developers, /hire/android-developers, and /blog/hire-software-testing-team-2026 (parent pod guide). Position as the mobile-specific companion to the general testing team post."
-    },
-    {
-      "id": "backlog-qa-team-h2",
-      "slug": "n/a",
-      "title": "On-page H2 absorb: 'Hire a software testing team' on /hire/qa-testers",
-      "primaryKeyword": "hire software testing team",
-      "pairsWith": "/hire/qa-testers/",
-      "status": "backlog",
-      "notes": "Build queue item 6 from project_target_keywords_2026-05.md. Companion blog post (hire-software-testing-team-2026) already shipped 2026-05-07. The on-page absorb is still pending. Not a blog post; a page rewrite. Track here so it does not get forgotten."
-    }
-  ],
+  "backlog": [],
   "shipped": [
     {
       "id": "post-7",
@@ -80,9 +51,35 @@
       "slug": "hire-reactjs-developers-from-india-2026",
       "title": "Hire React.js Developers from India in 2026 (Hiring Guide)",
       "shippedAt": "2026-05-10",
+      "commit": "e95bd82",
+      "imageWebp": true
+    },
+    {
+      "id": "post-mobile-cross-platform",
+      "slug": "hire-mobile-app-developers-cross-platform-2026",
+      "title": "Hire Mobile App Developers in 2026 (Cross-Platform Guide)",
+      "shippedAt": "2026-05-10",
       "commit": "pending",
       "imageWebp": false,
-      "notes": "Post drafted, registered, and IndexNow-listed on 2026-05-10. OG WebP image still pending — referenced as /images/blog/hire-reactjs-developers-from-india-2026.webp."
+      "notes": "Drafted and registered 2026-05-10. OG WebP image still pending."
+    },
+    {
+      "id": "post-mobile-testing-team",
+      "slug": "hire-remote-mobile-app-testing-team-2026",
+      "title": "Hire a Remote Mobile App Testing Team in 2026 (Pod Guide)",
+      "shippedAt": "2026-05-10",
+      "commit": "pending",
+      "imageWebp": false,
+      "notes": "Drafted and registered 2026-05-10. OG WebP image still pending."
+    },
+    {
+      "id": "page-rewrite-qa-h2",
+      "slug": "/hire/qa-testers/",
+      "title": "On-page H2 absorb: Hire a software testing team",
+      "shippedAt": "2026-05-10",
+      "commit": "pending",
+      "imageWebp": false,
+      "notes": "Inserted dedicated H2 section linking to /blog/hire-software-testing-team-2026/."
     }
   ]
 }
