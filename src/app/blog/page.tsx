@@ -38,6 +38,63 @@ export default function BlogPage() {
         </div>
       </section>
 
+      {/* Intro: what readers find on this blog */}
+      <section className="bg-white dark:bg-dark-900 pt-12 md:pt-16 pb-4">
+        <div className="container-custom max-w-3xl">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 mb-4">
+            What you will find on the Workforce Next blog
+          </h2>
+          <p className="text-base sm:text-lg text-dark-600 dark:text-dark-200 leading-relaxed mb-4">
+            This blog is the long-form companion to our hiring work. We
+            publish honest pieces about how to hire dedicated developers
+            from India, how to structure offshore engineering teams,
+            and how to ship production AI applications without breaking
+            things. Every post is written by an engineer or an engineering
+            manager who has done the work, not a content team.
+          </p>
+          <p className="text-base sm:text-lg text-dark-600 dark:text-dark-200 leading-relaxed mb-4">
+            Recent themes you can read across the archive:
+          </p>
+          <ul className="text-base sm:text-lg text-dark-600 dark:text-dark-200 leading-relaxed list-disc pl-6 space-y-2 mb-4">
+            <li>
+              <strong>Role-specific hiring guides</strong> for Node.js,
+              React.js, Android, iOS, mobile cross-platform, MCP server,
+              and software testing engineers from India.
+            </li>
+            <li>
+              <strong>Cost benchmarks</strong> with 2026 senior India
+              developer salaries against fully loaded US numbers.
+            </li>
+            <li>
+              <strong>AI engineering practices</strong>: OWASP LLM Top 10
+              implementation, RAG architecture, agent framework
+              selection, prompt engineering in production.
+            </li>
+            <li>
+              <strong>Engagement model breakdowns</strong>: dedicated
+              developer vs freelancer vs agency, staff augmentation vs
+              EOR vs Indian entity, short-term European projects.
+            </li>
+            <li>
+              <strong>Team operating playbooks</strong>: software testing
+              pods, mobile testing teams, Follow-the-Sun SRE, fractional
+              project management.
+            </li>
+          </ul>
+          <p className="text-base sm:text-lg text-dark-600 dark:text-dark-200 leading-relaxed">
+            We update this archive every week. If a topic you care about
+            is missing, write to us on{" "}
+            <Link
+              href="/contact/"
+              className="text-primary-600 dark:text-primary-400 underline underline-offset-2 hover:text-primary-700"
+            >
+              the contact page
+            </Link>{" "}
+            and we will add it to the queue.
+          </p>
+        </div>
+      </section>
+
       {/* Posts */}
       <section className="section-padding bg-white dark:bg-dark-900">
         <div className="container-custom">
@@ -119,6 +176,55 @@ export default function BlogPage() {
               No posts in this category yet.
             </p>
           )}
+        </div>
+      </section>
+
+      {/* Blog FAQ */}
+      <section className="section-padding bg-primary-50 dark:bg-dark-800">
+        <div className="container-custom max-w-4xl">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 mb-8">
+            Frequently asked questions about hiring Indian developers
+          </h2>
+          <div className="space-y-4">
+            {[
+              {
+                q: "How much does a senior developer from India cost in 2026?",
+                a: "Senior Indian developers cost USD 5,000 to 8,500 per month all-in (salary, benefits, equipment, and partner team management). Fully loaded equivalent in the US runs USD 14,000 to 19,000 per month, or USD 220,000 to 290,000 per year. The 60 to 70% cost delta is geography, not a quality gap.",
+              },
+              {
+                q: "How long does it take to hire a dedicated developer from India?",
+                a: "With a vetted partner, expect three to five matched profiles within 5 business days, paid trials starting in week 2, and a confirmed hire by week 3 or 4. Going direct on LinkedIn or job boards typically takes 8 to 12 weeks, most of which is filtering noise.",
+              },
+              {
+                q: "What time zones do Indian developers work in?",
+                a: "India Standard Time is UTC+5:30. That gives a 4 to 5 hour overlap with the UK and continental Europe, a 2 to 3 hour overlap with the US East Coast morning, and a 5 hour overlap with Sydney afternoon. Most teams run a daily standup at 9 AM your time and let engineers async the rest of the day.",
+              },
+              {
+                q: "Dedicated developer or freelancer for ongoing product work?",
+                a: "For continuous product work, dedicated developers beat freelancers on quality, accountability, and continuity. Freelancers fit short fixed-scope projects. The total-cost-of-ownership comparison (including ramp-up, churn, and rework) usually puts a dedicated India developer at lower true cost than a US freelancer.",
+              },
+              {
+                q: "Can I hire developers from India for a short-term project?",
+                a: "Yes. Useful engagements start at four to eight weeks; below that, ramp-up overhead outweighs throughput. We run short-term engagements regularly for European clients on production deadlines, where the timezone overlap with India makes async delivery practical.",
+              },
+              {
+                q: "What roles do you most commonly staff from India in 2026?",
+                a: "Backend (Node.js, Python, Go), frontend (React.js, Next.js, TypeScript), mobile (React Native, Flutter, native iOS, native Android), AI engineering (RAG, LangChain, MCP, vector databases), DevOps and SRE, and QA automation (Playwright, Cypress, Appium, Maestro). Each role has its own pillar page and most have a hiring guide blog post.",
+              },
+            ].map((faq) => (
+              <div
+                key={faq.q}
+                className="p-6 rounded-xl bg-white dark:bg-dark-900 border border-dark-50 dark:border-dark-700"
+              >
+                <h3 className="font-bold text-dark-900 dark:text-dark-50">
+                  {faq.q}
+                </h3>
+                <p className="mt-3 text-dark-600 dark:text-dark-200 leading-relaxed">
+                  {faq.a}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </>
