@@ -5,18 +5,6 @@
   "notes": "Authoritative blog post pipeline. Mirror of the build queue in ~/.claude/projects/.../memory/project_target_keywords_2026-05.md. Update this file when items ship. Keep priority ordering descending: lowest priority number = ships next.",
   "queue": [
     {
-      "id": "ai-sec-2",
-      "slug": "prompt-injection-defense-production-llm-apps-2026",
-      "title": "Prompt Injection Defense for Production LLM Apps in 2026",
-      "primaryKeyword": "prompt injection defense",
-      "pairsWith": "/hire/ai-developers/",
-      "priority": 2,
-      "status": "pending",
-      "addedAt": "2026-05-10",
-      "audience": "US/Canada AI engineers, application security leads",
-      "notes": "Direct vs indirect prompt injection, real attack examples (resume-poisoning, doc-poisoning), defenses (input sanitisation, output validation, structured tool-use, sandboxed execution). Reference NIST AI RMF and OWASP. Pair with /hire/ai-developers."
-    },
-    {
       "id": "ai-sec-3",
       "slug": "securing-rag-applications-data-isolation-patterns-2026",
       "title": "Securing RAG Applications: Data Isolation Patterns 2026",
@@ -183,9 +171,17 @@
       "slug": "owasp-llm-top-10-implementation-checklist-2026",
       "title": "OWASP LLM Top 10: Implementation Checklist for 2026",
       "shippedAt": "2026-05-10",
+      "commit": "e15dfa7",
+      "imageWebp": true
+    },
+    {
+      "id": "ai-sec-2",
+      "slug": "prompt-injection-defense-production-llm-apps-2026",
+      "title": "Prompt Injection Defense for Production LLM Apps in 2026",
+      "shippedAt": "2026-05-10",
       "commit": "pending",
       "imageWebp": false,
-      "notes": "Series opener (AI security). Drafted and registered 2026-05-10. OG WebP image still pending."
+      "notes": "AI security series #2. Drafted and registered 2026-05-10. OG WebP image still pending."
     }
   ]
 }
