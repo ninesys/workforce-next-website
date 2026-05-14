@@ -28,6 +28,7 @@ URLS=(
   "https://${HOST}/hire/unity-developers/"
   "https://${HOST}/hire/ios-developers/"
   "https://${HOST}/hire/android-developers/"
+  "https://${HOST}/hire/nodejs-developers/"
   "https://${HOST}/for/founders/"
   "https://${HOST}/for/startups/"
   "https://${HOST}/for/enterprise/"
@@ -86,6 +87,12 @@ URLS=(
   "https://${HOST}/blog/hire-remote-mobile-app-testing-team-2026/"
   "https://${HOST}/blog/owasp-llm-top-10-implementation-checklist-2026/"
   "https://${HOST}/blog/prompt-injection-defense-production-llm-apps-2026/"
+  "https://${HOST}/blog/nodejs-developer-role-enterprise-applications-2026/"
+  "https://${HOST}/blog/nodejs-vs-java-vs-go-enterprise-backend-2026/"
+  "https://${HOST}/blog/nodejs-microservices-architecture-enterprise-guide-2026/"
+  "https://${HOST}/blog/nodejs-performance-scaling-production-checklist-2026/"
+  "https://${HOST}/blog/nodejs-security-enterprise-checklist-owasp-2026/"
+  "https://${HOST}/blog/expressjs-vs-fastify-vs-nestjs-2026/"
 )
 
 # Build JSON payload
