@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { ogDefaults } from "@/data/siteMetadata";
 import Link from "next/link";
 import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
@@ -28,6 +29,7 @@ export const metadata: Metadata = {
     "alternative to EOR India",
   ],
   openGraph: {
+    ...ogDefaults("/india-handled/"),
     images: ["/images/og-default.png"],
     title: "Hire an Offshore Development Team from India (Managed)",
     description:

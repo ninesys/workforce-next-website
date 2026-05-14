@@ -13,3 +13,19 @@ export const siteMetadata: SiteMetadata = {
   address: "DLF Cyber City, Gurugram, Haryana, India",
   techOffice: "NPX Urbtech, Sector 153, Noida, U.P., India",
 };
+
+/**
+ * Base OpenGraph fields every page should include. siteName/url/type/locale do
+ * NOT inherit from the root layout when a child page defines its own
+ * openGraph object. Next.js replaces the whole object instead of field-merging.
+ * Spread this into every page's openGraph block:
+ *   openGraph: { ...ogDefaults("/hire/foo/"), title, description, images }
+ */
+export function ogDefaults(path: string) {
+  return {
+    siteName: siteMetadata.name,
+    url: `${siteMetadata.url}${path}`,
+    type: "website" as const,
+    locale: "en_US",
+  };
+}

@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { ogDefaults } from "@/data/siteMetadata";
 import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
 import {
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
     "hire developers India process",
   ],
   openGraph: {
+    ...ogDefaults("/how-we-work/"),
     images: ["/images/og-default.png"],
     title: "How We Work - Build Your Remote Engineering Team",
     description:

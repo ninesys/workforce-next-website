@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { ogDefaults } from "@/data/siteMetadata";
 import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
 import {
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
     "staff augmentation for startups",
   ],
   openGraph: {
+    ...ogDefaults("/for/startups/"),
     images: ["/images/og-default.png"],
     title: "Engineering Pods for Startups - Build Your Product Team in 30 Days",
     description:

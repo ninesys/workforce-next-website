@@ -6,7 +6,7 @@ import Badge from "@/components/ui/Badge";
 import {
   generateBreadcrumbSchema,
 } from "@/lib/jsonLd";
-import { siteMetadata } from "@/data/siteMetadata";
+import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 
 export const metadata: Metadata = {
   title: "Gaurav - Founder and Solution Architect",
@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     "Workforce Next leadership",
   ],
   openGraph: {
+    ...ogDefaults("/about/gaurav/"),
     images: ["/images/og-default.png"],
     title: "Gaurav - Founder and Solution Architect",
     description:

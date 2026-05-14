@@ -6,7 +6,7 @@ import {
   generateBreadcrumbSchema,
   generateFAQPageSchema,
 } from "@/lib/jsonLd";
-import { siteMetadata } from "@/data/siteMetadata";
+import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
@@ -24,6 +24,7 @@ export const metadata: Metadata = {
     "AI agent developer India",
   ],
   openGraph: {
+    ...ogDefaults("/hire/mcp-developers/"),
     images: ["/images/og-default.png"],
     title: "Hire MCP Developers from India",
     description:

@@ -5,7 +5,7 @@ import {
   generateBreadcrumbSchema,
   generateFAQPageSchema,
 } from "@/lib/jsonLd";
-import { siteMetadata } from "@/data/siteMetadata";
+import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     "north america india engineering",
   ],
   openGraph: {
+    ...ogDefaults("/for/usa-canada/"),
     images: ["/images/og-default.png"],
     title: "Hire Indian Developers for US & Canadian Companies",
     description:

@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { ogDefaults } from "@/data/siteMetadata";
 import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
 import {
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
     "SethAI matched developer",
   ],
   openGraph: {
+    ...ogDefaults("/for/founders/"),
     images: ["/images/og-default.png"],
     title: "MVP Sprint for Founders - AI Product in 4 Weeks",
     description:

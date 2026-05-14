@@ -7,6 +7,7 @@ import { generateBreadcrumbSchema } from "@/lib/jsonLd";
 import { generateTocAndInjectIds } from "@/lib/blogToc";
 import Button from "@/components/ui/Button";
 import AuthorBio from "@/components/blog/AuthorBio";
+import { ogDefaults } from "@/data/siteMetadata";
 
 interface Props {
   params: { slug: string };
@@ -34,10 +35,10 @@ export function generateMetadata({ params }: Props): Metadata {
     description: post.metaDescription,
     keywords: post.keywords,
     openGraph: {
+      ...ogDefaults(`/blog/${post.slug}/`),
+      type: "article",
       title: socialTitle,
       description: socialDescription,
-      type: "article",
-      url: `https://workforcenext.in/blog/${post.slug}/`,
       publishedTime: post.publishedAt,
       images: [
         {

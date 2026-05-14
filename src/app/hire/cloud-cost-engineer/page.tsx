@@ -6,7 +6,7 @@ import {
   generateBreadcrumbSchema,
   generateFAQPageSchema,
 } from "@/lib/jsonLd";
-import { siteMetadata } from "@/data/siteMetadata";
+import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
@@ -24,6 +24,7 @@ export const metadata: Metadata = {
     "cloud savings engineer",
   ],
   openGraph: {
+    ...ogDefaults("/hire/cloud-cost-engineer/"),
     images: ["/images/og-default.png"],
     title: "Hire Cloud Cost Engineers from India",
     description:

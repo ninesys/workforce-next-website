@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { ogDefaults } from "@/data/siteMetadata";
 import { faqs } from "@/data/faqs";
 import { generateFAQPageSchema } from "@/lib/jsonLd";
 
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     "Engineering Pod FAQ",
   ],
   openGraph: {
+    ...ogDefaults("/faq/"),
     images: ["/images/og-default.png"],
     title: "FAQ - Hire Developers, SethAI, Remote Teams",
     description:

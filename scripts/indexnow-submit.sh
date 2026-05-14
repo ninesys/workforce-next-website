@@ -85,6 +85,7 @@ URLS=(
   "https://${HOST}/blog/hire-mobile-app-developers-cross-platform-2026/"
   "https://${HOST}/blog/hire-remote-mobile-app-testing-team-2026/"
   "https://${HOST}/blog/owasp-llm-top-10-implementation-checklist-2026/"
+  "https://${HOST}/blog/prompt-injection-defense-production-llm-apps-2026/"
 )
 
 # Build JSON payload
