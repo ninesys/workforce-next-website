@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { ogDefaults } from "@/data/siteMetadata";
 import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
 import {
@@ -22,6 +23,7 @@ export const metadata: Metadata = {
     "staff augmentation transition",
   ],
   openGraph: {
+    ...ogDefaults("/cost-of-switching/"),
     images: ["/images/og-default.png"],
     title: "Cost of Switching Tech Partners",
     description:

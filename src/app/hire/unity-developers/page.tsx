@@ -6,7 +6,7 @@ import {
   generateBreadcrumbSchema,
   generateFAQPageSchema,
 } from "@/lib/jsonLd";
-import { siteMetadata } from "@/data/siteMetadata";
+import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
@@ -26,6 +26,7 @@ export const metadata: Metadata = {
     "hire unity 3d developer india",
   ],
   openGraph: {
+    ...ogDefaults("/hire/unity-developers/"),
     images: ["/images/og-default.png"],
     title: "Hire Unity Developers from India",
     description:

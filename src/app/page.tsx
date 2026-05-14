@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { ogDefaults } from "@/data/siteMetadata";
 import Hero from "@/components/home/Hero";
 import EntityDefinition from "@/components/home/EntityDefinition";
 import StatBlock from "@/components/home/StatBlock";
@@ -33,11 +34,11 @@ export const metadata: Metadata = {
     canonical: "https://workforcenext.in",
   },
   openGraph: {
+    ...ogDefaults("/"),
     images: ["/images/og-default.png"],
     title: "Hire Remote Dedicated Developers from India | Workforce Next",
     description:
       "Hire dedicated AI, data, frontend and backend developers from India. Context-matched by SethAI. 48-hour matching, zero recruitment fees.",
-    url: "https://workforcenext.in",
   },
 };
 

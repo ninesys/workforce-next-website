@@ -1,11 +1,13 @@
 import { Metadata } from "next";
 
+import { ogDefaults } from "@/data/siteMetadata";
 export const metadata: Metadata = {
   title: "Terms of Use - Workforce Next",
   description:
     "Terms of Use for Workforce Next website and services. Read our terms governing the use of workforcenext.in.",
   keywords: ["terms of use", "terms of service", "workforce next terms"],
   openGraph: {
+    ...ogDefaults("/terms-of-use/"),
     images: ["/images/og-default.png"],
     title: "Terms of Use - Workforce Next",
     description:

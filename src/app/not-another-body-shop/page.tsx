@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { ogDefaults } from "@/data/siteMetadata";
 import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
 import {
@@ -23,6 +24,7 @@ export const metadata: Metadata = {
     "no conversion fee staff augmentation",
   ],
   openGraph: {
+    ...ogDefaults("/not-another-body-shop/"),
     images: ["/images/og-default.png"],
     title: "Not Another Indian Body Shop",
     description:

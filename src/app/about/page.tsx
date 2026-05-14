@@ -7,7 +7,7 @@ import {
   generateOrganizationSchema,
   generateBreadcrumbSchema,
 } from "@/lib/jsonLd";
-import { siteMetadata } from "@/data/siteMetadata";
+import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 
 export const metadata: Metadata = {
   title: "About Workforce Next - Remote Teams That Stay",
@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     "software company Noida",
   ],
   openGraph: {
+    ...ogDefaults("/about/"),
     images: ["/images/og-default.png"],
     title: "About Workforce Next - Remote Teams That Stay",
     description:

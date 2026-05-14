@@ -6,7 +6,7 @@ import {
   generateBreadcrumbSchema,
   generateFAQPageSchema,
 } from "@/lib/jsonLd";
-import { siteMetadata } from "@/data/siteMetadata";
+import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     "hire remote full stack engineers",
   ],
   openGraph: {
+    ...ogDefaults("/hire/fullstack-developers/"),
     images: ["/images/og-default.png"],
     title: "Hire Full Stack Developers from India",
     description:

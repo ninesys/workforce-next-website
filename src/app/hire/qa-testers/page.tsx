@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { ogDefaults } from "@/data/siteMetadata";
 import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
 import { generateServiceSchema, generateBreadcrumbSchema, generateFAQPageSchema } from "@/lib/jsonLd";
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
     "dedicated QA team India",
   ],
   openGraph: {
+    ...ogDefaults("/hire/qa-testers/"),
     images: ["/images/og-default.png"],
     title: "Hire QA Engineers & Software Testers from India",
     description:

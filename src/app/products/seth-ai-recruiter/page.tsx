@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { ogDefaults } from "@/data/siteMetadata";
 import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
 import WaitlistForm from "@/components/contact/WaitlistForm";
@@ -22,6 +23,7 @@ export const metadata: Metadata = {
     "developer match report",
   ],
   openGraph: {
+    ...ogDefaults("/products/seth-ai-recruiter/"),
     images: ["/images/og-default.png"],
     title: "SethAI - The AI Recruiter That Screens for What Matters",
     description:

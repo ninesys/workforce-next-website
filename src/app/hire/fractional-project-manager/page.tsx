@@ -5,7 +5,7 @@ import {
   generateBreadcrumbSchema,
   generateFAQPageSchema,
 } from "@/lib/jsonLd";
-import { siteMetadata } from "@/data/siteMetadata";
+import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     "remote project manager India",
   ],
   openGraph: {
+    ...ogDefaults("/hire/fractional-project-manager/"),
     images: ["/images/og-default.png"],
     title: "Hire a Fractional Project Manager from India",
     description:

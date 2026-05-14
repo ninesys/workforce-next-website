@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { ogDefaults } from "@/data/siteMetadata";
 import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
 import {
@@ -23,6 +24,7 @@ export const metadata: Metadata = {
     "AI tooling productivity engineers",
   ],
   openGraph: {
+    ...ogDefaults("/ai-native-india/"),
     images: ["/images/og-default.png"],
     title: "AI-Native Indian Engineering. The Third Option",
     description:

@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { ogDefaults } from "@/data/siteMetadata";
 import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
 import {
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
     "AI coaching tool",
   ],
   openGraph: {
+    ...ogDefaults("/products/employee-productivity-intelligence/"),
     images: ["/images/og-default.png"],
     title: "Employee Productivity Intelligence - Visibility Without Surveillance",
     description:

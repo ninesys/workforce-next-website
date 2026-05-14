@@ -6,7 +6,7 @@ import {
   generateBreadcrumbSchema,
   generateFAQPageSchema,
 } from "@/lib/jsonLd";
-import { siteMetadata } from "@/data/siteMetadata";
+import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
@@ -24,6 +24,7 @@ export const metadata: Metadata = {
     "hire AWS engineer",
   ],
   openGraph: {
+    ...ogDefaults("/hire/devops-engineers/"),
     images: ["/images/og-default.png"],
     title: "Hire DevOps Engineers from India",
     description:

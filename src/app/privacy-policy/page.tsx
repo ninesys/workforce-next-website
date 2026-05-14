@@ -1,11 +1,13 @@
 import { Metadata } from "next";
 
+import { ogDefaults } from "@/data/siteMetadata";
 export const metadata: Metadata = {
   title: "Privacy Policy - Workforce Next",
   description:
     "Privacy Policy for Workforce Next. Learn how we handle your data. We do not use cookies or share data with third parties.",
   keywords: ["privacy policy", "data protection", "workforce next privacy"],
   openGraph: {
+    ...ogDefaults("/privacy-policy/"),
     images: ["/images/og-default.png"],
     title: "Privacy Policy - Workforce Next",
     description:

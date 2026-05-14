@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { ogDefaults } from "@/data/siteMetadata";
 import CareersForm from "@/components/careers/CareersForm";
 import Badge from "@/components/ui/Badge";
 import { generateJobPostingSchema } from "@/lib/jsonLd";
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
     "data engineer jobs",
   ],
   openGraph: {
+    ...ogDefaults("/careers/"),
     images: ["/images/og-default.png"],
     title: "Careers at Workforce Next - Join Our Engineering Team",
     description:

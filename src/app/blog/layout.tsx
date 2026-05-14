@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 
+import { ogDefaults } from "@/data/siteMetadata";
 export const metadata: Metadata = {
   title: "Blog - Hiring, Engineering & Remote Team Insights",
   description:
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
     "offshore development best practices",
   ],
   openGraph: {
+    ...ogDefaults("/blog/"),
     images: ["/images/og-default.png"],
     title: "Blog - Workforce Next",
     description:

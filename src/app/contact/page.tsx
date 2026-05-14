@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { ogDefaults } from "@/data/siteMetadata";
 import ContactForm from "@/components/contact/ContactForm";
 import ContactInfo from "@/components/contact/ContactInfo";
 import { generateContactPageSchema } from "@/lib/jsonLd";
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
     "staff augmentation India",
   ],
   openGraph: {
+    ...ogDefaults("/contact/"),
     images: ["/images/og-default.png"],
     title: "Contact Workforce Next - Build Your Remote Team",
     description:
