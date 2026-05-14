@@ -32,6 +32,12 @@ import hireMobileAppDevelopersCrossPlatform2026 from "./blog/hire-mobile-app-dev
 import hireRemoteMobileAppTestingTeam2026 from "./blog/hire-remote-mobile-app-testing-team-2026";
 import owaspLlmTop10ImplementationChecklist2026 from "./blog/owasp-llm-top-10-implementation-checklist-2026";
 import promptInjectionDefenseProductionLlmApps2026 from "./blog/prompt-injection-defense-production-llm-apps-2026";
+import nodejsDeveloperRoleEnterpriseApplications2026 from "./blog/nodejs-developer-role-enterprise-applications-2026";
+import nodejsVsJavaVsGoEnterpriseBackend2026 from "./blog/nodejs-vs-java-vs-go-enterprise-backend-2026";
+import nodejsMicroservicesArchitectureEnterpriseGuide2026 from "./blog/nodejs-microservices-architecture-enterprise-guide-2026";
+import nodejsPerformanceScalingProductionChecklist2026 from "./blog/nodejs-performance-scaling-production-checklist-2026";
+import nodejsSecurityEnterpriseChecklistOwasp2026 from "./blog/nodejs-security-enterprise-checklist-owasp-2026";
+import expressjsVsFastifyVsNestjs2026 from "./blog/expressjs-vs-fastify-vs-nestjs-2026";
 
 export type { BlogPost, BlogFAQ };
 
@@ -79,4 +85,10 @@ export const blogPosts: BlogPost[] = [
   hireRemoteMobileAppTestingTeam2026,
   owaspLlmTop10ImplementationChecklist2026,
   promptInjectionDefenseProductionLlmApps2026,
+  nodejsDeveloperRoleEnterpriseApplications2026,
+  nodejsVsJavaVsGoEnterpriseBackend2026,
+  nodejsMicroservicesArchitectureEnterpriseGuide2026,
+  nodejsPerformanceScalingProductionChecklist2026,
+  nodejsSecurityEnterpriseChecklistOwasp2026,
+  expressjsVsFastifyVsNestjs2026,
 ];
