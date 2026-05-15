@@ -39,6 +39,7 @@ import nodejsPerformanceScalingProductionChecklist2026 from "./blog/nodejs-perfo
 import nodejsSecurityEnterpriseChecklistOwasp2026 from "./blog/nodejs-security-enterprise-checklist-owasp-2026";
 import expressjsVsFastifyVsNestjs2026 from "./blog/expressjs-vs-fastify-vs-nestjs-2026";
 import enterpriseWebApplicationDevelopmentCompleteGuide2026 from "./blog/enterprise-web-application-development-complete-guide-2026";
+import outsourceEnterpriseWebApplicationDevelopment2026 from "./blog/outsource-enterprise-web-application-development-2026";
 
 export type { BlogPost, BlogFAQ };
 
@@ -93,4 +94,5 @@ export const blogPosts: BlogPost[] = [
   nodejsSecurityEnterpriseChecklistOwasp2026,
   expressjsVsFastifyVsNestjs2026,
   enterpriseWebApplicationDevelopmentCompleteGuide2026,
+  outsourceEnterpriseWebApplicationDevelopment2026,
 ];
