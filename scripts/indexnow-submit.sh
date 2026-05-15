@@ -93,6 +93,7 @@ URLS=(
   "https://${HOST}/blog/nodejs-performance-scaling-production-checklist-2026/"
   "https://${HOST}/blog/nodejs-security-enterprise-checklist-owasp-2026/"
   "https://${HOST}/blog/expressjs-vs-fastify-vs-nestjs-2026/"
+  "https://${HOST}/blog/enterprise-web-application-development-complete-guide-2026/"
 )
 
 # Build JSON payload
