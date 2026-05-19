@@ -8,6 +8,7 @@ import PainVoices from "@/components/home/PainVoices";
 import Specialisms from "@/components/home/Specialisms";
 import RetentionMechanisms from "@/components/home/RetentionMechanisms";
 import ProductsRow from "@/components/home/ProductsRow";
+import ServicesBento from "@/components/home/ServicesBento";
 import CTASection from "@/components/home/CTASection";
 import { generateHomepageHowToSchema } from "@/lib/jsonLd";
 
@@ -53,6 +54,7 @@ export default function Home() {
       />
       <Hero />
       <EntityDefinition />
+      <ServicesBento />
       <StatBlock />
       <PullQuote />
       <PainVoices />
