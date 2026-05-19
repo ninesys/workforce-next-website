@@ -2,12 +2,12 @@ import { NavItem } from "@/types";
 
 export const mainNavItems: NavItem[] = [
   {
-    label: "Hire",
+    label: "Services",
     href: "/hire",
     groups: [
       {
-        title: "By skill",
-        description: "Match by stack and role.",
+        title: "Hire Developers",
+        description: "Pre-vetted remote developers and engineering pods, matched by stack and role.",
         items: [
           { label: "Full Stack Developers", href: "/hire/fullstack-developers" },
           { label: "AI & Agentic Developers", href: "/hire/ai-developers" },
