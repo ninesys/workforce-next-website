@@ -43,6 +43,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/hire/nlp-developers/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/hire/mlops-engineers/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/hire/automation-consultants/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    // Consulting pages
+    { url: `${baseUrl}/consulting/it-consulting/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${baseUrl}/consulting/scalability-consulting/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${baseUrl}/consulting/mvp-consulting/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     // Segment pages
     { url: `${baseUrl}/for/founders/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/for/startups/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },

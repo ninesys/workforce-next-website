@@ -48,11 +48,11 @@ export const mainNavItems: NavItem[] = [
         title: "Consulting",
         description: "Advisory and project engagements for IT, automation, scale, architecture, and MVPs.",
         items: [
-          { label: "IT Consulting", href: "/india-handled" },
+          { label: "IT Consulting", href: "/consulting/it-consulting" },
           { label: "Automation Consulting", href: "/hire/automation-consultants" },
-          { label: "Scalability Consulting", href: "/contact?topic=scalability-consulting" },
+          { label: "Scalability Consulting", href: "/consulting/scalability-consulting" },
           { label: "Software Architect Consulting", href: "/hire/software-architects" },
-          { label: "MVP Consulting", href: "/for/founders" },
+          { label: "MVP Consulting", href: "/consulting/mvp-consulting" },
         ],
       },
       {
