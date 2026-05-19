@@ -27,6 +27,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/hire/unity-developers/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/hire/ios-developers/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/hire/android-developers/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${baseUrl}/hire/python-developers/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${baseUrl}/hire/php-developers/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${baseUrl}/hire/java-developers/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${baseUrl}/hire/wordpress-developers/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${baseUrl}/hire/shopify-developers/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     // Segment pages
     { url: `${baseUrl}/for/founders/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/for/startups/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
