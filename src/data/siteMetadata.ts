@@ -5,7 +5,7 @@ export const siteMetadata: SiteMetadata = {
   legalName: "Workforce Next Pvt. Ltd.",
   tagline: "Your remote team. Built to stay.",
   description:
-    "Workforce Next is an IT consulting and IT services company that helps startups to enterprises with technology development. We offer remote technical developers and dedicated quality testing staff from India, matched by SethAI, our AI recruiter. We are not an EOR, not a payroll wrapper, and not a body shop.",
+    "Workforce Next is an IT consulting and IT services company that offers remote developers and QA engineers from India for startups to enterprises. Hire dedicated, fractional, or full-time engineers with flexible hours and flexible timezone coverage. Matched by SethAI, our AI recruiter.",
   url: "https://workforcenext.in",
   email: "hello@workforcenext.in",
   phone: "+91-9582595166",

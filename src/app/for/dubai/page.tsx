@@ -53,14 +53,14 @@ const whyPoints = [
       "The UAE moved to a Monday to Friday workweek in 2022. Saudi Arabia, Bahrain, and Qatar follow Sunday to Thursday but with significant overlap. Indian engineers work Monday to Friday with optional Saturday cover. Holidays and major business events line up substantially.",
   },
   {
-    title: "DIFC, ADGM, and PDPL aware",
+    title: "Engineers familiar with UAE data practices",
     description:
-      "Our engineers operate aware of the DIFC Data Protection Law, ADGM regulations, and the UAE Personal Data Protection Law (PDPL). Cross-border data flows from the UAE to India are documented and supported by DPAs that match customer environments.",
+      "Our engineers operate aware of the DIFC Data Protection Law, ADGM regulations, and the UAE Personal Data Protection Law (PDPL). We can sign a customer-supplied DPA where your environment requires.",
   },
   {
-    title: "AED or USD invoicing, no UAE entity needed",
+    title: "Simple contracting in AED or USD",
     description:
-      "One B2B services contract with Workforce Next Pvt. Ltd. AED invoicing for UAE-based customers, USD for those who prefer it. The engineer is our employee in India. You handle the work; we handle Indian payroll, PF, gratuity, equipment, and benefits. No DED license, no free zone setup, no UAE labour-card paperwork.",
+      "One B2B services contract, AED invoicing for UAE-based customers, USD for those who prefer it. The engineer is our employee in India, not yours. No UAE entity needed. You don't worry about the operational side.",
   },
 ];
 
@@ -95,7 +95,7 @@ const faqItems: FAQ[] = [
   {
     question: "Do I need a UAE entity, DED licence, or free zone setup to hire your engineers?",
     answer:
-      "No. The engineer is our employee in India and the contract is between two corporate entities (you and Workforce Next Pvt. Ltd.). We invoice in AED or USD per your preference. There is no employment relationship between you and the engineer, so no DED licence, no labour card, no UAE entity, no free zone setup needed. The contract is a B2B services agreement.",
+      "No. The engineer is our employee in India and the contract is between two corporate entities (you and Workforce Next Pvt. Ltd.). We invoice in AED or USD per your preference. No DED licence, no UAE entity, no free zone setup needed. The contract is a B2B services agreement; you don't worry about the operational side.",
     category: "hiring",
     categoryLabel: "Hiring",
   },
@@ -313,11 +313,9 @@ export default function ForDubaiPage() {
             What does an Indian developer cost a UAE company in 2026?
           </h2>
           <p className="text-dark-600 dark:text-dark-200 leading-relaxed mb-8 max-w-3xl">
-            All-in pricing in AED with USD equivalent. Includes our
-            employer-side India overhead, equipment, payroll, and the
-            engineering manager assigned to your account. The same monthly
-            rate applies on a 3 month or 12 month engagement; no short-term
-            premium.
+            All-in pricing in AED with USD equivalent. One monthly fee
+            indexed to role and seniority. The same monthly rate applies on
+            a 3 month or 12 month engagement; no short-term premium.
           </p>
           <div className="overflow-x-auto rounded-xl border border-dark-50 dark:border-dark-700 bg-white dark:bg-dark-900">
             <table className="w-full text-left border-collapse">

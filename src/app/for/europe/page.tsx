@@ -9,9 +9,9 @@ import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "Hire Indian Developers for European Companies (CET / GMT)",
+  title: "Hire Remote Developers from India for Europe (CET / GMT)",
   description:
-    "Hire pre-vetted Indian developers for European companies. 4.5+ hours of CET and GMT overlap, 3 to 12 month engagements, GDPR-aligned, no EU entity needed.",
+    "Hire remote developers from India for European companies. Flexible hours, 4.5+ hours of CET and GMT overlap, 3 to 12 month engagements, EUR or GBP invoicing.",
   keywords: [
     "hire indian developers europe",
     "hire indian developers uk",
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   openGraph: {
     ...ogDefaults("/for/europe/"),
     images: ["/images/og-default.png"],
-    title: "Hire Indian Developers for European Companies",
+    title: "Hire Remote Developers from India for Europe",
     description:
-      "Pre-vetted Indian developers with 4.5+ hours of CET and GMT overlap. 3 to 12 month engagements. GDPR-aligned. No EU entity needed.",
+      "Remote developers from India with flexible hours, 4.5+ hours of CET and GMT overlap. 3 to 12 month engagements. EUR or GBP invoicing.",
   },
   alternates: {
     canonical: `${siteMetadata.url}/for/europe/`,
@@ -59,14 +59,14 @@ const whyPoints = [
       "3 to 4 month contracts are a first-class engagement model, not a favor. We run them on a B2B services contract with clear ramp, deliverable, and exit clauses. No hidden long-term lock-in, no recruitment fee on extension.",
   },
   {
-    title: "GDPR-aligned by default",
+    title: "Engineers familiar with EU data practices",
     description:
-      "Our engineers operate on EU-style data minimization, audit logs, and DPA-backed processing terms. Every European engagement signs a DPA. We can sit inside a customer's existing GDPR posture rather than punch a hole through it.",
+      "Our engineers operate on EU-style data minimization, audit logs, and access-control practices that meet the GDPR baseline. We can sign a customer-supplied DPA where your compliance environment requires.",
   },
   {
-    title: "No EU entity, no EOR, no payroll burden",
+    title: "Simple contracting in EUR or GBP",
     description:
-      "One B2B services contract, EUR or GBP invoicing, VAT handled correctly. The engineer is our employee in India. You manage the work; we handle payroll, PF, gratuity, equipment, and benefits on our side.",
+      "One B2B services contract, EUR or GBP invoicing, VAT handled correctly. The engineer is our employee in India. You don't worry about the operational side.",
   },
 ];
 
@@ -135,16 +135,16 @@ const faqItems: FAQ[] = [
     categoryLabel: "Hiring",
   },
   {
-    question: "Are your contracts GDPR-aligned?",
+    question: "Are your engineers familiar with GDPR practices?",
     answer:
-      "Yes. Every European engagement is signed under a DPA (Data Processing Agreement) compatible with GDPR Article 28. Our engineers follow data minimization, audit logging, and access-control practices that meet the EU baseline. Personal data processed during the engagement stays under the customer's lawful basis. We can also operate under specific customer DPAs when required and have done so for engagements in regulated industries.",
+      "Yes. Our engineers operate on EU-style data minimization, audit logging, and access-control practices that meet the GDPR baseline. Personal data processed during the engagement stays under the customer's lawful basis. We can sign a customer-supplied DPA where your compliance environment requires.",
     category: "hiring",
     categoryLabel: "Hiring",
   },
   {
-    question: "Do I need to set up a European entity or use an EOR?",
+    question: "Do I need to set up a European entity to hire your engineers?",
     answer:
-      "No. The engineer is our employee in India. You sign one B2B services contract with Workforce Next Pvt. Ltd. We invoice in EUR or GBP. You receive a single VAT-correct invoice each month. Indian payroll, PF, gratuity, equipment, and benefits stay our problem. There is no employment relationship between you and the engineer, so no EU entity, no EOR, and no payroll burden land on your side.",
+      "No. You sign one B2B services contract with Workforce Next Pvt. Ltd. We invoice in EUR or GBP with a single VAT-correct invoice each month. The engineer is our employee in India, not yours. You don't worry about the operational side.",
     category: "hiring",
     categoryLabel: "Hiring",
   },
@@ -158,7 +158,7 @@ const faqItems: FAQ[] = [
   {
     question: "What does a 3 month engagement cost in EUR or GBP?",
     answer:
-      "Senior engineers typically run EUR 6,500 to 9,500 per month all-in, depending on stack and seniority within the senior band. A 3 month senior engagement therefore lands around EUR 19,500 to 28,500 total. Mid-level engineers run EUR 4,500 to 6,500 per month. Tech leads run EUR 9,500 to 13,500. All figures include our employer-side India overhead, equipment, payroll, and the engineering manager assigned to your account. Pricing is the same on a 3 month or 4 month contract; there is no short-term premium.",
+      "Senior engineers typically run EUR 6,500 to 9,500 per month all-in, depending on stack and seniority within the senior band. A 3 month senior engagement therefore lands around EUR 19,500 to 28,500 total. Mid-level engineers run EUR 4,500 to 6,500 per month. Tech leads run EUR 9,500 to 13,500. Pricing is the same on a 3 month or 4 month contract; there is no short-term premium.",
     category: "hiring",
     categoryLabel: "Hiring",
   },
@@ -189,9 +189,9 @@ const faqSchema = generateFAQPageSchema(faqItems);
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Hire Indian Developers for European Companies",
+  name: "Hire Indian Developers for Europe",
   description:
-    "Pre-vetted Indian developers matched to European companies, with 4.5+ hours of CET / GMT overlap, 3 to 12 month engagement models, GDPR-aligned contracting, and no EU entity required.",
+    "Remote developers from India for European companies, with flexible hours, 4.5+ hours of CET / GMT overlap, 3 to 12 month engagement models, and EUR or GBP invoicing.",
   provider: {
     "@type": "Organization",
     name: siteMetadata.name,
@@ -243,12 +243,12 @@ export default function ForEuropePage() {
             FOR EUROPEAN COMPANIES
           </Badge>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-dark-900 dark:text-dark-50 leading-tight">
-            Hire Indian Developers for European Companies
+            Hire Remote Developers from India for Europe
           </h1>
           <p className="mt-4 text-lg text-dark-700 dark:text-dark-200 max-w-2xl">
-            Pre-vetted engineers from India with 4.5+ hours of CET and GMT
-            overlap. 3 to 12 month engagements. GDPR-aligned. One B2B
-            contract in EUR or GBP, no EU entity needed.
+            Pre-vetted engineers from India with flexible hours and 4.5+
+            hours of CET and GMT overlap. 3 to 12 month engagements. One
+            B2B contract in EUR or GBP.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Button href="/contact" size="lg">
@@ -477,11 +477,10 @@ export default function ForEuropePage() {
             What does a 3 or 4 month Indian developer cost in EUR or GBP?
           </h2>
           <p className="text-dark-600 dark:text-dark-200 leading-relaxed mb-8 max-w-3xl">
-            All-in pricing for European customers. Includes our employer-side
-            India overhead, equipment, payroll, and the engineering manager
-            assigned to your account. There is no short-term premium; the
-            monthly rate on a 3 month engagement matches the rate on a 12
-            month engagement.
+            All-in pricing for European customers. One monthly fee in EUR
+            or GBP, indexed to role and seniority. There is no short-term
+            premium; the monthly rate on a 3 month engagement matches the
+            rate on a 12 month engagement.
           </p>
           <div className="overflow-x-auto rounded-xl border border-dark-50 dark:border-dark-700 bg-white dark:bg-dark-900">
             <table className="w-full text-left border-collapse">

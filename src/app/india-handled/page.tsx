@@ -11,222 +11,173 @@ import {
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "Hire an Offshore Development Team from India (Managed)",
+  title: "Hire Remote Developers from India (Flexible Hours & Timezone)",
   description:
-    "Workforce Next is an IT services company. Hire dedicated developers, QA engineers, and full product teams from India to build and ship your software. We handle the contracting and employment so you focus on the engineering work.",
+    "Hire dedicated, fractional, or full-time remote developers and QA engineers from India. Flexible hours, flexible timezone coverage, one B2B contract. Pre-vetted by SethAI.",
   keywords: [
-    "hire offshore development team",
-    "hire offshore development team india",
+    "hire remote developers India",
+    "flexible hours remote developers",
+    "flexible timezone developers",
+    "dedicated remote developers India",
+    "fractional remote engineers",
+    "remote developer staffing India",
+    "hire offshore developers India",
     "managed offshore development team",
-    "managed staff augmentation India",
-    "dedicated developers India staff aug",
-    "hire developers in India",
-    "managed offshore developers India",
-    "GST invoicing developer staffing",
-    "Indian developer staff augmentation",
-    "B2B developer staffing India",
-    "no India entity needed developers",
-    "alternative to EOR India",
+    "hire developers with timezone overlap",
   ],
   openGraph: {
     ...ogDefaults("/india-handled/"),
     images: ["/images/og-default.png"],
-    title: "Hire an Offshore Development Team from India (Managed)",
+    title: "Hire Remote Developers from India (Flexible Hours & Timezone)",
     description:
-      "IT services and engineering delivery from India. Build with pre-vetted developers, QA engineers, and full product teams matched by SethAI. Contracting and employment handled, so you focus on shipping software.",
+      "Dedicated, fractional, or full-time remote developers and QA engineers. Flexible hours, flexible timezone coverage. Pre-vetted by SethAI.",
   },
   alternates: {
     canonical: "https://workforcenext.in/india-handled/",
   },
 };
 
-const youHandle = [
+const engagementOptions = [
   {
-    title: "Pick the engineer",
-    body: "Use SethAI in DIY mode to filter by stack, seniority, and timezone. Interview the shortlist directly. You choose. We don't gate the decision.",
+    title: "Dedicated full-time",
+    hours: "40 hours per week",
+    body: "One engineer, full-time, embedded in your team like an in-house hire. Standard for ongoing product work and long-running engagements.",
   },
   {
-    title: "Set the scope and the bar",
-    body: "Tickets, sprint goals, code review standards, OKRs. Day-to-day direction is yours. We're not in the Slack, we're not in the standup, we're not in your decisions.",
+    title: "Fractional",
+    hours: "10 to 20 hours per week",
+    body: "Senior engineering input without a full-time commitment. Best for advisory, code review, design support, or part-time builders.",
   },
   {
-    title: "Run the engineer like a member of your team",
-    body: "Direct comms, your tools, your processes. The engineer takes ownership the same way an in-house hire would. You manage the work, not the wrapper around it.",
-  },
-];
-
-const weHandle = [
-  {
-    category: "Employment & payroll",
-    items: [
-      "Engineer is a full-time WorkforceNext employee under Indian law (not your employee)",
-      "Monthly payroll processing in INR, on time, every month",
-      "TDS deduction and quarterly filing with Income Tax Department",
-      "Form 16 issued to the engineer annually",
-      "Salary revisions, bonus payouts, retention adjustments",
-    ],
-  },
-  {
-    category: "Statutory compliance",
-    items: [
-      "Provident Fund (PF) contributions, employer and employee shares",
-      "Employee State Insurance (ESI) where applicable",
-      "Professional Tax in the relevant Indian state",
-      "Gratuity accrual under the Payment of Gratuity Act",
-      "Labour Welfare Fund contributions",
-      "Statutory and earned leave tracking",
-    ],
-  },
-  {
-    category: "Benefits & retention",
-    items: [
-      "Group health insurance (engineer + dependents)",
-      "Term life and personal accident cover",
-      "Annual leave, casual leave, sick leave per Indian norms",
-      "Festival bonus, retention bonus structures we've found work",
-      "Career advisory check-ins to catch flight risk early",
-    ],
-  },
-  {
-    category: "Equipment & workspace",
-    items: [
-      "Laptop, monitor, keyboard, headset, provisioned and shipped on day one",
-      "MDM-managed device with security baseline (FileVault, password policy, backups)",
-      "Optional co-working desk in the engineer's city if they prefer it to home",
-      "Equipment refresh cycle and offboarding return process",
-    ],
-  },
-  {
-    category: "Tax, invoicing & FX",
-    items: [
-      "GST-compliant monthly invoice raised to your entity in your local currency",
-      "FIRC handling on the India side, so no FEMA/RBI exposure on yours",
-      "USD, GBP, CAD invoicing supported. SWIFT or Wise",
-      "Annual TRC (Tax Residency Certificate) and Form 10F for double-tax treaty benefit",
-    ],
-  },
-  {
-    category: "Contracts, IP & security",
-    items: [
-      "Master Services Agreement plus per-engagement Statement of Work",
-      "Full IP and work-product assignment to your entity (no shared rights)",
-      "NDA signed by every engineer, mirrored to your terms",
-      "Background verification (employment, education, criminal, address)",
-      "DPDP Act compliance for any personal data we hold on your behalf",
-    ],
-  },
-  {
-    category: "HR operations",
-    items: [
-      "Onboarding (offer letter, joining kit, day-one access)",
-      "Performance review cadence, scaled to your preferences",
-      "PIP and exit handling under Indian labour law if it ever comes to that",
-      "Reference letters and Form 16 on exit",
-      "Replacement at no cost if an engineer leaves in the first 90 days",
-    ],
+    title: "Team pod",
+    hours: "2 to 5 engineers",
+    body: "Cross-functional squad with a tech lead. Best for MVPs, feature launches, migrations, or self-contained product builds.",
   },
 ];
 
-const youDoVsWeDo = [
-  { area: "Source the engineer", you: "Pick from SethAI shortlist", us: "Source, screen, shortlist" },
-  { area: "Interview & decide", you: "Yes, direct interviews", us: "Coordinate logistics" },
-  { area: "Day-to-day direction", you: "Tickets, standups, code review", us: "Stay out of it" },
-  { area: "Salary & raises", you: "Approve adjustments", us: "Benchmark, run payroll" },
-  { area: "Indian payroll & TDS", you: "Nothing", us: "All of it" },
-  { area: "PF, ESI, gratuity", you: "Nothing", us: "All of it" },
-  { area: "Health insurance & leave", you: "Nothing", us: "All of it" },
-  { area: "Equipment & MDM", you: "Nothing", us: "All of it" },
-  { area: "GST invoicing & FX", you: "Pay one USD/GBP/CAD invoice", us: "Raise compliant invoice in INR + your currency" },
-  { area: "IP transfer & NDA", you: "Sign once at MSA", us: "Per-engineer, mirrored" },
-  { area: "Performance reviews", you: "Provide input", us: "Run the cadence" },
-  { area: "Retention & flight-risk", you: "Flag concerns", us: "Monthly advisory + intervention" },
-  { area: "Exit & replacement", you: "Notify", us: "Handle exit, replace at no cost" },
+const timezoneOptions = [
+  {
+    region: "US Eastern / Central",
+    overlap: "Engineers start by 6 PM IST; 4 to 5 hour daily overlap",
+  },
+  {
+    region: "US Pacific",
+    overlap: "Engineers on a shifted schedule (8 PM to 4 AM IST) for 3 to 4 hour overlap",
+  },
+  {
+    region: "UK / Europe",
+    overlap: "Standard India hours give 4.5 to 6 hour overlap with CET and GMT",
+  },
+  {
+    region: "Australia / APAC",
+    overlap: "Standard India hours give 4 to 5 hour overlap with Sydney/Melbourne",
+  },
+  {
+    region: "Dubai / Middle East",
+    overlap: "1.5 hour offset; standard India hours give 7 to 8 hour overlap",
+  },
+  {
+    region: "24/7 follow-the-sun",
+    overlap: "Multiple engineers on staggered shifts for round-the-clock coverage",
+  },
 ];
 
-const insteadOf = [
+const whyPoints = [
   {
-    title: "Setting up your own India entity",
-    pain: "₹15 to 40 lakh in legal, tax, and HR setup. 4 to 6 months. Then ongoing compliance overhead, an India-based HR head, and FEMA exposure on your books.",
-    us: "You don't need an entity. The engineer is our employee, not yours. You sign one B2B services contract with our Indian entity. First engineer onboarded inside two weeks.",
+    title: "Remote developers, full stop",
+    body: "We offer remote developers and QA engineers. Not payroll services, not HR software, not legal consulting. The product is engineering capacity.",
   },
   {
-    title: "Pairing an EOR (Deel, Remote, Multiplier) with a separate sourcing firm",
-    pain: "EORs are a payroll wrapper that lets you employ someone in India directly. You still have to source, screen, and retain talent yourself, and you carry an indirect employer relationship that adds compliance overhead in some structures.",
-    us: "We're not an EOR. We're managed staff aug. The engineer is our employee, you're our customer. You source through SethAI, sign one services contract, and the entire employment relationship sits on us.",
+    title: "Flexible hours",
+    body: "Full-time, part-time, or fractional. Hours shaped to your team's real workload, not forced into a one-size-fits-all bucket.",
   },
   {
-    title: "Traditional Indian staff aug (TCS, Infosys, tier-2)",
-    pain: "Pyramid staffing, T&M billing, account-manager buffer, subcontracting risk. You don't pick the engineer. You pay rack rate plus margin on a body shop.",
-    us: (
-      <>
-        Same legal model (staff aug), done differently. You pick the engineer
-        through SethAI. No pyramid, no buffer, no subcontracting. (See{" "}
-        <Link
-          href="/not-another-body-shop/"
-          className="text-primary-500 dark:text-primary-400 underline hover:no-underline font-semibold"
-        >
-          /not-another-body-shop/
-        </Link>{" "}
-        for the full breakdown.)
-      </>
-    ),
+    title: "Flexible timezones",
+    body: "Engineers can work standard India hours or shift their schedule to overlap with your team. US Pacific, US Eastern, UK, EU, Australia, or Dubai.",
+  },
+  {
+    title: "One simple contract",
+    body: "One B2B services contract, one monthly invoice in your currency, predictable pricing. No surprise line items.",
+  },
+];
+
+const howItWorks = [
+  {
+    step: "01",
+    title: "Tell us what you need",
+    body: "Stack, seniority, scope, working hours, timezone overlap target. A short brief is enough to start.",
+  },
+  {
+    step: "02",
+    title: "SethAI returns a shortlist",
+    body: "Pre-vetted engineers matched on stack, context, and longevity signals. Shortlist within 48 hours.",
+  },
+  {
+    step: "03",
+    title: "You interview and pick",
+    body: "Talk to candidates directly. Test working style, technical depth, communication. You choose the hire.",
+  },
+  {
+    step: "04",
+    title: "Paid trial week",
+    body: "Real engineer, real code, real PRs. If the fit works, continue. If not, we shortlist another match at no extra cost.",
   },
 ];
 
 const faqs: FAQ[] = [
   {
-    question: "Are you an EOR or a staff augmentation company?",
+    question: "What does Workforce Next actually offer?",
     answer:
-      "EOR solves the legal employment problem. Staff augmentation solves the talent problem. We solve both, plus we manage retention and performance, so you get one engineer, one contract, one monthly invoice, and zero compliance headaches.",
+      "Remote developers and QA engineers from India, on dedicated, fractional, or full-time engagements. Engineers can work standard India hours or shift their schedule to overlap with your team's working hours. That's the offer. One product: remote engineering capacity.",
     category: "hiring",
     categoryLabel: "Operations",
   },
   {
-    question: "What does the engineer's compensation actually cost us?",
+    question: "Can engineers work flexible hours?",
     answer:
-      "You pay one all-in monthly fee in your currency. That fee covers the engineer's gross salary, employer-side PF, gratuity accrual, ESI/insurance, equipment amortisation, payroll/compliance ops, and our margin. You don't get separate line items for PF or insurance. It's one number, predictable month to month, indexed to the role and seniority.",
+      "Yes. We offer full-time (40 hours/week), part-time, and fractional (10 to 20 hours/week) engagements. Hours are shaped to your team's actual workload. If you need an engineer for 25 hours a week or a tech lead for 12 hours a week, we structure the engagement that way.",
+    category: "hiring",
+    categoryLabel: "Operations",
+  },
+  {
+    question: "Can engineers work in our timezone?",
+    answer:
+      "Yes. Standard India hours give 4 to 6 hours of overlap with UK, EU, Australia, and US Eastern. For US Pacific or Australian customers we arrange engineers who shift their schedule (start late afternoon or early evening India time) to give meaningful overlap with your working hours.",
+    category: "hiring",
+    categoryLabel: "Operations",
+  },
+  {
+    question: "Do we need to set up an India entity?",
+    answer:
+      "No. You sign one B2B services contract with us and pay one monthly invoice in your currency. The engineer is our employee in India, not yours. You don't worry about the operational side.",
+    category: "hiring",
+    categoryLabel: "Operations",
+  },
+  {
+    question: "What's the pricing model?",
+    answer:
+      "One all-in monthly fee in your currency, indexed to the role and seniority. Predictable month to month. Pricing scales with hours: fractional is roughly half of full-time. No setup fees, no recruitment fees, no hidden costs.",
     category: "hiring",
     categoryLabel: "Operations",
   },
   {
     question: "Who owns the IP the engineer produces?",
     answer:
-      "You do, fully. The MSA includes a full IP and work-product assignment from WorkforceNext (and from each engineer individually) to your entity. There's no shared ownership, no licence-back, and no India-resident IP retention. The assignment holds under the Indian Copyright Act and is enforceable in your jurisdiction.",
+      "You do, fully. Standard work-product assignment. There's no shared ownership, no licence-back, and no India-resident IP retention.",
     category: "hiring",
     categoryLabel: "Operations",
   },
   {
-    question: "What happens at notice / termination?",
+    question: "What happens if we want to end the engagement?",
     answer:
-      "You give 30 days notice on the services contract (no 12-month lock-in). The engineer remains our employee. We serve them notice per Indian labour law, pay any statutory dues (gratuity if applicable, leave encashment, final settlement), and handle the exit. You don't carry any of that. If you want a replacement instead of an exit, we shortlist within 48 hours and the swap is at no extra fee in the first 90 days.",
+      "You give 30 days notice on the services contract. No 12-month lock-in. If you want a replacement instead of an exit, we shortlist within 48 hours and the swap is at no extra fee in the first 90 days.",
     category: "hiring",
     categoryLabel: "Operations",
   },
   {
-    question: "How do GST and our invoice work?",
+    question: "How fast can an engineer start?",
     answer:
-      "We raise a GST-compliant B2B services invoice from our Indian entity to your foreign entity. Because the service is exported, it qualifies as a zero-rated supply under Indian GST, so no GST is added to the amount you pay. We handle the LUT (Letter of Undertaking) filing on our side. You receive the invoice in USD, GBP, or CAD and pay by SWIFT or Wise. We handle the FIRC (Foreign Inward Remittance Certificate) on the India side.",
-    category: "hiring",
-    categoryLabel: "Operations",
-  },
-  {
-    question: "What benefits does the engineer actually get?",
-    answer:
-      "Group health insurance for the engineer plus spouse and up to two children, term life and personal accident cover, statutory leave (12 casual + 12 sick + earned leave that accrues), full PF and gratuity, festival and retention bonuses, equipment, and access to monthly engineering advisory. The benefit package is one of the reasons our 12-month retention is well above industry. Engineers don't leave for marginal pay bumps when the package is good.",
-    category: "hiring",
-    categoryLabel: "Operations",
-  },
-  {
-    question: "Can we run a background check on the engineer?",
-    answer:
-      "We run one before placement: employment verification (last three employers), education verification (degree authentication), criminal record check, and address verification. We share the report with you. If you want an additional check from your preferred vendor (HireRight, Sterling, Cisive), we'll cooperate fully.",
-    category: "hiring",
-    categoryLabel: "Operations",
-  },
-  {
-    question: "What about data privacy and DPDP Act / GDPR?",
-    answer:
-      "The engineer handles your data subject to your tools, your access controls, and your data processing terms, same as any in-house hire. WorkforceNext as a vendor only holds engineer-side personal data (their PAN, Aadhaar, salary records) and we comply with India's DPDP Act on that. We sign a DPA with you on request and we can mirror your GDPR requirements where they extend extraterritorially.",
+      "Shortlist in 48 hours, interviews the following week, paid trial start typically 7 to 10 business days after intake call. Engineers with bench availability can start faster.",
     category: "hiring",
     categoryLabel: "Operations",
   },
@@ -235,7 +186,7 @@ const faqs: FAQ[] = [
 const breadcrumbSchema = generateBreadcrumbSchema([
   { name: "Home", url: "https://workforcenext.in" },
   {
-    name: "India Handled",
+    name: "Hire Remote Developers from India",
     url: "https://workforcenext.in/india-handled/",
   },
 ]);
@@ -243,12 +194,12 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 const faqSchema = generateFAQPageSchema(faqs);
 
 const articleSchema = generateArticleSchema({
-  headline: "Hire an Offshore Development Team from India (Managed)",
+  headline: "Hire Remote Developers from India (Flexible Hours & Timezone)",
   description:
-    "Hire a managed offshore development team from India. We employ the engineers and run payroll, you sign one B2B contract. No entity, no EOR, no payroll burden on you.",
+    "Hire dedicated, fractional, or full-time remote developers from India. Flexible hours, flexible timezone coverage, one B2B contract.",
   url: "https://workforcenext.in/india-handled/",
   datePublished: "2026-04-10",
-  dateModified: "2026-05-08",
+  dateModified: "2026-05-19",
 });
 
 export default function IndiaHandledPage() {
@@ -271,208 +222,139 @@ export default function IndiaHandledPage() {
       <section className="bg-gradient-to-br from-primary-50 via-white to-primary-50/50 dark:from-dark-900 dark:via-dark-900 dark:to-dark-800 pt-32 pb-16 md:pt-40 md:pb-20">
         <div className="container-custom max-w-4xl">
           <Badge variant="white" className="mb-4">
-            THE OPERATIONAL MODEL
+            REMOTE DEVELOPERS FROM INDIA
           </Badge>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-dark-900 dark:text-dark-50 leading-tight">
-            Hire a managed offshore development team from India.
+            Hire remote developers from India. Flexible hours. Flexible
+            timezones.
           </h1>
           <p className="mt-5 text-lg text-dark-400 dark:text-dark-300 max-w-2xl leading-relaxed">
-            Workforce Next is an IT services company. We build and ship software
-            for startups and enterprises with dedicated developers, QA
-            engineers, and full product teams from India, matched through
-            SethAI. You direct the engineering work. We handle the contracting,
-            employment, and operational overhead in India so none of it sits on
-            you. No entity, no EOR, no payroll burden on your side.
+            Pre-vetted developers and QA engineers from India for startups
+            to enterprises. Dedicated, fractional, or full-time. Standard
+            India hours or shifted to overlap with your team. One product:
+            engineering capacity that ships.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
             <Button href="/contact" variant="primary" size="lg">
               Book a 15-min call
             </Button>
-            <Button href="#what-we-handle" variant="outline" size="lg">
-              See what we handle
+            <Button href="#engagement" variant="outline" size="lg">
+              See engagement options
             </Button>
           </div>
           <p className="mt-6 text-sm text-dark-400 dark:text-dark-400">
-            Managed staff augmentation done right. One vendor for talent and
-            operations. Faster than an entity, simpler than EOR-plus-sourcing.
+            One B2B contract. Predictable monthly pricing. Paid trial
+            before commitment.
           </p>
         </div>
       </section>
 
-      {/* The split */}
+      {/* Why us */}
       <section className="section-padding bg-white dark:bg-dark-900">
-        <div className="container-custom max-w-4xl">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 mb-4">
-            The split, in one sentence
-          </h2>
-          <p className="text-dark-400 dark:text-dark-300 leading-relaxed mb-10 max-w-3xl">
-            You manage the work. We manage everything around it. The engineer
-            shows up to your standup like an in-house hire, because
-            operationally, on the India side, they are one.
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            <div className="p-6 rounded-xl border-2 border-primary-500 bg-primary-50/40 dark:bg-dark-800">
-              <p className="text-xs font-bold tracking-wide text-primary-500 dark:text-primary-400 uppercase mb-3">
-                You handle
-              </p>
-              <ul className="space-y-4">
-                {youHandle.map((item) => (
-                  <li key={item.title}>
-                    <p className="font-extrabold text-dark-900 dark:text-dark-50">
-                      {item.title}
-                    </p>
-                    <p className="text-sm mt-1 text-dark-400 dark:text-dark-300 leading-relaxed">
-                      {item.body}
-                    </p>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="p-6 rounded-xl border-2 border-dark-200 dark:border-dark-700 bg-white dark:bg-dark-900">
-              <p className="text-xs font-bold tracking-wide text-dark-400 dark:text-dark-400 uppercase mb-3">
-                We handle (everything else)
-              </p>
-              <p className="text-sm text-dark-400 dark:text-dark-300 leading-relaxed mb-3">
-                Seven categories of operational and legal work that would
-                otherwise sit on your CFO, your General Counsel, and an
-                India-based HR head you&apos;d have to hire.
-              </p>
-              <p className="text-sm text-dark-900 dark:text-dark-50 font-semibold">
-                Scroll for the line-by-line list.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* What we handle, in detail */}
-      <section
-        id="what-we-handle"
-        className="section-padding bg-primary-50 dark:bg-dark-800"
-      >
         <div className="container-custom max-w-5xl">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 mb-4">
-            What we handle, line by line
+          <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 mb-6">
+            What we actually offer
           </h2>
           <p className="text-dark-400 dark:text-dark-300 leading-relaxed mb-10 max-w-3xl">
-            Every category below is something a US, UK, or Canadian buyer would
-            otherwise have to set up themselves through a local entity, an
-            EOR, an India HR consultant, and a tax advisor. We collapse it into
-            one vendor and one monthly invoice.
+            One product, with the flexibility to shape it to your team.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            {weHandle.map((bucket) => (
+            {whyPoints.map((point) => (
               <div
-                key={bucket.category}
-                className="p-6 bg-white dark:bg-dark-900 rounded-xl border border-dark-50 dark:border-dark-700"
+                key={point.title}
+                className="p-6 rounded-xl border border-dark-50 dark:border-dark-700 bg-white dark:bg-dark-900"
               >
-                <h3 className="font-extrabold text-dark-900 dark:text-dark-50 mb-3">
-                  {bucket.category}
+                <h3 className="font-extrabold text-dark-900 dark:text-dark-50">
+                  {point.title}
                 </h3>
-                <ul className="space-y-2">
-                  {bucket.items.map((item, idx) => (
-                    <li
-                      key={idx}
-                      className="text-sm text-dark-400 dark:text-dark-300 leading-relaxed flex gap-2"
-                    >
-                      <span className="text-primary-500 shrink-0">•</span>
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
+                <p className="mt-2 text-sm text-dark-400 dark:text-dark-300 leading-relaxed">
+                  {point.body}
+                </p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Responsibility table */}
-      <section className="section-padding bg-white dark:bg-dark-900">
+      {/* Engagement options */}
+      <section
+        id="engagement"
+        className="section-padding bg-primary-50 dark:bg-dark-800"
+      >
         <div className="container-custom max-w-5xl">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 mb-4">
-            Who does what: the responsibility table
+          <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 mb-6">
+            Flexible hours: three engagement shapes
           </h2>
           <p className="text-dark-400 dark:text-dark-300 leading-relaxed mb-10 max-w-3xl">
-            Print this and give it to your CFO. It&apos;s the single page that
-            answers most procurement questions.
+            Match the engagement to the work, not the other way around.
           </p>
-          <div className="bg-white dark:bg-dark-900 rounded-xl border border-dark-50 dark:border-dark-700 overflow-hidden">
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm">
-                <thead className="bg-dark-50/40 dark:bg-dark-800">
-                  <tr>
-                    <th className="text-left p-4 font-extrabold text-dark-900 dark:text-dark-50">
-                      Area
-                    </th>
-                    <th className="text-left p-4 font-extrabold text-dark-900 dark:text-dark-50">
-                      You
-                    </th>
-                    <th className="text-left p-4 font-extrabold text-primary-500 dark:text-primary-400">
-                      WorkforceNext
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {youDoVsWeDo.map((row, idx) => (
-                    <tr
-                      key={idx}
-                      className="border-t border-dark-50 dark:border-dark-700"
-                    >
-                      <td className="p-4 font-semibold text-dark-900 dark:text-dark-50">
-                        {row.area}
-                      </td>
-                      <td className="p-4 text-dark-400 dark:text-dark-300">
-                        {row.you}
-                      </td>
-                      <td className="p-4 text-primary-500 dark:text-primary-400 font-semibold">
-                        {row.us}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {engagementOptions.map((option) => (
+              <div
+                key={option.title}
+                className="p-6 rounded-xl bg-white dark:bg-dark-900 border border-dark-50 dark:border-dark-700 flex flex-col"
+              >
+                <h3 className="text-lg font-extrabold text-dark-900 dark:text-dark-50">
+                  {option.title}
+                </h3>
+                <p className="mt-1 text-sm font-bold text-primary-500 dark:text-primary-400">
+                  {option.hours}
+                </p>
+                <p className="mt-4 text-sm text-dark-400 dark:text-dark-300 leading-relaxed">
+                  {option.body}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Instead of */}
-      <section className="section-padding bg-primary-50 dark:bg-dark-800">
-        <div className="container-custom max-w-4xl">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 mb-4">
-            Instead of three different vendors
+      {/* Timezone options */}
+      <section className="section-padding bg-white dark:bg-dark-900">
+        <div className="container-custom max-w-5xl">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 mb-6">
+            Flexible timezones: shaped to your hours
           </h2>
           <p className="text-dark-400 dark:text-dark-300 leading-relaxed mb-10 max-w-3xl">
-            Most teams hire in India one of three ways. Each comes with a
-            specific tax. Here&apos;s how the math compares.
+            Engineers can work standard India hours or shift their schedule
+            to give meaningful daily overlap with your team.
           </p>
-          <div className="space-y-5">
-            {insteadOf.map((item) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            {timezoneOptions.map((tz) => (
               <div
-                key={item.title}
-                className="grid md:grid-cols-2 gap-0 rounded-xl border border-dark-50 dark:border-dark-700 overflow-hidden bg-white dark:bg-dark-900"
+                key={tz.region}
+                className="p-6 rounded-xl border border-dark-50 dark:border-dark-700"
               >
-                <div className="p-6 border-b md:border-b-0 md:border-r border-dark-50 dark:border-dark-700">
-                  <p className="text-xs font-bold tracking-wide text-dark-400 dark:text-dark-400 uppercase mb-2">
-                    Instead of
-                  </p>
-                  <h3 className="font-extrabold text-dark-900 dark:text-dark-50 mb-2">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm text-dark-400 dark:text-dark-300 leading-relaxed">
-                    {item.pain}
-                  </p>
+                <h3 className="font-extrabold text-dark-900 dark:text-dark-50">
+                  {tz.region}
+                </h3>
+                <p className="mt-2 text-sm text-dark-400 dark:text-dark-300 leading-relaxed">
+                  {tz.overlap}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* How it works */}
+      <section className="section-padding bg-primary-50 dark:bg-dark-800">
+        <div className="container-custom max-w-5xl">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 text-center mb-12">
+            How it works
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {howItWorks.map((s) => (
+              <div key={s.step} className="text-center">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary-100 dark:bg-primary-500/15 text-primary-700 dark:text-primary-400 font-bold text-lg mb-4">
+                  {s.step}
                 </div>
-                <div className="p-6 bg-primary-50/40 dark:bg-dark-800">
-                  <p className="text-xs font-bold tracking-wide text-primary-500 dark:text-primary-400 uppercase mb-2">
-                    With us
-                  </p>
-                  <p className="text-sm text-dark-900 dark:text-dark-50 leading-relaxed">
-                    {item.us}
-                  </p>
-                </div>
+                <h3 className="font-bold text-dark-900 dark:text-dark-50">
+                  {s.title}
+                </h3>
+                <p className="mt-2 text-sm text-dark-400 dark:text-dark-300 leading-relaxed">
+                  {s.body}
+                </p>
               </div>
             ))}
           </div>
@@ -483,7 +365,7 @@ export default function IndiaHandledPage() {
       <section className="section-padding bg-white dark:bg-dark-900">
         <div className="container-custom max-w-3xl">
           <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 mb-10">
-            Procurement and CFO questions, answered
+            Common questions
           </h2>
           <div className="space-y-6">
             {faqs.map((faq) => (
@@ -507,12 +389,12 @@ export default function IndiaHandledPage() {
       <section className="section-padding bg-gradient-to-br from-primary-50 via-white to-primary-50/50 dark:from-dark-900 dark:via-dark-900 dark:to-dark-800">
         <div className="container-custom text-center max-w-2xl">
           <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50">
-            Pick the engineer. Skip the entity.
+            Pick the engineer. Start shipping.
           </h2>
           <p className="mt-4 text-dark-400 dark:text-dark-300 leading-relaxed">
-            15-min call. We walk you through the MSA, the invoice format, the
-            statutory inclusions, and a sample first-month onboarding plan. You
-            leave with the documents whether you hire us or not.
+            15-min call. Tell us your stack, your hours, your timezone. We
+            return a shortlist within 48 hours. You interview, you pick, you
+            run a paid trial week. No commitment until you are ready.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/contact" variant="primary" size="lg">

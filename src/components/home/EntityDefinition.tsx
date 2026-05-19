@@ -7,38 +7,47 @@ export default function EntityDefinition() {
         </h2>
         <p className="text-dark-500 dark:text-dark-300 leading-relaxed text-lg">
           <strong>Workforce Next is an IT consulting and IT services company</strong>{" "}
-          that helps startups to enterprises with technology development. We
-          offer <strong>remote technical developers and quality testing staff</strong>{" "}
-          on a dedicated, long-term basis. Engineers and QA specialists plug
-          straight into your engineering, product, and consulting functions and
-          ship software for you. We are not an EOR, not a payroll wrapper, not
-          a body shop. Unlike traditional staffing firms that match on tech
-          stack alone, Workforce Next uses{" "}
+          that offers <strong>remote developers and QA engineers</strong> from
+          India for startups to enterprises. Hire on a dedicated, fractional,
+          or full-time basis with <strong>flexible hours and flexible
+          timezone coverage</strong> shaped to your team. Engineers plug
+          straight into your engineering, product, and consulting functions
+          and ship software for you. Unlike traditional staffing firms that
+          match on tech stack alone, Workforce Next uses{" "}
           <strong>SethAI</strong>, an AI-powered recruiter, to match people by
-          industry context and longevity signals. Common engagements include AI
-          developers, data engineers, full-stack developers, frontend and
-          backend engineers, mobile engineers, DevOps and SRE, and QA automation
-          pods. Every engagement starts with a one-week paid trial and includes
-          a Context Continuity Guarantee. Headquartered in DLF Cyber City,
-          Gurugram with a tech office in Noida.
+          industry context and longevity signals. Common engagements include
+          AI developers, full-stack developers, frontend and backend
+          engineers, mobile engineers, DevOps and SRE, and QA automation
+          pods. Every engagement starts with a one-week paid trial.
+          Headquartered in DLF Cyber City, Gurugram with a tech office in
+          Noida.
         </p>
         <dl className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-sm">
-          <div>
-            <dt className="font-bold text-dark-900 dark:text-dark-50 uppercase tracking-wide text-xs">
-              What we do
-            </dt>
-            <dd className="mt-2 text-dark-500 dark:text-dark-300">
-              IT consulting + remote technology development for startups to
-              enterprises
-            </dd>
-          </div>
           <div>
             <dt className="font-bold text-dark-900 dark:text-dark-50 uppercase tracking-wide text-xs">
               What we offer
             </dt>
             <dd className="mt-2 text-dark-500 dark:text-dark-300">
-              Remote developers, full product pods, and dedicated QA / testing
-              staff from India
+              Remote developers and QA engineers from India. Dedicated,
+              fractional, or full-time.
+            </dd>
+          </div>
+          <div>
+            <dt className="font-bold text-dark-900 dark:text-dark-50 uppercase tracking-wide text-xs">
+              Flexible hours
+            </dt>
+            <dd className="mt-2 text-dark-500 dark:text-dark-300">
+              Full-time, part-time, or fractional engagements. Hours shaped
+              to your team's actual workload.
+            </dd>
+          </div>
+          <div>
+            <dt className="font-bold text-dark-900 dark:text-dark-50 uppercase tracking-wide text-xs">
+              Flexible timezones
+            </dt>
+            <dd className="mt-2 text-dark-500 dark:text-dark-300">
+              Engineers shift schedules to overlap with US, UK, EU, Canada,
+              Australia, or Dubai working hours.
             </dd>
           </div>
           <div>
@@ -46,17 +55,8 @@ export default function EntityDefinition() {
               Who we serve
             </dt>
             <dd className="mt-2 text-dark-500 dark:text-dark-300">
-              Founders, funded startups, mid-market, and enterprise teams in
-              the US, UK, EU, Canada, Australia, and Dubai
-            </dd>
-          </div>
-          <div>
-            <dt className="font-bold text-dark-900 dark:text-dark-50 uppercase tracking-wide text-xs">
-              What we are not
-            </dt>
-            <dd className="mt-2 text-dark-500 dark:text-dark-300">
-              Not an EOR, not a payroll service, not an HR software company,
-              not a freelancer marketplace
+              Founders, funded startups, mid-market, and enterprise teams
+              globally.
             </dd>
           </div>
         </dl>

@@ -132,7 +132,7 @@ export const hirePages: HirePageData[] = [
         step: 3,
         title: "Start Building",
         description:
-          "Your developer joins your team with the tools, access, and context they need. We handle payroll, infrastructure, and HR so you can focus on shipping.",
+          "Your developer joins your team with the tools, access, and context they need. One B2B contract, one monthly invoice, so you can focus on shipping.",
       },
       {
         step: 4,
@@ -499,7 +499,7 @@ export const hirePages: HirePageData[] = [
         step: 4,
         title: "Ongoing Support",
         description:
-          "We handle payroll, compliance, equipment, and HR. You focus on building your product. Scale the team up or down as needed.",
+          "One B2B contract, one monthly invoice in your currency, predictable pricing. You focus on building your product. Scale the team up or down as needed.",
       },
     ],
     ctaTitle: "Get Started with Zero Risk",

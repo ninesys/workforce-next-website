@@ -2,20 +2,36 @@ import { NavItem } from "@/types";
 
 export const mainNavItems: NavItem[] = [
   {
-    label: "Hire",
+    label: "Services",
     href: "/hire",
     groups: [
       {
-        title: "By skill",
-        description: "Match by stack and role.",
+        title: "Hire Developers",
+        description: "Pre-vetted remote developers and engineering pods, matched by stack and role.",
         items: [
+          { label: "Software Engineers", href: "/hire/software-engineers" },
+          { label: "Software Architects", href: "/hire/software-architects" },
           { label: "Full Stack Developers", href: "/hire/fullstack-developers" },
           { label: "AI & Agentic Developers", href: "/hire/ai-developers" },
+          { label: "Generative AI Developers", href: "/hire/generative-ai-developers" },
+          { label: "Computer Vision Developers", href: "/hire/computer-vision-developers" },
+          { label: "Chatbot Developers", href: "/hire/chatbot-developers" },
+          { label: "NLP Developers", href: "/hire/nlp-developers" },
+          { label: "MLOps Engineers", href: "/hire/mlops-engineers" },
           { label: "MCP Developers", href: "/hire/mcp-developers" },
           { label: "Data Engineers", href: "/hire/data-engineers" },
           { label: "Frontend Engineers", href: "/hire/frontend-engineers" },
           { label: "Backend Engineers", href: "/hire/backend-engineers" },
+          { label: "Python Developers", href: "/hire/python-developers" },
+          { label: "PHP Developers", href: "/hire/php-developers" },
+          { label: "Java Developers", href: "/hire/java-developers" },
+          { label: "Node.js Developers", href: "/hire/nodejs-developers" },
           { label: "FastAPI Developers", href: "/hire/fastapi-developers" },
+          { label: "WordPress Developers", href: "/hire/wordpress-developers" },
+          { label: "Shopify Developers", href: "/hire/shopify-developers" },
+          { label: "Flutter Developers", href: "/hire/flutter-developers" },
+          { label: "React Native Developers", href: "/hire/react-native-developers" },
+          { label: "AWS Developers", href: "/hire/aws-developers" },
           { label: "iOS Application Developers", href: "/hire/ios-developers" },
           { label: "Android Developers", href: "/hire/android-developers" },
           { label: "Unity Developers", href: "/hire/unity-developers" },
@@ -40,7 +56,7 @@ export const mainNavItems: NavItem[] = [
         title: "By region",
         description: "Engagements shaped for your timezone.",
         items: [
-          { label: "For European Companies", href: "/for/europe" },
+          { label: "For Europe", href: "/for/europe" },
           { label: "For USA & Canada", href: "/for/usa-canada" },
           { label: "For Australia", href: "/for/australia" },
           { label: "For Dubai & UAE", href: "/for/dubai" },
@@ -81,7 +97,7 @@ export const footerLinks = {
     { label: "Fractional Project Manager", href: "/hire/fractional-project-manager" },
   ],
   byRegion: [
-    { label: "For European Companies", href: "/for/europe" },
+    { label: "For Europe", href: "/for/europe" },
     { label: "For USA & Canada", href: "/for/usa-canada" },
     { label: "For Australia", href: "/for/australia" },
     { label: "For Dubai & UAE", href: "/for/dubai" },

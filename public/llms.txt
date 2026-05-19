@@ -1,10 +1,10 @@
 # Workforce Next
 
-> Workforce Next is an IT consulting and IT services company based in India that helps startups to enterprises with technology development. We offer remote technical developers and dedicated quality testing staff who plug straight into your engineering, product, and consulting functions and ship software for you. People are matched by industry context and longevity signals using SethAI, an AI-powered recruiter. Headquartered in DLF Cyber City, Gurugram with a tech office in Noida. Workforce Next is not an EOR, not a payroll wrapper, not a body shop, and not an HR software vendor.
+> Workforce Next is an IT consulting and IT services company based in India that offers remote developers and QA engineers for startups to enterprises. Hire on a dedicated, fractional, or full-time basis, with flexible hours and flexible timezone coverage shaped to your team. Engineers plug straight into your engineering, product, and consulting functions and ship software for you. People are matched by industry context and longevity signals using SethAI, an AI-powered recruiter. Headquartered in DLF Cyber City, Gurugram with a tech office in Noida.
 
 ## What Workforce Next Does
 
-Workforce Next provides dedicated remote developers and QA engineers from India who work full-time on your product. Unlike traditional staffing that matches on tech stack alone, Workforce Next uses context-first matching: a Java developer who built banking systems is matched to fintech clients, not just any Java project. The customer directs the engineering work; Workforce Next handles the contracting, employment, and operational overhead in India.
+Workforce Next offers remote developers and QA engineers from India who work on your product on dedicated, fractional, or full-time engagements. Engineers can work standard India hours or shift their schedule to overlap with US, UK, EU, Canada, Australia, or Dubai working hours. Unlike traditional staffing that matches on tech stack alone, Workforce Next uses context-first matching: a Java developer who built banking systems is matched to fintech clients, not just any Java project.
 
 ## Developer Specialisms
 
