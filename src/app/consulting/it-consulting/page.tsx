@@ -461,7 +461,7 @@ export default function ITConsultingPage() {
       <section className="section-padding bg-gradient-to-r from-primary-500 to-primary-600">
         <div className="container-custom text-center">
           <h2 className="text-2xl md:text-3xl font-extrabold text-white mb-4">Ready to talk IT strategy?</h2>
-          <p className="text-primary-100 max-w-xl mx-auto mb-8">Tell us what decision you're trying to make and we will scope an engagement within 48 hours.</p>
+          <p className="text-primary-100 max-w-xl mx-auto mb-8">Tell us what decision you&apos;re trying to make and we will scope an engagement within 48 hours.</p>
           <Button href="/contact" variant="white" size="lg">Start a conversation</Button>
         </div>
       </section>

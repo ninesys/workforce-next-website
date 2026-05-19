@@ -309,8 +309,8 @@ export default function MVPConsultingPage() {
             <p>
               Most MVPs that ship in 2026 should not have. The founders did not
               talk to enough users first, the scope was 5x what was needed to
-              test the hypothesis, the stack was chosen for "scaling to 10
-              million users" instead of "shipping in 10 weeks", and the team
+              test the hypothesis, the stack was chosen for &ldquo;scaling to 10
+              million users&rdquo; instead of &ldquo;shipping in 10 weeks&rdquo;, and the team
               was built for a v1 product instead of a learning experiment.
               Then 6 months later the MVP launches, nobody wants it, and the
               founder is out of runway.
