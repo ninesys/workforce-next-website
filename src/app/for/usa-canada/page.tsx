@@ -9,25 +9,25 @@ import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "Hire Indian Developers for US & Canadian Companies",
+  title: "Hire Remote Developers from India for US & Canadian Companies",
   description:
-    "Hire pre-vetted Indian developers for US and Canadian companies. Follow-the-Sun coverage for 24/7 work, USD or CAD invoicing, HIPAA and SOC 2 ready, no US entity needed.",
+    "Hire remote developers from India for US and Canadian companies. Flexible hours, US Pacific to US Eastern timezone overlap, Follow-the-Sun coverage, USD or CAD invoicing.",
   keywords: [
     "hire indian developers usa",
     "hire indian developers canada",
     "hire indian developers for us startup",
     "follow the sun india usa",
-    "us company india developers no entity",
-    "indian developers HIPAA SOC 2",
+    "us company india developers",
+    "hire remote developers usa",
     "hire developers from india for canadian company",
     "north america india engineering",
   ],
   openGraph: {
     ...ogDefaults("/for/usa-canada/"),
     images: ["/images/og-default.png"],
-    title: "Hire Indian Developers for US & Canadian Companies",
+    title: "Hire Remote Developers from India for US & Canadian Companies",
     description:
-      "Pre-vetted Indian developers with Follow-the-Sun coverage. USD or CAD invoicing. HIPAA and SOC 2 ready. No US or Canadian entity needed.",
+      "Remote developers from India. Flexible hours, US Pacific to US Eastern overlap, Follow-the-Sun coverage. USD or CAD invoicing.",
   },
   alternates: {
     canonical: `${siteMetadata.url}/for/usa-canada/`,
@@ -53,14 +53,14 @@ const whyPoints = [
       "A senior US developer fully loaded costs $250,000 to $380,000 a year. The Indian equivalent runs $66,000 to $144,000 all-in. Across a five-engineer team that is a million dollars a year saved without sacrificing seniority.",
   },
   {
-    title: "HIPAA, SOC 2, and PIPEDA aware",
+    title: "Engineers who have shipped in regulated environments",
     description:
-      "Our engineers have shipped under SOC 2 Type II, HIPAA-aligned health products, and PIPEDA for Canadian customers. Audit logs, access control, encryption discipline are habits, not retrofits.",
+      "Our engineers have shipped under SOC 2 Type II at US SaaS companies, HIPAA-aligned health products, and PIPEDA for Canadian customers. Audit logs, access control, and encryption discipline are habits, not retrofits.",
   },
   {
-    title: "No US or Canadian entity, no EOR",
+    title: "Simple contracting in USD or CAD",
     description:
-      "One B2B services contract with Workforce Next Pvt. Ltd. USD invoicing for US customers, CAD for Canadian. Indian payroll, PF, gratuity, equipment stay our problem. You sign one contract; you do not file W-9s for the engineer.",
+      "One B2B services contract, USD invoicing for US customers, CAD for Canadian. No paperwork on your side beyond signing the agreement and paying one monthly invoice in your currency.",
   },
 ];
 
@@ -100,16 +100,16 @@ const faqItems: FAQ[] = [
     categoryLabel: "Hiring",
   },
   {
-    question: "Can your engineers work under SOC 2, HIPAA, or PIPEDA?",
+    question: "Have your engineers worked in regulated environments like SOC 2 or HIPAA?",
     answer:
-      "Yes. We staff engineers who have shipped under SOC 2 Type II, HIPAA-aligned healthtech products, and PIPEDA for Canadian customers. Audit logging, access control, encryption at rest and in transit, and incident response are habits, not retrofits. We sign customer-specific BAAs (HIPAA), DPAs, and scope-of-work documents tailored to the compliance environment. For SOC 2 audits we have been through Type I and Type II audits with multiple US customers.",
+      "Yes. Our engineers have shipped under SOC 2 Type II at US SaaS companies, HIPAA-aligned healthtech products, and PIPEDA for Canadian customers. Audit logging, access control, encryption at rest and in transit, and incident response are habits. We can also sign customer-specific contracts (BAAs, DPAs, scope-of-work) where your compliance environment requires.",
     category: "hiring",
     categoryLabel: "Hiring",
   },
   {
     question: "Do I need to set up a US or Canadian entity to hire your engineers?",
     answer:
-      "No. The engineer is our employee in India. You sign one B2B services contract with Workforce Next Pvt. Ltd. and we invoice in USD (US) or CAD (Canada). You do not file a W-9, you do not run payroll, you do not handle Indian PF or gratuity. There is no employment relationship between you and the engineer. The model is identical for US and Canadian customers; the only difference is the invoicing currency and a few PIPEDA-related contract clauses for Canada.",
+      "No. You sign one B2B services contract with Workforce Next Pvt. Ltd. and we invoice in USD (US) or CAD (Canada). The engineer is our employee in India, not yours. You don't worry about the operational side.",
     category: "hiring",
     categoryLabel: "Hiring",
   },
@@ -142,7 +142,7 @@ const serviceSchema = {
   "@type": "Service",
   name: "Hire Indian Developers for US & Canadian Companies",
   description:
-    "Pre-vetted Indian developers matched to US and Canadian companies, with Follow-the-Sun coverage, shifted-schedule options, USD or CAD invoicing, SOC 2 / HIPAA / PIPEDA-aware contracting, and no US or Canadian entity required.",
+    "Remote developers from India for US and Canadian companies, with flexible hours, Follow-the-Sun coverage, shifted-schedule options for US Pacific, and USD or CAD invoicing.",
   provider: {
     "@type": "Organization",
     name: siteMetadata.name,
@@ -183,13 +183,12 @@ export default function ForUsaCanadaPage() {
             FOR US &amp; CANADIAN COMPANIES
           </Badge>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-dark-900 dark:text-dark-50 leading-tight">
-            Hire Indian Developers for US &amp; Canadian Companies
+            Hire Remote Developers from India for US &amp; Canadian Companies
           </h1>
           <p className="mt-4 text-lg text-dark-700 dark:text-dark-200 max-w-2xl">
-            Pre-vetted engineers from India with Follow-the-Sun coverage,
-            shifted-schedule options for US Pacific, and SOC 2 / HIPAA /
-            PIPEDA-aware contracting. One B2B contract in USD or CAD. No US
-            or Canadian entity needed.
+            Pre-vetted engineers from India with flexible hours, US Pacific
+            to US Eastern timezone overlap, Follow-the-Sun coverage, and one
+            B2B contract in USD or CAD.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Button href="/contact" size="lg">
@@ -333,10 +332,9 @@ export default function ForUsaCanadaPage() {
             What does an Indian developer cost a US or Canadian company in 2026?
           </h2>
           <p className="text-dark-600 dark:text-dark-200 leading-relaxed mb-8 max-w-3xl">
-            All-in pricing for North American customers. Includes our
-            employer-side India overhead, equipment, payroll, and the
-            engineering manager assigned to your account. The same monthly
-            rate applies on a 3 month or 12 month engagement; no short-term
+            All-in pricing for North American customers. One monthly fee in
+            USD or CAD, indexed to role and seniority. The same monthly rate
+            applies on a 3 month or 12 month engagement; no short-term
             premium.
           </p>
           <div className="overflow-x-auto rounded-xl border border-dark-50 dark:border-dark-700 bg-white dark:bg-dark-900">
