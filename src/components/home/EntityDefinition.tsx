@@ -38,7 +38,7 @@ export default function EntityDefinition() {
             </dt>
             <dd className="mt-2 text-dark-500 dark:text-dark-300">
               Full-time, part-time, or fractional engagements. Hours shaped
-              to your team's actual workload.
+              to your team&apos;s actual workload.
             </dd>
           </div>
           <div>

@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import { ogDefaults } from "@/data/siteMetadata";
-import Link from "next/link";
 import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
 import {
