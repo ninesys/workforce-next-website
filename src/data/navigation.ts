@@ -9,6 +9,8 @@ export const mainNavItems: NavItem[] = [
         title: "Hire Developers",
         description: "Pre-vetted remote developers and engineering pods, matched by stack and role.",
         items: [
+          { label: "Software Engineers", href: "/hire/software-engineers" },
+          { label: "Software Architects", href: "/hire/software-architects" },
           { label: "Full Stack Developers", href: "/hire/fullstack-developers" },
           { label: "AI & Agentic Developers", href: "/hire/ai-developers" },
           { label: "MCP Developers", href: "/hire/mcp-developers" },
@@ -22,6 +24,9 @@ export const mainNavItems: NavItem[] = [
           { label: "FastAPI Developers", href: "/hire/fastapi-developers" },
           { label: "WordPress Developers", href: "/hire/wordpress-developers" },
           { label: "Shopify Developers", href: "/hire/shopify-developers" },
+          { label: "Flutter Developers", href: "/hire/flutter-developers" },
+          { label: "React Native Developers", href: "/hire/react-native-developers" },
+          { label: "AWS Developers", href: "/hire/aws-developers" },
           { label: "iOS Application Developers", href: "/hire/ios-developers" },
           { label: "Android Developers", href: "/hire/android-developers" },
           { label: "Unity Developers", href: "/hire/unity-developers" },
