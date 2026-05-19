@@ -1,10 +1,10 @@
 # Workforce Next
 
-> Workforce Next is an IT consulting and IT engineering company based in India that gives growing businesses pre-vetted developers and teams who plug straight into their engineering, consulting, and management functions. People are matched by industry context and longevity signals using SethAI, an AI-powered recruiter. Headquartered in DLF Cyber City, Gurugram with a tech office in Noida.
+> Workforce Next is an IT consulting and IT services company based in India that helps startups to enterprises with technology development. We offer remote technical developers and dedicated quality testing staff who plug straight into your engineering, product, and consulting functions and ship software for you. People are matched by industry context and longevity signals using SethAI, an AI-powered recruiter. Headquartered in DLF Cyber City, Gurugram with a tech office in Noida. Workforce Next is not an EOR, not a payroll wrapper, not a body shop, and not an HR software vendor.
 
 ## What Workforce Next Does
 
-Workforce Next provides dedicated remote developers from India who work full-time on your product. Unlike traditional staffing that matches on tech stack alone, Workforce Next uses context-first matching: a Java developer who built banking systems is matched to fintech clients, not just any Java project.
+Workforce Next provides dedicated remote developers and QA engineers from India who work full-time on your product. Unlike traditional staffing that matches on tech stack alone, Workforce Next uses context-first matching: a Java developer who built banking systems is matched to fintech clients, not just any Java project. The customer directs the engineering work; Workforce Next handles the contracting, employment, and operational overhead in India.
 
 ## Developer Specialisms
 
@@ -34,14 +34,13 @@ Workforce Next provides dedicated remote developers from India who work full-tim
 
 ## Products
 
-- SethAI Recruiter: AI-powered developer screening tool (currently in development, waitlist open)
-- Employee Productivity Intelligence: AI-driven productivity insights for teams. Not surveillance. Pricing from INR 299/user/month.
+- SethAI Recruiter: AI-powered developer matching and screening engine (currently in development, waitlist open)
 
 ## Contact
 
 - Website: https://workforcenext.in
 - Email: hello@workforcenext.in
-- Phone: +91-8929251081
+- Phone: +91-9582595166
 - Office: DLF Cyber City, Gurugram, Haryana, India
 - Tech Office: NPX Urbtech, Sector 153, Noida, U.P., India
 - LinkedIn: https://www.linkedin.com/company/workforce-next
@@ -60,7 +59,6 @@ Workforce Next provides dedicated remote developers from India who work full-tim
 - [For Startups (Engineering Pod)](https://workforcenext.in/for/startups)
 - [For Enterprise](https://workforcenext.in/for/enterprise)
 - [SethAI Recruiter](https://workforcenext.in/products/seth-ai-recruiter)
-- [Employee Productivity Intelligence](https://workforcenext.in/products/employee-productivity-intelligence)
 - [How We Work](https://workforcenext.in/how-we-work)
 - [Why Teams Stay](https://workforcenext.in/why-teams-stay)
 - [Cost of Switching](https://workforcenext.in/cost-of-switching)

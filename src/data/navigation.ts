@@ -53,10 +53,6 @@ export const mainNavItems: NavItem[] = [
     href: "/products",
     children: [
       { label: "SethAI Recruiter", href: "/products/seth-ai-recruiter" },
-      {
-        label: "Productivity Intelligence",
-        href: "/products/employee-productivity-intelligence",
-      },
     ],
   },
   { label: "How We Work", href: "/how-we-work" },
@@ -95,10 +91,6 @@ export const footerLinks = {
   ],
   products: [
     { label: "SethAI Recruiter", href: "/products/seth-ai-recruiter" },
-    {
-      label: "Productivity Intelligence",
-      href: "/products/employee-productivity-intelligence",
-    },
   ],
   company: [
     { label: "About", href: "/about" },

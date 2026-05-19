@@ -1,6 +1,6 @@
 # Workforce Next - Complete Reference
 
-> Workforce Next Pvt. Ltd. is an IT consulting and IT engineering company based in India. It gives growing businesses pre-vetted developers and teams who plug straight into their engineering, consulting, and management functions. People are matched by industry context and longevity signals using SethAI, an AI-powered recruiter. Founded in 2020. Headquartered in DLF Cyber City, Gurugram, Haryana, India. Tech office at NPX Urbtech, Sector 153, Noida, U.P., India.
+> Workforce Next Pvt. Ltd. is an IT consulting and IT services company based in India. It helps startups to enterprises with technology development by offering remote technical developers and dedicated quality testing staff who plug straight into engineering, product, and consulting functions and ship software for the customer. People are matched by industry context and longevity signals using SethAI, an AI-powered recruiter. Customers direct the engineering work; Workforce Next handles the contracting, employment, and operational overhead in India. Workforce Next is not an EOR, not a payroll wrapper, not a body shop, and not an HR software vendor. Founded in 2020. Headquartered in DLF Cyber City, Gurugram, Haryana, India. Tech office at NPX Urbtech, Sector 153, Noida, U.P., India.
 
 ---
 
@@ -12,7 +12,7 @@ The core insight: a developer who has worked on your product for 12 months is wo
 
 Website: https://workforcenext.in
 Email: hello@workforcenext.in
-Phone: +91-8929251081
+Phone: +91-9582595166
 LinkedIn: https://www.linkedin.com/company/workforce-next
 
 ---
@@ -144,12 +144,6 @@ Page: https://workforcenext.in/how-we-work
 ### SethAI Recruiter
 AI-powered developer screening tool that evaluates technical skills and longevity signals. Generates 1-page match reports. Currently in development, waitlist open.
 Page: https://workforcenext.in/products/seth-ai-recruiter
-
-### Employee Productivity Intelligence
-AI-driven productivity insights for teams. Not surveillance. Employees see their own data. AI coaching nudges instead of alerts. Weekly manager intelligence reports.
-Pricing: Starter INR 299/user/month (up to 25 users), Growth INR 399/user/month (up to 100), Enterprise custom.
-DPDP Act 2023 compliant by design.
-Page: https://workforcenext.in/products/employee-productivity-intelligence
 
 ---
 

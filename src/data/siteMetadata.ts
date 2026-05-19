@@ -5,11 +5,10 @@ export const siteMetadata: SiteMetadata = {
   legalName: "Workforce Next Pvt. Ltd.",
   tagline: "Your remote team. Built to stay.",
   description:
-    "Workforce Next is an IT consulting and IT engineering company that gives growing businesses pre-vetted developers and teams matched by SethAI, our AI recruiter, to plug into their engineering, consulting, and management functions.",
+    "Workforce Next is an IT consulting and IT services company that helps startups to enterprises with technology development. We offer remote technical developers and dedicated quality testing staff from India, matched by SethAI, our AI recruiter. We are not an EOR, not a payroll wrapper, and not a body shop.",
   url: "https://workforcenext.in",
   email: "hello@workforcenext.in",
-  phone: "+91-8929251081",
-  whatsapp: "+918929251081",
+  phone: "+91-9582595166",
   address: "DLF Cyber City, Gurugram, Haryana, India",
   techOffice: "NPX Urbtech, Sector 153, Noida, U.P., India",
 };

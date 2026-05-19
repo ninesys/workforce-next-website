@@ -37,7 +37,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/for/dubai/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     // Products
     { url: `${baseUrl}/products/seth-ai-recruiter/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/products/employee-productivity-intelligence/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     // Core pages
     { url: `${baseUrl}/how-we-work/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/why-teams-stay/`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },

@@ -20,7 +20,6 @@ export interface SiteMetadata {
   url: string;
   email: string;
   phone: string;
-  whatsapp: string;
   address: string;
   techOffice: string;
 }

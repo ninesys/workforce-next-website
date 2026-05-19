@@ -13,7 +13,7 @@ import { FAQ } from "@/types";
 export const metadata: Metadata = {
   title: "Hire an Offshore Development Team from India (Managed)",
   description:
-    "Hire a managed offshore development team from India. We employ the engineers and run payroll. One B2B contract, no entity, no EOR, no payroll burden on you.",
+    "Workforce Next is an IT services company. Hire dedicated developers, QA engineers, and full product teams from India to build and ship your software. We handle the contracting and employment so you focus on the engineering work.",
   keywords: [
     "hire offshore development team",
     "hire offshore development team india",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     images: ["/images/og-default.png"],
     title: "Hire an Offshore Development Team from India (Managed)",
     description:
-      "Pick engineers through SethAI. We employ them, run payroll and compliance, you sign one B2B services contract. The managed offshore development team model done right.",
+      "IT services and engineering delivery from India. Build with pre-vetted developers, QA engineers, and full product teams matched by SethAI. Contracting and employment handled, so you focus on shipping software.",
   },
   alternates: {
     canonical: "https://workforcenext.in/india-handled/",
@@ -146,7 +146,7 @@ const youDoVsWeDo = [
 const insteadOf = [
   {
     title: "Setting up your own India entity",
-    pain: "₹15–40 lakh in legal, tax, and HR setup. 4–6 months. Then ongoing compliance overhead, an India-based HR head, and FEMA exposure on your books.",
+    pain: "₹15 to 40 lakh in legal, tax, and HR setup. 4 to 6 months. Then ongoing compliance overhead, an India-based HR head, and FEMA exposure on your books.",
     us: "You don't need an entity. The engineer is our employee, not yours. You sign one B2B services contract with our Indian entity. First engineer onboarded inside two weeks.",
   },
   {
@@ -277,12 +277,12 @@ export default function IndiaHandledPage() {
             Hire a managed offshore development team from India.
           </h1>
           <p className="mt-5 text-lg text-dark-400 dark:text-dark-300 max-w-2xl leading-relaxed">
-            DIY hiring through SethAI, India-handled operations. You pick the
-            engineers. They are our full-time employees. We run their payroll,
-            PF, gratuity, equipment, health insurance, and every line of Indian
-            labour law. You sign one B2B services contract and pay one
-            foreign-currency invoice. No entity, no EOR, no payroll burden on
-            your side.
+            Workforce Next is an IT services company. We build and ship software
+            for startups and enterprises with dedicated developers, QA
+            engineers, and full product teams from India, matched through
+            SethAI. You direct the engineering work. We handle the contracting,
+            employment, and operational overhead in India so none of it sits on
+            you. No entity, no EOR, no payroll burden on your side.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
             <Button href="/contact" variant="primary" size="lg">

@@ -6,19 +6,60 @@ export default function EntityDefinition() {
           What is Workforce Next?
         </h2>
         <p className="text-dark-500 dark:text-dark-300 leading-relaxed text-lg">
-          <strong>Workforce Next</strong> is an IT consulting and IT engineering
-          company that helps growing businesses{" "}
-          <strong>hire remote dedicated developers</strong> and full pods who
-          plug straight into their engineering, consulting, and management
-          functions. Unlike traditional staffing firms that match on tech stack
-          alone, Workforce Next uses SethAI, an AI-powered recruiter, to match
-          people by industry context and longevity signals. The company offers AI
-          developers, data engineers, product engineers, frontend and backend
-          engineers, plus specialised roles like vibe-code optimisation and cloud
-          cost optimisation. Every engagement starts with a one-week paid trial
-          and includes a Context Continuity Guarantee. Headquartered in DLF Cyber
-          City, Gurugram with a tech office in Noida.
+          <strong>Workforce Next is an IT consulting and IT services company</strong>{" "}
+          that helps startups to enterprises with technology development. We
+          offer <strong>remote technical developers and quality testing staff</strong>{" "}
+          on a dedicated, long-term basis. Engineers and QA specialists plug
+          straight into your engineering, product, and consulting functions and
+          ship software for you. We are not an EOR, not a payroll wrapper, not
+          a body shop. Unlike traditional staffing firms that match on tech
+          stack alone, Workforce Next uses{" "}
+          <strong>SethAI</strong>, an AI-powered recruiter, to match people by
+          industry context and longevity signals. Common engagements include AI
+          developers, data engineers, full-stack developers, frontend and
+          backend engineers, mobile engineers, DevOps and SRE, and QA automation
+          pods. Every engagement starts with a one-week paid trial and includes
+          a Context Continuity Guarantee. Headquartered in DLF Cyber City,
+          Gurugram with a tech office in Noida.
         </p>
+        <dl className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-sm">
+          <div>
+            <dt className="font-bold text-dark-900 dark:text-dark-50 uppercase tracking-wide text-xs">
+              What we do
+            </dt>
+            <dd className="mt-2 text-dark-500 dark:text-dark-300">
+              IT consulting + remote technology development for startups to
+              enterprises
+            </dd>
+          </div>
+          <div>
+            <dt className="font-bold text-dark-900 dark:text-dark-50 uppercase tracking-wide text-xs">
+              What we offer
+            </dt>
+            <dd className="mt-2 text-dark-500 dark:text-dark-300">
+              Remote developers, full product pods, and dedicated QA / testing
+              staff from India
+            </dd>
+          </div>
+          <div>
+            <dt className="font-bold text-dark-900 dark:text-dark-50 uppercase tracking-wide text-xs">
+              Who we serve
+            </dt>
+            <dd className="mt-2 text-dark-500 dark:text-dark-300">
+              Founders, funded startups, mid-market, and enterprise teams in
+              the US, UK, EU, Canada, Australia, and Dubai
+            </dd>
+          </div>
+          <div>
+            <dt className="font-bold text-dark-900 dark:text-dark-50 uppercase tracking-wide text-xs">
+              What we are not
+            </dt>
+            <dd className="mt-2 text-dark-500 dark:text-dark-300">
+              Not an EOR, not a payroll service, not an HR software company,
+              not a freelancer marketplace
+            </dd>
+          </div>
+        </dl>
       </div>
     </article>
   );

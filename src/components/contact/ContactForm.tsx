@@ -183,7 +183,6 @@ export default function ContactForm() {
           </optgroup>
           <optgroup label="Products">
             <option value="seth-ai-recruiter">SethAI Recruiter (Waitlist)</option>
-            <option value="productivity-intelligence">Employee Productivity Intelligence</option>
           </optgroup>
           <option value="other">Other / Not sure yet</option>
         </select>

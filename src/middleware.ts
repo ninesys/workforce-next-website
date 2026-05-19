@@ -4,7 +4,9 @@ const AI_DEV = "/hire/ai-developers/";
 const FRONTEND = "/hire/frontend-engineers/";
 const BACKEND = "/hire/backend-engineers/";
 const UNITY = "/hire/unity-developers/";
-const EPI = "/products/employee-productivity-intelligence/";
+// EPI = legacy Employee Productivity Intelligence product. Removed 2026-05-15.
+// All inbound traffic redirects to the SethAI product page (the active product).
+const EPI = "/products/seth-ai-recruiter/";
 
 // Exact-match legacy paths. Keys are stored without trailing slash; lookup
 // strips the slash from the incoming request so both /foo and /foo/ hit.
@@ -97,6 +99,7 @@ const EXACT: Record<string, string> = {
   "/job-openings": "/careers/",
   "/screen-monitoring-software": EPI,
   "/top-employee-monitoring-tools": EPI,
+  "/products/employee-productivity-intelligence": EPI,
   "/software-to-monitor-employees-working-from-home": EPI,
   "/stealth-employee-monitoring-software": EPI,
   "/best-employee-monitoring-software": EPI,
