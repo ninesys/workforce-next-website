@@ -40,6 +40,7 @@ import nodejsSecurityEnterpriseChecklistOwasp2026 from "./blog/nodejs-security-e
 import expressjsVsFastifyVsNestjs2026 from "./blog/expressjs-vs-fastify-vs-nestjs-2026";
 import enterpriseWebApplicationDevelopmentCompleteGuide2026 from "./blog/enterprise-web-application-development-complete-guide-2026";
 import outsourceEnterpriseWebApplicationDevelopment2026 from "./blog/outsource-enterprise-web-application-development-2026";
+import aiEnabledRemoteStaffingCompleteGuide2026 from "./blog/ai-enabled-remote-staffing-complete-guide-2026";
 
 export type { BlogPost, BlogFAQ };
 
@@ -95,4 +96,5 @@ export const blogPosts: BlogPost[] = [
   expressjsVsFastifyVsNestjs2026,
   enterpriseWebApplicationDevelopmentCompleteGuide2026,
   outsourceEnterpriseWebApplicationDevelopment2026,
+  aiEnabledRemoteStaffingCompleteGuide2026,
 ];
