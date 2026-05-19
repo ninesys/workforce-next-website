@@ -294,7 +294,7 @@ export default function HireAutomationConsultantsPage() {
           </h1>
           <p className="mt-4 text-lg text-dark-600 dark:text-dark-200 max-w-2xl">
             Wire n8n, Make, or Zapier with Claude or GPT to automate the real
-            workflows eating your team's time. Sales ops, support, finance,
+            workflows eating your team&apos;s time. Sales ops, support, finance,
             content, internal tools. Project-based or monthly retainer.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
@@ -315,10 +315,10 @@ export default function HireAutomationConsultantsPage() {
               there is a much more grounded category of AI work generating
               real ROI right now: wiring n8n, Make, or Zapier to Claude or
               GPT to automate the manual workflows that quietly eat your
-              team's time. Sales ops, customer support, finance, content,
+              team&apos;s time. Sales ops, customer support, finance, content,
               internal tools. The math is simple: pay a consultant 50K to
               5L rupees (or 600 to 6,000 dollars) to kill a workflow that
-              was burning 5 hours a week of someone's time forever.
+              was burning 5 hours a week of someone&apos;s time forever.
             </p>
             <p>
               An automation consultant worth hiring picks platforms
@@ -372,7 +372,7 @@ export default function HireAutomationConsultantsPage() {
         <div className="container-custom max-w-5xl">
           <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 mb-6">Common workflows we automate</h2>
           <p className="text-dark-600 dark:text-dark-200 leading-relaxed mb-8 max-w-3xl">
-            If a workflow lives in a spreadsheet, in someone's head, or in a
+            If a workflow lives in a spreadsheet, in someone&apos;s head, or in a
             chain of emails, it can probably be automated. Here are the most
             common categories we ship.
           </p>
