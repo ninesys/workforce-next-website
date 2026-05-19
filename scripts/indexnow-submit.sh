@@ -44,6 +44,7 @@ URLS=(
   "https://${HOST}/hire/chatbot-developers/"
   "https://${HOST}/hire/nlp-developers/"
   "https://${HOST}/hire/mlops-engineers/"
+  "https://${HOST}/hire/automation-consultants/"
   "https://${HOST}/for/founders/"
   "https://${HOST}/for/startups/"
   "https://${HOST}/for/enterprise/"

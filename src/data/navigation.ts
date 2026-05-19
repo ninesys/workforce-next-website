@@ -11,6 +11,7 @@ export const mainNavItems: NavItem[] = [
         items: [
           { label: "Software Engineers", href: "/hire/software-engineers" },
           { label: "Software Architects", href: "/hire/software-architects" },
+          { label: "Automation Consultants", href: "/hire/automation-consultants" },
           { label: "Full Stack Developers", href: "/hire/fullstack-developers" },
           { label: "AI & Agentic Developers", href: "/hire/ai-developers" },
           { label: "Generative AI Developers", href: "/hire/generative-ai-developers" },

@@ -146,6 +146,26 @@ const DigitalMarketingIllustration = () => (
   </svg>
 );
 
+const AutomationIllustration = () => (
+  <svg viewBox="0 0 240 180" fill="none" className="w-full h-full" aria-hidden="true">
+    {/* workflow nodes connected by lines, evoking n8n / Zapier */}
+    <rect x="20" y="32" width="56" height="32" rx="6" fill="#E0EDFF" stroke="#022E5E" strokeWidth="2.5" />
+    <rect x="92" y="76" width="56" height="32" rx="6" fill="#146EF5" stroke="#022E5E" strokeWidth="2.5" />
+    <rect x="164" y="32" width="56" height="32" rx="6" fill="#E0EDFF" stroke="#022E5E" strokeWidth="2.5" />
+    <rect x="20" y="120" width="56" height="32" rx="6" fill="#E0EDFF" stroke="#022E5E" strokeWidth="2.5" />
+    <rect x="164" y="120" width="56" height="32" rx="6" fill="#5B9AFF" stroke="#022E5E" strokeWidth="2.5" />
+    {/* connectors */}
+    <path d="M76 48l16 28M148 76l16-28M76 136l16-28M148 92l16 28" stroke="#146EF5" strokeWidth="2.5" strokeLinecap="round" />
+    {/* sparkle inside center node = AI */}
+    <path d="M120 86l3 6 6 3-6 3-3 6-3-6-6-3 6-3z" fill="#FFFFFF" />
+    {/* small icons inside outer nodes */}
+    <circle cx="48" cy="48" r="5" fill="#146EF5" />
+    <circle cx="192" cy="48" r="5" fill="#146EF5" />
+    <circle cx="48" cy="136" r="5" fill="#146EF5" />
+    <circle cx="192" cy="136" r="5" fill="#FFFFFF" />
+  </svg>
+);
+
 const QAIllustration = () => (
   <svg viewBox="0 0 220 180" fill="none" className="w-full h-full" aria-hidden="true">
     <rect x="40" y="28" width="100" height="132" rx="8" fill="#E0EDFF" stroke="#022E5E" strokeWidth="3" />
@@ -245,18 +265,34 @@ const services: Service[] = [
     title: "IT Outsourcing",
     subtitle: "Managed offshore teams",
     description:
-      "Dedicated developers and engineering pods from India. You direct the work, we handle contracting, employment, and operations.",
+      "Dedicated developers and engineering pods from India. You direct the work, we handle the contracting and operations.",
     href: "/india-handled",
     cta: "See how it works",
-    span: "md:col-span-6",
+    span: "md:col-span-3",
     tone: "white",
     links: [
       { label: "India Handled", href: "/india-handled" },
       { label: "How We Work", href: "/how-we-work" },
       { label: "Enterprise", href: "/for/enterprise" },
-      { label: "Fractional PM", href: "/hire/fractional-project-manager" },
     ],
     illustration: <ITOutsourcingIllustration />,
+  },
+  {
+    title: "Automation Consulting",
+    subtitle: "n8n · Make · Zapier + AI",
+    description:
+      "Wire n8n, Make, or Zapier with Claude and GPT to automate real business workflows. Sales ops, support, finance, content, and internal tooling. Project-based pricing.",
+    href: "/hire/automation-consultants",
+    cta: "Automate a workflow",
+    span: "md:col-span-3",
+    tone: "blue",
+    links: [
+      { label: "n8n", href: "/hire/automation-consultants" },
+      { label: "Make", href: "/hire/automation-consultants" },
+      { label: "Zapier", href: "/hire/automation-consultants" },
+      { label: "AI integrations", href: "/hire/automation-consultants" },
+    ],
+    illustration: <AutomationIllustration />,
   },
 ];
 
