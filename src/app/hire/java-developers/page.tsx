@@ -260,7 +260,7 @@ export default function HireJavaDevelopersPage() {
               estates, and most of the high-throughput batch and event
               processing in production today. Modern JDK 21 with virtual
               threads, records, and pattern matching is competitive with Node
-              and Python on developer ergonomics while keeping the JVM's
+              and Python on developer ergonomics while keeping the JVM&apos;s
               throughput and ecosystem advantages.
             </p>
             <p>

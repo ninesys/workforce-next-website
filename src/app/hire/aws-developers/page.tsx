@@ -260,8 +260,8 @@ export default function HireAWSDevelopersPage() {
               coverage, and ecosystem. For most enterprise estates, AWS is the
               default and the marginal cost of being on AWS is moving into the
               real spend conversation rather than the strategic one. The
-              engineering work has shifted from "should we use AWS" to "are we
-              using AWS well."
+              engineering work has shifted from &ldquo;should we use AWS&rdquo; to &ldquo;are we
+              using AWS well.&rdquo;
             </p>
             <p>
               An AWS engineer worth hiring in 2026 holds at least an
