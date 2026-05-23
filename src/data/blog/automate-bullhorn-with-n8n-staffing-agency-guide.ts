@@ -7,11 +7,11 @@ const post: BlogPost = {
   excerpt:
     "Step-by-step n8n + Bullhorn automation playbook for US/Canada staffing agencies. API auth, top 5 workflows, rate limits, and the mistakes that break Bullhorn integrations.",
   tldr: "Bullhorn has a documented REST API that n8n connects to via OAuth. Once auth is wired, the top 5 workflows to ship are: offer letter generation, candidate intake enrichment, follow-up sequences, recruiter daily digest, and client status updates. Rate limits (10 requests/sec per token) need exponential backoff. Common mistakes: missing the corporation context header, stale OAuth tokens, no batching for bulk updates, and using REST when the new GraphQL endpoint would be faster. Total build cost for the 5-workflow cluster: USD 2,500 to 4,000. Build time: 8 to 12 weeks.",
-  body: `<p>Bullhorn is the most common ATS for US and Canada staffing agencies in the 10 to 500 person range. It has a documented REST API, a newer GraphQL endpoint, and an active developer community. n8n is the cheapest and most flexible way to automate workflows on top of Bullhorn at scale. This playbook is the technical guide for how to wire the two together for real production workflows.</p>
+  body: `<p>Bullhorn is the most common ATS for US and Canada staffing agencies in the 10 to 500 person range. It has a documented REST API, a newer GraphQL endpoint, and an active developer community. For n8n automation for staffing agencies built on Bullhorn, this stack is the cheapest and most flexible path to real production workflows at scale. This playbook is the technical guide for how to wire the two together.</p>
 
 <p>If you want the business context first, read our <a href="/blog/automate-staffing-agency-with-n8n-case-study-2026/">case study of a 50-person US staffing firm</a> that shipped exactly this stack. For broader automation tooling context, see our <a href="/blog/best-workflow-automation-tools-2026/">best workflow automation tools 2026</a> post. If you want us to build it for you, see our <a href="/hire/automation-consultants/">automation consultants page</a>.</p>
 
-<h2>Why n8n is the right pick for Bullhorn automation</h2>
+<h2>Why n8n automation for staffing agencies is the right pick on top of Bullhorn</h2>
 
 <p>Three reasons we consistently recommend n8n over Zapier or Make for Bullhorn-heavy workflows:</p>
 

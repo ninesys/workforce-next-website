@@ -46,6 +46,8 @@ import recruiterAdminCostCalculator2026 from "./blog/recruiter-admin-cost-calcul
 import tenWorkflowsEveryStaffingAgencyShouldAutomate2026 from "./blog/10-workflows-every-staffing-agency-should-automate-2026";
 import automateBullhornWithN8nStaffingAgencyGuide from "./blog/automate-bullhorn-with-n8n-staffing-agency-guide";
 import bullhornJobadderCrelateAutomationComparison2026 from "./blog/bullhorn-jobadder-crelate-automation-comparison-2026";
+import aiWorkflowAutomationFleetCompanies2026 from "./blog/ai-workflow-automation-fleet-companies-2026";
+import hrDocumentAutomationSmallBusiness2026 from "./blog/hr-document-automation-small-business-2026";
 
 export type { BlogPost, BlogFAQ };
 
@@ -107,4 +109,6 @@ export const blogPosts: BlogPost[] = [
   tenWorkflowsEveryStaffingAgencyShouldAutomate2026,
   automateBullhornWithN8nStaffingAgencyGuide,
   bullhornJobadderCrelateAutomationComparison2026,
+  aiWorkflowAutomationFleetCompanies2026,
+  hrDocumentAutomationSmallBusiness2026,
 ];

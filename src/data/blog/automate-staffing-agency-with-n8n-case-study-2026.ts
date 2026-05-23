@@ -7,9 +7,9 @@ const post: BlogPost = {
   excerpt:
     "Real case study: a 50-person US staffing firm spent USD 3,000 on n8n + Claude automation and saved 72,000 dollars a year of recruiter admin time. Workflow-by-workflow breakdown plus cost math.",
   tldr: "A 50-recruiter US staffing firm was burning 3 hours/day per recruiter on admin: ATS data entry, offer letters, follow-up emails, daily digests, client status updates. We built 5 n8n workflows with Claude for AI steps over 90 days. Total project cost: USD 3,000 (INR 2.5L). Time saved: roughly 2.5 hours/day per recruiter. Annual cost saved: about USD 72,000 in recruiter loaded time. Payback period: 16 days. The case study is anonymized but the numbers are real.",
-  body: `<p>This is the case study a US staffing agency director asked us to write up after we automated their recruiter ops. Names anonymized, numbers real. The short version: 50 recruiters, USD 3,000 in automation cost, USD 72,000 a year of recruiter time freed, payback in 16 days.</p>
+  body: `<p>This is the case study a US staffing agency director asked us to write up after we shipped n8n automation for staffing agencies into their recruiter ops. Names anonymized, numbers real. The short version: 50 recruiters, USD 3,000 in automation cost, USD 72,000 a year of recruiter time freed, payback in 16 days.</p>
 
-<p>If you run a staffing firm and your recruiters are burning more than 2 hours a day on admin, this is the post. If you want to skip to the engagement model, see our <a href="/hire/automation-consultants/">automation consultants page</a>.</p>
+<p>If you run a staffing firm and your recruiters are burning more than 2 hours a day on admin, this is the post. If you want to skip to the engagement model, see our <a href="/hire/automation-consultants/">automation consultants page</a>. If you run a fleet operation and the same admin-load story sounds familiar, the same five-workflow pattern is broken down for that vertical in <a href="/blog/ai-workflow-automation-fleet-companies-2026/">our fleet automation playbook</a>.</p>
 
 <h2>The customer: 50 recruiters, US East Coast, perm + contract placements</h2>
 

@@ -183,7 +183,7 @@ const post: BlogPost = {
 
 <p>Send us a Loom or book a 30-min call. Describe how your recruiters spend their day, what your ATS is, and the top 3 things eating their time. We will return a workflow inventory with priority order and a fixed-price quote within 48 hours.</p>
 
-<p>For more depth on the engagement, see our <a href="/hire/automation-consultants/">automation consultants page</a> or the <a href="/blog/automate-staffing-agency-with-n8n-case-study-2026/">50-person staffing firm case study</a>. For the cost math by team size, see <a href="/blog/recruiter-admin-cost-calculator-2026/">what recruiter admin actually costs your staffing agency</a>.</p>`,
+<p>For more depth on the engagement, see our <a href="/hire/automation-consultants/">automation consultants page</a> or the <a href="/blog/automate-staffing-agency-with-n8n-case-study-2026/">50-person staffing firm case study</a>. For the cost math by team size, see <a href="/blog/recruiter-admin-cost-calculator-2026/">what recruiter admin actually costs your staffing agency</a>. For the same five-workflow pattern applied to a different vertical, see <a href="/blog/ai-workflow-automation-fleet-companies-2026/">AI workflow automation for fleet companies</a>.</p>`,
   category: "engineering",
   categoryLabel: "Engineering",
   author: "Gaurav",

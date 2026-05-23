@@ -53,6 +53,8 @@ URLS=(
   "https://${HOST}/blog/10-workflows-every-staffing-agency-should-automate-2026/"
   "https://${HOST}/blog/automate-bullhorn-with-n8n-staffing-agency-guide/"
   "https://${HOST}/blog/bullhorn-jobadder-crelate-automation-comparison-2026/"
+  "https://${HOST}/blog/ai-workflow-automation-fleet-companies-2026/"
+  "https://${HOST}/blog/hr-document-automation-small-business-2026/"
   "https://${HOST}/for/founders/"
   "https://${HOST}/for/startups/"
   "https://${HOST}/for/enterprise/"
