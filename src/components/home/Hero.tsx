@@ -33,20 +33,19 @@ export default function Hero() {
           <div className="lg:col-span-7">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary-100/60 dark:bg-primary-500/15 rounded-full text-primary-600 dark:text-primary-400 text-sm font-semibold mb-6">
               <span className="w-2 h-2 rounded-full bg-primary-500 animate-pulse" />
-              AI-era engineering teams from India
+              AI, automation & workflow specialists from India
             </div>
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.1] tracking-tight text-dark-900 dark:text-dark-50">
-              Your remote team.
+              AI, Automation & Workflow Experts
               <br />
-              <span className="text-primary-500">Built to stay.</span>
+              <span className="text-primary-500">You Can Hire by the Sprint.</span>
             </h1>
 
             <p className="mt-5 sm:mt-6 text-base sm:text-lg md:text-xl text-dark-400 dark:text-dark-300 leading-relaxed max-w-2xl">
-              Stop switching tech partners every few months. We put together
-              dedicated engineering teams that actually stick around, matched by
-              SethAI for the right fit and kept together through compounding
-              context.
+              AI agents, n8n workflows, data pipelines, and AI engineers.
+              Delivered as a service, or as a dedicated team that stays with you
+              long enough to compound context.
             </p>
 
             <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4">

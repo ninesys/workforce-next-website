@@ -12,23 +12,23 @@ import CTASection from "@/components/home/CTASection";
 import { generateHomepageHowToSchema } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
-  title: "Hire Remote Dedicated Developers from India | Workforce Next",
+  title: "AI, Automation & Workflow Experts | Consulting + Dedicated Developers | Workforce Next",
   description:
-    "Hire dedicated AI, data, frontend and backend developers from India. Context-matched by SethAI. 48-hour matching, 1-week paid trial, zero recruitment fees.",
+    "AI automation, n8n workflows, data pipelines, and dedicated AI developers from India. Consulting and delivery from one partner. 48-hour matching, zero recruitment fees.",
   keywords: [
-    "hire remote dedicated developers",
-    "hire AI developers India",
-    "dedicated remote engineering team",
-    "offshore developer retention",
-    "hire LangChain developers",
-    "AI staff augmentation India",
-    "remote development team India",
-    "vibe code engineer hire",
-    "cloud cost optimisation engineer",
-    "SethAI AI recruiter",
-    "product engineers India",
-    "context-first developer matching",
-    "hire dedicated developers India",
+    "AI automation services",
+    "AI automation agency",
+    "AI and automation consulting",
+    "workflow automation consulting",
+    "AI workflow automation company",
+    "hire AI automation experts",
+    "n8n automation consultants",
+    "hire dedicated AI developers",
+    "AI agents development",
+    "data engineering services India",
+    "hire MLOps engineers",
+    "AI consulting services India",
+    "dedicated remote AI team",
   ],
   alternates: {
     canonical: "https://workforcenext.in",
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
   openGraph: {
     ...ogDefaults("/"),
     images: ["/images/og-default.png"],
-    title: "Hire Remote Dedicated Developers from India | Workforce Next",
+    title: "AI, Automation & Workflow Experts | Consulting + Dedicated Developers",
     description:
-      "Hire dedicated AI, data, frontend and backend developers from India. Context-matched by SethAI. 48-hour matching, zero recruitment fees.",
+      "AI automation, n8n workflows, data pipelines, and dedicated AI developers from India. Consulting and delivery from one partner.",
   },
 };
 
