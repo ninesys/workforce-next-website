@@ -48,6 +48,7 @@ import automateBullhornWithN8nStaffingAgencyGuide from "./blog/automate-bullhorn
 import bullhornJobadderCrelateAutomationComparison2026 from "./blog/bullhorn-jobadder-crelate-automation-comparison-2026";
 import aiWorkflowAutomationFleetCompanies2026 from "./blog/ai-workflow-automation-fleet-companies-2026";
 import hrDocumentAutomationSmallBusiness2026 from "./blog/hr-document-automation-small-business-2026";
+import saasWebApplicationDevelopmentGuideStartups2026 from "./blog/saas-web-application-development-guide-startups-2026";
 
 export type { BlogPost, BlogFAQ };
 
@@ -111,4 +112,5 @@ export const blogPosts: BlogPost[] = [
   bullhornJobadderCrelateAutomationComparison2026,
   aiWorkflowAutomationFleetCompanies2026,
   hrDocumentAutomationSmallBusiness2026,
+  saasWebApplicationDevelopmentGuideStartups2026,
 ];

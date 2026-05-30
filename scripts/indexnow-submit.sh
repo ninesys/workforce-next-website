@@ -55,6 +55,7 @@ URLS=(
   "https://${HOST}/blog/bullhorn-jobadder-crelate-automation-comparison-2026/"
   "https://${HOST}/blog/ai-workflow-automation-fleet-companies-2026/"
   "https://${HOST}/blog/hr-document-automation-small-business-2026/"
+  "https://${HOST}/blog/saas-web-application-development-guide-startups-2026/"
   "https://${HOST}/for/founders/"
   "https://${HOST}/for/startups/"
   "https://${HOST}/for/enterprise/"
