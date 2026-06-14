@@ -5,18 +5,6 @@
   "notes": "Authoritative blog post pipeline. Mirror of the build queue in ~/.claude/projects/.../memory/project_target_keywords_2026-05.md. Update this file when items ship. Keep priority ordering descending: lowest priority number = ships next.",
   "queue": [
     {
-      "id": "ai-sec-4",
-      "slug": "ai-code-review-security-enterprise-pipelines-2026",
-      "title": "AI Code Review for Security in Enterprise Pipelines (2026)",
-      "primaryKeyword": "ai code review security",
-      "pairsWith": "/hire/ai-developers/",
-      "priority": 4,
-      "status": "pending",
-      "addedAt": "2026-05-10",
-      "audience": "US/Canada engineering managers, AppSec leads at mid-market and enterprise SaaS",
-      "notes": "Static analysis with LLMs, false-positive management, integrating Semgrep / CodeQL / Snyk with AI assistants, governance (do not let agents merge unsupervised). US-specific: SOX-relevant audit trail patterns."
-    },
-    {
       "id": "ai-sec-5",
       "slug": "llm-api-key-rotation-secret-management-2026",
       "title": "LLM API Key Rotation and Secret Management in 2026",
@@ -79,6 +67,14 @@
   ],
   "backlog": [],
   "shipped": [
+    {
+      "id": "ai-sec-4",
+      "slug": "ai-code-review-security-enterprise-pipelines-2026",
+      "title": "AI Code Review for Security in Enterprise Pipelines (2026)",
+      "shippedAt": "2026-06-14",
+      "commit": "preview-merged",
+      "imageWebp": false
+    },
     {
       "id": "ai-sec-3",
       "slug": "securing-rag-applications-data-isolation-patterns-2026",
