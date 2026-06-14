@@ -1,6 +1,8 @@
 export interface BlogFAQ {
   q: string;
   a: string;
+  category?: string;
+  categoryLabel?: string;
 }
 
 export interface BlogPost {
