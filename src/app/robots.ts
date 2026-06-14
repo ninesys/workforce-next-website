@@ -1,6 +1,13 @@
 import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
+  // Block all crawlers on preview domain — only production should be indexed
+  if (process.env.NEXT_PUBLIC_SITE_URL?.includes("preview.workforcenext.in")) {
+    return {
+      rules: [{ userAgent: "*", disallow: "/" }],
+    };
+  }
+
   // Each per-bot group needs its own disallow because, per RFC 9309,
   // a crawler that matches a specific group ignores the wildcard rules.
   const aiAndSearchBots = [
