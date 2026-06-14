@@ -2,7 +2,7 @@ name: Deploy to Vercel
 
 on:
   push:
-    branches: [main]
+    branches: [main, preview]
   workflow_dispatch:
 
 # Cancel any in-progress run when a new commit is pushed.
