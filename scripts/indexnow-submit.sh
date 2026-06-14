@@ -144,6 +144,7 @@ for engine in "${ENGINES[@]}"; do
     -X POST "${engine}" \
     -H "Content-Type: application/json; charset=utf-8" \
     -d "${PAYLOAD}"  "https://workforcenext.in/blog/securing-rag-applications-data-isolation-patterns-2026/"
+  "https://workforcenext.in/blog/ai-code-review-security-enterprise-pipelines-2026/"
 )
   echo "HTTP ${HTTP_CODE}"
 done
