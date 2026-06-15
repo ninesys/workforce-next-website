@@ -5,18 +5,6 @@
   "notes": "Authoritative blog post pipeline. Mirror of the build queue in ~/.claude/projects/.../memory/project_target_keywords_2026-05.md. Update this file when items ship. Keep priority ordering descending: lowest priority number = ships next.",
   "queue": [
     {
-      "id": "ai-sec-6",
-      "slug": "compliance-checklist-ai-applications-soc2-hipaa-2026",
-      "title": "Compliance Checklist for AI Applications (SOC 2, HIPAA, 2026)",
-      "primaryKeyword": "ai application compliance checklist",
-      "pairsWith": "/hire/ai-developers/",
-      "priority": 6,
-      "status": "pending",
-      "addedAt": "2026-05-10",
-      "audience": "US/Canada compliance officers, founders of healthcare and fintech AI SaaS",
-      "notes": "Map AI-specific risks to SOC 2 trust services criteria, HIPAA technical and administrative safeguards, and emerging US state AI laws (Colorado AI Act, NYC Local Law 144). Vendor-due-diligence template for evaluating LLM providers."
-    },
-    {
       "id": "entweb-1",
       "slug": "enterprise-nextjs-architecture-patterns-2026",
       "title": "Enterprise Next.js Architecture Patterns for 2026",
@@ -55,6 +43,14 @@
   ],
   "backlog": [],
   "shipped": [
+    {
+      "id": "ai-sec-6",
+      "slug": "compliance-checklist-ai-applications-soc2-hipaa-2026",
+      "title": "Compliance Checklist for AI Applications (SOC 2, HIPAA, 2026)",
+      "shippedAt": "2026-06-15",
+      "commit": "preview-merged",
+      "imageWebp": false
+    },
     {
       "id": "ai-sec-5",
       "slug": "llm-api-key-rotation-secret-management-2026",
