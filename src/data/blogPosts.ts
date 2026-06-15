@@ -51,6 +51,7 @@ import hrDocumentAutomationSmallBusiness2026 from "./blog/hr-document-automation
 import saasWebApplicationDevelopmentGuideStartups2026 from "./blog/saas-web-application-development-guide-startups-2026";
 import securingRagApplicationsDataIsolationPatterns2026 from "./blog/securing-rag-applications-data-isolation-patterns-2026";
 import aiCodeReviewSecurityEnterprisePipelines2026 from "./blog/ai-code-review-security-enterprise-pipelines-2026";
+import llmApiKeyRotationSecretManagement2026 from "./blog/llm-api-key-rotation-secret-management-2026";
 
 export type { BlogPost, BlogFAQ };
 
@@ -117,4 +118,5 @@ export const blogPosts: BlogPost[] = [
   saasWebApplicationDevelopmentGuideStartups2026,
   securingRagApplicationsDataIsolationPatterns2026,
   aiCodeReviewSecurityEnterprisePipelines2026,
+  llmApiKeyRotationSecretManagement2026,
 ];
