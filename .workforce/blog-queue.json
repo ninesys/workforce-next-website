@@ -1,21 +1,9 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "version": 1,
-  "lastUpdated": "2026-06-14",
+  "lastUpdated": "2026-06-15",
   "notes": "Authoritative blog post pipeline. Mirror of the build queue in ~/.claude/projects/.../memory/project_target_keywords_2026-05.md. Update this file when items ship. Keep priority ordering descending: lowest priority number = ships next.",
   "queue": [
-    {
-      "id": "ai-sec-5",
-      "slug": "llm-api-key-rotation-secret-management-2026",
-      "title": "LLM API Key Rotation and Secret Management in 2026",
-      "primaryKeyword": "llm api key rotation",
-      "pairsWith": "/hire/ai-developers/",
-      "priority": 5,
-      "status": "pending",
-      "addedAt": "2026-05-10",
-      "audience": "US/Canada DevOps and platform engineers, SREs at AI-shipping companies",
-      "notes": "Vaulting (HashiCorp Vault, AWS Secrets Manager, Doppler), per-environment scoping, automated rotation, blast-radius containment, monitoring for leaked keys (GitHub secret scanning, TruffleHog). Cost-leak angle: a leaked OpenAI key can run six figures in hours."
-    },
     {
       "id": "ai-sec-6",
       "slug": "compliance-checklist-ai-applications-soc2-hipaa-2026",
@@ -67,6 +55,14 @@
   ],
   "backlog": [],
   "shipped": [
+    {
+      "id": "ai-sec-5",
+      "slug": "llm-api-key-rotation-secret-management-2026",
+      "title": "LLM API Key Rotation and Secret Management in 2026",
+      "shippedAt": "2026-06-15",
+      "commit": "preview-merged",
+      "imageWebp": false
+    },
     {
       "id": "ai-sec-4",
       "slug": "ai-code-review-security-enterprise-pipelines-2026",
