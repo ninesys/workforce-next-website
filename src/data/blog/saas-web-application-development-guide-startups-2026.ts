@@ -207,7 +207,7 @@ const post: BlogPost = {
 
 <p><strong>Step 1.</strong> Write down the single core workflow your product exists to do, in one sentence, from the user's point of view. If you cannot do it in one sentence, your scope is too broad. This sentence is your MVP definition.</p>
 
-<p><strong>Step 2.</strong> Make the stack decision and stop debating it. Next.js plus Node or Python plus PostgreSQL plus managed auth plus Stripe gets you to revenue. Spend your decision energy on the product, not the framework.</p>
+<p><strong>Step 2.</strong> Make the stack decision and stop debating it. Next.js plus Node or Python plus PostgreSQL plus managed auth plus Stripe gets you to revenue. Spend your decision energy on the product, not the framework. For the full default stack with specific libraries, see our <a href="/blog/best-tech-stack-saas-mvp-2026/">best tech stack for a SaaS MVP in 2026</a>.</p>
 
 <p><strong>Step 3.</strong> Decide your team model: in-house, dedicated remote, or hybrid. If you want to move fast without funding a full US team before product-market fit, a dedicated remote team is usually the right call. <a href="/contact/">Tell us your one-sentence workflow</a> and we will scope a realistic team, timeline, and cost within 48 hours.</p>
 

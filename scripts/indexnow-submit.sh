@@ -56,6 +56,9 @@ URLS=(
   "https://${HOST}/blog/ai-workflow-automation-fleet-companies-2026/"
   "https://${HOST}/blog/hr-document-automation-small-business-2026/"
   "https://${HOST}/blog/saas-web-application-development-guide-startups-2026/"
+  "https://${HOST}/blog/best-tech-stack-saas-mvp-2026/"
+  "https://${HOST}/blog/securing-rag-applications-data-isolation-patterns-2026/"
+  "https://${HOST}/blog/ai-code-review-security-enterprise-pipelines-2026/"
   "https://${HOST}/for/founders/"
   "https://${HOST}/for/startups/"
   "https://${HOST}/for/enterprise/"
@@ -143,9 +146,7 @@ for engine in "${ENGINES[@]}"; do
   HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" \
     -X POST "${engine}" \
     -H "Content-Type: application/json; charset=utf-8" \
-    -d "${PAYLOAD}"  "https://workforcenext.in/blog/securing-rag-applications-data-isolation-patterns-2026/"
-  "https://workforcenext.in/blog/ai-code-review-security-enterprise-pipelines-2026/"
-)
+    -d "${PAYLOAD}")
   echo "HTTP ${HTTP_CODE}"
 done
 
