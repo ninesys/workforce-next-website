@@ -5,124 +5,135 @@ const post: BlogPost = {
   image: "/images/blog/enterprise-nextjs-architecture-patterns-2026.webp",
   title: "Enterprise Next.js Architecture: Patterns for 2026",
   excerpt:
-    "A practical map of the Next.js patterns that hold up at enterprise scale in 2026: App Router boundaries, monorepos, feature flags, runtime choice, and observability.",
-  tldr: "Enterprise Next.js in 2026 means App Router with clear server and client boundaries, a Turborepo plus pnpm monorepo, feature flags for safe rollout, a deliberate edge versus node runtime decision, and OpenTelemetry-based observability. Pick patterns by team size and traffic, not by hype. Most teams need three or four of these, not all of them at once.",
-  body: `<p>Enterprise Next.js architecture in 2026 is App Router by default, organised in a Turborepo plus pnpm monorepo, with feature flags gating risky changes, a deliberate choice between edge and node runtime per route, and OpenTelemetry feeding a tool like Datadog. That is the short version. The rest of this post explains when each pattern earns its place and when it adds cost you do not need.</p>
-<p>We build and staff these systems for growing companies, so this is written from the implementation seat, not the conference stage. If a pattern is only worth it past a certain scale, we say so.</p>
+    "A practical guide to enterprise Next.js architecture in 2026: App Router, monorepos, feature flags, edge vs node runtime, and observability. Plus how to staff it.",
+  tldr: "Enterprise Next.js architecture in 2026 means App Router by default, a Turborepo plus pnpm monorepo, feature flags as the deploy gate, and a clear edge vs node runtime decision per route. Add OpenTelemetry instrumentation from day one, not as an afterthought. The hard part is not the framework, it is finding engineers who have shipped this combination at scale.",
+  body: `<p>Enterprise Next.js architecture in 2026 is App Router as the default, a Turborepo plus pnpm monorepo for code sharing, feature flags as the deployment gate, and a per-route decision on edge vs node runtime. Everything else is detail. The teams that get this right treat observability and CI as first-class architecture, not as things bolted on after launch.</p>
+<p>This post walks the patterns we see working across enterprise frontends, where each one earns its complexity, and where it does not. It is written for engineering leaders who are about to commit to a structure that a team will live inside for the next three years.</p>
 <h2>What does enterprise Next.js architecture actually mean in 2026?</h2>
-<p>Enterprise Next.js architecture is a set of structural decisions that keeps a large Next.js codebase shippable as teams, routes, and traffic grow. It covers how you split server and client code, how you organise repositories, how you roll out changes safely, where your code runs, and how you see what it is doing in production.</p>
-<p>The App Router is the foundation. The <a href="https://nextjs.org/docs/app" rel="noopener">official Next.js App Router documentation</a> treats Server Components as the default and Client Components as the opt-in. At enterprise scale this matters because the default keeps your client bundle small without anyone policing it in review. The mistake we see most often is teams marking whole route trees as <code>"use client"</code> out of habit, which drags the data-fetching and rendering benefits back to the browser.</p>
-<p>A useful rule: a component is a Server Component unless it needs state, effects, or browser APIs. Push the <code>"use client"</code> boundary as far down the tree as you can.</p>
-<h3>App Router and module federation</h3>
-<p>Module federation is a build technique that lets separately deployed applications share code and components at runtime. For Next.js, true runtime module federation is still rough, and most enterprise teams do not need it. If you have independent teams that must deploy on their own cadence, prefer a monorepo with internal packages first, and reach for federation only when deploy independence is a hard organisational requirement rather than a preference.</p>
-<h2>Should you use a monorepo with Turborepo and pnpm?</h2>
-<p>A monorepo is a single repository that holds multiple applications and shared packages together. For most enterprise Next.js work in 2026, yes, use one. <a href="https://turbo.build/repo/docs" rel="noopener">Turborepo</a> handles task orchestration and caching, and pnpm handles fast, disk-efficient installs with a strict dependency graph.</p>
-<p>The combination earns its keep when you have a web app, a design-system package, shared types, and maybe a second surface like an admin panel. Turborepo caches build and test outputs so an unchanged package never rebuilds, which is the single biggest CI time saver at scale.</p>
+<p>Enterprise Next.js architecture is a set of structural decisions that lets multiple teams ship to one Next.js application without blocking each other. It covers routing strategy, code organisation, runtime placement, release control, and observability. The word "enterprise" here means many teams, long lifespan, and a low tolerance for downtime, not a specific license tier.</p>
+<p>The <a href="https://nextjs.org/docs/app" rel="noopener">official App Router documentation</a> is now the recommended foundation. Server Components are the default, data fetching moves into the component tree, and layouts compose without prop drilling. If you are starting fresh in 2026, App Router is the right call. The Pages Router is maintenance technology: still supported, but not where new investment goes.</p>
+<p>The patterns below assume you have read the <a href="https://react.dev/reference/rsc/server-components" rel="noopener">React Server Components reference</a> and understand the server-client boundary. That boundary is the single most important concept in modern Next.js, and the most common source of production bugs when a team gets it wrong.</p>
+<h3>Module federation and the micro-frontend question</h3>
+<p>Module federation is a build pattern that lets separate applications share and load code at runtime. It is genuinely useful when independent teams must deploy on independent schedules. It is also a tax: shared dependency drift, version skew, and debugging across federated boundaries cost real time. For most enterprise frontends, a monorepo with shared packages gets you 90 percent of the team-autonomy benefit without the runtime fragility. Reach for module federation when you have organisational boundaries that a monorepo genuinely cannot model, not before.</p>
+<h2>Why use a Turborepo and pnpm monorepo for a large frontend?</h2>
+<p>A monorepo is a single repository that holds multiple applications and shared packages with one dependency graph. Turborepo is a build orchestrator that caches task output so you only rebuild what changed. Together with pnpm, which uses a content-addressed store to avoid duplicate installs, they make a large frontend buildable in minutes instead of tens of minutes.</p>
+<p>The structure we recommend for an enterprise Next.js monorepo:</p>
+<ul>
+<li><code>apps/web</code>: the main Next.js application.</li>
+<li><code>apps/admin</code>: a separate internal app sharing the same UI kit.</li>
+<li><code>packages/ui</code>: design system components, framework-agnostic where possible.</li>
+<li><code>packages/config</code>: shared ESLint, TypeScript, and Tailwind config.</li>
+<li><code>packages/observability</code>: the OpenTelemetry setup, imported once.</li>
+</ul>
+<p>Turborepo remote caching is the feature that pays for the setup. When a CI run can pull a cached build instead of recomputing it, your pipeline time drops sharply on every pull request that does not touch the whole graph. The <a href="https://turborepo.com/docs" rel="noopener">Turborepo documentation</a> covers remote cache configuration in detail, and it is worth setting up on day one rather than retrofitting.</p>
+<p>Where a monorepo loses: onboarding is slower because a new engineer has to understand the whole graph, and a bad root dependency change can ripple across every app at once. If your teams are truly independent products with no shared design language, separate repos may serve you better. Concede that point honestly before you commit.</p>
+<h2>Edge or node runtime: how do you decide per route?</h2>
+<p>The edge runtime runs your code on a lightweight V8 isolate close to the user, with fast cold starts and a restricted API surface. The node runtime runs full Node.js with every API available, at the cost of slower cold starts and region-bound execution. The decision is per route, not per application, and most enterprise apps end up using both.</p>
+<p>A practical decision tree:</p>
 <table>
 <thead>
-<tr><th>Layout</th><th>Best for</th><th>Main cost</th></tr>
+<tr><th>Route characteristic</th><th>Runtime</th><th>Why</th></tr>
 </thead>
 <tbody>
-<tr><td>Single app, no packages</td><td>One team, one surface</td><td>Hard to share code later</td></tr>
-<tr><td>Turborepo + pnpm monorepo</td><td>Multiple surfaces, shared UI and types</td><td>Setup and tooling discipline</td></tr>
-<tr><td>Polyrepo (many repos)</td><td>Fully independent product lines</td><td>Version drift, duplicate config</td></tr>
+<tr><td>Auth middleware, redirects, geolocation</td><td>Edge</td><td>Latency-sensitive, runs on every request, needs no Node APIs</td></tr>
+<tr><td>Personalised content near the user</td><td>Edge</td><td>Cold start matters, payload is small</td></tr>
+<tr><td>Heavy data joins, ORM access, large dependencies</td><td>Node</td><td>Needs full Node APIs and native modules</td></tr>
+<tr><td>Background-style work, file handling, PDF generation</td><td>Node</td><td>Edge memory and execution limits will bite you</td></tr>
+<tr><td>Anything calling a database driver that needs TCP</td><td>Node</td><td>Most native drivers are unavailable on edge</td></tr>
 </tbody>
 </table>
-<p>The honest caveat: a monorepo needs an owner. Without one person or a small platform group keeping the root config, the version policy, and the CI pipeline clean, it rots into a slow, confusing mess faster than three separate repos would. If you do not have that ownership, hold off.</p>
-<h2>How do you choose between edge and node runtime?</h2>
-<p>The edge runtime is a lightweight JavaScript environment that runs close to the user with fast cold starts and a restricted API surface. The node runtime is the full Node.js environment with complete API access and slower cold starts. You do not pick one for the whole app. You pick per route based on what that route needs.</p>
-<p>Here is the decision tree we hand teams:</p>
-<ul>
-<li><strong>Needs full Node APIs, native modules, or a heavy database driver?</strong> Use the node runtime.</li>
-<li><strong>Mostly reads, latency-sensitive, geographically spread users, light dependencies?</strong> Consider the edge runtime.</li>
-<li><strong>Middleware doing auth checks, redirects, or header rewrites?</strong> Edge is a natural fit.</li>
-<li><strong>Long-running work, large payload processing, or anything touching the filesystem?</strong> Node.</li>
-<li><strong>Unsure?</strong> Default to node. Edge is an optimisation, not a starting point.</li>
-</ul>
-<p>The trap is assuming edge is always faster. If an edge function has to call a database in a single region, you have added a long round trip and lost the locality benefit. Edge pays off when the data is also near the user or the work is genuinely stateless.</p>
-<h2>Why do feature flags and observability matter at enterprise scale?</h2>
-<p>A feature flag is a runtime switch that turns a code path on or off without a new deployment. At enterprise scale flags decouple deploy from release: you ship code dark, then enable it for a small cohort, watch the metrics, and expand. Tools like LaunchDarkly and Statsig provide targeting, gradual rollout, and kill switches. For a small team a simple config-based flag system is enough; reach for a managed platform when you need per-user targeting and experiment analysis.</p>
-<p>Observability is the practice of understanding system behaviour from the data it emits: traces, metrics, and logs. <a href="https://opentelemetry.io/docs/" rel="noopener">OpenTelemetry</a> is the vendor-neutral standard for collecting that telemetry, and it ships an official Next.js integration. Instrument with OpenTelemetry, then export to Datadog or a similar backend. The neutral standard matters because it stops you rewriting instrumentation when you change vendors.</p>
-<h3>CI patterns that hold up</h3>
-<p>A few CI habits keep large Next.js repos fast and safe:</p>
-<ul>
-<li>Use Turborepo remote caching so CI reuses local and shared build outputs.</li>
-<li>Run only affected tasks on a pull request, full pipeline on the main branch.</li>
-<li>Type-check, lint, and unit test in parallel, not in sequence.</li>
-<li>Gate merges on a preview deployment that exercises the real runtime split.</li>
-</ul>
-<h2>Where do these patterns not pay off?</h2>
-<p>Not every team needs the full stack. If you are one squad shipping a single web app, a single-app repo with the App Router and basic flags will serve you better than a monorepo and an edge strategy you do not have traffic to justify. The patterns here assume multiple surfaces, multiple teams, or real production load.</p>
-<p>Vercel-native tooling is the smoothest path, but the honest concession is lock-in. Turborepo remote caching, edge middleware, and the deployment model are most frictionless on Vercel. If you must self-host, expect more setup work and fewer batteries included. Competing approaches like a plain Node server behind your own CDN give you more control at the cost of doing more yourself.</p>
-<p>For a deeper read on what senior people to staff these systems look like, see our guide to <a href="/blog/senior-indian-developer-salary-2026/">what a senior Indian developer brings in 2026</a>, and how we run delivery in <a href="/india-handled/">India Handled</a>.</p>
-<h2>Who should build and own this?</h2>
-<p>Enterprise Next.js architecture rewards a small number of senior engineers who have shipped it before over a large number of generalists learning on your codebase. The patterns are not hard individually; the judgement about which ones you actually need is the hard part, and that judgement comes from having maintained these systems past the first six months.</p>
-<p>We staff <a href="/hire/frontend-engineers/">frontend engineers</a> who have run App Router migrations, monorepo conversions, and runtime splits in production. Our screening layer, <a href="/products/seth-ai-recruiter/">SethAI</a>, filters for the people who can defend these tradeoffs rather than recite them.</p>
-<p>If you are about to start an enterprise Next.js build or untangle one that has grown faster than its architecture, <a href="/contact/">talk to us</a>. We will match a senior frontend engineer in 48 hours and start a paid trial week so you can judge the work on real tickets, not a resume.</p>`,
+<p>The trap is defaulting everything to edge because it sounds modern. Edge is a constraint, not a free upgrade. Start on node, move a route to edge only when you can prove the latency win and you have confirmed the route's dependencies run there.</p>
+<h2>How do feature flags fit into a Next.js deploy pipeline?</h2>
+<p>A feature flag is a runtime switch that decouples deploying code from releasing a feature to users. In an enterprise Next.js setup, flags are the deploy gate: you ship dark, roll out by cohort, and roll back without a redeploy. This is what makes continuous deployment safe when many teams push to one application.</p>
+<p>Two mature options dominate in 2026. <a href="https://launchdarkly.com/docs/home" rel="noopener">LaunchDarkly</a> is the established enterprise choice with deep targeting and governance. Statsig leans toward teams that want experimentation and metrics built into the same flag, so a rollout and its impact measurement live in one place. Both integrate cleanly with Server Components, though you must be deliberate about where flags are evaluated so you do not break static rendering or leak server-only flags to the client.</p>
+<p>The pattern that works: evaluate flags server-side in a layout or page, pass the resolved values down as props, and treat the flag SDK on the client as read-only for already-resolved values. Evaluating flags inside deeply nested client components is where flag systems turn into a performance and consistency problem.</p>
+<h2>Why is observability an architecture decision, not an add-on?</h2>
+<p>Observability is the practice of instrumenting an application so you can ask new questions about its behaviour in production without shipping new code. In a distributed Next.js app with edge and node routes, server actions, and external services, you cannot debug from logs alone. You need traces that follow a request across boundaries.</p>
+<p>OpenTelemetry is an open standard that defines how traces, metrics, and logs are collected and exported, vendor-neutral by design. Instrument with <a href="https://opentelemetry.io/docs/" rel="noopener">OpenTelemetry</a> and you can send data to Datadog, Grafana, or anything else without rewriting your instrumentation. That neutrality is the whole point: you avoid locking your telemetry into one vendor's SDK.</p>
+<p>The mistake is treating this as a launch-week task. Span names, trace context propagation across the edge-to-node boundary, and which attributes you attach to a request are architectural choices. Decide them with your routing and runtime decisions, not after an incident has already shown you the gaps.</p>
+<h2>What CI patterns hold up for an enterprise Next.js monorepo?</h2>
+<p>The CI pattern that holds up is affected-only execution: run lint, type-check, test, and build only for the packages a change touches, using the monorepo's dependency graph. Turborepo's task filtering plus remote caching makes this practical. A pull request that changes one component should not trigger a full-graph rebuild.</p>
+<p>A workable pipeline shape:</p>
+<ol>
+<li>Install with a frozen lockfile so CI matches local exactly.</li>
+<li>Restore the Turborepo remote cache.</li>
+<li>Run affected lint and type-check in parallel.</li>
+<li>Run affected unit tests; run end-to-end tests only on routes that changed or on a nightly schedule.</li>
+<li>Build affected apps and run a bundle-size check that fails on regressions.</li>
+<li>Deploy preview environments per pull request so reviewers see real behaviour.</li>
+</ol>
+<p>Preview deployments per pull request are the highest-leverage CI investment for a frontend. Reviewers stop guessing from diffs and start clicking through the actual change, which catches the class of bugs that unit tests never will.</p>
+<h2>Who should build and staff this architecture?</h2>
+<p>You need senior frontend engineers who have shipped App Router, Server Components, and a monorepo in production, not just read about them. That combination is still scarce. The framework moved fast between 2023 and 2026, and a lot of resumes list "Next.js" while meaning Pages Router with client-side data fetching, which is a different skill set.</p>
+<p>We build <a href="/india-handled/">managed offshore development teams</a> for exactly this kind of work, and we hire pre-vetted senior <a href="/hire/frontend-engineers/">frontend engineers</a> from India through SethAI. If you also need runtime and pipeline ownership, our <a href="/hire/devops-engineers/">DevOps engineers</a> handle the edge, node, and CI side so your product engineers stay on product. <a href="/products/seth-ai-recruiter/">SethAI</a> screens for the specific stack signals above, App Router depth, monorepo experience, and runtime judgement, rather than keyword matches.</p>
+<p>For a sense of what senior engineering talent looks like in this market, our <a href="/blog/senior-indian-developer-salary-2026/">2026 senior developer guide</a> breaks down the experience bands and what they actually deliver. The short version: the architecture above is only as good as the people who internalise its tradeoffs.</p>
+<h2>When is this architecture the wrong call?</h2>
+<p>This full pattern is overkill for a single team shipping a single app with no plans to scale to many teams. If one squad owns the whole frontend, a single Next.js app with App Router and a lightweight flag setup is plenty. The monorepo, module federation, and per-route runtime tuning earn their keep at organisational scale, not at the start. Adopt the pieces you need, in order, and let real pain pull in the next layer rather than building all of it up front.</p>
+<p>If you are about to commit to an enterprise Next.js architecture and you want engineers who have already shipped this exact stack, <a href="/contact/">talk to us</a>. We will match a senior frontend or DevOps engineer in 48 hours and start a paid trial week so you can judge the work before you commit to a team.</p>`,
   category: "hiring",
   categoryLabel: "Hiring & Teams",
   author: "Gaurav",
   authorRole: "Founder & Solution Architect",
   publishedAt: "2026-06-17",
-  readTime: 9,
+  readTime: 11,
   metaDescription:
-    "Enterprise Next.js architecture for 2026: App Router boundaries, Turborepo monorepos, feature flags, edge vs node runtime, and observability explained.",
+    "Enterprise Next.js architecture for 2026: App Router, Turborepo monorepos, feature flags, edge vs node runtime, observability, CI, and how to staff it.",
   keywords: [
     "enterprise nextjs architecture",
-    "next.js app router",
+    "nextjs app router 2026",
     "turborepo monorepo",
     "edge vs node runtime",
-    "feature flags nextjs",
+    "nextjs feature flags",
     "opentelemetry nextjs",
-    "nextjs observability",
     "nextjs ci patterns",
+    "hire frontend engineers india",
   ],
   faq: [
     {
-      q: "Is the App Router production-ready for enterprise apps in 2026?",
-      a: "Yes. The App Router is the default for new enterprise Next.js work in 2026, with Server Components as the baseline and Client Components as the opt-in. The main discipline is keeping the use client boundary low in the tree so you do not lose server rendering and bundle benefits. Most large teams have completed or are mid-migration from the Pages Router.",
+      q: "Is the App Router ready for enterprise Next.js in 2026?",
+      a: "Yes. By 2026 the App Router is the recommended default for new enterprise Next.js applications. Server Components are stable, the data fetching model is mature, and tooling support is broad. The Pages Router remains supported as maintenance technology, but new investment, documentation, and ecosystem features target the App Router first. Start fresh projects there.",
       category: "hiring",
       categoryLabel: "Hiring",
     },
     {
-      q: "Do I need module federation with Next.js?",
-      a: "Usually not. True runtime module federation in Next.js is still rough, and most enterprise teams get what they want from a monorepo with shared internal packages. Reach for federation only when independent teams must deploy on their own cadence as a hard organisational requirement. If deploy independence is a preference rather than a constraint, a monorepo is simpler and safer.",
+      q: "Do I need a monorepo for an enterprise Next.js project?",
+      a: "Not always. A monorepo with Turborepo and pnpm pays off when multiple teams share a design system and need fast, affected-only builds. If a single team owns one application with no shared packages, a single repository is simpler and onboards faster. Adopt a monorepo when code sharing and team autonomy create real friction, not by default.",
       category: "hiring",
       categoryLabel: "Hiring",
     },
     {
-      q: "When should I move to a Turborepo and pnpm monorepo?",
-      a: "Move when you have more than one surface to ship, such as a web app plus an admin panel, or shared UI and types across apps. Turborepo caches task outputs so unchanged packages never rebuild, and pnpm keeps installs fast and strict. The caveat is ownership: a monorepo needs a person or platform group keeping the root config and CI clean, or it rots.",
+      q: "When should a route use the edge runtime instead of node?",
+      a: "Use edge for latency-sensitive work that runs on every request and needs no Node APIs: auth middleware, redirects, geolocation, and small personalised payloads. Use node for database drivers needing TCP, heavy data joins, large dependencies, native modules, or file handling. Decide per route, default to node, and move a route to edge only when you can prove the latency win.",
       category: "hiring",
       categoryLabel: "Hiring",
     },
     {
-      q: "How do I decide between edge and node runtime for a route?",
-      a: "Decide per route, not per app. Use node for full Node APIs, native modules, heavy database drivers, filesystem access, or long-running work. Consider edge for latency-sensitive reads, geographically spread users, and middleware doing auth or redirects. If you are unsure, default to node. Edge is an optimisation that only pays off when the data is also near the user.",
-      category: "hiring",
-      categoryLabel: "Hiring",
-    },
-    {
-      q: "Are feature flags worth the added complexity?",
-      a: "At enterprise scale, yes. Feature flags decouple deploy from release so you can ship code dark, enable it for a small cohort, watch metrics, and expand or kill it without a new deployment. Managed platforms like LaunchDarkly or Statsig add per-user targeting and experiment analysis. Small teams can start with a simple config-based flag system and upgrade when targeting needs grow.",
+      q: "LaunchDarkly or Statsig for Next.js feature flags?",
+      a: "Both work well with Next.js. LaunchDarkly is the established enterprise choice with deep targeting and governance controls. Statsig suits teams that want experimentation and impact metrics bound to the same flag, so a rollout and its measurement live together. Choose based on whether your priority is governance and targeting depth or built-in experimentation, and confirm the SDK fits your Server Component evaluation pattern.",
       category: "automation",
       categoryLabel: "Automation",
     },
     {
-      q: "What is the best way to add observability to Next.js?",
-      a: "Instrument with OpenTelemetry, the vendor-neutral standard for traces, metrics, and logs, then export to a backend like Datadog. Next.js ships an official OpenTelemetry integration. Using the neutral standard means you can change observability vendors without rewriting instrumentation. Start with request traces and error tracking, then add custom spans around the slow paths you actually care about.",
+      q: "Why use OpenTelemetry instead of a vendor SDK directly?",
+      a: "OpenTelemetry is a vendor-neutral standard for collecting traces, metrics, and logs. Instrumenting with it once lets you export to Datadog, Grafana, or another backend without rewriting your code. A direct vendor SDK locks your telemetry into that provider. For an enterprise app you expect to run for years, the portability of OpenTelemetry is worth the slightly higher initial setup effort.",
       category: "automation",
       categoryLabel: "Automation",
     },
     {
-      q: "How can AI help screen frontend engineers for this work?",
-      a: "AI screening can filter for engineers who have actually shipped App Router migrations, monorepo conversions, and runtime splits, rather than those who can only name the tools. SethAI scores candidates on whether they can defend architectural tradeoffs and surfaces concrete production experience. Human interviews then confirm the judgement, since the hard part of this work is deciding which patterns a project truly needs.",
-      category: "ai",
-      categoryLabel: "AI",
+      q: "What CI setup keeps a Next.js monorepo fast?",
+      a: "Affected-only execution. Use Turborepo task filtering with remote caching so a pull request only lints, type-checks, tests, and builds the packages it touches. Add per-pull-request preview deployments, a frozen lockfile install, and a bundle-size regression gate. This keeps pipeline time low even as the repository grows, because unchanged packages pull cached results instead of rebuilding.",
+      category: "automation",
+      categoryLabel: "Automation",
     },
     {
-      q: "When are these enterprise patterns overkill?",
-      a: "When you are a single team shipping one web app without heavy traffic. A single-app repo with the App Router and basic feature flags will serve you better than a monorepo, module federation, and an edge strategy you have no load to justify. Adopt patterns as the team count, surface count, or production load actually grows, not in anticipation of scale you may never hit.",
+      q: "Do I need module federation for micro-frontends in Next.js?",
+      a: "Usually not. A monorepo with shared packages gives most of the team-autonomy benefit without the runtime fragility of module federation, such as dependency drift and cross-boundary debugging. Reach for module federation only when independent teams must deploy on independent schedules and organisational boundaries genuinely cannot be modelled inside one repository. For most enterprise frontends, it is more complexity than the problem requires.",
+      category: "hiring",
+      categoryLabel: "Hiring",
+    },
+    {
+      q: "How do I hire engineers who actually know modern Next.js?",
+      a: "Screen for production experience with App Router, Server Components, and monorepos specifically, not just the word Next.js on a resume. Many candidates mean Pages Router with client-side fetching, which is a different skill set. We pre-vet senior frontend engineers from India through SethAI for exactly these signals and offer a paid trial week so you can judge real work before committing to a team.",
       category: "hiring",
       categoryLabel: "Hiring",
     },
