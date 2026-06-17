@@ -53,6 +53,12 @@ hire pre-vetted developers and teams from India.
    `"engineering"`, `"leadership"`, `"product"`. FAQ-level category on
    each FAQ item must be one of `"hiring"`, `"ai"`, `"automation"`
    (only those three are valid in the type system).
+6. **No prices, pricing comparisons, or cost figures anywhere.** Do not
+   mention salaries, hourly rates, monthly retainers, tool subscription
+   costs, or any numeric dollar/rupee/euro amounts. Do not compare
+   vendor pricing or say one option is "cheaper" or "more expensive"
+   than another. Workforce Next content is not a pricing resource.
+
 5. **No promises of pages that do not exist.** If you reference a
    `/hire/<role>/` URL, it must already exist on the site. Existing
    pages: `/hire/` plus any of: ai-developers, mcp-developers,
@@ -162,6 +168,8 @@ Before returning the module, verify:
 - [ ] At least 5 internal `<a href="/...">` links
 - [ ] All FAQ items have category `"hiring"`, `"ai"`, or `"automation"`
 - [ ] FAQ has 6 to 8 items
+- [ ] No prices, salary figures, cost comparisons, or currency amounts anywhere
 - [ ] Closing paragraph links to `/contact/`
 
 If any check fails, fix before returning.
+
