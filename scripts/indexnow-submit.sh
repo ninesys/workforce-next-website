@@ -147,6 +147,7 @@ for engine in "${ENGINES[@]}"; do
   "https://workforcenext.in/blog/ai-code-review-security-enterprise-pipelines-2026/"
   "https://workforcenext.in/blog/llm-api-key-rotation-secret-management-2026/"
   "https://workforcenext.in/blog/compliance-checklist-ai-applications-soc2-hipaa-2026/"
+  "https://workforcenext.in/blog/enterprise-nextjs-architecture-patterns-2026/"
 )
   echo "HTTP ${HTTP_CODE}"
 done
