@@ -53,6 +53,7 @@ import securingRagApplicationsDataIsolationPatterns2026 from "./blog/securing-ra
 import aiCodeReviewSecurityEnterprisePipelines2026 from "./blog/ai-code-review-security-enterprise-pipelines-2026";
 import llmApiKeyRotationSecretManagement2026 from "./blog/llm-api-key-rotation-secret-management-2026";
 import complianceChecklistAiApplicationsSoc2Hipaa2026 from "./blog/compliance-checklist-ai-applications-soc2-hipaa-2026";
+import enterpriseNextjsArchitecturePatterns2026 from "./blog/enterprise-nextjs-architecture-patterns-2026";
 
 export type { BlogPost, BlogFAQ };
 
@@ -121,4 +122,5 @@ export const blogPosts: BlogPost[] = [
   aiCodeReviewSecurityEnterprisePipelines2026,
   llmApiKeyRotationSecretManagement2026,
   complianceChecklistAiApplicationsSoc2Hipaa2026,
+  enterpriseNextjsArchitecturePatterns2026,
 ];
