@@ -10,12 +10,11 @@ export default function PullQuote() {
             </svg>
           </div>
           <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-dark-100 leading-snug">
-            A developer who&apos;s been on your product for 12 months is worth
-            three times a fresh hire of equal skill.{" "}
-            <span className="text-primary-400">Not because of code. Because of context.</span>
+            A 12-month developer is worth 3x a fresh hire of equal skill.{" "}
+            <span className="text-primary-400">Not for the code. For the context.</span>
           </p>
           <footer className="mt-6 sm:mt-8 text-dark-300 text-sm font-medium">
-            The thinking behind every team we build.
+            Why we build teams that stay.
           </footer>
         </blockquote>
       </div>

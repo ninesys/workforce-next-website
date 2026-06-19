@@ -3,17 +3,17 @@ export default function PainVoices() {
     {
       role: "Founder",
       quote:
-        "I hired three freelancers last year. Each one vanished after the first deliverable. I'm not building a product anymore. I'm rebuilding context every quarter.",
+        "Three freelancers in a year. Each vanished after the first deliverable. I'm rebuilding context every quarter, not shipping product.",
     },
     {
       role: "Series A CTO",
       quote:
-        "Our agency keeps rotating developers between clients. The person who shipped our core feature got moved to another account. We spent three months re-explaining the architecture.",
+        "Our agency rotates developers between clients. The one who shipped our core feature got moved. Three months re-explaining the architecture.",
     },
     {
       role: "Enterprise VP Engineering",
       quote:
-        "We needed one computer vision specialist for six months. Recruiters sent us 50 resumes. Not one of them could explain what they actually built. Just noise.",
+        "One computer vision specialist, six months. Recruiters sent 50 resumes. None could explain what they actually built.",
     },
   ];
 

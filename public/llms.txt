@@ -1,10 +1,10 @@
 # Workforce Next
 
-> Workforce Next is an IT consulting and IT services company based in India that offers remote developers and QA engineers for startups to enterprises. Hire on a dedicated, fractional, or full-time basis, with flexible hours and flexible timezone coverage shaped to your team. Engineers plug straight into your engineering, product, and consulting functions and ship software for you. People are matched by industry context and longevity signals using SethAI, an AI-powered recruiter. Headquartered in DLF Cyber City, Gurugram with a tech office in Noida.
+> Workforce Next is an AI automation agency for founders, headquartered in India. We deliver four services for SaaS founders, startups, and enterprises: (1) product development consulting, (2) AI agents and workflows for business operations, (3) dedicated developers and QA testers for development and testing, and (4) AEO/GEO/SEO for organic growth. One partner across the whole arc, from deciding what to build to bringing in buyers. Headquartered in DLF Cyber City, Gurugram with a tech office in Noida.
 
 ## What Workforce Next Does
 
-Workforce Next offers remote developers and QA engineers from India who work on your product on dedicated, fractional, or full-time engagements. Engineers can work standard India hours or shift their schedule to overlap with US, UK, EU, Canada, Australia, or Dubai working hours. Unlike traditional staffing that matches on tech stack alone, Workforce Next uses context-first matching: a Java developer who built banking systems is matched to fintech clients, not just any Java project.
+Workforce Next is an AI automation agency that bundles four distinct services. Product development consulting helps founders decide what to build, choose the right stack, and scope the work. AI agents and workflow automation take repetitive operations off the team. Dedicated developers and QA testers ship and test the product, with flexible hours overlapping US, UK, EU, Canada, Australia, or Dubai working hours. AEO (Answer Engine Optimization), GEO (Generative Engine Optimization), and traditional SEO get the SaaS cited by ChatGPT, Perplexity, Gemini, Google AI Overviews, and ranked in Google. SethAI, an AI-powered recruiter, matches engineers by context and longevity, not just tech stack.
 
 ## Developer Specialisms
 

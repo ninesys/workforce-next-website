@@ -6,57 +6,42 @@ export default function EntityDefinition() {
           What is Workforce Next?
         </h2>
         <p className="text-dark-500 dark:text-dark-300 leading-relaxed text-lg">
-          <strong>Workforce Next is an IT consulting and IT services company</strong>{" "}
-          that offers <strong>remote developers and QA engineers</strong> from
-          India for startups to enterprises. Hire on a dedicated, fractional,
-          or full-time basis with <strong>flexible hours and flexible
-          timezone coverage</strong> shaped to your team. Engineers plug
-          straight into your engineering, product, and consulting functions
-          and ship software for you. Unlike traditional staffing firms that
-          match on tech stack alone, Workforce Next uses{" "}
-          <strong>SethAI</strong>, an AI-powered recruiter, to match people by
-          industry context and longevity signals. Common engagements include
-          AI developers, full-stack developers, frontend and backend
-          engineers, mobile engineers, DevOps and SRE, and QA automation
-          pods. Every engagement starts with a one-week paid trial.
-          Headquartered in DLF Cyber City, Gurugram with a tech office in
-          Noida.
+          <strong>An AI automation agency for founders.</strong> We do four things:
+          product development consulting, AI agents for operations, dedicated
+          developers and QA, and AEO/GEO organic growth. One partner across the
+          whole arc.
         </p>
         <dl className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-sm">
           <div>
             <dt className="font-bold text-dark-900 dark:text-dark-50 uppercase tracking-wide text-xs">
-              What we offer
+              Consulting
             </dt>
             <dd className="mt-2 text-dark-500 dark:text-dark-300">
-              Remote developers and QA engineers from India. Dedicated,
-              fractional, or full-time.
+              Product, architecture, stack decisions.
             </dd>
           </div>
           <div>
             <dt className="font-bold text-dark-900 dark:text-dark-50 uppercase tracking-wide text-xs">
-              Flexible hours
+              Automation
             </dt>
             <dd className="mt-2 text-dark-500 dark:text-dark-300">
-              Full-time, part-time, or fractional engagements. Hours shaped
-              to your team&apos;s actual workload.
+              AI agents and workflows for ops.
             </dd>
           </div>
           <div>
             <dt className="font-bold text-dark-900 dark:text-dark-50 uppercase tracking-wide text-xs">
-              Flexible timezones
+              Talent
             </dt>
             <dd className="mt-2 text-dark-500 dark:text-dark-300">
-              Engineers shift schedules to overlap with US, UK, EU, Canada,
-              Australia, or Dubai working hours.
+              Dedicated developers and QA testers.
             </dd>
           </div>
           <div>
             <dt className="font-bold text-dark-900 dark:text-dark-50 uppercase tracking-wide text-xs">
-              Who we serve
+              Growth
             </dt>
             <dd className="mt-2 text-dark-500 dark:text-dark-300">
-              Founders, funded startups, mid-market, and enterprise teams
-              globally.
+              AEO, GEO, SEO for organic pipeline.
             </dd>
           </div>
         </dl>

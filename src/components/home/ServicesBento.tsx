@@ -148,7 +148,7 @@ const DigitalMarketingIllustration = () => (
 
 const AutomationIllustration = () => (
   <svg viewBox="0 0 240 180" fill="none" className="w-full h-full" aria-hidden="true">
-    {/* workflow nodes connected by lines, evoking n8n / Zapier */}
+    {/* workflow nodes connected by lines */}
     <rect x="20" y="32" width="56" height="32" rx="6" fill="#E0EDFF" stroke="#022E5E" strokeWidth="2.5" />
     <rect x="92" y="76" width="56" height="32" rx="6" fill="#146EF5" stroke="#022E5E" strokeWidth="2.5" />
     <rect x="164" y="32" width="56" height="32" rx="6" fill="#E0EDFF" stroke="#022E5E" strokeWidth="2.5" />
@@ -279,18 +279,18 @@ const services: Service[] = [
   },
   {
     title: "Automation Consulting",
-    subtitle: "n8n · Make · Zapier + AI",
+    subtitle: "Workflows + AI",
     description:
-      "Wire n8n, Make, or Zapier with Claude and GPT to automate real business workflows. Sales ops, support, finance, content, and internal tooling. Project-based pricing.",
+      "Wire workflows with Claude and GPT to automate real business operations. Sales ops, support, finance, content, and internal tooling. Project-based pricing.",
     href: "/hire/automation-consultants",
     cta: "Automate a workflow",
     span: "md:col-span-3",
     tone: "blue",
     links: [
-      { label: "n8n", href: "/hire/automation-consultants" },
-      { label: "Make", href: "/hire/automation-consultants" },
-      { label: "Zapier", href: "/hire/automation-consultants" },
+      { label: "Workflows", href: "/hire/automation-consultants" },
       { label: "AI integrations", href: "/hire/automation-consultants" },
+      { label: "Sales ops", href: "/hire/automation-consultants" },
+      { label: "Internal tooling", href: "/hire/automation-consultants" },
     ],
     illustration: <AutomationIllustration />,
   },

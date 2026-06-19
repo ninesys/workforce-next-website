@@ -2,33 +2,33 @@ import { Metadata } from "next";
 import { ogDefaults } from "@/data/siteMetadata";
 import Hero from "@/components/home/Hero";
 import EntityDefinition from "@/components/home/EntityDefinition";
+import FourServices from "@/components/home/FourServices";
+import HowWeFit from "@/components/home/HowWeFit";
 import StatBlock from "@/components/home/StatBlock";
 import PullQuote from "@/components/home/PullQuote";
-import PainVoices from "@/components/home/PainVoices";
-import Specialisms from "@/components/home/Specialisms";
 import RetentionMechanisms from "@/components/home/RetentionMechanisms";
-import ServicesBento from "@/components/home/ServicesBento";
 import CTASection from "@/components/home/CTASection";
 import { generateHomepageHowToSchema } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
-  title: "AI, Automation & Workflow Experts | Consulting + Dedicated Developers | Workforce Next",
+  title:
+    "AI Automation Agency for Founders | AI Agents, Dedicated Developers, Organic Growth | Workforce Next",
   description:
-    "AI automation, n8n workflows, data pipelines, and dedicated AI developers from India. Consulting and delivery from one partner. 48-hour matching, zero recruitment fees.",
+    "AI automation agency for founders. Product consulting, AI agents for operations, dedicated developers and QA, and AEO/GEO organic growth. Four services, one partner.",
   keywords: [
-    "AI automation services",
+    "AI automation agency for founders",
+    "AI automation agency for SaaS",
     "AI automation agency",
-    "AI and automation consulting",
-    "workflow automation consulting",
-    "AI workflow automation company",
-    "hire AI automation experts",
-    "n8n automation consultants",
-    "hire dedicated AI developers",
-    "AI agents development",
-    "data engineering services India",
-    "hire MLOps engineers",
-    "AI consulting services India",
-    "dedicated remote AI team",
+    "AI agents and workflow automation",
+    "product development consulting",
+    "AI agents for operations",
+    "hire dedicated developers",
+    "QA testing team India",
+    "AEO services",
+    "GEO services",
+    "SEO for SaaS startups",
+    "AI development services SaaS",
+    "workflow automation consultants",
   ],
   alternates: {
     canonical: "https://workforcenext.in",
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
   openGraph: {
     ...ogDefaults("/"),
     images: ["/images/og-default.png"],
-    title: "AI, Automation & Workflow Experts | Consulting + Dedicated Developers",
+    title: "AI Automation Agency for Founders | AI Agents, Dedicated Developers, Organic Growth",
     description:
-      "AI automation, n8n workflows, data pipelines, and dedicated AI developers from India. Consulting and delivery from one partner.",
+      "Four services, one partner: product consulting, AI agents for operations, dedicated developers and QA, and AEO/GEO organic growth.",
   },
 };
 
@@ -53,12 +53,11 @@ export default function Home() {
       />
       <Hero />
       <EntityDefinition />
+      <FourServices />
+      <HowWeFit />
       <StatBlock />
       <PullQuote />
-      <PainVoices />
-      <Specialisms />
       <RetentionMechanisms />
-      <ServicesBento />
       <CTASection />
     </>
   );
