@@ -19,7 +19,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://workforcenext.in"),
+  metadataBase: new URL("https://wfnext.com"),
   title: {
     default: "Hire Remote Dedicated Developers from India | Workforce Next",
     template: "%s | Workforce Next",
@@ -51,19 +51,19 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://workforcenext.in",
+    canonical: "https://wfnext.com",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://workforcenext.in",
+    url: "https://wfnext.com",
     siteName: "Workforce Next",
     title: "Hire Remote Dedicated Developers from India | Workforce Next",
     description:
       "Hire dedicated AI, data, frontend and backend developers from India. Context-matched by SethAI. 48-hour matching, zero recruitment fees.",
     images: [
       {
-        url: "https://workforcenext.in/images/og-default.png",
+        url: "https://wfnext.com/images/og-default.png",
         width: 1200,
         height: 630,
         alt: "Workforce Next - Your Remote Team. Built to Stay.",
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
     title: "Hire Remote Dedicated Developers from India | Workforce Next",
     description:
       "Hire dedicated AI, data, frontend and backend developers from India. Context-matched by SethAI.",
-    images: ["https://workforcenext.in/images/og-default.png"],
+    images: ["https://wfnext.com/images/og-default.png"],
   },
 };
 

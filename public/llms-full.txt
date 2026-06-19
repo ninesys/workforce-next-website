@@ -10,7 +10,7 @@ Workforce Next started as a software services company and saw the same problem e
 
 The core insight: a developer who has worked on your product for 12 months is worth three times a new developer of equal skill, because of context, not code. Everything Workforce Next does is designed to make teams last longer and make accumulated context visible and protected.
 
-Website: https://workforcenext.in
+Website: https://wfnext.com
 Email: hello@workforcenext.in
 Phone: +91-9582595166
 LinkedIn: https://www.linkedin.com/company/workforce-next
@@ -28,7 +28,7 @@ For each candidate, SethAI generates a 1-page match report with a match score, s
 
 SethAI also does context-first matching. This means matching developers by industry experience and product type, not just programming language. A Java developer who built banking systems gets matched to fintech clients. A Python developer who built data pipelines for logistics companies gets matched to supply chain startups.
 
-Status: SethAI is currently in development. Waitlist is open at https://workforcenext.in/products/seth-ai-recruiter
+Status: SethAI is currently in development. Waitlist is open at https://wfnext.com/products/seth-ai-recruiter
 
 ---
 
@@ -37,47 +37,47 @@ Status: SethAI is currently in development. Waitlist is open at https://workforc
 ### AI & Agentic Developers
 Skills: LangChain, AutoGen, CrewAI, RAG pipelines, multi-agent systems, OpenAI API, vector databases, prompt engineering, fine-tuning.
 People who can ship production AI, not just prototype it.
-Page: https://workforcenext.in/hire/ai-developers
+Page: https://wfnext.com/hire/ai-developers
 
 ### Data Engineers
 Skills: dbt, Apache Spark, Airflow, Snowflake, data lakehouses, Kafka, BigQuery, Redshift, Dagster.
 They turn messy data into pipelines you can actually rely on.
-Page: https://workforcenext.in/hire/data-engineers
+Page: https://wfnext.com/hire/data-engineers
 
 ### Frontend Engineers
 Skills: React, Next.js 14+, TypeScript, Tailwind CSS, Zustand, React Query, performance optimization, accessibility.
 Performance-first, pixel-perfect, and comfortable cleaning up AI-generated code.
-Page: https://workforcenext.in/hire/frontend-engineers
+Page: https://wfnext.com/hire/frontend-engineers
 
 ### Backend Engineers
 Skills: FastAPI, Node.js, Go, PostgreSQL, Redis, Docker, Kubernetes, API design, microservices.
 API-first, cloud-native backends that handle scale without drama.
-Page: https://workforcenext.in/hire/backend-engineers
+Page: https://wfnext.com/hire/backend-engineers
 
 ### Product Engineers
 Engineers matched by industry context, not just tech stack. A Java developer who built banking systems is a completely different hire than one who built logistics software. Product engineers think about the user, not just the ticket.
 Industries covered: Fintech, Logistics, Healthtech, SaaS, E-commerce, EdTech.
 Engineering styles: Vibe coding (AI-assisted), traditional, or hybrid. Client chooses.
-Page: https://workforcenext.in/hire/product-engineers
+Page: https://wfnext.com/hire/product-engineers
 
 ### Vibe-Code Optimisation Engineers
 Reviews and productionises AI-generated code from Cursor, Copilot, and similar tools. They catch security vulnerabilities, performance issues, and edge cases the AI missed. This is a new role that very few companies offer.
-Page: https://workforcenext.in/hire/vibe-code-engineer
+Page: https://wfnext.com/hire/vibe-code-engineer
 
 ### Cloud Cost Optimisation Engineers
 FinOps specialists. Skills: AWS Cost Explorer, Azure Advisor, GCP billing, Kubernetes rightsizing, spot instances, reserved instances, Terraform cost estimation.
 They cut your cloud bill without cutting features.
-Page: https://workforcenext.in/hire/cloud-cost-engineer
+Page: https://wfnext.com/hire/cloud-cost-engineer
 
 ### QA Engineers & Testers
 Manual and exploratory testing, test automation (Selenium, Playwright, Cypress, Appium), API testing (Postman, REST Assured), performance testing (JMeter, k6, Gatling), security testing (OWASP, Burp Suite).
 Testers who think like users and break things before customers do. Context-matched to your product and industry.
-Page: https://workforcenext.in/hire/qa-testers
+Page: https://wfnext.com/hire/qa-testers
 
 ### Additional Specialisms
-- LangChain Developers: https://workforcenext.in/hire/langchain-developers
-- RAG Pipeline Developers: https://workforcenext.in/hire/rag-developers
-- FastAPI Developers: https://workforcenext.in/hire/fastapi-developers
+- LangChain Developers: https://wfnext.com/hire/langchain-developers
+- RAG Pipeline Developers: https://wfnext.com/hire/rag-developers
+- FastAPI Developers: https://wfnext.com/hire/fastapi-developers
 
 ---
 
@@ -88,14 +88,14 @@ One senior developer, 4-week engagement, fixed scope, fixed price.
 Pricing: INR 1.2-1.8L ($1,500-$2,200).
 Deliverable: a working, deployable prototype.
 SethAI matches the developer. You interview. 1-week paid trial. Developer stays beyond the sprint if you want them to.
-Page: https://workforcenext.in/for/founders
+Page: https://wfnext.com/for/founders
 
 ### Engineering Pod (For Funded Startups)
 3-8 dedicated developers. Typical pod: 1 AI/backend lead + 2-3 full-stack + 1 QA + optional data engineer.
 48-hour profile delivery via SethAI. 1-week paid trial per developer.
 Structured onboarding with Context Continuity Guarantee. Monthly engineering advisory.
 Key differentiator: agency staff rotate between clients, your pod does not.
-Page: https://workforcenext.in/for/startups
+Page: https://wfnext.com/for/startups
 
 ### Enterprise (Consulting + Staff Augmentation)
 Three ways to engage:
@@ -103,7 +103,7 @@ Three ways to engage:
 2. Staff augmentation: dedicated developer or small team, long-term, with Context Continuity Guarantee.
 3. Fixed-scope consulting: defined deliverable, timeline, and cost.
 Free offer: 2-hour architecture assessment.
-Page: https://workforcenext.in/for/enterprise
+Page: https://wfnext.com/for/enterprise
 
 ---
 
@@ -114,14 +114,14 @@ Most staffing companies match on technology. Workforce Next matches on industry 
 
 ### Context Continuity Guarantee
 If a developer ever leaves, Workforce Next maintains documentation (codebase walkthrough, domain glossary, architecture decision log) that enables their replacement to be productive in days instead of months.
-Page: https://workforcenext.in/context-continuity-guarantee
+Page: https://wfnext.com/context-continuity-guarantee
 
 ### Vibe Coding
 AI-assisted development using tools like Cursor, GitHub Copilot, and similar code generators. Developers prompt the AI, review what it generates, catch bugs, and ship production-ready code faster. Works well for MVPs and feature sprints. Not suitable for regulated industries or complex business logic. Most teams use a hybrid approach.
 
 ### The Cost of Switching Tech Partners
 Switching offshore teams once costs roughly 3 months of the original developer's salary in lost productivity: onboarding time (4-8 weeks), velocity dip (30-60% for 6-8 weeks), re-explanation of architecture (2-4 weeks senior time), cultural re-alignment (4-8 weeks), and opportunity cost (2-3 months of delayed roadmap).
-Page: https://workforcenext.in/cost-of-switching
+Page: https://wfnext.com/cost-of-switching
 
 ---
 
@@ -135,7 +135,7 @@ Page: https://workforcenext.in/cost-of-switching
 6. Monthly engineering advisory: "what does this team need in the next 90 days?"
 7. Expansion or replacement with context continuity: when you need more people, SethAI already knows your culture and stack.
 
-Page: https://workforcenext.in/how-we-work
+Page: https://wfnext.com/how-we-work
 
 ---
 
@@ -143,7 +143,7 @@ Page: https://workforcenext.in/how-we-work
 
 ### SethAI Recruiter
 AI-powered developer screening tool that evaluates technical skills and longevity signals. Generates 1-page match reports. Currently in development, waitlist open.
-Page: https://workforcenext.in/products/seth-ai-recruiter
+Page: https://wfnext.com/products/seth-ai-recruiter
 
 ---
 
@@ -161,7 +161,7 @@ Page: https://workforcenext.in/products/seth-ai-recruiter
 ## Founder
 
 Gaurav, Founder and Solution Architect. 20 years in solution architecture and enterprise software. Based in Noida, India.
-Page: https://workforcenext.in/about/gaurav
+Page: https://wfnext.com/about/gaurav
 
 ---
 
@@ -179,17 +179,17 @@ A: Using AI tools like Cursor and Copilot to write software faster. The develope
 Q: Do you offer a free trial?
 A: Every engagement starts with a 1-week paid trial. Real work on your actual codebase. If not right, rematch at no cost. No recruitment fees, no setup fees.
 
-Full FAQ: https://workforcenext.in/faq
+Full FAQ: https://wfnext.com/faq
 
 ---
 
 ## Blog
 
-- Why Offshore Developers Keep Leaving and 3 Things That Make Them Stay: https://workforcenext.in/blog/why-offshore-developers-keep-leaving
-- Vibe Coding Explained: When to Use It and When to Avoid It: https://workforcenext.in/blog/vibe-coding-explained-when-to-use-it
-- Context-First Matching: Why Tech Stack Alone Is Not Enough: https://workforcenext.in/blog/context-first-matching-why-tech-stack-is-not-enough
-- The Real Cost of Switching Tech Partners: https://workforcenext.in/blog/real-cost-of-switching-tech-partners
-- How to Build an AI MVP in 4 Weeks with an Offshore Developer: https://workforcenext.in/blog/how-to-build-ai-mvp-4-weeks-offshore-developer
-- Dedicated Developer vs Freelancer vs Agency Total Cost: https://workforcenext.in/blog/dedicated-developer-vs-freelancer-vs-agency-total-cost
+- Why Offshore Developers Keep Leaving and 3 Things That Make Them Stay: https://wfnext.com/blog/why-offshore-developers-keep-leaving
+- Vibe Coding Explained: When to Use It and When to Avoid It: https://wfnext.com/blog/vibe-coding-explained-when-to-use-it
+- Context-First Matching: Why Tech Stack Alone Is Not Enough: https://wfnext.com/blog/context-first-matching-why-tech-stack-is-not-enough
+- The Real Cost of Switching Tech Partners: https://wfnext.com/blog/real-cost-of-switching-tech-partners
+- How to Build an AI MVP in 4 Weeks with an Offshore Developer: https://wfnext.com/blog/how-to-build-ai-mvp-4-weeks-offshore-developer
+- Dedicated Developer vs Freelancer vs Agency Total Cost: https://wfnext.com/blog/dedicated-developer-vs-freelancer-vs-agency-total-cost
 
-Full blog: https://workforcenext.in/blog
+Full blog: https://wfnext.com/blog

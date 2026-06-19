@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
   // Block all crawlers on preview domain — only production should be indexed
-  if (process.env.NEXT_PUBLIC_SITE_URL?.includes("preview.workforcenext.in")) {
+  if (process.env.NEXT_PUBLIC_SITE_URL?.includes("preview.wfnext.com") || process.env.NEXT_PUBLIC_SITE_URL?.includes("preview.workforcenext.in")) {
     return {
       rules: [{ userAgent: "*", disallow: "/" }],
     };
@@ -35,6 +35,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/"],
       })),
     ],
-    sitemap: "https://workforcenext.in/sitemap.xml",
+    sitemap: "https://wfnext.com/sitemap.xml",
   };
 }

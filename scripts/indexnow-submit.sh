@@ -4,7 +4,7 @@
 # Usage: ./scripts/indexnow-submit.sh
 
 INDEXNOW_KEY="3e7d2156eff697e75f5a5ec5c33a98e4"
-HOST="workforcenext.in"
+HOST="wfnext.com"
 KEY_LOCATION="https://${HOST}/${INDEXNOW_KEY}.txt"
 
 # All site URLs
@@ -70,10 +70,6 @@ URLS=(
   "https://${HOST}/aeo-seo-for-saas/"
   "https://${HOST}/how-we-work/"
   "https://${HOST}/why-teams-stay/"
-  "https://${HOST}/cost-of-switching/"
-  "https://${HOST}/context-continuity-guarantee/"
-  "https://${HOST}/not-another-body-shop/"
-  "https://${HOST}/ai-native-india/"
   "https://${HOST}/india-handled/"
   "https://${HOST}/about/"
   "https://${HOST}/about/gaurav/"

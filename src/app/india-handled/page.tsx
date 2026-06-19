@@ -5,355 +5,218 @@ import Badge from "@/components/ui/Badge";
 import {
   generateBreadcrumbSchema,
   generateFAQPageSchema,
-  generateArticleSchema,
 } from "@/lib/jsonLd";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "Hire Remote Developers from India (Flexible Hours & Timezone)",
+  title: "AI Automation Agency from India | Four Services, Global Delivery | Workforce Next",
   description:
-    "Hire dedicated, fractional, or full-time remote developers and QA engineers from India. Flexible hours, flexible timezone coverage, one B2B contract. Pre-vetted by SethAI.",
+    "AI automation agency based in India serving founders globally. Product consulting, AI agents and workflows, dedicated developers and QA, and AEO/GEO growth. Flexible timezone coverage.",
   keywords: [
-    "hire remote developers India",
-    "flexible hours remote developers",
-    "flexible timezone developers",
-    "dedicated remote developers India",
-    "fractional remote engineers",
-    "remote developer staffing India",
-    "hire offshore developers India",
-    "managed offshore development team",
-    "hire developers with timezone overlap",
+    "AI automation agency India",
+    "AI agency from India",
+    "dedicated developers India",
+    "AI consulting India",
+    "workflow automation India",
+    "AEO GEO agency India",
+    "hire AI engineers India",
+    "AI automation agency for founders",
   ],
   openGraph: {
     ...ogDefaults("/india-handled/"),
     images: ["/images/og-default.png"],
-    title: "Hire Remote Developers from India (Flexible Hours & Timezone)",
+    title: "AI Automation Agency from India | Four Services, Global Delivery",
     description:
-      "Dedicated, fractional, or full-time remote developers and QA engineers. Flexible hours, flexible timezone coverage. Pre-vetted by SethAI.",
+      "Four services, one partner, India delivery. Consulting, automation, talent, and AEO/GEO growth.",
   },
   alternates: {
-    canonical: "https://workforcenext.in/india-handled/",
+    canonical: "https://wfnext.com/india-handled/",
   },
 };
 
-const engagementOptions = [
+const services = [
+  { num: "01", tag: "CONSULTING", title: "Product development consulting", line: "Architecture, stack, scope decisions." },
+  { num: "02", tag: "AUTOMATION", title: "AI agents for operations", line: "Workflows and agents take ops off your team." },
+  { num: "03", tag: "TALENT", title: "Dedicated developers and QA", line: "Senior engineers in your timezone, ship and test." },
+  { num: "04", tag: "GROWTH", title: "AEO + GEO + SEO", line: "Cited by AI search. Found in Google." },
+];
+
+const indiaAdvantages = [
   {
-    title: "Dedicated full-time",
-    hours: "40 hours per week",
-    body: "One engineer, full-time, embedded in your team like an in-house hire. Standard for ongoing product work and long-running engagements.",
+    title: "Senior engineering pool",
+    line: "Bangalore, Gurugram, Noida, Hyderabad. Deep talent across AI, automation, web, and data.",
   },
   {
-    title: "Fractional",
-    hours: "10 to 20 hours per week",
-    body: "Senior engineering input without a full-time commitment. Best for advisory, code review, design support, or part-time builders.",
+    title: "Timezone flexibility",
+    line: "Teams shift schedules to overlap with US, UK, EU, Canada, Australia, or Dubai working hours.",
   },
   {
-    title: "Team pod",
-    hours: "2 to 5 engineers",
-    body: "Cross-functional squad with a tech lead. Best for MVPs, feature launches, migrations, or self-contained product builds.",
+    title: "Cross-service rates",
+    line: "Same India delivery base across all four services. Consulting, automation, talent, and growth all benefit.",
+  },
+  {
+    title: "B2B contract simplicity",
+    line: "One India-registered company. One contract. No EOR, no PE complications.",
   },
 ];
 
-const timezoneOptions = [
-  {
-    region: "US Eastern / Central",
-    overlap: "Engineers start by 6 PM IST; 4 to 5 hour daily overlap",
-  },
-  {
-    region: "US Pacific",
-    overlap: "Engineers on a shifted schedule (8 PM to 4 AM IST) for 3 to 4 hour overlap",
-  },
-  {
-    region: "UK / Europe",
-    overlap: "Standard India hours give 4.5 to 6 hour overlap with CET and GMT",
-  },
-  {
-    region: "Australia / APAC",
-    overlap: "Standard India hours give 4 to 5 hour overlap with Sydney/Melbourne",
-  },
-  {
-    region: "Dubai / Middle East",
-    overlap: "1.5 hour offset; standard India hours give 7 to 8 hour overlap",
-  },
-  {
-    region: "24/7 follow-the-sun",
-    overlap: "Multiple engineers on staggered shifts for round-the-clock coverage",
-  },
+const timezones = [
+  { region: "USA & Canada", hours: "Overlap 9am to 5pm ET or PT" },
+  { region: "UK & Europe", hours: "Overlap 9am to 5pm GMT, CET, CEST" },
+  { region: "Australia & NZ", hours: "Overlap morning AEST through afternoon AWST" },
+  { region: "Dubai & UAE", hours: "Full working day overlap" },
 ];
 
-const whyPoints = [
+const faqItems: FAQ[] = [
   {
-    title: "Remote developers, full stop",
-    body: "We offer remote developers and QA engineers. Not payroll services, not HR software, not legal consulting. The product is engineering capacity.",
-  },
-  {
-    title: "Flexible hours",
-    body: "Full-time, part-time, or fractional. Hours shaped to your team's real workload, not forced into a one-size-fits-all bucket.",
-  },
-  {
-    title: "Flexible timezones",
-    body: "Engineers can work standard India hours or shift their schedule to overlap with your team. US Pacific, US Eastern, UK, EU, Australia, or Dubai.",
-  },
-  {
-    title: "One simple contract",
-    body: "One B2B services contract, one monthly invoice in your currency, predictable pricing. No surprise line items.",
-  },
-];
-
-const howItWorks = [
-  {
-    step: "01",
-    title: "Tell us what you need",
-    body: "Stack, seniority, scope, working hours, timezone overlap target. A short brief is enough to start.",
-  },
-  {
-    step: "02",
-    title: "SethAI returns a shortlist",
-    body: "Pre-vetted engineers matched on stack, context, and longevity signals. Shortlist within 48 hours.",
-  },
-  {
-    step: "03",
-    title: "You interview and pick",
-    body: "Talk to candidates directly. Test working style, technical depth, communication. You choose the hire.",
-  },
-  {
-    step: "04",
-    title: "Paid trial week",
-    body: "Real engineer, real code, real PRs. If the fit works, continue. If not, we shortlist another match at no extra cost.",
-  },
-];
-
-const faqs: FAQ[] = [
-  {
-    question: "What does Workforce Next actually offer?",
+    question: "Why pick an India-based AI automation agency?",
     answer:
-      "Remote developers and QA engineers from India, on dedicated, fractional, or full-time engagements. Engineers can work standard India hours or shift their schedule to overlap with your team's working hours. That's the offer. One product: remote engineering capacity.",
+      "India has the deepest senior engineering pool for AI, automation, web, and data work outside the US. The same delivery base sharpens every one of our four services: consulting, automation, talent, and growth. You get senior delivery across the whole arc at India delivery economics.",
     category: "hiring",
-    categoryLabel: "Operations",
+    categoryLabel: "Hiring",
   },
   {
-    question: "Can engineers work flexible hours?",
+    question: "How do timezones work?",
     answer:
-      "Yes. We offer full-time (40 hours/week), part-time, and fractional (10 to 20 hours/week) engagements. Hours are shaped to your team's actual workload. If you need an engineer for 25 hours a week or a tech lead for 12 hours a week, we structure the engagement that way.",
+      "Our teams shift schedules to overlap with your working day. Standard overlap windows for US East, US West, UK, EU, Australia, and Dubai. You get same-day collaboration without needing to take late-night calls yourself.",
     category: "hiring",
-    categoryLabel: "Operations",
+    categoryLabel: "Hiring",
   },
   {
-    question: "Can engineers work in our timezone?",
+    question: "Can I engage you for just one of the four services?",
     answer:
-      "Yes. Standard India hours give 4 to 6 hours of overlap with UK, EU, Australia, and US Eastern. For US Pacific or Australian customers we arrange engineers who shift their schedule (start late afternoon or early evening India time) to give meaningful overlap with your working hours.",
+      "Yes. Most engagements start with one service. Customers typically expand into the others as trust builds. There is no requirement to bundle.",
     category: "hiring",
-    categoryLabel: "Operations",
+    categoryLabel: "Hiring",
   },
   {
-    question: "Do we need to set up an India entity?",
+    question: "Do I need a separate contract for each service?",
     answer:
-      "No. You sign one B2B services contract with us and pay one monthly invoice in your currency. The engineer is our employee in India, not yours. You don't worry about the operational side.",
+      "No. One master agreement with Workforce Next Pvt. Ltd. covers all four services. Project-specific scopes layer underneath. Less paperwork, faster start.",
     category: "hiring",
-    categoryLabel: "Operations",
+    categoryLabel: "Hiring",
   },
   {
-    question: "What's the pricing model?",
+    question: "What about IP, security, and compliance?",
     answer:
-      "One all-in monthly fee in your currency, indexed to the role and seniority. Predictable month to month. Pricing scales with hours: fractional is roughly half of full-time. No setup fees, no recruitment fees, no hidden costs.",
+      "Standard NDA, IP assignment in the MSA, GDPR-aligned data handling, and SOC 2 friendly engagement practices. We have shipped for customers with serious compliance requirements; the details get covered in the discovery call.",
     category: "hiring",
-    categoryLabel: "Operations",
+    categoryLabel: "Hiring",
   },
   {
-    question: "Who owns the IP the engineer produces?",
+    question: "How fast can a new engagement start?",
     answer:
-      "You do, fully. Standard work-product assignment. There's no shared ownership, no licence-back, and no India-resident IP retention.",
+      "Discovery call to scoped proposal in 48 hours. Approved proposal to delivery start within the following week. Faster than hiring in your own market, and the team is already trained.",
     category: "hiring",
-    categoryLabel: "Operations",
-  },
-  {
-    question: "What happens if we want to end the engagement?",
-    answer:
-      "You give 30 days notice on the services contract. No 12-month lock-in. If you want a replacement instead of an exit, we shortlist within 48 hours and the swap is at no extra fee in the first 90 days.",
-    category: "hiring",
-    categoryLabel: "Operations",
-  },
-  {
-    question: "How fast can an engineer start?",
-    answer:
-      "Shortlist in 48 hours, interviews the following week, paid trial start typically 7 to 10 business days after intake call. Engineers with bench availability can start faster.",
-    category: "hiring",
-    categoryLabel: "Operations",
+    categoryLabel: "Hiring",
   },
 ];
 
 const breadcrumbSchema = generateBreadcrumbSchema([
-  { name: "Home", url: "https://workforcenext.in" },
-  {
-    name: "Hire Remote Developers from India",
-    url: "https://workforcenext.in/india-handled/",
-  },
+  { name: "Home", url: "https://wfnext.com" },
+  { name: "India-Handled", url: "https://wfnext.com/india-handled/" },
 ]);
 
-const faqSchema = generateFAQPageSchema(faqs);
-
-const articleSchema = generateArticleSchema({
-  headline: "Hire Remote Developers from India (Flexible Hours & Timezone)",
-  description:
-    "Hire dedicated, fractional, or full-time remote developers from India. Flexible hours, flexible timezone coverage, one B2B contract.",
-  url: "https://workforcenext.in/india-handled/",
-  datePublished: "2026-04-10",
-  dateModified: "2026-05-19",
-});
+const faqSchema = generateFAQPageSchema(faqItems);
 
 export default function IndiaHandledPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      {/* Hero */}
-      <section className="bg-gradient-to-br from-primary-50 via-white to-primary-50/50 dark:from-dark-900 dark:via-dark-900 dark:to-dark-800 pt-32 pb-16 md:pt-40 md:pb-20">
-        <div className="container-custom max-w-4xl">
-          <Badge variant="white" className="mb-4">
-            REMOTE DEVELOPERS FROM INDIA
-          </Badge>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-dark-900 dark:text-dark-50 leading-tight">
-            Hire remote developers from India. Flexible hours. Flexible
-            timezones.
+      {/* HERO */}
+      <section className="relative overflow-hidden bg-gradient-to-br from-primary-50 via-white to-primary-50/50 dark:from-dark-900 dark:via-dark-900 dark:to-dark-800 pt-32 pb-20 md:pt-40 md:pb-28">
+        <div aria-hidden className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary-200/30 dark:bg-primary-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
+        <div className="container-custom relative max-w-5xl">
+          <Badge variant="primary" className="mb-4">INDIA DELIVERY</Badge>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-dark-900 dark:text-dark-50 leading-[1.05]">
+            AI Automation Agency
+            <br />
+            <span className="text-primary-500">from India. For founders worldwide.</span>
           </h1>
-          <p className="mt-5 text-lg text-dark-400 dark:text-dark-300 max-w-2xl leading-relaxed">
-            Pre-vetted developers and QA engineers from India for startups
-            to enterprises. Dedicated, fractional, or full-time. Standard
-            India hours or shifted to overlap with your team. One product:
-            engineering capacity that ships.
+          <p className="mt-6 text-lg md:text-xl text-dark-500 dark:text-dark-300 max-w-3xl">
+            Four services delivered from India: consulting, automation, talent, and AEO/GEO growth. One contract, your timezone, senior delivery across the whole arc.
           </p>
-          <div className="mt-8 flex flex-col sm:flex-row gap-4">
-            <Button href="/contact" variant="primary" size="lg">
-              Book a 15-min call
-            </Button>
-            <Button href="#engagement" variant="outline" size="lg">
-              See engagement options
-            </Button>
+          <div className="mt-10 flex flex-wrap gap-4">
+            <Button href="/contact" size="lg">Book a discovery call</Button>
+            <Button href="/how-we-work" variant="outline" size="lg">See how we work</Button>
           </div>
-          <p className="mt-6 text-sm text-dark-400 dark:text-dark-400">
-            One B2B contract. Predictable monthly pricing. Paid trial
-            before commitment.
-          </p>
         </div>
       </section>
 
-      {/* Why us */}
+      {/* FOUR SERVICES */}
       <section className="section-padding bg-white dark:bg-dark-900">
-        <div className="container-custom max-w-5xl">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 mb-6">
-            What we actually offer
-          </h2>
-          <p className="text-dark-400 dark:text-dark-300 leading-relaxed mb-10 max-w-3xl">
-            One product, with the flexibility to shape it to your team.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            {whyPoints.map((point) => (
-              <div
-                key={point.title}
-                className="p-6 rounded-xl border border-dark-50 dark:border-dark-700 bg-white dark:bg-dark-900"
-              >
-                <h3 className="font-extrabold text-dark-900 dark:text-dark-50">
-                  {point.title}
-                </h3>
-                <p className="mt-2 text-sm text-dark-400 dark:text-dark-300 leading-relaxed">
-                  {point.body}
-                </p>
-              </div>
-            ))}
+        <div className="container-custom max-w-6xl">
+          <div className="text-center mb-14">
+            <p className="text-sm font-bold text-primary-500 uppercase tracking-widest mb-3">What we deliver</p>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-dark-900 dark:text-dark-50">
+              Four services. One India base.
+            </h2>
           </div>
-        </div>
-      </section>
-
-      {/* Engagement options */}
-      <section
-        id="engagement"
-        className="section-padding bg-primary-50 dark:bg-dark-800"
-      >
-        <div className="container-custom max-w-5xl">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 mb-6">
-            Flexible hours: three engagement shapes
-          </h2>
-          <p className="text-dark-400 dark:text-dark-300 leading-relaxed mb-10 max-w-3xl">
-            Match the engagement to the work, not the other way around.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {engagementOptions.map((option) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            {services.map((s) => (
               <div
-                key={option.title}
-                className="p-6 rounded-xl bg-white dark:bg-dark-900 border border-dark-50 dark:border-dark-700 flex flex-col"
+                key={s.num}
+                className="group relative p-6 rounded-2xl bg-white dark:bg-dark-800 border border-dark-50 dark:border-dark-700 hover:border-primary-300 dark:hover:border-primary-500/50 hover:shadow-xl hover:-translate-y-1 transition-all overflow-hidden"
               >
-                <h3 className="text-lg font-extrabold text-dark-900 dark:text-dark-50">
-                  {option.title}
-                </h3>
-                <p className="mt-1 text-sm font-bold text-primary-500 dark:text-primary-400">
-                  {option.hours}
-                </p>
-                <p className="mt-4 text-sm text-dark-400 dark:text-dark-300 leading-relaxed">
-                  {option.body}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Timezone options */}
-      <section className="section-padding bg-white dark:bg-dark-900">
-        <div className="container-custom max-w-5xl">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 mb-6">
-            Flexible timezones: shaped to your hours
-          </h2>
-          <p className="text-dark-400 dark:text-dark-300 leading-relaxed mb-10 max-w-3xl">
-            Engineers can work standard India hours or shift their schedule
-            to give meaningful daily overlap with your team.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            {timezoneOptions.map((tz) => (
-              <div
-                key={tz.region}
-                className="p-6 rounded-xl border border-dark-50 dark:border-dark-700"
-              >
-                <h3 className="font-extrabold text-dark-900 dark:text-dark-50">
-                  {tz.region}
-                </h3>
-                <p className="mt-2 text-sm text-dark-400 dark:text-dark-300 leading-relaxed">
-                  {tz.overlap}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* How it works */}
-      <section className="section-padding bg-primary-50 dark:bg-dark-800">
-        <div className="container-custom max-w-5xl">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 text-center mb-12">
-            How it works
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {howItWorks.map((s) => (
-              <div key={s.step} className="text-center">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary-100 dark:bg-primary-500/15 text-primary-700 dark:text-primary-400 font-bold text-lg mb-4">
-                  {s.step}
+                <span aria-hidden className="absolute -top-3 -right-2 text-7xl font-extrabold text-primary-50 dark:text-primary-500/10 leading-none select-none">
+                  {s.num}
+                </span>
+                <div className="relative">
+                  <p className="text-xs font-bold text-primary-500 uppercase tracking-widest">{s.tag}</p>
+                  <h3 className="mt-2 text-lg font-extrabold text-dark-900 dark:text-dark-50 leading-snug">{s.title}</h3>
+                  <p className="mt-2 text-sm text-dark-500 dark:text-dark-300">{s.line}</p>
                 </div>
-                <h3 className="font-bold text-dark-900 dark:text-dark-50">
-                  {s.title}
-                </h3>
-                <p className="mt-2 text-sm text-dark-400 dark:text-dark-300 leading-relaxed">
-                  {s.body}
-                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* INDIA ADVANTAGES */}
+      <section className="section-padding bg-primary-50/40 dark:bg-dark-800">
+        <div className="container-custom max-w-5xl">
+          <div className="text-center mb-12">
+            <p className="text-sm font-bold text-primary-500 uppercase tracking-widest mb-3">Why India</p>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-dark-900 dark:text-dark-50">
+              The senior delivery base.
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {indiaAdvantages.map((a) => (
+              <div
+                key={a.title}
+                className="flex items-start gap-4 p-6 rounded-xl bg-white dark:bg-dark-900 border border-dark-50 dark:border-dark-700 hover:shadow-card transition-all"
+              >
+                <div className="w-3 h-3 mt-2 rounded-full bg-primary-500 flex-shrink-0" />
+                <div>
+                  <h3 className="font-extrabold text-dark-900 dark:text-dark-50">{a.title}</h3>
+                  <p className="mt-1 text-sm text-dark-500 dark:text-dark-300">{a.line}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* TIMEZONES */}
+      <section className="section-padding bg-dark-900 text-white">
+        <div className="container-custom max-w-5xl">
+          <div className="text-center mb-12">
+            <p className="text-sm font-bold text-primary-400 uppercase tracking-widest mb-3">Timezones</p>
+            <h2 className="text-3xl md:text-4xl font-extrabold leading-tight">
+              Your working day, covered.
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {timezones.map((t) => (
+              <div
+                key={t.region}
+                className="p-6 rounded-2xl bg-gradient-to-br from-dark-800 to-dark-900 border border-dark-700 hover:border-primary-500/50 transition-all"
+              >
+                <h3 className="text-lg font-extrabold text-white">{t.region}</h3>
+                <p className="mt-2 text-sm text-primary-200">{t.hours}</p>
               </div>
             ))}
           </div>
@@ -361,48 +224,46 @@ export default function IndiaHandledPage() {
       </section>
 
       {/* FAQ */}
-      <section className="section-padding bg-white dark:bg-dark-900">
+      <section className="section-padding bg-primary-50/30 dark:bg-dark-800">
         <div className="container-custom max-w-3xl">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 mb-10">
-            Common questions
-          </h2>
-          <div className="space-y-6">
-            {faqs.map((faq) => (
-              <div
+          <div className="text-center mb-12">
+            <p className="text-sm font-bold text-primary-500 uppercase tracking-widest mb-3">FAQ</p>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-dark-900 dark:text-dark-50">
+              Quick answers.
+            </h2>
+          </div>
+          <div className="space-y-3">
+            {faqItems.map((faq) => (
+              <details
                 key={faq.question}
-                className="p-6 rounded-xl border border-dark-50 dark:border-dark-700"
+                className="group p-6 rounded-xl bg-white dark:bg-dark-900 border border-dark-50 dark:border-dark-700 hover:border-primary-300 dark:hover:border-primary-500/50 transition-all"
               >
-                <h3 className="font-extrabold text-dark-900 dark:text-dark-50">
-                  {faq.question}
-                </h3>
-                <p className="mt-3 text-dark-400 dark:text-dark-300 leading-relaxed">
-                  {faq.answer}
-                </p>
-              </div>
+                <summary className="flex items-center justify-between cursor-pointer list-none">
+                  <h3 className="font-bold text-dark-900 dark:text-dark-50 pr-4">{faq.question}</h3>
+                  <span className="flex-shrink-0 w-8 h-8 rounded-full bg-primary-50 dark:bg-dark-800 text-primary-500 flex items-center justify-center font-bold group-open:rotate-45 transition-transform">
+                    +
+                  </span>
+                </summary>
+                <p className="mt-4 text-dark-600 dark:text-dark-200 leading-relaxed">{faq.answer}</p>
+              </details>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="section-padding bg-gradient-to-br from-primary-50 via-white to-primary-50/50 dark:from-dark-900 dark:via-dark-900 dark:to-dark-800">
-        <div className="container-custom text-center max-w-2xl">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50">
-            Pick the engineer. Start shipping.
+      {/* CTA */}
+      <section className="relative overflow-hidden section-padding bg-gradient-to-br from-primary-600 via-primary-500 to-primary-700">
+        <div aria-hidden className="absolute inset-0 opacity-20">
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-white rounded-full mix-blend-overlay filter blur-3xl" />
+        </div>
+        <div className="container-custom relative text-center max-w-3xl">
+          <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-4 leading-tight">
+            Senior delivery, your timezone, one partner.
           </h2>
-          <p className="mt-4 text-dark-400 dark:text-dark-300 leading-relaxed">
-            15-min call. Tell us your stack, your hours, your timezone. We
-            return a shortlist within 48 hours. You interview, you pick, you
-            run a paid trial week. No commitment until you are ready.
+          <p className="text-lg text-primary-50 mb-8">
+            Tell us where you are. Scoped proposal in 48 hours.
           </p>
-          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="primary" size="lg">
-              Book the 15-min call
-            </Button>
-            <Button href="/how-we-work" variant="outline" size="lg">
-              See the full process
-            </Button>
-          </div>
+          <Button href="/contact" variant="white" size="lg">Book a discovery call</Button>
         </div>
       </section>
     </>

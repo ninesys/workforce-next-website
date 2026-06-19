@@ -14,7 +14,7 @@ export const metadata: Metadata = {
       "Terms of Use for Workforce Next website and services.",
   },
   alternates: {
-    canonical: "https://workforcenext.in/terms-of-use/",
+    canonical: "https://wfnext.com/terms-of-use/",
   },
 };
 

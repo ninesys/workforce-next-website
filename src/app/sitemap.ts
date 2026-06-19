@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { blogPosts } from "@/data/blogPosts";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://workforcenext.in";
+  const baseUrl = "https://wfnext.com";
   const now = new Date();
 
   const staticRoutes: MetadataRoute.Sitemap = [
@@ -62,10 +62,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Core pages
     { url: `${baseUrl}/how-we-work/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/why-teams-stay/`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/cost-of-switching/`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/context-continuity-guarantee/`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/not-another-body-shop/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/ai-native-india/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/india-handled/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/about/`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/about/gaurav/`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },

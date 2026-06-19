@@ -34,6 +34,12 @@ const EXACT: Record<string, string> = {
   "/hire-data-and-ai-experts": AI_DEV,
   "/hire-frontend-developers": FRONTEND,
 
+  // Retired talent-shop differentiator pages (deleted 2026-06-20 in 4-service repositioning)
+  "/ai-native-india": "/about/",
+  "/not-another-body-shop": "/about/",
+  "/cost-of-switching": "/about/",
+  "/context-continuity-guarantee": "/how-we-work/",
+
   // Old .html pages
   "/pricing.html": EPI,
   "/clients.html": "/",

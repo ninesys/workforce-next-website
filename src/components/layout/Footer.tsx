@@ -6,6 +6,21 @@ import { siteMetadata } from "@/data/siteMetadata";
 export default function Footer() {
   return (
     <footer className="bg-dark-900 dark:bg-dark-900 text-dark-200 border-t border-dark-800 dark:border-dark-700/50">
+      {/* Forte ribbon */}
+      <div className="border-b border-dark-700/60">
+        <div className="container-custom py-6 md:py-7">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-center gap-3 sm:gap-5 text-center">
+            <span className="text-xs font-bold text-primary-400 uppercase tracking-widest">
+              Our forte
+            </span>
+            <span className="hidden sm:inline w-1 h-1 rounded-full bg-primary-500" />
+            <span className="text-base sm:text-lg font-extrabold text-white">
+              Ownership <span className="text-primary-400">·</span> Automation <span className="text-primary-400">·</span> Engineering
+            </span>
+          </div>
+        </div>
+      </div>
+
       <div className="container-custom py-14 md:py-20">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 lg:gap-12">
           {/* Brand */}
@@ -20,7 +35,7 @@ export default function Footer() {
               />
             </Link>
             <p className="mt-5 text-sm text-dark-300 leading-relaxed max-w-xs">
-              Building dedicated AI-era remote engineering teams, matched for longevity and retained by design.
+              AI automation agency for founders. Consulting, automation, talent, and AEO/GEO growth from one partner.
             </p>
             <a
               href="https://www.linkedin.com/company/workforce-next"

@@ -21,25 +21,23 @@ export default function FAQPage() {
 
   return (
     <>
-      <section className="bg-gradient-to-br from-primary-50 via-white to-primary-50/50 dark:from-dark-900 dark:via-dark-900 dark:to-dark-800 pt-32 pb-16 md:pt-40 md:pb-20">
-        <div className="container-custom">
-          <Badge variant="primary" className="mb-4">
-            FAQ
-          </Badge>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-dark-900 dark:text-dark-50">
-            Frequently asked questions
+      <section className="relative overflow-hidden bg-gradient-to-br from-primary-50 via-white to-primary-50/50 dark:from-dark-900 dark:via-dark-900 dark:to-dark-800 pt-32 pb-16 md:pt-40 md:pb-20">
+        <div aria-hidden className="absolute top-0 right-0 w-[400px] h-[400px] bg-primary-200/30 dark:bg-primary-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
+        <div className="container-custom relative max-w-4xl">
+          <Badge variant="primary" className="mb-4">FAQ</Badge>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-dark-900 dark:text-dark-50 leading-[1.05]">
+            Quick answers.
+            <br />
+            <span className="text-primary-500">Across all four services.</span>
           </h1>
-          <p className="mt-4 text-lg text-dark-400 dark:text-dark-300 max-w-2xl">
-            Answers to common questions about hiring dedicated developers from
-            India, how SethAI matches candidates, vibe coding, engagement models,
-            and how our teams work.{" "}
+          <p className="mt-6 text-lg text-dark-500 dark:text-dark-300 max-w-2xl">
+            Common questions about our consulting, automation, talent, and AEO/GEO growth work.{" "}
             <a
               href="/contact"
-              className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 underline"
+              className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 underline font-bold"
             >
-              Can&apos;t find your answer? Get in touch
+              Can&apos;t find yours? Book a discovery call.
             </a>
-            .
           </p>
         </div>
       </section>

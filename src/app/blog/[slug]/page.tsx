@@ -24,8 +24,8 @@ export function generateMetadata({ params }: Props): Metadata {
   const ogImageUrl = post.image
     ? post.image.startsWith("http")
       ? post.image
-      : `https://workforcenext.in${post.image.startsWith("/") ? "" : "/"}${post.image}`
-    : "https://workforcenext.in/images/og-default.png";
+      : `https://wfnext.com${post.image.startsWith("/") ? "" : "/"}${post.image}`
+    : "https://wfnext.com/images/og-default.png";
 
   const socialTitle = post.ogTitle ?? post.title;
   const socialDescription = post.ogDescription ?? post.metaDescription;
@@ -56,9 +56,9 @@ export function generateMetadata({ params }: Props): Metadata {
       images: [ogImageUrl],
     },
     alternates: {
-      canonical: `https://workforcenext.in/blog/${post.slug}/`,
+      canonical: `https://wfnext.com/blog/${post.slug}/`,
       types: {
-        "text/markdown": `https://workforcenext.in/blog/${post.slug}.md`,
+        "text/markdown": `https://wfnext.com/blog/${post.slug}.md`,
       },
     },
   };
@@ -69,16 +69,16 @@ export default function BlogPostPage({ params }: Props) {
   if (!post) notFound();
 
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: "Home", url: "https://workforcenext.in" },
-    { name: "Blog", url: "https://workforcenext.in/blog/" },
-    { name: post.title, url: `https://workforcenext.in/blog/${post.slug}/` },
+    { name: "Home", url: "https://wfnext.com" },
+    { name: "Blog", url: "https://wfnext.com/blog/" },
+    { name: post.title, url: `https://wfnext.com/blog/${post.slug}/` },
   ]);
 
   const articleImageUrl = post.image
     ? post.image.startsWith("http")
       ? post.image
-      : `https://workforcenext.in${post.image.startsWith("/") ? "" : "/"}${post.image}`
-    : "https://workforcenext.in/images/og-default.png";
+      : `https://wfnext.com${post.image.startsWith("/") ? "" : "/"}${post.image}`
+    : "https://wfnext.com/images/og-default.png";
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -91,7 +91,7 @@ export default function BlogPostPage({ params }: Props) {
     author: {
       "@type": "Person",
       name: post.author,
-      url: "https://workforcenext.in/about/gaurav/",
+      url: "https://wfnext.com/about/gaurav/",
       jobTitle: post.authorRole,
       worksFor: {
         "@type": "Organization",
@@ -101,15 +101,15 @@ export default function BlogPostPage({ params }: Props) {
     publisher: {
       "@type": "Organization",
       name: "Workforce Next",
-      url: "https://workforcenext.in",
+      url: "https://wfnext.com",
       logo: {
         "@type": "ImageObject",
-        url: "https://workforcenext.in/images/logo.webp",
+        url: "https://wfnext.com/images/logo.webp",
       },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://workforcenext.in/blog/${post.slug}/`,
+      "@id": `https://wfnext.com/blog/${post.slug}/`,
     },
     keywords: post.keywords.join(", "),
   };
@@ -119,12 +119,12 @@ export default function BlogPostPage({ params }: Props) {
     "@type": "Person",
     name: post.author,
     jobTitle: post.authorRole,
-    url: "https://workforcenext.in/about/gaurav/",
-    image: "https://workforcenext.in/images/gaurav.jpeg",
+    url: "https://wfnext.com/about/gaurav/",
+    image: "https://wfnext.com/images/gaurav.jpeg",
     worksFor: {
       "@type": "Organization",
       name: "Workforce Next",
-      url: "https://workforcenext.in",
+      url: "https://wfnext.com",
     },
     sameAs: ["https://linkedin.com/in/post2seth"],
   };

@@ -1,12 +1,22 @@
 "use client";
 
-import { useState, FormEvent } from "react";
+import { useState, FormEvent, useRef } from "react";
 import Button from "@/components/ui/Button";
+
+const MAX_FILE_BYTES = 5 * 1024 * 1024; // 5 MB
+const ALLOWED_EXT = [".pdf", ".doc", ".docx"];
+const ALLOWED_TYPES = [
+  "application/pdf",
+  "application/msword",
+  "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+];
 
 export default function CareersForm() {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
+  const [fileName, setFileName] = useState("");
+  const fileInputRef = useRef<HTMLInputElement>(null);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -14,28 +24,93 @@ export default function CareersForm() {
     role: "",
     experience: "",
     portfolio: "",
-    resumeLink: "",
     coverNote: "",
-    website: "", // honeypot — leave empty
+    website: "", // honeypot
   });
+
+  const resetForm = () => {
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      role: "",
+      experience: "",
+      portfolio: "",
+      coverNote: "",
+      website: "",
+    });
+    setFileName("");
+    if (fileInputRef.current) fileInputRef.current.value = "";
+  };
+
+  const validateFile = (file: File): string => {
+    if (file.size > MAX_FILE_BYTES) {
+      return "Resume must be 5 MB or smaller.";
+    }
+    const lower = file.name.toLowerCase();
+    const extOk = ALLOWED_EXT.some((ext) => lower.endsWith(ext));
+    const typeOk = ALLOWED_TYPES.includes(file.type);
+    if (!extOk && !typeOk) {
+      return "Only PDF, DOC, or DOCX files are accepted.";
+    }
+    return "";
+  };
+
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    setError("");
+    if (!file) {
+      setFileName("");
+      return;
+    }
+    const errMsg = validateFile(file);
+    if (errMsg) {
+      setError(errMsg);
+      setFileName("");
+      e.target.value = "";
+      return;
+    }
+    setFileName(file.name);
+  };
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setSubmitting(true);
     setError("");
 
+    const file = fileInputRef.current?.files?.[0];
+    if (!file) {
+      setError("Please attach your resume (PDF, DOC, or DOCX).");
+      setSubmitting(false);
+      return;
+    }
+    const fileError = validateFile(file);
+    if (fileError) {
+      setError(fileError);
+      setSubmitting(false);
+      return;
+    }
+
     try {
+      const body = new FormData();
+      body.append("form-name", "careers");
+      for (const [k, v] of Object.entries(formData)) {
+        body.append(k, v);
+      }
+      body.append("resume", file, file.name);
+
       const res = await fetch("/api/submit-form", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ "form-name": "careers", ...formData }),
+        body,
       });
 
       if (res.ok) {
         setSubmitted(true);
       } else {
+        const data = await res.json().catch(() => ({}));
         setError(
-          "Something went wrong. Please try again or email your resume to hello@workforcenext.in."
+          data.error ||
+            "Something went wrong. Please try again or email your resume to hello@workforcenext.in.",
         );
       }
     } catch {
@@ -66,17 +141,7 @@ export default function CareersForm() {
         <button
           onClick={() => {
             setSubmitted(false);
-            setFormData({
-              name: "",
-              email: "",
-              phone: "",
-              role: "",
-              experience: "",
-              portfolio: "",
-              resumeLink: "",
-              coverNote: "",
-              website: "",
-            });
+            resetForm();
           }}
           className="mt-4 text-primary-500 text-sm font-medium hover:underline"
         >
@@ -88,8 +153,10 @@ export default function CareersForm() {
 
   return (
     <form onSubmit={handleSubmit} name="careers" className="space-y-5">
-      <input type="hidden" name="form-name" value="careers" />
-      <div aria-hidden="true" style={{ position: "absolute", left: "-9999px", top: "-9999px", width: 0, height: 0, overflow: "hidden" }}>
+      <div
+        aria-hidden="true"
+        style={{ position: "absolute", left: "-9999px", top: "-9999px", width: 0, height: 0, overflow: "hidden" }}
+      >
         <label htmlFor="career-website">Leave this field blank</label>
         <input
           id="career-website"
@@ -206,23 +273,47 @@ export default function CareersForm() {
         </select>
       </div>
 
+      {/* Resume upload */}
       <div>
-        <label htmlFor="career-resume" className="block text-sm font-medium text-dark-700 dark:text-dark-200 mb-1">
-          Resume Link (Google Drive / Dropbox / LinkedIn) *
+        <label
+          htmlFor="career-resume"
+          className="block text-sm font-medium text-dark-700 dark:text-dark-200 mb-1"
+        >
+          Resume *
+        </label>
+        <label
+          htmlFor="career-resume"
+          className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 p-4 border-2 border-dashed border-dark-200 dark:border-dark-600 rounded-[10px] bg-white dark:bg-dark-800 hover:border-primary-400 dark:hover:border-primary-500 cursor-pointer transition-colors"
+        >
+          <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-primary-50 dark:bg-primary-500/10 text-primary-500 flex items-center justify-center">
+            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M12 16.5V9.75m0 0 3 3m-3-3-3 3M6.75 19.5a4.5 4.5 0 0 1-1.41-8.775 5.25 5.25 0 0 1 10.233-2.33 3 3 0 0 1 3.758 3.848A3.752 3.752 0 0 1 18 19.5H6.75Z" />
+            </svg>
+          </div>
+          <div className="flex-1 min-w-0">
+            <p className="text-sm font-bold text-dark-900 dark:text-dark-50 truncate">
+              {fileName || "Click to attach your resume"}
+            </p>
+            <p className="mt-0.5 text-xs text-dark-400 dark:text-dark-400">
+              PDF, DOC, or DOCX. Max 5 MB.
+            </p>
+          </div>
+          {fileName && (
+            <span className="self-start sm:self-center inline-flex items-center px-3 py-1 rounded-full bg-primary-50 dark:bg-primary-500/15 text-primary-600 dark:text-primary-300 text-xs font-bold">
+              Attached
+            </span>
+          )}
         </label>
         <input
           id="career-resume"
-          name="resumeLink"
-          type="url"
+          ref={fileInputRef}
+          name="resume"
+          type="file"
+          accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
           required
-          value={formData.resumeLink}
-          onChange={(e) => setFormData({ ...formData, resumeLink: e.target.value })}
-          className={inputClass}
-          placeholder="https://drive.google.com/file/..."
+          onChange={handleFileChange}
+          className="sr-only"
         />
-        <p className="mt-1 text-xs text-dark-300 dark:text-dark-400">
-          Upload your resume to Google Drive or Dropbox and paste the public link here.
-        </p>
       </div>
 
       <div>
@@ -256,7 +347,7 @@ export default function CareersForm() {
       </div>
 
       <Button type="submit" variant="primary" size="lg" className="w-full" disabled={submitting}>
-        {submitting ? "Submitting..." : "Submit resume"}
+        {submitting ? "Submitting..." : "Submit application"}
       </Button>
     </form>
   );

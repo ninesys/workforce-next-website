@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     "workflow automation consultants",
   ],
   alternates: {
-    canonical: "https://workforcenext.in",
+    canonical: "https://wfnext.com",
   },
   openGraph: {
     ...ogDefaults("/"),

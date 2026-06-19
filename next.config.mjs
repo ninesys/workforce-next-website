@@ -7,10 +7,24 @@ const nextConfig = {
     // live in middleware.ts so they resolve in a single hop regardless of
     // trailing-slash normalization.
     return [
+      // www.wfnext.com → apex
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.wfnext.com" }],
+        destination: "https://wfnext.com/:path*",
+        permanent: true,
+      },
+      // workforcenext.in → wfnext.com (legacy primary)
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "workforcenext.in" }],
+        destination: "https://wfnext.com/:path*",
+        permanent: true,
+      },
       {
         source: "/:path*",
         has: [{ type: "host", value: "www.workforcenext.in" }],
-        destination: "https://workforcenext.in/:path*",
+        destination: "https://wfnext.com/:path*",
         permanent: true,
       },
     ];

@@ -27,7 +27,7 @@ export const metadata: Metadata = {
       "Get a senior developer matched by SethAI for a 4-week MVP sprint. Fixed scope, 1-week paid trial.",
   },
   alternates: {
-    canonical: "https://workforcenext.in/for/founders/",
+    canonical: "https://wfnext.com/for/founders/",
   },
 };
 
@@ -85,12 +85,12 @@ export default function FoundersPage() {
   const serviceSchema = generateServiceSchema(
     "MVP Sprint for Founders",
     "4-week fixed-scope MVP development with a senior developer matched by SethAI. Includes 1-week paid trial.",
-    "https://workforcenext.in/for/founders/"
+    "https://wfnext.com/for/founders/"
   );
 
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: "Home", url: "https://workforcenext.in" },
-    { name: "For Founders", url: "https://workforcenext.in/for/founders/" },
+    { name: "Home", url: "https://wfnext.com" },
+    { name: "For Founders", url: "https://wfnext.com/for/founders/" },
   ]);
 
   return (

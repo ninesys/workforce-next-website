@@ -38,7 +38,7 @@ Workforce Next is an AI automation agency that bundles four distinct services. P
 
 ## Contact
 
-- Website: https://workforcenext.in
+- Website: https://wfnext.com
 - Email: hello@workforcenext.in
 - Phone: +91-9582595166
 - Office: DLF Cyber City, Gurugram, Haryana, India
@@ -47,24 +47,24 @@ Workforce Next is an AI automation agency that bundles four distinct services. P
 
 ## Detailed Pages
 
-- [Hire AI Developers](https://workforcenext.in/hire/ai-developers)
-- [Hire Data Engineers](https://workforcenext.in/hire/data-engineers)
-- [Hire Frontend Engineers](https://workforcenext.in/hire/frontend-engineers)
-- [Hire Backend Engineers](https://workforcenext.in/hire/backend-engineers)
-- [Hire Product Engineers](https://workforcenext.in/hire/product-engineers)
-- [Hire Vibe-Code Engineer](https://workforcenext.in/hire/vibe-code-engineer)
-- [Hire Cloud Cost Engineer](https://workforcenext.in/hire/cloud-cost-engineer)
-- [Hire QA Engineers](https://workforcenext.in/hire/qa-testers)
-- [For Founders (MVP Sprint)](https://workforcenext.in/for/founders)
-- [For Startups (Engineering Pod)](https://workforcenext.in/for/startups)
-- [For Enterprise](https://workforcenext.in/for/enterprise)
-- [SethAI Recruiter](https://workforcenext.in/products/seth-ai-recruiter)
-- [How We Work](https://workforcenext.in/how-we-work)
-- [Why Teams Stay](https://workforcenext.in/why-teams-stay)
-- [Cost of Switching](https://workforcenext.in/cost-of-switching)
-- [Context Continuity Guarantee](https://workforcenext.in/context-continuity-guarantee)
-- [About](https://workforcenext.in/about)
-- [FAQ](https://workforcenext.in/faq)
-- [Blog](https://workforcenext.in/blog)
-- [Contact](https://workforcenext.in/contact)
-- [Careers](https://workforcenext.in/careers)
+- [Hire AI Developers](https://wfnext.com/hire/ai-developers)
+- [Hire Data Engineers](https://wfnext.com/hire/data-engineers)
+- [Hire Frontend Engineers](https://wfnext.com/hire/frontend-engineers)
+- [Hire Backend Engineers](https://wfnext.com/hire/backend-engineers)
+- [Hire Product Engineers](https://wfnext.com/hire/product-engineers)
+- [Hire Vibe-Code Engineer](https://wfnext.com/hire/vibe-code-engineer)
+- [Hire Cloud Cost Engineer](https://wfnext.com/hire/cloud-cost-engineer)
+- [Hire QA Engineers](https://wfnext.com/hire/qa-testers)
+- [For Founders (MVP Sprint)](https://wfnext.com/for/founders)
+- [For Startups (Engineering Pod)](https://wfnext.com/for/startups)
+- [For Enterprise](https://wfnext.com/for/enterprise)
+- [SethAI Recruiter](https://wfnext.com/products/seth-ai-recruiter)
+- [How We Work](https://wfnext.com/how-we-work)
+- [Why Teams Stay](https://wfnext.com/why-teams-stay)
+- [Cost of Switching](https://wfnext.com/cost-of-switching)
+- [Context Continuity Guarantee](https://wfnext.com/context-continuity-guarantee)
+- [About](https://wfnext.com/about)
+- [FAQ](https://wfnext.com/faq)
+- [Blog](https://wfnext.com/blog)
+- [Contact](https://wfnext.com/contact)
+- [Careers](https://wfnext.com/careers)

@@ -5,145 +5,147 @@ import Badge from "@/components/ui/Badge";
 import { generateBreadcrumbSchema } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
-  title: "Why Teams Stay - Retention Philosophy",
+  title: "Why Teams Stay | One Partner Across All Four Services | Workforce Next",
   description:
-    "Our retention approach is built on three mechanisms: SethAI screening for longevity, context documentation, and monthly engineering advisory check-ins. Here is why teams stay.",
+    "We carry the whole arc: consulting, automation, talent, and growth. No handoffs. Context compounds across every motion. Here is why customers keep us across all four services.",
   keywords: [
-    "offshore developer retention",
-    "remote team retention",
-    "developer engagement offshore",
-    "reduce offshore attrition",
-    "SethAI screening",
-    "engineering advisory check-in",
-    "dedicated team retention",
+    "AI automation agency retention",
+    "one partner four services",
+    "agency context continuity",
+    "AI agency long term",
+    "agency that delivers",
   ],
   openGraph: {
     ...ogDefaults("/why-teams-stay/"),
     images: ["/images/og-default.png"],
-    title: "Why Teams Stay",
+    title: "Why Teams Stay | One Partner Across All Four Services",
     description:
-      "Our retention approach is built on three mechanisms: SethAI screening, context docs, and monthly advisory.",
+      "Consulting, automation, talent, and growth from one partner. Context compounds. Customers stay.",
   },
   alternates: {
-    canonical: "https://workforcenext.in/why-teams-stay/",
+    canonical: "https://wfnext.com/why-teams-stay/",
   },
 };
 
-const mechanisms = [
+const reasons = [
   {
-    title: "SethAI screening for longevity",
-    description:
-      "Our AI recruiter does not just test coding skills. SethAI evaluates ownership mindset, career alignment, and communication reliability. We look for people who want to build something meaningful, not people who are just looking for the next pay bump.",
-    icon: (
-      <svg
-        className="w-7 h-7"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        strokeWidth={1.5}
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"
-        />
-      </svg>
-    ),
+    num: "01",
+    tag: "ONE PARTNER",
+    title: "Whole arc, no handoffs",
+    line: "Same team carries you from deciding what to build, to shipping it, to running it, to bringing buyers in.",
   },
   {
-    title: "Context documentation from day one",
-    description:
-      "Every engagement gets a codebase walkthrough, domain glossary, and architecture decision log. These living documents give developers clarity and purpose. They know why things were built a certain way, not just what exists. That understanding creates ownership.",
-    icon: (
-      <svg
-        className="w-7 h-7"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        strokeWidth={1.5}
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"
-        />
-      </svg>
-    ),
+    num: "02",
+    tag: "CONTEXT",
+    title: "Each motion sharpens the next",
+    line: "What we learn in consulting shapes the build. What we ship informs the automation. What we automate feeds the growth motion.",
   },
   {
-    title: "Monthly engineering advisory check-in",
-    description:
-      "Every month, a senior engineering advisor reviews team health, velocity trends, and any friction points. Small problems get fixed before they grow into reasons to leave. Think of it as preventive maintenance for your team.",
-    icon: (
-      <svg
-        className="w-7 h-7"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        strokeWidth={1.5}
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"
-        />
-      </svg>
-    ),
+    num: "03",
+    tag: "DELIVERY",
+    title: "Fixed scope, weekly cadence",
+    line: "Every engagement is scoped. Every week you see what shipped. No surprises, no scope creep, no monthly retainer trap.",
   },
 ];
 
+const proofs = [
+  { tag: "Consulting", line: "Architecture decisions you can point to a year later." },
+  { tag: "Automation", line: "Workflows still running long after we handed them over." },
+  { tag: "Talent", line: "Developers who actually understand the product." },
+  { tag: "Growth", line: "Compounding organic traffic and AI citations." },
+];
+
 const breadcrumbSchema = generateBreadcrumbSchema([
-  { name: "Home", url: "https://workforcenext.in" },
-  { name: "Why Teams Stay", url: "https://workforcenext.in/why-teams-stay/" },
+  { name: "Home", url: "https://wfnext.com" },
+  { name: "Why Teams Stay", url: "https://wfnext.com/why-teams-stay/" },
 ]);
 
 export default function WhyTeamsStayPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
-      {/* Hero */}
-      <section className="bg-gradient-to-br from-primary-50 via-white to-primary-50/50 dark:from-dark-900 dark:via-dark-900 dark:to-dark-800 pt-32 pb-16 md:pt-40 md:pb-20">
-        <div className="container-custom max-w-4xl">
-          <Badge variant="white" className="mb-4">
-            RETENTION
+      {/* HERO */}
+      <section className="relative overflow-hidden bg-gradient-to-br from-dark-900 via-dark-800 to-primary-900 pt-32 pb-20 md:pt-40 md:pb-28">
+        <div aria-hidden className="absolute inset-0 opacity-30">
+          <div className="absolute top-20 left-10 w-72 h-72 bg-primary-500 rounded-full mix-blend-screen filter blur-3xl animate-pulse" />
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary-400 rounded-full mix-blend-screen filter blur-3xl animate-pulse" style={{ animationDelay: "1s" }} />
+        </div>
+        <div className="container-custom relative max-w-4xl text-center">
+          <Badge variant="primary" className="mb-6 bg-primary-500/20 text-primary-200 border-primary-400/30">
+            WHY TEAMS STAY
           </Badge>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-dark-900 dark:text-dark-50 leading-tight">
-            Why teams stay
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white leading-[1.05]">
+            One partner.
+            <br />
+            <span className="bg-gradient-to-r from-primary-300 via-primary-400 to-primary-200 bg-clip-text text-transparent">
+              Whole arc.
+            </span>
           </h1>
-          <p className="mt-4 text-lg text-dark-400 dark:text-dark-300 max-w-2xl">
-            The biggest problem with offshore development is not finding good
-            people. It is keeping them. We built Workforce Next around three
-            retention mechanisms that address why developers actually leave.
+          <p className="mt-8 text-lg md:text-xl text-primary-100/90 max-w-2xl mx-auto">
+            Most agencies do one thing. We carry consulting, automation, talent, and growth. Context compounds. Customers stay.
           </p>
+
+          {/* Forte ribbon */}
+          <div className="mt-10 inline-flex flex-wrap items-center justify-center gap-3 px-6 py-3 rounded-2xl bg-white/10 backdrop-blur-sm border border-primary-400/30">
+            <span className="text-xs font-bold text-primary-200 uppercase tracking-widest">Our forte</span>
+            <span className="hidden sm:inline w-1 h-1 rounded-full bg-primary-300" />
+            <span className="text-base sm:text-lg font-extrabold text-white">
+              Ownership <span className="text-primary-300">·</span> Automation <span className="text-primary-300">·</span> Engineering
+            </span>
+          </div>
         </div>
       </section>
 
-      {/* The three mechanisms */}
+      {/* REASONS */}
       <section className="section-padding bg-white dark:bg-dark-900">
-        <div className="container-custom max-w-4xl">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 mb-10 text-center">
-            Three mechanisms that keep teams together
-          </h2>
-          <div className="space-y-8">
-            {mechanisms.map((mechanism) => (
+        <div className="container-custom max-w-6xl">
+          <div className="text-center mb-14">
+            <p className="text-sm font-bold text-primary-500 uppercase tracking-widest mb-3">Three reasons</p>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-dark-900 dark:text-dark-50">
+              Why one partner beats four vendors.
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            {reasons.map((r) => (
               <div
-                key={mechanism.title}
-                className="flex gap-5 p-6 rounded-xl border border-dark-50 dark:border-dark-700 hover:shadow-card transition-all"
+                key={r.num}
+                className="group relative p-7 rounded-2xl bg-white dark:bg-dark-800 border border-dark-50 dark:border-dark-700 hover:border-primary-300 dark:hover:border-primary-500/50 hover:shadow-xl hover:-translate-y-1 transition-all overflow-hidden"
               >
-                <div className="text-primary-500 shrink-0 mt-1">
-                  {mechanism.icon}
+                <span aria-hidden className="absolute -top-3 -right-2 text-7xl font-extrabold text-primary-50 dark:text-primary-500/10 leading-none select-none">
+                  {r.num}
+                </span>
+                <div className="relative">
+                  <p className="text-xs font-bold text-primary-500 uppercase tracking-widest">{r.tag}</p>
+                  <h3 className="mt-2 text-xl font-extrabold text-dark-900 dark:text-dark-50">{r.title}</h3>
+                  <p className="mt-3 text-sm text-dark-500 dark:text-dark-300 leading-relaxed">{r.line}</p>
+                  <div className="mt-5 h-1 w-12 bg-gradient-to-r from-primary-400 to-primary-600 rounded-full group-hover:w-24 transition-all duration-300" />
                 </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* WHAT STAYS */}
+      <section className="section-padding bg-primary-50/40 dark:bg-dark-800">
+        <div className="container-custom max-w-5xl">
+          <div className="text-center mb-12">
+            <p className="text-sm font-bold text-primary-500 uppercase tracking-widest mb-3">What lasts</p>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-dark-900 dark:text-dark-50">
+              What we leave behind.
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {proofs.map((p) => (
+              <div
+                key={p.tag}
+                className="flex items-start gap-4 p-6 rounded-xl bg-white dark:bg-dark-900 border border-dark-50 dark:border-dark-700 hover:shadow-card transition-all"
+              >
+                <div className="w-3 h-3 mt-2 rounded-full bg-primary-500 flex-shrink-0" />
                 <div>
-                  <h3 className="text-xl font-extrabold text-dark-900 dark:text-dark-50">
-                    {mechanism.title}
-                  </h3>
-                  <p className="mt-2 text-dark-400 dark:text-dark-300 leading-relaxed">
-                    {mechanism.description}
-                  </p>
+                  <p className="text-xs font-bold text-primary-500 uppercase tracking-widest">{p.tag}</p>
+                  <p className="mt-1 text-base font-bold text-dark-900 dark:text-dark-50">{p.line}</p>
                 </div>
               </div>
             ))}
@@ -152,21 +154,21 @@ export default function WhyTeamsStayPage() {
       </section>
 
       {/* CTA */}
-      <section className="section-padding bg-primary-50 dark:bg-dark-800">
-        <div className="container-custom text-center max-w-2xl">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50">
-            Build a team that lasts
+      <section className="relative overflow-hidden section-padding bg-gradient-to-br from-primary-600 via-primary-500 to-primary-700">
+        <div aria-hidden className="absolute inset-0 opacity-20">
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-white rounded-full mix-blend-overlay filter blur-3xl" />
+        </div>
+        <div className="container-custom relative text-center max-w-3xl">
+          <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-4 leading-tight">
+            Get one partner. Drop three vendors.
           </h2>
-          <p className="mt-4 text-dark-400 dark:text-dark-300">
-            Tell us what you are building and we will show you how our retention
-            approach works in practice.
+          <p className="text-lg text-primary-50 mb-8">
+            Tell us where you are. Scoped proposal in 48 hours.
           </p>
-          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="primary" size="lg">
-              Start a conversation
-            </Button>
-            <Button href="/how-we-work" variant="outline" size="lg">
-              See our process
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button href="/contact" variant="white" size="lg">Book a discovery call</Button>
+            <Button href="/how-we-work" variant="outline" size="lg" className="!border-white/30 !text-white hover:!border-white hover:!bg-white/10">
+              See how we work
             </Button>
           </div>
         </div>

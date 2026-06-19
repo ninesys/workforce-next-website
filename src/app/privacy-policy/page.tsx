@@ -14,7 +14,7 @@ export const metadata: Metadata = {
       "Privacy Policy for Workforce Next. Learn how we handle your data.",
   },
   alternates: {
-    canonical: "https://workforcenext.in/privacy-policy/",
+    canonical: "https://wfnext.com/privacy-policy/",
   },
 };
 

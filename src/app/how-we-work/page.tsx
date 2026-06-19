@@ -8,133 +8,225 @@ import {
 } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
-  title: "How We Work - Build Your Remote Engineering Team",
+  title: "How We Work | AI Automation Agency for Founders | Workforce Next",
   description:
-    "Our 7-step process for building dedicated remote engineering teams that stay. From SethAI screening to structured onboarding and monthly advisory check-ins.",
+    "How we deliver our four services: product consulting, AI agents for operations, dedicated developers and QA, and AEO/GEO organic growth. One discovery call, one partner, four motions.",
   keywords: [
-    "how to hire remote developers",
-    "offshore developer onboarding process",
-    "dedicated team engagement model",
-    "remote engineering team setup",
-    "SethAI developer screening",
-    "staff augmentation process",
-    "hire developers India process",
+    "AI automation agency process",
+    "how we work workforce next",
+    "AI automation engagement model",
+    "product development consulting process",
+    "dedicated developer onboarding",
+    "AEO GEO process",
   ],
   openGraph: {
     ...ogDefaults("/how-we-work/"),
     images: ["/images/og-default.png"],
-    title: "How We Work - Build Your Remote Engineering Team",
+    title: "How We Work | AI Automation Agency for Founders",
     description:
-      "Our 7-step process for building dedicated remote engineering teams that stay.",
+      "How we deliver our four services. One partner across the whole arc.",
   },
   alternates: {
-    canonical: "https://workforcenext.in/how-we-work/",
+    canonical: "https://wfnext.com/how-we-work/",
   },
 };
+
+const arc = [
+  {
+    label: "Decide",
+    pillar: "01 · CONSULTING",
+    headline: "Product development consulting.",
+    line: "Architecture, stack, scope. We help you decide what to build.",
+  },
+  {
+    label: "Build",
+    pillar: "02 · TALENT",
+    headline: "Dedicated developers and QA.",
+    line: "Senior engineers in your timezone. They ship and test it.",
+  },
+  {
+    label: "Automate",
+    pillar: "03 · AUTOMATION",
+    headline: "AI agents for operations.",
+    line: "Workflows and AI agents take repetitive ops off your team.",
+  },
+  {
+    label: "Grow",
+    pillar: "04 · GROWTH",
+    headline: "AEO + GEO + SEO.",
+    line: "Get cited by ChatGPT, Perplexity, Gemini. Found in Google.",
+  },
+];
 
 const steps = [
   {
     number: "01",
-    name: "Share your role and team context",
-    text: "Tell us what you are building, the tech stack, team size, and what kind of person would thrive in your environment. The more context we have, the better the match.",
+    name: "Share what you are trying to ship",
+    text: "Tell us where you are: pre-PMF, scaling, or stuck. We scope a single engagement or a bundle of the four services.",
   },
   {
     number: "02",
-    name: "SethAI screens for skills and longevity",
-    text: "Our AI recruiter, SethAI, evaluates candidates on technical depth, ownership mindset, career alignment, and communication reliability. You get a 1-page match report for each shortlisted candidate.",
+    name: "Scoped proposal in 48 hours",
+    text: "Written scope, fixed-price quote, and a clear delivery timeline. Approve and we start the following week.",
   },
   {
     number: "03",
-    name: "You interview the shortlist (2-3 candidates)",
-    text: "We send you 2 to 3 pre-vetted candidates. You run your own interviews, pair-programming sessions, or technical deep-dives. No pressure to accept anyone who does not feel right.",
+    name: "Embedded delivery, weekly cadence",
+    text: "Whichever service you picked, the team works your timezone and reports weekly. You see every change before it goes live.",
   },
   {
     number: "04",
-    name: "One-week paid trial",
-    text: "Before any long-term commitment, your chosen candidate works with your team for one week on real tasks. You see how they communicate, solve problems, and fit into your workflow.",
+    name: "Handover and what is next",
+    text: "Written deliverables, team enablement, and an honest read on which of the other three services would move the needle next.",
+  },
+];
+
+const fitFor = [
+  {
+    title: "Founders pre-PMF",
+    line: "Start with Consulting. Decide before you spend.",
   },
   {
-    number: "05",
-    name: "Structured onboarding with context docs",
-    text: "We create a codebase walkthrough, domain glossary, and architecture decision log. Your new team member gets productive fast because they understand why things were built a certain way, not just what exists.",
+    title: "Funded startups scaling",
+    line: "Start with Talent and Automation. Ship faster, free up ops.",
   },
   {
-    number: "06",
-    name: "Monthly engineering advisory check-in",
-    text: "Every month, our senior engineering advisor reviews team health, velocity trends, and any friction points. Think of it as a lightweight retrospective that catches problems before they grow.",
+    title: "SaaS losing AI search",
+    line: "Start with Growth. Be the one AI recommends.",
   },
   {
-    number: "07",
-    name: "Expansion or replacement with context continuity",
-    text: "Need to add a second developer? Or if someone leaves, we use the existing context docs to get a replacement up to speed in days, not months. Your momentum never stalls.",
+    title: "Teams shipping fast",
+    line: "Bundle two or more. One partner, zero handoffs.",
+  },
+];
+
+const whyItWorks = [
+  {
+    title: "One partner, four motions",
+    line: "No handoffs between agency, consultancy, and dev shop. Same team carries the arc.",
+  },
+  {
+    title: "Context compounds",
+    line: "Whatever we ship for you in service one shows up sharper in service two.",
+  },
+  {
+    title: "Fixed scope, weekly delivery",
+    line: "You approve a scope. We ship to it. You see it weekly. No surprises.",
   },
 ];
 
 const howToSchema = generateHowToSchema(
-  "How to build a dedicated remote engineering team with Workforce Next",
-  "A 7-step process for hiring, onboarding, and retaining remote developers through SethAI screening, structured onboarding, and monthly advisory check-ins.",
+  "How Workforce Next delivers its four services",
+  "A 4-step process for engaging with Workforce Next across consulting, automation, talent, and AEO/GEO growth.",
   steps.map((s) => ({ name: s.name, text: s.text }))
 );
 
 const breadcrumbSchema = generateBreadcrumbSchema([
-  { name: "Home", url: "https://workforcenext.in" },
-  { name: "How We Work", url: "https://workforcenext.in/how-we-work/" },
+  { name: "Home", url: "https://wfnext.com" },
+  { name: "How We Work", url: "https://wfnext.com/how-we-work/" },
 ]);
 
 export default function HowWeWorkPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
-      {/* Hero */}
-      <section className="bg-gradient-to-br from-primary-50 via-white to-primary-50/50 dark:from-dark-900 dark:via-dark-900 dark:to-dark-800 pt-32 pb-16 md:pt-40 md:pb-20">
-        <div className="container-custom max-w-4xl">
-          <Badge variant="white" className="mb-4">
-            OUR PROCESS
+      {/* HERO */}
+      <section className="relative overflow-hidden bg-gradient-to-br from-dark-900 via-dark-800 to-primary-900 pt-32 pb-20 md:pt-40 md:pb-28">
+        <div aria-hidden className="absolute inset-0 opacity-30">
+          <div className="absolute top-20 left-10 w-72 h-72 bg-primary-500 rounded-full mix-blend-screen filter blur-3xl animate-pulse" />
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary-400 rounded-full mix-blend-screen filter blur-3xl animate-pulse" style={{ animationDelay: "1s" }} />
+        </div>
+        <div className="container-custom relative max-w-4xl text-center">
+          <Badge variant="primary" className="mb-6 bg-primary-500/20 text-primary-200 border-primary-400/30">
+            HOW WE WORK
           </Badge>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-dark-900 dark:text-dark-50 leading-tight">
-            How we build your team and keep it together
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white leading-[1.05] tracking-tight">
+            One partner.
+            <br />
+            <span className="bg-gradient-to-r from-primary-300 via-primary-400 to-primary-200 bg-clip-text text-transparent">
+              Four motions.
+            </span>
           </h1>
-          <p className="mt-4 text-lg text-dark-400 dark:text-dark-300 max-w-2xl">
-            Most offshore engagements fail because of poor screening, zero
-            onboarding, and no plan for when someone leaves. We fixed all three.
-            Here is exactly how it works.
+          <p className="mt-8 text-lg md:text-xl text-primary-100/90 max-w-2xl mx-auto">
+            Consulting decides. Talent builds. Automation runs the ops. Growth brings the buyers.
           </p>
+          <div className="mt-10">
+            <Button href="/contact" size="lg">Book a discovery call</Button>
+          </div>
         </div>
       </section>
 
-      {/* Steps */}
+      {/* THE ARC */}
       <section className="section-padding bg-white dark:bg-dark-900">
-        <div className="container-custom max-w-4xl">
-          <div className="space-y-0">
-            {steps.map((step, index) => (
+        <div className="container-custom max-w-6xl">
+          <div className="text-center mb-14">
+            <p className="text-sm font-bold text-primary-500 uppercase tracking-widest mb-3">The arc</p>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-dark-900 dark:text-dark-50">
+              Four services. One journey.
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            {arc.map((a) => (
               <div
-                key={step.number}
-                className="relative flex gap-6 pb-12 last:pb-0"
+                key={a.label}
+                className="group relative p-6 rounded-2xl bg-white dark:bg-dark-800 border border-dark-50 dark:border-dark-700 hover:border-primary-300 dark:hover:border-primary-500/50 hover:shadow-xl hover:-translate-y-1 transition-all"
               >
-                {/* Timeline line */}
-                {index < steps.length - 1 && (
-                  <div className="absolute left-6 top-14 bottom-0 w-px bg-primary-100 dark:bg-dark-700" />
-                )}
-                {/* Step number */}
-                <div className="shrink-0 w-12 h-12 rounded-full bg-primary-500 text-white flex items-center justify-center font-extrabold text-sm">
-                  {step.number}
+                <p className="text-xs font-bold text-primary-500 uppercase tracking-widest">{a.pillar}</p>
+                <h3 className="mt-2 text-2xl font-extrabold text-dark-900 dark:text-dark-50">{a.label}</h3>
+                <p className="mt-3 text-sm font-bold text-dark-700 dark:text-dark-200">{a.headline}</p>
+                <p className="mt-2 text-sm text-dark-500 dark:text-dark-300 leading-relaxed">{a.line}</p>
+                <div className="mt-4 h-1 w-12 bg-gradient-to-r from-primary-400 to-primary-600 rounded-full group-hover:w-24 transition-all duration-300" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* PROCESS — visual timeline */}
+      <section className="section-padding bg-primary-50/40 dark:bg-dark-800">
+        <div className="container-custom max-w-6xl">
+          <div className="text-center mb-14">
+            <p className="text-sm font-bold text-primary-500 uppercase tracking-widest mb-3">The process</p>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-dark-900 dark:text-dark-50">
+              Four steps. No fluff.
+            </h2>
+          </div>
+          <div className="relative grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div aria-hidden className="hidden md:block absolute top-8 left-[12.5%] right-[12.5%] h-0.5 bg-gradient-to-r from-primary-300 via-primary-500 to-primary-300" />
+            {steps.map((s) => (
+              <div key={s.number} className="relative text-center">
+                <div className="relative z-10 inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-primary-400 to-primary-600 text-white font-extrabold text-xl shadow-lg shadow-primary-500/30">
+                  {s.number}
                 </div>
-                {/* Content */}
-                <div className="pt-1">
-                  <h3 className="text-xl font-extrabold text-dark-900 dark:text-dark-50">
-                    {step.name}
-                  </h3>
-                  <p className="mt-2 text-dark-400 dark:text-dark-300 leading-relaxed">
-                    {step.text}
-                  </p>
+                <h3 className="mt-4 font-extrabold text-dark-900 dark:text-dark-50">{s.name}</h3>
+                <p className="mt-1.5 text-sm text-dark-500 dark:text-dark-300">{s.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* WHO TO START WHERE */}
+      <section className="section-padding bg-white dark:bg-dark-900">
+        <div className="container-custom max-w-5xl">
+          <div className="text-center mb-12">
+            <p className="text-sm font-bold text-primary-500 uppercase tracking-widest mb-3">Where to start</p>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-dark-900 dark:text-dark-50">
+              Pick your first motion.
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {fitFor.map((f) => (
+              <div
+                key={f.title}
+                className="flex items-start gap-4 p-6 rounded-xl bg-white dark:bg-dark-800 border border-dark-50 dark:border-dark-700 hover:shadow-card transition-all"
+              >
+                <div className="w-3 h-3 mt-2 rounded-full bg-primary-500 flex-shrink-0" />
+                <div>
+                  <h3 className="font-extrabold text-dark-900 dark:text-dark-50">{f.title}</h3>
+                  <p className="mt-1 text-sm text-dark-500 dark:text-dark-300">{f.line}</p>
                 </div>
               </div>
             ))}
@@ -142,62 +234,43 @@ export default function HowWeWorkPage() {
         </div>
       </section>
 
-      {/* Why this works */}
-      <section className="section-padding bg-primary-50 dark:bg-dark-800">
-        <div className="container-custom max-w-4xl">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 text-center mb-10">
-            Why this process works
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="p-6 bg-white dark:bg-dark-900 rounded-xl border border-dark-50 dark:border-dark-700">
-              <h3 className="font-extrabold text-dark-900 dark:text-dark-50">
-                Better screening
-              </h3>
-              <p className="mt-2 text-sm text-dark-400 dark:text-dark-300 leading-relaxed">
-                SethAI filters for longevity signals, not just leetcode scores.
-                You meet candidates who actually want to stay.
-              </p>
-            </div>
-            <div className="p-6 bg-white dark:bg-dark-900 rounded-xl border border-dark-50 dark:border-dark-700">
-              <h3 className="font-extrabold text-dark-900 dark:text-dark-50">
-                Faster ramp-up
-              </h3>
-              <p className="mt-2 text-sm text-dark-400 dark:text-dark-300 leading-relaxed">
-                Context docs mean your new developer understands the domain,
-                architecture, and team norms from day one. No guessing.
-              </p>
-            </div>
-            <div className="p-6 bg-white dark:bg-dark-900 rounded-xl border border-dark-50 dark:border-dark-700">
-              <h3 className="font-extrabold text-dark-900 dark:text-dark-50">
-                Built-in continuity
-              </h3>
-              <p className="mt-2 text-sm text-dark-400 dark:text-dark-300 leading-relaxed">
-                If someone ever leaves, the context docs and advisory
-                relationship mean you are never starting from zero.
-              </p>
-            </div>
+      {/* WHY IT WORKS */}
+      <section className="section-padding bg-dark-900 text-white">
+        <div className="container-custom max-w-5xl">
+          <div className="text-center mb-12">
+            <p className="text-sm font-bold text-primary-400 uppercase tracking-widest mb-3">Why it works</p>
+            <h2 className="text-3xl md:text-4xl font-extrabold leading-tight">
+              The agency model, finally fixed.
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            {whyItWorks.map((w) => (
+              <div
+                key={w.title}
+                className="p-6 rounded-2xl bg-gradient-to-br from-dark-800 to-dark-900 border border-dark-700 hover:border-primary-500/50 transition-all"
+              >
+                <h3 className="text-lg font-extrabold text-white">{w.title}</h3>
+                <p className="mt-2 text-sm text-dark-300 leading-relaxed">{w.line}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="section-padding bg-white dark:bg-dark-900">
-        <div className="container-custom text-center max-w-2xl">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50">
-            Ready to build your team?
+      <section className="relative overflow-hidden section-padding bg-gradient-to-br from-primary-600 via-primary-500 to-primary-700">
+        <div aria-hidden className="absolute inset-0 opacity-20">
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-white rounded-full mix-blend-overlay filter blur-3xl" />
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-primary-200 rounded-full mix-blend-overlay filter blur-3xl" />
+        </div>
+        <div className="container-custom relative text-center max-w-3xl">
+          <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-4 leading-tight">
+            Tell us what you are shipping.
           </h2>
-          <p className="mt-4 text-dark-400 dark:text-dark-300">
-            Tell us what you are building and we will put the right people in
-            front of you within a week.
+          <p className="text-lg text-primary-50 mb-8">
+            One discovery call. Scoped proposal in 48 hours.
           </p>
-          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="primary" size="lg">
-              Start a conversation
-            </Button>
-            <Button href="/why-teams-stay" variant="outline" size="lg">
-              Why teams stay
-            </Button>
-          </div>
+          <Button href="/contact" variant="white" size="lg">Book a discovery call</Button>
         </div>
       </section>
     </>

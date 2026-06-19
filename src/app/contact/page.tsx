@@ -5,25 +5,25 @@ import ContactInfo from "@/components/contact/ContactInfo";
 import { generateContactPageSchema } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
-  title: "Contact Workforce Next - Build Your Remote Team",
+  title: "Contact | AI Automation Agency for Founders | Workforce Next",
   description:
-    "Get in touch with Workforce Next to build your dedicated remote engineering team. AI developers, data engineers, frontend and backend specialists. We respond within an hour.",
+    "Book a discovery call. Scoped proposal in 48 hours across consulting, AI agents and workflow automation, dedicated developers and QA, and AEO/GEO growth.",
   keywords: [
     "contact workforce next",
-    "hire AI developers",
-    "hire remote developers India",
-    "dedicated development team",
-    "staff augmentation India",
+    "book discovery call AI agency",
+    "AI automation agency contact",
+    "hire AI agency founders",
+    "scope AI automation sprint",
   ],
   openGraph: {
     ...ogDefaults("/contact/"),
     images: ["/images/og-default.png"],
-    title: "Contact Workforce Next - Build Your Remote Team",
+    title: "Contact | AI Automation Agency for Founders",
     description:
-      "Get in touch with Workforce Next to build your dedicated remote engineering team.",
+      "Book a discovery call. Scoped proposal in 48 hours across all four services.",
   },
   alternates: {
-    canonical: "https://workforcenext.in/contact/",
+    canonical: "https://wfnext.com/contact/",
   },
 };
 
@@ -37,15 +37,26 @@ export default function ContactPage() {
         }}
       />
       {/* Hero */}
-      <section className="bg-gradient-to-br from-primary-50 via-white to-primary-50/50 dark:from-dark-900 dark:via-dark-900 dark:to-dark-800 pt-32 pb-16 md:pt-40 md:pb-20">
-        <div className="container-custom">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-dark-900 dark:text-dark-50">
-            Let&apos;s talk about your team
+      <section className="relative overflow-hidden bg-gradient-to-br from-primary-50 via-white to-primary-50/50 dark:from-dark-900 dark:via-dark-900 dark:to-dark-800 pt-32 pb-16 md:pt-40 md:pb-20">
+        <div aria-hidden className="absolute top-0 right-0 w-[400px] h-[400px] bg-primary-200/30 dark:bg-primary-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
+        <div className="container-custom relative max-w-4xl">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-dark-900 dark:text-dark-50 leading-[1.05]">
+            Tell us what
+            <br />
+            <span className="text-primary-500">you are shipping.</span>
           </h1>
-          <p className="mt-4 text-lg text-dark-400 dark:text-dark-300 max-w-2xl">
-            Whether you need one specialist or an entire engineering pod, tell us
-            what you&apos;re building and we&apos;ll figure out the right fit together.
+          <p className="mt-6 text-lg md:text-xl text-dark-500 dark:text-dark-300 max-w-2xl">
+            One discovery call. Scoped proposal in 48 hours. Across consulting, automation, talent, or growth.
           </p>
+
+          {/* Forte ribbon */}
+          <div className="mt-8 inline-flex flex-wrap items-center gap-3 px-5 py-3 rounded-2xl bg-dark-900 border border-primary-500/30">
+            <span className="text-xs font-bold text-primary-300 uppercase tracking-widest">Our forte</span>
+            <span className="hidden sm:inline w-1 h-1 rounded-full bg-primary-400" />
+            <span className="text-base sm:text-lg font-extrabold text-white">
+              Ownership <span className="text-primary-400">·</span> Automation <span className="text-primary-400">·</span> Engineering
+            </span>
+          </div>
         </div>
       </section>
 
