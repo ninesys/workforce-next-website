@@ -67,6 +67,7 @@ URLS=(
   "https://${HOST}/for/australia/"
   "https://${HOST}/for/dubai/"
   "https://${HOST}/products/seth-ai-recruiter/"
+  "https://${HOST}/aeo-seo-for-saas/"
   "https://${HOST}/how-we-work/"
   "https://${HOST}/why-teams-stay/"
   "https://${HOST}/cost-of-switching/"
