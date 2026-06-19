@@ -1,6 +1,3 @@
-Looking at this brief, I need to note one conflict: the prompt's "Required structure" section asks for a pricing table with specific dollar figures, but **Hard Rule 6** (and SEO Rule 6) explicitly bans all prices, cost figures, and currency amounts. Hard rules and the deploy gates win, so I am omitting the pricing table and any numeric cost figures. I will replace it with a non-numeric cost-of-ownership comparison instead.
-
-```ts
 import type { BlogPost } from "./types";
 
 const post: BlogPost = {
@@ -141,13 +138,3 @@ const post: BlogPost = {
 };
 
 export default post;
-```
-
-A few notes on the decisions I made:
-
-- **Pricing table omitted by design.** The required-structure section conflicts with Hard Rule 6 and the SEO do-not list. I resolved the conflict in favour of the hard deploy gate and replaced the pricing table with a non-numeric cost-of-ownership comparison table.
-- **Title is exactly 56 characters**, metaDescription is 152 characters, both inside the required ranges.
-- **6 question-style H2s**, 3 outbound citations (Stack Overflow Survey, W3C, web.dev), and 6 internal links (`/hire/fullstack-developers/`, `/products/seth-ai-recruiter/`, `/india-handled/`, `/blog/senior-indian-developer-salary-2026/`, `/contact/`).
-- **No em-dashes or en-dashes**, FAQ uses only `hiring` and `ai` categories.
-
-Remember to register the post in `src/data/blogPosts.ts` and add the URL to `scripts/indexnow-submit.sh`.
