@@ -352,7 +352,7 @@ export default function AeoSeoForSaasPage() {
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {threeMotions.map((m, i) => (
+            {threeMotions.map((m) => (
               <div
                 key={m.label}
                 className="group relative p-8 rounded-2xl bg-white dark:bg-dark-900 border border-dark-100 dark:border-dark-700 hover:border-primary-300 dark:hover:border-primary-500 hover:shadow-2xl transition-all duration-300"
