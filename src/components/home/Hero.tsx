@@ -33,26 +33,27 @@ export default function Hero() {
           <div className="lg:col-span-7">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary-100/60 dark:bg-primary-500/15 rounded-full text-primary-600 dark:text-primary-400 text-sm font-semibold mb-6">
               <span className="w-2 h-2 rounded-full bg-primary-500 animate-pulse" />
-              AI automation agency for founders
+              Built for US &amp; Canada founders
             </div>
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.1] tracking-tight text-dark-900 dark:text-dark-50">
-              AI Automation Agency for Founders.
+              Hire AI Agents or Human Talent
               <br />
               <span className="block mt-3 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-primary-500">
-                AI Agents, Dedicated Developers, Organic Growth.
+                to Execute Your Projects.
               </span>
             </h1>
 
             <p className="mt-5 sm:mt-6 text-base sm:text-lg md:text-xl text-dark-400 dark:text-dark-300 leading-relaxed max-w-2xl">
-              Four services, one partner. Product consulting, AI agents for
-              operations, dedicated developers and QA, and AEO/GEO organic
-              growth.
+              Done-for-you AI agents and remote experts that ship the work, not
+              the slide deck. Start with product consulting, then hire an AI
+              agent or remote expert: an AI SDR for outreach, AI developers and
+              data engineers, or an AI agent for HR and recruiting.
             </p>
 
             <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4">
               <Button href="/contact" variant="primary" size="lg">
-                Build my team
+                Hire AI or talent
               </Button>
               <Button href="/how-we-work" variant="outline" size="lg">
                 See how it works

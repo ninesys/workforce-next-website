@@ -10,256 +10,306 @@ import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "Hire Automation Consultants (n8n, Make, Zapier + AI)",
+  title: "Hire Automation Consultants | AI Agents + Workflow Automation | Workforce Next",
   description:
-    "Hire automation consultants who wire n8n, Make, Zapier, and AI (Claude, GPT, OpenAI) to automate real business workflows. Sales ops, support, finance, internal tools. Project or retainer.",
+    "Automation consultants who wire AI agents into your real business workflows. Sales ops, support, finance, content, and internal tooling. Project or retainer.",
   keywords: [
     "automation consulting",
     "hire automation consultant",
-    "n8n consulting",
-    "Zapier consultant",
-    "Make.com consultant",
+    "workflow automation services",
     "AI workflow automation",
     "business process automation",
-    "workflow automation services",
-    "n8n developer for hire",
-    "Zapier expert India",
+    "AI agent development",
+    "automation agency for founders",
+    "AI integration consulting",
   ],
   openGraph: {
     ...ogDefaults("/hire/automation-consultants/"),
     images: ["/images/og-default.png"],
-    title: "Hire Automation Consultants (n8n, Make, Zapier + AI)",
+    title: "Hire Automation Consultants | AI Agents + Workflow Automation",
     description:
-      "Wire n8n, Make, or Zapier with Claude or GPT to automate real business workflows. Project or retainer pricing.",
+      "Wire AI agents into the real workflows eating your team's time. Project or retainer.",
   },
   alternates: {
     canonical: `${siteMetadata.url}/hire/automation-consultants/`,
   },
 };
 
-const skills = [
-  "n8n (self-hosted + cloud)",
-  "Make.com (Integromat)",
-  "Zapier",
-  "Pipedream",
-  "Workato",
-  "OpenAI / Anthropic / Gemini APIs",
-  "LangChain",
-  "Webhooks & APIs",
-  "Airtable / Notion / Google Workspace",
-  "HubSpot / Salesforce",
-  "Slack / WhatsApp / Email triggers",
-  "Postgres / Supabase",
-];
-
-const whyPoints = [
+const arc = [
   {
-    title: "We ship automations that actually run on Monday",
-    description:
-      "Consultants who build workflows, demo them, hand you a tidy doc, then disappear before the first error breaks production. We stay long enough to harden, monitor, and iterate the system based on real usage.",
+    num: "01",
+    tag: "DISCOVER",
+    headline: "Map the manual workflow.",
+    line: "We shadow your team, find what bleeds time, and pick the right candidate.",
   },
   {
-    title: "Tool-agnostic, problem-first",
-    description:
-      "n8n when you need self-host control and complex branching. Make for visual builder fluency. Zapier when business users need to maintain it. We pick the platform for the workflow, not the other way round.",
+    num: "02",
+    tag: "DESIGN",
+    headline: "Happy path + failure modes.",
+    line: "Triggers, branches, retries, human-in-the-loop. Built to survive Monday morning.",
   },
   {
-    title: "AI integrated where it earns its keep",
-    description:
-      "Claude or GPT in the loop for classification, extraction, summarization, drafting, and decisioning. Not bolted on for marketing. We measure quality, cost per run, and where the LLM is overkill.",
+    num: "03",
+    tag: "SHIP",
+    headline: "Build, demo, harden.",
+    line: "Workflow live in your tools. AI agents in the loop only where they earn their keep.",
   },
   {
-    title: "Project or retainer, not body-shop hours",
-    description:
-      "Scoped projects (₹50K to ₹5L, or USD 600 to 6,000) for a clear workflow. Monthly retainers for teams that want ongoing automation work without a full-time hire. Pick the engagement that fits.",
+    num: "04",
+    tag: "HANDOFF",
+    headline: "Documented and yours.",
+    line: "Runbook, monitoring, naming conventions. Your team owns it after we leave.",
   },
-];
-
-const responsibilities = [
-  "Mapping the manual workflow you want to kill, finding the right automation triggers, and designing the happy path plus failure modes",
-  "Building the workflow in n8n, Make, Zapier, or Pipedream with proper error handling, retries, and notifications when something needs human attention",
-  "Integrating AI steps (Claude, GPT, OpenAI structured output, function calling) for tasks that need judgment, extraction, or generation",
-  "Wiring webhooks, REST and GraphQL APIs, and database queries to connect tools that do not natively talk to each other",
-  "Building approval flows, escalation paths, and human-in-the-loop steps where automation should pause, not act",
-  "Setting up monitoring, run logs, error alerts, and cost dashboards so you know what is running and what it costs",
-  "Self-hosting n8n on your infrastructure (Hetzner, AWS, Render, Railway) when SaaS pricing or data residency demands it",
-  "Documenting workflows so your team can maintain them after the consultant hands off",
-  "Migrating from one platform to another (Zapier to n8n is the most common, usually for cost or complexity reasons)",
-  "Building internal tools on top of automation: dashboards, admin panels, Slack apps, custom forms",
 ];
 
 const useCases = [
   {
-    scenario: "Sales operations automation",
-    examples: "New lead from form to CRM with enrichment, scoring, and Slack ping. Calendar invites and reminder sequences. CRM hygiene jobs that run nightly.",
+    tag: "SALES OPS",
+    title: "Lead to CRM",
+    line: "Forms → enrichment → scoring → Slack ping. CRM hygiene that runs nightly.",
+    icon: (
+      <svg viewBox="0 0 64 64" fill="none" aria-hidden="true" className="w-full h-full">
+        <defs>
+          <linearGradient id="auto-icon-1" x1="0" y1="0" x2="64" y2="64">
+            <stop offset="0%" stopColor="#146EF5" />
+            <stop offset="100%" stopColor="#022E5E" />
+          </linearGradient>
+        </defs>
+        <path d="M14 14h36v36H14z" fill="#E0EDFF" stroke="#022E5E" strokeWidth="2" rx="4" />
+        <rect x="14" y="14" width="36" height="36" rx="4" fill="#E0EDFF" stroke="#022E5E" strokeWidth="2" />
+        <path d="M20 26h24M20 32h18M20 38h22" stroke="#146EF5" strokeWidth="2" strokeLinecap="round" />
+        <circle cx="48" cy="22" r="6" fill="url(#auto-icon-1)" />
+        <path d="M46 22l1.5 1.5L51 20" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    ),
   },
   {
-    scenario: "Customer support automation",
-    examples: "Auto-categorizing tickets with an LLM, routing to the right queue, drafting first-response templates, escalating angry messages to a human.",
+    tag: "SUPPORT",
+    title: "Ticket triage",
+    line: "AI classifies tickets, routes to the right queue, drafts first replies, escalates anger.",
+    icon: (
+      <svg viewBox="0 0 64 64" fill="none" aria-hidden="true" className="w-full h-full">
+        <defs>
+          <linearGradient id="auto-icon-2" x1="0" y1="0" x2="64" y2="64">
+            <stop offset="0%" stopColor="#146EF5" />
+            <stop offset="100%" stopColor="#022E5E" />
+          </linearGradient>
+        </defs>
+        <path d="M12 24c0-6 5-10 12-10h16c7 0 12 4 12 10v12c0 6-5 10-12 10H30l-10 8v-8c-5-1-8-5-8-10V24z" fill="#E0EDFF" stroke="#022E5E" strokeWidth="2" />
+        <circle cx="24" cy="30" r="2.5" fill="url(#auto-icon-2)" />
+        <circle cx="32" cy="30" r="2.5" fill="url(#auto-icon-2)" />
+        <circle cx="40" cy="30" r="2.5" fill="url(#auto-icon-2)" />
+      </svg>
+    ),
   },
   {
-    scenario: "Finance and ops automation",
-    examples: "Invoice extraction from email PDFs, AP approval flows, expense report parsing, monthly reconciliation jobs that pull from Stripe, Razorpay, and your bank.",
+    tag: "FINANCE",
+    title: "Invoice to ledger",
+    line: "Extract data from PDFs, route approvals, reconcile monthly. Less spreadsheet, more sleep.",
+    icon: (
+      <svg viewBox="0 0 64 64" fill="none" aria-hidden="true" className="w-full h-full">
+        <defs>
+          <linearGradient id="auto-icon-3" x1="0" y1="0" x2="64" y2="64">
+            <stop offset="0%" stopColor="#146EF5" />
+            <stop offset="100%" stopColor="#022E5E" />
+          </linearGradient>
+        </defs>
+        <path d="M18 10h22l8 8v36H18z" fill="#E0EDFF" stroke="#022E5E" strokeWidth="2" />
+        <path d="M40 10v8h8" stroke="#022E5E" strokeWidth="2" fill="none" />
+        <path d="M24 26h16M24 32h16M24 38h10" stroke="#146EF5" strokeWidth="2" strokeLinecap="round" />
+        <circle cx="46" cy="44" r="8" fill="url(#auto-icon-3)" />
+        <path d="M42 44l3 3 5-5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    ),
   },
   {
-    scenario: "Content and marketing automation",
-    examples: "Blog post syndication, social repost scheduling, AI-drafted weekly newsletters from a content calendar, lead-magnet delivery sequences.",
+    tag: "CONTENT",
+    title: "Publish + syndicate",
+    line: "Calendar → AI drafts → multi-channel syndication → engagement loop.",
+    icon: (
+      <svg viewBox="0 0 64 64" fill="none" aria-hidden="true" className="w-full h-full">
+        <defs>
+          <linearGradient id="auto-icon-4" x1="0" y1="0" x2="64" y2="64">
+            <stop offset="0%" stopColor="#146EF5" />
+            <stop offset="100%" stopColor="#022E5E" />
+          </linearGradient>
+        </defs>
+        <rect x="10" y="14" width="44" height="36" rx="4" fill="#E0EDFF" stroke="#022E5E" strokeWidth="2" />
+        <path d="M28 24l12 8-12 8z" fill="url(#auto-icon-4)" />
+      </svg>
+    ),
   },
   {
-    scenario: "Internal tooling",
-    examples: "Slack apps for HR requests, custom approval workflows, Airtable-backed admin panels, hiring-pipeline automation.",
+    tag: "INTERNAL",
+    title: "Slack apps + admin",
+    line: "HR requests, approval flows, custom panels. Stop building one-offs.",
+    icon: (
+      <svg viewBox="0 0 64 64" fill="none" aria-hidden="true" className="w-full h-full">
+        <defs>
+          <linearGradient id="auto-icon-5" x1="0" y1="0" x2="64" y2="64">
+            <stop offset="0%" stopColor="#146EF5" />
+            <stop offset="100%" stopColor="#022E5E" />
+          </linearGradient>
+        </defs>
+        <rect x="14" y="14" width="14" height="14" rx="3" fill="url(#auto-icon-5)" />
+        <rect x="36" y="14" width="14" height="14" rx="3" fill="#E0EDFF" stroke="#022E5E" strokeWidth="2" />
+        <rect x="14" y="36" width="14" height="14" rx="3" fill="#E0EDFF" stroke="#022E5E" strokeWidth="2" />
+        <rect x="36" y="36" width="14" height="14" rx="3" fill="url(#auto-icon-5)" />
+      </svg>
+    ),
   },
   {
-    scenario: "AI-powered data processing",
-    examples: "Document classification at scale, structured extraction from unstructured text, summarization pipelines, transcript processing with LLM-generated action items.",
+    tag: "AI PROCESSING",
+    title: "Doc + data pipelines",
+    line: "Classify, extract, summarize at scale. Structured output your downstream tools can use.",
+    icon: (
+      <svg viewBox="0 0 64 64" fill="none" aria-hidden="true" className="w-full h-full">
+        <defs>
+          <linearGradient id="auto-icon-6" x1="0" y1="0" x2="64" y2="64">
+            <stop offset="0%" stopColor="#146EF5" />
+            <stop offset="100%" stopColor="#022E5E" />
+          </linearGradient>
+        </defs>
+        <circle cx="32" cy="32" r="22" fill="#E0EDFF" stroke="#022E5E" strokeWidth="2" />
+        <path d="M32 14v8M32 42v8M14 32h8M42 32h8" stroke="#146EF5" strokeWidth="2" strokeLinecap="round" />
+        <circle cx="32" cy="32" r="6" fill="url(#auto-icon-6)" />
+        <path d="M29 32l2 2 4-4" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    ),
   },
 ];
 
-const whenToHire = [
+const why = [
   {
-    scenario: "You have a clear workflow that eats 5+ hours a week of someone's time",
-    recommendation: "Hire on a project basis",
-    reason:
-      "A scoped 2 to 4 week project lands the workflow with full handover. Predictable cost, predictable ROI. Best starting point if you've never engaged an automation consultant before.",
+    title: "Ships on Monday, not in a deck",
+    line: "We stay long enough to harden, monitor, and iterate based on real usage.",
   },
   {
-    scenario: "You want ongoing automation work without a full-time hire",
-    recommendation: "Hire on a monthly retainer",
-    reason:
-      "Retainers (20 to 80 hours/month) work when there's a continuous backlog of small-to-medium automations across the org. We embed in your tools, run a backlog, and ship continuously.",
+    title: "Tool-agnostic, problem-first",
+    line: "We pick the platform for the workflow, not the other way around.",
   },
   {
-    scenario: "You're building a custom SaaS product with automation under the hood",
-    recommendation: "Hire a full-stack developer with n8n experience",
-    reason:
-      "If the automation is your product (not your ops), you need a software engineer who knows the platform, not a consultant. See our Node.js or full-stack developers pages.",
+    title: "AI where it earns its keep",
+    line: "LLMs in the loop for classification, extraction, drafting. Not bolted on for marketing.",
   },
   {
-    scenario: "Your finance team needs ONE workflow to extract invoice data",
-    recommendation: "A scoped 1-week project is usually enough",
-    reason:
-      "Single-workflow projects are fast: scoping call, build, test, hand off. You don't need a retainer if the work has a clear end.",
-  },
-];
-
-const screeningSignals = [
-  {
-    signal: "Platform fluency, not platform loyalty",
-    detail:
-      "We test whether the consultant can defend a pick between n8n, Make, and Zapier for a specific scenario. If they have one favorite for every problem, they will over-engineer or under-deliver.",
-  },
-  {
-    signal: "Error handling discipline",
-    detail:
-      "Happy-path automations are demos. Production automations need retries, dead-letter handling, alert routing, and human escalation. We ask candidates to walk through a real failure flow they built.",
-  },
-  {
-    signal: "AI integration judgment",
-    detail:
-      "When to use Claude/GPT, when to use a fine-tuned model, when to skip AI entirely. Strong consultants run cost-per-run math on AI steps before recommending them.",
-  },
-  {
-    signal: "API and webhook depth",
-    detail:
-      "When the no-code platform hits a wall, can the consultant drop into raw HTTP requests, custom code nodes (n8n function nodes in JavaScript), and webhook signing? We test this explicitly.",
-  },
-  {
-    signal: "Self-hosting and ops awareness",
-    detail:
-      "n8n self-hosted on Hetzner, AWS, Render, or Railway. Postgres backups. Worker scaling. Webhook reliability. Many automation problems are ops problems in disguise.",
-  },
-  {
-    signal: "Documentation and handover discipline",
-    detail:
-      "If your team can't maintain the workflow after the consultant leaves, the value evaporates in 6 months. We screen for clear documentation, naming conventions, and runbook quality.",
+    title: "Project or retainer",
+    line: "Scoped projects with a clear end, or monthly retainers for continuous backlogs.",
   },
 ];
 
 const engagementModels = [
   {
     name: "Single project",
-    hours: "₹50K to ₹5L (USD 600 to 6,000)",
-    best: "Best for one clear workflow with a defined end. Scoping call, build, test, hand off.",
+    tag: "ONE WORKFLOW, CLEAR END",
+    best: "One workflow eating 5+ hours a week of someone's time.",
     includes:
-      "Workflow design doc, built automation, test runs, run-log monitoring setup, documentation for your team. Two weeks of post-launch support.",
+      "Workflow design, build, test runs, monitoring setup, documentation. Post-launch support included.",
   },
   {
     name: "Monthly retainer",
-    hours: "20 to 80 hours per month",
-    best: "Best for teams with a continuous automation backlog and no dedicated automation hire.",
+    tag: "CONTINUOUS BACKLOG",
+    best: "Ongoing automation work without a full-time hire.",
     includes:
-      "Dedicated consultant or pod, shared backlog, weekly sync, on-demand requests, ongoing maintenance of shipped workflows.",
+      "Dedicated consultant or pod, shared backlog, weekly sync, on-demand requests, ongoing maintenance.",
   },
   {
-    name: "Audit & roadmap",
-    hours: "1 to 2 week engagement",
-    best: "Best when you have many manual processes and want help prioritizing which to automate first.",
+    name: "Audit + roadmap",
+    tag: "PRIORITIZE FIRST",
+    best: "Many manual processes, unsure which to automate first.",
     includes:
-      "Workflow inventory, ROI analysis per workflow, platform recommendation, prioritized 90-day automation roadmap.",
+      "Workflow inventory, qualitative ROI per workflow, platform recommendation, prioritized roadmap.",
+  },
+];
+
+const screening = [
+  {
+    title: "Platform fluency",
+    line: "Can defend a pick between platforms for a specific scenario. Not loyal to one tool.",
+  },
+  {
+    title: "Error handling discipline",
+    line: "Retries, dead-letters, alert routing, human escalation. Not just the happy path.",
+  },
+  {
+    title: "AI integration judgment",
+    line: "Knows when an LLM step is overkill and when it pays for itself.",
+  },
+  {
+    title: "API + webhook depth",
+    line: "Can drop into raw HTTP, custom code nodes, and webhook signing when the no-code wall hits.",
+  },
+  {
+    title: "Self-hosting + ops awareness",
+    line: "Backups, scaling, webhook reliability. Many automation problems are ops problems.",
+  },
+  {
+    title: "Handover discipline",
+    line: "If your team cannot maintain it, the value evaporates. We screen for documentation quality.",
   },
 ];
 
 const steps = [
-  { step: "01", title: "Share your workflow", description: "Tell us what you want to automate, what tools you use, and what the manual process looks like today." },
-  { step: "02", title: "We scope and quote", description: "Free 30-min scoping call. Fixed-price quote for projects, monthly rate for retainers." },
-  { step: "03", title: "Build and demo", description: "We build in your tools (or our sandbox), demo the workflow, iterate based on your feedback." },
-  { step: "04", title: "Launch and document", description: "Go live, hand off documentation, monitor for two weeks. You own the workflow." },
+  { num: "01", title: "Share the workflow", line: "Tell us what to automate and what the manual process looks like." },
+  { num: "02", title: "Scoped in 48 hours", line: "Free scoping call. Fixed-price quote or monthly retainer rate." },
+  { num: "03", title: "Build and demo", line: "We build in your tools, demo the workflow, iterate on your feedback." },
+  { num: "04", title: "Launch and document", line: "Go live, hand off documentation, monitor, support after." },
 ];
 
 const faqItems: FAQ[] = [
   {
-    question: "How much does automation consulting cost?",
+    question: "When should we automate a workflow with AI?",
     answer:
-      "Single workflows: ₹50,000 to ₹5,00,000 (USD 600 to 6,000) depending on complexity and platform. Monthly retainers: ₹80,000 to ₹4,00,000 per month (USD 1,000 to 5,000) for 20 to 80 hours/month. Audit & roadmap engagements: ₹50,000 to ₹2,00,000 (USD 600 to 2,500) for 1 to 2 weeks of work.",
+      "When a workflow eats meaningful hours per week of someone's time, follows a repeatable pattern, and has clear inputs and outputs. AI is right when the workflow needs classification, extraction, or drafting that simple rules cannot cover. We will tell you honestly when a workflow does not need AI in the loop.",
     category: "automation",
     categoryLabel: "Automation",
   },
   {
-    question: "Should we use n8n, Make, or Zapier?",
+    question: "What platforms do you build on?",
     answer:
-      "Use Zapier when business users need to maintain workflows and the integrations exist out of the box. Use Make for visual fluency on medium-complexity workflows. Use n8n (self-hosted or cloud) when you need cost control at scale, complex branching, custom code nodes, or data residency. We help you decide before we build.",
+      "We build on the major workflow platforms (self-hosted and cloud) plus direct API and webhook integrations. We pick the platform for the workflow: simple integrations get a no-code tool, complex branching gets self-hosted control, customer-product builds get a real codebase. We help you decide before we build.",
     category: "automation",
     categoryLabel: "Automation",
   },
   {
-    question: "Can you integrate Claude, GPT, or other AI into our automations?",
+    question: "Can you integrate Claude or GPT into our automations?",
     answer:
-      "Yes. AI in the loop is the norm for modern automations: LLM-based classification, extraction from unstructured documents, drafting (emails, summaries, replies), and decisioning. We integrate OpenAI, Anthropic Claude, Google Gemini, or open-weight models, and we measure cost per run so the AI step earns its keep.",
+      "Yes. AI in the loop is standard for modern workflows: classification, extraction from unstructured documents, drafting (emails, summaries, replies), and decisioning. We integrate the major model providers and measure quality and cost-per-run so the AI step earns its keep.",
     category: "automation",
     categoryLabel: "Automation",
   },
   {
-    question: "Can you self-host n8n for us?",
+    question: "Can you self-host workflow tools for us?",
     answer:
-      "Yes. Self-hosted n8n on Hetzner, AWS, Render, Railway, or your existing cloud. We handle the deployment, Postgres backup setup, worker scaling, webhook reliability, and ongoing maintenance. Self-hosting usually pays back at 50+ executions per day vs n8n Cloud pricing.",
+      "Yes. We deploy on Hetzner, AWS, Render, Railway, or your existing cloud. We handle deployment, database backups, worker scaling, webhook reliability, and ongoing maintenance. Self-hosting usually pays back at higher execution volumes versus SaaS pricing.",
     category: "automation",
     categoryLabel: "Automation",
   },
   {
-    question: "Can you migrate us from Zapier to n8n?",
+    question: "Can you migrate us from one platform to another?",
     answer:
-      "Yes. Zapier-to-n8n migration is one of our most common engagements, usually triggered by cost (Zapier scales expensively) or complexity (Zapier hits walls on branching, loops, and custom code). We map every active Zap, rebuild in n8n, run parallel for validation, then cut over.",
+      "Yes. Cost and complexity are the two most common reasons customers migrate. We map every active workflow, rebuild on the new platform, run in parallel for validation, then cut over.",
     category: "automation",
     categoryLabel: "Automation",
   },
   {
-    question: "Do you handle the ongoing maintenance of automations you build?",
+    question: "Do you handle ongoing maintenance?",
     answer:
-      "Two weeks of post-launch support is included in every project. For ongoing maintenance, we offer monthly retainers (20 to 80 hours) that cover monitoring, fixes when APIs change, small enhancements, and a backlog of new automations.",
+      "Post-launch support is included in every project. For ongoing maintenance, monthly retainers cover monitoring, fixes when APIs change, small enhancements, and a backlog of new automations.",
     category: "automation",
     categoryLabel: "Automation",
   },
   {
     question: "What workflows do you most commonly automate?",
     answer:
-      "Sales ops (lead to CRM with enrichment), customer support (ticket categorization and routing), finance (invoice extraction and approval flows), content marketing (publishing and syndication), and internal tooling (Slack apps, approval workflows, custom admin panels). AI is now in roughly 60% of new automations we build.",
+      "Sales ops (lead to CRM with enrichment), customer support (ticket categorization and routing), finance (invoice extraction and approval flows), content (publishing and syndication), and internal tooling (Slack apps, approval workflows, admin panels). AI is in the loop on most modern automation work.",
     category: "automation",
     categoryLabel: "Automation",
   },
   {
     question: "Can your consultants work in our timezone?",
     answer:
-      "Yes. Our consultants in India routinely overlap with US Eastern, US Pacific, UK, EU, Australia, and Dubai timezones. Most retainer engagements include a weekly sync call in your business hours, with async work the rest of the time.",
+      "Yes. Our consultants in India overlap with US Eastern, US Pacific, UK, EU, Australia, and Dubai timezones. Retainer engagements include a weekly sync call in your business hours with async work the rest of the time.",
     category: "automation",
     categoryLabel: "Automation",
   },
@@ -267,8 +317,8 @@ const faqItems: FAQ[] = [
 
 export default function HireAutomationConsultantsPage() {
   const serviceSchema = generateServiceSchema(
-    "Hire Automation Consultants (n8n, Make, Zapier + AI)",
-    "Hire automation consultants who wire n8n, Make, Zapier, and AI (Claude, GPT, OpenAI) to automate real business workflows.",
+    "Automation Consultants for AI + Workflow Automation",
+    "Automation consultants who wire AI agents into real business workflows. Sales ops, support, finance, content, and internal tooling.",
     `${siteMetadata.url}/hire/automation-consultants/`
   );
 
@@ -286,196 +336,243 @@ export default function HireAutomationConsultantsPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      <section className="bg-gradient-to-br from-primary-50 via-white to-primary-50/50 dark:from-dark-900 dark:via-dark-900 dark:to-dark-800 pt-32 pb-16 md:pt-40 md:pb-20">
-        <div className="container-custom max-w-4xl">
-          <Badge variant="primary" className="mb-4">HIRE AUTOMATION CONSULTANTS</Badge>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-dark-900 dark:text-dark-50 leading-tight">
-            Hire Automation Consultants (n8n, Make, Zapier + AI)
+      {/* HERO */}
+      <section className="relative overflow-hidden bg-gradient-to-br from-dark-900 via-dark-800 to-primary-900 pt-32 pb-20 md:pt-40 md:pb-28">
+        <div aria-hidden className="absolute inset-0 opacity-30">
+          <div className="absolute top-20 left-10 w-72 h-72 bg-primary-500 rounded-full mix-blend-screen filter blur-3xl animate-pulse" />
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary-400 rounded-full mix-blend-screen filter blur-3xl animate-pulse" style={{ animationDelay: "1s" }} />
+        </div>
+        <div className="container-custom relative max-w-5xl text-center">
+          <Badge variant="primary" className="mb-6 bg-primary-500/20 text-primary-200 border-primary-400/30">
+            AUTOMATION CONSULTANTS
+          </Badge>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white leading-[1.05] tracking-tight">
+            Automate the workflows
+            <br />
+            <span className="bg-gradient-to-r from-primary-300 via-primary-400 to-primary-200 bg-clip-text text-transparent">
+              eating your team&apos;s time.
+            </span>
           </h1>
-          <p className="mt-4 text-lg text-dark-600 dark:text-dark-200 max-w-2xl">
-            Wire n8n, Make, or Zapier with Claude or GPT to automate the real
-            workflows eating your team&apos;s time. Sales ops, support, finance,
-            content, internal tools. Project-based or monthly retainer.
+          <p className="mt-8 text-lg md:text-2xl text-primary-100/90 max-w-2xl mx-auto leading-relaxed">
+            Workflows, AI agents, and integrations shipped to your real tools. Project or retainer.
           </p>
-          <div className="mt-8 flex flex-wrap gap-4">
-            <Button href="/contact" size="lg">Start a project</Button>
-            <Button href="#engagement" variant="outline" size="lg">See engagement options</Button>
+          <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+            <Button href="/contact" size="lg">Book a discovery call</Button>
+            <Button href="#engagement" variant="outline" size="lg" className="!bg-white/10 !border-white/30 !text-white hover:!bg-white/20 hover:!text-white">
+              See engagement options
+            </Button>
           </div>
         </div>
       </section>
 
-      <section className="section-padding bg-white dark:bg-dark-900">
-        <div className="container-custom max-w-4xl">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 mb-6">
-            Why automation consulting is the most grounded AI investment in 2026
-          </h2>
-          <div className="space-y-4 text-dark-600 dark:text-dark-200 leading-relaxed">
-            <p>
-              While everyone debates whether AGI arrives in 3 years or 30,
-              there is a much more grounded category of AI work generating
-              real ROI right now: wiring n8n, Make, or Zapier to Claude or
-              GPT to automate the manual workflows that quietly eat your
-              team&apos;s time. Sales ops, customer support, finance, content,
-              internal tools. The math is simple: pay a consultant 50K to
-              5L rupees (or 600 to 6,000 dollars) to kill a workflow that
-              was burning 5 hours a week of someone&apos;s time forever.
-            </p>
-            <p>
-              An automation consultant worth hiring picks platforms
-              pragmatically, builds with proper error handling and
-              monitoring, integrates AI only where it earns its keep, and
-              documents workflows so your team can maintain them. They do
-              not over-engineer with AI for marketing reasons, and they do
-              not under-engineer with happy-path-only workflows that break
-              on the first real edge case.
-            </p>
-            <p>
-              For tool-specific deep dives, read our{" "}
-              <a href="/blog/best-workflow-automation-tools-2026/" className="text-primary-600 hover:underline">best workflow automation tools 2026</a>{" "}
-              post. For AI-augmented automation patterns, see our{" "}
-              <a href="/hire/generative-ai-developers/" className="text-primary-600 hover:underline">generative AI developers</a> page.
-            </p>
+      {/* THE ARC */}
+      <section className="section-padding bg-white dark:bg-dark-900 relative overflow-hidden">
+        <div aria-hidden className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)] dark:opacity-30" />
+        <div className="container-custom relative max-w-6xl">
+          <div className="text-center mb-14">
+            <p className="text-sm font-bold text-primary-500 uppercase tracking-widest mb-3">The arc</p>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-dark-900 dark:text-dark-50">
+              Discovery to handover.
+            </h2>
           </div>
-        </div>
-      </section>
-
-      <section className="section-padding bg-primary-50 dark:bg-dark-800">
-        <div className="container-custom">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 text-center mb-12">Why hire automation consultants from Workforce Next</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {whyPoints.map((point) => (
-              <div key={point.title} className="p-6 rounded-xl bg-white dark:bg-dark-900 border border-dark-50 dark:border-dark-700 hover:shadow-card transition-all">
-                <h3 className="font-bold text-dark-900 dark:text-dark-50">{point.title}</h3>
-                <p className="mt-2 text-sm text-dark-600 dark:text-dark-200 leading-relaxed">{point.description}</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            {arc.map((a) => (
+              <div
+                key={a.num}
+                className="group relative p-7 rounded-2xl bg-white dark:bg-dark-800 border border-dark-50 dark:border-dark-700 hover:border-primary-300 dark:hover:border-primary-500/50 hover:shadow-xl hover:-translate-y-1 transition-all overflow-hidden"
+              >
+                <span aria-hidden className="absolute -top-3 -right-2 text-7xl font-extrabold text-primary-50 dark:text-primary-500/10 leading-none select-none">
+                  {a.num}
+                </span>
+                <div className="relative">
+                  <p className="text-xs font-bold text-primary-500 uppercase tracking-widest">{a.tag}</p>
+                  <h3 className="mt-2 text-lg font-extrabold text-dark-900 dark:text-dark-50 leading-snug">{a.headline}</h3>
+                  <p className="mt-3 text-sm text-dark-500 dark:text-dark-300 leading-relaxed">{a.line}</p>
+                  <div className="mt-5 h-1 w-12 bg-gradient-to-r from-primary-400 to-primary-600 rounded-full group-hover:w-24 transition-all duration-300" />
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section-padding bg-white dark:bg-dark-900">
-        <div className="container-custom max-w-4xl">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 mb-6">What an automation consultant actually does</h2>
-          <p className="text-dark-600 dark:text-dark-200 leading-relaxed mb-8">When you hire an automation consultant through Workforce Next, here is the work they take ownership of:</p>
-          <ul className="space-y-3">
-            {responsibilities.map((item) => (
-              <li key={item} className="flex gap-3 text-dark-600 dark:text-dark-200 leading-relaxed">
-                <span aria-hidden className="mt-2 h-1.5 w-1.5 rounded-full bg-primary-500 flex-shrink-0" />
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
-      <section className="section-padding bg-primary-50 dark:bg-dark-800">
-        <div className="container-custom max-w-5xl">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 mb-6">Common workflows we automate</h2>
-          <p className="text-dark-600 dark:text-dark-200 leading-relaxed mb-8 max-w-3xl">
-            If a workflow lives in a spreadsheet, in someone&apos;s head, or in a
-            chain of emails, it can probably be automated. Here are the most
-            common categories we ship.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+      {/* USE CASES BENTO */}
+      <section className="section-padding bg-primary-50/40 dark:bg-dark-800">
+        <div className="container-custom max-w-6xl">
+          <div className="text-center mb-14">
+            <p className="text-sm font-bold text-primary-500 uppercase tracking-widest mb-3">What we ship</p>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-dark-900 dark:text-dark-50">
+              Six workflows we ship all the time.
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {useCases.map((u) => (
-              <div key={u.scenario} className="p-6 rounded-xl bg-white dark:bg-dark-900 border border-dark-50 dark:border-dark-700">
-                <h3 className="font-bold text-dark-900 dark:text-dark-50 mb-2">{u.scenario}</h3>
-                <p className="text-sm text-dark-600 dark:text-dark-200 leading-relaxed">{u.examples}</p>
+              <div
+                key={u.title}
+                className="group relative p-7 rounded-2xl bg-white dark:bg-dark-900 border border-dark-50 dark:border-dark-700 hover:border-primary-300 dark:hover:border-primary-500/50 hover:shadow-xl hover:-translate-y-1 transition-all"
+              >
+                <div className="flex items-start gap-5">
+                  <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-primary-50 dark:bg-primary-500/10 p-2.5 group-hover:scale-110 transition-transform duration-300">
+                    {u.icon}
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <p className="text-xs font-bold text-primary-500 uppercase tracking-widest">{u.tag}</p>
+                    <h3 className="mt-1.5 text-lg font-extrabold text-dark-900 dark:text-dark-50">{u.title}</h3>
+                    <p className="mt-2 text-sm text-dark-500 dark:text-dark-300 leading-relaxed">{u.line}</p>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
+      {/* WHY */}
       <section className="section-padding bg-white dark:bg-dark-900">
         <div className="container-custom max-w-5xl">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 mb-6">Project, retainer, or audit: which engagement?</h2>
-          <p className="text-dark-600 dark:text-dark-200 leading-relaxed mb-8 max-w-3xl">
-            Different automation problems need different engagement shapes.
-            Here is how we help customers decide.
-          </p>
-          <div className="space-y-4">
-            {whenToHire.map((item) => (
-              <div key={item.scenario} className="p-6 rounded-xl bg-white dark:bg-dark-900 border border-dark-50 dark:border-dark-700">
-                <h3 className="font-bold text-dark-900 dark:text-dark-50 mb-1">{item.scenario}</h3>
-                <p className="text-sm font-bold text-primary-500 mb-3">{item.recommendation}</p>
-                <p className="text-sm text-dark-600 dark:text-dark-200 leading-relaxed">{item.reason}</p>
+          <div className="text-center mb-12">
+            <p className="text-sm font-bold text-primary-500 uppercase tracking-widest mb-3">Why us</p>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-dark-900 dark:text-dark-50">
+              Built to run on Monday.
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {why.map((w) => (
+              <div
+                key={w.title}
+                className="flex items-start gap-4 p-6 rounded-xl bg-white dark:bg-dark-800 border border-dark-50 dark:border-dark-700 hover:shadow-card transition-all"
+              >
+                <div className="w-3 h-3 mt-2 rounded-full bg-primary-500 flex-shrink-0" />
+                <div>
+                  <h3 className="font-extrabold text-dark-900 dark:text-dark-50">{w.title}</h3>
+                  <p className="mt-1 text-sm text-dark-500 dark:text-dark-300">{w.line}</p>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section-padding bg-primary-50 dark:bg-dark-800">
-        <div className="container-custom">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 text-center mb-8">Skills we screen for</h2>
-          <div className="flex flex-wrap justify-center gap-3 mb-12">
-            {skills.map((skill) => (
-              <span key={skill} className="px-4 py-2 bg-white dark:bg-dark-900 text-dark-700 dark:text-dark-200 rounded-lg text-sm font-medium border border-dark-100 dark:border-dark-700">{skill}</span>
+      {/* ENGAGEMENT MODELS — dark bento */}
+      <section id="engagement" className="section-padding bg-dark-900 dark:bg-dark-950 text-white">
+        <div className="container-custom max-w-6xl">
+          <div className="text-center mb-14">
+            <p className="text-sm font-bold text-primary-400 uppercase tracking-widest mb-3">Engagement</p>
+            <h2 className="text-3xl md:text-4xl font-extrabold leading-tight">
+              Three ways to work together.
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            {engagementModels.map((m) => (
+              <div
+                key={m.name}
+                className="group p-7 rounded-2xl bg-gradient-to-br from-dark-800 to-dark-900 border border-dark-700 hover:border-primary-500/50 hover:from-primary-900/30 hover:to-dark-900 transition-all duration-300 flex flex-col"
+              >
+                <p className="text-xs font-bold text-primary-400 uppercase tracking-widest">{m.tag}</p>
+                <h3 className="mt-2 text-2xl font-extrabold text-white">{m.name}</h3>
+                <p className="mt-4 text-sm text-primary-200">{m.best}</p>
+                <p className="mt-5 text-sm text-dark-300 leading-relaxed border-t border-dark-700 pt-4">
+                  {m.includes}
+                </p>
+              </div>
             ))}
           </div>
-          <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5">
-            {screeningSignals.map((item) => (
-              <div key={item.signal} className="p-6 rounded-xl bg-white dark:bg-dark-900 border border-dark-50 dark:border-dark-700">
-                <h3 className="font-bold text-dark-900 dark:text-dark-50 mb-2">{item.signal}</h3>
-                <p className="text-sm text-dark-600 dark:text-dark-200 leading-relaxed">{item.detail}</p>
+          <div className="mt-12 text-center">
+            <Button href="/contact" size="lg">Scope your engagement</Button>
+          </div>
+        </div>
+      </section>
+
+      {/* SCREENING SIGNALS */}
+      <section className="section-padding bg-primary-50/40 dark:bg-dark-800">
+        <div className="container-custom max-w-6xl">
+          <div className="text-center mb-12">
+            <p className="text-sm font-bold text-primary-500 uppercase tracking-widest mb-3">How we screen</p>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-dark-900 dark:text-dark-50">
+              What separates good consultants from demo-builders.
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {screening.map((s) => (
+              <div
+                key={s.title}
+                className="group relative p-6 rounded-2xl bg-white dark:bg-dark-900 border border-dark-50 dark:border-dark-700 hover:border-primary-300 dark:hover:border-primary-500/50 hover:shadow-xl transition-all"
+              >
+                <h3 className="font-extrabold text-dark-900 dark:text-dark-50">{s.title}</h3>
+                <p className="mt-2 text-sm text-dark-500 dark:text-dark-300 leading-relaxed">{s.line}</p>
+                <div className="mt-4 h-1 w-10 bg-gradient-to-r from-primary-400 to-primary-600 rounded-full group-hover:w-20 transition-all duration-300" />
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section id="engagement" className="section-padding bg-white dark:bg-dark-900">
-        <div className="container-custom max-w-5xl">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 mb-6">Engagement models</h2>
-          <p className="text-dark-600 dark:text-dark-200 leading-relaxed mb-8 max-w-3xl">Three ways to work with our automation consultants. Pick the shape that fits your work.</p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {engagementModels.map((model) => (
-              <div key={model.name} className="p-6 rounded-xl bg-white dark:bg-dark-900 border border-dark-50 dark:border-dark-700 flex flex-col">
-                <h3 className="text-lg font-extrabold text-dark-900 dark:text-dark-50">{model.name}</h3>
-                <p className="mt-1 text-sm font-bold text-primary-500">{model.hours}</p>
-                <p className="mt-4 text-sm text-dark-600 dark:text-dark-200 leading-relaxed">{model.best}</p>
-                <p className="mt-4 text-sm text-dark-600 dark:text-dark-200 leading-relaxed border-t border-dark-50 dark:border-dark-700 pt-4">{model.includes}</p>
-              </div>
-            ))}
+      {/* PROCESS — visual timeline */}
+      <section className="section-padding bg-white dark:bg-dark-900">
+        <div className="container-custom max-w-6xl">
+          <div className="text-center mb-14">
+            <p className="text-sm font-bold text-primary-500 uppercase tracking-widest mb-3">How it works</p>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-dark-900 dark:text-dark-50">
+              Four steps. No fluff.
+            </h2>
           </div>
-        </div>
-      </section>
-
-      <section className="section-padding bg-primary-50 dark:bg-dark-800">
-        <div className="container-custom">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 text-center mb-12">How it works</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="relative grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div aria-hidden className="hidden md:block absolute top-8 left-[12.5%] right-[12.5%] h-0.5 bg-gradient-to-r from-primary-300 via-primary-500 to-primary-300" />
             {steps.map((s) => (
-              <div key={s.step} className="text-center">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary-100 text-primary-700 font-bold text-lg mb-4">{s.step}</div>
-                <h3 className="font-bold text-dark-900 dark:text-dark-50">{s.title}</h3>
-                <p className="mt-2 text-sm text-dark-600 dark:text-dark-200 leading-relaxed">{s.description}</p>
+              <div key={s.num} className="relative text-center">
+                <div className="relative z-10 inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-primary-400 to-primary-600 text-white font-extrabold text-xl shadow-lg shadow-primary-500/30">
+                  {s.num}
+                </div>
+                <h3 className="mt-4 font-extrabold text-dark-900 dark:text-dark-50">{s.title}</h3>
+                <p className="mt-1.5 text-sm text-dark-500 dark:text-dark-300">{s.line}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section-padding bg-white dark:bg-dark-900">
-        <div className="container-custom max-w-4xl">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 mb-8">Common questions about automation consulting</h2>
-          <div className="space-y-4">
+      {/* FAQ */}
+      <section className="section-padding bg-primary-50/30 dark:bg-dark-800">
+        <div className="container-custom max-w-3xl">
+          <div className="text-center mb-12">
+            <p className="text-sm font-bold text-primary-500 uppercase tracking-widest mb-3">FAQ</p>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-dark-900 dark:text-dark-50">
+              Quick answers.
+            </h2>
+          </div>
+          <div className="space-y-3">
             {faqItems.map((faq) => (
-              <div key={faq.question} className="p-6 rounded-xl bg-white dark:bg-dark-900 border border-dark-50 dark:border-dark-700">
-                <h3 className="font-bold text-dark-900 dark:text-dark-50">{faq.question}</h3>
-                <p className="mt-3 text-dark-600 dark:text-dark-200 leading-relaxed">{faq.answer}</p>
-              </div>
+              <details
+                key={faq.question}
+                className="group p-6 rounded-xl bg-white dark:bg-dark-900 border border-dark-50 dark:border-dark-700 hover:border-primary-300 dark:hover:border-primary-500/50 transition-all"
+              >
+                <summary className="flex items-center justify-between cursor-pointer list-none">
+                  <h3 className="font-bold text-dark-900 dark:text-dark-50 pr-4">{faq.question}</h3>
+                  <span className="flex-shrink-0 w-8 h-8 rounded-full bg-primary-50 dark:bg-dark-800 text-primary-500 flex items-center justify-center font-bold group-open:rotate-45 transition-transform">
+                    +
+                  </span>
+                </summary>
+                <p className="mt-4 text-dark-600 dark:text-dark-200 leading-relaxed">{faq.answer}</p>
+              </details>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section-padding bg-gradient-to-r from-primary-500 to-primary-600">
-        <div className="container-custom text-center">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-white mb-4">Ready to automate a workflow?</h2>
-          <p className="text-primary-100 max-w-xl mx-auto mb-8">Tell us what you want to automate and we will scope it within 48 hours.</p>
-          <Button href="/contact" variant="white" size="lg">Start a project</Button>
+      {/* CTA */}
+      <section className="relative overflow-hidden section-padding bg-gradient-to-br from-primary-600 via-primary-500 to-primary-700">
+        <div aria-hidden className="absolute inset-0 opacity-20">
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-white rounded-full mix-blend-overlay filter blur-3xl" />
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-primary-200 rounded-full mix-blend-overlay filter blur-3xl" />
+        </div>
+        <div className="container-custom relative text-center max-w-3xl">
+          <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-4 leading-tight">
+            Ready to automate the right workflow?
+          </h2>
+          <p className="text-lg text-primary-50 mb-8">
+            Tell us what is bleeding time. Scoped proposal in 48 hours.
+          </p>
+          <Button href="/contact" variant="white" size="lg">Book a discovery call</Button>
         </div>
       </section>
     </>

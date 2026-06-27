@@ -11,10 +11,9 @@ import CTASection from "@/components/home/CTASection";
 import { generateHomepageHowToSchema } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
-  title:
-    "AI Automation Agency for Founders | AI Agents, Dedicated Developers, Organic Growth | Workforce Next",
+  title: "Hire AI Agents or Expert Talent for Your Projects",
   description:
-    "AI automation agency for founders. Product consulting, AI agents for operations, dedicated developers and QA, and AEO/GEO organic growth. Four services, one partner.",
+    "Done-for-you AI agents or human talent: consulting, AI SDR outreach, AI developers, data engineers, and HR agents for US and Canada founders.",
   keywords: [
     "AI automation agency for founders",
     "AI automation agency for SaaS",
@@ -36,9 +35,9 @@ export const metadata: Metadata = {
   openGraph: {
     ...ogDefaults("/"),
     images: ["/images/og-default.png"],
-    title: "AI Automation Agency for Founders | AI Agents, Dedicated Developers, Organic Growth",
+    title: "Hire AI Agents or Expert Talent for Your Projects",
     description:
-      "Four services, one partner: product consulting, AI agents for operations, dedicated developers and QA, and AEO/GEO organic growth.",
+      "Done-for-you AI agents and remote experts: product consulting, AI SDR outreach, AI development, data engineering, and HR agents.",
   },
 };
 
