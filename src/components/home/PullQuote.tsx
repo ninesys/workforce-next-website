@@ -10,11 +10,11 @@ export default function PullQuote() {
             </svg>
           </div>
           <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-dark-100 leading-snug">
-            A 12-month developer is worth 3x a fresh hire of equal skill.{" "}
-            <span className="text-primary-400">Not for the code. For the context.</span>
+            The question is not AI agent or human.{" "}
+            <span className="text-primary-400">It is where each one belongs in your workflow.</span>
           </p>
           <footer className="mt-6 sm:mt-8 text-dark-300 text-sm font-medium">
-            Why we build teams that stay.
+            How we scope every engagement.
           </footer>
         </blockquote>
       </div>
