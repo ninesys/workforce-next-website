@@ -53,6 +53,7 @@ import securingRagApplicationsDataIsolationPatterns2026 from "./blog/securing-ra
 import aiCodeReviewSecurityEnterprisePipelines2026 from "./blog/ai-code-review-security-enterprise-pipelines-2026";
 import bestTechStackSaasMvp2026 from "./blog/best-tech-stack-saas-mvp-2026";
 import aiAgentVsHiringHumanHowToDecide from "./blog/ai-agent-vs-hiring-human-how-to-decide";
+import whatIsAeoWhyEverySaasNeedsItNow from "./blog/what-is-aeo-why-every-saas-needs-it-now";
 
 export type { BlogPost, BlogFAQ };
 
@@ -121,4 +122,5 @@ export const blogPosts: BlogPost[] = [
   aiCodeReviewSecurityEnterprisePipelines2026,
   bestTechStackSaasMvp2026,
   aiAgentVsHiringHumanHowToDecide,
+  whatIsAeoWhyEverySaasNeedsItNow,
 ];
