@@ -56,6 +56,7 @@ import aiAgentVsHiringHumanHowToDecide from "./blog/ai-agent-vs-hiring-human-how
 import whatIsAeoWhyEverySaasNeedsItNow from "./blog/what-is-aeo-why-every-saas-needs-it-now";
 import aiAgentsVsAutomationVsWorkflows from "./blog/ai-agents-vs-automation-vs-workflows";
 import howToChooseTechStackForSaas from "./blog/how-to-choose-tech-stack-for-saas";
+import dedicatedDevelopersVsFreelancersVsAgency from "./blog/dedicated-developers-vs-freelancers-vs-agency";
 
 export type { BlogPost, BlogFAQ };
 
@@ -127,4 +128,5 @@ export const blogPosts: BlogPost[] = [
   whatIsAeoWhyEverySaasNeedsItNow,
   aiAgentsVsAutomationVsWorkflows,
   howToChooseTechStackForSaas,
+  dedicatedDevelopersVsFreelancersVsAgency,
 ];
