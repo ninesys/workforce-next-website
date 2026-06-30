@@ -75,6 +75,7 @@ URLS=(
   "https://${HOST}/blog/ai-agent-vs-hiring-human-how-to-decide/"
   "https://${HOST}/blog/what-is-aeo-why-every-saas-needs-it-now/"
   "https://${HOST}/blog/ai-agents-vs-automation-vs-workflows/"
+  "https://${HOST}/blog/how-to-choose-tech-stack-for-saas/"
   "https://${HOST}/how-we-work/"
   "https://${HOST}/why-teams-stay/"
   "https://${HOST}/india-handled/"
