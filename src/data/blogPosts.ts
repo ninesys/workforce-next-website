@@ -55,6 +55,7 @@ import llmApiKeyRotationSecretManagement2026 from "./blog/llm-api-key-rotation-s
 import complianceChecklistAiApplicationsSoc2Hipaa2026 from "./blog/compliance-checklist-ai-applications-soc2-hipaa-2026";
 import enterpriseNextjsArchitecturePatterns2026 from "./blog/enterprise-nextjs-architecture-patterns-2026";
 import headlessCmsEvaluationEnterpriseTeams2026 from "./blog/headless-cms-evaluation-enterprise-teams-2026";
+import migratingMonolithToIslandsArchitecture2026 from "./blog/migrating-monolith-to-islands-architecture-2026";
 
 export type { BlogPost, BlogFAQ };
 
@@ -125,4 +126,5 @@ export const blogPosts: BlogPost[] = [
   complianceChecklistAiApplicationsSoc2Hipaa2026,
   enterpriseNextjsArchitecturePatterns2026,
   headlessCmsEvaluationEnterpriseTeams2026,
+  migratingMonolithToIslandsArchitecture2026,
 ];
