@@ -6,7 +6,7 @@ const post: BlogPost = {
 <p>This post walks through what each framework is actually good at, when to pick which, and what to verify before committing. If you are about to hire engineers around a framework choice, read this first so you do not hire for the wrong stack.</p>
 
 <h2>What does an AI agent framework actually do?</h2>
-<p>An agent framework wraps three things: calling an LLM, letting the LLM call tools (search, APIs, databases), and orchestrating multi-step workflows where the output of one step feeds the next. The frameworks differ in how much opinion they impose on each layer, and how much they help with the parts that are genuinely hard: retries, state, memory, and multi-agent coordination.</p>
+<p>An agent framework wraps three things: calling an LLM, letting the LLM call tools (search, APIs, databases), and orchestrating multi-step workflows where the output of one step feeds the next. The frameworks differ in how much opinion they impose on each layer, and how much they help with the parts that are genuinely hard: retries, state, memory, and multi-agent coordination. If the tool-calling layer is what you are trying to standardize across multiple clients, that is what <a href="/blog/mcp-server-architecture-vs-rest-api/">MCP server architecture</a> solves.</p>
 <p>If your use case is a single LLM call with no tools, you do not need a framework. The OpenAI or Anthropic SDK directly is enough. Frameworks start earning their weight when you have tool calls, retrieval, or multiple reasoning steps.</p>
 
 <h2>When should you use LangChain (or LangGraph)?</h2>

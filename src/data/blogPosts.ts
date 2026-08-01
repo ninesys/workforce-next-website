@@ -57,6 +57,7 @@ import whatIsAeoWhyEverySaasNeedsItNow from "./blog/what-is-aeo-why-every-saas-n
 import aiAgentsVsAutomationVsWorkflows from "./blog/ai-agents-vs-automation-vs-workflows";
 import howToChooseTechStackForSaas from "./blog/how-to-choose-tech-stack-for-saas";
 import dedicatedDevelopersVsFreelancersVsAgency from "./blog/dedicated-developers-vs-freelancers-vs-agency";
+import mcpServerArchitectureVsRestApi from "./blog/mcp-server-architecture-vs-rest-api";
 
 export type { BlogPost, BlogFAQ };
 
@@ -129,4 +130,5 @@ export const blogPosts: BlogPost[] = [
   aiAgentsVsAutomationVsWorkflows,
   howToChooseTechStackForSaas,
   dedicatedDevelopersVsFreelancersVsAgency,
+  mcpServerArchitectureVsRestApi,
 ];
