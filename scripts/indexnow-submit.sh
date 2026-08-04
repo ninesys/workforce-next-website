@@ -77,6 +77,8 @@ URLS=(
   "https://${HOST}/blog/ai-agents-vs-automation-vs-workflows/"
   "https://${HOST}/blog/how-to-choose-tech-stack-for-saas/"
   "https://${HOST}/blog/dedicated-developers-vs-freelancers-vs-agency/"
+  "https://${HOST}/blog/mcp-server-architecture-vs-rest-api/"
+  "https://${HOST}/blog/how-to-build-an-mcp-server/"
   "https://${HOST}/how-we-work/"
   "https://${HOST}/why-teams-stay/"
   "https://${HOST}/india-handled/"
