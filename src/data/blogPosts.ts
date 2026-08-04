@@ -58,6 +58,7 @@ import aiAgentsVsAutomationVsWorkflows from "./blog/ai-agents-vs-automation-vs-w
 import howToChooseTechStackForSaas from "./blog/how-to-choose-tech-stack-for-saas";
 import dedicatedDevelopersVsFreelancersVsAgency from "./blog/dedicated-developers-vs-freelancers-vs-agency";
 import mcpServerArchitectureVsRestApi from "./blog/mcp-server-architecture-vs-rest-api";
+import howToBuildAnMcpServer from "./blog/how-to-build-an-mcp-server";
 
 export type { BlogPost, BlogFAQ };
 
@@ -131,4 +132,5 @@ export const blogPosts: BlogPost[] = [
   howToChooseTechStackForSaas,
   dedicatedDevelopersVsFreelancersVsAgency,
   mcpServerArchitectureVsRestApi,
+  howToBuildAnMcpServer,
 ];

@@ -102,7 +102,7 @@ const post: BlogPost = {
 
 <h2>How do you ship your first MCP server?</h2>
 
-<p>The path that works, for a team that has not built one before:</p>
+<p>The path that works, for a team that has not built one before, with the full code-level walkthrough in <a href="/blog/how-to-build-an-mcp-server/">how to build an MCP server</a>:</p>
 
 <ol>
   <li><strong>Define the smallest useful surface.</strong> Pick three to five tools and one or two resources. Resist the temptation to expose everything. The first server should solve one workflow well, not be a complete API mirror.</li>
