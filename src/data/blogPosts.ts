@@ -59,6 +59,7 @@ import howToChooseTechStackForSaas from "./blog/how-to-choose-tech-stack-for-saa
 import dedicatedDevelopersVsFreelancersVsAgency from "./blog/dedicated-developers-vs-freelancers-vs-agency";
 import mcpServerArchitectureVsRestApi from "./blog/mcp-server-architecture-vs-rest-api";
 import howToBuildAnMcpServer from "./blog/how-to-build-an-mcp-server";
+import logistics3plTechChallenges2026 from "./blog/logistics-3pl-tech-challenges-2026";
 
 export type { BlogPost, BlogFAQ };
 
@@ -133,4 +134,5 @@ export const blogPosts: BlogPost[] = [
   dedicatedDevelopersVsFreelancersVsAgency,
   mcpServerArchitectureVsRestApi,
   howToBuildAnMcpServer,
+  logistics3plTechChallenges2026,
 ];

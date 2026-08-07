@@ -1,9 +1,22 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "version": 1,
-  "lastUpdated": "2026-06-21",
+  "lastUpdated": "2026-07-16",
   "notes": "Authoritative blog post pipeline. Mirror of the build queue in ~/.claude/projects/.../memory/project_target_keywords_2026-05.md. Update this file when items ship. Keep priority ordering descending: lowest priority number = ships next.",
   "queue": [
+    {
+      "id": "logistics-1",
+      "slug": "logistics-3pl-tech-challenges-2026",
+      "title": "Logistics and 3PL Tech: The Biggest Engineering Challenges in 2026 (and How to Solve Them)",
+      "primaryKeyword": "3pl technology challenges",
+      "pairsWith": "/hire/automation-consultants/",
+      "priority": 1,
+      "status": "pending",
+      "addedAt": "2026-08-07",
+      "series": "logistics-3pl",
+      "audience": "3PL and logistics tech founders/CTOs",
+      "notes": "Logistics series #1 (hub post). Overview of the 5-post series: routing engines, route optimization, backhauling/load matching, real-time tracking, plus the recurring build-vs-buy and legacy-integration pain points. Links out to all 4 companion posts as they ship."
+    },
     {
       "id": "entweb-3",
       "slug": "migrating-monolith-to-islands-architecture-2026",
@@ -17,7 +30,111 @@
       "notes": "When to pick islands (Astro, Fresh, Qwik) over Next.js, performance and SEO gains, hybrid migration (route-by-route), cost of incomplete migration, real-world case-study framing."
     }
   ],
-  "backlog": [],
+  "backlog": [
+    {
+      "id": "pillar-ai-security",
+      "slug": "ai-application-security-complete-guide-2026",
+      "title": "AI Application Security: The Complete Guide (2026)",
+      "primaryKeyword": "AI application security",
+      "pairsWith": "/hire/ai-developers/",
+      "status": "candidate",
+      "addedAt": "2026-07-16",
+      "audience": "Engineering leaders and security teams shipping LLM-backed products",
+      "notes": "Synthesizing pillar for the shipped AI security series (OWASP LLM Top 10, prompt injection defense, RAG data isolation, AI code review, key rotation, SOC2/HIPAA compliance). Link out to all five as supporting posts. No pillar currently anchors this cluster."
+    },
+    {
+      "id": "pillar-devops-cloud",
+      "slug": "devops-cloud-infrastructure-complete-guide-2026",
+      "title": "DevOps and Cloud Infrastructure: The Complete Guide (2026)",
+      "primaryKeyword": "devops cloud infrastructure guide",
+      "pairsWith": "/hire/devops-engineers/",
+      "status": "candidate",
+      "addedAt": "2026-07-16",
+      "audience": "Engineering managers and platform leads scoping DevOps/SRE hiring or infra rebuilds",
+      "notes": "No complete-guide pillar exists for the DevOps/cloud-cost-engineer cluster despite two active hire pillar pages (/hire/devops-engineers/, /hire/cloud-cost-engineer/). Cover IaC, CI/CD maturity, cost governance, on-call/SRE staffing model, build vs. outsource."
+    },
+    {
+      "id": "pillar-mobile-dev",
+      "slug": "mobile-app-development-complete-guide-2026",
+      "title": "Mobile App Development: The Complete Guide (2026)",
+      "primaryKeyword": "mobile app development guide",
+      "pairsWith": "/hire/ios-developers/",
+      "status": "candidate",
+      "addedAt": "2026-07-16",
+      "audience": "Founders and product leads scoping native vs. cross-platform mobile builds",
+      "notes": "Existing mobile posts (cross-platform hiring, Android hiring guide, Kotlin vs Java, mobile testing team) are hiring-guide shaped, not a scope/architecture/cost pillar. Cover native vs. React Native/Flutter/KMP decision, team shape, cost bands, App Store/Play Store constraints."
+    },
+    {
+      "id": "pillar-qa-testing",
+      "slug": "qa-test-automation-complete-guide-2026",
+      "title": "QA and Test Automation: The Complete Guide (2026)",
+      "primaryKeyword": "qa test automation guide",
+      "pairsWith": "/hire/qa-testers/",
+      "status": "candidate",
+      "addedAt": "2026-07-16",
+      "audience": "Engineering and QA leads deciding between manual, automated, and outsourced test coverage",
+      "notes": "Only hiring-guide-shaped posts exist (hire-software-testing-team, mobile testing team). Cover automation framework choice, manual vs. automated ROI, test pyramid for AI-assisted codebases, when to pod vs. hire in-house."
+    },
+    {
+      "id": "pillar-data-engineering",
+      "slug": "data-engineering-platform-complete-guide-2026",
+      "title": "Data Engineering and Data Platforms: The Complete Guide (2026)",
+      "primaryKeyword": "data engineering platform guide",
+      "pairsWith": "/hire/data-engineers/",
+      "status": "candidate",
+      "addedAt": "2026-07-16",
+      "audience": "CTOs and data leads scoping a data platform build or data engineering hire",
+      "notes": "No pillar exists for /hire/data-engineers/ despite it being a standing hire page. Cover modern data stack choices, batch vs. streaming, warehouse/lakehouse decision, team shape and cost, AI/RAG data pipeline overlap."
+    },
+    {
+      "id": "logistics-2",
+      "slug": "osrm-vs-google-maps-vs-mapbox-routing-engine-2026",
+      "title": "OSRM vs Google Maps vs Mapbox: Choosing a Routing Engine for Logistics Platforms",
+      "primaryKeyword": "osrm vs google maps routing engine",
+      "pairsWith": "/hire/automation-consultants/",
+      "status": "candidate",
+      "addedAt": "2026-08-07",
+      "series": "logistics-3pl",
+      "audience": "3PL and logistics tech founders/CTOs choosing a routing engine",
+      "notes": "Logistics series #2. Self-hosted OSRM vs Google Maps Platform vs Mapbox Directions/Optimization APIs: cost model, accuracy, self-hosting burden, when each wins."
+    },
+    {
+      "id": "logistics-3",
+      "slug": "route-optimization-algorithms-3pl-fleet-platforms",
+      "title": "How Route Optimization Actually Works for 3PL and Fleet Platforms",
+      "primaryKeyword": "route optimization algorithm logistics",
+      "pairsWith": "/hire/automation-consultants/",
+      "status": "candidate",
+      "addedAt": "2026-08-07",
+      "series": "logistics-3pl",
+      "audience": "3PL and logistics tech founders/CTOs scoping a route optimization build",
+      "notes": "Logistics series #3. VRP/TSP fundamentals in plain language, constraint types (time windows, capacity, driver hours), build vs. buy (OR-Tools, VROOM, commercial APIs)."
+    },
+    {
+      "id": "logistics-4",
+      "slug": "backhauling-load-matching-empty-miles-logistics",
+      "title": "Backhauling and Load Matching: How to Cut Empty Miles with Smart Software",
+      "primaryKeyword": "backhaul load matching software",
+      "pairsWith": "/hire/automation-consultants/",
+      "status": "candidate",
+      "addedAt": "2026-08-07",
+      "series": "logistics-3pl",
+      "audience": "3PL and freight brokerage founders/CTOs building backhaul/load-matching features",
+      "notes": "Logistics series #4. What backhauling solves, matching algorithm basics, data needed (lane history, capacity, deadhead cost), where AI agents fit (carrier outreach, rate negotiation)."
+    },
+    {
+      "id": "logistics-5",
+      "slug": "real-time-location-tracking-architecture-logistics",
+      "title": "Real-Time Location Tracking Architecture for Logistics Platforms",
+      "primaryKeyword": "real time gps tracking architecture logistics",
+      "pairsWith": "/hire/automation-consultants/",
+      "status": "candidate",
+      "addedAt": "2026-08-07",
+      "series": "logistics-3pl",
+      "audience": "3PL and logistics tech founders/CTOs architecting a live-tracking feature",
+      "notes": "Logistics series #5. GPS ingestion pipeline, geofencing, ETA prediction, ELD/telematics integration, scaling location writes, mobile battery/connectivity tradeoffs."
+    }
+  ],
   "shipped": [
     {
       "id": "entweb-2",
