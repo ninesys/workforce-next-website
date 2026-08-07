@@ -5,19 +5,6 @@
   "notes": "Authoritative blog post pipeline. Mirror of the build queue in ~/.claude/projects/.../memory/project_target_keywords_2026-05.md. Update this file when items ship. Keep priority ordering descending: lowest priority number = ships next.",
   "queue": [
     {
-      "id": "logistics-1",
-      "slug": "logistics-3pl-tech-challenges-2026",
-      "title": "Logistics and 3PL Tech: The Biggest Engineering Challenges in 2026 (and How to Solve Them)",
-      "primaryKeyword": "3pl technology challenges",
-      "pairsWith": "/hire/automation-consultants/",
-      "priority": 1,
-      "status": "pending",
-      "addedAt": "2026-08-07",
-      "series": "logistics-3pl",
-      "audience": "3PL and logistics tech founders/CTOs",
-      "notes": "Logistics series #1 (hub post). Overview of the 5-post series: routing engines, route optimization, backhauling/load matching, real-time tracking, plus the recurring build-vs-buy and legacy-integration pain points. Links out to all 4 companion posts as they ship."
-    },
-    {
       "id": "entweb-3",
       "slug": "migrating-monolith-to-islands-architecture-2026",
       "title": "Migrating an Enterprise Site from Monolith to Islands (2026)",
@@ -87,18 +74,6 @@
       "notes": "No pillar exists for /hire/data-engineers/ despite it being a standing hire page. Cover modern data stack choices, batch vs. streaming, warehouse/lakehouse decision, team shape and cost, AI/RAG data pipeline overlap."
     },
     {
-      "id": "logistics-2",
-      "slug": "osrm-vs-google-maps-vs-mapbox-routing-engine-2026",
-      "title": "OSRM vs Google Maps vs Mapbox: Choosing a Routing Engine for Logistics Platforms",
-      "primaryKeyword": "osrm vs google maps routing engine",
-      "pairsWith": "/hire/automation-consultants/",
-      "status": "candidate",
-      "addedAt": "2026-08-07",
-      "series": "logistics-3pl",
-      "audience": "3PL and logistics tech founders/CTOs choosing a routing engine",
-      "notes": "Logistics series #2. Self-hosted OSRM vs Google Maps Platform vs Mapbox Directions/Optimization APIs: cost model, accuracy, self-hosting burden, when each wins."
-    },
-    {
       "id": "logistics-3",
       "slug": "route-optimization-algorithms-3pl-fleet-platforms",
       "title": "How Route Optimization Actually Works for 3PL and Fleet Platforms",
@@ -136,6 +111,24 @@
     }
   ],
   "shipped": [
+    {
+      "id": "logistics-2",
+      "slug": "osrm-vs-google-maps-vs-mapbox-routing-engine-2026",
+      "title": "OSRM vs Google Maps vs Mapbox: Choosing a Routing Engine for Logistics Platforms",
+      "shippedAt": "2026-08-07",
+      "commit": "pending",
+      "imageWebp": false,
+      "notes": "Logistics series #2. Drafted and registered 2026-08-07. OG WebP image pending."
+    },
+    {
+      "id": "logistics-1",
+      "slug": "logistics-3pl-tech-challenges-2026",
+      "title": "Logistics and 3PL Tech: The Biggest Engineering Challenges in 2026 (and How to Solve Them)",
+      "shippedAt": "2026-08-07",
+      "commit": "406778e",
+      "imageWebp": true,
+      "notes": "Logistics series #1 (hub post)."
+    },
     {
       "id": "entweb-2",
       "slug": "headless-cms-evaluation-enterprise-teams-2026",

@@ -22,7 +22,7 @@ const post: BlogPost = {
 
 <p>Self-hosting <a href="https://project-osrm.org/" rel="noopener">OSRM</a> on OpenStreetMap data is the cheapest option at scale and gives you full control, but you own the infrastructure, the map data refresh cycle, and the accuracy gaps in regions where OpenStreetMap coverage is thin. Google Maps Platform has the best real-world accuracy and traffic data but bills per request in a way that gets expensive fast once you are routing thousands of vehicles a day. Mapbox sits in between on both cost and control, with its own optimization and matrix APIs.</p>
 
-<p>There is no universally right answer, only a right answer for your volume, your budget, and how much accuracy actually matters for your use case. A long-haul freight platform routing between distribution centers has very different needs than a last-mile delivery app navigating dense urban streets. The full comparison, including a real cost model at different vehicle-fleet sizes, is coming as post 2 in this series.</p>
+<p>There is no universally right answer, only a right answer for your volume, your budget, and how much accuracy actually matters for your use case. A long-haul freight platform routing between distribution centers has very different needs than a last-mile delivery app navigating dense urban streets. The full comparison, including a real cost model at different vehicle-fleet sizes, is in <a href="/blog/osrm-vs-google-maps-vs-mapbox-routing-engine-2026/">OSRM vs Google Maps vs Mapbox: choosing a routing engine for logistics platforms</a>.</p>
 
 <h2>Challenge 2: How do you optimize routes at real fleet scale?</h2>
 
@@ -59,7 +59,7 @@ const post: BlogPost = {
 <p>This post is the map. The next four go deep on each challenge:</p>
 
 <ol>
-  <li>OSRM vs Google Maps vs Mapbox: choosing a routing engine for logistics platforms</li>
+  <li><a href="/blog/osrm-vs-google-maps-vs-mapbox-routing-engine-2026/">OSRM vs Google Maps vs Mapbox: choosing a routing engine for logistics platforms</a></li>
   <li>How route optimization actually works for 3PL and fleet platforms</li>
   <li>Backhauling and load matching: how to cut empty miles with smart software</li>
   <li>Real-time location tracking architecture for logistics platforms</li>
