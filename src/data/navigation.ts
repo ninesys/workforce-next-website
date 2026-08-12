@@ -74,7 +74,6 @@ export const mainNavItems: NavItem[] = [
   },
   { label: "How We Work", href: "/how-we-work" },
   { label: "Blog", href: "/blog" },
-  { label: "About", href: "/about" },
   { label: "Careers", href: "/careers" },
 ];
 
@@ -110,7 +109,6 @@ export const footerLinks = {
     { label: "SethAI Recruiter", href: "/products/seth-ai-recruiter" },
   ],
   company: [
-    { label: "About", href: "/about" },
     { label: "How We Work", href: "/how-we-work" },
     { label: "Why Teams Stay", href: "/why-teams-stay" },
     { label: "FAQ", href: "/faq" },

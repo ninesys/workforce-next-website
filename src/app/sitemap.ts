@@ -67,8 +67,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/how-we-work/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/why-teams-stay/`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/india-handled/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
-    { url: `${baseUrl}/about/`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/about/gaurav/`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     // Blog listing
     { url: `${baseUrl}/blog/`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     // Utility pages
