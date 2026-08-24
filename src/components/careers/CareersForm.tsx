@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, FormEvent, useRef } from "react";
+import { useState, FormEvent, useRef, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import Button from "@/components/ui/Button";
 
 const MAX_FILE_BYTES = 5 * 1024 * 1024; // 5 MB
@@ -11,7 +12,24 @@ const ALLOWED_TYPES = [
   "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
 ];
 
+const VALID_ROLE_VALUES = [
+  "ai-ml-engineer",
+  "data-engineer",
+  "full-stack-developer",
+  "frontend-engineer",
+  "backend-engineer",
+  "vibe-code-engineer",
+  "cloud-cost-engineer",
+  "cloud-devops-engineer",
+  "mobile-developer",
+  "qa-engineer",
+  "ui-ux-designer",
+  "seo-specialist",
+  "social-media-content-creator",
+];
+
 export default function CareersForm() {
+  const searchParams = useSearchParams();
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
@@ -27,6 +45,13 @@ export default function CareersForm() {
     coverNote: "",
     website: "", // honeypot
   });
+
+  useEffect(() => {
+    const role = searchParams.get("role");
+    if (role && VALID_ROLE_VALUES.includes(role)) {
+      setFormData((prev) => ({ ...prev, role }));
+    }
+  }, [searchParams]);
 
   const resetForm = () => {
     setFormData({
@@ -265,7 +290,7 @@ export default function CareersForm() {
           <option value="backend-engineer">Backend Engineer (FastAPI / Go / Node.js)</option>
           <option value="vibe-code-engineer">Vibe-Code Optimisation Engineer</option>
           <option value="cloud-cost-engineer">Cloud Cost Optimisation Engineer</option>
-          <option value="cloud-devops">Cloud & DevOps Engineer</option>
+          <option value="cloud-devops-engineer">Cloud & DevOps Engineer</option>
           <option value="mobile-developer">Mobile Developer (React Native / Flutter)</option>
           <option value="qa-engineer">QA / Test Automation Engineer</option>
           <option value="ui-ux-designer">UI/UX Designer</option>

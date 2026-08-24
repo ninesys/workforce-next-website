@@ -1,8 +1,11 @@
 import { Metadata } from "next";
+import { Suspense } from "react";
+import Link from "next/link";
 import { ogDefaults } from "@/data/siteMetadata";
 import CareersForm from "@/components/careers/CareersForm";
 import Badge from "@/components/ui/Badge";
 import { generateJobPostingSchema } from "@/lib/jsonLd";
+import { jobOpenings } from "@/data/jobOpenings";
 
 export const metadata: Metadata = {
   title: "Careers at Workforce Next - Join Our Engineering Team",
@@ -70,34 +73,16 @@ const perks = [
   },
 ];
 
-const roles = [
-  "Full-Stack Developer (React / Node.js)",
-  "AI / ML Engineer",
-  "Data Engineer (Spark / Airflow)",
-  "Vibe-Code Optimisation Engineer",
-  "Cloud & DevOps Engineer",
-  "Mobile Developer (React Native / Flutter)",
-  "QA / Test Automation Engineer",
-  "UI/UX Designer",
-  "SEO Specialist (1+ years)",
-  "Social Media Content Creator (Experienced / Intern)",
-];
-
-const jobRoles = [
-  { title: "Full-Stack Developer (React / Node.js)", value: "full-stack-developer", minSalary: 1500000, maxSalary: 4000000 },
-  { title: "AI / ML Engineer", value: "ai-ml-engineer", minSalary: 2000000, maxSalary: 5500000 },
-  { title: "Data Engineer (Spark / Airflow)", value: "data-engineer", minSalary: 1800000, maxSalary: 4500000 },
-  { title: "Vibe-Code Optimisation Engineer", value: "vibe-code-engineer", minSalary: 1500000, maxSalary: 4000000 },
-  { title: "Cloud & DevOps Engineer", value: "cloud-devops", minSalary: 1800000, maxSalary: 4500000 },
-  { title: "Mobile Developer (React Native / Flutter)", value: "mobile-developer", minSalary: 1400000, maxSalary: 3500000 },
-  { title: "QA / Test Automation Engineer", value: "qa-engineer", minSalary: 1000000, maxSalary: 2800000 },
-  { title: "UI/UX Designer", value: "ui-ux-designer", minSalary: 1000000, maxSalary: 2800000 },
-  { title: "SEO Specialist", value: "seo-specialist", minSalary: 180000, maxSalary: 300000 },
-  { title: "Social Media Content Creator", value: "social-media-content-creator" },
-];
-
 export default function CareersPage() {
-  const jobPostingSchemas = generateJobPostingSchema(jobRoles);
+  const jobPostingSchemas = generateJobPostingSchema(
+    jobOpenings.map((job) => ({
+      title: job.title,
+      value: job.slug,
+      minSalary: job.minSalary,
+      maxSalary: job.maxSalary,
+      description: job.summary,
+    }))
+  );
 
   return (
     <>
@@ -152,47 +137,64 @@ export default function CareersPage() {
         </div>
       </section>
 
-      {/* Roles + Form */}
-      <section className="section-padding bg-primary-50 dark:bg-dark-800">
+      {/* Open Roles */}
+      <section className="section-padding bg-white dark:bg-dark-900">
         <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16">
-            <div className="lg:col-span-2">
-              <h2 className="text-2xl font-bold text-dark-900 dark:text-dark-50 mb-2">
-                Roles we hire for
-              </h2>
-              <p className="text-sm text-dark-400 dark:text-dark-300 mb-6">
-                Don&apos;t see your exact role? Submit your resume anyway. We are
-                always expanding and will reach out when there is a fit.
-              </p>
-              <ul className="space-y-3">
-                {roles.map((role) => (
-                  <li key={role} className="flex items-center gap-3">
-                    <svg
-                      className="w-5 h-5 text-primary-500 shrink-0"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
+          <h2 className="text-2xl md:text-3xl font-bold text-dark-900 dark:text-dark-50 text-center mb-2">
+            Open roles
+          </h2>
+          <p className="text-sm text-dark-400 dark:text-dark-300 text-center max-w-xl mx-auto mb-12">
+            Don&apos;t see your exact role? Submit your resume anyway. We are
+            always expanding and will reach out when there is a fit.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {jobOpenings.map((job) => (
+              <Link
+                key={job.slug}
+                href={`/careers/${job.slug}/`}
+                className="flex flex-col p-6 rounded-xl border border-dark-50 dark:border-dark-700 hover:border-primary-300 dark:hover:border-primary-500 hover:shadow-card transition-all"
+              >
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="text-xs font-bold uppercase tracking-wide text-primary-500">
+                    {job.department}
+                  </span>
+                  <span className="text-dark-200 dark:text-dark-600">&middot;</span>
+                  <span className="text-xs text-dark-400 dark:text-dark-300">
+                    {job.location}
+                  </span>
+                </div>
+                <h3 className="font-bold text-lg text-dark-900 dark:text-dark-50">
+                  {job.title}
+                </h3>
+                <p className="mt-2 text-sm text-dark-400 dark:text-dark-300 leading-relaxed flex-1">
+                  {job.summary}
+                </p>
+                <div className="mt-4 flex items-center justify-between">
+                  <span className="text-xs text-dark-400 dark:text-dark-400">
+                    {job.type} &middot; {job.experience}
+                  </span>
+                  <span className="inline-flex items-center gap-1 text-sm font-bold text-primary-500">
+                    View details
+                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
-                    <span className="text-dark-700 dark:text-dark-200">{role}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="lg:col-span-3">
-              <h2 className="text-2xl font-bold text-dark-900 dark:text-dark-50 mb-6">
-                Submit your resume
-              </h2>
-              <CareersForm />
-            </div>
+                  </span>
+                </div>
+              </Link>
+            ))}
           </div>
+        </div>
+      </section>
+
+      {/* Application Form */}
+      <section id="apply" className="section-padding bg-primary-50 dark:bg-dark-800 scroll-mt-24">
+        <div className="container-custom max-w-2xl">
+          <h2 className="text-2xl font-bold text-dark-900 dark:text-dark-50 mb-6 text-center">
+            Submit your resume
+          </h2>
+          <Suspense fallback={null}>
+            <CareersForm />
+          </Suspense>
         </div>
       </section>
     </>

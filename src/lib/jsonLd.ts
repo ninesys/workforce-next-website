@@ -180,17 +180,20 @@ export function generateJobPostingSchema(
     value: string;
     minSalary?: number;
     maxSalary?: number;
+    description?: string;
+    datePosted?: string;
+    validThrough?: string;
   }[]
 ) {
-  const datePosted = "2026-04-01";
-  const validThrough = "2027-04-01";
   return roles.map((role) => ({
     "@context": "https://schema.org",
     "@type": "JobPosting",
     title: role.title,
-    description: `Join Workforce Next as a ${role.title}. Work on cutting-edge AI and engineering projects for global clients. Remote-first culture with ownership-driven engineering.`,
-    datePosted,
-    validThrough,
+    description:
+      role.description ||
+      `Join Workforce Next as a ${role.title}. Work on cutting-edge AI and engineering projects for global clients. Remote-first culture with ownership-driven engineering.`,
+    datePosted: role.datePosted || "2026-04-01",
+    validThrough: role.validThrough || "2027-04-01",
     hiringOrganization: {
       "@type": "Organization",
       name: siteMetadata.name,

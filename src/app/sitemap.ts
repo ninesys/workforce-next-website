@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
 import { blogPosts } from "@/data/blogPosts";
+import { jobOpenings } from "@/data/jobOpenings";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://wfnext.com";
@@ -85,5 +86,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticRoutes, ...blogRoutes];
+  // Career job openings
+  const jobRoutes: MetadataRoute.Sitemap = jobOpenings.map((job) => ({
+    url: `${baseUrl}/careers/${job.slug}/`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.5,
+  }));
+
+  return [...staticRoutes, ...blogRoutes, ...jobRoutes];
 }
