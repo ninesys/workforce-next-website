@@ -178,8 +178,8 @@ export function generateJobPostingSchema(
   roles: {
     title: string;
     value: string;
-    minSalary: number;
-    maxSalary: number;
+    minSalary?: number;
+    maxSalary?: number;
   }[]
 ) {
   const datePosted = "2026-04-01";
@@ -212,16 +212,20 @@ export function generateJobPostingSchema(
       name: "India",
     },
     employmentType: "FULL_TIME",
-    baseSalary: {
-      "@type": "MonetaryAmount",
-      currency: "INR",
-      value: {
-        "@type": "QuantitativeValue",
-        minValue: role.minSalary,
-        maxValue: role.maxSalary,
-        unitText: "YEAR",
-      },
-    },
+    ...(role.minSalary != null && role.maxSalary != null
+      ? {
+          baseSalary: {
+            "@type": "MonetaryAmount",
+            currency: "INR",
+            value: {
+              "@type": "QuantitativeValue",
+              minValue: role.minSalary,
+              maxValue: role.maxSalary,
+              unitText: "YEAR",
+            },
+          },
+        }
+      : {}),
   }));
 }
 

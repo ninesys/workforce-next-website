@@ -79,6 +79,8 @@ const roles = [
   "Mobile Developer (React Native / Flutter)",
   "QA / Test Automation Engineer",
   "UI/UX Designer",
+  "SEO Specialist (1+ years)",
+  "Social Media Content Creator (Experienced / Intern)",
 ];
 
 const jobRoles = [
@@ -90,6 +92,8 @@ const jobRoles = [
   { title: "Mobile Developer (React Native / Flutter)", value: "mobile-developer", minSalary: 1400000, maxSalary: 3500000 },
   { title: "QA / Test Automation Engineer", value: "qa-engineer", minSalary: 1000000, maxSalary: 2800000 },
   { title: "UI/UX Designer", value: "ui-ux-designer", minSalary: 1000000, maxSalary: 2800000 },
+  { title: "SEO Specialist", value: "seo-specialist", minSalary: 180000, maxSalary: 300000 },
+  { title: "Social Media Content Creator", value: "social-media-content-creator" },
 ];
 
 export default function CareersPage() {

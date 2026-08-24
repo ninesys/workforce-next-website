@@ -269,6 +269,8 @@ export default function CareersForm() {
           <option value="mobile-developer">Mobile Developer (React Native / Flutter)</option>
           <option value="qa-engineer">QA / Test Automation Engineer</option>
           <option value="ui-ux-designer">UI/UX Designer</option>
+          <option value="seo-specialist">SEO Specialist</option>
+          <option value="social-media-content-creator">Social Media Content Creator</option>
           <option value="other">Other</option>
         </select>
       </div>
