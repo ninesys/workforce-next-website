@@ -74,18 +74,6 @@
       "notes": "No pillar exists for /hire/data-engineers/ despite it being a standing hire page. Cover modern data stack choices, batch vs. streaming, warehouse/lakehouse decision, team shape and cost, AI/RAG data pipeline overlap."
     },
     {
-      "id": "logistics-3",
-      "slug": "route-optimization-algorithms-3pl-fleet-platforms",
-      "title": "How Route Optimization Actually Works for 3PL and Fleet Platforms",
-      "primaryKeyword": "route optimization algorithm logistics",
-      "pairsWith": "/hire/automation-consultants/",
-      "status": "candidate",
-      "addedAt": "2026-08-07",
-      "series": "logistics-3pl",
-      "audience": "3PL and logistics tech founders/CTOs scoping a route optimization build",
-      "notes": "Logistics series #3. VRP/TSP fundamentals in plain language, constraint types (time windows, capacity, driver hours), build vs. buy (OR-Tools, VROOM, commercial APIs)."
-    },
-    {
       "id": "logistics-4",
       "slug": "backhauling-load-matching-empty-miles-logistics",
       "title": "Backhauling and Load Matching: How to Cut Empty Miles with Smart Software",
@@ -111,6 +99,15 @@
     }
   ],
   "shipped": [
+    {
+      "id": "logistics-3",
+      "slug": "route-optimization-algorithms-3pl-fleet-platforms",
+      "title": "How Route Optimization Actually Works for 3PL and Fleet Platforms",
+      "shippedAt": "2026-08-13",
+      "commit": "pending",
+      "imageWebp": false,
+      "notes": "Logistics series #3. Drafted and registered 2026-08-13. OG WebP image pending."
+    },
     {
       "id": "logistics-2",
       "slug": "osrm-vs-google-maps-vs-mapbox-routing-engine-2026",

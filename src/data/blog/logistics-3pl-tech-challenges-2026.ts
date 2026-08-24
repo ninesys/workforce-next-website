@@ -28,7 +28,7 @@ const post: BlogPost = {
 
 <p>Picking a routing engine gets you point-to-point directions. It does not solve the actual problem: given 40 stops, 6 vehicles, delivery time windows, vehicle capacity, and driver hour limits, what is the best assignment of stops to vehicles and order of stops per vehicle? That is the Vehicle Routing Problem (VRP), a well-studied but genuinely hard optimization problem, and it is where most teams either underbuild (a naive nearest-neighbor heuristic that looks fine on 10 stops and falls apart on 200) or overbuild (reaching for a full commercial solver when an open-source library like Google OR-Tools or VROOM would have shipped in a third of the time).</p>
 
-<p>The constraints are what make this specific to your business. Time windows, vehicle capacity, driver hour limits, multi-depot assignment, and priority stops all change which approach fits. Post 3 in this series covers the actual algorithm choices and a build-vs-buy framework for this layer specifically.</p>
+<p>The constraints are what make this specific to your business. Time windows, vehicle capacity, driver hour limits, multi-depot assignment, and priority stops all change which approach fits. <a href="/blog/route-optimization-algorithms-3pl-fleet-platforms/">How route optimization actually works for 3PL and fleet platforms</a> covers the actual algorithm choices and a build-vs-buy framework for this layer specifically.</p>
 
 <h2>Challenge 3: How do you reduce empty miles with backhauling?</h2>
 
@@ -60,7 +60,7 @@ const post: BlogPost = {
 
 <ol>
   <li><a href="/blog/osrm-vs-google-maps-vs-mapbox-routing-engine-2026/">OSRM vs Google Maps vs Mapbox: choosing a routing engine for logistics platforms</a></li>
-  <li>How route optimization actually works for 3PL and fleet platforms</li>
+  <li><a href="/blog/route-optimization-algorithms-3pl-fleet-platforms/">How route optimization actually works for 3PL and fleet platforms</a></li>
   <li>Backhauling and load matching: how to cut empty miles with smart software</li>
   <li>Real-time location tracking architecture for logistics platforms</li>
 </ol>
