@@ -251,6 +251,8 @@ export const jobOpenings: JobOpening[] = [
       "Basic design skills (Canva or similar)",
       "Interest in tech, AI, or startup content",
     ],
+    minSalary: 180000,
+    maxSalary: 300000,
   },
 ];
 
