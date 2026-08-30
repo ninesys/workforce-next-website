@@ -8,7 +8,10 @@ export function generateOrganizationSchema() {
     name: siteMetadata.name,
     legalName: siteMetadata.legalName,
     url: siteMetadata.url,
-    logo: `${siteMetadata.url}/images/logo.webp`,
+    logo: {
+      "@type": "ImageObject",
+      url: `${siteMetadata.url}/images/logo.webp`,
+    },
     description: siteMetadata.description,
     foundingDate: "2020",
     address: {
@@ -198,7 +201,10 @@ export function generateJobPostingSchema(
       "@type": "Organization",
       name: siteMetadata.name,
       sameAs: siteMetadata.url,
-      logo: `${siteMetadata.url}/images/logo.webp`,
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteMetadata.url}/images/logo.webp`,
+      },
     },
     jobLocation: {
       "@type": "Place",
