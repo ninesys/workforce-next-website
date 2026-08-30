@@ -62,6 +62,7 @@ import howToBuildAnMcpServer from "./blog/how-to-build-an-mcp-server";
 import logistics3plTechChallenges2026 from "./blog/logistics-3pl-tech-challenges-2026";
 import osrmVsGoogleMapsVsMapboxRoutingEngine2026 from "./blog/osrm-vs-google-maps-vs-mapbox-routing-engine-2026";
 import routeOptimizationAlgorithms3plFleetPlatforms from "./blog/route-optimization-algorithms-3pl-fleet-platforms";
+import vibeCodeSecurityHardeningProductionReady2026 from "./blog/vibe-code-security-hardening-production-ready-2026";
 
 export type { BlogPost, BlogFAQ };
 
@@ -139,4 +140,5 @@ export const blogPosts: BlogPost[] = [
   logistics3plTechChallenges2026,
   osrmVsGoogleMapsVsMapboxRoutingEngine2026,
   routeOptimizationAlgorithms3plFleetPlatforms,
+  vibeCodeSecurityHardeningProductionReady2026,
 ];
