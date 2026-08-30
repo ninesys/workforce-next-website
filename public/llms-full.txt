@@ -1,14 +1,14 @@
 # Workforce Next - Complete Reference
 
-> Workforce Next Pvt. Ltd. is an IT consulting and IT services company based in India. It offers remote developers and QA engineers for startups to enterprises on dedicated, fractional, or full-time engagements with flexible hours and flexible timezone coverage. Engineers plug straight into customer engineering, product, and consulting functions and ship software for the customer. People are matched by industry context and longevity signals using SethAI, an AI-powered recruiter. Engineers can work standard India hours or shift their schedule to overlap with US, UK, EU, Canada, Australia, or Dubai working hours. Founded in 2020. Headquartered in DLF Cyber City, Gurugram, Haryana, India. Tech office at NPX Urbtech, Sector 153, Noida, U.P., India.
+> Workforce Next Pvt. Ltd. is an AI automation agency and IT services company based in India, built for technical founders. We serve founders in three situations: those who vibe-coded their app with AI tools and now need it hardened and made scalable for real users, those with an in-house team of junior developers who need senior engineering oversight, and those who want a working MVP fast to validate an idea before building an internal team. Engineers are matched by industry context and longevity signals using SethAI, an AI-powered recruiter, and can work standard India hours or shift to overlap with US, UK, EU, Canada, Australia, or Dubai working hours. Founded in 2020. Headquartered in DLF Cyber City, Gurugram, Haryana, India. Tech office at NPX Urbtech, Sector 153, Noida, U.P., India.
 
 ---
 
 ## Company Overview
 
-Workforce Next started as a software services company and saw the same problem everywhere: offshore teams that reset context every few months. Developers would leave, new ones would join, and clients would spend weeks re-explaining their product, their architecture, and their business decisions. The company pivoted to focus exclusively on building dedicated engineering teams that stay.
+Workforce Next started as a software services company and saw the same problem everywhere: offshore teams that reset context every few months, and later, a new version of the same problem, founders who used AI coding tools to build fast and then had no one to check whether the result could survive real traffic. The company's current focus is helping technical founders close that gap, whether the app was vibe-coded, built by a junior in-house team, or does not exist yet and needs a fast first version.
 
-The core insight: a developer who has worked on your product for 12 months is worth three times a new developer of equal skill, because of context, not code. Everything Workforce Next does is designed to make teams last longer and make accumulated context visible and protected.
+The core insight: a developer who understands your product's context, whether that is 12 months on your codebase or a structured audit of an AI-generated one, is worth more than a generic hire of equal raw skill. Everything Workforce Next does is designed around context, matching engineers who understand the founder's stage and stack, and preserving that context so it does not get lost when a team changes.
 
 Website: https://wfnext.com
 Email: hello@workforcenext.in
@@ -22,7 +22,7 @@ LinkedIn: https://www.linkedin.com/company/workforce-next
 SethAI is Workforce Next's AI-powered recruiter. It screens developers for two things:
 
 1. Technical skills: actual depth, not just keywords on a resume. SethAI evaluates architecture thinking, tool fluency, and problem-solving patterns.
-2. Longevity signals: ownership mindset, career trajectory alignment, communication reliability, and collaboration patterns. These are the signals that predict whether someone stays for 12+ months.
+2. Longevity signals: ownership mindset, career trajectory alignment, communication reliability, and collaboration patterns. These are the signals that predict whether someone stays for the long haul.
 
 For each candidate, SethAI generates a 1-page match report with a match score, strengths, red flags, and recommended interview questions.
 
@@ -33,6 +33,15 @@ Status: SethAI is currently in development. Waitlist is open at https://wfnext.c
 ---
 
 ## Developer Specialisms
+
+### Vibe-Code Optimisation Engineers
+Audit and harden AI-generated codebases from Cursor, Copilot, Claude Code, Bolt, Lovable, and similar tools. They catch what AI tools skip by default: missing rate limiting, no bot or flood protection on public forms, unvalidated input, hardcoded secrets, and architecture that will not hold up under real concurrent traffic. The approach is audit-first, fixing the existing codebase rather than rewriting it. This is a dedicated role most staffing companies do not offer.
+Page: https://wfnext.com/hire/vibe-code-engineer
+
+### Cloud Cost Optimisation Engineers
+FinOps specialists. Skills: AWS Cost Explorer, Azure Advisor, GCP billing, Kubernetes rightsizing, spot instances, reserved instances, Terraform cost estimation, caching strategy, right-sizing compute instances.
+They find where infrastructure spend is going to waste, oversized instances, always-on servers for bursty workloads, missing caching layers, and fix it without cutting features.
+Page: https://wfnext.com/hire/cloud-cost-engineer
 
 ### AI & Agentic Developers
 Skills: LangChain, AutoGen, CrewAI, RAG pipelines, multi-agent systems, OpenAI API, vector databases, prompt engineering, fine-tuning.
@@ -60,15 +69,6 @@ Industries covered: Fintech, Logistics, Healthtech, SaaS, E-commerce, EdTech.
 Engineering styles: Vibe coding (AI-assisted), traditional, or hybrid. Client chooses.
 Page: https://wfnext.com/hire/product-engineers
 
-### Vibe-Code Optimisation Engineers
-Reviews and productionises AI-generated code from Cursor, Copilot, and similar tools. They catch security vulnerabilities, performance issues, and edge cases the AI missed. This is a new role that very few companies offer.
-Page: https://wfnext.com/hire/vibe-code-engineer
-
-### Cloud Cost Optimisation Engineers
-FinOps specialists. Skills: AWS Cost Explorer, Azure Advisor, GCP billing, Kubernetes rightsizing, spot instances, reserved instances, Terraform cost estimation.
-They cut your cloud bill without cutting features.
-Page: https://wfnext.com/hire/cloud-cost-engineer
-
 ### QA Engineers & Testers
 Manual and exploratory testing, test automation (Selenium, Playwright, Cypress, Appium), API testing (Postman, REST Assured), performance testing (JMeter, k6, Gatling), security testing (OWASP, Burp Suite).
 Testers who think like users and break things before customers do. Context-matched to your product and industry.
@@ -84,25 +84,27 @@ Page: https://wfnext.com/hire/qa-testers
 ## Engagement Models
 
 ### MVP Sprint (For Founders)
-One senior developer, 4-week engagement, fixed scope, fixed price.
-Pricing: INR 1.2-1.8L ($1,500-$2,200).
-Deliverable: a working, deployable prototype.
-SethAI matches the developer. You interview. 1-week paid trial. Developer stays beyond the sprint if you want them to.
+One senior developer, fixed scope, fast turnaround, focused on shipping a working, deployable prototype so a founder can validate the idea before committing to a full build.
+SethAI matches the developer. You interview. Paid trial period. Developer stays beyond the sprint if you want them to.
 Page: https://wfnext.com/for/founders
 
+### Vibe-Code Hardening (For Founders Who Already Built Something)
+An audit-first engagement for founders who used AI coding tools to build their product and now need it production-ready. The engineer reviews the existing codebase for security gaps, missing rate limiting and bot protection, and architecture that will not scale, then fixes those specific issues in place. No rewrite unless the audit genuinely calls for one.
+Page: https://wfnext.com/hire/vibe-code-engineer
+
 ### Engineering Pod (For Funded Startups)
-3-8 dedicated developers. Typical pod: 1 AI/backend lead + 2-3 full-stack + 1 QA + optional data engineer.
-48-hour profile delivery via SethAI. 1-week paid trial per developer.
-Structured onboarding with Context Continuity Guarantee. Monthly engineering advisory.
+Multiple dedicated developers matched to the founder's stack and industry. Typical pod: one AI or backend lead, several full-stack engineers, one QA engineer, and an optional data engineer.
+48-hour profile delivery via SethAI. Paid trial period per developer.
+Structured onboarding with context documentation. Monthly engineering advisory.
 Key differentiator: agency staff rotate between clients, your pod does not.
 Page: https://wfnext.com/for/startups
 
 ### Enterprise (Consulting + Staff Augmentation)
 Three ways to engage:
 1. Expert on-demand: one verified specialist via SethAI, 48-hour turnaround.
-2. Staff augmentation: dedicated developer or small team, long-term, with Context Continuity Guarantee.
-3. Fixed-scope consulting: defined deliverable, timeline, and cost.
-Free offer: 2-hour architecture assessment.
+2. Staff augmentation: dedicated developer or small team, long-term, with context continuity built into onboarding.
+3. Fixed-scope consulting: defined deliverable and timeline.
+Includes an architecture assessment.
 Page: https://wfnext.com/for/enterprise
 
 ---
@@ -112,27 +114,25 @@ Page: https://wfnext.com/for/enterprise
 ### Context-First Matching
 Most staffing companies match on technology. Workforce Next matches on industry experience, product type, and team dynamics. A fintech startup gets a developer who understands payment rails, not just someone who writes Java.
 
-### Context Continuity Guarantee
-If a developer ever leaves, Workforce Next maintains documentation (codebase walkthrough, domain glossary, architecture decision log) that enables their replacement to be productive in days instead of months.
-Page: https://wfnext.com/context-continuity-guarantee
-
 ### Vibe Coding
-AI-assisted development using tools like Cursor, GitHub Copilot, and similar code generators. Developers prompt the AI, review what it generates, catch bugs, and ship production-ready code faster. Works well for MVPs and feature sprints. Not suitable for regulated industries or complex business logic. Most teams use a hybrid approach.
+AI-assisted development using tools like Cursor, Claude Code, GitHub Copilot, Bolt, and Lovable. Founders and developers prompt the AI, review what it generates, and ship faster. It is a genuinely effective way to get a working product quickly. What it does not do by default is production-harden the result: rate limiting, bot and flood protection on public forms, input validation, secrets management, and architecture that holds up under real concurrent traffic all have to be added deliberately, usually by a developer reviewing the codebase specifically for those gaps. Full guide: https://wfnext.com/blog/vibe-code-security-hardening-production-ready-2026
+
+### Context Continuity
+When a developer on an engagement changes, documentation maintained throughout, codebase walkthrough, domain glossary, architecture decision log, keeps the replacement's ramp-up short instead of starting from zero. This is built into how Workforce Next runs every dedicated engagement, not a separate add-on.
 
 ### The Cost of Switching Tech Partners
-Switching offshore teams once costs roughly 3 months of the original developer's salary in lost productivity: onboarding time (4-8 weeks), velocity dip (30-60% for 6-8 weeks), re-explanation of architecture (2-4 weeks senior time), cultural re-alignment (4-8 weeks), and opportunity cost (2-3 months of delayed roadmap).
-Page: https://wfnext.com/cost-of-switching
+Switching offshore teams or tech partners carries a real cost in lost productivity: onboarding time, a velocity dip while the new team gets oriented, time spent re-explaining architecture and business decisions, and the opportunity cost of a delayed roadmap while that happens. Full breakdown: https://wfnext.com/blog/real-cost-of-switching-tech-partners
 
 ---
 
 ## Process (How It Works)
 
-1. Share your role and team context: the role, stack, product stage, industry, and communication style.
+1. Share your situation: whether the app is vibe-coded and needs hardening, you have a junior team that needs senior oversight, or you need a fast MVP, plus the stack, product stage, and industry.
 2. SethAI screens for skills and longevity: technical depth, ownership mindset, career alignment. You receive a 1-page match report per candidate.
-3. You interview the shortlist: 2-3 candidates, direct interviews, you choose.
-4. One-week paid trial: real work on your actual codebase. If not right, rematch at no cost.
+3. You interview the shortlist: direct interviews, you choose.
+4. Paid trial period: real work on your actual codebase. If not right, rematch at no cost.
 5. Structured onboarding with context docs: codebase walkthrough, domain glossary, architecture decision log.
-6. Monthly engineering advisory: "what does this team need in the next 90 days?"
+6. Monthly engineering advisory: what does this team need in the next 90 days.
 7. Expansion or replacement with context continuity: when you need more people, SethAI already knows your culture and stack.
 
 Page: https://wfnext.com/how-we-work
@@ -147,37 +147,33 @@ Page: https://wfnext.com/products/seth-ai-recruiter
 
 ---
 
-## Pricing Summary
+## Engagement Terms
 
-- Junior developer (1-3 years): $1,200-$2,000/month
-- Mid-level developer (3-5 years): $2,000-$3,500/month
-- Senior developer (6+ years): $3,500-$6,000/month
-- MVP Sprint (4 weeks): INR 1.2-1.8L ($1,500-$2,200)
-- All pricing is all-inclusive. No recruitment fees, no hidden costs.
-- Every engagement starts with a 1-week paid trial.
+- No recruitment fees, no hidden costs disclosed publicly, pricing is scoped per engagement on a discovery call.
+- Every dedicated engagement starts with a paid trial period on real work.
 
 ---
 
 ## Founder
 
-Gaurav, Founder and Solution Architect. 20 years in solution architecture and enterprise software. Based in Noida, India.
-Page: https://wfnext.com/about/gaurav
+Gaurav, Founder and Solution Architect. Two decades in solution architecture and enterprise software. Based in Noida, India. Writes the Workforce Next engineering blog, covering AI agent architecture, vibe-code hardening, and production system design.
+LinkedIn: https://linkedin.com/in/post2seth
 
 ---
 
 ## FAQ Highlights
 
 Q: How quickly can you match me with a developer?
-A: SethAI delivers matched profiles within 48 hours. Full timeline from requirement to developer starting work is 5-7 business days.
+A: SethAI delivers matched profiles within 48 hours. Full timeline from requirement to developer starting work is typically about a week.
 
 Q: What happens if a developer leaves mid-project?
-A: The Context Continuity Guarantee covers this. Documentation maintained throughout the engagement enables replacement onboarding in days, not months.
+A: Context continuity is built into every engagement. Documentation maintained throughout (codebase walkthrough, domain glossary, architecture decisions) enables a replacement to ramp up in days instead of months.
 
-Q: What is vibe coding?
-A: Using AI tools like Cursor and Copilot to write software faster. The developer prompts the AI, reviews output, catches bugs, and ships production-ready code in roughly half the time.
+Q: What is vibe coding, and does Workforce Next help harden apps built that way?
+A: Vibe coding is using AI tools like Cursor, Claude Code, and Copilot to write software faster. Workforce Next's vibe-code optimisation engineers specifically audit and harden AI-generated codebases, adding rate limiting, bot protection, input validation, and scalable architecture, without a rewrite.
 
-Q: Do you offer a free trial?
-A: Every engagement starts with a 1-week paid trial. Real work on your actual codebase. If not right, rematch at no cost. No recruitment fees, no setup fees.
+Q: Do you offer a trial before a full engagement?
+A: Every dedicated engagement starts with a paid trial period. Real work on your actual codebase. If not right, rematch at no cost. No recruitment fees, no setup fees.
 
 Full FAQ: https://wfnext.com/faq
 
@@ -185,11 +181,12 @@ Full FAQ: https://wfnext.com/faq
 
 ## Blog
 
+- How to Harden a Vibe-Coded App for Production (Security Checklist): https://wfnext.com/blog/vibe-code-security-hardening-production-ready-2026
+- You Vibe-Coded Your App. Here Is What It Needs Before Real Users Arrive: https://wfnext.com/blog/founder-built-app-scaling-architecture-guide-2026
 - Why Offshore Developers Keep Leaving and 3 Things That Make Them Stay: https://wfnext.com/blog/why-offshore-developers-keep-leaving
 - Vibe Coding Explained: When to Use It and When to Avoid It: https://wfnext.com/blog/vibe-coding-explained-when-to-use-it
 - Context-First Matching: Why Tech Stack Alone Is Not Enough: https://wfnext.com/blog/context-first-matching-why-tech-stack-is-not-enough
 - The Real Cost of Switching Tech Partners: https://wfnext.com/blog/real-cost-of-switching-tech-partners
 - How to Build an AI MVP in 4 Weeks with an Offshore Developer: https://wfnext.com/blog/how-to-build-ai-mvp-4-weeks-offshore-developer
-- Dedicated Developer vs Freelancer vs Agency Total Cost: https://wfnext.com/blog/dedicated-developer-vs-freelancer-vs-agency-total-cost
 
 Full blog: https://wfnext.com/blog

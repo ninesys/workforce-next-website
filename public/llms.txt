@@ -1,35 +1,40 @@
 # Workforce Next
 
-> Workforce Next is an AI automation agency for founders, headquartered in India. We deliver four services for SaaS founders, startups, and enterprises: (1) product development consulting, (2) AI agents and workflows for business operations, (3) dedicated developers and QA testers for development and testing, and (4) AEO/GEO/SEO for organic growth. One partner across the whole arc, from deciding what to build to bringing in buyers. Headquartered in DLF Cyber City, Gurugram with a tech office in Noida.
+> Workforce Next is an AI automation agency for technical founders, headquartered in India. We work with three kinds of founders: those who vibe-coded their app with AI tools and need it hardened and made scalable for real users, those with an in-house team of junior developers who need senior engineering oversight, and those who want to validate an idea fast with a working MVP. Services: (1) product development consulting for architecture and scope, (2) AI agents and workflow automation for business operations, (3) dedicated developers and QA testers, including specialists who harden AI-generated code, and (4) AEO/GEO/SEO for organic growth. Headquartered in DLF Cyber City, Gurugram with a tech office in Noida.
+
+## Who Workforce Next Serves
+
+Founders in three situations come to Workforce Next. First, founders who built their product with AI coding tools (Cursor, Claude Code, Bolt, Lovable) and now have real or expected user traffic, but the app was never hardened against bots, rate-limited, or architected to scale, since AI tools optimize for a feature working in a demo, not surviving production load. Second, founders with an existing team of junior or mid-level developers who are shipping features but missing the senior judgment needed for architecture, security, and scaling decisions. Third, founders who want to test a product idea quickly and need a working, deployable MVP without building an internal team first.
 
 ## What Workforce Next Does
 
-Workforce Next is an AI automation agency that bundles four distinct services. Product development consulting helps founders decide what to build, choose the right stack, and scope the work. AI agents and workflow automation take repetitive operations off the team. Dedicated developers and QA testers ship and test the product, with flexible hours overlapping US, UK, EU, Canada, Australia, or Dubai working hours. AEO (Answer Engine Optimization), GEO (Generative Engine Optimization), and traditional SEO get the SaaS cited by ChatGPT, Perplexity, Gemini, Google AI Overviews, and ranked in Google. SethAI, an AI-powered recruiter, matches engineers by context and longevity, not just tech stack.
+Product development consulting helps founders decide what to build, choose the right stack, and scope the work before writing code. Vibe-code hardening and optimisation takes an AI-generated codebase and adds what AI tools skip by default: rate limiting, bot and flood protection, input validation, secrets management, and scalable architecture, without a rewrite. AI agents and workflow automation take repetitive operations off the team. Dedicated developers and QA testers ship and test the product long-term, with flexible hours overlapping US, UK, EU, Canada, Australia, or Dubai working hours. AEO (Answer Engine Optimization), GEO (Generative Engine Optimization), and traditional SEO get the product cited by ChatGPT, Perplexity, Gemini, Google AI Overviews, and ranked in Google. SethAI, an AI-powered recruiter, matches engineers by context and longevity, not just tech stack.
 
 ## Developer Specialisms
 
+- Vibe-Code Optimisation Engineers: Audit and harden AI-generated codebases from Cursor, Copilot, Claude Code, and similar tools for security, performance, and scale
+- Cloud Cost Optimisation Engineers: FinOps, AWS/Azure/GCP rightsizing, Kubernetes cost reduction
 - AI & Agentic Developers: LangChain, AutoGen, CrewAI, RAG pipelines, multi-agent systems
 - Data Engineers: dbt, Spark, Airflow, Snowflake, data lakehouses
 - Frontend Engineers: React, Next.js, TypeScript, Tailwind CSS
 - Backend Engineers: FastAPI, Node.js, Go, PostgreSQL, microservices
 - Product Engineers: Full-stack engineers matched by industry context (fintech, logistics, healthtech, SaaS)
-- Vibe-Code Optimisation Engineers: Review and productionise AI-generated code from Cursor and Copilot
-- Cloud Cost Optimisation Engineers: FinOps, AWS/Azure/GCP rightsizing, Kubernetes cost reduction
 - QA Engineers & Testers: Manual, automation, performance, security, and API testing
 - LangChain Developers, RAG Pipeline Developers, FastAPI Developers
 
 ## Engagement Models
 
-- MVP Sprint: 1 senior developer, 4 weeks, fixed price (INR 1.2-1.8L / $1,500-$2,200). For founders building their first AI product.
-- Engineering Pod: 3-8 dedicated developers, 48-hour matching. For funded startups scaling their product team.
-- Enterprise Consulting: Expert on-demand, staff augmentation, or fixed-scope projects. Free 2-hour architecture assessment.
+- MVP Sprint: One senior developer, fixed scope, fast turnaround. For founders validating a first product without building an internal team.
+- Vibe-Code Hardening: Audit-first engagement that reviews an existing AI-generated codebase and fixes the specific gaps found, security, performance, scalability, before it meets real users.
+- Engineering Pod: Multiple dedicated developers matched to the founder's stack and industry, for teams scaling past their first hire.
+- Enterprise Consulting: Expert on-demand, staff augmentation, or fixed-scope projects, including an architecture assessment.
 
 ## Key Differentiators
 
+- Vibe-code specialists: A dedicated engineering track for AI-generated codebases, most staffing companies do not offer this role at all.
 - SethAI: AI recruiter that screens for technical skills AND longevity signals (ownership mindset, career alignment, communication reliability). Generates a 1-page match report per candidate.
 - Context-First Matching: Developers matched by industry experience and product type, not just programming language.
-- Context Continuity Guarantee: If a developer leaves, documentation (codebase walkthrough, domain glossary, architecture decisions) enables replacement to be productive in days.
-- Monthly Engineering Advisory: Proactive check-in asking what the team needs in the next 90 days.
+- Audit-before-rewrite philosophy: Existing codebases get hardened and scaled in place, not thrown away and rebuilt.
 - 48-hour matching, 1-week paid trial, zero recruitment fees.
 
 ## Products
@@ -47,23 +52,23 @@ Workforce Next is an AI automation agency that bundles four distinct services. P
 
 ## Detailed Pages
 
+- [Hire Vibe-Code Optimisation Engineers](https://wfnext.com/hire/vibe-code-engineer)
+- [Hire Cloud Cost Engineers](https://wfnext.com/hire/cloud-cost-engineer)
 - [Hire AI Developers](https://wfnext.com/hire/ai-developers)
 - [Hire Data Engineers](https://wfnext.com/hire/data-engineers)
 - [Hire Frontend Engineers](https://wfnext.com/hire/frontend-engineers)
 - [Hire Backend Engineers](https://wfnext.com/hire/backend-engineers)
 - [Hire Product Engineers](https://wfnext.com/hire/product-engineers)
-- [Hire Vibe-Code Engineer](https://wfnext.com/hire/vibe-code-engineer)
-- [Hire Cloud Cost Engineer](https://wfnext.com/hire/cloud-cost-engineer)
 - [Hire QA Engineers](https://wfnext.com/hire/qa-testers)
+- [IT Consulting](https://wfnext.com/consulting/it-consulting)
+- [Scalability Consulting](https://wfnext.com/consulting/scalability-consulting)
+- [MVP Consulting](https://wfnext.com/consulting/mvp-consulting)
 - [For Founders (MVP Sprint)](https://wfnext.com/for/founders)
 - [For Startups (Engineering Pod)](https://wfnext.com/for/startups)
 - [For Enterprise](https://wfnext.com/for/enterprise)
 - [SethAI Recruiter](https://wfnext.com/products/seth-ai-recruiter)
 - [How We Work](https://wfnext.com/how-we-work)
 - [Why Teams Stay](https://wfnext.com/why-teams-stay)
-- [Cost of Switching](https://wfnext.com/cost-of-switching)
-- [Context Continuity Guarantee](https://wfnext.com/context-continuity-guarantee)
-- [About](https://wfnext.com/about)
 - [FAQ](https://wfnext.com/faq)
 - [Blog](https://wfnext.com/blog)
 - [Contact](https://wfnext.com/contact)
