@@ -64,7 +64,7 @@ const post: BlogPost = {
 
 <p><strong>Turing wins on:</strong> raw speed of matching, depth of pre-vetted pool, AI-driven shortlist quality at scale, marketing reach. If you need a hire next week and you are willing to trust algorithmic matching, Turing is genuinely fast.</p>
 
-<p><strong>WorkforceNext wins on:</strong> India-side operational depth (we cover every PF, GST, FEMA, IP line that procurement asks about), zero lock-in, zero conversion fee, longevity (engineers stay 18+ months on the same client codebase on average), and managed staff aug structured to avoid the body-shop pattern that gave Indian outsourcing its bad name. We wrote a <a href="/not-another-body-shop/">whole landing page on how we differ from TCS-Infosys-tier-2 patterns</a>. We are also AI-native by default, which is the angle covered on our <a href="/ai-native-india/">AI-native India page</a>.</p>
+<p><strong>WorkforceNext wins on:</strong> India-side operational depth (we cover every PF, GST, FEMA, IP line that procurement asks about), zero lock-in, zero conversion fee, longevity (engineers stay 18+ months on the same client codebase on average), and managed staff aug structured to avoid the body-shop pattern that gave Indian outsourcing its bad name. We wrote a <a href="/why-teams-stay/">whole landing page on how we differ from TCS-Infosys-tier-2 patterns</a>. We are also AI-native by default, which is the angle covered on our <a href="/india-handled/">AI-native India page</a>.</p>
 
 <h2>Where does each vendor genuinely lose?</h2>
 <p>The honest other side.</p>
@@ -75,7 +75,7 @@ const post: BlogPost = {
 
 <p><strong>Turing loses on:</strong> hands-off operational model (you manage the relationship; if the engineer underperforms, the path to remediation is less structured), inconsistent vetting at scale (the AI matches are good in aggregate but variance is real), and shallow on India-specific operational ownership compared to a vendor based there.</p>
 
-<p><strong>WorkforceNext loses on:</strong> brand recognition (we are smaller than the other three, your CFO has not heard of us), India-only geography (we cannot place LATAM or Eastern European engineers; if you need real-time North American overlap with a synchronous founder-led culture, we will <a href="/ai-native-india/#where-don-t-win">honestly route you to a LATAM partner</a>), and we do not have the marketing reach of a Turing or the procurement footprint of an Andela.</p>
+<p><strong>WorkforceNext loses on:</strong> brand recognition (we are smaller than the other three, your CFO has not heard of us), India-only geography (we cannot place LATAM or Eastern European engineers; if you need real-time North American overlap with a synchronous founder-led culture, we will <a href="/india-handled/">honestly route you to a LATAM partner</a>), and we do not have the marketing reach of a Turing or the procurement footprint of an Andela.</p>
 
 <h2>What contract terms actually differ across the four?</h2>
 <p>The contract terms reveal the business model. Skip the websites; read the MSAs side by side.</p>
@@ -94,7 +94,7 @@ const post: BlogPost = {
 <p>The thing nobody puts on their pricing page but every veteran buyer cares about most.</p>
 
 <p><strong>Replacement.</strong> When an engineer underperforms or leaves, who finds the next one and on whose dime?</p>
-<p>Toptal: you find the next freelancer through Toptal's pool, Toptal facilitates. Andela: structured replacement process, generally fee-free, can take 2 to 4 weeks. Turing: similar structured replacement. WorkforceNext: 48-hour shortlist, no extra fee for first 90 days, and the <a href="/context-continuity-guarantee/">context continuity docs</a> mean the new engineer reads the codebase walkthrough and ramps in days not months.</p>
+<p>Toptal: you find the next freelancer through Toptal's pool, Toptal facilitates. Andela: structured replacement process, generally fee-free, can take 2 to 4 weeks. Turing: similar structured replacement. WorkforceNext: 48-hour shortlist, no extra fee for first 90 days, and the <a href="/how-we-work/">context continuity docs</a> mean the new engineer reads the codebase walkthrough and ramps in days not months.</p>
 
 <p><strong>Retention.</strong> Who has skin in the game to keep your engineer happy on your codebase?</p>
 <p>Toptal: zero, freelancers are independent. Andela: Andela does run retention programs but the 12-month minimum is doing most of the work. Turing: their model creates retention through marketplace dynamics, not active retention investment. WorkforceNext: monthly engineering advisory check-ins specifically to catch flight risk early. This is also why our engineers stay on average 18+ months on the same client.</p>

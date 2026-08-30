@@ -92,7 +92,7 @@ const post: BlogPost = {
 
 <p><strong>You want the cheapest unit cost below 15 engineers.</strong> The math is in the table above. Staff aug is the lowest all-in cost in this range because the vendor's fixed overhead is spread across many clients, not just yours.</p>
 
-<p>What staff aug is not good at: above 15 to 20 engineers it stops being the cheapest model. Vendor margin starts to matter more than overhead amortisation. The right play at that scale is a hybrid: keep the staff aug pod for some roles, transition the rest to your own entity. Our <a href="/not-another-body-shop/">Not another body shop page</a> explains how we run staff aug differently from the legacy TCS-Infosys-tier-2 pattern that earned the model its bad reputation in the first place.</p>
+<p>What staff aug is not good at: above 15 to 20 engineers it stops being the cheapest model. Vendor margin starts to matter more than overhead amortisation. The right play at that scale is a hybrid: keep the staff aug pod for some roles, transition the rest to your own entity. Our <a href="/why-teams-stay/">Not another body shop page</a> explains how we run staff aug differently from the legacy TCS-Infosys-tier-2 pattern that earned the model its bad reputation in the first place.</p>
 
 <h2>What questions should you ask before picking a model?</h2>
 <p>Six questions to ask before any of these vendor calls. The answers determine which model fits.</p>

@@ -240,7 +240,7 @@ const post: BlogPost = {
 
 <h3>Mitigation strategies</h3>
 
-<p>Our <a href="/context-continuity-guarantee/">Context Continuity Guarantee</a> addresses these challenges through:</p>
+<p>Our <a href="/how-we-work/">Context Continuity Guarantee</a> addresses these challenges through:</p>
 
 <ul>
 <li>Dedicated team assignments (no context switching)</li>
@@ -280,7 +280,7 @@ const post: BlogPost = {
 <li><strong>Mobile-first experience</strong>: Strong React Native, Flutter backgrounds</li>
 </ul>
 
-<p>The key is matching your specific requirements to the right talent pool. Our <a href="/cost-of-switching/">Cost of Switching analysis</a> helps you evaluate total project costs beyond hourly rates.</p>
+<p>The key is matching your specific requirements to the right talent pool. Our <a href="/blog/real-cost-of-switching-tech-partners/">Cost of Switching analysis</a> helps you evaluate total project costs beyond hourly rates.</p>
 
 <p>Ready to hire Node.js developers from India? We match you with pre-vetted senior developers in 48 hours and start with a paid trial week to ensure technical and cultural fit. <a href="/contact/">Talk to us about your Node.js development needs</a>.</p>`,
   category: "hiring",

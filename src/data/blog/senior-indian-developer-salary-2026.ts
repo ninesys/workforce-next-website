@@ -30,7 +30,7 @@ const post: BlogPost = {
 
 <p>Three things to notice. First, the senior band is wide because what counts as "senior" varies across stacks (a 5-year backend Python engineer and a 5-year Solidity engineer command different rates even within a single firm). Second, the effective hourly rate is calculated on 160 working hours per month, so if your engineer works more, the effective rate drops. Third, INR figures fluctuate with the rupee but the USD price you pay does not move month to month.</p>
 
-<p>For context: the same senior engineer hired in the US would cost $13,000 to $20,000 per month fully loaded; in LATAM, $9,000 to $15,000; in Eastern Europe, $8,000 to $13,000. India's structural advantage on unit cost is real and persistent, even after you account for the time-zone trade-off. We covered the LATAM-specific math on our <a href="/ai-native-india/">AI-native India page</a>.</p>
+<p>For context: the same senior engineer hired in the US would cost $13,000 to $20,000 per month fully loaded; in LATAM, $9,000 to $15,000; in Eastern Europe, $8,000 to $13,000. India's structural advantage on unit cost is real and persistent, even after you account for the time-zone trade-off. We covered the LATAM-specific math on our <a href="/india-handled/">AI-native India page</a>.</p>
 
 <h2>How does the rate break down by stack?</h2>
 <p>Stack matters more than people expect. A senior who can do five things at $7K is not the same hire as a senior who can do one thing very well at $8.5K. Here are the stack premiums and discounts that actually show up in the market.</p>
@@ -83,7 +83,7 @@ const post: BlogPost = {
 
 <p><strong>Currency and arbitrage stability.</strong> The rupee has slowly depreciated against the dollar over the last decade. From a foreign client's perspective, the USD price of an Indian engineer has stayed roughly flat while the engineer's INR take-home has grown. Both sides win.</p>
 
-<p>What is NOT a reason: lower quality. The 2026 senior Indian engineer is operating with the same tools, the same open-source ecosystem, and increasingly the same AI-augmented workflows as their counterparts in any other geography. If you have heard otherwise, you have probably been working with a body shop and not a real engineer. We <a href="/not-another-body-shop/">wrote a whole landing page about that pattern</a>.</p>
+<p>What is NOT a reason: lower quality. The 2026 senior Indian engineer is operating with the same tools, the same open-source ecosystem, and increasingly the same AI-augmented workflows as their counterparts in any other geography. If you have heard otherwise, you have probably been working with a body shop and not a real engineer. We <a href="/why-teams-stay/">wrote a whole landing page about that pattern</a>.</p>
 
 <h2>How do bonuses, equity, and retention pay actually work for India hires?</h2>
 <p>This is the question that derails most US-side compensation modelling because the answer is structurally different from what works in San Francisco.</p>

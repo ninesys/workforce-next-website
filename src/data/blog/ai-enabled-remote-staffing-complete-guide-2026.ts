@@ -185,7 +185,7 @@ const post: BlogPost = {
 
 <ol>
 <li><strong>Engineering management.</strong> Someone whose job is the engineer's career and the customer's outcome, not the vendor's bench utilization. We call this the embedded EM. See <a href="/india-handled/">our India Handled model</a> for how this works in practice.</li>
-<li><strong>Context continuity.</strong> Documentation of customer context (architecture, decisions, conventions) maintained over the engagement, so the next engineer (when there is one) ramps fast. See our <a href="/context-continuity-guarantee/">Context Continuity Guarantee</a>.</li>
+<li><strong>Context continuity.</strong> Documentation of customer context (architecture, decisions, conventions) maintained over the engagement, so the next engineer (when there is one) ramps fast. See our <a href="/how-we-work/">Context Continuity Guarantee</a>.</li>
 <li><strong>Lifestyle and career fit.</strong> Matching for staying power, not just placement. See <a href="/blog/why-offshore-developers-keep-leaving/">why offshore developers keep leaving</a> for the patterns that predict churn.</li>
 </ol>
 

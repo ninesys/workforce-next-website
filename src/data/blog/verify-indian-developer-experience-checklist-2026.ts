@@ -19,7 +19,7 @@ const post: BlogPost = {
 
 <p><strong>Distance makes informal verification harder.</strong> A US buyer hiring a US engineer can usually rely on shared networks, alumni signal, and a same-city reference. None of those work across continents. The only signal you have is what the candidate sends you, plus what you can independently verify. So the verification process has to do more work.</p>
 
-<p>Buyers who skip this end up with the body-shop pattern we have <a href="/not-another-body-shop/">written a whole landing page about</a>: the senior architect on the pitch deck quietly becomes a junior on day one. Verification is the cheapest insurance against that.</p>
+<p>Buyers who skip this end up with the body-shop pattern we have <a href="/why-teams-stay/">written a whole landing page about</a>: the senior architect on the pitch deck quietly becomes a junior on day one. Verification is the cheapest insurance against that.</p>
 
 <h2>What documents should you ask for and what do they actually prove?</h2>
 <p>Five document types. None of them are invasive when handled correctly. All five together build a high-confidence picture.</p>
@@ -154,7 +154,7 @@ const post: BlogPost = {
 <h2>What to do next</h2>
 <p>If you are about to interview an Indian developer (through any vendor or independently), this checklist is the one to print. If you want us to apply it to a role you are about to open, <a href="/contact">book a 15-minute call</a> and we will run the checklist on three of our pre-screened engineers for the role you have in mind. You see the verification reports before you decide whether to interview anyone.</p>
 
-<p>Related reading: <a href="/not-another-body-shop/">how we structurally avoid the body-shop staffing pattern</a> covers why the verification matters in the first place. <a href="/blog/staff-augmentation-vs-eor-vs-india-entity-2026">Staff augmentation vs EOR vs your own India entity</a> covers the legal model decision. <a href="/blog/senior-indian-developer-salary-2026">What to pay a senior Indian developer in 2026</a> covers the pricing decision. Together those three plus this verification post cover most of what a procurement-savvy CTO needs before signing.</p>`,
+<p>Related reading: <a href="/why-teams-stay/">how we structurally avoid the body-shop staffing pattern</a> covers why the verification matters in the first place. <a href="/blog/staff-augmentation-vs-eor-vs-india-entity-2026">Staff augmentation vs EOR vs your own India entity</a> covers the legal model decision. <a href="/blog/senior-indian-developer-salary-2026">What to pay a senior Indian developer in 2026</a> covers the pricing decision. Together those three plus this verification post cover most of what a procurement-savvy CTO needs before signing.</p>`,
   category: "hiring",
   categoryLabel: "Hiring & Teams",
   author: "Gaurav",

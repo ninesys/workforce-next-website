@@ -195,12 +195,14 @@ export default function BlogPostPage({ params }: Props) {
           <div className="mt-4 flex flex-wrap items-center gap-4 text-sm text-dark-400 dark:text-dark-300">
             <span>
               By{" "}
-              <Link
-                href="/about/gaurav"
+              <a
+                href="https://linkedin.com/in/post2seth"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-primary-500 hover:underline"
               >
                 {post.author}
-              </Link>
+              </a>
             </span>
             <span>
               {new Date(post.publishedAt).toLocaleDateString("en-US", {

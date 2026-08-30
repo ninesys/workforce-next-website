@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 interface AuthorBioProps {
   name: string;
@@ -9,7 +8,7 @@ interface AuthorBioProps {
 const authorBios: Record<string, { photo: string; bio: string; profileUrl: string; linkedin?: string }> = {
   Gaurav: {
     photo: "/images/gaurav.jpeg",
-    profileUrl: "/about/gaurav",
+    profileUrl: "https://linkedin.com/in/post2seth",
     linkedin: "https://linkedin.com/in/post2seth",
     bio: "Gaurav is the founder of Workforce Next. He has spent the last decade placing and managing dedicated remote engineering teams for US and EU companies, and writes about offshore engineering, AI-native developer hiring, and team retention.",
   },
@@ -36,12 +35,13 @@ export default function AuthorBio({ name, role }: AuthorBioProps) {
           About the author
         </p>
         <p className="text-base font-bold text-dark-900 dark:text-dark-50">
-          <Link
+          <a
             href={profile.profileUrl}
+            rel="noopener"
             className="hover:text-primary-500 dark:hover:text-primary-400 hover:underline"
           >
             {name}
-          </Link>
+          </a>
           <span className="font-normal text-dark-500 dark:text-dark-300"> · {role}</span>
         </p>
         <p className="mt-2 text-sm leading-relaxed text-dark-600 dark:text-dark-200">

@@ -35,9 +35,9 @@ const EXACT: Record<string, string> = {
   "/hire-frontend-developers": FRONTEND,
 
   // Retired talent-shop differentiator pages (deleted 2026-06-20 in 4-service repositioning)
-  "/ai-native-india": "/about/",
-  "/not-another-body-shop": "/about/",
-  "/cost-of-switching": "/about/",
+  "/ai-native-india": "/india-handled/",
+  "/not-another-body-shop": "/why-teams-stay/",
+  "/cost-of-switching": "/blog/real-cost-of-switching-tech-partners/",
   "/context-continuity-guarantee": "/how-we-work/",
 
   // Old .html pages
@@ -47,7 +47,7 @@ const EXACT: Record<string, string> = {
   "/workforce-analytics.html": EPI,
   "/employee-productivity-analytics.html": EPI,
   "/how-employee-monitoring-works.html": EPI,
-  "/about.html": "/about/",
+  "/about.html": "/",
   "/privacy-policy.html": "/privacy-policy/",
   "/terms.html": "/terms-of-use/",
   "/cancellation-refund.html": "/terms-of-use/",
