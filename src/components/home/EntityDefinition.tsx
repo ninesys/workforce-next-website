@@ -6,10 +6,14 @@ export default function EntityDefinition() {
           What is Workforce Next?
         </h2>
         <p className="text-dark-500 dark:text-dark-300 leading-relaxed text-lg">
-          <strong>An AI automation agency for founders.</strong> We do four things:
-          product development consulting, AI agents for operations, dedicated
-          developers and QA, and AEO/GEO organic growth. One partner across the
-          whole arc.
+          <strong>An AI automation agency for technical founders.</strong> We
+          work with three kinds of founders: those who vibe-coded their app
+          and now need it hardened and scaled for real users, those with a
+          junior in-house team that needs senior engineering oversight, and
+          those who want a working MVP fast to test an idea. We do four
+          things to get there: product development consulting, AI agents for
+          operations, dedicated developers and QA, and AEO/GEO organic
+          growth. One partner across the whole arc.
         </p>
         <dl className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-sm">
           <div>

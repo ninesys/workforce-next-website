@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { ogDefaults } from "@/data/siteMetadata";
 import Hero from "@/components/home/Hero";
 import EntityDefinition from "@/components/home/EntityDefinition";
+import ProofPoints from "@/components/home/ProofPoints";
 import FourServices from "@/components/home/FourServices";
 import HowWeFit from "@/components/home/HowWeFit";
 import StatBlock from "@/components/home/StatBlock";
@@ -52,6 +53,7 @@ export default function Home() {
       />
       <Hero />
       <EntityDefinition />
+      <ProofPoints />
       <FourServices />
       <HowWeFit />
       <StatBlock />
