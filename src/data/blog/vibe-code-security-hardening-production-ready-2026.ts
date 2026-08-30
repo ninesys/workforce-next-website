@@ -104,7 +104,7 @@ const post: BlogPost = {
 
 <p>What that looks like in practice: build the shared, protected component library first, add rate limiting and bot protection (honeypot plus Turnstile) at every public entry point, close the input validation and secrets gaps a manual review turns up, and load test before go-live. The goal is a codebase that still feels like the one your team already knows, with the missing production layer added on top, not replaced underneath it.</p>
 
-<p>If you are further back, still deciding on architecture before you build, our <a href="/consulting/it-consulting/">IT consulting</a> team scopes that upfront so the hardening pass at the end is smaller. Either way, the earlier this checklist runs, the cheaper it is to fix.</p>
+<p>If you are further back, still deciding on architecture before you build, our <a href="/consulting/it-consulting/">IT consulting</a> team scopes that upfront so the hardening pass at the end is smaller. Either way, the earlier this checklist runs, the cheaper it is to fix. If you are a founder and want the fuller picture of what comes after security, architecture, scaling, and cloud cost, our guide on <a href="/blog/founder-built-app-scaling-architecture-guide-2026">what a vibe-coded app needs before real users arrive</a> covers that ground.</p>
 
 <h2>Final word</h2>
 
