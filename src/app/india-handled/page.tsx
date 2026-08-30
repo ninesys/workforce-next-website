@@ -9,7 +9,7 @@ import {
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "AI Automation Agency from India | Four Services, Global Delivery | Workforce Next",
+  title: "AI Automation Agency from India | Four Services, Global Delivery",
   description:
     "AI automation agency based in India serving founders globally. Product consulting, AI agents and workflows, dedicated developers and QA, and AEO/GEO growth. Flexible timezone coverage.",
   keywords: [

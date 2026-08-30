@@ -8,7 +8,7 @@ import {
 } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
-  title: "How We Work | AI Automation Agency for Founders | Workforce Next",
+  title: "How We Work | AI Automation Agency for Founders",
   description:
     "How we deliver our four services: product consulting, AI agents for operations, dedicated developers and QA, and AEO/GEO organic growth. One discovery call, one partner, four motions.",
   keywords: [

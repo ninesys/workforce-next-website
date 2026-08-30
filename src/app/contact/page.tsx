@@ -5,7 +5,7 @@ import ContactInfo from "@/components/contact/ContactInfo";
 import { generateContactPageSchema } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
-  title: "Contact | AI Automation Agency for Founders | Workforce Next",
+  title: "Contact | AI Automation Agency for Founders",
   description:
     "Book a discovery call. Scoped proposal in 48 hours across consulting, AI agents and workflow automation, dedicated developers and QA, and AEO/GEO growth.",
   keywords: [
@@ -56,6 +56,45 @@ export default function ContactPage() {
             <span className="text-base sm:text-lg font-extrabold text-white">
               Ownership <span className="text-primary-400">·</span> Automation <span className="text-primary-400">·</span> Engineering
             </span>
+          </div>
+        </div>
+      </section>
+
+      {/* What happens next */}
+      <section className="py-10 sm:py-12 bg-white dark:bg-dark-900 border-b border-dark-50 dark:border-dark-800">
+        <div className="container-custom">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
+            {[
+              {
+                step: "01",
+                title: "We read what you sent",
+                description: "A real person reviews your message the same day and routes it to whoever fits your situation, not a queue.",
+              },
+              {
+                step: "02",
+                title: "We ask what we actually need to know",
+                description: "A short call or a few questions by email, whichever gets us to a real answer faster.",
+              },
+              {
+                step: "03",
+                title: "You get a scoped proposal",
+                description: "Clear next steps within 48 hours: what we would do, who would do it, and how we would start.",
+              },
+            ].map((item) => (
+              <div key={item.step} className="flex gap-4">
+                <span className="text-2xl font-extrabold text-primary-200 dark:text-primary-500/30 shrink-0">
+                  {item.step}
+                </span>
+                <div>
+                  <h3 className="font-bold text-dark-900 dark:text-dark-50 text-sm">
+                    {item.title}
+                  </h3>
+                  <p className="mt-1 text-sm text-dark-400 dark:text-dark-300 leading-relaxed">
+                    {item.description}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

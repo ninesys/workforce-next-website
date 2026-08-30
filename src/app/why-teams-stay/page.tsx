@@ -5,7 +5,7 @@ import Badge from "@/components/ui/Badge";
 import { generateBreadcrumbSchema } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
-  title: "Why Teams Stay | One Partner Across All Four Services | Workforce Next",
+  title: "Why Teams Stay | One Partner Across All Four Services",
   description:
     "We carry the whole arc: consulting, automation, talent, and growth. No handoffs. Context compounds across every motion. Here is why customers keep us across all four services.",
   keywords: [

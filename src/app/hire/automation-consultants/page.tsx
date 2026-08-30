@@ -10,7 +10,7 @@ import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "Hire Automation Consultants | AI Agents + Workflow Automation | Workforce Next",
+  title: "Hire Automation Consultants | AI Agents + Workflow Automation",
   description:
     "Automation consultants who wire AI agents into your real business workflows. Sales ops, support, finance, content, and internal tooling. Project or retainer.",
   keywords: [

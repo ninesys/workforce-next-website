@@ -10,7 +10,7 @@ import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "Hire AI Developers Who Build AI Models | Workforce Next",
+  title: "Hire AI Developers Who Build AI Models",
   description:
     "Outsource AI development to senior engineers who build production models, RAG systems, and agents. Hire an AI agent or remote expert. US and Canada founders.",
   keywords: [
