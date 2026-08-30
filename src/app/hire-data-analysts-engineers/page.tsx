@@ -153,7 +153,7 @@ export default function HireDataAnalystsEngineersPage() {
             Dashboards, pipelines, and AI agents that turn your warehouse into decisions.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-            <Button href="/contact" size="lg">Book a discovery call</Button>
+            <Button href="/contact/" size="lg">Book a discovery call</Button>
             <Button href="#stack" variant="outline" size="lg" className="!bg-white/10 !border-white/30 !text-white hover:!bg-white/20 hover:!text-white">
               See the stack
             </Button>
@@ -349,7 +349,7 @@ export default function HireDataAnalystsEngineersPage() {
             Turn your data into decisions.
           </h2>
           <p className="text-lg text-primary-50 mb-8">Tell us where your data lives. Scoped proposal in 48 hours.</p>
-          <Button href="/contact" variant="white" size="lg">Book a discovery call</Button>
+          <Button href="/contact/" variant="white" size="lg">Book a discovery call</Button>
         </div>
       </section>
     </>

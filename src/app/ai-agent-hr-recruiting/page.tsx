@@ -152,7 +152,7 @@ export default function AiAgentHrRecruitingPage() {
             Sources, messages, screens, and schedules candidates. Without burning recruiter hours.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-            <Button href="/contact" size="lg">Book a discovery call</Button>
+            <Button href="/contact/" size="lg">Book a discovery call</Button>
             <Button href="#workflow" variant="outline" size="lg" className="!bg-white/10 !border-white/30 !text-white hover:!bg-white/20 hover:!text-white">
               See the workflow
             </Button>
@@ -347,7 +347,7 @@ export default function AiAgentHrRecruitingPage() {
             Source the next hire without burning recruiter hours.
           </h2>
           <p className="text-lg text-primary-50 mb-8">Tell us the role. Scoped proposal in 48 hours.</p>
-          <Button href="/contact" variant="white" size="lg">Book a discovery call</Button>
+          <Button href="/contact/" variant="white" size="lg">Book a discovery call</Button>
         </div>
       </section>
     </>

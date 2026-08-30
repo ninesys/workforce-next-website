@@ -149,7 +149,7 @@ export default function AiSdrOutreachPage() {
             Done-for-you AI SDR setup service. Researches accounts, writes outbound, books meetings.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-            <Button href="/contact" size="lg">Book a discovery call</Button>
+            <Button href="/contact/" size="lg">Book a discovery call</Button>
             <Button href="#engagement" variant="outline" size="lg" className="!bg-white/10 !border-white/30 !text-white hover:!bg-white/20 hover:!text-white">
               See engagement
             </Button>
@@ -256,7 +256,7 @@ export default function AiSdrOutreachPage() {
             ))}
           </div>
           <div className="mt-12 text-center">
-            <Button href="/contact" size="lg">Scope your AI SDR</Button>
+            <Button href="/contact/" size="lg">Scope your AI SDR</Button>
           </div>
         </div>
       </section>
@@ -349,7 +349,7 @@ export default function AiSdrOutreachPage() {
             Ready to put an AI SDR on your outbound?
           </h2>
           <p className="text-lg text-primary-50 mb-8">Tell us your ICP. Scoped proposal in 48 hours.</p>
-          <Button href="/contact" variant="white" size="lg">Book a discovery call</Button>
+          <Button href="/contact/" variant="white" size="lg">Book a discovery call</Button>
         </div>
       </section>
     </>

@@ -4,6 +4,7 @@ const post: BlogPost = {
   slug: "route-optimization-algorithms-3pl-fleet-platforms",
   image: "/images/blog/route-optimization-algorithms-3pl-fleet-platforms.webp",
   title: "How Route Optimization Actually Works for 3PL and Fleet Platforms",
+  seoTitle: "How Route Optimization Works",
   excerpt:
     "Route optimization is the Vehicle Routing Problem in disguise: assigning and ordering stops across a fleet under real constraints like time windows, capacity, and driver hours. Here is how the algorithm actually works, which tools solve it, and when to build versus buy.",
   tldr:

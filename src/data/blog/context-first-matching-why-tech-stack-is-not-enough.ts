@@ -5,16 +5,16 @@ const post: BlogPost = {
 
 <h2>The problem with tech-stack matching</h2>
 <p>A Python developer who spent 3 years building fraud detection for a neobank thinks differently than one who spent 3 years building content recommendation for a media company. They both write Python. They both know the same frameworks. But one understands transaction patterns, false positive rates, and PCI compliance. The other understands content graphs, engagement metrics, and A/B testing.</p>
-<p>Same language. Completely different context. And context is what makes a developer productive from week one instead of month three. This is also a big reason <a href="/blog/why-offshore-developers-keep-leaving">offshore developers keep leaving</a>. When they lack domain context, they struggle to contribute meaningful work and eventually disengage.</p>
+<p>Same language. Completely different context. And context is what makes a developer productive from week one instead of month three. This is also a big reason <a href="/blog/why-offshore-developers-keep-leaving/">offshore developers keep leaving</a>. When they lack domain context, they struggle to contribute meaningful work and eventually disengage.</p>
 
 <h2>What context-first matching looks like</h2>
-<p>When <a href="/products/seth-ai-recruiter">SethAI</a> matches a developer, it considers three layers:</p>
+<p>When <a href="/products/seth-ai-recruiter/">SethAI</a> matches a developer, it considers three layers:</p>
 <p><strong>Industry context.</strong> Has the developer worked in your industry? A logistics startup gets someone who understands route optimization, not someone who once built a REST API. A healthtech company gets someone who knows HIPAA, not someone who has to Google it.</p>
 <p><strong>Product type context.</strong> Has the developer built a similar type of product? B2B SaaS is different from consumer mobile. Marketplace dynamics are different from enterprise workflows. The patterns, failure modes, and user expectations are all different.</p>
-<p><strong>Team context.</strong> How does the developer work? Are they comfortable in a fast-moving startup where requirements change daily? Or do they thrive in a structured enterprise environment with clear specs? Neither is better. But the wrong fit creates friction. Whether you are a <a href="/for/founders">founder building your first product</a> or an <a href="/for/enterprise">enterprise scaling a team</a>, the matching criteria look different.</p>
+<p><strong>Team context.</strong> How does the developer work? Are they comfortable in a fast-moving startup where requirements change daily? Or do they thrive in a structured enterprise environment with clear specs? Neither is better. But the wrong fit creates friction. Whether you are a <a href="/for/founders/">founder building your first product</a> or an <a href="/for/enterprise/">enterprise scaling a team</a>, the matching criteria look different.</p>
 
 <h2>Why this matters for retention</h2>
-<p>Developers who have relevant context are productive faster, which means they feel useful sooner, which means they stay longer. A developer who spends three months just learning your domain is more likely to get frustrated and leave than one who starts contributing meaningful work in week two. We break down the full financial impact of that kind of churn in our post on <a href="/blog/real-cost-of-switching-tech-partners">the real cost of switching tech partners</a>.</p>
+<p>Developers who have relevant context are productive faster, which means they feel useful sooner, which means they stay longer. A developer who spends three months just learning your domain is more likely to get frustrated and leave than one who starts contributing meaningful work in week two. We break down the full financial impact of that kind of churn in our post on <a href="/blog/real-cost-of-switching-tech-partners/">the real cost of switching tech partners</a>.</p>
 <h2>How do you actually measure context fit before the developer starts?</h2>
 <p>"We match on context" is a claim. "Here is exactly how we measure it" is a differentiator. Four concrete signals we check when scoring a candidate against your role:</p>
 <p><strong>1. Recency and depth in your industry.</strong> Not "has worked in fintech" but "worked on transaction reconciliation at a payments company within the last 18 months." Depth and recency both matter. A three-year-old stint in your industry is much weaker than eighteen months ending last quarter.</p>
@@ -29,10 +29,11 @@ const post: BlogPost = {
 <p><strong>Internal tools for an engineering audience.</strong> If the user is another engineer on your team, domain context matters less. A sharp developer can ship a CLI or an admin panel without knowing much about your business users.</p>
 <p>For everything that touches real product decisions, though, context compounds much harder than tech skill does. That is where the math tips in favor of context-first matching.</p>
 
-<p>This is the thinking behind everything we do at Workforce Next. Context is not a nice-to-have. It is the single biggest predictor of both productivity and retention. <a href="/contact">Get in touch</a> if you want to see how context-first matching works for your specific needs.</p>`,
+<p>This is the thinking behind everything we do at Workforce Next. Context is not a nice-to-have. It is the single biggest predictor of both productivity and retention. <a href="/contact/">Get in touch</a> if you want to see how context-first matching works for your specific needs.</p>`,
   "slug": "context-first-matching-why-tech-stack-is-not-enough",
   "image": "/images/blog/context-first-matching-why-tech-stack-is-not-enough.webp",
   "title": "Context-First Matching: Why Tech Stack Alone Is Not Enough to Hire Good Developers",
+  seoTitle: "Context-First Developer Matching",
   "excerpt": "A Java developer who built banking systems is a completely different hire than one who built logistics software. Here is why context matters more than stack.",
   "tldr": "Tech-stack matching (you need Python, here is a Python developer) is why an offshore engineer often spends three months understanding the business before adding real value. Context-first matching adds industry, domain, and product-stage signals on top of stack so the developer is productive in week one. The post shows the three context layers SethAI scores on.",
   "category": "hiring",

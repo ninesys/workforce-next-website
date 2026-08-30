@@ -5,6 +5,7 @@ const post: BlogPost = {
   image: "/images/blog/hr-document-automation-small-business-2026.webp",
   title:
     "HR Document Automation for Small Businesses: 6 Workflows That Pay for Themselves (2026)",
+  seoTitle: "HR Document Automation for Small Business",
   excerpt:
     "Real playbook for HR document automation at small businesses (5 to 50 employees). Six workflows that pay back inside 60 days: onboarding packets, offer letters, PTO requests, policy acknowledgments, performance reviews, exit checklists.",
   tldr: "Small businesses (5 to 50 employees) without a dedicated HR ops team usually burn 8 to 15 hours per week on document-heavy workflows: chasing onboarding paperwork, drafting offer letters, approving PTO, tracking policy acknowledgments, collecting review forms, running exit checklists. A USD 1,500 to USD 4,000 automation build on n8n plus DocuSign plus Slack plus a doc store (Notion, Airtable, or Google Drive) eliminates 70 to 85 percent of that time. The right starting point depends on your bottleneck: if hiring is the squeeze, start with onboarding + offer letters; if compliance is the squeeze, start with policy acknowledgments + PTO. Payback inside 60 to 90 days is typical even at the smaller end of the SMB range.",

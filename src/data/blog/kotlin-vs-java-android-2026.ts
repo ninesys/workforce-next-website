@@ -4,6 +4,7 @@ const post: BlogPost = {
   slug: "kotlin-vs-java-android-2026",
   image: "/images/blog/kotlin-vs-java-android-2026.webp",
   title: "Kotlin vs Java for Android in 2026 (The Honest Verdict)",
+  seoTitle: "Kotlin vs Java for Android",
   excerpt:
     "Kotlin is the right default for Android in 2026. Java is the right call only for specific legacy and tooling cases. Here is the honest decision matrix, the migration math, and how to hire for each.",
   tldr:

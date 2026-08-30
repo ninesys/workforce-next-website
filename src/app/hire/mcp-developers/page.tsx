@@ -294,10 +294,10 @@ export default function HireMcpDevelopersPage() {
             security awareness.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <Button href="/contact" size="lg">
+            <Button href="/contact/" size="lg">
               Start hiring
             </Button>
-            <Button href="/how-we-work" variant="outline" size="lg">
+            <Button href="/how-we-work/" variant="outline" size="lg">
               How we work
             </Button>
           </div>
@@ -549,7 +549,7 @@ export default function HireMcpDevelopersPage() {
             Tell us your AI stack and the systems you want to expose. We will
             match you with an MCP developer within 48 hours.
           </p>
-          <Button href="/contact" variant="white" size="lg">
+          <Button href="/contact/" variant="white" size="lg">
             Get started
           </Button>
         </div>

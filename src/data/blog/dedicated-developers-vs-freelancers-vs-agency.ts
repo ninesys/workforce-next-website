@@ -4,6 +4,7 @@ const post: BlogPost = {
   slug: "dedicated-developers-vs-freelancers-vs-agency",
   image: "/images/blog/dedicated-developers-vs-freelancers-vs-agency.webp",
   title: "Dedicated Developers vs Freelancers vs Agency: When Each One Is the Right Call",
+  seoTitle: "Dedicated Devs vs Freelancers vs Agency",
   excerpt:
     "A practical decision guide for founders choosing between a dedicated developer, a freelancer, or an agency. Three engagement models, what each one is best for, and how to pick.",
   tldr: "A freelancer is best for short, well-scoped tasks where you own the spec and the integration. An agency is best for fixed-scope projects where you want a team to manage delivery end to end. A dedicated developer is best when you need an engineer embedded with your team for months, learning your codebase and shipping continuously. Most founders pick the wrong shape because they conflate three different problems: a delivery problem, a capacity problem, and a context problem. The right call depends on what kind of problem you actually have.",

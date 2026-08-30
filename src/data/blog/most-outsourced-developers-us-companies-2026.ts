@@ -4,6 +4,7 @@ const post: BlogPost = {
   slug: "most-outsourced-developers-us-companies-2026",
   image: "/images/blog/most-outsourced-developers-us-companies-2026.webp",
   title: "What Developers Do US Companies Outsource Most in 2026?",
+  seoTitle: "Most Outsourced Developer Roles in 2026",
   excerpt:
     "US companies in 2026 outsource four developer categories the most: Web and Mobile, DevOps and SRE, Data and AI, and QA automation. Here is what each pillar covers, the real cost gap that drives it, and where companies are hiring from.",
   tldr:

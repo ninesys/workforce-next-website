@@ -48,7 +48,7 @@ const post: BlogPost = {
 <h2>How do you audit whether a vendor actually measures these?</h2>
 <p>Vendor pitches are full of words like "context" and "behavioral matching" without any underlying measurement. When you are evaluating an AI matching tool, take this list into the call and ask one question for each parameter: which exact input captures this signal, and how is it stored?</p>
 <p>Honest answers sound like: "We ask the candidate in intake step two, it is a structured field, we surface it on the shortlist view." Weak answers sound like: "Our AI picks this up holistically from the profile." The second answer is marketing-speak for "we do not measure this."</p>
-<p>A vendor should be able to tell you the data source for every parameter. If they cannot, they are not differentiating on depth. They are hoping you will not look closely. Our full comparison of the <a href="/blog/best-ai-developer-matching-tools-2026">11 AI developer matching tools in 2026</a> applies this audit to every tool in the category.</p>
+<p>A vendor should be able to tell you the data source for every parameter. If they cannot, they are not differentiating on depth. They are hoping you will not look closely. Our full comparison of the <a href="/blog/best-ai-developer-matching-tools-2026/">11 AI developer matching tools in 2026</a> applies this audit to every tool in the category.</p>
 
 <h2>Which parameters matter most for different hiring scenarios?</h2>
 <p>All twelve parameters matter in principle. In practice, weighting shifts with the role. The table below is a rough guide for how heavily to weight each group depending on what you are hiring for.</p>
@@ -75,10 +75,11 @@ const post: BlogPost = {
 
 <h2>What to do with this list</h2>
 <p>Bring the twelve parameters into your next AI vendor call. Ask each one the audit question: which input captures this, and how is it stored. The ones who can answer clearly for ten or more parameters are the Gen 2 tools worth your time. The ones who cannot answer for more than three or four are Gen 1 tools wrapping thin lifestyle claims around skills matching.</p>
-<p>If you want to see what a shortlist built from all twelve parameters looks like for your specific role, <a href="/contact">reach out to us</a> and we will run one inside 48 hours. No fee for the shortlist, no obligation to hire.</p>`,
+<p>If you want to see what a shortlist built from all twelve parameters looks like for your specific role, <a href="/contact/">reach out to us</a> and we will run one inside 48 hours. No fee for the shortlist, no obligation to hire.</p>`,
   "slug": "12-parameters-ai-matching-tools-should-evaluate",
   "image": "/images/blog/12-parameters-ai-matching-tools-should-evaluate.webp",
   "title": "The 12 Parameters Modern AI Matching Tools Should Evaluate",
+  seoTitle: "12 Parameters AI Matching Tools Need",
   "excerpt": "Twelve parameters predict developer hiring success beyond technical skills. They cover working rhythm, context depth, career alignment, and environment. Here is each parameter, what it measures, and how to tell if a vendor actually measures it.",
   "tldr": "Twelve parameters predict developer hiring success beyond raw technical skills: working rhythm, context depth, career alignment, and environment. Most AI matching tools measure two or three of them, which is why so many resume-perfect hires still fail by month six. This post lists all twelve, what each measures, and how to audit a vendor on every one.",
   "category": "hiring",

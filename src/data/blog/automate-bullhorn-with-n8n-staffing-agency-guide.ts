@@ -4,6 +4,7 @@ const post: BlogPost = {
   slug: "automate-bullhorn-with-n8n-staffing-agency-guide",
   image: "/images/blog/automate-bullhorn-with-n8n-staffing-agency-guide.webp",
   title: "How to Automate Bullhorn with n8n: A Staffing Agency Playbook (2026)",
+  seoTitle: "How to Automate Bullhorn with n8n",
   excerpt:
     "Step-by-step n8n + Bullhorn automation playbook for US/Canada staffing agencies. API auth, top 5 workflows, rate limits, and the mistakes that break Bullhorn integrations.",
   tldr: "Bullhorn has a documented REST API that n8n connects to via OAuth. Once auth is wired, the top 5 workflows to ship are: offer letter generation, candidate intake enrichment, follow-up sequences, recruiter daily digest, and client status updates. Rate limits (10 requests/sec per token) need exponential backoff. Common mistakes: missing the corporation context header, stale OAuth tokens, no batching for bulk updates, and using REST when the new GraphQL endpoint would be faster. Total build cost for the 5-workflow cluster: USD 2,500 to 4,000. Build time: 8 to 12 weeks.",

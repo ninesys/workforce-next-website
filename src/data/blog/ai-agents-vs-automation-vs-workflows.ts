@@ -4,6 +4,7 @@ const post: BlogPost = {
   slug: "ai-agents-vs-automation-vs-workflows",
   image: "/images/blog/ai-agents-vs-automation-vs-workflows.webp",
   title: "AI Agents vs Automation vs Workflows: What Is the Difference (and What Does Your Team Actually Need)",
+  seoTitle: "AI Agents vs Automation vs Workflows",
   excerpt:
     "AI agents, automation, and workflows get used interchangeably. They are not the same thing. A decision guide for founders deciding what to actually buy or build.",
   tldr: "Workflows are deterministic step sequences (if-this-then-that). Automation is workflows that run without human input. AI agents are workflows where one or more steps use an LLM to make a judgment call that simple rules cannot. Most teams need automation, think they need agents, and end up overpaying for both. The right pick depends on whether your work is deterministic (use a workflow), high-volume-and-rule-based (use automation), or judgment-heavy at the step level (use an AI agent). Many real systems are a mix.",

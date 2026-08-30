@@ -141,10 +141,10 @@ export default function Footer() {
               <a href={`tel:${siteMetadata.phone}`} className="hover:text-primary-400 transition-colors">
                 {siteMetadata.phone}
               </a>
-              <Link href="/privacy-policy" className="hover:text-primary-400 transition-colors">
+              <Link href="/privacy-policy/" className="hover:text-primary-400 transition-colors">
                 Privacy
               </Link>
-              <Link href="/terms-of-use" className="hover:text-primary-400 transition-colors">
+              <Link href="/terms-of-use/" className="hover:text-primary-400 transition-colors">
                 Terms
               </Link>
             </div>

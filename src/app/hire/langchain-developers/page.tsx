@@ -287,10 +287,10 @@ export default function HireLangChainDevelopersPage() {
             technical depth and long-term fit.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <Button href="/contact" size="lg">
+            <Button href="/contact/" size="lg">
               Start hiring
             </Button>
-            <Button href="/how-we-work" variant="outline" size="lg">
+            <Button href="/how-we-work/" variant="outline" size="lg">
               How we work
             </Button>
           </div>
@@ -544,7 +544,7 @@ export default function HireLangChainDevelopersPage() {
             Tell us about your LLM application and we will match you with the
             right developers within 48 hours.
           </p>
-          <Button href="/contact" variant="white" size="lg">
+          <Button href="/contact/" variant="white" size="lg">
             Get started
           </Button>
         </div>

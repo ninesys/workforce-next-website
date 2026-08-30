@@ -312,10 +312,10 @@ export default function HireUnityDevelopersPage() {
             record.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <Button href="/contact" size="lg">
+            <Button href="/contact/" size="lg">
               Start hiring
             </Button>
-            <Button href="/how-we-work" variant="outline" size="lg">
+            <Button href="/how-we-work/" variant="outline" size="lg">
               How we work
             </Button>
           </div>
@@ -567,7 +567,7 @@ export default function HireUnityDevelopersPage() {
             Tell us about your platform target, genre, and current dev stack.
             We will match you with a senior Unity developer within 48 hours.
           </p>
-          <Button href="/contact" variant="white" size="lg">
+          <Button href="/contact/" variant="white" size="lg">
             Get started
           </Button>
         </div>

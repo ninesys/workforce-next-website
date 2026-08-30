@@ -4,6 +4,7 @@ const post: BlogPost = {
   slug: "enterprise-web-application-development-complete-guide-2026",
   image: "/images/blog/enterprise-web-application-development-complete-guide-2026.webp",
   title: "Enterprise Web Application Development in 2026: A Complete Guide",
+  seoTitle: "Enterprise Web App Development Guide",
   excerpt:
     "What enterprise web application development actually involves in 2026. Scope, architecture, tech stack, team shape, cost, timeline, security, and how to ship without getting burned.",
   tldr: "Enterprise web application development in 2026 means building secure, scalable, multi-tenant systems with strong API contracts, observability, and compliance baked in. The default stack is Next.js or React on the front, Node.js (NestJS or Fastify) or Java on the API, PostgreSQL with Redis, Kubernetes or serverless for delivery. A real enterprise build needs a 6 to 10 person team for 4 to 9 months, costs USD 250K to 1.2M depending on scope, and lives or dies on architecture decisions made in the first three weeks.",

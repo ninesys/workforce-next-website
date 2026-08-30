@@ -3,7 +3,7 @@ import type { BlogPost } from "./types";
 const post: BlogPost = {
   body: `<p>AI developer matching is the automated process of scoring and ranking candidates against a role using structured signals instead of manual resume review. In 2026, <a href="/blog/what-is-lifestyle-fit-matching-in-developer-hiring/#why-does-skills-only-ai-matching-keep-failing">two generations of tools</a> do this very differently: Gen 1 matches on skills extracted from resumes, Gen 2 matches on 12 lifestyle and behavioral parameters alongside skills. Both follow a similar pipeline but disagree on what data counts as signal.</p>
 
-<p>If the Gen 1 and Gen 2 terminology is new to you, start with our primer on <a href="/blog/what-is-lifestyle-fit-matching-in-developer-hiring">what lifestyle-fit matching is and why skills-only AI keeps failing</a>. That post defines the category and names the Gen 1 tools (Eightfold, SeekOut, HireEZ) and why the industry is shifting toward Gen 2. This post picks up from there and walks through the actual six-stage pipeline inside every AI matching system and where each stage breaks.</p>
+<p>If the Gen 1 and Gen 2 terminology is new to you, start with our primer on <a href="/blog/what-is-lifestyle-fit-matching-in-developer-hiring/">what lifestyle-fit matching is and why skills-only AI keeps failing</a>. That post defines the category and names the Gen 1 tools (Eightfold, SeekOut, HireEZ) and why the industry is shifting toward Gen 2. This post picks up from there and walks through the actual six-stage pipeline inside every AI matching system and where each stage breaks.</p>
 
 <h2>What happens when you submit a role to an AI matching tool?</h2>
 <p>Every AI developer matching system, Gen 1 or Gen 2, follows the same six-stage pipeline. The stages are the same. The inputs and scoring weights are what differ.</p>
@@ -47,7 +47,7 @@ const post: BlogPost = {
 <p><strong>Industry and product context.</strong> What your product does, who the users are, what past experience a candidate needs to ramp up in weeks instead of months. This is the biggest single differentiator in match quality.</p>
 <p><strong>Longevity target.</strong> Is this a 3-month contract or a 2-year hire? Gen 2 weights candidates differently based on the time horizon.</p>
 <p><strong>Constraints.</strong> Compliance requirements (FCRA, GDPR, region-specific), must-have or must-avoid tool experience, language requirements.</p>
-<p>At <a href="/products/seth-ai-recruiter">SethAI</a> we collect this upfront in a 20-minute intake call before generating any shortlist. Gen 1 tools skip this step, which is both a feature (faster) and a failure mode (matches that look right on paper and fail in practice).</p>
+<p>At <a href="/products/seth-ai-recruiter/">SethAI</a> we collect this upfront in a 20-minute intake call before generating any shortlist. Gen 1 tools skip this step, which is both a feature (faster) and a failure mode (matches that look right on paper and fail in practice).</p>
 
 <h2>How accurate is AI developer matching?</h2>
 <p>Accuracy is the most slippery number in the industry. Vendors quote 80% or 90% match accuracy, but the definition of "accurate" varies wildly.</p>
@@ -70,17 +70,18 @@ const post: BlogPost = {
 <p><strong>Days 3 to 7:</strong> Customer interviews the shortlist. We do not pre-interview to keep the experience direct between customer and candidate.</p>
 <p><strong>Week 2:</strong> Paid trial week begins with the chosen candidate. If it does not work out, we rematch without a charge.</p>
 <p><strong>Month 3, 6, 12:</strong> Retention check-ins feed back into the model. Every successful placement teaches SethAI what a good match looks like for similar future roles.</p>
-<p>If you want to see this workflow in action for your specific role, <a href="/contact">reach out</a> and we will run it within 48 hours.</p>
+<p>If you want to see this workflow in action for your specific role, <a href="/contact/">reach out</a> and we will run it within 48 hours.</p>
 
 <h2>Which generation of AI matching should you use?</h2>
 <p>Pick based on the hiring problem you actually have, not on how the tool markets itself.</p>
 <p><strong>Use Gen 1 (Eightfold, SeekOut, HireEZ) if:</strong> you source high volumes of candidates per quarter, you have dedicated TA operations to filter noisy shortlists, your hiring decisions are based more on resume patterns than on fit, and you accept the FCRA-adjacent legal exposure.</p>
 <p><strong>Use Gen 2 (SethAI and similar) if:</strong> a single bad hire is expensive for you, you care about 12-to-18-month retention more than pipeline size, your team has specific lifestyle or industry requirements, and you want a smaller shortlist that is more likely to convert.</p>
 <p><strong>Use both if:</strong> you run enterprise-scale sourcing but want a fit-focused final pass. Gen 1 for discovery, Gen 2 for ranking. This pattern is becoming common in companies hiring 50+ engineers a year.</p>
-<p>For a full side-by-side of the 11 tools in this category, read our <a href="/blog/best-ai-developer-matching-tools-2026">honestly ranked list of the 11 best AI developer matching tools in 2026</a>. For the category definition behind Gen 2, see <a href="/blog/what-is-lifestyle-fit-matching-in-developer-hiring">what lifestyle-fit matching is and why skills-only AI keeps failing</a>.</p>`,
+<p>For a full side-by-side of the 11 tools in this category, read our <a href="/blog/best-ai-developer-matching-tools-2026/">honestly ranked list of the 11 best AI developer matching tools in 2026</a>. For the category definition behind Gen 2, see <a href="/blog/what-is-lifestyle-fit-matching-in-developer-hiring/">what lifestyle-fit matching is and why skills-only AI keeps failing</a>.</p>`,
   "slug": "how-does-ai-developer-matching-actually-work",
   "image": "/images/blog/how-does-ai-developer-matching-actually-work.webp",
   "title": "How Does AI Developer Matching Actually Work?",
+  seoTitle: "How AI Developer Matching Works",
   "excerpt": "AI developer matching has two generations. Gen 1 parses resumes for skills. Gen 2 evaluates lifestyle and behavioral fit. Here is the step-by-step pipeline each uses, where each one breaks, and how to tell them apart.",
   "tldr": "AI developer matching automates candidate scoring against a role using structured signals instead of resume review. Every system runs the same six-stage pipeline (intake, sourcing, scoring, ranking, shortlist, feedback) but Gen 1 tools score on extracted skills while Gen 2 tools score on 12 lifestyle parameters. This post walks each stage and where it breaks.",
   "category": "hiring",

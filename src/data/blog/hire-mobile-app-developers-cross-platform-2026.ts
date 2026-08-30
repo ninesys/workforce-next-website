@@ -4,6 +4,7 @@ const post: BlogPost = {
   slug: "hire-mobile-app-developers-cross-platform-2026",
   image: "/images/blog/hire-mobile-app-developers-cross-platform-2026.webp",
   title: "Hire Mobile App Developers in 2026 (Cross-Platform Guide)",
+  seoTitle: "Hire Cross-Platform Mobile App Developers",
   excerpt: "React Native, Flutter, or Kotlin Multiplatform: which one to hire for, what it costs from India, and how to screen senior cross-platform engineers.",
   tldr: "Hire cross-platform mobile developers from India for USD 5,000 to 8,500 per month senior, vs USD 14,000 to 19,000 in the US. React Native is the safest default for teams already on TypeScript, Flutter wins for design-heavy consumer apps, and Kotlin Multiplatform is the right call only when native iOS and Android performance both matter. Screen for native-bridge debugging, app store release discipline, and a real production app you can install.",
   body: `<p>Cross-platform mobile developers from India give you full iOS and Android coverage from a single team, at roughly 60 to 70% lower cost than equivalent US hires. A senior cross-platform engineer from India runs USD 5,000 to 8,500 per month all-in, while a US senior fully loaded costs USD 14,000 to 19,000 per month.</p>

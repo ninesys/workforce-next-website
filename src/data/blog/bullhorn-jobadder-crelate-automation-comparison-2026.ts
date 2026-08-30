@@ -4,6 +4,7 @@ const post: BlogPost = {
   slug: "bullhorn-jobadder-crelate-automation-comparison-2026",
   image: "/images/blog/bullhorn-jobadder-crelate-automation-comparison-2026.webp",
   title: "Bullhorn vs JobAdder vs Crelate: Which ATS Automates Best with n8n + AI (2026)?",
+  seoTitle: "Bullhorn vs JobAdder vs Crelate",
   excerpt:
     "Honest 2026 comparison of Bullhorn, JobAdder, and Crelate from an automation perspective. API quality, webhook reliability, rate limits, n8n compatibility, real-world build experience.",
   tldr: "All three ATS systems can be automated with n8n + AI, but with meaningfully different developer experience. Bullhorn has the deepest API surface and the largest install base but the most complex auth and rate limits. JobAdder has the cleanest modern REST API and easier OAuth but smaller community. Crelate is the simplest but limited; best for small firms with straightforward needs. For 10-50 person US/Canada staffing firms doing serious automation, Bullhorn is the safest default. For 5-30 person firms wanting fast builds with less complexity, JobAdder is often the better pick. Crelate fits very small or specialty firms.",

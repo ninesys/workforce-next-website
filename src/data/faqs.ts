@@ -5,7 +5,7 @@ export const faqs: FAQ[] = [
   {
     question: "How much does it cost to hire a dedicated developer from India?",
     answer:
-      "Junior developers (1 to 3 years experience) typically cost $1,200 to $2,000 per month. Mid-level (3 to 5 years) ranges from $2,000 to $3,500, and senior developers (6+ years) cost $3,500 to $6,000 per month. That is 40 to 70% less than equivalent talent in the US or UK. Our pricing is all-inclusive. One monthly rate covers the developer, infrastructure, HR, and management. No hidden fees.",
+      "Cost scales with experience level, junior, mid-level, and senior developers each sit at a different monthly rate, and it comes in meaningfully lower than equivalent talent in the US or UK. Pricing is all-inclusive: one monthly rate covers the developer, infrastructure, HR, and management, with no hidden fees. We scope exact numbers on a discovery call once we understand the role.",
     category: "hiring",
     categoryLabel: "Hiring",
   },
@@ -102,7 +102,7 @@ export const faqs: FAQ[] = [
   {
     question: "What is the MVP Sprint and who is it for?",
     answer:
-      "The MVP Sprint is for founders building their first AI product. You get one senior developer for 4 weeks at a fixed scope and fixed price (1.2 to 1.8 lakh INR or $1,500 to $2,200). The deliverable is a working, deployable prototype, not a promise. SethAI matches the developer, you interview, and there is a one-week paid trial. The developer stays with you beyond the sprint if you want them to.",
+      "The MVP Sprint is for founders building their first AI product. You get one senior developer for 4 weeks at a fixed scope and fixed price, scoped on a discovery call. The deliverable is a working, deployable prototype, not a promise. SethAI matches the developer, you interview, and there is a one-week paid trial. The developer stays with you beyond the sprint if you want them to.",
     category: "hiring",
     categoryLabel: "Hiring",
   },

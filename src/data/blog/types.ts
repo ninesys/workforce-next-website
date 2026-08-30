@@ -20,6 +20,7 @@ export interface BlogPost {
   keywords: string[];
   faq: BlogFAQ[];
   image?: string;
+  seoTitle?: string;
   ogTitle?: string;
   ogDescription?: string;
   tldr?: string;

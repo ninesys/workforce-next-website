@@ -10,7 +10,7 @@ import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "Hire iOS Application Developers from India (Swift, SwiftUI)",
+  title: "Hire iOS Developers from India",
   description:
     "Hire pre-vetted iOS application developers from India. Swift, SwiftUI, UIKit, Combine, Core Data, App Store delivery, and accessibility. SethAI-screened.",
   keywords: [
@@ -294,10 +294,10 @@ export default function HireIosDevelopersPage() {
             depth, App Store track record, and long-term fit.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <Button href="/contact" size="lg">
+            <Button href="/contact/" size="lg">
               Start hiring
             </Button>
-            <Button href="/how-we-work" variant="outline" size="lg">
+            <Button href="/how-we-work/" variant="outline" size="lg">
               How we work
             </Button>
           </div>
@@ -549,7 +549,7 @@ export default function HireIosDevelopersPage() {
             Tell us about the app and your stack. We will match you with an
             iOS application developer within 48 hours.
           </p>
-          <Button href="/contact" variant="white" size="lg">
+          <Button href="/contact/" variant="white" size="lg">
             Get started
           </Button>
         </div>

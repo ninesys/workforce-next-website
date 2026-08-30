@@ -8,7 +8,7 @@ import {
 } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
-  title: "Engineering Pods for Startups - Build Your Product Team in 30 Days",
+  title: "Engineering Pods for Funded Startups",
   description:
     "Build a dedicated 3-8 person engineering pod in 30 days. AI/backend lead, full-stack developers, QA, and optional data engineer. 48-hour profile delivery via SethAI.",
   keywords: [

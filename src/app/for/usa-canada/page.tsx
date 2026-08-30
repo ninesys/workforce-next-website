@@ -9,7 +9,7 @@ import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "Hire Remote Developers from India for US & Canadian Companies",
+  title: "Hire Remote Developers for US & Canada",
   description:
     "Hire remote developers from India for US and Canadian companies. Flexible hours, US Pacific to US Eastern timezone overlap, Follow-the-Sun coverage, USD or CAD invoicing.",
   keywords: [
@@ -191,10 +191,10 @@ export default function ForUsaCanadaPage() {
             B2B contract in USD or CAD.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <Button href="/contact" size="lg">
+            <Button href="/contact/" size="lg">
               Start hiring
             </Button>
-            <Button href="/how-we-work" variant="outline" size="lg">
+            <Button href="/how-we-work/" variant="outline" size="lg">
               How we work
             </Button>
           </div>
@@ -440,7 +440,7 @@ export default function ForUsaCanadaPage() {
             you within 48 hours and start the paid trial week as soon as you
             sign.
           </p>
-          <Button href="/contact" variant="white" size="lg">
+          <Button href="/contact/" variant="white" size="lg">
             Get started
           </Button>
         </div>

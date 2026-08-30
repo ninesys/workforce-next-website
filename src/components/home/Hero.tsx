@@ -52,10 +52,10 @@ export default function Hero() {
             </p>
 
             <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4">
-              <Button href="/contact" variant="primary" size="lg">
+              <Button href="/contact/" variant="primary" size="lg">
                 Hire AI or talent
               </Button>
-              <Button href="/how-we-work" variant="outline" size="lg">
+              <Button href="/how-we-work/" variant="outline" size="lg">
                 See how it works
               </Button>
             </div>

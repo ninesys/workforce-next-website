@@ -209,7 +209,7 @@ export default function SethAIRecruiterPage() {
             While SethAI is in development, our team uses the same screening
             methodology to match developers manually. Get profiles within 48 hours.
           </p>
-          <Button href="/contact" variant="white" size="lg">
+          <Button href="/contact/" variant="white" size="lg">
             Talk to us
           </Button>
         </div>

@@ -296,7 +296,7 @@ export default function MVPConsultingPage() {
             full build.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <Button href="/contact" size="lg">Scope an MVP</Button>
+            <Button href="/contact/" size="lg">Scope an MVP</Button>
             <Button href="#engagement" variant="outline" size="lg">See engagement options</Button>
           </div>
         </div>
@@ -465,7 +465,7 @@ export default function MVPConsultingPage() {
         <div className="container-custom text-center">
           <h2 className="text-2xl md:text-3xl font-extrabold text-white mb-4">Ready to scope your MVP?</h2>
           <p className="text-primary-100 max-w-xl mx-auto mb-8">Tell us your idea and we will scope an engagement within 48 hours.</p>
-          <Button href="/contact" variant="white" size="lg">Start a conversation</Button>
+          <Button href="/contact/" variant="white" size="lg">Start a conversation</Button>
         </div>
       </section>
     </>

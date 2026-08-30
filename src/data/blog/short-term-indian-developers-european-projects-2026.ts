@@ -4,6 +4,7 @@ const post: BlogPost = {
   slug: "short-term-indian-developers-european-projects-2026",
   image: "/images/blog/short-term-indian-developers-european-projects-2026.webp",
   title: "Short-Term Indian Developers for European Projects in 2026",
+  seoTitle: "Short-Term Indian Developers for Europe",
   excerpt:
     "Short-term Indian developer engagements (3 to 4 months) work better for European companies than the offshore conversation usually admits. Here is how the timezone, contract, and ramp math actually pencils out.",
   tldr:

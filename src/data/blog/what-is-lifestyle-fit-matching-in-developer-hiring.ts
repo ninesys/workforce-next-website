@@ -30,7 +30,7 @@ const post: BlogPost = {
   <li><strong>Longevity signals.</strong> Job-hopping patterns, reasons for leaving prior roles, stated career goals. Not used to discriminate, used to predict whether the match will survive to month 18.</li>
   <li><strong>Working environment stability.</strong> Home office setup, internet reliability, personal schedule predictability. Practical factors that determine whether a candidate can actually show up reliably.</li>
 </ol>
-<p>At <a href="/products/seth-ai-recruiter">SethAI</a> we evaluate all 12 plus a handful of domain-specific signals depending on the role. Parameters are weighted differently for a fintech senior engineer than for an early-stage MVP builder, because the priorities are different.</p>
+<p>At <a href="/products/seth-ai-recruiter/">SethAI</a> we evaluate all 12 plus a handful of domain-specific signals depending on the role. Parameters are weighted differently for a fintech senior engineer than for an early-stage MVP builder, because the priorities are different.</p>
 
 <h2>How is lifestyle-fit matching different from Eightfold, SeekOut, and HireEZ?</h2>
 <p>The Gen 1 tools are not bad. They are optimized for a different buyer and a different era. Here is a direct comparison of how each approach handles the matching problem.</p>
@@ -62,7 +62,7 @@ const post: BlogPost = {
 <p>SethAI's approach is deliberate on three fronts:</p>
 <p><strong>Explicit consent and transparency.</strong> Every candidate knows exactly which signals are being evaluated and why. Nothing is scraped from external sources without disclosure. No shadow profiles.</p>
 <p><strong>Parameters over personality.</strong> We measure behavioral signals (writing samples, communication cadence, stated preferences) rather than inferring personality traits from background data. A candidate who prefers async work is telling us that; we are not guessing from their college or their birthplace.</p>
-<p><strong>Human override on every match.</strong> SethAI produces a ranked shortlist. A human recruiter reviews every shortlist before it reaches a customer. The system recommends; people decide. This is documented in our <a href="/products/seth-ai-recruiter">SethAI product details</a>.</p>
+<p><strong>Human override on every match.</strong> SethAI produces a ranked shortlist. A human recruiter reviews every shortlist before it reaches a customer. The system recommends; people decide. This is documented in our <a href="/products/seth-ai-recruiter/">SethAI product details</a>.</p>
 
 <h2>What does a lifestyle-fit match look like in practice?</h2>
 <p>Example from a real engagement (details generalized). A US-based fintech startup needed a senior backend engineer. Gen 1 tools would have matched on "Python + FastAPI + payments" and returned hundreds of candidates.</p>
@@ -72,10 +72,11 @@ const post: BlogPost = {
 <h2>Where lifestyle-fit matching is heading</h2>
 <p>Expect this category to split into two branches over the next 18 months. One branch will keep optimizing against resume data and try to infer lifestyle signals from it. The other (the branch we believe in) will go further into explicit behavioral measurement: structured interviews, writing samples, pair-programming signals, and real-world work simulations that measure fit before the offer is made.</p>
 <p>The companies that invest in the second branch will own the high-fit, low-volume end of the market. The companies stuck in resume-inference will keep selling volume to enterprises that measure recruiting by pipeline size rather than by retention 18 months later. Both markets exist. They serve different buyers.</p>
-<p>If you are hiring specialists where fit matters more than volume, <a href="/contact">talk to us about your role</a> and we will show you what a lifestyle-fit match looks like for your specific team.</p>`,
+<p>If you are hiring specialists where fit matters more than volume, <a href="/contact/">talk to us about your role</a> and we will show you what a lifestyle-fit match looks like for your specific team.</p>`,
   "slug": "what-is-lifestyle-fit-matching-in-developer-hiring",
   "image": "/images/blog/what-is-lifestyle-fit-matching-in-developer-hiring.webp",
   "title": "What Is Lifestyle-Fit Matching in Developer Hiring?",
+  seoTitle: "What Is Lifestyle-Fit Matching?",
   "excerpt": "Lifestyle-fit matching evaluates developers across timezone, communication style, working hours, and career goals, not just technical skills. Here is what it means, why skills-only AI matching keeps failing, and the 12 parameters that actually predict a good hire.",
   "tldr": "Lifestyle-fit matching is a Gen 2 AI hiring approach that scores developers across timezone, communication style, career goals, working hours, and domain context, not only technical skills. It exists because skills-only AI keeps placing the wrong person in the right job. The post defines the category, lists the 12 parameters that actually predict a successful hire, and shows when it is and is not the right tool.",
   "category": "hiring",

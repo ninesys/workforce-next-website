@@ -10,7 +10,7 @@ import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "Hire Full Stack Developers from India (Node.js, Python, React, AWS)",
+  title: "Hire Full Stack Developers from India",
   description:
     "Hire pre-vetted full stack developers from India skilled in Node.js, Python, React, and AWS. End-to-end engineers who ship features across frontend, backend, and cloud. SethAI-screened for technical depth and longevity.",
   keywords: [
@@ -291,10 +291,10 @@ export default function HireFullStackDevelopersPage() {
             experience, and long-term fit.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <Button href="/contact" size="lg">
+            <Button href="/contact/" size="lg">
               Start hiring
             </Button>
-            <Button href="/how-we-work" variant="outline" size="lg">
+            <Button href="/how-we-work/" variant="outline" size="lg">
               How we work
             </Button>
           </div>
@@ -550,7 +550,7 @@ export default function HireFullStackDevelopersPage() {
             Tell us about your product and stack. We will match you with the
             right engineers within 48 hours.
           </p>
-          <Button href="/contact" variant="white" size="lg">
+          <Button href="/contact/" variant="white" size="lg">
             Get started
           </Button>
         </div>

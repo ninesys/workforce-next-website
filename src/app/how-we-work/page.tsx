@@ -153,7 +153,7 @@ export default function HowWeWorkPage() {
             Consulting decides. Talent builds. Automation runs the ops. Growth brings the buyers.
           </p>
           <div className="mt-10">
-            <Button href="/contact" size="lg">Book a discovery call</Button>
+            <Button href="/contact/" size="lg">Book a discovery call</Button>
           </div>
         </div>
       </section>
@@ -270,7 +270,7 @@ export default function HowWeWorkPage() {
           <p className="text-lg text-primary-50 mb-8">
             One discovery call. Scoped proposal in 48 hours.
           </p>
-          <Button href="/contact" variant="white" size="lg">Book a discovery call</Button>
+          <Button href="/contact/" variant="white" size="lg">Book a discovery call</Button>
         </div>
       </section>
     </>

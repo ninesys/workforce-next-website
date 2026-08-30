@@ -4,6 +4,7 @@ const post: BlogPost = {
   slug: "automate-staffing-agency-with-n8n-case-study-2026",
   image: "/images/blog/automate-staffing-agency-with-n8n-case-study-2026.webp",
   title: "How a 50-Person US Staffing Firm Cut Recruiter Admin from 3 Hours to 30 Minutes with n8n + Claude (Case Study)",
+  seoTitle: "Automating a Staffing Agency with n8n",
   excerpt:
     "Real case study: a 50-person US staffing firm spent USD 3,000 on n8n + Claude automation and saved 72,000 dollars a year of recruiter admin time. Workflow-by-workflow breakdown plus cost math.",
   tldr: "A 50-recruiter US staffing firm was burning 3 hours/day per recruiter on admin: ATS data entry, offer letters, follow-up emails, daily digests, client status updates. We built 5 n8n workflows with Claude for AI steps over 90 days. Total project cost: USD 3,000 (INR 2.5L). Time saved: roughly 2.5 hours/day per recruiter. Annual cost saved: about USD 72,000 in recruiter loaded time. Payback period: 16 days. The case study is anonymized but the numbers are real.",

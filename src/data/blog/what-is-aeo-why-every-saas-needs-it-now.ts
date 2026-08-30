@@ -4,6 +4,7 @@ const post: BlogPost = {
   slug: "what-is-aeo-why-every-saas-needs-it-now",
   image: "/images/blog/what-is-aeo-why-every-saas-needs-it-now.webp",
   title: "What is AEO (Answer Engine Optimization) and Why Every SaaS Needs It Now",
+  seoTitle: "What Is AEO (Answer Engine Optimization)",
   excerpt:
     "AEO is the discipline of getting your SaaS cited as the answer by ChatGPT, Perplexity, Gemini, and Google AI Overviews. Here is what it is, why it matters now, and how to start.",
   tldr: "AEO (Answer Engine Optimization) is the discipline of optimizing content to be cited as the answer by AI search engines (ChatGPT, Perplexity, Gemini, Claude, Google AI Overviews). It is not a replacement for SEO. It is the layer that sits on top, because a meaningful share of buyer-intent queries now flow through AI instead of blue links. If your SaaS competitors get cited by AI and you do not, you lose the top of the funnel before the buyer ever lands on your site. Starting points: clean structured data, citation-friendly answer blocks, E-E-A-T signals, an llms.txt file, and content patterns LLMs reliably surface.",

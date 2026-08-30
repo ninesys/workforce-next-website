@@ -1,7 +1,26 @@
+import { Metadata } from "next";
 import { faqs, faqCategories } from "@/data/faqs";
 import Badge from "@/components/ui/Badge";
 import Button from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
+import { ogDefaults } from "@/data/siteMetadata";
+import { generateFAQPageSchema } from "@/lib/jsonLd";
+
+export const metadata: Metadata = {
+  title: "FAQ",
+  description:
+    "Answers to common questions about hiring dedicated developers, engagement models, SethAI matching, and how Workforce Next works.",
+  openGraph: {
+    ...ogDefaults("/faq/"),
+    images: ["/images/og-default.png"],
+    title: "FAQ | Workforce Next",
+    description:
+      "Answers to common questions about hiring dedicated developers and how Workforce Next works.",
+  },
+  alternates: {
+    canonical: "https://wfnext.com/faq/",
+  },
+};
 
 const slugify = (value: string) =>
   value
@@ -10,6 +29,7 @@ const slugify = (value: string) =>
     .replace(/(^-|-$)/g, "");
 
 export default function FAQPage() {
+  const faqPageSchema = generateFAQPageSchema(faqs);
   const sections = faqCategories
     .filter((cat) => cat.value !== "all")
     .map((cat) => ({
@@ -21,6 +41,10 @@ export default function FAQPage() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}
+      />
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-50 via-white to-primary-50/50 dark:from-dark-900 dark:via-dark-900 dark:to-dark-800 pt-32 pb-16 md:pt-40 md:pb-20">
         <div aria-hidden className="absolute top-0 right-0 w-[400px] h-[400px] bg-primary-200/30 dark:bg-primary-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
         <div className="container-custom relative max-w-4xl">
@@ -33,7 +57,7 @@ export default function FAQPage() {
           <p className="mt-6 text-lg text-dark-500 dark:text-dark-300 max-w-2xl">
             Common questions about our consulting, automation, talent, and AEO/GEO growth work.{" "}
             <a
-              href="/contact"
+              href="/contact/"
               className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 underline font-bold"
             >
               Can&apos;t find yours? Book a discovery call.
@@ -120,7 +144,7 @@ export default function FAQPage() {
             team, engagement model, and timeline.
           </p>
           <div className="mt-6">
-            <Button href="/contact" variant="primary" size="lg">
+            <Button href="/contact/" variant="primary" size="lg">
               Get in touch
             </Button>
           </div>

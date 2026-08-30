@@ -139,8 +139,8 @@ export default function IndiaHandledPage() {
             Four services delivered from India: consulting, automation, talent, and AEO/GEO growth. One contract, your timezone, senior delivery across the whole arc.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
-            <Button href="/contact" size="lg">Book a discovery call</Button>
-            <Button href="/how-we-work" variant="outline" size="lg">See how we work</Button>
+            <Button href="/contact/" size="lg">Book a discovery call</Button>
+            <Button href="/how-we-work/" variant="outline" size="lg">See how we work</Button>
           </div>
         </div>
       </section>
@@ -263,7 +263,7 @@ export default function IndiaHandledPage() {
           <p className="text-lg text-primary-50 mb-8">
             Tell us where you are. Scoped proposal in 48 hours.
           </p>
-          <Button href="/contact" variant="white" size="lg">Book a discovery call</Button>
+          <Button href="/contact/" variant="white" size="lg">Book a discovery call</Button>
         </div>
       </section>
     </>

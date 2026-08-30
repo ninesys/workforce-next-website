@@ -4,6 +4,7 @@ const post: BlogPost = {
   slug: "mcp-server-architecture-vs-rest-api",
   image: "/images/blog/mcp-server-architecture-vs-rest-api.webp",
   title: "MCP Server Architecture Explained: Types, REST API Comparison, and Multi-LLM Use",
+  seoTitle: "MCP Server Architecture Explained",
   excerpt:
     "MCP servers come in three architectural shapes: local stdio, hosted HTTP with SSE, and hosted HTTP with streamable HTTP. Here is how each works, how MCP differs from a REST API, whether you still need a REST API once you have an MCP server, and why the same server works across Claude, GPT, and Gemini.",
   tldr:

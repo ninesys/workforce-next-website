@@ -4,6 +4,7 @@ const post: BlogPost = {
   slug: "nodejs-microservices-architecture-enterprise-guide-2026",
   image: "/images/blog/nodejs-microservices-architecture-enterprise-guide-2026.webp",
   title: "Node.js Microservices Architecture for Enterprise Teams (2026 Guide)",
+  seoTitle: "Node.js Microservices Architecture",
   excerpt:
     "How to design Node.js microservices that hold up in production. NestJS, gRPC, message queues, observability, and the patterns that survive enterprise scale.",
   tldr: "Production Node.js microservices in 2026 typically run on NestJS or Fastify, communicate over gRPC or message queues like Kafka and SQS, and are deployed on Kubernetes or serverless. The patterns that survive are: clean module boundaries, contract-first APIs, async work on dedicated queues, OpenTelemetry across every hop, and circuit breakers between services. The patterns that fail are shared databases, synchronous chains across more than three services, and microservices that should have been one monolith.",

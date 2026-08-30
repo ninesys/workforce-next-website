@@ -4,6 +4,7 @@ const post: BlogPost = {
   slug: "prompt-injection-defense-production-llm-apps-2026",
   image: "/images/blog/prompt-injection-defense-production-llm-apps-2026.webp",
   title: "Prompt Injection Defense for Production LLM Apps in 2026",
+  seoTitle: "Prompt Injection Defense for LLM Apps",
   excerpt: "Direct and indirect prompt injection are the highest-impact LLM risk. Here is a layered defense pattern your team can ship before the next release.",
   tldr: "Prompt injection is the top-ranked OWASP LLM risk and the most common cause of real LLM application incidents in 2026. Defending against it requires a layered pattern, not a single filter: separate trusted system instructions from untrusted content, validate every tool call before execution, sandbox any code interpretation, and run model output through a safety classifier before any side effect. This guide walks the threat model, four concrete attack examples, and a release-gate checklist.",
   body: `<p>Prompt injection is the top OWASP LLM risk (LLM01) and the most common cause of real LLM application incidents in 2026. If your app calls a model and lets it touch any tool, any database, or any rendered output, prompt injection is your number-one threat.</p>

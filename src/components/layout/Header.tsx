@@ -177,7 +177,7 @@ export default function Header() {
               })}
               <ThemeToggle className="text-dark-500 dark:text-dark-300" />
               <div className="ml-2">
-                <Button href="/contact" variant="primary" size="sm">
+                <Button href="/contact/" variant="primary" size="sm">
                   Build my team
                 </Button>
               </div>

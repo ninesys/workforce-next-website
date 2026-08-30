@@ -35,7 +35,7 @@ const post: BlogPost = {
 
 <p>Hardening and architecture are related but distinct. Architecture is about performance and scale under real traffic. Hardening is about surviving bad actors, bots, scrapers, and abuse, none of which show up when you are the only one testing the app.</p>
 
-<p>The short version: every public form (signup, contact, waitlist, checkout) needs bot protection, rate limiting needs to exist on every endpoint that writes to your database, and every piece of user input needs to be validated on the server, not just in the browser. We cover this in full technical detail in our guide to <a href="/blog/vibe-code-security-hardening-production-ready-2026">hardening a vibe-coded app for production</a>. The founder-level takeaway is simpler: this is not optional, and it is not something that reveals itself in a demo. It reveals itself the first week your app is public and a bot finds your signup form, which happens faster than most founders expect.</p>
+<p>The short version: every public form (signup, contact, waitlist, checkout) needs bot protection, rate limiting needs to exist on every endpoint that writes to your database, and every piece of user input needs to be validated on the server, not just in the browser. We cover this in full technical detail in our guide to <a href="/blog/vibe-code-security-hardening-production-ready-2026/">hardening a vibe-coded app for production</a>. The founder-level takeaway is simpler: this is not optional, and it is not something that reveals itself in a demo. It reveals itself the first week your app is public and a bot finds your signup form, which happens faster than most founders expect.</p>
 
 <h2>How much of your server bill is actually waste?</h2>
 

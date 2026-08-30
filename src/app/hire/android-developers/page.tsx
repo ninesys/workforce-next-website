@@ -10,7 +10,7 @@ import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "Hire Android Developers from India (Kotlin, Jetpack Compose)",
+  title: "Hire Android Developers from India",
   description:
     "Hire pre-vetted Android developers from India. Kotlin, Jetpack Compose, Coroutines, Hilt, Room, Play Console delivery, and accessibility. SethAI-screened.",
   keywords: [
@@ -294,10 +294,10 @@ export default function HireAndroidDevelopersPage() {
             technical depth, Play Console track record, and long-term fit.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <Button href="/contact" size="lg">
+            <Button href="/contact/" size="lg">
               Start hiring
             </Button>
-            <Button href="/how-we-work" variant="outline" size="lg">
+            <Button href="/how-we-work/" variant="outline" size="lg">
               How we work
             </Button>
           </div>
@@ -550,7 +550,7 @@ export default function HireAndroidDevelopersPage() {
             Tell us about the app and your stack. We will match you with an
             Android developer within 48 hours.
           </p>
-          <Button href="/contact" variant="white" size="lg">
+          <Button href="/contact/" variant="white" size="lg">
             Get started
           </Button>
         </div>

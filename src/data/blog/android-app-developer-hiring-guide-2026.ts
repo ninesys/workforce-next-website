@@ -4,6 +4,7 @@ const post: BlogPost = {
   slug: "android-app-developer-hiring-guide-2026",
   image: "/images/blog/android-app-developer-hiring-guide-2026.webp",
   title: "Android App Developer Hiring Guide 2026 (JD Template)",
+  seoTitle: "Android App Developer Hiring Guide",
   excerpt:
     "A 2026 Android developer job description leads with Kotlin and Jetpack Compose, demands Coroutines and Flow fluency, and treats Play Console delivery as a release-blocker skill. Here is the honest hiring guide, with a copy-paste JD template, screening framework, salary benchmarks, and the red flags that should disqualify a candidate.",
   tldr:

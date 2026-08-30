@@ -243,8 +243,8 @@ export default function HireChatbotDevelopersPage() {
             Screened by SethAI for depth and long-term fit.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <Button href="/contact" size="lg">Start hiring</Button>
-            <Button href="/how-we-work" variant="outline" size="lg">How we work</Button>
+            <Button href="/contact/" size="lg">Start hiring</Button>
+            <Button href="/how-we-work/" variant="outline" size="lg">How we work</Button>
           </div>
         </div>
       </section>
@@ -393,7 +393,7 @@ export default function HireChatbotDevelopersPage() {
         <div className="container-custom text-center">
           <h2 className="text-2xl md:text-3xl font-extrabold text-white mb-4">Ready to hire chatbot developers?</h2>
           <p className="text-primary-100 max-w-xl mx-auto mb-8">Tell us about your use case and we will match you with the right engineers within 48 hours.</p>
-          <Button href="/contact" variant="white" size="lg">Get started</Button>
+          <Button href="/contact/" variant="white" size="lg">Get started</Button>
         </div>
       </section>
     </>

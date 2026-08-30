@@ -3,7 +3,7 @@ import type { BlogPost } from "./types";
 const post: BlogPost = {
   body: `<p>The shortest answer: pick boring, battle-tested services for everything except the AI feature itself. Use Clerk for auth, Resend for email, Stripe for payments, Supabase or Neon for Postgres, pgvector for retrieval, Vercel or Railway for hosting, and the Anthropic or OpenAI SDK directly without a framework. That stack ships a working AI MVP in 4 weeks for roughly $25 to $250 a month of infra and third-party fees, leaving all your engineering time for the thing that actually makes your product different.</p>
 
-<p>This post is the tool-by-tool guide we actually use when building 4-week AI MVPs for clients. If you have not yet read the week-by-week breakdown, see <a href="/blog/how-to-build-ai-mvp-4-weeks-offshore-developer">how to build an AI MVP in 4 weeks with one offshore developer</a> first. This post is the companion stack reference.</p>
+<p>This post is the tool-by-tool guide we actually use when building 4-week AI MVPs for clients. If you have not yet read the week-by-week breakdown, see <a href="/blog/how-to-build-ai-mvp-4-weeks-offshore-developer/">how to build an AI MVP in 4 weeks with one offshore developer</a> first. This post is the companion stack reference.</p>
 
 <h2>What belongs in an AI MVP stack, and what does not?</h2>
 <p>Three principles govern every stack choice:</p>
@@ -21,7 +21,7 @@ const post: BlogPost = {
 
 <h2>LangChain, LlamaIndex, or no framework at all?</h2>
 <p>For an MVP, default to no framework. Write against the provider SDK directly (Anthropic SDK or OpenAI SDK). Tool calling, structured output, and streaming are native in every major model API now. You will ship faster and debug faster without the indirection.</p>
-<p>Reach for LangChain/LangGraph when your workflow has real multi-step state or you need the broad integration ecosystem. Reach for LlamaIndex when retrieval is the dominant workload and default chunking and search quality matters more than the rest of the stack. Full decision framework in our guide on <a href="/blog/how-to-choose-ai-agent-framework">how to choose an AI agent framework</a>.</p>
+<p>Reach for LangChain/LangGraph when your workflow has real multi-step state or you need the broad integration ecosystem. Reach for LlamaIndex when retrieval is the dominant workload and default chunking and search quality matters more than the rest of the stack. Full decision framework in our guide on <a href="/blog/how-to-choose-ai-agent-framework/">how to choose an AI agent framework</a>.</p>
 <p>The one scenario where a framework is obviously right at MVP stage: a research-assistant or multi-specialist pipeline that maps cleanly to CrewAI-style agent teams. Most MVPs are not this.</p>
 
 <h2>What do you use for retrieval and vector search?</h2>
@@ -32,14 +32,14 @@ const post: BlogPost = {
 <li>You need advanced features like hybrid search with built-in reranking.</li>
 <li>You are running multi-tenant retrieval with strict namespacing.</li>
 </ul>
-<p>Qdrant self-hosted on a $20/month VPS is our pick when pgvector is not enough but Pinecone's minimum bill feels premature. See our <a href="/blog/rag-vs-fine-tuning-when-to-use-which">RAG vs fine-tuning</a> guide if you are not sure retrieval is the right approach at all.</p>
+<p>Qdrant self-hosted on a $20/month VPS is our pick when pgvector is not enough but Pinecone's minimum bill feels premature. See our <a href="/blog/rag-vs-fine-tuning-when-to-use-which/">RAG vs fine-tuning</a> guide if you are not sure retrieval is the right approach at all.</p>
 
 <h2>What about the backend, frontend, and hosting?</h2>
 <p>Opinionated defaults that ship fast:</p>
 <p><strong>Backend.</strong> FastAPI (Python) if your team is Python-heavy or your AI pipeline is Python-native. Next.js API routes or Hono (TypeScript) if your team is TypeScript-heavy and you want one repo for everything. Both ship 4-week MVPs fine.</p>
 <p><strong>Frontend.</strong> Next.js is the default. App Router, Server Components, Tailwind, shadcn/ui. It covers auth, SEO, streaming AI responses, and hosting on Vercel in one coherent stack. Vite plus React is a fine alternative for SPA-style apps without SSR needs.</p>
-<p><strong>Hosting.</strong> Vercel for Next.js apps (zero-config deploys, great DX, cost-effective up to roughly $100 a month). Railway or Fly for FastAPI backends (Dockerized, $5 to $30 a month, no vendor lock). AWS or GCP only if you have a compliance or existing-infra reason to. For the workflow-automation layer, our <a href="/blog/best-workflow-automation-tools-2026">2026 comparison of n8n, Zapier, Step Functions, and others</a> covers that decision separately.</p>
-<p>Our <a href="/hire/fullstack-developers">fullstack developers</a> ship this shape of stack in 4-week sprints routinely. The key is not fighting the stack: pick the defaults and ship the product.</p>
+<p><strong>Hosting.</strong> Vercel for Next.js apps (zero-config deploys, great DX, cost-effective up to roughly $100 a month). Railway or Fly for FastAPI backends (Dockerized, $5 to $30 a month, no vendor lock). AWS or GCP only if you have a compliance or existing-infra reason to. For the workflow-automation layer, our <a href="/blog/best-workflow-automation-tools-2026/">2026 comparison of n8n, Zapier, Step Functions, and others</a> covers that decision separately.</p>
+<p>Our <a href="/hire/fullstack-developers/">fullstack developers</a> ship this shape of stack in 4-week sprints routinely. The key is not fighting the stack: pick the defaults and ship the product.</p>
 
 <h2>How do you skip building auth, payments, and email?</h2>
 <p>Three SaaS categories that should never be custom in an MVP:</p>
@@ -81,20 +81,21 @@ const post: BlogPost = {
 <p>Common traps that add weeks with no product benefit:</p>
 <ul>
 <li><strong>Custom auth.</strong> Seriously, never.</li>
-<li><strong>Fine-tuning a model.</strong> Start with prompt engineering and retrieval. See our <a href="/blog/rag-vs-fine-tuning-when-to-use-which">RAG vs fine-tuning</a> decision tree.</li>
+<li><strong>Fine-tuning a model.</strong> Start with prompt engineering and retrieval. See our <a href="/blog/rag-vs-fine-tuning-when-to-use-which/">RAG vs fine-tuning</a> decision tree.</li>
 <li><strong>Building your own observability or eval platform.</strong> Langfuse gets you 90 percent of what you need.</li>
 <li><strong>Kubernetes.</strong> Vercel, Railway, and Fly handle all the container and orchestration work. You do not need K8s for an MVP.</li>
 <li><strong>Microservices.</strong> One service, one database, one repo. Split later if you actually need to.</li>
 <li><strong>A CI/CD pipeline beyond "git push".</strong> Vercel and Railway both auto-deploy on push. Add GitHub Actions only when tests are slow enough to need it.</li>
 <li><strong>Custom admin panel.</strong> Retool or Supabase's built-in dashboard cover 90 percent of ops needs in month one.</li>
-<li><strong>A dedicated prompt engineer on day one.</strong> See our guide on <a href="/blog/do-you-still-need-a-prompt-engineer-in-2026">whether you still need a prompt engineer in 2026</a>. For an MVP, one AI developer who prompt-engineers as part of the job is the right shape.</li>
+<li><strong>A dedicated prompt engineer on day one.</strong> See our guide on <a href="/blog/do-you-still-need-a-prompt-engineer-in-2026/">whether you still need a prompt engineer in 2026</a>. For an MVP, one AI developer who prompt-engineers as part of the job is the right shape.</li>
 </ul>
 
 <h2>The shortest version</h2>
-<p>Pick boring for everything except the AI feature. Clerk for auth, Stripe for payments, Resend for email, Supabase or Neon for Postgres, pgvector for retrieval, Vercel or Railway for hosting, the Anthropic or OpenAI SDK directly (no framework), Langfuse for LLM observability, Sentry for errors. Total infra under $250 a month for a typical MVP through the first thousand users. If you want a developer who already ships this stack in 4-week sprints, our <a href="/hire/fullstack-developers">fullstack engineers</a> and <a href="/hire/ai-developers">AI developers</a> have done this across dozens of MVPs. For the broader picture of taking a SaaS product from MVP to revenue, see our <a href="/blog/saas-web-application-development-guide-startups-2026/">SaaS web application development guide for startups</a>. <a href="/contact">Get in touch</a> and we will scope your build.</p>`,
+<p>Pick boring for everything except the AI feature. Clerk for auth, Stripe for payments, Resend for email, Supabase or Neon for Postgres, pgvector for retrieval, Vercel or Railway for hosting, the Anthropic or OpenAI SDK directly (no framework), Langfuse for LLM observability, Sentry for errors. Total infra under $250 a month for a typical MVP through the first thousand users. If you want a developer who already ships this stack in 4-week sprints, our <a href="/hire/fullstack-developers/">fullstack engineers</a> and <a href="/hire/ai-developers/">AI developers</a> have done this across dozens of MVPs. For the broader picture of taking a SaaS product from MVP to revenue, see our <a href="/blog/saas-web-application-development-guide-startups-2026/">SaaS web application development guide for startups</a>. <a href="/contact/">Get in touch</a> and we will scope your build.</p>`,
   "slug": "ai-mvp-tech-stack-2026",
   "image": "/images/blog/ai-mvp-tech-stack-2026.webp",
   "title": "The AI MVP Tech Stack in 2026: What We Actually Ship With (and What We Skip)",
+  seoTitle: "The AI MVP Tech Stack in 2026",
   "excerpt": "The exact tool-by-tool stack we use to ship an AI MVP in 4 weeks. Clerk for auth, Stripe for payments, Resend for email, Supabase or Neon for Postgres, pgvector for retrieval, Vercel or Railway for hosting, Anthropic or OpenAI SDK direct. Total infra under $250 a month through the first 1,000 users.",
   "tldr": "Pick boring, battle-tested services for everything except the AI feature: Clerk for auth, Resend for email, Stripe for payments, Supabase or Neon for Postgres, pgvector for retrieval, Vercel or Railway for hosting, and the Anthropic or OpenAI SDK directly without a framework. That stack ships a working AI MVP in 4 weeks for 25 to 250 dollars a month of infra, leaving engineering time for the actual differentiation.",
   "category": "engineering",

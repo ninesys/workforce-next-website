@@ -200,10 +200,10 @@ export default function QATestersPage() {
             the bugs that cost you customers.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4">
-            <Button href="/contact" variant="primary" size="lg">
+            <Button href="/contact/" variant="primary" size="lg">
               Hire QA engineers
             </Button>
-            <Button href="/how-we-work" variant="outline" size="lg">
+            <Button href="/how-we-work/" variant="outline" size="lg">
               See how we match
             </Button>
           </div>
@@ -404,7 +404,7 @@ export default function QATestersPage() {
             have cost you 100 customers. One-week paid trial. No recruitment fees.
           </p>
           <div className="mt-6 sm:mt-8">
-            <Button href="/contact" variant="primary" size="lg">
+            <Button href="/contact/" variant="primary" size="lg">
               Hire QA engineers
             </Button>
           </div>

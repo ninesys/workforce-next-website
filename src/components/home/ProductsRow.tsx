@@ -16,7 +16,7 @@ export default function ProductsRow() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
           {/* SethAI Recruiter */}
           <Link
-            href="/products/seth-ai-recruiter"
+            href="/products/seth-ai-recruiter/"
             className="group relative overflow-hidden p-6 sm:p-8 md:p-10 rounded-xl bg-gradient-to-br from-primary-500 to-primary-700 text-white shadow-card hover:shadow-hover hover:-translate-y-1 transition-all duration-300"
           >
             <div className="absolute top-0 right-0 w-32 sm:w-40 h-32 sm:h-40 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2" />
@@ -51,7 +51,7 @@ export default function ProductsRow() {
 
           {/* India Handled (managed offshore team) */}
           <Link
-            href="/india-handled"
+            href="/india-handled/"
             className="group p-6 sm:p-8 md:p-10 rounded-xl bg-white dark:bg-dark-800 border border-dark-50 dark:border-dark-700 shadow-card hover:shadow-hover hover:-translate-y-1 transition-all duration-300"
           >
             <div className="flex items-center gap-3 mb-4">

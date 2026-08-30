@@ -22,21 +22,21 @@ const post: BlogPost = {
 <p><strong>Building a prompt library or internal tool used across many teams.</strong> Large companies with fifty LLM features across the product need a standards-setter. This role is often called "AI platform lead" or "LLM ops lead" rather than prompt engineer, but the shape of the work is the same.</p>
 
 <h2>When is an AI developer the better choice?</h2>
-<p>Almost every other scenario. If you are a small startup building a single LLM-powered product, an <a href="/hire/ai-developers">AI developer</a> can do the full stack: prompts, evals, retrieval, orchestration, and production deployment. Hiring a prompt engineer separately creates handoff seams, and you end up paying two salaries for a job one senior person could do.</p>
+<p>Almost every other scenario. If you are a small startup building a single LLM-powered product, an <a href="/hire/ai-developers/">AI developer</a> can do the full stack: prompts, evals, retrieval, orchestration, and production deployment. Hiring a prompt engineer separately creates handoff seams, and you end up paying two salaries for a job one senior person could do.</p>
 <p>Hire an AI developer instead of a prompt engineer when:</p>
 <ul>
-<li>The work involves retrieval (RAG), <a href="/blog/how-to-choose-ai-agent-framework">agent orchestration</a>, or tool use. These need code, not just prompt craft.</li>
+<li>The work involves retrieval (RAG), <a href="/blog/how-to-choose-ai-agent-framework/">agent orchestration</a>, or tool use. These need code, not just prompt craft.</li>
 <li>You need someone to wire the LLM into a real app (API, frontend, database).</li>
 <li>You want a single owner for the LLM feature, not a handoff chain.</li>
 <li>You have not yet shipped an LLM feature to users. The first hire should be a builder.</li>
 </ul>
-<p>See our post on <a href="/blog/ai-developer-interview-questions-what-to-ask">AI developer interview questions</a> for the screening framework we actually use when matching engineers.</p>
+<p>See our post on <a href="/blog/ai-developer-interview-questions-what-to-ask/">AI developer interview questions</a> for the screening framework we actually use when matching engineers.</p>
 
 <h2>How do you screen for real prompt-engineering skill?</h2>
 <p>Whether the title on the offer letter says "prompt engineer" or "AI developer," real prompt skill shows up in four signals:</p>
 <p><strong>They own an eval set.</strong> Ask: "Walk me through the last time you changed a production prompt. How did you know it was an improvement?" Strong candidates describe an eval dataset, a benchmark, and a regression suite. Weak ones say "it looked better."</p>
 <p><strong>They explain prompt decisions with tradeoffs.</strong> Ask them to walk through a prompt they are proud of. A real answer covers why they chose XML tags over markdown, why examples go before or after instructions, and why they structured output a certain way. A weak answer is "I just iterated until it worked."</p>
-<p><strong>They know when not to use prompting.</strong> Ask: "Here is a classification task with 10,000 labeled examples. Prompt engineering or fine-tuning?" A strong candidate talks about cost, latency, and when a small fine-tuned model wins on both. See our <a href="/blog/rag-vs-fine-tuning-when-to-use-which">RAG vs fine-tuning</a> guide for the full decision tree.</p>
+<p><strong>They know when not to use prompting.</strong> Ask: "Here is a classification task with 10,000 labeled examples. Prompt engineering or fine-tuning?" A strong candidate talks about cost, latency, and when a small fine-tuned model wins on both. See our <a href="/blog/rag-vs-fine-tuning-when-to-use-which/">RAG vs fine-tuning</a> guide for the full decision tree.</p>
 <p><strong>They have operated a prompt in production.</strong> Production prompts break. Inputs drift, users adversarially probe, model providers ship silent behavior changes. A candidate who has lived through a prompt regression and diagnosed it has instincts you cannot test with a take-home.</p>
 
 <h2>What should a prompt engineer actually cost?</h2>
@@ -58,10 +58,11 @@ const post: BlogPost = {
 <p>What does not work: hiring a prompt engineer as your first AI hire at a startup with no AI feature in production. You end up paying someone to tune prompts for a product that does not exist yet. The first hire should build the product. The second or third hire, if your domain demands it, can specialize.</p>
 
 <h2>The shortest version</h2>
-<p>The standalone prompt engineer role is real but narrow. Hire one when your domain is high-stakes, your volume is huge, or you are setting prompt standards across a big company. For everything else, hire an AI developer who prompt-engineers as part of the job. Title inflation from 2023 does not match what the work actually looks like now, so write the job description based on the work you need done, not the title you read on LinkedIn. If you are figuring out your first AI hire and want a second opinion, <a href="/contact">reach out</a> and we will help you scope it.</p>`,
+<p>The standalone prompt engineer role is real but narrow. Hire one when your domain is high-stakes, your volume is huge, or you are setting prompt standards across a big company. For everything else, hire an AI developer who prompt-engineers as part of the job. Title inflation from 2023 does not match what the work actually looks like now, so write the job description based on the work you need done, not the title you read on LinkedIn. If you are figuring out your first AI hire and want a second opinion, <a href="/contact/">reach out</a> and we will help you scope it.</p>`,
   "slug": "do-you-still-need-a-prompt-engineer-in-2026",
   "image": "/images/blog/do-you-still-need-a-prompt-engineer-in-2026.webp",
   "title": "Do You Still Need a Prompt Engineer in 2026? (Or Has the Role Disappeared?)",
+  seoTitle: "Do You Still Need a Prompt Engineer?",
   "excerpt": "Pure prompt engineer roles are rare in 2026. Here is when to hire one anyway, when an AI developer is the better call, and what the role actually costs now that the 2023 hype has cooled.",
   "tldr": "Pure prompt engineer roles are rare in 2026. Modern model instruction-following, structured output, and function calling absorbed most of the 2023-era prompt-hacking work. Hire a dedicated prompt engineer when you have a narrow domain, a real eval pipeline, and ongoing prompt versioning needs. Otherwise hire an AI developer who prompt-engineers as part of the job.",
   "category": "hiring",

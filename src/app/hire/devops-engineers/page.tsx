@@ -10,7 +10,7 @@ import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "Hire DevOps Engineers from India (AWS, Kubernetes, Terraform)",
+  title: "Hire DevOps Engineers from India",
   description:
     "Hire pre-vetted DevOps and platform engineers from India. AWS, Azure, GCP, Kubernetes, Terraform, CI/CD, and 24/7 SRE coverage on Follow-the-Sun model.",
   keywords: [
@@ -295,10 +295,10 @@ export default function HireDevOpsEngineersPage() {
             depth and incident response track record.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <Button href="/contact" size="lg">
+            <Button href="/contact/" size="lg">
               Start hiring
             </Button>
-            <Button href="/how-we-work" variant="outline" size="lg">
+            <Button href="/how-we-work/" variant="outline" size="lg">
               How we work
             </Button>
           </div>
@@ -553,7 +553,7 @@ export default function HireDevOpsEngineersPage() {
             Tell us your stack and on-call pain. We will match you with a
             DevOps or SRE engineer within 48 hours.
           </p>
-          <Button href="/contact" variant="white" size="lg">
+          <Button href="/contact/" variant="white" size="lg">
             Get started
           </Button>
         </div>

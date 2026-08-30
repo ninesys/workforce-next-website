@@ -4,6 +4,7 @@ const post: BlogPost = {
   slug: "nodejs-developer-role-enterprise-applications-2026",
   image: "/images/blog/nodejs-developer-role-enterprise-applications-2026.webp",
   title: "The Role of a Node.js Developer in Enterprise Applications (2026)",
+  seoTitle: "The Node.js Developer Role Explained",
   excerpt:
     "What enterprise Node.js developers actually do, day to day. APIs, real-time, BFFs, integrations, and the seniority ladder you should hire against.",
   tldr: "Enterprise Node.js developers own API design, real-time features, integration glue, and the BFF layer between frontend and downstream services. The strong ones default to TypeScript, reach for NestJS or Fastify when complexity earns it, and treat the event loop as a finite resource. Junior, mid, senior, and lead each have a specific scope. Hire to the scope, not to the buzzword.",

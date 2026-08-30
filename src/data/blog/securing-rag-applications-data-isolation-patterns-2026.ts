@@ -4,6 +4,7 @@ const post: BlogPost = {
   slug: "securing-rag-applications-data-isolation-patterns-2026",
   image: "/images/blog/securing-rag-applications-data-isolation-patterns-2026.webp",
   title: "Securing RAG Applications: Data Isolation Patterns 2026",
+  seoTitle: "Securing RAG Applications",
   excerpt: "Enterprise RAG applications need multi-tenant vector store isolation, ACL-aware retrieval, and encryption-at-rest for embeddings to meet HIPAA and SOC 2 compliance requirements.",
   tldr: "Secure RAG applications require per-tenant vector database isolation, access control lists on retrieval queries, and encryption of embeddings at rest. Most enterprises also need audit logging for all retrievals and prompt filtering to prevent data leakage through carefully crafted queries.",
   body: `<p>Secure RAG applications require per-tenant vector database isolation, access control lists on retrieval queries, and encryption of embeddings at rest. Without these patterns, your RAG system becomes a compliance liability and a potential source of customer data breaches.</p>

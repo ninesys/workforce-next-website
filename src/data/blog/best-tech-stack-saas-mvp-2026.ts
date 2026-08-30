@@ -5,6 +5,7 @@ const post: BlogPost = {
   image: "/images/blog/best-tech-stack-saas-mvp-2026.webp",
   title:
     "Best Tech Stack for a SaaS MVP in 2026: Next.js + Node.js (and When to Pick Something Else)",
+  seoTitle: "Best Tech Stack for a SaaS MVP",
   excerpt:
     "Opinionated guide to picking the SaaS MVP tech stack in 2026. Why Next.js + Node.js + PostgreSQL wins for most startups, when to pick Python or a meta-framework instead, and the exact libraries that ship.",
   tldr: "For most SaaS MVPs in 2026, the right default tech stack is Next.js for the frontend, Node.js (or Python FastAPI if AI-heavy) for the backend, PostgreSQL via Supabase or Neon, managed auth (Clerk or WorkOS for B2B), Stripe Billing, and Vercel plus Railway for hosting. Boring is the point. This stack has the deepest hiring pool, the most documentation, and gets you to revenue without surprises. The exceptions: pick Python FastAPI as the backend when AI is the core product, pick a Rails or Django monolith when one founder is doing everything alone, and pick a meta-framework like Remix or SvelteKit only if you already know it cold. The libraries that actually ship: Next.js 15, Tailwind, shadcn/ui, Drizzle or Prisma, Clerk, Stripe, Inngest or BullMQ, Resend, Sentry, PostHog. Skip exotic frameworks, skip premature microservices, skip building auth or billing yourself.",

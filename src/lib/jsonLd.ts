@@ -137,19 +137,22 @@ export function generateSoftwareApplicationSchema() {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     name: "SethAI Recruiter",
+    url: `${siteMetadata.url}/products/seth-ai-recruiter/`,
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
     description:
-      "Seth is an AI recruiter that screens software developers for technical skills and longevity signals -ownership mindset, career alignment, and communication reliability -and delivers a 1-page match report to hiring managers.",
+      "Seth is an AI recruiter that screens software developers for technical skills and longevity signals, ownership mindset, career alignment, and communication reliability, and delivers a 1-page match report to hiring managers.",
     offers: {
       "@type": "Offer",
       price: "0",
       priceCurrency: "USD",
-      description: "Free trial available for waitlist members",
+      availability: "https://schema.org/PreOrder",
+      description: "Free trial available for waitlist members once SethAI launches.",
     },
     creator: {
       "@type": "Organization",
       name: siteMetadata.name,
+      url: siteMetadata.url,
     },
   };
 }

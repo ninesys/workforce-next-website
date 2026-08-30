@@ -4,6 +4,7 @@ const post: BlogPost = {
   slug: "how-to-choose-tech-stack-for-saas",
   image: "/images/blog/how-to-choose-tech-stack-for-saas.webp",
   title: "How to Choose a Tech Stack for Your SaaS in 2026",
+  seoTitle: "How to Choose a Tech Stack for SaaS",
   excerpt:
     "A practical decision guide for founders picking a SaaS tech stack in 2026. Six questions that decide it for you, when boring beats hot, and the defaults that work.",
   tldr: "Pick the stack that matches your team's existing skills, has the deepest hiring pool you can reach, and ships software in the shape your product actually needs. For most SaaS founders in 2026, the default is Next.js plus a typed backend (Node.js or Python), Postgres, and a small set of managed services. Hot stacks (Rust on the server, edge-everything, new frameworks) are right for narrow cases and wrong as defaults. The questions that matter are about your team and your buyers, not which framework had the loudest launch this quarter.",

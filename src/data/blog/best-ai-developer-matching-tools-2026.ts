@@ -18,7 +18,7 @@ const post: BlogPost = {
 <p>Data comes from public documentation, vendor disclosures, customer reviews on G2 and Capterra, and our own experience as a competitor in the same category. Where we disagree with a vendor's positioning, we say so.</p>
 
 <h2>A note on "Gen 1" and "Gen 2" before the table</h2>
-<p>The Category column below uses two labels you will see throughout this post: Gen 1 and Gen 2. Gen 1 tools (Eightfold, SeekOut, HireEZ) match candidates to roles using skills parsed from resumes and public profile data. Gen 2 tools (SethAI and a few emerging others) add behavioral and lifestyle parameters such as timezone overlap, communication style, industry depth, and retention signals. If this is new to you, read our full primer on <a href="/blog/what-is-lifestyle-fit-matching-in-developer-hiring">what lifestyle-fit matching is and why skills-only AI keeps failing</a> before continuing.</p>
+<p>The Category column below uses two labels you will see throughout this post: Gen 1 and Gen 2. Gen 1 tools (Eightfold, SeekOut, HireEZ) match candidates to roles using skills parsed from resumes and public profile data. Gen 2 tools (SethAI and a few emerging others) add behavioral and lifestyle parameters such as timezone overlap, communication style, industry depth, and retention signals. If this is new to you, read our full primer on <a href="/blog/what-is-lifestyle-fit-matching-in-developer-hiring/">what lifestyle-fit matching is and why skills-only AI keeps failing</a> before continuing.</p>
 
 <h2>Quick comparison table</h2>
 <table>
@@ -46,7 +46,7 @@ const post: BlogPost = {
 <p><strong>Where it falls short:</strong> Not designed for high-volume entry-level sourcing. If you need to screen 500 junior engineers a month, use a Gen 1 tool instead. Coverage is strongest for backend, full-stack, AI, and data roles; thinner for highly specialized security or embedded roles.</p>
 <p><strong>Best for:</strong> Mid-market and senior hires where a single wrong match is expensive. Founders and CTOs who care about 18-month retention, not pipeline size.</p>
 <p><strong>Pricing:</strong> Bundled with the developer engagement. No separate platform fee. We publish pricing openly on request and send real numbers on the first call, not after three sales rounds.</p>
-<p><strong>Our honest take:</strong> We built SethAI, so take this with a grain of salt. What we will say is that we built it specifically because Gen 1 tools kept placing the wrong people in the right jobs, and no marketplace tool we evaluated measured lifestyle signals explicitly. Read our <a href="/blog/what-is-lifestyle-fit-matching-in-developer-hiring">definition of lifestyle-fit matching</a> for the reasoning.</p>
+<p><strong>Our honest take:</strong> We built SethAI, so take this with a grain of salt. What we will say is that we built it specifically because Gen 1 tools kept placing the wrong people in the right jobs, and no marketplace tool we evaluated measured lifestyle signals explicitly. Read our <a href="/blog/what-is-lifestyle-fit-matching-in-developer-hiring/">definition of lifestyle-fit matching</a> for the reasoning.</p>
 
 <h2>2. Eightfold AI</h2>
 <p><strong>Category:</strong> Gen 1 enterprise AI talent intelligence.</p>
@@ -120,7 +120,7 @@ const post: BlogPost = {
 
 <h2>How to pick the right tool for your situation</h2>
 <p>Use this decision shortcut based on what you are actually trying to do.</p>
-<p><strong>You are hiring senior engineers and fit matters more than volume.</strong> Start with <a href="/products/seth-ai-recruiter">SethAI</a> or Turing. Both evaluate beyond raw skills, though SethAI measures lifestyle parameters explicitly and Turing remains skills-first at its core.</p>
+<p><strong>You are hiring senior engineers and fit matters more than volume.</strong> Start with <a href="/products/seth-ai-recruiter/">SethAI</a> or Turing. Both evaluate beyond raw skills, though SethAI measures lifestyle parameters explicitly and Turing remains skills-first at its core.</p>
 <p><strong>You are running enterprise-scale sourcing across thousands of profiles.</strong> Eightfold or SeekOut. Accept the tradeoffs in ethics, pricing opacity, and match depth; they are optimized for a different problem.</p>
 <p><strong>You need a senior specialist for a 3-month project right now.</strong> Toptal. Pay the premium, get speed.</p>
 <p><strong>You are a startup hiring Indian developers on standard stacks.</strong> Uplers or SethAI. Uplers is cheaper at volume; SethAI is better where fit and retention matter.</p>
@@ -131,7 +131,7 @@ const post: BlogPost = {
 <h2>What we expect to change in the next 18 months</h2>
 <p>Three shifts will reshape this list by late 2027. First, FCRA and similar regulatory actions will force Gen 1 tools to restructure their consent models, which will slow their product velocity. Second, lifestyle-fit matching will become table stakes for mid-market tools, compressing the differentiation at the top end. Third, the line between marketplaces and AI matching tools will blur further as marketplaces invest in their AI layers and AI tools add placement services.</p>
 <p>If you are shortlisting a tool now, ask every vendor the same question: "which of the 12 lifestyle-fit parameters do you actually measure, and how?" The honest answers sort the field faster than any feature matrix.</p>
-<p>If you want to see what a lifestyle-fit shortlist looks like for your specific role, <a href="/contact">reach out</a> and we will show you three candidates within 48 hours.</p>`,
+<p>If you want to see what a lifestyle-fit shortlist looks like for your specific role, <a href="/contact/">reach out</a> and we will show you three candidates within 48 hours.</p>`,
   "slug": "best-ai-developer-matching-tools-2026",
   "image": "/images/blog/best-ai-developer-matching-tools-2026.webp",
   "title": "The 11 Best AI Developer Matching Tools in 2026 (Honestly Ranked)",

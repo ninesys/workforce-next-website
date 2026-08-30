@@ -196,10 +196,10 @@ export default function ProductEngineersPage() {
             and knows the problems your users actually face.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4">
-            <Button href="/contact" variant="primary" size="lg">
+            <Button href="/contact/" variant="primary" size="lg">
               Hire product engineers
             </Button>
-            <Button href="/how-we-work" variant="outline" size="lg">
+            <Button href="/how-we-work/" variant="outline" size="lg">
               See how it works
             </Button>
           </div>
@@ -425,10 +425,10 @@ export default function ProductEngineersPage() {
             Context-matched product engineers. One-week paid trial. No recruitment fees.
           </p>
           <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-3 justify-center">
-            <Button href="/contact" variant="primary" size="lg">
+            <Button href="/contact/" variant="primary" size="lg">
               Hire product engineers
             </Button>
-            <Button href="/for/founders" variant="ghost" size="lg" className="text-dark-300 hover:text-white hover:bg-white/10">
+            <Button href="/for/founders/" variant="ghost" size="lg" className="text-dark-300 hover:text-white hover:bg-white/10">
               Building an MVP?
             </Button>
           </div>

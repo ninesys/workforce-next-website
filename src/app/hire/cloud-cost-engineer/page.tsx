@@ -10,7 +10,7 @@ import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "Hire Cloud Cost Engineers from India (AWS, Azure, GCP FinOps)",
+  title: "Hire Cloud Cost Engineers from India",
   description:
     "Hire pre-vetted cloud cost engineers from India. AWS, Azure, GCP FinOps, Kubernetes rightsizing, spot and reserved instances, Terraform cost estimation. Average 30-60% cloud savings.",
   keywords: [
@@ -287,10 +287,10 @@ export default function HireCloudCostEngineerPage() {
             SethAI for technical depth and long-term fit.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <Button href="/contact" size="lg">
+            <Button href="/contact/" size="lg">
               Start hiring
             </Button>
-            <Button href="/how-we-work" variant="outline" size="lg">
+            <Button href="/how-we-work/" variant="outline" size="lg">
               How we work
             </Button>
           </div>
@@ -546,7 +546,7 @@ export default function HireCloudCostEngineerPage() {
             Tell us your monthly cloud spend and we will match you with a
             FinOps engineer within 48 hours.
           </p>
-          <Button href="/contact" variant="white" size="lg">
+          <Button href="/contact/" variant="white" size="lg">
             Get started
           </Button>
         </div>

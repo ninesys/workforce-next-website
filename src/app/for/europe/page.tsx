@@ -251,10 +251,10 @@ export default function ForEuropePage() {
             B2B contract in EUR or GBP.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <Button href="/contact" size="lg">
+            <Button href="/contact/" size="lg">
               Start hiring
             </Button>
-            <Button href="/how-we-work" variant="outline" size="lg">
+            <Button href="/how-we-work/" variant="outline" size="lg">
               How we work
             </Button>
           </div>
@@ -585,7 +585,7 @@ export default function ForEuropePage() {
             pre-vetted Indian developer within 48 hours and start the paid
             trial week as soon as you sign.
           </p>
-          <Button href="/contact" variant="white" size="lg">
+          <Button href="/contact/" variant="white" size="lg">
             Get started
           </Button>
         </div>

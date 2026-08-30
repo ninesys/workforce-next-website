@@ -4,6 +4,7 @@ const post: BlogPost = {
   slug: "logistics-3pl-tech-challenges-2026",
   image: "/images/blog/logistics-3pl-tech-challenges-2026.webp",
   title: "Logistics and 3PL Tech: The Biggest Engineering Challenges in 2026 (and How to Solve Them)",
+  seoTitle: "Logistics and 3PL Tech Challenges",
   excerpt:
     "3PL and logistics platforms hit the same five engineering walls: routing engine choice, route optimization at scale, backhaul and load matching, real-time location tracking, and legacy TMS integration. Here is what actually causes each one and how teams that have shipped this stack solve it.",
   tldr:

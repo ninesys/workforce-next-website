@@ -10,7 +10,7 @@ import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "Hire Data Engineers from India (dbt, Airflow, Spark, Snowflake)",
+  title: "Hire Data Engineers from India",
   description:
     "Hire pre-vetted data engineers from India. dbt, Airflow, Spark, Snowflake, Kafka, BigQuery, Dagster, and modern data lakehouses. SethAI-screened for skills and longevity.",
   keywords: [
@@ -288,10 +288,10 @@ export default function HireDataEngineersPage() {
             technical depth and long-term fit.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <Button href="/contact" size="lg">
+            <Button href="/contact/" size="lg">
               Start hiring
             </Button>
-            <Button href="/how-we-work" variant="outline" size="lg">
+            <Button href="/how-we-work/" variant="outline" size="lg">
               How we work
             </Button>
           </div>
@@ -545,7 +545,7 @@ export default function HireDataEngineersPage() {
             Tell us about your data stack and we will match you with the right
             engineers within 48 hours.
           </p>
-          <Button href="/contact" variant="white" size="lg">
+          <Button href="/contact/" variant="white" size="lg">
             Get started
           </Button>
         </div>

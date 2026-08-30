@@ -4,6 +4,7 @@ const post: BlogPost = {
   slug: "ai-agent-vs-hiring-human-how-to-decide",
   image: "/images/blog/ai-agent-vs-hiring-human-how-to-decide.webp",
   title: "AI Agent vs Hiring a Human: How to Decide",
+  seoTitle: "AI Agent vs Hiring a Human",
   excerpt:
     "An honest decision guide for founders choosing between a done-for-you AI agent, a remote expert, or a blend of both across outreach, AI development, data work, and HR.",
   tldr: "Deploy an AI agent when the work is high-volume, well-defined, and judged on speed-and-coverage. Hire a human when the work is judgment-heavy, relationship-dependent, or touches sensitive trade-offs. Blend both when you need volume and judgment in the same workflow, which is most real businesses. The honest test is not 'AI or human?' but 'where exactly in this workflow does each one win?'",

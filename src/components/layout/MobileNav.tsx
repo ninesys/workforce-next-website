@@ -118,7 +118,7 @@ export default function MobileNav({ open, onClose }: MobileNavProps) {
         </nav>
 
         <div className="p-5 border-t border-dark-50 dark:border-dark-700">
-          <Button href="/contact" variant="primary" size="md" className="w-full justify-center">
+          <Button href="/contact/" variant="primary" size="md" className="w-full justify-center">
             Build my team
           </Button>
         </div>

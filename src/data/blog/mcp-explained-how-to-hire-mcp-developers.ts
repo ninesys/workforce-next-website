@@ -4,6 +4,7 @@ const post: BlogPost = {
   slug: "mcp-explained-how-to-hire-mcp-developers",
   image: "/images/blog/mcp-explained-how-to-hire-mcp-developers.webp",
   title: "MCP Explained: How to Hire MCP Server Developers in 2026",
+  seoTitle: "MCP Explained for Hiring Managers",
   excerpt:
     "MCP is the open protocol that lets Claude, Cursor, Windsurf, and agent frameworks call your tools and data through a single standard interface. Here is what MCP actually is, when to hire a dedicated MCP developer instead of a generalist AI engineer, what they cost, and how to screen for one.",
   tldr:

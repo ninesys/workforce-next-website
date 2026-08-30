@@ -31,7 +31,10 @@ export function generateMetadata({ params }: Props): Metadata {
   const socialDescription = post.ogDescription ?? post.metaDescription;
 
   return {
-    title: post.title,
+    // seoTitle (when set) is a shorter <title> tag distinct from the on-page
+    // H1 (post.title), which stays the full headline. Prevents Google/SEO
+    // audits flagging duplicate H1/title and overlong titles.
+    title: post.seoTitle ?? post.title,
     description: post.metaDescription,
     keywords: post.keywords,
     openGraph: {
@@ -91,7 +94,7 @@ export default function BlogPostPage({ params }: Props) {
     author: {
       "@type": "Person",
       name: post.author,
-      url: "https://wfnext.com/about/gaurav/",
+      url: "https://linkedin.com/in/post2seth",
       jobTitle: post.authorRole,
       worksFor: {
         "@type": "Organization",
@@ -119,7 +122,7 @@ export default function BlogPostPage({ params }: Props) {
     "@type": "Person",
     name: post.author,
     jobTitle: post.authorRole,
-    url: "https://wfnext.com/about/gaurav/",
+    url: "https://linkedin.com/in/post2seth",
     image: "https://wfnext.com/images/gaurav.jpeg",
     worksFor: {
       "@type": "Organization",
@@ -179,7 +182,7 @@ export default function BlogPostPage({ params }: Props) {
         <div className="container-custom max-w-3xl">
           <div className="flex items-center gap-3 mb-4">
             <Link
-              href="/blog"
+              href="/blog/"
               className="text-sm text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 font-medium"
             >
               Blog
@@ -353,7 +356,7 @@ export default function BlogPostPage({ params }: Props) {
             for your project. 48-hour matching, 1-week paid trial.
           </p>
           <div className="mt-6">
-            <Button href="/contact" variant="primary" size="lg">
+            <Button href="/contact/" variant="primary" size="lg">
               Get in touch
             </Button>
           </div>

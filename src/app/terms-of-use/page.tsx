@@ -88,7 +88,7 @@ export default function TermsOfUsePage() {
               us contacting you regarding your inquiry. We will handle your data
               in accordance with our{" "}
               <a
-                href="/privacy-policy"
+                href="/privacy-policy/"
                 className="text-accent-600 hover:underline"
               >
                 Privacy Policy

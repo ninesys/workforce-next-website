@@ -4,6 +4,7 @@ const post: BlogPost = {
   slug: "outsource-enterprise-web-application-development-2026",
   image: "/images/blog/outsource-enterprise-web-application-development-2026.webp",
   title: "How to Outsource Enterprise Web Application Development (Without Getting Burned)",
+  seoTitle: "How to Outsource Web App Development",
   excerpt:
     "A practical playbook for outsourcing enterprise web application development in 2026: vendor selection, contracts, IP, milestones, and the red flags that predict failure.",
   tldr: "Most enterprise web app outsourcing projects fail on three things: vague scope, weak IP and security clauses in the MSA, and no embedded technical owner on the customer side. The fix is a one-page brief, a tight vendor shortlist (3 max), a paid trial week, an MSA with explicit IP assignment + DPDP/GDPR + audit rights, and a fractional CTO or staff engineer on your side who owns architecture decisions. Pick vendors who say no to bad scope. Avoid vendors who promise everything in 8 weeks.",

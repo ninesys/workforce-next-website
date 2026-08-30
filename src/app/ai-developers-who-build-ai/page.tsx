@@ -153,7 +153,7 @@ export default function AiDevelopersWhoBuildAiPage() {
             Outsource AI development to senior engineers (with AI agents in the loop) who ship to production.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-            <Button href="/contact" size="lg">Book a discovery call</Button>
+            <Button href="/contact/" size="lg">Book a discovery call</Button>
             <Button href="#projects" variant="outline" size="lg" className="!bg-white/10 !border-white/30 !text-white hover:!bg-white/20 hover:!text-white">
               See what we build
             </Button>
@@ -349,7 +349,7 @@ export default function AiDevelopersWhoBuildAiPage() {
             Ready to ship a model to production?
           </h2>
           <p className="text-lg text-primary-50 mb-8">Tell us what you are building. Scoped proposal in 48 hours.</p>
-          <Button href="/contact" variant="white" size="lg">Book a discovery call</Button>
+          <Button href="/contact/" variant="white" size="lg">Book a discovery call</Button>
         </div>
       </section>
     </>

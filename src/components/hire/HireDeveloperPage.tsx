@@ -42,7 +42,7 @@ export default function HireDeveloperPage({ data }: { data: HirePageData }) {
               {data.heroDescription}
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <Button href="/contact" variant="white" size="lg">
+              <Button href="/contact/" variant="white" size="lg">
                 Submit Your Requirement
               </Button>
               <Button href="#how-it-works" variant="ghost" size="lg">
@@ -176,7 +176,7 @@ export default function HireDeveloperPage({ data }: { data: HirePageData }) {
             {data.ctaDescription}
           </p>
           <div className="mt-8">
-            <Button href="/contact" variant="white" size="lg">
+            <Button href="/contact/" variant="white" size="lg">
               Submit Your Requirement
             </Button>
           </div>

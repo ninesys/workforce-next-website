@@ -5,6 +5,7 @@ const post: BlogPost = {
   image: "/images/blog/ai-workflow-automation-fleet-companies-2026.webp",
   title:
     "AI Workflow Automation for Fleet Companies: Dispatch, Maintenance, Compliance, Fuel (2026 Playbook)",
+  seoTitle: "AI Workflow Automation for Fleet Companies",
   excerpt:
     "Real playbook for fleet operators running 25 to 500 vehicles. Where AI plus n8n automation actually pays back: dispatch triage, maintenance scheduling, driver compliance, fuel reconciliation, and customer comms.",
   tldr: "Fleet companies (trucking, last-mile delivery, equipment rental, field service) sit on top of high-volume manual workflows that AI plus n8n can take over in 60 to 120 days. The five workflows that pay back fastest: dispatch triage and assignment, predictive maintenance scheduling, driver compliance and HOS exception handling, fuel and toll reconciliation, and proactive customer ETA communication. For a 100-vehicle operator, a USD 4,000 to 8,000 automation build typically frees 60 to 120 hours per week of dispatcher and back-office time. Payback inside 60 days is normal. The integrations that matter: Samsara, Geotab, or Motive telematics; Fleetio or Whip Around for maintenance; Verizon Connect or KeepTruckin for ELD; QuickBooks or NetSuite for finance. Claude or GPT for the AI steps. n8n self-hosted on a small Hetzner box for the orchestration. The combination beats vertical SaaS for anything custom or cross-system, and beats hand-built code for anything that needs to evolve weekly.",

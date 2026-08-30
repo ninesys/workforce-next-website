@@ -4,6 +4,7 @@ const post: BlogPost = {
   slug: "hire-nodejs-developers-from-india-2026",
   image: "/images/blog/hire-nodejs-developers-from-india-2026.webp",
   title: "Hire Node.js Developers from India in 2026 (Hiring Guide)",
+  seoTitle: "Hire Node.js Developers from India",
   excerpt: "India offers Node.js developers at USD 5,500 to 8,500/month vs USD 15,000 to 20,000 in the US. Here's how to hire the right ones.",
   tldr: "Hiring Node.js developers from India costs USD 5,500 to 8,500 per month for senior talent, compared to USD 15,000 to 20,000 for equivalent US developers. The best candidates come from Tier-1 engineering colleges, have 5+ years experience with TypeScript-first patterns, and can demonstrate real-time application architecture. Focus on Express.js, NestJS, and cloud deployment experience.",
   body: `<p>Node.js developers from India offer the best combination of technical depth and cost efficiency for growing businesses in 2026. You can hire a senior Node.js developer from India for USD 5,500 to 8,500 per month, while equivalent talent in the US costs USD 15,000 to 20,000 per month.</p>

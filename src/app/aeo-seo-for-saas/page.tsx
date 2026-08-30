@@ -210,7 +210,7 @@ export default function AeoSeoForSaasPage() {
           </div>
 
           <div className="mt-12 flex flex-col sm:flex-row justify-center gap-4">
-            <Button href="/contact" size="lg">Book a discovery call</Button>
+            <Button href="/contact/" size="lg">Book a discovery call</Button>
             <Button href="#sprint" variant="outline" size="lg" className="!bg-white/10 !border-white/30 !text-white hover:!bg-white/20 hover:!text-white">
               See the sprint
             </Button>
@@ -335,7 +335,7 @@ export default function AeoSeoForSaasPage() {
               </div>
 
               <div className="pt-2">
-                <Button href="/contact" size="lg">Get on the AI&apos;s shortlist</Button>
+                <Button href="/contact/" size="lg">Get on the AI&apos;s shortlist</Button>
               </div>
             </div>
           </div>
@@ -392,7 +392,7 @@ export default function AeoSeoForSaasPage() {
             ))}
           </div>
           <div className="mt-12 text-center">
-            <Button href="/contact" size="lg">Scope your sprint</Button>
+            <Button href="/contact/" size="lg">Scope your sprint</Button>
           </div>
         </div>
       </section>
@@ -489,7 +489,7 @@ export default function AeoSeoForSaasPage() {
           <p className="text-lg text-primary-50 mb-8">
             Tell us about your SaaS. Scoped proposal in 48 hours.
           </p>
-          <Button href="/contact" variant="white" size="lg">Book a discovery call</Button>
+          <Button href="/contact/" variant="white" size="lg">Book a discovery call</Button>
         </div>
       </section>
     </>

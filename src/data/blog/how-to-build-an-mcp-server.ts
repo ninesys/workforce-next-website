@@ -4,6 +4,7 @@ const post: BlogPost = {
   slug: "how-to-build-an-mcp-server",
   image: "/images/blog/how-to-build-an-mcp-server.webp",
   title: "How to Build an MCP Server: Step-by-Step Guide for Any LLM Client",
+  seoTitle: "How to Build an MCP Server",
   excerpt:
     "A practical walkthrough for building your first MCP server: defining tools, choosing a transport, running it locally against Claude Desktop, then connecting the same server to Cursor, a custom agent, and other LLM clients without rewriting anything.",
   tldr:

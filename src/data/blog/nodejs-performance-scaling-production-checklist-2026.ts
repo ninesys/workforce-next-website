@@ -4,6 +4,7 @@ const post: BlogPost = {
   slug: "nodejs-performance-scaling-production-checklist-2026",
   image: "/images/blog/nodejs-performance-scaling-production-checklist-2026.webp",
   title: "Node.js Performance and Scaling: A Production Checklist (2026)",
+  seoTitle: "Node.js Performance and Scaling",
   excerpt:
     "Practical Node.js performance and scaling checklist for production. Event loop, clustering, worker threads, memory leaks, p99 latency, and the patterns that move the needle.",
   tldr: "Most Node.js performance problems come from blocking the event loop, undersized connection pools, missing caches, or unbounded concurrency. The fix order is: measure first, fix the event loop, fix the database, then scale horizontally with clustering or Kubernetes. Worker threads only help for CPU-bound work. APM, event loop lag alarms, and proper p99 latency targets matter more than micro-optimizations.",

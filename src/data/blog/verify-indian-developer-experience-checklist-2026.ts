@@ -4,6 +4,7 @@ const post: BlogPost = {
   slug: "verify-indian-developer-experience-checklist-2026",
   image: "/images/blog/verify-indian-developer-experience-checklist-2026.webp",
   title: "How to Verify an Indian Developer's Real Experience: A 2026 Buyer's Checklist",
+  seoTitle: "How to Verify a Developer's Experience",
   excerpt:
     "A resume from an Indian developer rarely lies, but it almost always smooths the truth. This is the checklist a procurement-savvy VP of Engineering should run before signing any contract: documents, employment history, GitHub forensics, code samples, and reference calls. With concrete red flags for each step.",
   tldr:
@@ -152,9 +153,9 @@ const post: BlogPost = {
 <p>A vendor who answers all five cleanly has thought about this. A vendor who hedges on any of them is hoping you will not look closely. We answer all five in writing on the first call, and the engineer's full verification report is part of the shortlist package, not an extra you have to ask for.</p>
 
 <h2>What to do next</h2>
-<p>If you are about to interview an Indian developer (through any vendor or independently), this checklist is the one to print. If you want us to apply it to a role you are about to open, <a href="/contact">book a 15-minute call</a> and we will run the checklist on three of our pre-screened engineers for the role you have in mind. You see the verification reports before you decide whether to interview anyone.</p>
+<p>If you are about to interview an Indian developer (through any vendor or independently), this checklist is the one to print. If you want us to apply it to a role you are about to open, <a href="/contact/">book a 15-minute call</a> and we will run the checklist on three of our pre-screened engineers for the role you have in mind. You see the verification reports before you decide whether to interview anyone.</p>
 
-<p>Related reading: <a href="/why-teams-stay/">how we structurally avoid the body-shop staffing pattern</a> covers why the verification matters in the first place. <a href="/blog/staff-augmentation-vs-eor-vs-india-entity-2026">Staff augmentation vs EOR vs your own India entity</a> covers the legal model decision. <a href="/blog/senior-indian-developer-salary-2026">What to pay a senior Indian developer in 2026</a> covers the pricing decision. Together those three plus this verification post cover most of what a procurement-savvy CTO needs before signing.</p>`,
+<p>Related reading: <a href="/why-teams-stay/">how we structurally avoid the body-shop staffing pattern</a> covers why the verification matters in the first place. <a href="/blog/staff-augmentation-vs-eor-vs-india-entity-2026/">Staff augmentation vs EOR vs your own India entity</a> covers the legal model decision. <a href="/blog/senior-indian-developer-salary-2026/">What to pay a senior Indian developer in 2026</a> covers the pricing decision. Together those three plus this verification post cover most of what a procurement-savvy CTO needs before signing.</p>`,
   category: "hiring",
   categoryLabel: "Hiring & Teams",
   author: "Gaurav",

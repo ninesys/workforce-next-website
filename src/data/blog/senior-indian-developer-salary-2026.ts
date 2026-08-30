@@ -4,6 +4,7 @@ const post: BlogPost = {
   slug: "senior-indian-developer-salary-2026",
   image: "/images/blog/senior-indian-developer-salary-2026.webp",
   title: "What Should You Pay a Senior Indian Developer in 2026? (Real Numbers, Not Ranges)",
+  seoTitle: "What to Pay a Senior Indian Developer",
   excerpt:
     "A senior Indian developer in 2026 costs a foreign client between $5,500 and $9,000 per month all-in, depending on stack, city, and engagement model. Here is the full breakdown by level, by stack, what 'all-in' actually includes, and what changes the rate within a band.",
   tldr:
@@ -126,7 +127,7 @@ const post: BlogPost = {
   </tbody>
 </table>
 
-<p>The cheapest sticker price (your own entity) is only the cheapest if you have 12+ engineers and absorb the fixed overhead. Below that headcount, managed staff aug is the cheapest real all-in cost. We covered the full math in <a href="/blog/staff-augmentation-vs-eor-vs-india-entity-2026">staff augmentation vs EOR vs your own India entity</a>.</p>
+<p>The cheapest sticker price (your own entity) is only the cheapest if you have 12+ engineers and absorb the fixed overhead. Below that headcount, managed staff aug is the cheapest real all-in cost. We covered the full math in <a href="/blog/staff-augmentation-vs-eor-vs-india-entity-2026/">staff augmentation vs EOR vs your own India entity</a>.</p>
 
 <h2>How do I avoid overpaying or underpaying?</h2>
 <p>Three failure modes are common. Avoid all three.</p>
@@ -151,9 +152,9 @@ const post: BlogPost = {
 <p>A vendor who answers all five cleanly is operating in good faith. A vendor who hedges on any of them is hiding something. We answer all five on the first call, in writing, before you commit to anything.</p>
 
 <h2>What should you do next?</h2>
-<p>If you are pricing a specific role, the fastest way to get a defensible number is a 15-minute call. Tell us the role, the stack, the seniority, and the city you would prefer the engineer based in. We will quote the all-in number on the call, send it in writing the same day, and walk you through the breakdown line by line. <a href="/contact">Book the call here</a>.</p>
+<p>If you are pricing a specific role, the fastest way to get a defensible number is a 15-minute call. Tell us the role, the stack, the seniority, and the city you would prefer the engineer based in. We will quote the all-in number on the call, send it in writing the same day, and walk you through the breakdown line by line. <a href="/contact/">Book the call here</a>.</p>
 
-<p>For the broader picture: pair this post with <a href="/blog/staff-augmentation-vs-eor-vs-india-entity-2026">staff augmentation vs EOR vs your own India entity</a> for the legal model decision, <a href="/blog/toptal-vs-andela-vs-turing-vs-workforcenext-comparison-2026">Toptal vs Andela vs Turing vs WorkforceNext</a> for the vendor selection decision, and <a href="/blog/verify-indian-developer-experience-checklist-2026">our verification checklist for Indian developers</a> for the diligence step that confirms whoever the vendor proposes is actually who they say they are. For external benchmarking, <a href="https://www.levels.fyi/" target="_blank" rel="noopener noreferrer">Levels.fyi</a> publishes self-reported India compensation data that is useful as a sanity check (especially for FAANG-India and top-startup levels).</p>`,
+<p>For the broader picture: pair this post with <a href="/blog/staff-augmentation-vs-eor-vs-india-entity-2026/">staff augmentation vs EOR vs your own India entity</a> for the legal model decision, <a href="/blog/toptal-vs-andela-vs-turing-vs-workforcenext-comparison-2026/">Toptal vs Andela vs Turing vs WorkforceNext</a> for the vendor selection decision, and <a href="/blog/verify-indian-developer-experience-checklist-2026/">our verification checklist for Indian developers</a> for the diligence step that confirms whoever the vendor proposes is actually who they say they are. For external benchmarking, <a href="https://www.levels.fyi/" target="_blank" rel="noopener noreferrer">Levels.fyi</a> publishes self-reported India compensation data that is useful as a sanity check (especially for FAANG-India and top-startup levels).</p>`,
   category: "hiring",
   categoryLabel: "Hiring & Teams",
   author: "Gaurav",

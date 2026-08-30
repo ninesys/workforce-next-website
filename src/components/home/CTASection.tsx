@@ -14,7 +14,7 @@ export default function CTASection() {
           One-week paid trial. No recruitment fee. 48-hour matching.
         </p>
         <div className="mt-6 sm:mt-8">
-          <Button href="/contact" variant="primary" size="lg">
+          <Button href="/contact/" variant="primary" size="lg">
             Start building
           </Button>
         </div>

@@ -166,8 +166,8 @@ export default function WhyTeamsStayPage() {
             Tell us where you are. Scoped proposal in 48 hours.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="white" size="lg">Book a discovery call</Button>
-            <Button href="/how-we-work" variant="outline" size="lg" className="!border-white/30 !text-white hover:!border-white hover:!bg-white/10">
+            <Button href="/contact/" variant="white" size="lg">Book a discovery call</Button>
+            <Button href="/how-we-work/" variant="outline" size="lg" className="!border-white/30 !text-white hover:!border-white hover:!bg-white/10">
               See how we work
             </Button>
           </div>

@@ -4,6 +4,7 @@ const post: BlogPost = {
   slug: "hire-reactjs-developers-from-india-2026",
   image: "/images/blog/hire-reactjs-developers-from-india-2026.webp",
   title: "Hire React.js Developers from India in 2026 (Hiring Guide)",
+  seoTitle: "Hire React.js Developers from India",
   excerpt: "India offers React.js developers at USD 5,000 to 8,000/month vs USD 14,000 to 19,000 in the US. Here is what to screen for and how to hire the right ones.",
   tldr: "Hiring React.js developers from India costs USD 5,000 to 8,000 per month for senior talent, compared to USD 14,000 to 19,000 for equivalent US developers. The strongest candidates ship Next.js App Router apps, write TypeScript by default, and treat performance budgets and accessibility as part of the definition of done. Screen for hooks fluency, server-component reasoning, and a real production app you can audit.",
   body: `<p>React.js developers from India give you the best mix of frontend depth and cost efficiency in 2026. You can hire a senior React engineer from India for USD 5,000 to 8,000 per month, while equivalent talent in the US runs USD 14,000 to 19,000 per month.</p>
