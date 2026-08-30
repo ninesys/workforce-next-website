@@ -87,6 +87,16 @@ URLS=(
   "https://${HOST}/faq/"
   "https://${HOST}/contact/"
   "https://${HOST}/careers/"
+  "https://${HOST}/careers/full-stack-developer/"
+  "https://${HOST}/careers/ai-ml-engineer/"
+  "https://${HOST}/careers/data-engineer/"
+  "https://${HOST}/careers/vibe-code-engineer/"
+  "https://${HOST}/careers/cloud-devops-engineer/"
+  "https://${HOST}/careers/mobile-developer/"
+  "https://${HOST}/careers/qa-engineer/"
+  "https://${HOST}/careers/ui-ux-designer/"
+  "https://${HOST}/careers/seo-specialist/"
+  "https://${HOST}/careers/social-media-content-creator/"
   "https://${HOST}/privacy-policy/"
   "https://${HOST}/terms-of-use/"
   # Blog listing
@@ -133,6 +143,11 @@ URLS=(
   "https://${HOST}/blog/enterprise-web-application-development-complete-guide-2026/"
   "https://${HOST}/blog/outsource-enterprise-web-application-development-2026/"
   "https://${HOST}/blog/ai-enabled-remote-staffing-complete-guide-2026/"
+  "https://${HOST}/blog/logistics-3pl-tech-challenges-2026/"
+  "https://${HOST}/blog/osrm-vs-google-maps-vs-mapbox-routing-engine-2026/"
+  "https://${HOST}/blog/route-optimization-algorithms-3pl-fleet-platforms/"
+  "https://${HOST}/blog/vibe-code-security-hardening-production-ready-2026/"
+  "https://${HOST}/blog/founder-built-app-scaling-architecture-guide-2026/"
 )
 
 # Build JSON payload
