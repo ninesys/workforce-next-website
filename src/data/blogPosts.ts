@@ -64,6 +64,7 @@ import osrmVsGoogleMapsVsMapboxRoutingEngine2026 from "./blog/osrm-vs-google-map
 import routeOptimizationAlgorithms3plFleetPlatforms from "./blog/route-optimization-algorithms-3pl-fleet-platforms";
 import vibeCodeSecurityHardeningProductionReady2026 from "./blog/vibe-code-security-hardening-production-ready-2026";
 import founderBuiltAppScalingArchitectureGuide2026 from "./blog/founder-built-app-scaling-architecture-guide-2026";
+import andelaVsTuringComparison2026 from "./blog/andela-vs-turing-comparison-2026";
 
 export type { BlogPost, BlogFAQ };
 
@@ -143,4 +144,5 @@ export const blogPosts: BlogPost[] = [
   routeOptimizationAlgorithms3plFleetPlatforms,
   vibeCodeSecurityHardeningProductionReady2026,
   founderBuiltAppScalingArchitectureGuide2026,
+  andelaVsTuringComparison2026,
 ];
