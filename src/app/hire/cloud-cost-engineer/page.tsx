@@ -12,7 +12,7 @@ import { FAQ } from "@/types";
 export const metadata: Metadata = {
   title: "Hire Cloud Cost Engineers from India",
   description:
-    "Hire pre-vetted cloud cost engineers from India. AWS, Azure, GCP FinOps, Kubernetes rightsizing, spot and reserved instances, Terraform cost estimation. Average 30-60% cloud savings.",
+    "Hire pre-vetted cloud cost engineers from India. AWS, Azure, GCP FinOps, Kubernetes rightsizing, spot and reserved instances, Terraform cost estimation. Measurable cloud savings from month one.",
   keywords: [
     "hire cloud cost engineer",
     "FinOps engineer India",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     images: ["/images/og-default.png"],
     title: "Hire Cloud Cost Engineers from India",
     description:
-      "Cloud cost engineers who typically save 30-60% on cloud bills. AWS, Azure, GCP FinOps specialists. SethAI-screened.",
+      "Cloud cost engineers who pay for themselves in measurable monthly savings. AWS, Azure, GCP FinOps specialists. SethAI-screened.",
   },
   alternates: {
     canonical: `${siteMetadata.url}/hire/cloud-cost-engineer/`,
@@ -51,7 +51,7 @@ const whyPoints = [
   {
     title: "Engineers who pay for themselves",
     description:
-      "A good cloud cost engineer typically saves 30-60% on your monthly cloud bill. The ROI is measurable from month one. This is one of the few roles where the math is not up for debate.",
+      "A good cloud cost engineer cuts your monthly cloud bill measurably, often within the first billing cycle. This is one of the few roles where the ROI is not up for debate.",
   },
   {
     title: "Multi-cloud FinOps expertise",
@@ -71,7 +71,7 @@ const whyPoints = [
 ];
 
 const responsibilities = [
-  "Auditing AWS, Azure, or GCP bills to identify the 10-20% of resources causing 80% of waste",
+  "Auditing AWS, Azure, or GCP bills to identify the small slice of resources causing most of the waste",
   "Rightsizing EC2, RDS, ECS, and Kubernetes workloads based on actual utilization, not peak-hour fear",
   "Designing spot instance, savings plan, and reserved instance portfolios that balance commitment and flexibility",
   "Implementing Kubernetes vertical and horizontal pod autoscaling, node pools, and spot node strategies",
@@ -198,14 +198,14 @@ const faqItems: FAQ[] = [
   {
     question: "How much does it cost to hire a cloud cost engineer in India?",
     answer:
-      "Full-time senior cloud cost engineers in India typically cost between 6,000 and 10,000 USD per month. A common audit engagement runs 4 to 6 weeks at a fixed fee. For most customers with $30K+ monthly cloud spend, a specialist saves multiples of their salary in the first quarter. Pricing at Workforce Next includes an engineering manager and quarterly executive summaries.",
+      "It depends on scope and seniority, so we quote it on a discovery call rather than publish a flat rate. A common audit engagement runs a few weeks at a fixed fee, and for customers with meaningful monthly cloud spend, a specialist tends to save multiples of their own cost within the first quarter. Pricing at Workforce Next includes an engineering manager and quarterly executive summaries.",
     category: "hiring",
     categoryLabel: "Hiring",
   },
   {
     question: "How much can a cloud cost engineer actually save me?",
     answer:
-      "Typical savings range from 20% to 60% of monthly cloud spend, with 30-40% being the most common outcome for companies that have not previously invested in FinOps. Savings come from rightsizing, commitment portfolios (RIs, savings plans, spot), Kubernetes tuning, data transfer optimization, and code-level query or service refactors. Existing well-optimized environments see smaller numbers; early-stage or unoptimized ones often see more than 50%.",
+      "Savings vary by how much FinOps work has already been done. Companies that have never invested in it tend to see the largest gains; already well-optimized environments see smaller ones. Savings come from rightsizing, commitment portfolios (RIs, savings plans, spot), Kubernetes tuning, data transfer optimization, and code-level query or service refactors. We size the opportunity on the discovery call rather than promise a fixed number upfront.",
     category: "hiring",
     categoryLabel: "Hiring",
   },
@@ -242,7 +242,7 @@ const faqItems: FAQ[] = [
 export default function HireCloudCostEngineerPage() {
   const serviceSchema = generateServiceSchema(
     "Hire Cloud Cost Engineers from India",
-    "Hire pre-vetted cloud cost engineers from India. AWS, Azure, GCP FinOps, Kubernetes rightsizing, spot and reserved instances. Average 30-60% cloud savings. SethAI-screened.",
+    "Hire pre-vetted cloud cost engineers from India. AWS, Azure, GCP FinOps, Kubernetes rightsizing, spot and reserved instances. Measurable cloud savings from month one. SethAI-screened.",
     `${siteMetadata.url}/hire/cloud-cost-engineer/`
   );
 
