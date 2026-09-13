@@ -166,7 +166,7 @@ const post: BlogPost = {
 
 <h2>Where does Workforce Next help?</h2>
 
-<p>We place Node.js engineers who have rescued underperforming production services and built ones that hold up at scale. Most have shipped clustering, observability, queue-based async, and database tuning in production. If you have a Node.js service that is not meeting its targets, see <a href="/hire/nodejs-developers/">our Node.js hiring page</a> or <a href="/contact/">talk to us about your performance issue</a>.</p>`,
+<p>We place Node.js engineers who have rescued underperforming production services and built ones that hold up at scale. Most have shipped clustering, observability, queue-based async, and database tuning in production. If you have a Node.js service that is not meeting its targets, see <a href="/hire/nodejs-developers/">our Node.js hiring page</a>. If the bottleneck is infrastructure rather than application code (cluster autoscaling, load balancer tuning, CI/CD pipelines), our <a href="/hire/devops-engineers/">DevOps engineers</a> cover that side. Or <a href="/contact/">talk to us about your performance issue</a>.</p>`,
   category: "engineering",
   categoryLabel: "Engineering",
   author: "Gaurav",

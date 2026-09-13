@@ -108,7 +108,6 @@ const post: BlogPost = {
 <tr>
 <th>Framework</th>
 <th>India hiring depth</th>
-<th>Senior cost (USD/month)</th>
 <th>Ramp time on existing codebase</th>
 </tr>
 </thead>
@@ -116,25 +115,22 @@ const post: BlogPost = {
 <tr>
 <td>Express</td>
 <td>Universal, every Node.js dev</td>
-<td>5,000 to 8,000</td>
 <td>1 to 2 weeks</td>
 </tr>
 <tr>
 <td>NestJS</td>
-<td>Strong and growing, ~60% of seniors</td>
-<td>5,500 to 8,500</td>
+<td>Strong and growing, majority of seniors</td>
 <td>2 to 3 weeks</td>
 </tr>
 <tr>
 <td>Fastify</td>
-<td>Moderate, ~35% of seniors have shipped it</td>
-<td>5,500 to 8,500</td>
+<td>Moderate, smaller but growing pool</td>
 <td>2 to 4 weeks</td>
 </tr>
 </tbody>
 </table>
 
-<p>Fastify is the smallest pool but the gap is closing. NestJS has become the default for new enterprise services and most senior Node.js engineers we screen are comfortable in it. For benchmark detail by seniority, see our <a href="/blog/hire-nodejs-developers-from-india-2026/">India hiring guide</a> and <a href="/blog/senior-indian-developer-salary-2026/">2026 salary guide</a>.</p>
+<p>Fastify is the smallest pool but the gap is closing. NestJS has become the default for new enterprise services and most senior Node.js engineers we screen are comfortable in it. If you are hiring rather than choosing a framework for your own team, our <a href="/hire/nodejs-developers/">Node.js developers</a> come pre-screened across all three, so the framework decision does not have to happen before the hiring one. For benchmark detail by seniority, see our <a href="/blog/hire-nodejs-developers-from-india-2026/">India hiring guide</a>.</p>
 
 <h2>How do they fit microservices and serverless?</h2>
 

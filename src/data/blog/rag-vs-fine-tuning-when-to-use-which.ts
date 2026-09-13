@@ -16,7 +16,7 @@ const post: BlogPost = {
 <li><strong>You have a lot of documents.</strong> Tens of thousands of pages is trivial for a vector database, expensive for fine-tuning.</li>
 <li><strong>You need access control.</strong> Different users should see different documents. RAG can filter retrieval per user. Fine-tuning bakes everything into the model permanently.</li>
 </ul>
-<p>This is why most enterprise chatbot, support, and knowledge-assistant projects are RAG projects, not fine-tuning projects. The problem is almost always "the model does not know our stuff," not "the model does not write in our voice."</p>
+<p>This is why most enterprise chatbot, support, and knowledge-assistant projects are RAG projects, not fine-tuning projects. The problem is almost always "the model does not know our stuff," not "the model does not write in our voice." If the retrieval layer needs to reach multiple live systems (a CRM, a ticketing tool, internal APIs) rather than a static document store, that is increasingly built as an <a href="/hire/mcp-developers/">MCP server</a> instead of a bespoke integration per source.</p>
 
 <h2>Use fine-tuning when behavior is the bottleneck</h2>
 <p>Reach for fine-tuning when:</p>

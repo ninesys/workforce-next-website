@@ -108,10 +108,10 @@ const post: BlogPost = {
 <td>Moderate, growing fast</td>
 </tr>
 <tr>
-<td>Senior engineer cost (USD/month, India)</td>
-<td>5,500 to 8,500</td>
-<td>6,500 to 10,000</td>
-<td>7,000 to 11,000</td>
+<td>Relative senior engineer cost (India)</td>
+<td>Lowest of the three</td>
+<td>Mid-tier</td>
+<td>Highest, smaller supply pool</td>
 </tr>
 <tr>
 <td>Container memory footprint</td>
@@ -140,7 +140,7 @@ const post: BlogPost = {
 </tbody>
 </table>
 
-<p>For India hiring benchmarks specifically, see our <a href="/blog/senior-indian-developer-salary-2026/">2026 senior developer salary guide</a> and <a href="/blog/hire-nodejs-developers-from-india-2026/">Node.js India hiring guide</a>.</p>
+<p>Node.js keeps the widest, most affordable hiring pool of the three in India, which is part of why it remains the default choice for teams optimizing for speed of hiring alongside runtime fit. See our <a href="/hire/nodejs-developers/">Node.js hiring page</a> or the <a href="/blog/hire-nodejs-developers-from-india-2026/">India hiring guide</a> for specifics.</p>
 
 <h2>How do real teams actually pick?</h2>
 
@@ -210,7 +210,7 @@ const post: BlogPost = {
     },
     {
       q: "Which runtime is cheapest to hire for from India?",
-      a: "Node.js has the deepest hiring pool in India in 2026. Senior Node.js developers cost USD 5,500 to 8,500 per month. Senior Java developers cost USD 6,500 to 10,000. Senior Go developers cost USD 7,000 to 11,000 because the supply is smaller, even though demand is rising fast.",
+      a: "Node.js has the deepest and most affordable hiring pool in India in 2026. Java is a close second with strong but pricier supply. Go remains the most expensive of the three because the supply pool is smaller, even though demand is rising fast. Exact rates depend on seniority and scope, which we size on a discovery call.",
     },
     {
       q: "When does the choice between Node.js, Java, and Go actually not matter?",
