@@ -13,7 +13,7 @@ const post: BlogPost = {
 <h2>Layer 1: Can they reason about problem shape?</h2>
 <p>The single highest-signal question we ask: <em>"Here is a business problem. Walk me through whether it needs an LLM, a classical ML model, or just plain software."</em></p>
 <p>Give them something like: "Our support team categorizes incoming tickets into 12 tags. They process 500 per day. Would you use an LLM?" A weak candidate jumps straight to "I would use GPT-4 with few-shot prompting." A strong candidate asks about accuracy requirements, cost per ticket, latency, and whether a fine-tuned classifier would beat an LLM on both cost and accuracy at that volume.</p>
-<p>This is the same instinct behind <a href="/blog/context-first-matching-why-tech-stack-is-not-enough/">context-first matching</a>. Tech stack is easy. Judgment is what actually ships.</p>
+<p>This is the same instinct behind context-first matching. Tech stack is easy. Judgment is what actually ships.</p>
 
 <h2>Layer 2: Have they shipped something that survived real users?</h2>
 <p>Ask: <em>"Tell me about an AI feature you shipped to real users. What broke first?"</em></p>

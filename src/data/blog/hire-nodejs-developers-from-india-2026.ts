@@ -281,7 +281,7 @@ const post: BlogPost = {
 <li><strong>Mobile-first experience</strong>: Strong React Native, Flutter backgrounds</li>
 </ul>
 
-<p>The key is matching your specific requirements to the right talent pool. Our <a href="/blog/real-cost-of-switching-tech-partners/">Cost of Switching analysis</a> helps you evaluate total project costs beyond hourly rates.</p>
+<p>The key is matching your specific requirements to the right talent pool. Our <a href="/blog/dedicated-developer-vs-freelancer-vs-agency-total-cost/">total cost of ownership breakdown</a> helps you evaluate total project costs beyond hourly rates.</p>
 
 <p>Ready to hire Node.js developers from India? We match you with pre-vetted senior developers in 48 hours and start with a paid trial week to ensure technical and cultural fit. <a href="/contact/">Talk to us about your Node.js development needs</a>.</p>`,
   category: "hiring",

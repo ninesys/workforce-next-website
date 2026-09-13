@@ -1,13 +1,9 @@
 import type { BlogPost, BlogFAQ } from "./blog/types";
 
 import twelveParametersAiMatchingToolsShouldEvaluate from "./blog/12-parameters-ai-matching-tools-should-evaluate";
-import howDoesAiDeveloperMatchingActuallyWork from "./blog/how-does-ai-developer-matching-actually-work";
-import bestAiDeveloperMatchingTools2026 from "./blog/best-ai-developer-matching-tools-2026";
 import whatIsLifestyleFitMatchingInDeveloperHiring from "./blog/what-is-lifestyle-fit-matching-in-developer-hiring";
 import whyOffshoreDevelopersKeepLeaving from "./blog/why-offshore-developers-keep-leaving";
 import vibeCodingExplainedWhenToUseIt from "./blog/vibe-coding-explained-when-to-use-it";
-import contextFirstMatchingWhyTechStackIsNotEnough from "./blog/context-first-matching-why-tech-stack-is-not-enough";
-import realCostOfSwitchingTechPartners from "./blog/real-cost-of-switching-tech-partners";
 import howToBuildAiMvp4WeeksOffshoreDeveloper from "./blog/how-to-build-ai-mvp-4-weeks-offshore-developer";
 import dedicatedDeveloperVsFreelancerVsAgencyTotalCost from "./blog/dedicated-developer-vs-freelancer-vs-agency-total-cost";
 import aiDeveloperInterviewQuestionsWhatToAsk from "./blog/ai-developer-interview-questions-what-to-ask";
@@ -81,13 +77,9 @@ export const blogCategories = [
 // caller that iterates the array directly (sitemap, etc.).
 export const blogPosts: BlogPost[] = [
   twelveParametersAiMatchingToolsShouldEvaluate,
-  howDoesAiDeveloperMatchingActuallyWork,
-  bestAiDeveloperMatchingTools2026,
   whatIsLifestyleFitMatchingInDeveloperHiring,
   whyOffshoreDevelopersKeepLeaving,
   vibeCodingExplainedWhenToUseIt,
-  contextFirstMatchingWhyTechStackIsNotEnough,
-  realCostOfSwitchingTechPartners,
   howToBuildAiMvp4WeeksOffshoreDeveloper,
   dedicatedDeveloperVsFreelancerVsAgencyTotalCost,
   aiDeveloperInterviewQuestionsWhatToAsk,

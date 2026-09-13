@@ -37,7 +37,7 @@ const EXACT: Record<string, string> = {
   // Retired talent-shop differentiator pages (deleted 2026-06-20 in 4-service repositioning)
   "/ai-native-india": "/india-handled/",
   "/not-another-body-shop": "/why-teams-stay/",
-  "/cost-of-switching": "/blog/real-cost-of-switching-tech-partners/",
+  "/cost-of-switching": "/blog/dedicated-developer-vs-freelancer-vs-agency-total-cost/",
   "/context-continuity-guarantee": "/how-we-work/",
 
   // Old .html pages
@@ -87,7 +87,16 @@ const EXACT: Record<string, string> = {
   "/blog/iot-platform-vendor-lock-in": "/blog/",
   "/blog/real-time-analytics-manufacturing": "/blog/",
   "/blog/hidden-cost-legacy-integration":
-    "/blog/real-cost-of-switching-tech-partners/",
+    "/blog/dedicated-developer-vs-freelancer-vs-agency-total-cost/",
+
+  // Retired zero-traffic posts from the pre-4-service-positioning era (removed 2026-09-13)
+  "/blog/best-ai-developer-matching-tools-2026":
+    "/blog/toptal-vs-andela-vs-turing-vs-workforcenext-comparison-2026/",
+  "/blog/context-first-matching-why-tech-stack-is-not-enough":
+    "/blog/ai-developer-interview-questions-what-to-ask/",
+  "/blog/how-does-ai-developer-matching-actually-work": "/products/seth-ai-recruiter/",
+  "/blog/real-cost-of-switching-tech-partners":
+    "/blog/dedicated-developer-vs-freelancer-vs-agency-total-cost/",
   "/blog/page2": "/blog/",
   "/blog/page4": "/blog/",
   "/blog/stealth-employee-monitoring-software": "/blog/",

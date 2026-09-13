@@ -38,7 +38,7 @@ const post: BlogPost = {
 <ol>
 <li><strong>Sourcing.</strong> Continuously index public profiles, GitHub repos, Stack Overflow answers, and internal talent pools. Surface candidates who match the brief, not just candidates who applied.</li>
 <li><strong>Skills validation.</strong> Parse code samples, repos, and past project descriptions. Detect inflated resumes by comparing claimed skills with demonstrated work.</li>
-<li><strong>Context matching.</strong> Match candidates to customer context (industry, stack, team size, working culture) beyond raw stack keywords. See <a href="/blog/context-first-matching-why-tech-stack-is-not-enough/">context-first matching</a> for why this matters.</li>
+<li><strong>Context matching.</strong> Match candidates to customer context (industry, stack, team size, working culture) beyond raw stack keywords. See our <a href="/blog/ai-developer-interview-questions-what-to-ask/">guide to screening for real fit</a> for why this matters.</li>
 <li><strong>Communication assessment.</strong> Score written communication for clarity and tone. English language fluency for non-native speakers. Async-vs-sync working style.</li>
 <li><strong>Lifestyle and retention prediction.</strong> Match candidates to engagements they will actually stay in. Career trajectory fit, compensation alignment, location stability.</li>
 <li><strong>Bias auditing.</strong> Compare match outcomes across protected categories. Flag patterns where the model is over- or under-recommending specific groups.</li>
@@ -98,7 +98,7 @@ const post: BlogPost = {
 </tbody>
 </table>
 
-<p>For a deeper feature-by-feature comparison of the major vendors, see <a href="/blog/toptal-vs-andela-vs-turing-vs-workforcenext-comparison-2026/">Toptal vs Andela vs Turing vs Workforce Next</a>. For the tool-level comparison of matching engines specifically, see <a href="/blog/best-ai-developer-matching-tools-2026/">best AI developer matching tools 2026</a>.</p>
+<p>For a deeper feature-by-feature comparison of the major vendors, see <a href="/blog/toptal-vs-andela-vs-turing-vs-workforcenext-comparison-2026/">Toptal vs Andela vs Turing vs Workforce Next</a>, or the narrower <a href="/blog/andela-vs-turing-comparison-2026/">Andela vs Turing breakdown</a> if those are the two you are weighing.</p>
 
 <h2>How does AI matching actually work for developers?</h2>
 
@@ -114,7 +114,7 @@ const post: BlogPost = {
 <li><strong>Human shortlist confirmation.</strong> A recruiter validates the top 5 to 10 candidates before they reach the customer.</li>
 </ol>
 
-<p>For a deeper view of how this actually works in production, read <a href="/blog/how-does-ai-developer-matching-actually-work/">how does AI developer matching actually work</a>. For the dimensions any matching tool should evaluate against, see <a href="/blog/12-parameters-ai-matching-tools-should-evaluate/">12 parameters AI matching tools should evaluate</a>.</p>
+<p>For a deeper view of how our own matching engine works in production, see the <a href="/products/seth-ai-recruiter/">SethAI product page</a>. For the dimensions any matching tool should evaluate against, see <a href="/blog/12-parameters-ai-matching-tools-should-evaluate/">12 parameters AI matching tools should evaluate</a>.</p>
 
 <h2>What is the real ROI of AI-enabled remote staffing?</h2>
 

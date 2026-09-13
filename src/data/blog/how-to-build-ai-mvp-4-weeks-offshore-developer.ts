@@ -19,7 +19,7 @@ const post: BlogPost = {
 <p>Fix the obvious bugs. Add error handling for when the AI returns garbage (it will). Deploy to a shareable URL. Create a simple demo script. You now have something you can show to users, investors, or your team.</p>
 
 <h2>What this costs</h2>
-<p>At Workforce Next, our MVP Sprint is priced at 1.2 to 1.8 lakh INR ($1,500 to $2,200) for one senior developer for 4 weeks. <a href="/products/seth-ai-recruiter/">SethAI</a> matches a developer with actual AI product experience in your industry, using <a href="/blog/context-first-matching-why-tech-stack-is-not-enough/">context-first matching</a> rather than just filtering by tech stack. One-week paid trial before you commit. The developer stays with you beyond the sprint if you want them to. If you are a <a href="/for/founders/">founder at the idea stage</a>, this is the fastest way to get something real in front of users. When you are ready to grow it into a real product, our <a href="/blog/saas-web-application-development-guide-startups-2026/">SaaS web application development guide for startups</a> covers the stack, scope, and team decisions that come next. <a href="/contact/">Let us know what you are building</a> and we will scope it together.</p>`,
+<p>At Workforce Next, our MVP Sprint runs one senior developer for 4 weeks at a fixed scope, priced on a discovery call. <a href="/products/seth-ai-recruiter/">SethAI</a> matches a developer with actual AI product experience in your industry, using context-first matching rather than just filtering by tech stack. One-week paid trial before you commit. The developer stays with you beyond the sprint if you want them to. If you are a <a href="/for/founders/">founder at the idea stage</a>, this is the fastest way to get something real in front of users. When you are ready to grow it into a real product, our <a href="/blog/saas-web-application-development-guide-startups-2026/">SaaS web application development guide for startups</a> covers the stack, scope, and team decisions that come next. <a href="/contact/">Let us know what you are building</a> and we will scope it together.</p>`,
   "slug": "how-to-build-ai-mvp-4-weeks-offshore-developer",
   "image": "/images/blog/how-to-build-ai-mvp-4-weeks-offshore-developer.webp",
   "title": "How to Build an AI MVP in 4 Weeks with an Offshore Developer",
@@ -31,9 +31,9 @@ const post: BlogPost = {
   "authorRole": "Founder & Solution Architect",
   "publishedAt": "2026-04-03",
   "readTime": 5,
-  "metaDescription": "A practical 4-week guide to building an AI MVP with one offshore developer from India. Week-by-week breakdown: scope, AI pipeline, interface, deploy. Costs $1,500 to $2,200.",
+  "metaDescription": "A practical 4-week guide to building an AI MVP with one offshore developer from India. Week-by-week breakdown: scope, AI pipeline, interface, deploy.",
   "ogTitle": "How to Build an AI MVP in 4 Weeks with One Developer",
-  "ogDescription": "A practical 4-week guide to shipping an AI MVP with one offshore developer: scope, pipeline, interface, deploy. Budget $1,500 to $2,200.",
+  "ogDescription": "A practical 4-week guide to shipping an AI MVP with one offshore developer: scope, pipeline, interface, deploy.",
   "keywords": [
     "build AI MVP 4 weeks",
     "AI MVP offshore developer",
@@ -47,7 +47,7 @@ const post: BlogPost = {
   "faq": [
     {
       "q": "How much does it cost to build an AI MVP with an offshore developer?",
-      "a": "A 4-week AI MVP sprint with one senior developer from India costs approximately $1,500 to $2,200 (1.2 to 1.8 lakh INR). This covers scoping, AI pipeline, frontend, and deployment."
+      "a": "A 4-week AI MVP sprint with one senior developer from India is priced as a fixed-scope package covering scoping, AI pipeline, frontend, and deployment. We quote it directly on a discovery call rather than publish a flat rate, since scope varies by project."
     },
     {
       "q": "Can you build a real AI product in just 4 weeks?",
