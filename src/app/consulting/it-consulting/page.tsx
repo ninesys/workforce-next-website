@@ -98,7 +98,7 @@ const useCases = [
   },
   {
     scenario: "Cloud cost optimization initiative",
-    examples: "30 to 50% reduction in AWS or GCP bill via right-sizing, Savings Plans modeling, idle cleanup, NAT Gateway audit, data-transfer optimization, and FinOps tagging strategy.",
+    examples: "Meaningful reduction in AWS or GCP bill via right-sizing, Savings Plans modeling, idle cleanup, NAT Gateway audit, data-transfer optimization, and FinOps tagging strategy.",
   },
   {
     scenario: "Modernization roadmap for legacy monolith",
@@ -216,7 +216,7 @@ const faqItems: FAQ[] = [
   {
     question: "How much does IT consulting cost in 2026?",
     answer:
-      "Fractional CTO engagements (10 to 20 hours/week) cost USD 4,500 to 9,000 per month. Project engagements (1 to 8 weeks) range from USD 3,000 to USD 30,000 depending on scope. Strategic retainers (5 to 10 hours/month) cost USD 1,500 to USD 3,500 per month. Pricing reflects the seniority and judgment required; consultants are typically 10+ years experienced operators.",
+      "Fractional CTO engagements (10 to 20 hours/week), project engagements (1 to 8 weeks), and strategic retainers (5 to 10 hours/month) are all priced to scope on a discovery call rather than published as flat rates. Pricing reflects the seniority and judgment required; consultants are typically 10+ years experienced operators.",
     category: "hiring",
     categoryLabel: "Hiring",
   },

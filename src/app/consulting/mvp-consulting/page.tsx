@@ -43,7 +43,7 @@ const skills = [
   "Founding Team Shape",
   "12-week Roadmap Design",
   "Prelaunch Validation",
-  "Cost Modeling (USD 2K to 50K)",
+  "Cost Modeling",
   "Modern Stack (Next.js, FastAPI, Supabase)",
   "AI-Augmented MVPs (Claude, GPT, RAG)",
   "Mobile MVP (Flutter, React Native)",
@@ -89,7 +89,7 @@ const responsibilities = [
 
 const useCases = [
   {
-    scenario: "Pre-seed founder with USD 15K to spend on an MVP",
+    scenario: "Pre-seed founder with a lean MVP budget",
     examples: "Scope to the smallest testable hypothesis. Recommend Next.js + Supabase + Vercel + Claude for AI features. Identify what gets faked manually for the first 100 users. Ship in 10 weeks.",
   },
   {
@@ -116,7 +116,7 @@ const useCases = [
 
 const whenToHire = [
   {
-    scenario: "You have an idea, USD 10K to 50K of budget, and no technical co-founder",
+    scenario: "You have an idea, a defined budget, and no technical co-founder",
     recommendation: "Hire on MVP advisory + execution (project, 8 to 12 weeks)",
     reason:
       "We scope, pick the stack, build with our engineers (or your hires), and ship. Founder runs product and user research; we run the build. Most common engagement for non-technical founders.",
@@ -170,7 +170,7 @@ const screeningSignals = [
   {
     signal: "Cost-awareness",
     detail:
-      "Real MVPs run on USD 50 to 500 per month of infra. Consultants who default to enterprise-grade infrastructure burn founder budget for no MVP benefit.",
+      "Real MVPs run on modest infra spend. Consultants who default to enterprise-grade infrastructure burn founder budget for no MVP benefit.",
   },
 ];
 
@@ -216,7 +216,7 @@ const faqItems: FAQ[] = [
   {
     question: "How much does MVP consulting cost?",
     answer:
-      "MVP advisory project (1 to 4 weeks): USD 2,000 to USD 8,000. Fractional CTO (10 to 20 hours/week): USD 4,000 to USD 8,000 per month. MVP build (advisory + execution, 8 to 12 weeks): USD 15,000 to USD 50,000 depending on scope. Pricing reflects the seniority of the consultants (typically 8+ years experienced founders or ex-CTOs).",
+      "MVP advisory project (1 to 4 weeks), fractional CTO (10 to 20 hours/week), and full MVP build (advisory + execution, 8 to 12 weeks) are all priced to scope on a discovery call rather than published as flat rates. Pricing reflects the seniority of the consultants (typically 8+ years experienced founders or ex-CTOs).",
     category: "hiring",
     categoryLabel: "Hiring",
   },

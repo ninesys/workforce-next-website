@@ -102,7 +102,7 @@ const useCases = [
   },
   {
     scenario: "Cloud bill growing 40% YoY without traffic growth",
-    examples: "FinOps audit identified idle resources, missed Savings Plan opportunities, oversized instances, and NAT Gateway egress costs. 38% bill reduction in 90 days without losing capacity.",
+    examples: "FinOps audit identified idle resources, missed Savings Plan opportunities, oversized instances, and NAT Gateway egress costs. Meaningful bill reduction in 90 days without losing capacity.",
   },
   {
     scenario: "Event-driven architecture with growing latency",
@@ -216,7 +216,7 @@ const faqItems: FAQ[] = [
   {
     question: "How much does scalability consulting cost?",
     answer:
-      "Scaling audit (2 to 4 weeks): USD 6,000 to USD 18,000. Scaling remediation (4 to 8 weeks): USD 12,000 to USD 40,000 depending on the complexity of the fixes. Fractional scaling advisor (10 to 20 hours/week): USD 5,000 to USD 9,500 per month. Pricing reflects the seniority required; scaling consultants are typically 8 to 15 years experienced.",
+      "Scaling audit (2 to 4 weeks), scaling remediation (4 to 8 weeks), and fractional scaling advisor (10 to 20 hours/week) are all priced to scope and complexity on a discovery call rather than published as flat rates. Pricing reflects the seniority required; scaling consultants are typically 8 to 15 years experienced.",
     category: "hiring",
     categoryLabel: "Hiring",
   },
@@ -230,7 +230,7 @@ const faqItems: FAQ[] = [
   {
     question: "Can you help cut our cloud bill at scale?",
     answer:
-      "Yes. FinOps engagements are common: rightsizing instances, Savings Plans and Reserved Instance modeling, spot capacity strategy, idle resource cleanup, NAT Gateway and data-transfer audits. We have cut customer bills by 30 to 50% without losing capacity. See also our cloud cost engineer page for execution capacity.",
+      "Yes. FinOps engagements are common: rightsizing instances, Savings Plans and Reserved Instance modeling, spot capacity strategy, idle resource cleanup, NAT Gateway and data-transfer audits. We have cut customer bills meaningfully without losing capacity, and size the opportunity on a discovery call rather than promise a fixed percentage upfront. See also our cloud cost engineer page for execution capacity.",
     category: "hiring",
     categoryLabel: "Hiring",
   },
