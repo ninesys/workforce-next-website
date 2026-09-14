@@ -121,14 +121,14 @@ const post: BlogPost = {
 <p>Honest numbers from our 2025 to 2026 placements, plus public benchmarks:</p>
 
 <ul>
-<li><strong>Time to first interview:</strong> down 60 to 70% vs traditional staffing (24 to 72 hours vs 7 to 14 days).</li>
-<li><strong>Recruiter hours per placement:</strong> down 50 to 70% (sourcing and initial screening automated).</li>
-<li><strong>Cost per hire:</strong> down 20 to 40% (recruiter hour savings compound).</li>
+<li><strong>Time to first interview:</strong> substantially faster than traditional staffing (hours instead of the typical week-plus wait).</li>
+<li><strong>Recruiter hours per placement:</strong> meaningfully lower, since sourcing and initial screening are automated.</li>
+<li><strong>Cost per hire:</strong> lower, as recruiter-hour savings compound.</li>
 <li><strong>Quality of shortlist:</strong> measurably higher offer-acceptance rates (candidates pre-matched on context, not just stack).</li>
-<li><strong>12-month retention:</strong> highly variable by platform category. Marketplaces see 40 to 60% retention. Matching engines see 60 to 75%. Managed dedicated teams (when the embedded EM is real) see 85 to 95%.</li>
+<li><strong>12-month retention:</strong> highly variable by platform category. Marketplaces retain worst, matching engines do meaningfully better, and managed dedicated teams (when the embedded EM is real) retain best by a wide margin.</li>
 </ul>
 
-<p>Retention is where the platform category choice pays off or punishes you. A hire that churns at month four cost you the search, the onboarding, and the rework. Going with the cheapest category to save 20% upfront frequently costs 200% downstream.</p>
+<p>Retention is where the platform category choice pays off or punishes you. A hire that churns at month four cost you the search, the onboarding, and the rework. Going with the cheapest category upfront frequently costs far more downstream.</p>
 
 <h2>How do you evaluate an AI staffing platform?</h2>
 
@@ -236,7 +236,7 @@ const post: BlogPost = {
 <ul>
 <li><strong>Core IP roles you will never outsource.</strong> Your principal architect, your founding engineer, your CTO. Those are in-house W-2 hires.</li>
 <li><strong>Highly regulated client-confidential work where no third party can touch the data.</strong> Some defense, intelligence, and health-data workflows.</li>
-<li><strong>One-off small projects under USD 10K.</strong> Use a freelancer marketplace. AI staffing is over-engineered for a 2-week fix.</li>
+<li><strong>One-off small projects on a tight budget.</strong> Use a freelancer marketplace. AI staffing is over-engineered for a 2-week fix.</li>
 <li><strong>You do not have anyone internally to make the hiring decision.</strong> AI staffing accelerates pipeline. It does not replace the buyer's judgment.</li>
 <li><strong>You are unsure what you want to build.</strong> Hire a consultant first, not a developer.</li>
 </ul>
@@ -293,7 +293,7 @@ const post: BlogPost = {
     },
     {
       q: "Is AI-enabled remote staffing cheaper than traditional hiring?",
-      a: "Yes, but the savings come from time and quality, not just rate. Time to first interview drops 60 to 70%. Recruiter hours per placement drop 50 to 70%. Cost per hire drops 20 to 40%. The bigger win is offer-acceptance rates and 12-month retention, both of which can be measurably higher when matching is done well.",
+      a: "Yes, but the savings come from time and quality, not just rate. Time to first interview drops substantially, recruiter hours per placement drop meaningfully, and cost per hire follows. The bigger win is offer-acceptance rates and 12-month retention, both of which can be measurably higher when matching is done well.",
     },
     {
       q: "Can AI replace human recruiters in remote staffing?",

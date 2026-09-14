@@ -1,13 +1,13 @@
 import type { BlogPost } from "./types";
 
 const post: BlogPost = {
-  body: `<p>The shortest answer: pick boring, battle-tested services for everything except the AI feature itself. Use Clerk for auth, Resend for email, Stripe for payments, Supabase or Neon for Postgres, pgvector for retrieval, Vercel or Railway for hosting, and the Anthropic or OpenAI SDK directly without a framework. That stack ships a working AI MVP in 4 weeks for roughly $25 to $250 a month of infra and third-party fees, leaving all your engineering time for the thing that actually makes your product different.</p>
+  body: `<p>The shortest answer: pick boring, battle-tested services for everything except the AI feature itself. Use Clerk for auth, Resend for email, Stripe for payments, Supabase or Neon for Postgres, pgvector for retrieval, Vercel or Railway for hosting, and the Anthropic or OpenAI SDK directly without a framework. That stack ships a working AI MVP in 4 weeks for a modest amount of infra and third-party fees, leaving all your engineering time for the thing that actually makes your product different.</p>
 
 <p>This post is the tool-by-tool guide we actually use when building 4-week AI MVPs for clients. If you have not yet read the week-by-week breakdown, see <a href="/blog/how-to-build-ai-mvp-4-weeks-offshore-developer/">how to build an AI MVP in 4 weeks with one offshore developer</a> first. This post is the companion stack reference.</p>
 
 <h2>What belongs in an AI MVP stack, and what does not?</h2>
 <p>Three principles govern every stack choice:</p>
-<p><strong>1. Do not build anything a $20/month SaaS solves.</strong> Auth, payments, email, file uploads, logs. If you can rent it for under $50 a month in month one, rent it. You can build your own later when you have revenue and time.</p>
+<p><strong>1. Do not build anything a cheap SaaS solves.</strong> Auth, payments, email, file uploads, logs. If you can rent it for a low monthly fee in month one, rent it. You can build your own later when you have revenue and time.</p>
 <p><strong>2. Own the AI layer.</strong> This is the only place in the stack where custom engineering earns its keep. Prompts, retrieval logic, eval sets, and model selection are where your product differentiates. Do not rent your way out of the thing users are paying for.</p>
 <p><strong>3. Pick tools that scale 10x without migration.</strong> You will outgrow some pieces eventually, but an MVP should not force a rewrite in month four. Favor tools with a paid tier that covers the first year of likely growth.</p>
 <p>Everything below follows from these three rules.</p>
@@ -32,13 +32,13 @@ const post: BlogPost = {
 <li>You need advanced features like hybrid search with built-in reranking.</li>
 <li>You are running multi-tenant retrieval with strict namespacing.</li>
 </ul>
-<p>Qdrant self-hosted on a $20/month VPS is our pick when pgvector is not enough but Pinecone's minimum bill feels premature. See our <a href="/blog/rag-vs-fine-tuning-when-to-use-which/">RAG vs fine-tuning</a> guide if you are not sure retrieval is the right approach at all.</p>
+<p>Qdrant self-hosted on a low-cost VPS is our pick when pgvector is not enough but Pinecone's minimum bill feels premature. See our <a href="/blog/rag-vs-fine-tuning-when-to-use-which/">RAG vs fine-tuning</a> guide if you are not sure retrieval is the right approach at all.</p>
 
 <h2>What about the backend, frontend, and hosting?</h2>
 <p>Opinionated defaults that ship fast:</p>
 <p><strong>Backend.</strong> FastAPI (Python) if your team is Python-heavy or your AI pipeline is Python-native. Next.js API routes or Hono (TypeScript) if your team is TypeScript-heavy and you want one repo for everything. Both ship 4-week MVPs fine.</p>
 <p><strong>Frontend.</strong> Next.js is the default. App Router, Server Components, Tailwind, shadcn/ui. It covers auth, SEO, streaming AI responses, and hosting on Vercel in one coherent stack. Vite plus React is a fine alternative for SPA-style apps without SSR needs.</p>
-<p><strong>Hosting.</strong> Vercel for Next.js apps (zero-config deploys, great DX, cost-effective up to roughly $100 a month). Railway or Fly for FastAPI backends (Dockerized, $5 to $30 a month, no vendor lock). AWS or GCP only if you have a compliance or existing-infra reason to. For the workflow-automation layer, our <a href="/blog/best-workflow-automation-tools-2026/">2026 comparison of n8n, Zapier, Step Functions, and others</a> covers that decision separately.</p>
+<p><strong>Hosting.</strong> Vercel for Next.js apps (zero-config deploys, great DX, cost-effective at MVP scale). Railway or Fly for FastAPI backends (Dockerized, low monthly cost, no vendor lock). AWS or GCP only if you have a compliance or existing-infra reason to. For the workflow-automation layer, our <a href="/blog/best-workflow-automation-tools-2026/">2026 comparison of n8n, Zapier, Step Functions, and others</a> covers that decision separately.</p>
 <p>Our <a href="/hire/fullstack-developers/">fullstack developers</a> ship this shape of stack in 4-week sprints routinely. The key is not fighting the stack: pick the defaults and ship the product.</p>
 
 <h2>How do you skip building auth, payments, and email?</h2>
@@ -46,7 +46,7 @@ const post: BlogPost = {
 <p><strong>Auth.</strong> Clerk is the fastest by a wide margin. Drop-in UI, social logins, multi-factor, org support, and reasonable pricing up to 10k monthly active users. Supabase Auth is a fine alternative if you are already on Supabase. Auth.js (next-auth) for more control, but it will cost you a day or two of setup you probably do not have.</p>
 <p><strong>Payments.</strong> Stripe for subscription and usage billing. Paddle or Lemon Squeezy if you want a merchant-of-record setup (they handle VAT and sales tax globally). Integrating any of these takes under a day, building your own is weeks of PCI-adjacent pain.</p>
 <p><strong>Transactional email.</strong> Resend is our default: clean API, React email templates, generous free tier. Postmark for deliverability-critical use cases (password resets, receipts). AWS SES if you already run AWS heavily and want the lowest per-email cost.</p>
-<p>Combined cost at MVP stage: under $50 a month for all three, probably under $20 if you are on free tiers.</p>
+<p>Combined cost at MVP stage: low for all three, often close to free if you stay on free tiers.</p>
 
 <h2>What observability is worth the setup time at MVP stage?</h2>
 <p>Most observability tools are overkill for an MVP. The three that are worth the setup time on day one:</p>
@@ -56,23 +56,23 @@ const post: BlogPost = {
 <p>Skip: OpenTelemetry (too much setup work for MVP), Datadog (too expensive), custom dashboards (you will not look at them).</p>
 
 <h2>How do costs add up for a typical 4-week MVP?</h2>
-<p>Rough month-one total for a typical AI MVP on the stack above:</p>
+<p>Rough month-one cost shape for a typical AI MVP on the stack above:</p>
 <table>
   <thead>
-    <tr><th>Category</th><th>Tool</th><th>Typical MVP cost/month</th></tr>
+    <tr><th>Category</th><th>Tool</th><th>Typical MVP cost shape</th></tr>
   </thead>
   <tbody>
-    <tr><td>LLM provider</td><td>Claude or GPT-class</td><td>$20 to $150 (eval + early user volume)</td></tr>
-    <tr><td>Backend hosting</td><td>Railway or Fly</td><td>$5 to $30</td></tr>
-    <tr><td>Frontend hosting</td><td>Vercel</td><td>$0 to $20 (Hobby or Pro start)</td></tr>
-    <tr><td>Database</td><td>Supabase or Neon</td><td>$0 to $25</td></tr>
-    <tr><td>Vector DB</td><td>pgvector (in Postgres) or Qdrant VPS</td><td>$0 (included) or $20</td></tr>
-    <tr><td>Auth</td><td>Clerk</td><td>$0 (free tier covers MVP)</td></tr>
-    <tr><td>Payments</td><td>Stripe</td><td>$0 + 2.9% per txn</td></tr>
-    <tr><td>Email</td><td>Resend</td><td>$0 (free 3k emails/mo)</td></tr>
-    <tr><td>LLM observability</td><td>Langfuse Cloud</td><td>$0 (free tier)</td></tr>
-    <tr><td>Error tracking</td><td>Sentry free</td><td>$0</td></tr>
-    <tr><td><strong>Total</strong></td><td></td><td><strong>~$25 to $250/mo</strong></td></tr>
+    <tr><td>LLM provider</td><td>Claude or GPT-class</td><td>Scales with eval and early user volume</td></tr>
+    <tr><td>Backend hosting</td><td>Railway or Fly</td><td>Low, usage-based</td></tr>
+    <tr><td>Frontend hosting</td><td>Vercel</td><td>Free tier to start, low cost beyond</td></tr>
+    <tr><td>Database</td><td>Supabase or Neon</td><td>Free tier to start, low cost beyond</td></tr>
+    <tr><td>Vector DB</td><td>pgvector (in Postgres) or Qdrant VPS</td><td>Included or low-cost VPS</td></tr>
+    <tr><td>Auth</td><td>Clerk</td><td>Free tier covers MVP</td></tr>
+    <tr><td>Payments</td><td>Stripe</td><td>Free plus standard per-transaction fee</td></tr>
+    <tr><td>Email</td><td>Resend</td><td>Free tier covers MVP volume</td></tr>
+    <tr><td>LLM observability</td><td>Langfuse Cloud</td><td>Free tier</td></tr>
+    <tr><td>Error tracking</td><td>Sentry free</td><td>Free tier</td></tr>
+    <tr><td><strong>Total</strong></td><td></td><td><strong>Low, driven mostly by LLM volume</strong></td></tr>
   </tbody>
 </table>
 <p>LLM spend is the only line that scales unpredictably with usage. The rest is effectively fixed-cost through the first 1,000 users. Build the product, then optimize.</p>
@@ -91,12 +91,12 @@ const post: BlogPost = {
 </ul>
 
 <h2>The shortest version</h2>
-<p>Pick boring for everything except the AI feature. Clerk for auth, Stripe for payments, Resend for email, Supabase or Neon for Postgres, pgvector for retrieval, Vercel or Railway for hosting, the Anthropic or OpenAI SDK directly (no framework), Langfuse for LLM observability, Sentry for errors. Total infra under $250 a month for a typical MVP through the first thousand users. If you want a developer who already ships this stack in 4-week sprints, our <a href="/hire/fullstack-developers/">fullstack engineers</a> and <a href="/hire/ai-developers/">AI developers</a> have done this across dozens of MVPs. For the broader picture of taking a SaaS product from MVP to revenue, see our <a href="/blog/saas-web-application-development-guide-startups-2026/">SaaS web application development guide for startups</a>. <a href="/contact/">Get in touch</a> and we will scope your build.</p>`,
+<p>Pick boring for everything except the AI feature. Clerk for auth, Stripe for payments, Resend for email, Supabase or Neon for Postgres, pgvector for retrieval, Vercel or Railway for hosting, the Anthropic or OpenAI SDK directly (no framework), Langfuse for LLM observability, Sentry for errors. Total infra stays low for a typical MVP through the first thousand users. If you want a developer who already ships this stack in 4-week sprints, our <a href="/hire/fullstack-developers/">fullstack engineers</a> and <a href="/hire/ai-developers/">AI developers</a> have done this across dozens of MVPs. For the broader picture of taking a SaaS product from MVP to revenue, see our <a href="/blog/saas-web-application-development-guide-startups-2026/">SaaS web application development guide for startups</a>. <a href="/contact/">Get in touch</a> and we will scope your build.</p>`,
   "slug": "ai-mvp-tech-stack-2026",
   "image": "/images/blog/ai-mvp-tech-stack-2026.webp",
   "title": "The AI MVP Tech Stack in 2026: What We Actually Ship With (and What We Skip)",
   seoTitle: "The AI MVP Tech Stack in 2026",
-  "excerpt": "The exact tool-by-tool stack we use to ship an AI MVP in 4 weeks. Clerk for auth, Stripe for payments, Resend for email, Supabase or Neon for Postgres, pgvector for retrieval, Vercel or Railway for hosting, Anthropic or OpenAI SDK direct. Total infra under $250 a month through the first 1,000 users.",
+  "excerpt": "The exact tool-by-tool stack we use to ship an AI MVP in 4 weeks. Clerk for auth, Stripe for payments, Resend for email, Supabase or Neon for Postgres, pgvector for retrieval, Vercel or Railway for hosting, Anthropic or OpenAI SDK direct. Total infra stays low through the first 1,000 users.",
   "tldr": "Pick boring, battle-tested services for everything except the AI feature: Clerk for auth, Resend for email, Stripe for payments, Supabase or Neon for Postgres, pgvector for retrieval, Vercel or Railway for hosting, and the Anthropic or OpenAI SDK directly without a framework. That stack ships a working AI MVP in 4 weeks for 25 to 250 dollars a month of infra, leaving engineering time for the actual differentiation.",
   "category": "engineering",
   "categoryLabel": "Engineering",
@@ -104,9 +104,9 @@ const post: BlogPost = {
   "authorRole": "Founder & Solution Architect",
   "publishedAt": "2026-04-24",
   "readTime": 10,
-  "metaDescription": "A tool-by-tool guide to the AI MVP tech stack we ship with in 2026. LLM provider, framework (or none), vector DB, backend, frontend, hosting, auth, payments, email, and observability, with monthly cost breakdown under $250.",
+  "metaDescription": "A tool-by-tool guide to the AI MVP tech stack we ship with in 2026. LLM provider, framework (or none), vector DB, backend, frontend, hosting, auth, payments, email, and observability, with a monthly cost breakdown.",
   "ogTitle": "The AI MVP Tech Stack in 2026 (and What We Skip)",
-  "ogDescription": "The exact tool-by-tool stack we use to ship AI MVPs in 4 weeks. Total infra under $250 a month through the first 1,000 users.",
+  "ogDescription": "The exact tool-by-tool stack we use to ship AI MVPs in 4 weeks. Total infra stays low through the first 1,000 users.",
   "keywords": [
     "ai mvp tech stack 2026",
     "best tools for ai mvp",
@@ -134,7 +134,7 @@ const post: BlogPost = {
     },
     {
       "q": "How much does an AI MVP cost per month to run?",
-      "a": "Typically $25 to $250 a month for all infra and third-party services through the first 1,000 users. LLM API cost is the only line that scales unpredictably. Everything else (hosting, database, auth, payments, email, observability) is effectively fixed-cost on free or cheap tiers at MVP stage."
+      "a": "Typically a low monthly figure for all infra and third-party services through the first 1,000 users. LLM API cost is the only line that scales unpredictably. Everything else (hosting, database, auth, payments, email, observability) is effectively fixed-cost on free or cheap tiers at MVP stage."
     },
     {
       "q": "Should I build my own auth for an AI MVP?",

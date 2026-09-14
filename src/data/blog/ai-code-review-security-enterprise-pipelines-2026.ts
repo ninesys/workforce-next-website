@@ -117,7 +117,7 @@ const post: BlogPost = {
 
 <h2>What are the cost implications of AI code review?</h2>
 
-<p>AI code review costs vary significantly based on codebase size and review frequency. Here's 2026 enterprise pricing:</p>
+<p>AI code review costs vary significantly based on codebase size and review frequency. The pattern holds directionally at every scale:</p>
 
 <table>
 <thead>
@@ -131,30 +131,30 @@ const post: BlogPost = {
 <tbody>
 <tr>
 <td>50 developers</td>
-<td>$180,000/year</td>
-<td>$95,000/year</td>
-<td>$85,000/year</td>
+<td>Highest</td>
+<td>Meaningfully lower</td>
+<td>Substantial</td>
 </tr>
 <tr>
 <td>200 developers</td>
-<td>$720,000/year</td>
-<td>$340,000/year</td>
-<td>$380,000/year</td>
+<td>Higher still</td>
+<td>Meaningfully lower</td>
+<td>Larger in absolute terms</td>
 </tr>
 <tr>
 <td>500+ developers</td>
-<td>$1.8M/year</td>
-<td>$780,000/year</td>
-<td>$1.02M/year</td>
+<td>Highest</td>
+<td>Meaningfully lower</td>
+<td>Largest in absolute terms</td>
 </tr>
 </tbody>
 </table>
 
 <p>These numbers assume:</p>
 <ul>
-<li>Senior security engineer time at $250,000 to 380,000 fully loaded</li>
-<li>AI API costs at $0.15 to $0.30 per 1,000 lines of code reviewed</li>
-<li>25% reduction in security engineer time spent on routine reviews</li>
+<li>Senior security engineer time at a fully loaded market rate</li>
+<li>AI API costs priced per line of code reviewed, a small fraction of engineer time cost</li>
+<li>A meaningful reduction in security engineer time spent on routine reviews</li>
 </ul>
 
 <p>The ROI calculation changes if you factor in prevented security incidents. <a href="https://www.ibm.com/reports/data-breach" rel="noopener">IBM's 2026 Cost of Data Breach report</a> shows the average enterprise data breach costs $4.88 million. If AI code review prevents just one major incident every two years, it pays for itself.</p>
@@ -247,7 +247,7 @@ const post: BlogPost = {
     },
     {
       q: "How much does enterprise AI code review cost compared to manual review?",
-      a: "AI-assisted code review costs 47% to 56% less than manual-only review for teams over 50 developers. A 200-developer team typically saves $380,000 annually, including AI API costs and reduced security engineer time.",
+      a: "AI-assisted code review costs meaningfully less than manual-only review for teams over 50 developers, including AI API costs and reduced security engineer time. The savings scale with team size; we size the specific number on a discovery call.",
       category: "hiring",
       categoryLabel: "Hiring",
     },
