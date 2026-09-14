@@ -80,7 +80,7 @@ const sprintDeliverables = [
 
 const whoFor = [
   { tag: "Series A or B SaaS", line: "Has PMF. Ready to scale organic." },
-  { tag: "Bootstrapped USD 50k+ MRR", line: "Profitable. Done with retainers." },
+  { tag: "Bootstrapped and profitable", line: "Done with retainers." },
   { tag: "Technical pre-PMF", line: "Founder builds. Wants the foundation right." },
   { tag: "Rebrand or reposition", line: "New ICP. Preserve equity. AEO from day one." },
 ];
@@ -131,7 +131,7 @@ const faqItems: FAQ[] = [
   {
     question: "What kind of SaaS fits this sprint?",
     answer:
-      "Series A or B SaaS, bootstrapped SaaS at USD 50k+ MRR, technical pre-PMF startups setting the foundation, and SaaS in a rebrand. Not the best fit for B2C consumer apps or pure paid-acquisition motions with no organic plan.",
+      "Series A or B SaaS, bootstrapped and profitable SaaS, technical pre-PMF startups setting the foundation, and SaaS in a rebrand. Not the best fit for B2C consumer apps or pure paid-acquisition motions with no organic plan.",
     category: "automation",
     categoryLabel: "Automation",
   },

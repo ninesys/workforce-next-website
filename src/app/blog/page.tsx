@@ -16,7 +16,7 @@ const blogIndexFaqLd = {
       name: "How much does a senior developer from India cost in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Senior Indian developers cost USD 5,000 to 8,500 per month all-in (salary, benefits, equipment, and partner team management). Fully loaded equivalent in the US runs USD 14,000 to 19,000 per month, or USD 220,000 to 290,000 per year. The 60 to 70% cost delta is geography, not a quality gap.",
+        text: "Senior Indian developers cost meaningfully less per month all-in (salary, benefits, equipment, and partner team management) than the fully loaded equivalent in the US. The cost delta is geography, not a quality gap. We size the exact rate on a discovery call rather than publish a flat number.",
       },
     },
     {
@@ -248,7 +248,7 @@ export default function BlogPage() {
             {[
               {
                 q: "How much does a senior developer from India cost in 2026?",
-                a: "Senior Indian developers cost USD 5,000 to 8,500 per month all-in (salary, benefits, equipment, and partner team management). Fully loaded equivalent in the US runs USD 14,000 to 19,000 per month, or USD 220,000 to 290,000 per year. The 60 to 70% cost delta is geography, not a quality gap.",
+                a: "Senior Indian developers cost meaningfully less per month all-in (salary, benefits, equipment, and partner team management) than the fully loaded equivalent in the US. The cost delta is geography, not a quality gap. We size the exact rate on a discovery call rather than publish a flat number.",
               },
               {
                 q: "How long does it take to hire a dedicated developer from India?",
