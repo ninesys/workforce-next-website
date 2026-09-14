@@ -166,7 +166,7 @@ const faqItems: FAQ[] = [
   {
     question: "How much does it cost to hire a Java developer from India?",
     answer:
-      "Mid-level Java developers from India cost USD 4,500 to 7,000 per month for full-time engagement. Senior engineers with Spring Boot, microservices, or fintech depth range from USD 6,500 to 10,000 per month. Pricing includes engineering manager oversight and PTO backup.",
+      "Mid-level Java developers from India cost less than senior engineers with Spring Boot, microservices, or fintech depth, as expected. Pricing includes engineering manager oversight and PTO backup, and we size the exact rate on a discovery call rather than publish a flat number.",
     category: "hiring",
     categoryLabel: "Hiring",
   },

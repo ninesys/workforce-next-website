@@ -164,7 +164,7 @@ const faqItems: FAQ[] = [
   {
     question: "How much does it cost to hire an MLOps engineer from India?",
     answer:
-      "Mid-level MLOps engineers from India cost USD 5,500 to 8,000 per month for full-time engagement. Senior engineers with LLMOps, GPU operations, or large-scale platform experience range from USD 7,500 to 11,000 per month. Pricing reflects specialist scarcity.",
+      "Mid-level MLOps engineers from India cost less than senior engineers with LLMOps, GPU operations, or large-scale platform experience. Pricing reflects specialist scarcity, and we size the exact rate on a discovery call rather than publish a flat number.",
     category: "ai",
     categoryLabel: "AI",
   },

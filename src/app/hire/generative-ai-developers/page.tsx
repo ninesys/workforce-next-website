@@ -164,7 +164,7 @@ const faqItems: FAQ[] = [
   {
     question: "How much does it cost to hire a generative AI developer from India?",
     answer:
-      "Mid-level GenAI developers from India cost USD 5,000 to 7,500 per month for full-time engagement. Senior engineers with production LLM, eval, and fine-tuning depth range from USD 7,000 to 11,000 per month. Pricing reflects the specialist nature of the role. Includes engineering manager oversight and PTO backup.",
+      "Mid-level GenAI developers from India cost less than senior engineers with production LLM, eval, and fine-tuning depth, as expected. Pricing reflects the specialist nature of the role and includes engineering manager oversight and PTO backup. We size the exact rate on a discovery call rather than publish a flat number.",
     category: "ai",
     categoryLabel: "AI",
   },

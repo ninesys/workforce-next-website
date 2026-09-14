@@ -164,7 +164,7 @@ const faqItems: FAQ[] = [
   {
     question: "How much does it cost to hire a chatbot developer from India?",
     answer:
-      "Mid-level chatbot developers from India cost USD 4,000 to 6,500 per month for full-time engagement. Senior engineers with RAG, multi-channel, or voice agent experience range from USD 6,000 to 9,000 per month. Pricing includes engineering manager oversight and PTO backup.",
+      "Mid-level chatbot developers from India cost less than senior engineers with RAG, multi-channel, or voice agent experience, as expected. Pricing includes engineering manager oversight and PTO backup, and we size the exact rate on a discovery call rather than publish a flat number.",
     category: "ai",
     categoryLabel: "AI",
   },

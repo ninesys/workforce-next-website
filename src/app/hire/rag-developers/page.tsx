@@ -199,7 +199,7 @@ const faqItems: FAQ[] = [
   {
     question: "How much does it cost to hire a RAG developer in India?",
     answer:
-      "Mid-level RAG developers in India typically cost between 4,500 and 7,000 USD per month for full-time engagement. Senior engineers with production retrieval experience and evaluation depth range from 7,000 to 10,500 USD per month. Pricing at Workforce Next includes an engineering manager, context docs, and PTO backup coverage.",
+      "Mid-level RAG developers in India cost less than senior engineers with production retrieval experience and evaluation depth, as expected. Pricing at Workforce Next includes an engineering manager, context docs, and PTO backup coverage, and we size the exact rate on a discovery call rather than publish a flat number.",
     category: "hiring",
     categoryLabel: "Hiring",
   },

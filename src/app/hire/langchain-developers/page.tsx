@@ -198,7 +198,7 @@ const faqItems: FAQ[] = [
   {
     question: "How much does it cost to hire a LangChain developer in India?",
     answer:
-      "Mid-level LangChain developers in India typically cost between 4,500 and 7,000 USD per month for full-time engagement. Senior engineers with LangGraph, LangSmith, and production LLM experience range from 7,000 to 10,500 USD per month. Pricing at Workforce Next includes an engineering manager, context docs, and PTO backup coverage.",
+      "Mid-level LangChain developers in India cost less than senior engineers with LangGraph, LangSmith, and production LLM experience, as expected. Pricing at Workforce Next includes an engineering manager, context docs, and PTO backup coverage, and we size the exact rate on a discovery call rather than publish a flat number.",
     category: "hiring",
     categoryLabel: "Hiring",
   },

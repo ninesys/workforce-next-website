@@ -208,14 +208,14 @@ const faqItems: FAQ[] = [
   {
     question: "How much does it cost to hire a Unity developer in India in 2026?",
     answer:
-      "Mid-level Unity developers in India typically cost between USD 4,000 and 6,500 per month all-in. Senior Unity engineers with shipped games on App Store, Google Play, or Steam range from USD 6,500 to 9,500 per month. Tech leads who have run a 5+ engineer Unity team cost USD 9,000 to 12,500 per month. Pricing at Workforce Next includes an engineering manager and PTO backup coverage.",
+      "Mid-level Unity developers in India cost less than senior Unity engineers with shipped games on App Store, Google Play, or Steam, and tech leads who have run a 5+ engineer Unity team cost more still. Pricing at Workforce Next includes an engineering manager and PTO backup coverage, and we size the exact rate on a discovery call rather than publish a flat number.",
     category: "hiring",
     categoryLabel: "Hiring",
   },
   {
     question: "How much does it cost to hire a Unity game developer in the US compared to India?",
     answer:
-      "A US senior Unity developer fully loaded costs roughly USD 220,000 to 320,000 per year (base salary plus benefits, payroll tax, equity, office). The Indian equivalent runs USD 78,000 to 114,000 per year all-in to the customer. The annual gap of roughly USD 150,000 per engineer is the primary driver of US studios hiring Unity offshore.",
+      "A US senior Unity developer fully loaded costs substantially more than the Indian equivalent (base salary plus benefits, payroll tax, equity, office all included on the US side). That annual gap per engineer is the primary driver of US studios hiring Unity offshore.",
     category: "hiring",
     categoryLabel: "Hiring",
   },

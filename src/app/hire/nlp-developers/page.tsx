@@ -164,7 +164,7 @@ const faqItems: FAQ[] = [
   {
     question: "How much does it cost to hire an NLP developer from India?",
     answer:
-      "Mid-level NLP developers from India cost USD 5,000 to 7,500 per month for full-time engagement. Senior engineers with LLM fine-tuning, multilingual, or domain-specific production experience range from USD 7,000 to 10,000 per month.",
+      "Mid-level NLP developers from India cost less than senior engineers with LLM fine-tuning, multilingual, or domain-specific production experience. We size the exact rate on a discovery call rather than publish a flat number.",
     category: "ai",
     categoryLabel: "AI",
   },
@@ -192,7 +192,7 @@ const faqItems: FAQ[] = [
   {
     question: "What about fine-tuning costs?",
     answer:
-      "LoRA fine-tuning of open-weight models (Llama, Mistral) is affordable: USD 100 to 1,000 per training run depending on dataset size. Fine-tuning GPT-4 or Claude via API is more expensive per training run but eliminates inference deployment work. Our engineers help you pick.",
+      "LoRA fine-tuning of open-weight models (Llama, Mistral) is affordable and scales with dataset size. Fine-tuning GPT-4 or Claude via API is more expensive per training run but eliminates inference deployment work. Our engineers help you pick.",
     category: "ai",
     categoryLabel: "AI",
   },

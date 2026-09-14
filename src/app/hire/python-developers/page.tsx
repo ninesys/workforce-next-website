@@ -204,7 +204,7 @@ const faqItems: FAQ[] = [
   {
     question: "How much does it cost to hire a Python developer from India?",
     answer:
-      "Mid-level Python developers from India cost USD 4,000 to 6,500 per month for full-time engagement. Senior engineers with FastAPI, ML, or data engineering depth range from USD 5,500 to 8,500 per month. Pricing includes engineering manager oversight, context documentation, and PTO backup.",
+      "Mid-level Python developers from India cost less than senior engineers with FastAPI, ML, or data engineering depth, as expected. Pricing includes engineering manager oversight, context documentation, and PTO backup, and we size the exact rate on a discovery call rather than publish a flat number.",
     category: "hiring",
     categoryLabel: "Hiring",
   },

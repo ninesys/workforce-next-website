@@ -164,7 +164,7 @@ const faqItems: FAQ[] = [
   {
     question: "How much does it cost to hire a software engineer from India?",
     answer:
-      "Mid-level software engineers from India cost USD 3,500 to 6,000 per month for full-time engagement. Senior engineers (5+ years) range from USD 5,500 to 8,500 per month. Specialist roles (AI, ML, Cloud, deep mobile) range from USD 6,500 to 10,000. Pricing includes engineering manager oversight and PTO backup.",
+      "Mid-level software engineers from India cost less than senior engineers (5+ years), and specialist roles (AI, ML, Cloud, deep mobile) cost more still. Pricing includes engineering manager oversight and PTO backup, and we size the exact rate on a discovery call rather than publish a flat number.",
     category: "hiring",
     categoryLabel: "Hiring",
   },

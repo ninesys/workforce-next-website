@@ -115,7 +115,7 @@ const faqItems: FAQ[] = [
   {
     question: "How much does it cost to hire a product engineer in India?",
     answer:
-      "Mid-level product engineers in India typically cost between 4,000 and 7,000 USD per month for full-time engagement. Senior engineers with deep industry expertise (fintech, healthtech, logistics) range from 7,000 to 11,000 USD per month. Pricing at Workforce Next includes an engineering manager, context docs, and PTO backup coverage.",
+      "Mid-level product engineers in India cost less than senior engineers with deep industry expertise (fintech, healthtech, logistics), as expected. Pricing at Workforce Next includes an engineering manager, context docs, and PTO backup coverage, and we size the exact rate on a discovery call rather than publish a flat number.",
     category: "hiring",
     categoryLabel: "Hiring",
   },

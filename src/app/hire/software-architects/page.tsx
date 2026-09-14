@@ -164,7 +164,7 @@ const faqItems: FAQ[] = [
   {
     question: "How much does it cost to hire a software architect from India?",
     answer:
-      "Software architects from India cost USD 7,000 to 12,000 per month for full-time engagement. Fractional engagements (10-20 hours/week) cost USD 3,500 to 6,500 per month. Architecture review engagements (1-4 weeks) range from USD 5,000 to 25,000 depending on scope. Pricing reflects the seniority and judgment required.",
+      "Software architects from India are priced for full-time engagement, with fractional and architecture-review engagements quoted separately based on scope. Pricing reflects the seniority and judgment required, and we size the exact rate on a discovery call rather than publish a flat number.",
     category: "hiring",
     categoryLabel: "Hiring",
   },

@@ -200,7 +200,7 @@ const faqItems: FAQ[] = [
   {
     question: "How much does it cost to hire an AI developer in India?",
     answer:
-      "Mid-level AI developers in India typically cost between 4,500 and 7,000 USD per month for full-time engagement. Senior engineers with production LLM experience, agent orchestration, and evaluation depth range from 7,000 to 11,000 USD per month. At Workforce Next, pricing includes an engineering manager, context docs, and backup coverage, which most competitors bill for separately.",
+      "Mid-level AI developers in India cost less than senior engineers with production LLM experience, agent orchestration, and evaluation depth, as you'd expect. At Workforce Next, pricing includes an engineering manager, context docs, and backup coverage, which most competitors bill for separately. We quote the exact rate on a discovery call rather than publish a flat number, since it depends on role depth and scope.",
     category: "hiring",
     categoryLabel: "Hiring",
   },

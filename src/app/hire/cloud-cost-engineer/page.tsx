@@ -85,7 +85,7 @@ const responsibilities = [
 
 const whenToHire = [
   {
-    scenario: "Your cloud bill is above $50K/month and growing faster than revenue",
+    scenario: "Your cloud bill is large and growing faster than revenue",
     recommendation: "Hire a cloud cost engineer immediately",
     reason:
       "At this scale, a specialist usually saves more in the first quarter than they cost for the year. Delay is literal money left on the table. The ROI math rarely fails.",
@@ -97,7 +97,7 @@ const whenToHire = [
       "Kubernetes waste hides in plain sight: overprovisioned requests, lazy HPA, expensive node pools, egress traffic. A specialist who has done this before will find and fix the patterns quickly.",
   },
   {
-    scenario: "Your spend is under $10K/month and relatively flat",
+    scenario: "Your spend is modest and relatively flat",
     recommendation: "A DevOps or SRE engineer is usually enough",
     reason:
       "At low spend, the absolute dollar savings from a dedicated cost specialist rarely justify the hire. A DevOps engineer with basic FinOps awareness and a weekly dashboard review is usually enough.",
@@ -161,7 +161,7 @@ const engagementModels = [
   {
     name: "Full-time dedicated",
     hours: "40 hours per week",
-    best: "Best for organizations with $50K+ monthly spend, complex workloads, and continuous optimization opportunities.",
+    best: "Best for organizations with large monthly spend, complex workloads, and continuous optimization opportunities.",
     includes:
       "Dedicated engineer, engineering manager check-ins, PTO backup coverage, quarterly executive summaries.",
   },
@@ -212,7 +212,7 @@ const faqItems: FAQ[] = [
   {
     question: "What is the difference between a FinOps engineer and a DevOps engineer?",
     answer:
-      "DevOps engineers focus on delivery, reliability, and automation. FinOps engineers focus on cost visibility, efficiency, and commitment strategy. The overlap is real but the day-to-day priorities differ. A DevOps engineer might not notice that NAT gateways are costing $8K/month; a FinOps engineer finds that in the first week. For teams spending more than $30K/month on cloud, both roles create distinct value.",
+      "DevOps engineers focus on delivery, reliability, and automation. FinOps engineers focus on cost visibility, efficiency, and commitment strategy. The overlap is real but the day-to-day priorities differ. A DevOps engineer might not notice that NAT gateways are quietly costing real money; a FinOps engineer finds that in the first week. For teams with meaningful cloud spend, both roles create distinct value.",
     category: "hiring",
     categoryLabel: "Hiring",
   },
@@ -282,7 +282,7 @@ export default function HireCloudCostEngineerPage() {
             Hire Cloud Cost Engineers from India
           </h1>
           <p className="mt-4 text-lg text-dark-700 dark:text-dark-200 max-w-2xl">
-            Pre-vetted FinOps engineers who typically save 30 to 60 percent on
+            Pre-vetted FinOps engineers who deliver measurable savings on
             monthly cloud bills across AWS, Azure, and GCP. Screened by
             SethAI for technical depth and long-term fit.
           </p>
@@ -307,8 +307,8 @@ export default function HireCloudCostEngineerPage() {
             <p>
               Most engineering roles are an investment in future output. A
               cloud cost engineer is different: the ROI is measurable in the
-              same quarter they start. For companies spending $30K a month or
-              more on cloud, a specialist routinely finds 30 to 60 percent
+              same quarter they start. For companies with meaningful
+              monthly cloud spend, a specialist routinely finds
               savings. That is more than the role costs, usually by a
               significant multiple, and the savings compound month after
               month.
@@ -317,11 +317,11 @@ export default function HireCloudCostEngineerPage() {
               The catch is that real FinOps work requires depth across
               architecture, Kubernetes, data transfer, commitment planning,
               and organizational communication. It is not a dashboard job. A
-              generalist with some AWS knowledge will cut 10 percent and call
-              it done. A specialist will find the hidden patterns: NAT
-              gateways running $8K a month for no reason, oversized databases
-              that nobody benchmarked, Kubernetes clusters at 20 percent
-              utilization, expensive queries running every five minutes that
+              generalist with some AWS knowledge will make a surface-level
+              cut and call it done. A specialist will find the hidden patterns: NAT
+              gateways quietly running up a bill for no reason, oversized databases
+              that nobody benchmarked, Kubernetes clusters badly under
+              utilized, expensive queries running every five minutes that
               nobody needs.
             </p>
             <p>

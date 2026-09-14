@@ -205,7 +205,7 @@ const faqItems: FAQ[] = [
   {
     question: "How much does it cost to hire a DevOps engineer from India?",
     answer:
-      "Full-time senior DevOps and SRE engineers in India typically cost between 6,000 and 11,000 USD per month, all-in to the client. Pricing depends on stack depth, multi-cloud requirements, and whether the engagement includes on-call coverage. Follow-the-Sun pods are quoted separately because they involve at least two engineers per timezone block. The full pricing breakdown for senior India hires is in our senior Indian developer salary 2026 post.",
+      "Full-time senior DevOps and SRE engineers in India are priced based on stack depth, multi-cloud requirements, and whether the engagement includes on-call coverage. Follow-the-Sun pods are quoted separately because they involve at least two engineers per timezone block. We size the exact rate on a discovery call rather than publish a flat number.",
     category: "hiring",
     categoryLabel: "Hiring",
   },
@@ -313,8 +313,8 @@ export default function HireDevOpsEngineersPage() {
           </h2>
           <div className="space-y-4 text-dark-600 dark:text-dark-200 leading-relaxed">
             <p>
-              The fully loaded cost of a senior US DevOps lead now runs
-              $220,000 to $300,000 a year. For most mid-market companies, that
+              The fully loaded cost of a senior US DevOps lead has climbed
+              steadily. For most mid-market companies, that
               is more than they can justify for a single hire, especially when
               the role often involves quiet weeks punctuated by 3 a.m. pages.
               The math has been pushing platform work offshore for two years,

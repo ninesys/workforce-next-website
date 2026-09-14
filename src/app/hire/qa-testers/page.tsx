@@ -112,7 +112,7 @@ const faqItems: FAQ[] = [
   {
     question: "How much does it cost to hire a QA engineer in India?",
     answer:
-      "Mid-level QA engineers in India typically cost between 2,800 and 4,500 USD per month for full-time engagement. Senior automation engineers with performance and security testing depth range from 4,500 to 7,500 USD per month. Pricing at Workforce Next includes an engineering manager, context docs, and PTO backup coverage.",
+      "Mid-level QA engineers in India cost less than senior automation engineers with performance and security testing depth, as expected. Pricing at Workforce Next includes an engineering manager, context docs, and PTO backup coverage, and we size the exact rate on a discovery call rather than publish a flat number.",
     category: "hiring",
     categoryLabel: "Hiring",
   },

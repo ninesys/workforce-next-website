@@ -199,7 +199,7 @@ const faqItems: FAQ[] = [
   {
     question: "How much does it cost to hire a data engineer in India?",
     answer:
-      "Mid-level data engineers in India typically cost between 4,000 and 6,500 USD per month for full-time engagement. Senior engineers with production lakehouse, streaming, or multi-warehouse experience range from 6,500 to 10,000 USD per month. Pricing at Workforce Next includes an engineering manager, context docs, and PTO backup coverage.",
+      "Mid-level data engineers in India cost less than senior engineers with production lakehouse, streaming, or multi-warehouse experience, as expected. Pricing at Workforce Next includes an engineering manager, context docs, and PTO backup coverage, and we size the exact rate on a discovery call rather than publish a flat number.",
     category: "hiring",
     categoryLabel: "Hiring",
   },

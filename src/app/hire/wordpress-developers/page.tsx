@@ -166,7 +166,7 @@ const faqItems: FAQ[] = [
   {
     question: "How much does it cost to hire a WordPress developer from India?",
     answer:
-      "Mid-level WordPress developers from India cost USD 3,000 to 5,000 per month for full-time engagement. Senior engineers with Gutenberg, WooCommerce, or headless WP depth range from USD 4,500 to 7,000 per month. Pricing includes engineering manager oversight and PTO backup.",
+      "Mid-level WordPress developers from India cost less than senior engineers with Gutenberg, WooCommerce, or headless WP depth, as expected. Pricing includes engineering manager oversight and PTO backup, and we size the exact rate on a discovery call rather than publish a flat number.",
     category: "hiring",
     categoryLabel: "Hiring",
   },

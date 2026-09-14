@@ -204,7 +204,7 @@ const faqItems: FAQ[] = [
   {
     question: "How much does it cost to hire a vibe-code engineer in India?",
     answer:
-      "Full-time senior vibe-code engineers in India typically cost between 5,500 and 9,000 USD per month. Audit engagements usually run 2 to 4 weeks at a fixed fee. Pricing at Workforce Next includes an engineering manager, context docs, and PTO backup coverage. Most customers see ROI through reduced bug rework, faster PR review cycles, and avoided production incidents.",
+      "Full-time senior vibe-code engineers in India are priced for the engagement, and audit engagements usually run 2 to 4 weeks at a fixed fee. Pricing at Workforce Next includes an engineering manager, context docs, and PTO backup coverage. Most customers see ROI through reduced bug rework, faster PR review cycles, and avoided production incidents. We size the exact rate on a discovery call rather than publish a flat number.",
     category: "hiring",
     categoryLabel: "Hiring",
   },

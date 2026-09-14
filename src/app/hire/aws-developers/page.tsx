@@ -106,7 +106,7 @@ const whenToHire = [
     scenario: "Cutting an out-of-control AWS bill",
     recommendation: "Hire a Cloud Cost Engineer (see /hire/cloud-cost-engineer/)",
     reason:
-      "Cost engineering is its own discipline. FinOps tagging, Savings Plans modeling, right-sizing, idle cleanup. A general AWS engineer can help but a specialist will find 30-50% savings faster.",
+      "Cost engineering is its own discipline. FinOps tagging, Savings Plans modeling, right-sizing, idle cleanup. A general AWS engineer can help but a specialist will find meaningful savings faster.",
   },
   {
     scenario: "Occasional AWS work next to a strong DevOps team",
@@ -166,7 +166,7 @@ const faqItems: FAQ[] = [
   {
     question: "How much does it cost to hire an AWS developer from India?",
     answer:
-      "Mid-level AWS developers from India cost USD 4,500 to 7,000 per month for full-time engagement. Senior engineers with Solutions Architect certification, IaC depth, or platform-engineering experience range from USD 6,500 to 10,000 per month. Pricing includes engineering manager oversight and PTO backup.",
+      "Mid-level AWS developers from India cost less than senior engineers with Solutions Architect certification, IaC depth, or platform-engineering experience, as expected for the deeper skill set. Pricing includes engineering manager oversight and PTO backup, and we size the exact rate on a discovery call rather than publish a flat number.",
     category: "hiring",
     categoryLabel: "Hiring",
   },
@@ -187,7 +187,7 @@ const faqItems: FAQ[] = [
   {
     question: "Can your AWS engineers help cut our AWS bill?",
     answer:
-      "Yes. Cost engineering is a standard engagement: right-sizing, Savings Plans coverage analysis, Reserved Instance modeling, Compute Optimizer execution, idle resource cleanup, NAT Gateway and data-transfer audits, and FinOps tagging. We have cut customer bills by 30-50% on real workloads. See also our dedicated Cloud Cost Engineer page.",
+      "Yes. Cost engineering is a standard engagement: right-sizing, Savings Plans coverage analysis, Reserved Instance modeling, Compute Optimizer execution, idle resource cleanup, NAT Gateway and data-transfer audits, and FinOps tagging. We have cut customer bills meaningfully on real workloads, and size the opportunity on a discovery call rather than promise a fixed percentage upfront. See also our dedicated Cloud Cost Engineer page.",
     category: "hiring",
     categoryLabel: "Hiring",
   },

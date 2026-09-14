@@ -184,7 +184,7 @@ const faqItems: FAQ[] = [
   {
     question: "How much does it cost to hire a PHP developer from India?",
     answer:
-      "Mid-level PHP developers from India cost USD 3,500 to 5,500 per month for full-time engagement. Senior engineers with Laravel, Symfony, or Magento depth range from USD 5,000 to 7,500 per month. Pricing includes engineering manager oversight and PTO backup.",
+      "Mid-level PHP developers from India cost less than senior engineers with Laravel, Symfony, or Magento depth, as expected. Pricing includes engineering manager oversight and PTO backup, and we size the exact rate on a discovery call rather than publish a flat number.",
     category: "hiring",
     categoryLabel: "Hiring",
   },

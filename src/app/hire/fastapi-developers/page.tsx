@@ -187,7 +187,7 @@ const faqItems: FAQ[] = [
   {
     question: "How much does it cost to hire a FastAPI developer in India?",
     answer:
-      "Mid-level FastAPI developers in India typically cost between 3,500 and 6,000 USD per month for full-time engagement, depending on experience and production track record. Senior engineers with AI or LLM serving experience range from 6,000 to 9,000 USD per month. At Workforce Next, pricing includes an engineering manager, context documentation, and backup coverage, which most competitors charge separately for.",
+      "Mid-level FastAPI developers in India cost less than senior engineers with AI or LLM serving experience, as expected. At Workforce Next, pricing includes an engineering manager, context documentation, and backup coverage, which most competitors charge separately for. We quote the exact rate on a discovery call rather than publish a flat number.",
     category: "hiring",
     categoryLabel: "Hiring",
   },

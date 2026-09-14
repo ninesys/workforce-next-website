@@ -60,7 +60,7 @@ const whyPoints = [
   {
     title: "Senior project manager, fractional cost",
     description:
-      "A US senior project manager fully loaded costs $180,000 to $250,000 a year. Our fractional model gives you the same seniority for 20 to 30 hours a week at a fraction of that. The work that needs to happen still happens; the cost line shrinks.",
+      "A US senior project manager fully loaded costs a substantial annual salary. Our fractional model gives you the same seniority for 20 to 30 hours a week at a fraction of that. The work that needs to happen still happens; the cost line shrinks.",
   },
   {
     title: "Plugs into your existing tools",
@@ -221,7 +221,7 @@ const faqItems: FAQ[] = [
   {
     question: "How much does a fractional project manager cost in 2026?",
     answer:
-      "A fractional project manager from India typically costs USD 3,500 to 5,500 per month at 20 hours per week and USD 5,000 to 7,500 at 30 hours per week, all-in. Full-time runs USD 6,500 to 10,000 per month for senior PMs and USD 9,000 to 12,500 for tech leads who run multiple pods. For comparison, a US senior PM fully loaded costs USD 180,000 to 250,000 a year.",
+      "A fractional project manager from India costs less at 20 hours per week than at 30, and full-time costs more still for senior PMs and more again for tech leads who run multiple pods. For comparison, a US senior PM fully loaded costs a substantial annual salary. We quote exact rates on a discovery call rather than publish flat numbers.",
     category: "hiring",
     categoryLabel: "Hiring",
   },

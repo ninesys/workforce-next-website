@@ -209,7 +209,7 @@ const faqItems: FAQ[] = [
   {
     question: "How much does it cost to hire a Node.js developer from India?",
     answer:
-      "Mid-level Node.js developers from India cost between USD 4,000 and 6,500 per month for full-time engagement. Senior engineers with NestJS, microservices, or real-time experience range from USD 5,500 to 8,500 per month. Pricing includes engineering manager oversight, context documentation, and PTO backup that most competitors charge separately for.",
+      "Mid-level Node.js developers from India cost less than senior engineers with NestJS, microservices, or real-time experience, as expected. Pricing includes engineering manager oversight, context documentation, and PTO backup that most competitors charge separately for. We quote the exact rate on a discovery call rather than publish a flat number.",
     category: "hiring",
     categoryLabel: "Hiring",
   },

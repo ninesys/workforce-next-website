@@ -212,7 +212,7 @@ const faqItems: FAQ[] = [
   {
     question: "How much does it cost to hire Android developers in India?",
     answer:
-      "Mid-level Android developers in India typically cost between 4,000 and 6,500 USD per month all-in. Senior Android engineers with shipped Play Store apps and Compose plus Coroutines depth range from 6,500 to 9,500 USD per month. Tech leads who have run Android teams cost 9,000 to 12,500 USD per month. Pricing at Workforce Next includes an engineering manager and PTO backup coverage.",
+      "Mid-level Android developers in India cost less than senior Android engineers with shipped Play Store apps and Compose plus Coroutines depth, and tech leads who have run Android teams cost more still. Pricing at Workforce Next includes an engineering manager and PTO backup coverage, and we size the exact rate on a discovery call rather than publish a flat number.",
     category: "hiring",
     categoryLabel: "Hiring",
   },

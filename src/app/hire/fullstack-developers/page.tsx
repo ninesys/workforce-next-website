@@ -201,7 +201,7 @@ const faqItems: FAQ[] = [
     question:
       "How much does it cost to hire a full stack developer in India?",
     answer:
-      "Mid-level full stack developers in India typically cost between 4,000 and 6,500 USD per month for full-time engagement. Senior engineers with AWS production experience and strong React and backend depth range from 6,500 to 10,000 USD per month. At Workforce Next, pricing includes an engineering manager, context documentation, and backup coverage, which most competitors bill for separately.",
+      "Mid-level full stack developers in India cost less than senior engineers with AWS production experience and strong React and backend depth, as expected. At Workforce Next, pricing includes an engineering manager, context documentation, and backup coverage, which most competitors bill for separately. We quote the exact rate on a discovery call rather than publish a flat number.",
     category: "hiring",
     categoryLabel: "Hiring",
   },

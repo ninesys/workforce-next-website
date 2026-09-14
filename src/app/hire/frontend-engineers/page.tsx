@@ -203,14 +203,14 @@ const faqItems: FAQ[] = [
   {
     question: "How much does it cost to hire a frontend engineer in India?",
     answer:
-      "Mid-level frontend engineers in India typically cost between 3,500 and 6,000 USD per month for full-time engagement. Senior engineers with Next.js App Router depth, strong accessibility practice, and design sensibility range from 6,000 to 9,000 USD per month. Pricing at Workforce Next includes an engineering manager, context docs, and PTO backup coverage.",
+      "Mid-level frontend engineers in India cost less than senior engineers with Next.js App Router depth, strong accessibility practice, and design sensibility, as expected. Pricing at Workforce Next includes an engineering manager, context docs, and PTO backup coverage, and we size the exact rate on a discovery call rather than publish a flat number.",
     category: "hiring",
     categoryLabel: "Hiring",
   },
   {
     question: "Do you offer a dedicated ReactJS development service?",
     answer:
-      "Yes. When you ask for a React.js developer specifically, the matched engineer has a production React-heavy track record: hooks fluency, state-management taste, performance budgets, accessibility, and component-library discipline. The same intake covers Next.js, Vite, and component-library work on shadcn/ui or a custom design system. Senior React.js developers from India typically cost between 5,500 and 8,500 USD per month all-in. Shortlist in 48 hours, then a one-week paid trial.",
+      "Yes. When you ask for a React.js developer specifically, the matched engineer has a production React-heavy track record: hooks fluency, state-management taste, performance budgets, accessibility, and component-library discipline. The same intake covers Next.js, Vite, and component-library work on shadcn/ui or a custom design system. Shortlist in 48 hours, then a one-week paid trial.",
     category: "hiring",
     categoryLabel: "Hiring",
   },

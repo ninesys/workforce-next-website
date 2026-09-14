@@ -199,14 +199,14 @@ const faqItems: FAQ[] = [
   {
     question: "How much does it cost to hire a backend engineer in India?",
     answer:
-      "Mid-level backend engineers in India typically cost between 3,500 and 6,500 USD per month for full-time engagement. Senior engineers with production scale experience and distributed systems depth range from 6,500 to 9,500 USD per month. Pricing at Workforce Next includes an engineering manager, context docs, and PTO backup coverage.",
+      "Mid-level backend engineers in India cost less than senior engineers with production scale experience and distributed systems depth, as expected. Pricing at Workforce Next includes an engineering manager, context docs, and PTO backup coverage, and we size the exact rate on a discovery call rather than publish a flat number.",
     category: "hiring",
     categoryLabel: "Hiring",
   },
   {
     question: "How do I hire a Node.js developer specifically?",
     answer:
-      "The same intake process. Tell us you want a Node.js developer and SethAI matches engineers whose production track record is Node-heavy: Express, Fastify, NestJS, Bun, real-time features, TypeScript end-to-end, edge deployments. Senior Node.js developers from India typically cost between 5,500 and 8,500 USD per month all-in. The shortlist comes back in 48 hours and you start with a one-week paid trial.",
+      "The same intake process. Tell us you want a Node.js developer and SethAI matches engineers whose production track record is Node-heavy: Express, Fastify, NestJS, Bun, real-time features, TypeScript end-to-end, edge deployments. The shortlist comes back in 48 hours and you start with a one-week paid trial.",
     category: "hiring",
     categoryLabel: "Hiring",
   },

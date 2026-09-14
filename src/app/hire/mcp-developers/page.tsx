@@ -225,7 +225,7 @@ const faqItems: FAQ[] = [
   {
     question: "How much does an MCP developer cost in India?",
     answer:
-      "Full-time senior MCP developers in India typically cost between 7,000 and 12,000 USD per month, all-in to the client. The premium over a generalist AI developer reflects the relative scarcity of engineers who have shipped production MCP servers. Build engagements (4 to 8 weeks) are quoted as fixed-fee projects.",
+      "Full-time senior MCP developers in India cost a premium over a generalist AI developer, reflecting the relative scarcity of engineers who have shipped production MCP servers. Build engagements (4 to 8 weeks) are quoted as fixed-fee projects. We size the exact rate on a discovery call rather than publish a flat number.",
     category: "hiring",
     categoryLabel: "Hiring",
   },

@@ -164,7 +164,7 @@ const faqItems: FAQ[] = [
   {
     question: "How much does it cost to hire a computer vision developer from India?",
     answer:
-      "Mid-level CV developers from India cost USD 5,000 to 7,500 per month for full-time engagement. Senior engineers with production deployment, edge inference, or domain-specific model fine-tuning experience range from USD 7,000 to 11,000 per month. Pricing reflects specialist scarcity.",
+      "Mid-level CV developers from India cost less than senior engineers with production deployment, edge inference, or domain-specific model fine-tuning experience. Pricing reflects specialist scarcity, and we size the exact rate on a discovery call rather than publish a flat number.",
     category: "ai",
     categoryLabel: "AI",
   },
