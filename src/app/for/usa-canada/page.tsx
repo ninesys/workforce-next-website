@@ -48,9 +48,9 @@ const whyPoints = [
       "A US team carrying 24/7 on-call burns out predictably. We pair an India-based pod with your US team so the night shift is covered without anyone running themselves into the ground.",
   },
   {
-    title: "200K dollar a year cost gap per senior engineer",
+    title: "A substantial annual cost gap per senior engineer",
     description:
-      "A senior US developer fully loaded costs $250,000 to $380,000 a year. The Indian equivalent runs $66,000 to $144,000 all-in. Across a five-engineer team that is a million dollars a year saved without sacrificing seniority.",
+      "A senior US developer fully loaded costs substantially more than the Indian equivalent all-in. Across a five-engineer team, that gap compounds into serious savings without sacrificing seniority.",
   },
   {
     title: "Engineers who have shipped in regulated environments",
@@ -72,9 +72,9 @@ const overlapModels = [
 ];
 
 const pricingRows = [
-  { level: "Mid-level", monthly: "USD 5,000 to 7,500 (CAD 6,800 to 10,200)", three: "USD 15,000 to 22,500", four: "USD 20,000 to 30,000" },
-  { level: "Senior", monthly: "USD 7,000 to 10,500 (CAD 9,500 to 14,300)", three: "USD 21,000 to 31,500", four: "USD 28,000 to 42,000" },
-  { level: "Tech lead", monthly: "USD 10,000 to 14,500 (CAD 13,600 to 19,700)", three: "USD 30,000 to 43,500", four: "USD 40,000 to 58,000" },
+  { level: "Mid-level", detail: "Full-time dedicated, engineering manager and PTO backup included" },
+  { level: "Senior", detail: "Full-time dedicated, deeper production and architecture experience" },
+  { level: "Tech lead", detail: "Full-time dedicated, runs multiple engineers or a full pod" },
 ];
 
 const steps = [
@@ -116,7 +116,7 @@ const faqItems: FAQ[] = [
   {
     question: "How much does a senior Indian developer cost a US or Canadian company in 2026?",
     answer:
-      "A senior Indian developer costs USD 7,000 to 10,500 per month all-in to a US customer (CAD 9,500 to 14,300 to a Canadian customer). That works out to USD 84,000 to 126,000 a year, compared to USD 250,000 to 380,000 for the equivalent US senior developer fully loaded. The gap of roughly 200,000 dollars per engineer per year is the primary driver of US offshore hiring in 2026. The full per-role and per-level breakdown is in our outsourcing trends post.",
+      "A senior Indian developer costs meaningfully less per month all-in to a US or Canadian customer than the equivalent senior developer fully loaded in either market. That gap per engineer per year is the primary driver of US offshore hiring in 2026. We size the exact rate on a discovery call rather than publish a flat number.",
     category: "hiring",
     categoryLabel: "Hiring",
   },
@@ -209,8 +209,8 @@ export default function ForUsaCanadaPage() {
           </h2>
           <div className="space-y-4 text-dark-600 dark:text-dark-200 leading-relaxed">
             <p>
-              The fully loaded cost of a senior US developer climbed past
-              $250,000 a year while AI-assisted development closed the
+              The fully loaded cost of a senior US developer climbed
+              steadily while AI-assisted development closed the
               productivity gap that used to justify the premium. At the same
               time, the talent pool for AI, data, and platform engineering
               cannot be filled from the US alone at any reasonable timeline.
@@ -332,10 +332,10 @@ export default function ForUsaCanadaPage() {
             What does an Indian developer cost a US or Canadian company in 2026?
           </h2>
           <p className="text-dark-600 dark:text-dark-200 leading-relaxed mb-8 max-w-3xl">
-            All-in pricing for North American customers. One monthly fee in
-            USD or CAD, indexed to role and seniority. The same monthly rate
-            applies on a 3 month or 12 month engagement; no short-term
-            premium.
+            One monthly fee in USD or CAD, indexed to role and seniority,
+            with no short-term premium. We quote the exact rate on a
+            discovery call rather than publish a flat number, since scope
+            and seniority move it.
           </p>
           <div className="overflow-x-auto rounded-xl border border-dark-50 dark:border-dark-700 bg-white dark:bg-dark-900">
             <table className="w-full text-left border-collapse">
@@ -345,13 +345,7 @@ export default function ForUsaCanadaPage() {
                     Level
                   </th>
                   <th className="py-3 px-4 text-sm font-bold text-dark-900 dark:text-dark-50">
-                    Monthly all-in
-                  </th>
-                  <th className="py-3 px-4 text-sm font-bold text-dark-900 dark:text-dark-50">
-                    3 month total
-                  </th>
-                  <th className="py-3 px-4 text-sm font-bold text-dark-900 dark:text-dark-50">
-                    4 month total
+                    What&apos;s included
                   </th>
                 </tr>
               </thead>
@@ -365,13 +359,7 @@ export default function ForUsaCanadaPage() {
                       {row.level}
                     </td>
                     <td className="py-3 px-4 text-sm text-dark-600 dark:text-dark-200">
-                      {row.monthly}
-                    </td>
-                    <td className="py-3 px-4 text-sm text-dark-600 dark:text-dark-200">
-                      {row.three}
-                    </td>
-                    <td className="py-3 px-4 text-sm text-dark-600 dark:text-dark-200">
-                      {row.four}
+                      {row.detail}
                     </td>
                   </tr>
                 ))}

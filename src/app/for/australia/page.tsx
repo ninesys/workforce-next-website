@@ -48,9 +48,9 @@ const whyPoints = [
       "Perth-Mumbai is 5.5 hours, the same as London-Mumbai. Sydney and Melbourne sit 4.5 hours apart from India during AEDT. Daily standups, sync reviews, and pair programming all fit naturally in your morning or our afternoon.",
   },
   {
-    title: "200K AUD a year cost gap per senior engineer",
+    title: "A substantial annual cost gap per senior engineer",
     description:
-      "A senior Sydney developer fully loaded costs AUD 220,000 to 300,000. The Indian equivalent runs AUD 100,000 to 165,000 all-in. Across a five-engineer team that is over half a million AUD a year saved without sacrificing seniority.",
+      "A senior Sydney developer fully loaded costs significantly more than the Indian equivalent all-in. Across a five-engineer team, that gap compounds into serious savings without sacrificing seniority.",
   },
   {
     title: "Engineers familiar with APP data practices",
@@ -65,9 +65,9 @@ const whyPoints = [
 ];
 
 const pricingRows = [
-  { level: "Mid-level", monthly: "AUD 6,800 to 10,000", three: "AUD 20,400 to 30,000", four: "AUD 27,200 to 40,000" },
-  { level: "Senior", monthly: "AUD 10,000 to 14,500", three: "AUD 30,000 to 43,500", four: "AUD 40,000 to 58,000" },
-  { level: "Tech lead", monthly: "AUD 14,500 to 20,500", three: "AUD 43,500 to 61,500", four: "AUD 58,000 to 82,000" },
+  { level: "Mid-level", detail: "Full-time dedicated, engineering manager and PTO backup included" },
+  { level: "Senior", detail: "Full-time dedicated, deeper production and architecture experience" },
+  { level: "Tech lead", detail: "Full-time dedicated, runs multiple engineers or a full pod" },
 ];
 
 const steps = [
@@ -102,7 +102,7 @@ const faqItems: FAQ[] = [
   {
     question: "How much does a senior Indian developer cost an Australian company in 2026?",
     answer:
-      "A senior Indian developer costs AUD 10,000 to 14,500 per month all-in to an Australian customer. That is AUD 120,000 to 174,000 a year, compared to AUD 220,000 to 300,000 for the equivalent Sydney or Melbourne senior fully loaded. The full breakdown by level is in the pricing table on this page.",
+      "A senior Indian developer costs meaningfully less per month all-in to an Australian customer than the equivalent Sydney or Melbourne senior fully loaded. We size the exact rate on a discovery call rather than publish a flat number.",
     category: "hiring",
     categoryLabel: "Hiring",
   },
@@ -204,7 +204,7 @@ export default function ForAustraliaPage() {
             <p>
               Australian engineering hiring has always been hard. The local
               talent pool is small relative to demand, salaries have climbed
-              past AUD 220,000 fully loaded for a senior engineer in Sydney
+              steadily for a senior engineer in Sydney
               or Melbourne, and the 482 visa pipeline has been tightening
               for years. India offers a meaningful alternative without any
               of those constraints.
@@ -309,9 +309,10 @@ export default function ForAustraliaPage() {
             What does an Indian developer cost an Australian company in 2026?
           </h2>
           <p className="text-dark-600 dark:text-dark-200 leading-relaxed mb-8 max-w-3xl">
-            All-in pricing in AUD. One monthly fee indexed to role and
-            seniority. The same monthly rate applies on a 3 month or 12
-            month engagement; no short-term premium.
+            One monthly fee in AUD, indexed to role and seniority, with no
+            short-term premium. We quote the exact rate on a discovery call
+            rather than publish a flat number, since scope and seniority
+            move it.
           </p>
           <div className="overflow-x-auto rounded-xl border border-dark-50 dark:border-dark-700 bg-white dark:bg-dark-900">
             <table className="w-full text-left border-collapse">
@@ -321,13 +322,7 @@ export default function ForAustraliaPage() {
                     Level
                   </th>
                   <th className="py-3 px-4 text-sm font-bold text-dark-900 dark:text-dark-50">
-                    Monthly all-in
-                  </th>
-                  <th className="py-3 px-4 text-sm font-bold text-dark-900 dark:text-dark-50">
-                    3 month total
-                  </th>
-                  <th className="py-3 px-4 text-sm font-bold text-dark-900 dark:text-dark-50">
-                    4 month total
+                    What&apos;s included
                   </th>
                 </tr>
               </thead>
@@ -341,13 +336,7 @@ export default function ForAustraliaPage() {
                       {row.level}
                     </td>
                     <td className="py-3 px-4 text-sm text-dark-600 dark:text-dark-200">
-                      {row.monthly}
-                    </td>
-                    <td className="py-3 px-4 text-sm text-dark-600 dark:text-dark-200">
-                      {row.three}
-                    </td>
-                    <td className="py-3 px-4 text-sm text-dark-600 dark:text-dark-200">
-                      {row.four}
+                      {row.detail}
                     </td>
                   </tr>
                 ))}

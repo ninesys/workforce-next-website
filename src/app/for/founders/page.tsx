@@ -10,7 +10,7 @@ import {
 export const metadata: Metadata = {
   title: "MVP Sprint for Founders - AI Product in 4 Weeks",
   description:
-    "Get a senior developer matched by SethAI for a 4-week MVP sprint. Fixed scope, 1-week paid trial, and a developer who stays with you past launch. INR 1.2-1.8L / $1,500-$2,200.",
+    "Get a senior developer matched by SethAI for a 4-week MVP sprint. Fixed scope, 1-week paid trial, and a developer who stays with you past launch.",
   keywords: [
     "MVP development India",
     "hire AI developer for startup",
@@ -135,18 +135,18 @@ export default function FoundersPage() {
             Simple, transparent pricing
           </h2>
           <p className="text-dark-400 dark:text-dark-300 mb-8 max-w-xl mx-auto">
-            No hourly billing surprises. No scope creep clauses. One price for the
-            full sprint.
+            No hourly billing surprises. No scope creep clauses. One fixed
+            price for the full sprint, quoted on a discovery call.
           </p>
           <div className="inline-block bg-primary-50 dark:bg-dark-800 rounded-2xl p-8 md:p-10 border border-primary-100 dark:border-dark-700">
             <p className="text-sm font-semibold text-primary-500 uppercase tracking-wider mb-2">
               4-Week MVP Sprint
             </p>
-            <p className="text-4xl md:text-5xl font-extrabold text-dark-900 dark:text-dark-50">
-              INR 1.2-1.8L
+            <p className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50">
+              Fixed scope, one flat price
             </p>
             <p className="text-dark-400 dark:text-dark-300 mt-1">
-              $1,500 - $2,200 USD
+              Sized to your scope on a discovery call
             </p>
             <p className="text-sm text-dark-400 dark:text-dark-300 mt-4">
               Includes 1-week paid trial. Walk away if the fit is not right.

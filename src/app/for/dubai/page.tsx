@@ -65,9 +65,9 @@ const whyPoints = [
 ];
 
 const pricingRows = [
-  { level: "Mid-level", monthly: "AED 16,500 to 24,000 (USD 4,500 to 6,500)", three: "AED 49,500 to 72,000", four: "AED 66,000 to 96,000" },
-  { level: "Senior", monthly: "AED 24,000 to 35,000 (USD 6,500 to 9,500)", three: "AED 72,000 to 105,000", four: "AED 96,000 to 140,000" },
-  { level: "Tech lead", monthly: "AED 35,000 to 50,000 (USD 9,500 to 13,500)", three: "AED 105,000 to 150,000", four: "AED 140,000 to 200,000" },
+  { level: "Mid-level", detail: "Full-time dedicated, engineering manager and PTO backup included" },
+  { level: "Senior", detail: "Full-time dedicated, deeper production and architecture experience" },
+  { level: "Tech lead", detail: "Full-time dedicated, runs multiple engineers or a full pod" },
 ];
 
 const steps = [
@@ -102,7 +102,7 @@ const faqItems: FAQ[] = [
   {
     question: "How much does a senior Indian developer cost a UAE company in 2026?",
     answer:
-      "A senior Indian developer costs AED 24,000 to 35,000 per month all-in to a UAE customer (USD 6,500 to 9,500). That is AED 288,000 to 420,000 a year, compared to AED 540,000 to 900,000 for the equivalent Dubai or Abu Dhabi senior fully loaded with housing, schooling, and visa costs. The full breakdown by level is in the pricing table on this page.",
+      "A senior Indian developer costs meaningfully less per month all-in to a UAE customer than the equivalent Dubai or Abu Dhabi senior fully loaded with housing, schooling, and visa costs. We size the exact rate on a discovery call rather than publish a flat number.",
     category: "hiring",
     categoryLabel: "Hiring",
   },
@@ -313,9 +313,10 @@ export default function ForDubaiPage() {
             What does an Indian developer cost a UAE company in 2026?
           </h2>
           <p className="text-dark-600 dark:text-dark-200 leading-relaxed mb-8 max-w-3xl">
-            All-in pricing in AED with USD equivalent. One monthly fee
-            indexed to role and seniority. The same monthly rate applies on
-            a 3 month or 12 month engagement; no short-term premium.
+            One monthly fee, indexed to role and seniority, with no
+            short-term premium. We quote the exact rate in AED or USD on a
+            discovery call rather than publish a flat number, since scope
+            and seniority move it.
           </p>
           <div className="overflow-x-auto rounded-xl border border-dark-50 dark:border-dark-700 bg-white dark:bg-dark-900">
             <table className="w-full text-left border-collapse">
@@ -325,13 +326,7 @@ export default function ForDubaiPage() {
                     Level
                   </th>
                   <th className="py-3 px-4 text-sm font-bold text-dark-900 dark:text-dark-50">
-                    Monthly all-in
-                  </th>
-                  <th className="py-3 px-4 text-sm font-bold text-dark-900 dark:text-dark-50">
-                    3 month total
-                  </th>
-                  <th className="py-3 px-4 text-sm font-bold text-dark-900 dark:text-dark-50">
-                    4 month total
+                    What&apos;s included
                   </th>
                 </tr>
               </thead>
@@ -345,13 +340,7 @@ export default function ForDubaiPage() {
                       {row.level}
                     </td>
                     <td className="py-3 px-4 text-sm text-dark-600 dark:text-dark-200">
-                      {row.monthly}
-                    </td>
-                    <td className="py-3 px-4 text-sm text-dark-600 dark:text-dark-200">
-                      {row.three}
-                    </td>
-                    <td className="py-3 px-4 text-sm text-dark-600 dark:text-dark-200">
-                      {row.four}
+                      {row.detail}
                     </td>
                   </tr>
                 ))}

@@ -107,9 +107,9 @@ const whenToHire = [
 ];
 
 const pricingRows = [
-  { level: "Mid-level", monthly: "EUR 4,500 to 6,500 (GBP 3,800 to 5,500)", three: "EUR 13,500 to 19,500", four: "EUR 18,000 to 26,000" },
-  { level: "Senior", monthly: "EUR 6,500 to 9,500 (GBP 5,500 to 8,000)", three: "EUR 19,500 to 28,500", four: "EUR 26,000 to 38,000" },
-  { level: "Tech lead", monthly: "EUR 9,500 to 13,500 (GBP 8,000 to 11,400)", three: "EUR 28,500 to 40,500", four: "EUR 38,000 to 54,000" },
+  { level: "Mid-level", detail: "Full-time dedicated, engineering manager and PTO backup included" },
+  { level: "Senior", detail: "Full-time dedicated, deeper production and architecture experience" },
+  { level: "Tech lead", detail: "Full-time dedicated, runs multiple engineers or a full pod" },
 ];
 
 const steps = [
@@ -158,7 +158,7 @@ const faqItems: FAQ[] = [
   {
     question: "What does a 3 month engagement cost in EUR or GBP?",
     answer:
-      "Senior engineers typically run EUR 6,500 to 9,500 per month all-in, depending on stack and seniority within the senior band. A 3 month senior engagement therefore lands around EUR 19,500 to 28,500 total. Mid-level engineers run EUR 4,500 to 6,500 per month. Tech leads run EUR 9,500 to 13,500. Pricing is the same on a 3 month or 4 month contract; there is no short-term premium.",
+      "Senior engineers cost more than mid-level and less than tech leads, all priced on a discovery call rather than a flat published number since stack and seniority within each band move the rate. Pricing is the same on a 3 month or 4 month contract; there is no short-term premium.",
     category: "hiring",
     categoryLabel: "Hiring",
   },
@@ -281,11 +281,10 @@ export default function ForEuropePage() {
             </p>
             <p>
               The cost gap is also wider than buyers expect. A senior
-              developer in London costs roughly GBP 110,000 to 150,000 fully
-              loaded. The Polish or Romanian equivalent runs EUR 70,000 to
-              95,000. A senior Indian developer matched through Workforce
-              Next costs EUR 78,000 to 114,000 per year on a long-term
-              engagement, and proportionally less on a short 3 to 4 month
+              developer in London costs substantially more fully
+              loaded than the Polish or Romanian equivalent, which itself
+              costs more than a senior Indian developer matched through Workforce
+              Next on a long-term engagement, and proportionally less on a short 3 to 4 month
               contract because there is no recruitment fee, no severance, and
               no employer NI on your side.
             </p>
@@ -474,13 +473,13 @@ export default function ForEuropePage() {
       <section className="section-padding bg-primary-50 dark:bg-dark-800">
         <div className="container-custom max-w-5xl">
           <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 mb-6">
-            What does a 3 or 4 month Indian developer cost in EUR or GBP?
+            What does an Indian developer cost European customers?
           </h2>
           <p className="text-dark-600 dark:text-dark-200 leading-relaxed mb-8 max-w-3xl">
-            All-in pricing for European customers. One monthly fee in EUR
-            or GBP, indexed to role and seniority. There is no short-term
-            premium; the monthly rate on a 3 month engagement matches the
-            rate on a 12 month engagement.
+            One monthly fee in EUR or GBP, indexed to role and seniority,
+            with no short-term premium. We quote the exact rate on a
+            discovery call rather than publish a flat number, since scope
+            and seniority move it.
           </p>
           <div className="overflow-x-auto rounded-xl border border-dark-50 dark:border-dark-700 bg-white dark:bg-dark-900">
             <table className="w-full text-left border-collapse">
@@ -490,13 +489,7 @@ export default function ForEuropePage() {
                     Level
                   </th>
                   <th className="py-3 px-4 text-sm font-bold text-dark-900 dark:text-dark-50">
-                    Monthly all-in
-                  </th>
-                  <th className="py-3 px-4 text-sm font-bold text-dark-900 dark:text-dark-50">
-                    3 month total
-                  </th>
-                  <th className="py-3 px-4 text-sm font-bold text-dark-900 dark:text-dark-50">
-                    4 month total
+                    What&apos;s included
                   </th>
                 </tr>
               </thead>
@@ -510,13 +503,7 @@ export default function ForEuropePage() {
                       {row.level}
                     </td>
                     <td className="py-3 px-4 text-sm text-dark-600 dark:text-dark-200">
-                      {row.monthly}
-                    </td>
-                    <td className="py-3 px-4 text-sm text-dark-600 dark:text-dark-200">
-                      {row.three}
-                    </td>
-                    <td className="py-3 px-4 text-sm text-dark-600 dark:text-dark-200">
-                      {row.four}
+                      {row.detail}
                     </td>
                   </tr>
                 ))}
