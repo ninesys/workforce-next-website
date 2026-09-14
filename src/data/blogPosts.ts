@@ -37,13 +37,6 @@ import expressjsVsFastifyVsNestjs2026 from "./blog/expressjs-vs-fastify-vs-nestj
 import enterpriseWebApplicationDevelopmentCompleteGuide2026 from "./blog/enterprise-web-application-development-complete-guide-2026";
 import outsourceEnterpriseWebApplicationDevelopment2026 from "./blog/outsource-enterprise-web-application-development-2026";
 import aiEnabledRemoteStaffingCompleteGuide2026 from "./blog/ai-enabled-remote-staffing-complete-guide-2026";
-import automateStaffingAgencyWithN8nCaseStudy2026 from "./blog/automate-staffing-agency-with-n8n-case-study-2026";
-import recruiterAdminCostCalculator2026 from "./blog/recruiter-admin-cost-calculator-2026";
-import tenWorkflowsEveryStaffingAgencyShouldAutomate2026 from "./blog/10-workflows-every-staffing-agency-should-automate-2026";
-import automateBullhornWithN8nStaffingAgencyGuide from "./blog/automate-bullhorn-with-n8n-staffing-agency-guide";
-import bullhornJobadderCrelateAutomationComparison2026 from "./blog/bullhorn-jobadder-crelate-automation-comparison-2026";
-import aiWorkflowAutomationFleetCompanies2026 from "./blog/ai-workflow-automation-fleet-companies-2026";
-import hrDocumentAutomationSmallBusiness2026 from "./blog/hr-document-automation-small-business-2026";
 import saasWebApplicationDevelopmentGuideStartups2026 from "./blog/saas-web-application-development-guide-startups-2026";
 import securingRagApplicationsDataIsolationPatterns2026 from "./blog/securing-rag-applications-data-isolation-patterns-2026";
 import aiCodeReviewSecurityEnterprisePipelines2026 from "./blog/ai-code-review-security-enterprise-pipelines-2026";
@@ -55,9 +48,6 @@ import howToChooseTechStackForSaas from "./blog/how-to-choose-tech-stack-for-saa
 import dedicatedDevelopersVsFreelancersVsAgency from "./blog/dedicated-developers-vs-freelancers-vs-agency";
 import mcpServerArchitectureVsRestApi from "./blog/mcp-server-architecture-vs-rest-api";
 import howToBuildAnMcpServer from "./blog/how-to-build-an-mcp-server";
-import logistics3plTechChallenges2026 from "./blog/logistics-3pl-tech-challenges-2026";
-import osrmVsGoogleMapsVsMapboxRoutingEngine2026 from "./blog/osrm-vs-google-maps-vs-mapbox-routing-engine-2026";
-import routeOptimizationAlgorithms3plFleetPlatforms from "./blog/route-optimization-algorithms-3pl-fleet-platforms";
 import vibeCodeSecurityHardeningProductionReady2026 from "./blog/vibe-code-security-hardening-production-ready-2026";
 import founderBuiltAppScalingArchitectureGuide2026 from "./blog/founder-built-app-scaling-architecture-guide-2026";
 import andelaVsTuringComparison2026 from "./blog/andela-vs-turing-comparison-2026";
@@ -113,13 +103,6 @@ export const blogPosts: BlogPost[] = [
   enterpriseWebApplicationDevelopmentCompleteGuide2026,
   outsourceEnterpriseWebApplicationDevelopment2026,
   aiEnabledRemoteStaffingCompleteGuide2026,
-  automateStaffingAgencyWithN8nCaseStudy2026,
-  recruiterAdminCostCalculator2026,
-  tenWorkflowsEveryStaffingAgencyShouldAutomate2026,
-  automateBullhornWithN8nStaffingAgencyGuide,
-  bullhornJobadderCrelateAutomationComparison2026,
-  aiWorkflowAutomationFleetCompanies2026,
-  hrDocumentAutomationSmallBusiness2026,
   saasWebApplicationDevelopmentGuideStartups2026,
   securingRagApplicationsDataIsolationPatterns2026,
   aiCodeReviewSecurityEnterprisePipelines2026,
@@ -131,9 +114,6 @@ export const blogPosts: BlogPost[] = [
   dedicatedDevelopersVsFreelancersVsAgency,
   mcpServerArchitectureVsRestApi,
   howToBuildAnMcpServer,
-  logistics3plTechChallenges2026,
-  osrmVsGoogleMapsVsMapboxRoutingEngine2026,
-  routeOptimizationAlgorithms3plFleetPlatforms,
   vibeCodeSecurityHardeningProductionReady2026,
   founderBuiltAppScalingArchitectureGuide2026,
   andelaVsTuringComparison2026,

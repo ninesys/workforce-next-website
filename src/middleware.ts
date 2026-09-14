@@ -97,6 +97,23 @@ const EXACT: Record<string, string> = {
   "/blog/how-does-ai-developer-matching-actually-work": "/products/seth-ai-recruiter/",
   "/blog/real-cost-of-switching-tech-partners":
     "/blog/dedicated-developer-vs-freelancer-vs-agency-total-cost/",
+
+  // Retired off-vision automation-consulting content (staffing/fleet/HR
+  // clusters), pruned 2026-09-14 per vision-alignment-audit.md. All had
+  // near-zero clicks despite several ranking page 1.
+  "/blog/10-workflows-every-staffing-agency-should-automate-2026":
+    "/hire/automation-consultants/",
+  "/blog/automate-bullhorn-with-n8n-staffing-agency-guide": "/hire/automation-consultants/",
+  "/blog/automate-staffing-agency-with-n8n-case-study-2026":
+    "/hire/automation-consultants/",
+  "/blog/bullhorn-jobadder-crelate-automation-comparison-2026":
+    "/hire/automation-consultants/",
+  "/blog/recruiter-admin-cost-calculator-2026": "/hire/automation-consultants/",
+  "/blog/ai-workflow-automation-fleet-companies-2026": "/hire/automation-consultants/",
+  "/blog/logistics-3pl-tech-challenges-2026": "/hire/automation-consultants/",
+  "/blog/osrm-vs-google-maps-vs-mapbox-routing-engine-2026": "/hire/automation-consultants/",
+  "/blog/route-optimization-algorithms-3pl-fleet-platforms": "/hire/automation-consultants/",
+  "/blog/hr-document-automation-small-business-2026": "/hire/automation-consultants/",
   "/blog/page2": "/blog/",
   "/blog/page4": "/blog/",
   "/blog/stealth-employee-monitoring-software": "/blog/",
