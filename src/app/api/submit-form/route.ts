@@ -140,7 +140,11 @@ https://wfnext.com
 
 Thanks for applying to Workforce Next. We have received your application and resume, and one of our recruiters will review it over the next few days.
 
-If your experience matches what we are currently hiring for, we will reach out with next steps. In the meantime, feel free to explore the blog and what we are building:
+If your experience matches what we are currently hiring for, we will reach out with next steps.
+
+While you wait, check out noCabins, a new way to find your next job. No resume, no forms, just talk to SethAI and it starts matching you to roles that fit, remote included. It is free. Sign up at https://nocabins.com/signup
+
+In the meantime, feel free to explore the blog and what we are building:
 https://wfnext.com/blog/${summary}
 
 Best,
@@ -173,7 +177,12 @@ const ACK_BODY_HTML: Record<
   careers: (greeting, summary) => `<!doctype html><html><body style="font-family:-apple-system,Segoe UI,Roboto,sans-serif;color:#0f172a;max-width:560px;margin:0 auto;padding:24px;line-height:1.55">
   <p>Hi ${escapeHtml(greeting)},</p>
   <p>Thanks for applying to <strong>Workforce Next</strong>. We have received your application and resume, and one of our recruiters will review it over the next few days.</p>
-  <p>If your experience matches what we are currently hiring for, we will reach out with next steps. In the meantime, feel free to explore what we are building on the <a href="https://wfnext.com/blog/">blog</a>.</p>
+  <p>If your experience matches what we are currently hiring for, we will reach out with next steps.</p>
+  <div style="margin:20px 0;padding:16px 20px;background:#f0f6ff;border-radius:10px">
+    <p style="margin:0 0 8px">While you wait, check out <strong>noCabins</strong>, a new way to find your next job. No resume, no forms, just talk to SethAI and it starts matching you to roles that fit, remote included. It is free.</p>
+    <p style="margin:0"><a href="https://nocabins.com/signup" style="color:#146EF5;font-weight:600">Sign up at nocabins.com/signup</a></p>
+  </div>
+  <p>In the meantime, feel free to explore what we are building on the <a href="https://wfnext.com/blog/">blog</a>.</p>
   ${summary}
   <p>Best,<br/>The Workforce Next team</p>
 </body></html>`,
