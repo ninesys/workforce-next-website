@@ -211,9 +211,14 @@ export default function CareersPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
               </svg>
             </a>
-            <p className="mt-4 text-xs text-dark-400 dark:text-dark-400">
-              Prefer to apply directly? Scroll down to submit your resume here instead.
-            </p>
+          </div>
+
+          <div className="flex items-center gap-4 mb-10">
+            <div className="h-px flex-1 bg-dark-200 dark:bg-dark-700" />
+            <span className="text-xs font-bold uppercase tracking-wide text-dark-400 dark:text-dark-400">
+              OR
+            </span>
+            <div className="h-px flex-1 bg-dark-200 dark:bg-dark-700" />
           </div>
 
           <h2 className="text-2xl font-bold text-dark-900 dark:text-dark-50 mb-6 text-center">
