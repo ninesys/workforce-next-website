@@ -189,6 +189,33 @@ export default function CareersPage() {
       {/* Application Form */}
       <section id="apply" className="section-padding bg-primary-50 dark:bg-dark-800 scroll-mt-24">
         <div className="container-custom max-w-2xl">
+          <div className="mb-10 p-6 sm:p-8 rounded-xl bg-white dark:bg-dark-900 border border-primary-200 dark:border-dark-700 shadow-card text-center">
+            <Badge variant="white" className="mb-3">
+              HIGHER CHANCE OF GETTING SELECTED
+            </Badge>
+            <h3 className="text-xl font-bold text-dark-900 dark:text-dark-50">
+              Apply on noCabins first
+            </h3>
+            <p className="mt-2 text-sm text-dark-400 dark:text-dark-300 max-w-md mx-auto leading-relaxed">
+              Candidates who apply through noCabins get seen first and move
+              faster through our screening process.
+            </p>
+            <a
+              href="https://nocabins.com/signup"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-5 inline-flex items-center justify-center gap-2 font-semibold rounded-[10px] tracking-wide transition-all duration-300 ease-in-out bg-primary-500 text-white hover:bg-primary-600 shadow-md hover:shadow-lg px-7 py-3 text-base"
+            >
+              Apply on noCabins
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+            <p className="mt-4 text-xs text-dark-400 dark:text-dark-400">
+              Prefer to apply directly? Scroll down to submit your resume here instead.
+            </p>
+          </div>
+
           <h2 className="text-2xl font-bold text-dark-900 dark:text-dark-50 mb-6 text-center">
             Submit your resume
           </h2>
