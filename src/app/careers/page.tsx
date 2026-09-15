@@ -194,7 +194,7 @@ export default function CareersPage() {
               HIGHER CHANCE OF GETTING SELECTED
             </Badge>
             <h3 className="text-xl font-bold text-dark-900 dark:text-dark-50">
-              Apply on noCabins first
+              Applying on noCabins gives you a better chance of getting hired
             </h3>
             <p className="mt-2 text-sm text-dark-400 dark:text-dark-300 max-w-md mx-auto leading-relaxed">
               Candidates who apply through noCabins get seen first and move
