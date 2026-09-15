@@ -20,7 +20,7 @@ const post: BlogPost = {
 <li><strong>Speed matters more than control.</strong> You need to ship a v1 in 6 to 9 months and cannot wait 4 months to assemble an in-house team.</li>
 <li><strong>The application is important but not the unique IP.</strong> Internal admin tools, partner portals, customer dashboards, modernization projects.</li>
 <li><strong>You can afford one strong technical owner on your side.</strong> Fractional CTO, staff engineer, or VP Eng who runs the relationship.</li>
-<li><strong>The cost delta is meaningful.</strong> US/EU senior teams cost USD 130K to 180K per month. India dedicated teams cost USD 38K to 65K per month. The difference funds the strong owner you need on your side.</li>
+<li><strong>The cost delta is meaningful.</strong> US/EU senior teams run meaningfully higher than India dedicated teams on a fully loaded monthly basis. The difference funds the strong owner you need on your side.</li>
 <li><strong>You do not have institutional knowledge to lose.</strong> Greenfield builds outsource cleanly. Deep modernizations of legacy systems with tribal knowledge usually do not.</li>
 </ul>
 
@@ -33,7 +33,7 @@ const post: BlogPost = {
 <ol>
 <li><strong>Write a one-page brief.</strong> Domain, scope, constraints, timeline, budget range, success criteria. If you cannot write the brief, you are not ready to engage vendors.</li>
 <li><strong>Build a shortlist of three.</strong> Not ten. Three vendors you can run a real evaluation on. Pull from referrals, case studies, and one cold-list pick to keep yourself honest.</li>
-<li><strong>Run a paid scoping engagement.</strong> 1 to 2 weeks, USD 5K to 15K, fixed price. Each vendor delivers an architecture sketch, a team proposal, a timeline, and a list of risks they see. This is the single highest-signal step in the process.</li>
+<li><strong>Run a paid scoping engagement.</strong> 1 to 2 weeks, a modest fixed price. Each vendor delivers an architecture sketch, a team proposal, a timeline, and a list of risks they see. This is the single highest-signal step in the process.</li>
 <li><strong>Talk to two of their reference customers in your industry.</strong> Skip the marquee names. Ask about communication, change management, and what they would do differently.</li>
 <li><strong>Run a paid trial week with the winner.</strong> Real engineers, real codebase, real PRs. If the trial does not produce shippable code by Friday, the engagement will not produce it later either.</li>
 </ol>
@@ -142,52 +142,52 @@ const post: BlogPost = {
 
 <h2>What does honest pricing look like?</h2>
 
-<p>Indicative monthly burn for a dedicated 8-person team in 2026:</p>
+<p>Indicative relative cost for a dedicated 8-person team in 2026, region by region:</p>
 
 <table>
 <thead>
 <tr>
 <th>Region</th>
-<th>Monthly burn</th>
-<th>6-month total</th>
+<th>Relative monthly burn</th>
+<th>Relative 6-month total</th>
 <th>What you get</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>US senior team</td>
-<td>USD 130K to 180K</td>
-<td>USD 780K to 1.08M</td>
+<td>Highest</td>
+<td>Highest</td>
 <td>Highest hourly cost, native timezone, slowest to assemble</td>
 </tr>
 <tr>
 <td>Eastern Europe</td>
-<td>USD 70K to 100K</td>
-<td>USD 420K to 600K</td>
+<td>Moderate to high</td>
+<td>Moderate to high</td>
 <td>Strong cultural fit with US/UK, partial timezone overlap, moderate cost</td>
 </tr>
 <tr>
 <td>India dedicated</td>
-<td>USD 38K to 65K</td>
-<td>USD 230K to 390K</td>
+<td>Lowest</td>
+<td>Lowest</td>
 <td>Deepest hiring pool, biggest cost saving, requires partner discipline</td>
 </tr>
 <tr>
 <td>India + US lead hybrid</td>
-<td>USD 55K to 85K</td>
-<td>USD 330K to 510K</td>
+<td>Low to moderate</td>
+<td>Low to moderate</td>
 <td>Best of both: India build, US-hours technical owner</td>
 </tr>
 </tbody>
 </table>
 
-<p>Hourly rates below USD 25 for senior engineers are usually too good to be true. They typically mean junior engineers fronted by senior names, no continuity guarantee, or no real engineering management. For Indian developer cost detail, see our <a href="/blog/senior-indian-developer-salary-2026/">2026 senior developer salary guide</a> and <a href="/blog/dedicated-developer-vs-freelancer-vs-agency-total-cost/">dedicated developer vs freelancer vs agency total cost</a>.</p>
+<p>Unusually low hourly rates for senior engineers are usually too good to be true. They typically mean junior engineers fronted by senior names, no continuity guarantee, or no real engineering management. For Indian developer cost detail, see our <a href="/blog/senior-indian-developer-salary-2026/">2026 senior developer salary guide</a> and <a href="/blog/dedicated-developer-vs-freelancer-vs-agency-total-cost/">dedicated developer vs freelancer vs agency total cost</a>.</p>
 
 <h2>What are the most common outsourcing mistakes?</h2>
 
 <ol>
 <li><strong>No technical owner on the customer side.</strong> The vendor is left to make architecture decisions in a vacuum. The result fits the vendor's habits, not your business.</li>
-<li><strong>Skipping the paid trial week.</strong> Saves USD 5K to 10K up front, costs USD 100K to 500K when the engagement turns out to be wrong six months in.</li>
+<li><strong>Skipping the paid trial week.</strong> A modest short-term saving that risks a far larger cost when the engagement turns out to be wrong six months in.</li>
 <li><strong>Vague scope at signing.</strong> Every change becomes a contract event. Engineering velocity collapses.</li>
 <li><strong>No continuity guarantee.</strong> Engineers rotate off every 3 months. You spend the next quarter onboarding the replacements.</li>
 <li><strong>Code lives in vendor's GitHub.</strong> You cannot see what is being built in real time, you cannot run your own scans, and the IP transfer at the end becomes an ordeal.</li>
@@ -233,7 +233,7 @@ const post: BlogPost = {
     },
     {
       q: "How do we shortlist outsourcing vendors for an enterprise web app?",
-      a: "Build a shortlist of three vendors, not ten. Pull from referrals, case studies, and one cold pick to stay honest. Skip the 30-page RFP. Run a paid 1 to 2 week scoping engagement (USD 5K to 15K) with each vendor that produces an architecture sketch, team proposal, timeline, and risk list. The scoping engagement is the highest-signal step in vendor selection.",
+      a: "Build a shortlist of three vendors, not ten. Pull from referrals, case studies, and one cold pick to stay honest. Skip the 30-page RFP. Run a paid 1 to 2 week scoping engagement at a modest fixed price with each vendor that produces an architecture sketch, team proposal, timeline, and risk list. The scoping engagement is the highest-signal step in vendor selection.",
     },
     {
       q: "Should we run a paid trial week before signing a long contract?",
@@ -245,7 +245,7 @@ const post: BlogPost = {
     },
     {
       q: "How much does outsourced enterprise web application development cost in 2026?",
-      a: "For a dedicated 8-person team: a US senior team costs USD 130K to 180K per month, an Eastern Europe team USD 70K to 100K, an India dedicated team USD 38K to 65K, and a hybrid US-lead + India-build team USD 55K to 85K. Hourly rates below USD 25 for senior engineers usually mean junior engineers fronted by senior names or no continuity guarantee.",
+      a: "For a dedicated 8-person team, cost varies significantly by region: a US senior team runs the highest, an Eastern Europe team a moderate step down, an India dedicated team the lowest, and a hybrid US-lead plus India-build team sits in between. Unusually low hourly rates for senior engineers usually mean junior engineers fronted by senior names or no continuity guarantee.",
     },
     {
       q: "What is the biggest predictor of outsourcing success?",

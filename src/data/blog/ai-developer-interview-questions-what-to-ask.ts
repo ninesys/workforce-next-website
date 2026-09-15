@@ -26,7 +26,7 @@ const post: BlogPost = {
 <p>Bonus signal: they mention they would run an eval set before changing anything, rather than guessing at fixes and re-deploying.</p>
 
 <h2>Layer 4: How do they think about cost?</h2>
-<p>Ask: <em>"This feature costs us $0.12 per query. We have 1 million queries a month. How would you cut the cost in half without hurting quality?"</em></p>
+<p>Ask: <em>"This feature's per-query cost is adding up fast at our volume. How would you cut it substantially without hurting quality?"</em></p>
 <p>Good answers include: route simpler queries to a smaller model, cache embeddings and semantically similar queries, shorten prompts by trimming retrieved context, batch requests where possible, move metadata filtering out of the LLM into retrieval. If they only say "use a cheaper model," they have not operated a real AI product.</p>
 
 <h2>Layer 5: Do they have taste?</h2>

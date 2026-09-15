@@ -67,7 +67,7 @@ const whyPoints = [
   {
     title: "Cost engineering built in",
     description:
-      "Right-sizing, Savings Plans, Reserved Instances, Compute Optimizer, Cost Explorer, and FinOps tagging. We have helped customers cut AWS bills by 30 to 50% without losing capacity.",
+      "Right-sizing, Savings Plans, Reserved Instances, Compute Optimizer, Cost Explorer, and FinOps tagging. We have helped customers cut AWS bills meaningfully without losing capacity.",
   },
   {
     title: "Screened by SethAI for longevity",

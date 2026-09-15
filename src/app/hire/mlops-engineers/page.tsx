@@ -104,7 +104,7 @@ const whenToHire = [
     scenario: "Cutting an out-of-control GPU bill",
     recommendation: "Hire an MLOps engineer with cost engineering focus",
     reason:
-      "GPU costs are where ML teams bleed money. Right-sizing, spot capacity, batching, MIG slicing, and idle cleanup can cut bills 40-60% without sacrificing performance.",
+      "GPU costs are where ML teams bleed money. Right-sizing, spot capacity, batching, MIG slicing, and idle cleanup can cut bills substantially without sacrificing performance.",
   },
   {
     scenario: "Small ML team with one model and low traffic",
@@ -185,7 +185,7 @@ const faqItems: FAQ[] = [
   {
     question: "Can your MLOps engineers cut our GPU bill?",
     answer:
-      "Yes. GPU cost engineering: right-sizing training jobs, spot capacity usage, MIG slicing for inference, batching strategies, idle cleanup, and model quantization for cheaper serving. We have cut GPU bills 40-60% on customer workloads without losing performance.",
+      "Yes. GPU cost engineering: right-sizing training jobs, spot capacity usage, MIG slicing for inference, batching strategies, idle cleanup, and model quantization for cheaper serving. We have cut GPU bills substantially on customer workloads without losing performance.",
     category: "ai",
     categoryLabel: "AI",
   },

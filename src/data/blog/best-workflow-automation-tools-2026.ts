@@ -30,32 +30,32 @@ const post: BlogPost = {
 <p>Pick Power Automate when your workflows are mostly inside the Microsoft ecosystem and your users already have Microsoft licenses. The rest of the market is weaker (fewer quality third-party connectors than Zapier), and pricing can get complicated fast across per-user, per-flow, and process (RPA) plans. Enterprise ops teams love it, marketing and growth teams usually find it clunky compared to Zapier.</p>
 
 <h2>When does n8n win?</h2>
-<p>n8n is what you pick when you want automation without the per-task tax. Self-hosted n8n on a small VPS costs $5 to $40 a month of infra and gives you unlimited executions. The cloud version starts around €20 per month and is meaningfully cheaper at scale than Zapier.</p>
+<p>n8n is what you pick when you want automation without the per-task tax. Self-hosted n8n on a small VPS costs very little in infra and gives you unlimited executions. The cloud version is meaningfully cheaper at scale than Zapier.</p>
 <p>More importantly, n8n ships a Code node that lets developers drop into JavaScript (or Python via community nodes). This is the killer feature for engineering teams that need 80 percent no-code with a 20 percent escape hatch. Zapier and Power Automate both have code steps, but they feel bolted-on.</p>
 <p>Pick n8n when you have a developer who can self-host (or when you need the cost control of the cloud tier), you want to avoid SaaS lock-in, and you are willing to accept a slightly steeper learning curve than Zapier. Our <a href="/hire/backend-engineers/">backend engineers</a> set up self-hosted n8n on Docker for clients in under a day and hand over a runbook.</p>
 
 <h2>When do you reach for AWS Step Functions?</h2>
 <p>Step Functions is not in the same category as the first three. It orchestrates your own code, not SaaS integrations. If your workflow looks like "call Lambda A, then based on its output call Lambda B or Lambda C, retry three times on failure, and write the result to DynamoDB," Step Functions is the right tool.</p>
-<p>Two flavors matter. Standard Workflows handle long-running processes (up to a year) with full audit trails, priced at $0.025 per 1,000 state transitions. Express Workflows run high-volume short workflows at $1.00 per million requests plus compute time. Express is where most production throughput lives, Standard is where long-running business logic lives.</p>
+<p>Two flavors matter. Standard Workflows handle long-running processes (up to a year) with full audit trails, priced per state transition. Express Workflows run high-volume short workflows priced per request plus compute time, and are meaningfully cheaper per unit than Standard. Express is where most production throughput lives, Standard is where long-running business logic lives.</p>
 <p>Common use cases: ETL pipelines, ML inference orchestration, microservice sagas, batch processing. Pick Step Functions when you are already on AWS, your workflow is orchestrating your own services, and you need native integration with IAM, CloudWatch, X-Ray, and VPC. Do not pick it for connecting SaaS apps. If you need someone who has shipped Step Functions in production for data or ML workloads, our <a href="/hire/data-engineers/">data engineers</a> have. See also our guide on <a href="/blog/how-to-choose-ai-agent-framework/">choosing an AI agent framework</a> if your orchestration is AI-heavy.</p>
 
 <h2>When does Camunda make sense?</h2>
 <p>Camunda is the tool you use when a lawyer or auditor might one day ask "show me every step of this process and who approved what." It runs BPMN 2.0 processes, the industry-standard notation for business workflows, and it is built for processes that are long-lived, stateful, and have human approvers in the loop.</p>
-<p>Banks, insurance companies, healthcare systems, and telecoms run Camunda for loan approvals, claims processing, and order fulfillment workflows that can span weeks or months. The open source core (Zeebe) is free to self-host. Camunda Platform 8 SaaS or self-managed enterprise editions typically start in the low-to-mid five figures annually and scale from there based on process instance volume.</p>
+<p>Banks, insurance companies, healthcare systems, and telecoms run Camunda for loan approvals, claims processing, and order fulfillment workflows that can span weeks or months. The open source core (Zeebe) is free to self-host. Camunda Platform 8 SaaS or self-managed enterprise editions carry meaningful annual licensing cost that scales with process instance volume.</p>
 <p>Pick Camunda when your workflow is long-running (days to months), must survive restarts without losing state, needs human approvers, and is subject to audit or compliance. If you are <a href="/for/enterprise/">running at enterprise scale</a> in a regulated industry, Camunda is almost always in the final shortlist. Do not pick it for "post to Slack when a form is submitted." You will cry.</p>
 
 <h2>How do the five compare on scale and pricing in 2026?</h2>
-<p>Rough numbers from recent pricing pages and client engagements. Pricing changes, verify before committing budget.</p>
+<p>Directional comparison based on recent pricing pages and client engagements. Pricing changes, verify before committing budget.</p>
 <table>
   <thead>
-    <tr><th>Tool</th><th>Category</th><th>Pricing floor</th><th>At ~10k runs/month</th><th>At ~1M runs/month</th><th>Self-host?</th></tr>
+    <tr><th>Tool</th><th>Category</th><th>Entry cost</th><th>Cost at moderate scale</th><th>Cost at high scale</th><th>Self-host?</th></tr>
   </thead>
   <tbody>
-    <tr><td>Zapier</td><td>iPaaS</td><td>Free 100 tasks/mo; $19.99/mo Starter</td><td>$49/mo Professional</td><td>Custom Enterprise (often $1k+/mo)</td><td>No</td></tr>
-    <tr><td>Power Automate</td><td>iPaaS + RPA</td><td>$15/user/mo</td><td>Bundled with M365 E5 often enough</td><td>Enterprise licensing + process plan extras</td><td>No</td></tr>
-    <tr><td>n8n</td><td>iPaaS (open source)</td><td>Free self-hosted; €20/mo cloud Starter</td><td>€50/mo cloud Pro or ~$10/mo VPS</td><td>~$50/mo VPS self-host or custom enterprise</td><td>Yes</td></tr>
-    <tr><td>AWS Step Functions</td><td>Serverless orchestration</td><td>Pay per use ($0.025 / 1k transitions)</td><td>&lt;$5/mo (Standard) or &lt;$1 (Express)</td><td>~$250/mo (Standard) or ~$50 (Express) + Lambda cost</td><td>AWS-only</td></tr>
-    <tr><td>Camunda</td><td>BPM engine</td><td>Free (Zeebe open source)</td><td>Self-managed free; SaaS starts ~$20k/yr</td><td>Enterprise $50k to $200k+/yr</td><td>Yes</td></tr>
+    <tr><td>Zapier</td><td>iPaaS</td><td>Free tier, then low monthly</td><td>Moderate monthly</td><td>Custom enterprise, steep</td><td>No</td></tr>
+    <tr><td>Power Automate</td><td>iPaaS + RPA</td><td>Per-user monthly</td><td>Often bundled with existing M365 licensing</td><td>Enterprise licensing plus process plan extras</td><td>No</td></tr>
+    <tr><td>n8n</td><td>iPaaS (open source)</td><td>Free self-hosted; low cloud starter tier</td><td>Modest cloud tier or low-cost VPS</td><td>Still low on a self-hosted VPS, or custom enterprise on cloud</td><td>Yes</td></tr>
+    <tr><td>AWS Step Functions</td><td>Serverless orchestration</td><td>Pay per use, very low floor</td><td>Low monthly spend</td><td>Moderate spend plus Lambda cost</td><td>AWS-only</td></tr>
+    <tr><td>Camunda</td><td>BPM engine</td><td>Free (Zeebe open source)</td><td>Self-managed free; SaaS carries real licensing cost</td><td>Enterprise licensing, the highest of the group</td><td>Yes</td></tr>
   </tbody>
 </table>
 <p>Two patterns jump out. First, Zapier is cheap to start and expensive at scale, n8n is the opposite when self-hosted. Second, Step Functions and Camunda have free tiers but they are designed for enterprise budgets at real scale. Their cheap floors hide the engineering time required to use them properly, which is a real cost.</p>
@@ -107,7 +107,7 @@ const post: BlogPost = {
   "faq": [
     {
       "q": "Which workflow tool is cheapest at scale: Zapier, n8n, or Power Automate?",
-      "a": "Self-hosted n8n is the cheapest by a large margin at scale. Unlimited executions on a $10 to $50 per month VPS. Zapier's per-task pricing becomes the most expensive option past about 10,000 runs per month. Power Automate can be the cheapest when your users already have Microsoft 365 E5 licenses since many flows are bundled."
+      "a": "Self-hosted n8n is the cheapest by a large margin at scale, running unlimited executions on a low-cost VPS. Zapier's per-task pricing becomes the most expensive option past about 10,000 runs per month. Power Automate can be the cheapest when your users already have Microsoft 365 E5 licenses since many flows are bundled."
     },
     {
       "q": "Is Power Automate better than Zapier for Microsoft 365 users?",
@@ -123,11 +123,11 @@ const post: BlogPost = {
     },
     {
       "q": "Is n8n really free?",
-      "a": "Self-hosted n8n is free under the Sustainable Use License for internal business use. You pay for the VPS or server you run it on. The n8n Cloud version starts around €20 per month with a monthly execution cap. Commercial embedding or reselling requires a paid license."
+      "a": "Self-hosted n8n is free under the Sustainable Use License for internal business use. You pay for the VPS or server you run it on. The n8n Cloud version starts at a low monthly rate with a monthly execution cap. Commercial embedding or reselling requires a paid license."
     },
     {
       "q": "What is the difference between Step Functions Standard and Express Workflows?",
-      "a": "Standard Workflows run for up to a year, have exactly-once execution semantics, and full audit history. They are priced at $0.025 per 1,000 state transitions. Express Workflows run for up to 5 minutes, have at-least-once semantics, and are priced at $1.00 per 1 million requests plus compute. Use Standard for long-running business logic, Express for high-volume short workflows."
+      "a": "Standard Workflows run for up to a year, have exactly-once execution semantics, and full audit history, priced per state transition. Express Workflows run for up to 5 minutes, have at-least-once semantics, and are priced per request plus compute, meaningfully cheaper per unit than Standard. Use Standard for long-running business logic, Express for high-volume short workflows."
     },
     {
       "q": "Can one team use multiple workflow tools?",

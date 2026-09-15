@@ -80,7 +80,7 @@ const responsibilities = [
   "Setting up CI/CD pipelines with GitHub Actions, including test runs, preview deploys, type checks, and automated rollbacks",
   "Integrating auth providers (Auth0, Cognito, Clerk), payment providers (Stripe), and third-party APIs with proper retries and idempotency",
   "Writing integration and end-to-end tests with Playwright, Cypress, Vitest, and pytest so regressions surface before customers find them",
-  "Instrumenting observability with Sentry, Datadog, or OpenTelemetry — turning opaque failures into logs that on-call engineers can actually act on",
+  "Instrumenting observability with Sentry, Datadog, or OpenTelemetry, turning opaque failures into logs that on-call engineers can actually act on",
   "Optimizing performance across the stack: React rendering, database indexes, cache strategies, and CDN configuration",
   "Pairing with designers on interaction details and with ops on incident response, without needing a translator in either direction",
 ];
@@ -90,7 +90,7 @@ const whenToHire = [
     scenario: "Early-stage startup shipping an MVP with a small team",
     recommendation: "Hire a full stack engineer",
     reason:
-      "At 0 to 20 engineers, specialists create coordination overhead that slows you down. A strong full stack engineer will ship the frontend, backend, and AWS plumbing for a feature in the same sprint — and the handoffs you would otherwise pay for disappear.",
+      "At 0 to 20 engineers, specialists create coordination overhead that slows you down. A strong full stack engineer will ship the frontend, backend, and AWS plumbing for a feature in the same sprint, and the handoffs you would otherwise pay for disappear.",
   },
   {
     scenario: "Scaling company with dedicated frontend and backend teams",

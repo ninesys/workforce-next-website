@@ -25,7 +25,7 @@ const post: BlogPost = {
 
 <p><strong>15 or more engineers, 3+ year horizon, India-specific roadmap:</strong> your own entity. At that scale, the fixed cost of running an entity (a Company Secretary, statutory audits, an HR head) gets amortised across enough headcount that the per-engineer overhead drops below what staff aug or EOR charges. You also get the option to acquire, IPO, or hire across India without renegotiating with a vendor.</p>
 
-<p><strong>Below 15 engineers but planning to grow there inside 12 months:</strong> staff aug now, with a pre-agreed transition path to your own entity later. Most of the staff aug vendors worth working with will help you transition the team to your entity when the math flips. (We do; ask us about it.) This avoids the trap of premature entity setup that drains $30K+ in setup costs before you know you actually need it.</p>
+<p><strong>Below 15 engineers but planning to grow there inside 12 months:</strong> staff aug now, with a pre-agreed transition path to your own entity later. Most of the staff aug vendors worth working with will help you transition the team to your entity when the math flips. (We do; ask us about it.) This avoids the trap of premature entity setup that drains a substantial sum in setup costs before you know you actually need it.</p>
 
 <h2>How does the math compare across the three models?</h2>
 <p>Here is the side-by-side for a senior engineer (5+ years experience, modern stack) in 2026. Numbers are India-specific and based on what we see in actual contracts.</p>
@@ -36,10 +36,10 @@ const post: BlogPost = {
   </thead>
   <tbody>
     <tr><td>Setup time before first engineer</td><td>1 to 2 weeks</td><td>2 to 4 weeks</td><td>4 to 6 months</td></tr>
-    <tr><td>Setup cost</td><td>$0</td><td>$0 to $500 (entity verification fees)</td><td>$15K to $40K (CA, legal, registrations)</td></tr>
-    <tr><td>Monthly cost per senior engineer (all-in)</td><td>$5,500 to $9,000</td><td>$6,000 to $11,000</td><td>$3,800 to $5,500 (after 12+ engineers amortise overhead)</td></tr>
-    <tr><td>Per-engineer cost includes</td><td>Salary, PF, gratuity, ESI, equipment, payroll ops, vendor margin, retention work</td><td>Gross salary plus EOR fee ($300 to $700/month) plus statutory employer cost</td><td>Salary, statutory contributions only. You add in-house overhead separately.</td></tr>
-    <tr><td>Ongoing fixed overhead</td><td>$0 (folded into monthly fee)</td><td>$0 (folded into monthly fee)</td><td>$30K to $80K/year (CA, audit, HR head, office)</td></tr>
+    <tr><td>Setup cost</td><td>None</td><td>Minimal (entity verification fees)</td><td>Substantial (CA, legal, registrations)</td></tr>
+    <tr><td>Monthly cost per senior engineer (all-in)</td><td>Lowest of the three</td><td>Moderately higher than staff aug</td><td>Lowest per-seat cost, but only after 12+ engineers amortise overhead</td></tr>
+    <tr><td>Per-engineer cost includes</td><td>Salary, PF, gratuity, ESI, equipment, payroll ops, vendor margin, retention work</td><td>Gross salary plus an EOR fee plus statutory employer cost</td><td>Salary, statutory contributions only. You add in-house overhead separately.</td></tr>
+    <tr><td>Ongoing fixed overhead</td><td>None (folded into monthly fee)</td><td>None (folded into monthly fee)</td><td>A significant annual sum (CA, audit, HR head, office)</td></tr>
     <tr><td>Time to onboard a new engineer</td><td>2 weeks (vendor handles)</td><td>3 to 4 weeks (you source, EOR onboards)</td><td>4 to 6 weeks (you source, you onboard)</td></tr>
     <tr><td>Sourcing and screening</td><td>Vendor does it</td><td>You do it</td><td>You do it</td></tr>
     <tr><td>Retention and replacement</td><td>Vendor's problem</td><td>Your problem (EOR is payroll only)</td><td>Your problem entirely</td></tr>
@@ -81,7 +81,7 @@ const post: BlogPost = {
 
 <p><strong>You want to acquire Indian talent or companies.</strong> Acquihires, asset purchases, and IP acquisitions are dramatically cleaner when the acquiring entity is local. Without an entity, every acquisition involves a foreign-direct-investment filing.</p>
 
-<p>What entity setup is not good at: getting started fast, staying flexible, or amortising overhead across small headcount. If you are below 15 engineers and not sure you will be above 25 in 24 months, you are paying entity overhead for a problem you do not yet have. We have seen Series A founders burn $30K to $50K on premature entity setup that becomes irrelevant when their India strategy shifts six months later.</p>
+<p>What entity setup is not good at: getting started fast, staying flexible, or amortising overhead across small headcount. If you are below 15 engineers and not sure you will be above 25 in 24 months, you are paying entity overhead for a problem you do not yet have. We have seen Series A founders burn a substantial sum on premature entity setup that becomes irrelevant when their India strategy shifts six months later.</p>
 
 <h2>When is managed staff augmentation the right call?</h2>
 <p>The largest slice of the market in 2026, and the model we run.</p>
@@ -119,7 +119,7 @@ const post: BlogPost = {
 
 <p><strong>Year 4+:</strong> entity primary, staff aug for surge capacity or specialist roles where you do not want to add long-term headcount.</p>
 
-<p>The vendors worth working with will help you do this transition cleanly, including transferring the engineer's tenure, statutory dues, and benefits to your entity. The ones who lock you in for 12 months and charge $50K to convert an engineer in-house will not. Worth asking about transition terms in the first call, not the last.</p>
+<p>The vendors worth working with will help you do this transition cleanly, including transferring the engineer's tenure, statutory dues, and benefits to your entity. The ones who lock you in for 12 months and charge a steep conversion fee to bring an engineer in-house will not. Worth asking about transition terms in the first call, not the last.</p>
 
 <h2>What to do next</h2>
 <p>If you have read this far, you have probably narrowed to one or two of the three models. The fastest way to validate is a 15-minute call where we walk through your specific stage, headcount, and roadmap, and tell you honestly which model fits best, even if it is not us. <a href="/contact/">Book the call here</a> and we will send you a one-pager with the comparison applied to your specific situation before the meeting.</p>
@@ -130,7 +130,7 @@ const post: BlogPost = {
   "title": "Managed Staff Augmentation vs EOR vs Your Own India Entity: Which Hiring Model Fits Your Stage?",
   seoTitle: "Staff Augmentation vs EOR vs India Entity",
   "excerpt": "Three ways to hire engineers in India in 2026: managed staff augmentation, an Employer of Record, or your own India entity. Each one solves a different problem. Here is a side-by-side breakdown of cost, time, IP, compliance, and the stage at which each model actually pays off.",
-  "tldr": "Three legitimate ways to hire engineers in India in 2026: managed staff augmentation (vendor employs, you contract B2B; fastest start, lowest exposure), EOR (third party employs, you direct; medium speed, medium cost), or your own India entity (you employ; highest control, 4 to 6 month setup, INR 15 to 40 lakh upfront, ongoing FEMA and compliance). Pick by team size and how long you will be in India, not by which model your last vendor pitched.",
+  "tldr": "Three legitimate ways to hire engineers in India in 2026: managed staff augmentation (vendor employs, you contract B2B; fastest start, lowest exposure), EOR (third party employs, you direct; medium speed, medium cost), or your own India entity (you employ; highest control, 4 to 6 month setup, a substantial upfront investment, ongoing FEMA and compliance). Pick by team size and how long you will be in India, not by which model your last vendor pitched.",
   "category": "hiring",
   "categoryLabel": "Hiring & Teams",
   "author": "Gaurav",
@@ -166,7 +166,7 @@ const post: BlogPost = {
     },
     {
       "q": "How long does it take to set up a Private Limited subsidiary in India?",
-      "a": "Realistically 4 to 6 months from kickoff to first engineer onboarded. Steps include name reservation, incorporation, PAN/TAN, bank account, GST registration, Shops & Establishments registration, PF/ESI registration, and an inter-company agreement with your foreign parent. Setup cost runs $15K to $40K depending on legal counsel and ongoing CA fees add another $30K to $80K a year."
+      "a": "Realistically 4 to 6 months from kickoff to first engineer onboarded. Steps include name reservation, incorporation, PAN/TAN, bank account, GST registration, Shops & Establishments registration, PF/ESI registration, and an inter-company agreement with your foreign parent. Setup cost is a substantial one-time investment depending on legal counsel, and ongoing CA fees add a significant annual sum on top."
     },
     {
       "q": "Does an EOR cover sourcing and replacement of engineers?",
@@ -178,11 +178,11 @@ const post: BlogPost = {
     },
     {
       "q": "Can I move an engineer from a staff aug vendor to my own entity later?",
-      "a": "Yes, with the right vendor. The transition involves transferring the engineer's tenure, statutory dues (PF, gratuity), and benefits to your new entity. Vendors that lock you in with 12-month minimums and $50K conversion fees make this expensive on purpose. Vendors with no minimum and no conversion fee will help you transition cleanly. Ask about transition terms in the first call."
+      "a": "Yes, with the right vendor. The transition involves transferring the engineer's tenure, statutory dues (PF, gratuity), and benefits to your new entity. Vendors that lock you in with 12-month minimums and steep conversion fees make this expensive on purpose. Vendors with no minimum and no conversion fee will help you transition cleanly. Ask about transition terms in the first call."
     },
     {
       "q": "Which Employer of Record providers operate in India?",
-      "a": "Deel, Remote, Multiplier, Velocity Global, Globalization Partners (G-P), and Rippling EOR all operate in India in 2026. Pricing ranges roughly $300 to $700 per engineer per month on top of the engineer's gross salary and statutory employer cost. Multiplier and Remote are typically cheapest for India-only setups; Deel and Velocity Global are stronger if you are hiring across many countries."
+      "a": "Deel, Remote, Multiplier, Velocity Global, Globalization Partners (G-P), and Rippling EOR all operate in India in 2026. Pricing adds a modest flat fee per engineer per month on top of the engineer's gross salary and statutory employer cost. Multiplier and Remote are typically cheapest for India-only setups; Deel and Velocity Global are stronger if you are hiring across many countries."
     }
   ]
 };

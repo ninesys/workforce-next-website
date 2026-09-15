@@ -8,7 +8,7 @@ const post: BlogPost = {
   excerpt:
     "A 2026 Android developer job description leads with Kotlin and Jetpack Compose, demands Coroutines and Flow fluency, and treats Play Console delivery as a release-blocker skill. Here is the honest hiring guide, with a copy-paste JD template, screening framework, salary benchmarks, and the red flags that should disqualify a candidate.",
   tldr:
-    "A modern Android developer JD in 2026 leads with Kotlin and Jetpack Compose, expects Coroutines and Flow fluency, demands shipped Play Console delivery experience, and treats accessibility (TalkBack, Dynamic Type) as a release blocker. Java is now a maintenance skill, not a hiring requirement. Senior Android developers cost USD 6,500 to 9,500 per month in India and USD 250,000 to 380,000 fully loaded in the US. Screen on production track record, not framework certifications. Use the JD template in this post as a starting point.",
+    "A modern Android developer JD in 2026 leads with Kotlin and Jetpack Compose, expects Coroutines and Flow fluency, demands shipped Play Console delivery experience, and treats accessibility (TalkBack, Dynamic Type) as a release blocker. Java is now a maintenance skill, not a hiring requirement. Senior Android developers in India cost a fraction of an equivalent fully loaded US hire. Screen on production track record, not framework certifications. Use the JD template in this post as a starting point.",
   body: `<p>The Android developer job description that worked in 2020 actively repels strong 2026 candidates. "Java required, Kotlin a plus" reads as "this team is five years behind." "Strong knowledge of XML layouts" reads as "we have not migrated to Compose." Senior Android engineers entering the market in 2026 filter on these signals before they read the salary line.</p>
 
 <p>This post is the honest hiring guide for an Android developer in 2026: what the JD should actually say, the skills that matter, a copy-paste template you can adapt today, the interview loop that catches real fluency vs tutorial knowledge, what to pay, and the red flags that should disqualify a candidate. Read alongside our <a href="/hire/android-developers/">Android developers page</a> for the production-shape view of how we screen.</p>
@@ -132,16 +132,16 @@ const post: BlogPost = {
 
 <h2>How much should you pay an Android developer in 2026?</h2>
 
-<p>Realistic 2026 numbers, all-in (salary plus benefits plus employer-side overhead):</p>
+<p>Fully loaded cost (salary plus benefits plus employer-side overhead) varies a lot by region, in a consistent order:</p>
 
 <ul>
-  <li><strong>US senior Android developer:</strong> USD 250,000 to 380,000 per year fully loaded. Base typically 180k to 240k, plus benefits, 401(k) match, equity, office or hybrid allocation, payroll tax, recruiting amortization.</li>
-  <li><strong>Western Europe senior Android developer:</strong> EUR 95,000 to 150,000 per year fully loaded, depending on country (London highest, Berlin and Amsterdam mid, Lisbon lowest).</li>
-  <li><strong>Latin America senior Android developer:</strong> USD 90,000 to 140,000 per year fully loaded for European or US-facing engagements.</li>
-  <li><strong>India senior Android developer (managed staff augmentation):</strong> USD 6,500 to 9,500 per month all-in to the customer (USD 78,000 to 114,000 annualized). Tech leads run USD 9,000 to 12,500 per month.</li>
+  <li><strong>US senior Android developer:</strong> the highest fully loaded cost of the group, driven by base salary plus benefits, 401(k) match, equity, office or hybrid allocation, payroll tax, and recruiting amortization.</li>
+  <li><strong>Western Europe senior Android developer:</strong> below the US, with a wide spread by country (London highest, Berlin and Amsterdam mid, Lisbon lowest).</li>
+  <li><strong>Latin America senior Android developer:</strong> below Western Europe for European or US-facing engagements.</li>
+  <li><strong>India senior Android developer (managed staff augmentation):</strong> the lowest fully loaded cost of the group, all-in to the customer. Tech leads run a modest premium over senior individual contributors.</li>
 </ul>
 
-<p>The full per-level India breakdown is in our <a href="/blog/senior-indian-developer-salary-2026/">2026 senior Indian developer salary post</a>. The regional comparison is covered in <a href="/blog/most-outsourced-developers-us-companies-2026/">what developers US companies outsource most in 2026</a>.</p>
+<p>The full per-level India breakdown is in our <a href="/blog/senior-indian-developer-salary-2026/">senior Indian developer salary post</a>. The regional comparison is covered in <a href="/blog/most-outsourced-developers-us-companies-2026/">what developers US companies outsource most in 2026</a>.</p>
 
 <h2>How should you structure the Android developer interview loop?</h2>
 
@@ -201,7 +201,7 @@ const post: BlogPost = {
     },
     {
       q: "What is a fair salary for a senior Android developer in 2026?",
-      a: "USD 250,000 to 380,000 per year fully loaded for a US senior, EUR 95,000 to 150,000 in Western Europe, USD 78,000 to 114,000 annualized for an India-based senior on managed staff augmentation, and USD 90,000 to 140,000 for a LATAM senior. The cost gap between US and offshore drives most 2026 outsourcing decisions for Android specifically.",
+      a: "US senior Android developers carry the highest fully loaded cost, Western Europe comes in below that, LATAM lower still, and India-based seniors on managed staff augmentation are the lowest of the group. The cost gap between US and offshore drives most 2026 outsourcing decisions for Android specifically.",
     },
     {
       q: "How do I screen for Jetpack Compose fluency vs tutorial knowledge?",

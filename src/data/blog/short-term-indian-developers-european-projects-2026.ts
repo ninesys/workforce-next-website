@@ -168,7 +168,7 @@ const post: BlogPost = {
     },
     {
       q: "Why pick India over Eastern Europe for short-term European engagements?",
-      a: "India wins on cost (15 to 30 percent below Eastern Europe), AI and data depth, and willingness to take on 3 to 4 month engagements. Eastern Europe vendors increasingly insist on 6 to 12 month minimums for senior engineers. India also has a deeper pool for AI, data, and modern frontend work. Eastern Europe still wins on natural timezone fit and on regulated fintech work. Pick India when the work is short and the budget is tight; pick Eastern Europe when timezone overlap is critical and the project is regulated.",
+      a: "India wins on cost (meaningfully below Eastern Europe rates), AI and data depth, and willingness to take on 3 to 4 month engagements. Eastern Europe vendors increasingly insist on 6 to 12 month minimums for senior engineers. India also has a deeper pool for AI, data, and modern frontend work. Eastern Europe still wins on natural timezone fit and on regulated fintech work. Pick India when the work is short and the budget is tight; pick Eastern Europe when timezone overlap is critical and the project is regulated.",
     },
   ],
 };

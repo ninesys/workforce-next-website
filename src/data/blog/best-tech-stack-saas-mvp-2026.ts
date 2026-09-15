@@ -165,7 +165,7 @@ const post: BlogPost = {
 <p>Auth is the most over-debated decision in the SaaS stack. The honest answers:</p>
 
 <ul>
-<li><strong>Clerk</strong>: Best developer experience for B2C and prosumer SaaS. Hosted UI components, magic links, OAuth, MFA, sessions, all done. USD 25 to USD 100 per month at startup scale.</li>
+<li><strong>Clerk</strong>: Best developer experience for B2C and prosumer SaaS. Hosted UI components, magic links, OAuth, MFA, sessions, all done. Affordable at startup scale.</li>
 <li><strong>WorkOS</strong>: The right pick the moment you are selling to mid-market or enterprise B2B and need SSO (SAML, Okta, Azure AD). Free up to 1 million MAUs for the base product; SSO add-on starts free for the first connection.</li>
 <li><strong>Supabase Auth</strong>: Pick if you are already on Supabase for the database. It is tightly integrated and good enough. The dev experience is less polished than Clerk.</li>
 <li><strong>Auth0</strong>: Was the default for years. Now expensive and the developer experience has fallen behind Clerk and WorkOS. Pick only if your team already knows it.</li>
@@ -236,64 +236,64 @@ const post: BlogPost = {
 <tr>
 <th>Service</th>
 <th>Free tier covers</th>
-<th>Cost at MVP scale (USD/mo)</th>
+<th>Cost shape at MVP scale</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Vercel (Pro)</td>
 <td>Hobby fine until launch</td>
-<td>20</td>
+<td>Low, flat</td>
 </tr>
 <tr>
 <td>Supabase or Neon</td>
 <td>Free until 1-2 GB DB</td>
-<td>25-50</td>
+<td>Low, scales with data</td>
 </tr>
 <tr>
 <td>Clerk</td>
 <td>10k MAU free</td>
-<td>0-25</td>
+<td>Free to low</td>
 </tr>
 <tr>
 <td>Stripe</td>
 <td>Pay per transaction</td>
-<td>Variable</td>
+<td>Usage-based, no fixed fee</td>
 </tr>
 <tr>
 <td>Inngest</td>
 <td>Free up to 50k step runs</td>
-<td>0-20</td>
+<td>Free to low</td>
 </tr>
 <tr>
 <td>Resend</td>
 <td>3,000 emails/mo free</td>
-<td>0-20</td>
+<td>Free to low</td>
 </tr>
 <tr>
 <td>Sentry</td>
 <td>5k errors/mo free</td>
-<td>0-26</td>
+<td>Free to low</td>
 </tr>
 <tr>
 <td>PostHog</td>
 <td>1M events/mo free</td>
-<td>0</td>
+<td>Free</td>
 </tr>
 <tr>
 <td>Domain + email</td>
 <td>-</td>
-<td>20</td>
+<td>Low, flat</td>
 </tr>
 <tr>
 <td><strong>Total at MVP scale</strong></td>
 <td>-</td>
-<td><strong>65 to 181</strong></td>
+<td><strong>Comfortably inside a typical bootstrapped budget</strong></td>
 </tr>
 </tbody>
 </table>
 
-<p>You can launch on under USD 100 per month, including domain and email. The bill scales gradually as you get users, not in discontinuous jumps. This is one of the underrated wins of the default stack: every layer has a sensible free tier you can use to validate before paying.</p>
+<p>You can launch cheaply, including domain and email, and the bill scales gradually as you get users, not in discontinuous jumps. This is one of the underrated wins of the default stack: every layer has a sensible free tier you can use to validate before paying.</p>
 
 <h2>What should you do this week?</h2>
 
@@ -301,7 +301,7 @@ const post: BlogPost = {
 
 <p><strong>Step 1.</strong> Answer the three questions in the picking section above. Write the answers down so you stop debating.</p>
 
-<p><strong>Step 2.</strong> Spin up the default stack as a working hello-world. A Next.js app with Clerk login, a Supabase database, one API route, Stripe checkout for a USD 1 test plan. End-to-end working in a day or two. This is your foundation.</p>
+<p><strong>Step 2.</strong> Spin up the default stack as a working hello-world. A Next.js app with Clerk login, a Supabase database, one API route, Stripe checkout for a token test plan. End-to-end working in a day or two. This is your foundation.</p>
 
 <p><strong>Step 3.</strong> Build your one core workflow on top. Do not add Sentry, PostHog, Inngest, or background jobs until the core workflow works. Then add them, in week one of real product work, before you forget. <a href="/contact/">Tell us your one-sentence core workflow</a> and we will scope a realistic build with this stack in 48 hours, fixed price.</p>
 
@@ -349,7 +349,7 @@ const post: BlogPost = {
     },
     {
       q: "Clerk vs WorkOS vs Auth0 vs Supabase Auth, which should I pick?",
-      a: "Clerk for B2C and SMB B2B (best developer experience, hosted components, USD 25-100/mo at MVP scale). WorkOS the moment you are selling to mid-market or enterprise B2B and need SSO (SAML, Okta, Azure AD). Supabase Auth if you are already on Supabase. Auth0 only if your team already uses it. Never roll your own auth for an MVP, v2, or until you are 100+ engineers with a security team.",
+      a: "Clerk for B2C and SMB B2B (best developer experience, hosted components, affordable at MVP scale). WorkOS the moment you are selling to mid-market or enterprise B2B and need SSO (SAML, Okta, Azure AD). Supabase Auth if you are already on Supabase. Auth0 only if your team already uses it. Never roll your own auth for an MVP, v2, or until you are 100+ engineers with a security team.",
     },
     {
       q: "Supabase or Neon for the database?",
@@ -357,7 +357,7 @@ const post: BlogPost = {
     },
     {
       q: "What does this stack cost to run at MVP scale?",
-      a: "Under USD 100 per month for under 1,000 users. Vercel Pro at USD 20, Supabase or Neon at USD 25-50, Clerk free for the first 10k MAUs, Inngest free for the first 50k step runs, Resend free for 3,000 emails per month, PostHog free for 1M events per month, Sentry free for 5k errors per month, domain plus Google Workspace at USD 20. Bills scale gradually with usage, not in discontinuous jumps.",
+      a: "Comfortably affordable for under 1,000 users. Vercel Pro and domain plus Google Workspace are each a low flat fee, Supabase or Neon a modest amount, Clerk free for the first 10k MAUs, Inngest free for the first 50k step runs, Resend free for 3,000 emails per month, PostHog free for 1M events per month, Sentry free for 5k errors per month. Bills scale gradually with usage, not in discontinuous jumps.",
     },
     {
       q: "What about Remix, SvelteKit, Astro, or other meta-frameworks?",

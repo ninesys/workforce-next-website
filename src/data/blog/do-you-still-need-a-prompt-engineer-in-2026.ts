@@ -6,7 +6,7 @@ const post: BlogPost = {
 <p>If you are staring at a job description wondering whether the "Prompt Engineer" post you wrote will get serious applicants, or whether to rewrite it as "AI Developer," this post is for you.</p>
 
 <h2>What does a prompt engineer actually do in 2026?</h2>
-<p>The job title peaked in 2023, when GPT-3.5 was new, prompt tricks were the differentiator, and companies posted $300,000 roles for people who could coax reliable output out of a raw model. Most of that work is now tooling. Structured output, function calling, JSON schemas, and much better instruction-following in modern Claude, Gemini, and GPT-class models have absorbed the old "prompt hacking" tier.</p>
+<p>The job title peaked in 2023, when GPT-3.5 was new, prompt tricks were the differentiator, and companies posted eye-catching six-figure roles for people who could coax reliable output out of a raw model. Most of that work is now tooling. Structured output, function calling, JSON schemas, and much better instruction-following in modern Claude, Gemini, and GPT-class models have absorbed the old "prompt hacking" tier.</p>
 <p>What remains under the prompt engineer label is still real work, just narrower: designing system prompts and evaluation datasets for a specific domain, tuning prompts against a benchmark, and shipping prompt changes with proper versioning and A/B testing. It is closer to a content-and-evaluation hybrid role than a pure software engineering role.</p>
 
 <h2>Why did the standalone prompt engineer role shrink?</h2>
@@ -40,18 +40,18 @@ const post: BlogPost = {
 <p><strong>They have operated a prompt in production.</strong> Production prompts break. Inputs drift, users adversarially probe, model providers ship silent behavior changes. A candidate who has lived through a prompt regression and diagnosed it has instincts you cannot test with a take-home.</p>
 
 <h2>What should a prompt engineer actually cost?</h2>
-<p>The salary range for prompt-engineer-labeled roles is much narrower in 2026 than it was in 2023. Rough ranges we see on posted roles and client comps:</p>
+<p>The compensation range for prompt-engineer-labeled roles is much narrower in 2026 than it was in 2023, and it scales with scope rather than title. Rough shape we see on posted roles and client comps, US hiring compared with an offshore dedicated-team model:</p>
 <table>
   <thead>
-    <tr><th>Role shape</th><th>Typical US range</th><th>Offshore (India) range</th><th>What you actually get</th></tr>
+    <tr><th>Role shape</th><th>Relative cost tier</th><th>What you actually get</th></tr>
   </thead>
   <tbody>
-    <tr><td>Prompt engineer (standalone, non-coding)</td><td>$90k to $140k</td><td>$2,000 to $4,000/mo</td><td>Prompt craft, evals, domain content</td></tr>
-    <tr><td>AI developer (prompts + code + infra)</td><td>$140k to $220k</td><td>$4,500 to $9,000/mo</td><td>Full LLM feature ownership</td></tr>
-    <tr><td>LLM platform lead (prompts + infra + standards)</td><td>$180k to $280k</td><td>$7,000 to $12,000/mo</td><td>Platform-wide prompt standards, tooling, cross-team support</td></tr>
+    <tr><td>Prompt engineer (standalone, non-coding)</td><td>Baseline</td><td>Prompt craft, evals, domain content</td></tr>
+    <tr><td>AI developer (prompts + code + infra)</td><td>Meaningful step up from baseline</td><td>Full LLM feature ownership</td></tr>
+    <tr><td>LLM platform lead (prompts + infra + standards)</td><td>Highest of the three</td><td>Platform-wide prompt standards, tooling, cross-team support</td></tr>
   </tbody>
 </table>
-<p>The 2023 headlines of $300k prompt-engineer offers were outliers, and most of those roles quietly rescoped into AI developer work within a year. Plan compensation for what the person will actually do, not the job-title inflation from two years ago.</p>
+<p>Within each tier, a US hire runs meaningfully higher than an equivalent offshore (India) hire on a dedicated-team model, often by a wide enough margin to fund an entire second role. The 2023 headlines of eye-catching prompt-engineer offers were outliers, and most of those roles quietly rescoped into AI developer work within a year. Plan compensation for what the person will actually do, not the job-title inflation from two years ago.</p>
 
 <h2>What is the right team shape for serious LLM work?</h2>
 <p>For most teams in 2026, the right shape is one or two AI developers who own the LLM feature end-to-end, with prompt-engineering skill built in. Add a domain expert part-time for prompt and eval input when the domain is specialized. Add a dedicated prompt engineer or LLM platform lead only when you have crossed a certain scale, meaning more than three LLM features in production, or more than a million calls a day.</p>
@@ -100,7 +100,7 @@ const post: BlogPost = {
     },
     {
       "q": "How much does a prompt engineer cost in 2026?",
-      "a": "Standalone prompt engineers in the US range roughly $90k to $140k. Offshore (India) rates are roughly $2,000 to $4,000 per month. Full AI developers who include prompt engineering cost more but do more: $140k to $220k US, or $4,500 to $9,000 per month offshore. The 2023 $300k prompt-engineer headlines were outliers and have largely rescoped into AI developer roles."
+      "a": "It depends on scope more than title. A standalone prompt engineer sits at the baseline for the category. An AI developer who owns prompts plus code plus infrastructure costs meaningfully more but delivers full feature ownership, not just prompt craft. An LLM platform lead sits highest of the three. Within any of these tiers, a US hire costs substantially more than an equivalent offshore (India) hire on a dedicated-team model. The 2023 headlines about eye-catching prompt-engineer offers were outliers and have largely rescoped into AI developer roles."
     },
     {
       "q": "What skills should I screen a prompt engineer for?",

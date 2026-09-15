@@ -8,14 +8,14 @@ const post: BlogPost = {
   excerpt:
     "US companies in 2026 outsource four developer categories the most: Web and Mobile, DevOps and SRE, Data and AI, and QA automation. Here is what each pillar covers, the real cost gap that drives it, and where companies are hiring from.",
   tldr:
-    "US companies in 2026 outsource four developer categories the most: web and mobile (React, Node, Flutter, Swift), DevOps and SRE (AWS, Kubernetes, Terraform, Follow the Sun), data and AI engineers (pipelines, RAG, MCP, LLM integration), and QA automation engineers (SDETs running Playwright and Cypress suites). The driver is the same in every category: a senior US hire costs roughly $200K a year more than the offshore equivalent, and AI tooling has closed the productivity gap that used to make that premium worth paying.",
+    "US companies in 2026 outsource four developer categories the most: web and mobile (React, Node, Flutter, Swift), DevOps and SRE (AWS, Kubernetes, Terraform, Follow the Sun), data and AI engineers (pipelines, RAG, MCP, LLM integration), and QA automation engineers (SDETs running Playwright and Cypress suites). The driver is the same in every category: a senior US hire costs dramatically more per year than the offshore equivalent, and AI tooling has closed the productivity gap that used to make that premium worth paying.",
   body: `<p>The outsourcing conversation in the US shifted in 2026. Companies are no longer sending offshore the cheap, clearly bounded work that used to define the category. They are sending offshore the specialist roles that used to be guarded as in-house only. Web and mobile development is still the highest-volume bucket, but the fastest growth is in DevOps, SRE, data engineering, AI integration, and automation testing.</p>
 
 <p>This post covers the four developer roles US companies outsource most in 2026, why each one is moving offshore, what the real cost gap looks like, and which regions companies are hiring from. The numbers are 2026 figures, not legacy estimates pulled from a 2022 industry report.</p>
 
 <h2>Why has US outsourcing changed in 2026?</h2>
 
-<p>Three things changed in the last 24 months. First, the cost of a senior US engineer kept climbing. The fully loaded cost of a senior US developer (salary, benefits, 401(k) match, equity, office allocation, and payroll tax) now lands between $250,000 and $380,000 a year, depending on stack and metro. Second, AI-assisted development closed the productivity gap that used to justify that premium. A senior offshore engineer working with Cursor, Claude Code, or GitHub Copilot ships at a velocity that, two years ago, only a senior US engineer could match. Third, the talent pool for AI-era roles, especially data and ML engineering, was always too small to fill from the US alone. There simply are not enough engineers locally to build what mid-market and enterprise companies want to build.</p>
+<p>Three things changed in the last 24 months. First, the cost of a senior US engineer kept climbing. The fully loaded cost of a senior US developer (salary, benefits, 401(k) match, equity, office allocation, and payroll tax) now sits at a level that dwarfs the offshore equivalent, and it keeps climbing depending on stack and metro. Second, AI-assisted development closed the productivity gap that used to justify that premium. A senior offshore engineer working with Cursor, Claude Code, or GitHub Copilot ships at a velocity that, two years ago, only a senior US engineer could match. Third, the talent pool for AI-era roles, especially data and ML engineering, was always too small to fill from the US alone. There simply are not enough engineers locally to build what mid-market and enterprise companies want to build.</p>
 
 <p>The result is that outsourcing in 2026 is no longer about saving money on simple work. It is about getting strategic capacity that the US market cannot supply at any reasonable price. The <a href="/india-handled/">AI-native Indian engineering thesis</a> covers the productivity argument in detail. The cost argument is covered in <a href="/blog/senior-indian-developer-salary-2026/">what you should pay a senior Indian developer in 2026</a>.</p>
 
@@ -38,7 +38,7 @@ const post: BlogPost = {
 
 <h3>2. DevOps, SRE, and platform engineers</h3>
 
-<p>This is the fastest-growing category and the one with the steepest cost gap. A US-based senior DevOps lead now runs $220,000 to $300,000 fully loaded. Mid-market companies that cannot justify that for a single hire are outsourcing the entire function instead.</p>
+<p>This is the fastest-growing category and the one with the steepest cost gap. A US-based senior DevOps lead now runs among the highest fully loaded cost tiers on the engineering team. Mid-market companies that cannot justify that for a single hire are outsourcing the entire function instead.</p>
 
 <ul>
   <li><strong>Cloud platforms:</strong> AWS dominates, with Azure strong in regulated and enterprise accounts and GCP common in data-heavy startups.</li>
@@ -60,7 +60,7 @@ const post: BlogPost = {
   <li><strong>LLM integrators and MCP server developers.</strong> The newest sub-role. As Anthropic's Model Context Protocol becomes the default way agents talk to internal systems, companies need engineers who can stand up MCP servers, expose internal APIs to LLM clients safely, and build the agent layer on top. We staff this work through our dedicated <a href="/hire/mcp-developers/">MCP developers</a>, often paired with <a href="/hire/langchain-developers/">LangChain</a> and <a href="/hire/rag-developers/">RAG developer</a> engagements.</li>
 </ul>
 
-<p>The argument for offshore here is twofold: cost (a senior US AI engineer runs $280K to $380K fully loaded), and supply. Even if you have the budget, you may not be able to find five mid or senior AI engineers in your local market on any reasonable timeline. India and parts of Eastern Europe have built the deepest pools globally outside the FAANG-funded US enclave.</p>
+<p>The argument for offshore here is twofold: cost (a senior US AI engineer commands the highest fully loaded cost tier of any role in this post), and supply. Even if you have the budget, you may not be able to find five mid or senior AI engineers in your local market on any reasonable timeline. India and parts of Eastern Europe have built the deepest pools globally outside the FAANG-funded US enclave.</p>
 
 <h3>4. QA automation and SDETs</h3>
 
@@ -85,40 +85,40 @@ const post: BlogPost = {
       <th>Role</th>
       <th>US senior all-in (annual)</th>
       <th>Offshore senior all-in (annual)</th>
-      <th>Annual gap</th>
+      <th>Gap</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Web and mobile developer</td>
-      <td>$190,000 to $260,000</td>
-      <td>$66,000 to $108,000</td>
-      <td>~$120,000 to $150,000</td>
+      <td>Highest cost of the three tiers below</td>
+      <td>A fraction of the US cost</td>
+      <td>Large, though the smallest gap of the four roles here</td>
     </tr>
     <tr>
       <td>DevOps / SRE / platform</td>
-      <td>$220,000 to $300,000</td>
-      <td>$72,000 to $120,000</td>
-      <td>~$150,000 to $180,000</td>
+      <td>Higher still than web/mobile</td>
+      <td>A fraction of the US cost, modestly above web/mobile offshore</td>
+      <td>Larger than web/mobile</td>
     </tr>
     <tr>
       <td>Data / AI / ML engineer</td>
-      <td>$280,000 to $380,000</td>
-      <td>$84,000 to $144,000</td>
-      <td>~$190,000 to $240,000</td>
+      <td>Highest of all four roles</td>
+      <td>A fraction of the US cost, the highest offshore tier of the four</td>
+      <td>The widest gap of the four roles</td>
     </tr>
     <tr>
       <td>SDET / QA automation</td>
-      <td>$160,000 to $220,000</td>
-      <td>$54,000 to $96,000</td>
-      <td>~$100,000 to $130,000</td>
+      <td>Lowest of the four roles, still well above offshore</td>
+      <td>Lowest offshore tier of the four</td>
+      <td>Smallest gap of the four, still substantial</td>
     </tr>
   </tbody>
 </table>
 
 <p>These are 2026 figures, calibrated against actual offers we see in our pipeline and against the <a href="https://survey.stackoverflow.co/2024/" rel="noopener">Stack Overflow 2024 Developer Survey</a> for US compensation and the <a href="https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm" rel="noopener">US Bureau of Labor Statistics Occupational Outlook for software developers</a>.</p>
 
-<p>The numbers shock buyers who have not priced their own US headcount honestly. A US software developer who lists base salary of $180,000 on LinkedIn costs the company closer to $260,000 once everything is loaded in. The full breakdown by level is in <a href="/blog/senior-indian-developer-salary-2026/">what you should pay a senior Indian developer in 2026</a>.</p>
+<p>The numbers shock buyers who have not priced their own US headcount honestly. A US software developer's listed base salary on LinkedIn understates the true fully loaded cost significantly once benefits, taxes, equity, and overhead are loaded in. The full breakdown by level is in <a href="/blog/senior-indian-developer-salary-2026/">what you should pay a senior Indian developer in 2026</a>.</p>
 
 <h2>Where are US companies hiring from in 2026?</h2>
 
@@ -143,7 +143,7 @@ const post: BlogPost = {
     <tr>
       <td>Latin America</td>
       <td>Real-time timezone overlap with US Eastern, Central, and Pacific. Cultural alignment for daily standups.</td>
-      <td>Smaller talent pool than India, especially for senior AI and data roles. Higher rates than India by roughly 30 to 60 percent.</td>
+      <td>Smaller talent pool than India, especially for senior AI and data roles. Meaningfully higher rates than India, though still well below US cost.</td>
       <td>Small agile teams that need synchronous collaboration, US Pacific-based startups, founder-led product builds where the founder runs daily standups</td>
     </tr>
     <tr>
@@ -208,15 +208,15 @@ const post: BlogPost = {
   faq: [
     {
       q: "Why are US companies outsourcing more in 2026, not less?",
-      a: "The fully loaded cost of a senior US developer climbed past $250,000 a year while AI-assisted development closed the productivity gap that used to justify that premium. At the same time, the talent pool for AI and data engineering is too small to fill from the US alone. The result is that outsourcing in 2026 is less about cost arbitrage on cheap work and more about getting strategic capacity the US market cannot supply at any reasonable price.",
+      a: "The fully loaded cost of a senior US developer climbed into an unprecedented range while AI-assisted development closed the productivity gap that used to justify that premium. At the same time, the talent pool for AI and data engineering is too small to fill from the US alone. The result is that outsourcing in 2026 is less about cost arbitrage on cheap work and more about getting strategic capacity the US market cannot supply at any reasonable price.",
     },
     {
       q: "What is the most outsourced developer role from the US in 2026?",
-      a: "Web and mobile development is still the highest-volume category by a wide margin, driven by US startups and SMEs that need to ship a product without spending six months on hiring. React, Node, Flutter, and Swift dominate the requested stacks. The fastest-growing category, however, is DevOps and SRE, driven by mid-market teams that cannot justify a $250,000 US DevOps lead and outsource the entire function instead.",
+      a: "Web and mobile development is still the highest-volume category by a wide margin, driven by US startups and SMEs that need to ship a product without spending six months on hiring. React, Node, Flutter, and Swift dominate the requested stacks. The fastest-growing category, however, is DevOps and SRE, driven by mid-market teams that cannot justify the cost of a senior in-house US DevOps lead and outsource the entire function instead.",
     },
     {
       q: "How much does a US company actually save by outsourcing engineering to India in 2026?",
-      a: "Roughly $120,000 to $240,000 per engineer per year on a fully loaded basis, depending on the role. A senior US web developer costs about $190,000 to $260,000 all-in; a senior offshore equivalent costs $66,000 to $108,000. A senior US AI engineer costs $280,000 to $380,000; a senior offshore AI engineer costs $84,000 to $144,000. The full per-role breakdown is in this post.",
+      a: "A substantial amount per engineer per year on a fully loaded basis, and the exact gap varies by role. A senior US web developer costs several times more all-in than a senior offshore equivalent. A senior US AI engineer, the most expensive role in this post, costs even more relative to its offshore counterpart, the widest gap of the four roles. The full per-role comparison is in this post.",
     },
     {
       q: "What is the Follow-the-Sun model and why is it growing?",

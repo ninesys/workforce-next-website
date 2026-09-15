@@ -7,7 +7,7 @@ const post: BlogPost = {
   excerpt:
     "Hire a software testing team rather than a single tester when the surface area is larger than one engineer can hold. Here is the pod-size math, the SDET vs manual mix, the engagement models, and how to budget for it.",
   tldr:
-    "Hire a software testing team (a pod of 3 to 5 engineers) when the test surface area is larger than one tester can hold, when you need parallel automation work plus exploratory manual coverage, or when 24/7 release coverage matters. The 2026 default mix is 1 SDET lead plus 2 to 3 SDETs plus 1 manual or exploratory tester for any team running multi-platform releases. A 3-person India-based testing pod typically costs USD 14,000 to 22,000 per month all-in, which is one fully loaded US senior tester. The hiring implication: do not hire testers one at a time when you actually need a team.",
+    "Hire a software testing team (a pod of 3 to 5 engineers) when the test surface area is larger than one tester can hold, when you need parallel automation work plus exploratory manual coverage, or when 24/7 release coverage matters. The 2026 default mix is 1 SDET lead plus 2 to 3 SDETs plus 1 manual or exploratory tester for any team running multi-platform releases. A 3-person India-based testing pod typically costs roughly what a single fully loaded US senior tester costs. The hiring implication: do not hire testers one at a time when you actually need a team.",
   body: `<p>The "hire a software testing team" search query is a clearer signal than "hire a software tester." Buyers who type the team variant know they have a multi-person problem: a release pipeline with parallel automation work, a regression surface that grew past what one person can run, or a 24/7 product that needs continuous coverage. This post is the honest 2026 buyer guide for that decision: when a team beats a single tester, what shape the team should take, and how to budget for it.</p>
 
 <p>Read alongside our <a href="/hire/qa-testers/">QA engineers and testers page</a> for the production-shape view of how we staff testing pods.</p>
@@ -59,12 +59,12 @@ const post: BlogPost = {
 <p>Realistic pricing for an India-based testing pod, all-in to the client:</p>
 
 <ul>
-  <li><strong>3-person pod (1 lead + 2 SDETs).</strong> USD 14,000 to 22,000 per month. Annualized: USD 168,000 to 264,000.</li>
-  <li><strong>4-person pod (1 lead + 2 SDETs + 1 manual).</strong> USD 18,000 to 28,000 per month. Annualized: USD 216,000 to 336,000.</li>
-  <li><strong>5-person pod (1 lead + 3 SDETs + 1 manual).</strong> USD 22,000 to 34,000 per month.</li>
+  <li><strong>Smallest pod (1 lead + 2 SDETs).</strong> The entry-level pod cost, well under what a single US senior hire runs annually.</li>
+  <li><strong>Mid-size pod (1 lead + 2 SDETs + 1 manual).</strong> A modest step up from the smallest pod, still comfortably below one US senior hire's annual cost.</li>
+  <li><strong>Largest pod (1 lead + 3 SDETs + 1 manual).</strong> The highest tier, and still roughly on par with a single US senior hire, for a full team's worth of coverage.</li>
 </ul>
 
-<p>For comparison, a single fully loaded US senior tester or SDET costs USD 170,000 to 240,000 per year. A 3-person India pod is roughly the same annual cost as one US senior, with three times the coverage and parallel work across surfaces. The math is the primary driver behind the offshore testing-pod model. The full senior India developer pricing is in our <a href="/blog/senior-indian-developer-salary-2026/">2026 senior Indian developer salary post</a>.</p>
+<p>For comparison, a single fully loaded US senior tester or SDET costs substantially more per year than an entire India-based pod. A 3-person India pod is roughly the same annual cost as one US senior, with three times the coverage and parallel work across surfaces. The math is the primary driver behind the offshore testing-pod model. The full senior India developer pricing is in our <a href="/blog/senior-indian-developer-salary-2026/">2026 senior Indian developer salary post</a>.</p>
 
 <h2>What engagement model fits which company stage?</h2>
 
@@ -156,7 +156,7 @@ const post: BlogPost = {
     },
     {
       q: "How much does a software testing team cost in 2026?",
-      a: "An India-based 3-person pod (1 lead, 2 SDETs) costs USD 14,000 to 22,000 per month all-in. A 4-person pod adding a manual tester costs USD 18,000 to 28,000. A 5-person pod runs USD 22,000 to 34,000. For comparison, a single fully loaded US senior tester costs USD 170,000 to 240,000 per year, so a 3-person India pod is roughly equivalent to one US senior with three times the coverage.",
+      a: "An India-based 3-person pod (1 lead, 2 SDETs) costs a fraction of a single US senior hire's annual cost, all-in. A 4-person pod adding a manual tester costs a modest step up, and a 5-person pod costs more still but remains roughly on par with a single fully loaded US senior tester's annual cost, for a full team's worth of coverage.",
     },
     {
       q: "What is the difference between an SDET and a manual tester?",

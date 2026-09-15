@@ -143,9 +143,9 @@ const post: BlogPost = {
 
 <p>Cost is a function of team composition and timeline. The two honest models are an in-house team or a dedicated remote team, and the numbers differ a lot.</p>
 
-<p><strong>In-house (US-based):</strong> 2 to 4 engineers at USD 130,000 to USD 200,000 fully loaded each per year. A 12-week MVP with 3 engineers costs roughly USD 90,000 to USD 140,000 in salary alone, before benefits, equity, and recruiting time. The upside is full control and presence. The downside is cost and the 2 to 4 month hiring lag before anyone writes code.</p>
+<p><strong>In-house (US-based):</strong> 2 to 4 engineers, fully loaded, is the most expensive path by a wide margin. A 12-week MVP with 3 engineers is a significant salary commitment alone, before benefits, equity, and recruiting time. The upside is full control and presence. The downside is cost and the 2 to 4 month hiring lag before anyone writes code.</p>
 
-<p><strong>Dedicated remote team (India or similar):</strong> The same 3-engineer, 12-week build runs roughly USD 30,000 to USD 55,000 depending on seniority. The upside is speed to start (days, not months) and cost. The downside is you need a team that actually ships production SaaS, not a body shop. Our <a href="/for/startups/">startup engagement model</a> is built for exactly this: a small dedicated team matched to your stack, with the founder retaining product control.</p>
+<p><strong>Dedicated remote team (India or similar):</strong> The same 3-engineer, 12-week build runs a fraction of the in-house cost, depending on seniority. The upside is speed to start (days, not months) and cost. The downside is you need a team that actually ships production SaaS, not a body shop. Our <a href="/for/startups/">startup engagement model</a> is built for exactly this: a small dedicated team matched to your stack, with the founder retaining product control.</p>
 
 <p>A third model worth naming: a hybrid where a founder or fractional CTO owns architecture and product, and a dedicated remote team builds. This is the most cost-effective path for a technical founder who wants to move fast without funding a full US team before product-market fit.</p>
 
@@ -248,7 +248,7 @@ const post: BlogPost = {
     },
     {
       q: "How much does it cost to build a SaaS web application?",
-      a: "An in-house US team of 3 engineers building a 12-week MVP costs roughly USD 90,000 to USD 140,000 in salary alone, plus a 2 to 4 month hiring lag. A dedicated remote team (India or similar) building the same scope runs roughly USD 30,000 to USD 55,000 and can start in days. A hybrid model, where a technical founder owns product and a dedicated remote team builds, is usually the most cost-effective path before product-market fit.",
+      a: "An in-house US team of 3 engineers building a 12-week MVP is a significant salary commitment alone, plus a 2 to 4 month hiring lag. A dedicated remote team (India or similar) building the same scope runs a fraction of that cost and can start in days. A hybrid model, where a technical founder owns product and a dedicated remote team builds, is usually the most cost-effective path before product-market fit.",
     },
     {
       q: "Should I build multi-tenancy from day one?",

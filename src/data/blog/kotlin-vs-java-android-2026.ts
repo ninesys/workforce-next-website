@@ -111,7 +111,7 @@ const post: BlogPost = {
   <li><strong>Test on a real Compose screen.</strong> Trial week work is the cleanest signal. Give the candidate a small Compose feature with a backend integration, see how the code reads, and you will know within five days.</li>
 </ol>
 
-<p>If you are about to hire an Android developer and want this kind of screen run for you, our <a href="/products/seth-ai-recruiter/">SethAI</a> match report covers Kotlin and Compose fluency, Coroutines correctness, Play Console delivery experience, and the longevity signals that predict whether the engineer stays past the first three months. Senior Android developers from India typically cost USD 6,500 to 9,500 per month all-in. The full pricing breakdown is in the <a href="/blog/senior-indian-developer-salary-2026/">2026 senior India developer pricing post</a>.</p>
+<p>If you are about to hire an Android developer and want this kind of screen run for you, our <a href="/products/seth-ai-recruiter/">SethAI</a> match report covers Kotlin and Compose fluency, Coroutines correctness, Play Console delivery experience, and the longevity signals that predict whether the engineer stays past the first three months. Senior Android developers from India come at a meaningful cost advantage over equivalent US hires. The full breakdown of what drives that rate is in the <a href="/blog/senior-indian-developer-salary-2026/">senior India developer pricing post</a>.</p>
 
 <h2>Final word</h2>
 
@@ -159,7 +159,7 @@ const post: BlogPost = {
     },
     {
       q: "Does the rate for an Android developer differ for Kotlin vs Java?",
-      a: "Not meaningfully. Senior Android developers from India typically cost USD 6,500 to 9,500 per month all-in regardless of which language the engagement is centered on. What changes is the bench size: Kotlin-fluent senior Android developers outnumber Java-only specialists by a wide margin in 2026, so engagements requiring Java-only expertise sometimes take a few extra days to staff.",
+      a: "Not meaningfully. Senior Android developer rates from India do not shift much based on which language the engagement is centered on. What changes is the bench size: Kotlin-fluent senior Android developers outnumber Java-only specialists by a wide margin in 2026, so engagements requiring Java-only expertise sometimes take a few extra days to staff.",
     },
     {
       q: "Will I find more Android developers if I hire for Kotlin or for Java?",

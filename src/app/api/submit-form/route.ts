@@ -39,15 +39,15 @@ const isAllowedOrigin = (origin: string | null) => {
 };
 
 const INTERNAL_SUBJECTS: Record<FormName, string> = {
-  contact: "New contact enquiry — workforcenext.in",
-  careers: "New career application — workforcenext.in",
-  "seth-waitlist": "New SethAI waitlist signup — workforcenext.in",
+  contact: "New contact enquiry | workforcenext.in",
+  careers: "New career application | workforcenext.in",
+  "seth-waitlist": "New SethAI waitlist signup | workforcenext.in",
 };
 
 const ACK_SUBJECTS: Record<FormName, string> = {
-  contact: "We received your enquiry — Workforce Next",
-  careers: "We received your application — Workforce Next",
-  "seth-waitlist": "You're on the SethAI waitlist — Workforce Next",
+  contact: "We received your enquiry | Workforce Next",
+  careers: "We received your application | Workforce Next",
+  "seth-waitlist": "You're on the SethAI waitlist | Workforce Next",
 };
 
 const escapeHtml = (value: string) =>
@@ -187,7 +187,7 @@ const ACK_BODY_HTML: Record<
 };
 
 // Build a raw MIME message with an attachment. SESv2 SendEmail supports
-// Raw payload (Buffer) for attachment support — Simple does not.
+// Raw payload (Buffer) for attachment support | Simple does not.
 const buildRawEmailWithAttachment = (params: {
   from: string;
   to: string;
@@ -362,7 +362,7 @@ export async function POST(req: Request) {
   const ackSummaryHtml = renderAckSummaryHtml(fields);
   const ackSummaryText = renderAckSummaryText(fields);
 
-  // Internal email — use Raw with attachment if resume present, otherwise Simple.
+  // Internal email | use Raw with attachment if resume present, otherwise Simple.
   const internalSubject = INTERNAL_SUBJECTS[name];
   const internalHtml = renderInternalHtml(name, fields);
   const internalText = renderInternalText(name, fields);
