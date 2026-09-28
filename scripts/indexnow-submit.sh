@@ -136,6 +136,7 @@ URLS=(
   "https://${HOST}/blog/founder-built-app-scaling-architecture-guide-2026/"
   "https://${HOST}/blog/andela-vs-turing-comparison-2026/"
   "https://${HOST}/blog/clear-engineering-backlog-without-slowing-core-team/"
+  "https://${HOST}/blog/low-risk-way-to-trial-a-dedicated-developer/"
 )
 
 # Build JSON payload

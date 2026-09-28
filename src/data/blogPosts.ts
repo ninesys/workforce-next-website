@@ -52,6 +52,7 @@ import vibeCodeSecurityHardeningProductionReady2026 from "./blog/vibe-code-secur
 import founderBuiltAppScalingArchitectureGuide2026 from "./blog/founder-built-app-scaling-architecture-guide-2026";
 import andelaVsTuringComparison2026 from "./blog/andela-vs-turing-comparison-2026";
 import clearEngineeringBacklogWithoutSlowingCoreTeam from "./blog/clear-engineering-backlog-without-slowing-core-team";
+import lowRiskWayToTrialADedicatedDeveloper from "./blog/low-risk-way-to-trial-a-dedicated-developer";
 
 export type { BlogPost, BlogFAQ };
 
@@ -119,4 +120,5 @@ export const blogPosts: BlogPost[] = [
   founderBuiltAppScalingArchitectureGuide2026,
   andelaVsTuringComparison2026,
   clearEngineeringBacklogWithoutSlowingCoreTeam,
+  lowRiskWayToTrialADedicatedDeveloper,
 ];
