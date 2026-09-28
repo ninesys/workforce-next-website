@@ -51,6 +51,7 @@ import howToBuildAnMcpServer from "./blog/how-to-build-an-mcp-server";
 import vibeCodeSecurityHardeningProductionReady2026 from "./blog/vibe-code-security-hardening-production-ready-2026";
 import founderBuiltAppScalingArchitectureGuide2026 from "./blog/founder-built-app-scaling-architecture-guide-2026";
 import andelaVsTuringComparison2026 from "./blog/andela-vs-turing-comparison-2026";
+import clearEngineeringBacklogWithoutSlowingCoreTeam from "./blog/clear-engineering-backlog-without-slowing-core-team";
 
 export type { BlogPost, BlogFAQ };
 
@@ -117,4 +118,5 @@ export const blogPosts: BlogPost[] = [
   vibeCodeSecurityHardeningProductionReady2026,
   founderBuiltAppScalingArchitectureGuide2026,
   andelaVsTuringComparison2026,
+  clearEngineeringBacklogWithoutSlowingCoreTeam,
 ];

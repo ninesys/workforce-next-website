@@ -81,7 +81,7 @@ const post: BlogPost = {
   <li>You are about to raise, or about to pitch a large customer, and technical due diligence is now a real possibility.</li>
 </ul>
 
-<p>None of these mean your app is bad. They mean the product-building phase and the production-hardening phase are different skill sets, and the second one is worth bringing in deliberately rather than learning under pressure during an incident.</p>
+<p>None of these mean your app is bad. They mean the product-building phase and the production-hardening phase are different skill sets, and the second one is worth bringing in deliberately rather than learning under pressure during an incident. This kind of handoff, a defined, bounded list rather than an open-ended hire, is exactly the low-risk starting point covered in <a href="/blog/clear-engineering-backlog-without-slowing-core-team/">how to clear your engineering backlog without pulling your core team off the roadmap</a>.</p>
 
 <h2>What does this look like when Workforce Next does it?</h2>
 
