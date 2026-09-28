@@ -137,6 +137,7 @@ URLS=(
   "https://${HOST}/blog/andela-vs-turing-comparison-2026/"
   "https://${HOST}/blog/clear-engineering-backlog-without-slowing-core-team/"
   "https://${HOST}/blog/low-risk-way-to-trial-a-dedicated-developer/"
+  "https://${HOST}/blog/dedicated-developer-replacement-and-exit-terms/"
 )
 
 # Build JSON payload

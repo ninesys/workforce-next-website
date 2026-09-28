@@ -29,7 +29,7 @@ const post: BlogPost = {
 <p><strong>One clear owner on your side.</strong> Not "reach out to anyone on the team." One person whose job is to unblock them, review their first PRs, and make intros. Diffuse ownership means diffuse engagement.</p>
 <p><strong>A 30-day career check-in.</strong> Ask them what they want to learn in this engagement, what their 12-month goal is, and where this role fits. Developers stay when they see the role serving their career, not just your roadmap.</p>
 
-<p>If you are tired of the revolving door, the fix is not finding "better" developers. It is changing the structure of the engagement so staying makes more sense than leaving. <a href="/contact/">Reach out to us</a> if you want to talk about what that looks like for your team.</p>`,
+<p>If you are tired of the revolving door, the fix is not finding "better" developers. It is changing the structure of the engagement so staying makes more sense than leaving. That structure should also cover the rare case where a specific engineer genuinely is not the right fit, see <a href="/blog/dedicated-developer-replacement-and-exit-terms/">what a real replacement guarantee should cover</a>. <a href="/contact/">Reach out to us</a> if you want to talk about what that looks like for your team.</p>`,
   "slug": "why-offshore-developers-keep-leaving",
   "image": "/images/blog/why-offshore-developers-keep-leaving.webp",
   "title": "Why Offshore Developers Keep Leaving and 3 Things That Make Them Stay",

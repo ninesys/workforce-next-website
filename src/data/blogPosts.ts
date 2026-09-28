@@ -53,6 +53,7 @@ import founderBuiltAppScalingArchitectureGuide2026 from "./blog/founder-built-ap
 import andelaVsTuringComparison2026 from "./blog/andela-vs-turing-comparison-2026";
 import clearEngineeringBacklogWithoutSlowingCoreTeam from "./blog/clear-engineering-backlog-without-slowing-core-team";
 import lowRiskWayToTrialADedicatedDeveloper from "./blog/low-risk-way-to-trial-a-dedicated-developer";
+import dedicatedDeveloperReplacementAndExitTerms from "./blog/dedicated-developer-replacement-and-exit-terms";
 
 export type { BlogPost, BlogFAQ };
 
@@ -121,4 +122,5 @@ export const blogPosts: BlogPost[] = [
   andelaVsTuringComparison2026,
   clearEngineeringBacklogWithoutSlowingCoreTeam,
   lowRiskWayToTrialADedicatedDeveloper,
+  dedicatedDeveloperReplacementAndExitTerms,
 ];
