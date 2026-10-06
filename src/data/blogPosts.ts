@@ -1,6 +1,7 @@
 import type { BlogPost, BlogFAQ } from "./blog/types";
 
 import twelveParametersAiMatchingToolsShouldEvaluate from "./blog/12-parameters-ai-matching-tools-should-evaluate";
+import diyVsMarketplaceVsHandPickedDevelopers from "./blog/diy-vs-marketplace-vs-hand-picked-developers";
 import whatIsLifestyleFitMatchingInDeveloperHiring from "./blog/what-is-lifestyle-fit-matching-in-developer-hiring";
 import whyOffshoreDevelopersKeepLeaving from "./blog/why-offshore-developers-keep-leaving";
 import vibeCodingExplainedWhenToUseIt from "./blog/vibe-coding-explained-when-to-use-it";
@@ -123,4 +124,5 @@ export const blogPosts: BlogPost[] = [
   clearEngineeringBacklogWithoutSlowingCoreTeam,
   lowRiskWayToTrialADedicatedDeveloper,
   dedicatedDeveloperReplacementAndExitTerms,
+  diyVsMarketplaceVsHandPickedDevelopers,
 ];

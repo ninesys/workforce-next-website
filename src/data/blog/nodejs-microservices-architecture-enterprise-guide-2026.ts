@@ -136,6 +136,8 @@ const post: BlogPost = {
 <li><strong>CI/CD on GitHub Actions or GitLab</strong>, with automated test, lint, type check, dependency scan, container scan, and progressive deployment.</li>
 </ul>
 
+<p>Most teams running this stack eventually need someone dedicated to the Kubernetes, Terraform, and CI/CD side rather than splitting it across the backend team. See <a href="/hire/devops-engineers/">our DevOps hiring page</a> if that is the gap.</p>
+
 <h2>What are the most common mistakes we see?</h2>
 
 <p>From our placement work in 2025 and 2026:</p>

@@ -13,7 +13,7 @@ const post: BlogPost = {
 <p><strong>3. Make context compound.</strong> When you maintain architecture decision logs, domain glossaries, and codebase walkthroughs, every month the developer gets more valuable. They are not just writing code. They are accumulating context that makes them faster, more accurate, and harder to replace. This is our <a href="/how-we-work/">Context Continuity Guarantee</a> in action.</p>
 
 <h2>The numbers behind retention</h2>
-<p>The average offshore engagement lasts 4 to 6 months. Our target is 12+ months, and most of our teams exceed that. The difference is not luck. It is a system: screen for longevity, give developers ownership, and make their accumulated context visible and valuable. You can learn more about <a href="/how-we-work/">how we structure engagements</a> to make this work.</p>
+<p>The average offshore engagement lasts 4 to 6 months. Our target is 18+ months, and most of our teams exceed that. The difference is not luck. It is a system: screen for longevity, give developers ownership, and make their accumulated context visible and valuable. You can learn more about <a href="/how-we-work/">how we structure engagements</a> to make this work.</p>
 <h2>What are the early warning signs a developer is about to leave?</h2>
 <p>Retention is much easier if you spot the signs a month early instead of finding out in an exit conversation. The four patterns we watch for:</p>
 <p><strong>1. Their Slack presence drops.</strong> Messages get shorter, reply latency stretches, they stop volunteering ideas in threads they used to participate in. Not a single bad week, a sustained three-to-four week drift.</p>
@@ -62,7 +62,7 @@ const post: BlogPost = {
     },
     {
       "q": "How long does a typical offshore developer engagement last?",
-      "a": "The industry average is 4 to 6 months. With dedicated engagement models focused on ownership and context, engagements regularly last 12 months or longer."
+      "a": "The industry average is 4 to 6 months. With dedicated engagement models focused on ownership and context, engagements regularly last 18 months or longer."
     },
     {
       "q": "What is a dedicated developer engagement?",

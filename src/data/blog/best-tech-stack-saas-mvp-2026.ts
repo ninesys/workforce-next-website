@@ -126,7 +126,7 @@ const post: BlogPost = {
 <ul>
 <li><strong>Rails</strong> if you used to be a Rails developer. The 2026 version (Rails 8 with Solid Queue, Solid Cache, and Hotwire) is genuinely productive for solo founders shipping a v1.</li>
 <li><strong>Django</strong> if your product needs a heavy admin panel (Django admin is still unbeaten) or your team is Python-leaning.</li>
-<li><strong>Laravel</strong> if your team is PHP-strong and you are building a SaaS for an audience that does not care about the underlying tech.</li>
+<li><strong>Laravel</strong> if your team is PHP-strong and you are building a SaaS for an audience that does not care about the underlying tech. See <a href="/hire/php-developers/">our PHP hiring page</a> if you need Laravel or Symfony depth on the team.</li>
 </ul>
 
 <p>Pick Rails, Django, or Laravel NOT just because you read a blog post claiming they ship faster. If your hiring pool is JavaScript, you will end up rebuilding on Next.js plus Node within 18 months. If your team is already Ruby or Python or PHP, the monolith path is genuinely fine.</p>

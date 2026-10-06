@@ -9,54 +9,70 @@ import {
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "AI Automation Agency from India | Four Services, Global Delivery",
+  title: "India Handled | What's Covered Under Managed Staff Augmentation",
   description:
-    "AI automation agency based in India serving founders globally. Product consulting, AI agents and workflows, dedicated developers and QA, and AEO/GEO growth. Flexible timezone coverage.",
+    "Every operational and statutory line on the India side, covered under one invoice: PF, gratuity, GST, FEMA, equipment, and IP assignment. Plus the embedded engineering manager model and typical pod structure.",
   keywords: [
-    "AI automation agency India",
-    "AI agency from India",
-    "dedicated developers India",
-    "AI consulting India",
-    "workflow automation India",
-    "AEO GEO agency India",
-    "hire AI engineers India",
-    "AI automation agency for founders",
+    "managed staff augmentation India",
+    "India PF GST FEMA compliance",
+    "embedded engineering manager offshore",
+    "dedicated developer pod structure",
+    "India statutory compliance outsourcing",
+    "offshore team operating model",
   ],
   openGraph: {
     ...ogDefaults("/india-handled/"),
     images: ["/images/og-default.png"],
-    title: "AI Automation Agency from India | Four Services, Global Delivery",
+    title: "India Handled | What's Covered Under Managed Staff Augmentation",
     description:
-      "Four services, one partner, India delivery. Consulting, automation, talent, and AEO/GEO growth.",
+      "PF, gratuity, GST, FEMA, equipment, and IP, all under one invoice. The operating model behind managed staff augmentation from India.",
   },
   alternates: {
     canonical: "https://wfnext.com/india-handled/",
   },
 };
 
-const services = [
-  { num: "01", tag: "CONSULTING", title: "Product development consulting", line: "Architecture, stack, scope decisions." },
-  { num: "02", tag: "AUTOMATION", title: "AI agents for operations", line: "Workflows and agents take ops off your team." },
-  { num: "03", tag: "TALENT", title: "Dedicated developers and QA", line: "Senior engineers in your timezone, ship and test." },
-  { num: "04", tag: "GROWTH", title: "AEO + GEO + SEO", line: "Cited by AI search. Found in Google." },
+const complianceCoverage = [
+  {
+    tag: "PF",
+    title: "Provident Fund",
+    line: "Statutory retirement contribution for every employee, filed and paid on our side. Not itemized back to you, not your liability.",
+  },
+  {
+    tag: "GRATUITY",
+    title: "Gratuity",
+    line: "The statutory payout owed to an employee on separation after sufficient tenure. Accrued and funded by us, not something that shows up as a surprise line item later.",
+  },
+  {
+    tag: "GST",
+    title: "GST",
+    line: "Goods and Services Tax on our invoicing is handled under our own registration. You get one clean B2B invoice, not a tax position you need to manage.",
+  },
+  {
+    tag: "FEMA",
+    title: "FEMA compliance",
+    line: "Foreign Exchange Management Act rules govern how an India-based vendor can bill a foreign client. We structure every contract to stay compliant so your payment never gets flagged or delayed on the way in.",
+  },
+  {
+    tag: "EQUIPMENT",
+    title: "Equipment",
+    line: "Laptop, monitor, and standard engineering hardware are provisioned and maintained on our side as part of the engagement, not billed separately.",
+  },
+  {
+    tag: "IP",
+    title: "IP assignment",
+    line: "Every engineer's work product is assigned to you under the master agreement. Code lives in your repositories throughout the engagement, nothing to transfer at the end because it was never anywhere else.",
+  },
 ];
 
-const indiaAdvantages = [
+const podModel = [
   {
-    title: "Senior engineering pool",
-    line: "Bangalore, Gurugram, Noida, Hyderabad. Deep talent across AI, automation, web, and data.",
+    title: "An embedded engineering manager, not a bench-utilization PM",
+    line: "The EM's job is the engineer's career and your outcome, not maximizing how many clients our bench serves. They own standups, code review quality, and flagging risk before it becomes a missed sprint.",
   },
   {
-    title: "Timezone flexibility",
-    line: "Teams shift schedules to overlap with US, UK, EU, Canada, Australia, or Dubai working hours.",
-  },
-  {
-    title: "Cross-service rates",
-    line: "Same India delivery base across all four services. Consulting, automation, talent, and growth all benefit.",
-  },
-  {
-    title: "B2B contract simplicity",
-    line: "One India-registered company. One contract. No EOR, no PE complications.",
+    title: "A pod, not a lone hire, once you are past a single role",
+    line: "A standard pod is two to four senior engineers paired with a fractional engineering manager, working in your repo, your Slack, and your sprint cadence. SethAI matches the engineers to your stack; the EM owns delivery quality.",
   },
 ];
 
@@ -69,44 +85,44 @@ const timezones = [
 
 const faqItems: FAQ[] = [
   {
-    question: "Why pick an India-based AI automation agency?",
+    question: "What exactly does India-handled managed staff augmentation cover?",
     answer:
-      "India has the deepest senior engineering pool for AI, automation, web, and data work outside the US. The same delivery base sharpens every one of our four services: consulting, automation, talent, and growth. You get senior delivery across the whole arc at India delivery economics.",
+      "Provident Fund, gratuity, GST on invoicing, FEMA-compliant cross-border billing, equipment, and IP assignment, all under one monthly invoice. If a vendor itemizes any of these separately as an add-on fee after you have signed, that is a sign the original quote was not the real number.",
     category: "hiring",
     categoryLabel: "Hiring",
   },
   {
-    question: "How do timezones work?",
+    question: "What is an embedded engineering manager, and why does it matter?",
     answer:
-      "Our teams shift schedules to overlap with your working day. Standard overlap windows for US East, US West, UK, EU, Australia, and Dubai. You get same-day collaboration without needing to take late-night calls yourself.",
+      "It is an engineering manager whose job is tied to your outcome and the engineer's career growth, not to keeping the vendor's bench utilized across many clients. They own standups, code review, and surfacing risk early. Without this role, a dedicated engineer still ends up managed by whoever has time, which is worse than no management.",
     category: "hiring",
     categoryLabel: "Hiring",
   },
   {
-    question: "Can I engage you for just one of the four services?",
+    question: "What does a typical dedicated developer pod look like?",
     answer:
-      "Yes. Most engagements start with one service. Customers typically expand into the others as trust builds. There is no requirement to bundle.",
+      "Two to four senior engineers paired with a fractional engineering manager, embedded in your repository, your Slack, and your sprint cadence. A single dedicated hire is the entry point; most engagements that go past one role settle into this pod shape.",
     category: "hiring",
     categoryLabel: "Hiring",
   },
   {
-    question: "Do I need a separate contract for each service?",
+    question: "Is there an EOR or separate legal entity I need to set up?",
     answer:
-      "No. One master agreement with Workforce Next Pvt. Ltd. covers all four services. Project-specific scopes layer underneath. Less paperwork, faster start.",
+      "No. One India-registered company, one contract, one invoice. You are not setting up an Employer of Record relationship or a local entity; the employment relationship is between us and the engineer, and you are our B2B customer.",
     category: "hiring",
     categoryLabel: "Hiring",
   },
   {
-    question: "What about IP, security, and compliance?",
+    question: "When does this model not fit, and what do you do then?",
     answer:
-      "Standard NDA, IP assignment in the MSA, GDPR-aligned data handling, and SOC 2 friendly engagement practices. We have shipped for customers with serious compliance requirements; the details get covered in the discovery call.",
+      "If you need real-time North American overlap with a synchronous, founder-led culture and no India geography will satisfy that, we will say so and point you to a LATAM partner rather than force-fit a placement that will not work for either side.",
     category: "hiring",
     categoryLabel: "Hiring",
   },
   {
-    question: "How fast can a new engagement start?",
+    question: "How do timezones actually work across an engagement?",
     answer:
-      "Discovery call to scoped proposal in 48 hours. Approved proposal to delivery start within the following week. Faster than hiring in your own market, and the team is already trained.",
+      "Teams shift their working hours to overlap with yours. Standard overlap windows exist for US East, US West, UK, EU, Australia, and Dubai, so you get same-day collaboration without taking calls at 2am.",
     category: "hiring",
     categoryLabel: "Hiring",
   },
@@ -114,7 +130,7 @@ const faqItems: FAQ[] = [
 
 const breadcrumbSchema = generateBreadcrumbSchema([
   { name: "Home", url: "https://wfnext.com" },
-  { name: "India-Handled", url: "https://wfnext.com/india-handled/" },
+  { name: "India Handled", url: "https://wfnext.com/india-handled/" },
 ]);
 
 const faqSchema = generateFAQPageSchema(faqItems);
@@ -129,14 +145,14 @@ export default function IndiaHandledPage() {
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-50 via-white to-primary-50/50 dark:from-dark-900 dark:via-dark-900 dark:to-dark-800 pt-32 pb-20 md:pt-40 md:pb-28">
         <div aria-hidden className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary-200/30 dark:bg-primary-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
         <div className="container-custom relative max-w-5xl">
-          <Badge variant="primary" className="mb-4">INDIA DELIVERY</Badge>
+          <Badge variant="primary" className="mb-4">INDIA HANDLED</Badge>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-dark-900 dark:text-dark-50 leading-[1.05]">
-            AI Automation Agency
+            Every statutory line,
             <br />
-            <span className="text-primary-500">from India. For founders worldwide.</span>
+            <span className="text-primary-500">handled on our side. Not yours.</span>
           </h1>
           <p className="mt-6 text-lg md:text-xl text-dark-500 dark:text-dark-300 max-w-3xl">
-            Four services delivered from India: consulting, automation, talent, and AEO/GEO growth. One contract, your timezone, senior delivery across the whole arc.
+            Provident Fund, gratuity, GST, FEMA-compliant billing, equipment, and IP assignment, all under one monthly invoice. This is what a clean managed staff augmentation quote actually includes.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Button href="/contact/" size="lg">Book a discovery call</Button>
@@ -145,46 +161,41 @@ export default function IndiaHandledPage() {
         </div>
       </section>
 
-      {/* FOUR SERVICES */}
+      {/* COMPLIANCE COVERAGE */}
       <section className="section-padding bg-white dark:bg-dark-900">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-14">
-            <p className="text-sm font-bold text-primary-500 uppercase tracking-widest mb-3">What we deliver</p>
+            <p className="text-sm font-bold text-primary-500 uppercase tracking-widest mb-3">Under one invoice</p>
             <h2 className="text-3xl md:text-4xl font-extrabold text-dark-900 dark:text-dark-50">
-              Four services. One India base.
+              What&apos;s actually covered.
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-            {services.map((s) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {complianceCoverage.map((c) => (
               <div
-                key={s.num}
+                key={c.tag}
                 className="group relative p-6 rounded-2xl bg-white dark:bg-dark-800 border border-dark-50 dark:border-dark-700 hover:border-primary-300 dark:hover:border-primary-500/50 hover:shadow-xl hover:-translate-y-1 transition-all overflow-hidden"
               >
-                <span aria-hidden className="absolute -top-3 -right-2 text-7xl font-extrabold text-primary-50 dark:text-primary-500/10 leading-none select-none">
-                  {s.num}
-                </span>
-                <div className="relative">
-                  <p className="text-xs font-bold text-primary-500 uppercase tracking-widest">{s.tag}</p>
-                  <h3 className="mt-2 text-lg font-extrabold text-dark-900 dark:text-dark-50 leading-snug">{s.title}</h3>
-                  <p className="mt-2 text-sm text-dark-500 dark:text-dark-300">{s.line}</p>
-                </div>
+                <p className="text-xs font-bold text-primary-500 uppercase tracking-widest">{c.tag}</p>
+                <h3 className="mt-2 text-lg font-extrabold text-dark-900 dark:text-dark-50 leading-snug">{c.title}</h3>
+                <p className="mt-2 text-sm text-dark-500 dark:text-dark-300 leading-relaxed">{c.line}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* INDIA ADVANTAGES */}
+      {/* POD MODEL */}
       <section className="section-padding bg-primary-50/40 dark:bg-dark-800">
         <div className="container-custom max-w-5xl">
           <div className="text-center mb-12">
-            <p className="text-sm font-bold text-primary-500 uppercase tracking-widest mb-3">Why India</p>
+            <p className="text-sm font-bold text-primary-500 uppercase tracking-widest mb-3">The operating model</p>
             <h2 className="text-3xl md:text-4xl font-extrabold text-dark-900 dark:text-dark-50">
-              The senior delivery base.
+              Embedded management, not a bench.
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {indiaAdvantages.map((a) => (
+            {podModel.map((a) => (
               <div
                 key={a.title}
                 className="flex items-start gap-4 p-6 rounded-xl bg-white dark:bg-dark-900 border border-dark-50 dark:border-dark-700 hover:shadow-card transition-all"
@@ -197,6 +208,9 @@ export default function IndiaHandledPage() {
               </div>
             ))}
           </div>
+          <p className="mt-8 text-center text-dark-600 dark:text-dark-200 leading-relaxed max-w-2xl mx-auto">
+            If you need real-time North American overlap with a synchronous, founder-led culture that no India geography will satisfy, we will tell you that honestly and point you to a LATAM partner instead of force-fitting a placement that will not work for either side.
+          </p>
         </div>
       </section>
 
@@ -258,7 +272,7 @@ export default function IndiaHandledPage() {
         </div>
         <div className="container-custom relative text-center max-w-3xl">
           <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-4 leading-tight">
-            Senior delivery, your timezone, one partner.
+            One invoice. Everything handled.
           </h2>
           <p className="text-lg text-primary-50 mb-8">
             Tell us where you are. Scoped proposal in 48 hours.

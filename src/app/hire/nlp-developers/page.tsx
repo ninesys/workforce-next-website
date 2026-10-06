@@ -210,6 +210,13 @@ const faqItems: FAQ[] = [
     category: "hiring",
     categoryLabel: "Hiring",
   },
+  {
+    question: "How do you vet candidates before placing them on my team?",
+    answer:
+      "Every candidate is screened against 12 parameters that go beyond tech-stack keywords: working-rhythm fit, ownership mindset, career alignment, and more, not just whether they know the framework. The full methodology is public, not a black box.",
+    category: "hiring",
+    categoryLabel: "Hiring",
+  },
 ];
 
 export default function HireNLPDevelopersPage() {
@@ -386,6 +393,9 @@ export default function HireNLPDevelopersPage() {
               </div>
             ))}
           </div>
+          <p className="mt-6 text-center text-sm text-dark-500 dark:text-dark-300">
+            Full vetting methodology: <a href="/blog/12-parameters-ai-matching-tools-should-evaluate/" className="text-primary-600 dark:text-primary-300 underline">the 12 parameters we screen every candidate against</a>.
+          </p>
         </div>
       </section>
 

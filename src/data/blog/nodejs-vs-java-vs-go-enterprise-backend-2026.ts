@@ -71,7 +71,7 @@ const post: BlogPost = {
 <li><strong>You want one runtime to do everything.</strong> The JVM handles APIs, batch, streams, and ML serving with one operational story.</li>
 </ul>
 
-<p>Modern Java with virtual threads in Project Loom narrows the I/O gap with Node.js significantly. Teams that switched to Node.js purely for concurrency are now reconsidering.</p>
+<p>Modern Java with virtual threads in Project Loom narrows the I/O gap with Node.js significantly. Teams that switched to Node.js purely for concurrency are now reconsidering. If Java is the right call for your estate, see <a href="/hire/java-developers/">our Java hiring page</a> for how we screen for Spring Boot, Quarkus, and JVM depth.</p>
 
 <h2>When does Go win?</h2>
 
