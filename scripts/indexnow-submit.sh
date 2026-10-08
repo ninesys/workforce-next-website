@@ -65,6 +65,9 @@ URLS=(
   "https://${HOST}/ai-developers-who-build-ai/"
   "https://${HOST}/hire-data-analysts-engineers/"
   "https://${HOST}/ai-agent-hr-recruiting/"
+  "https://${HOST}/ai-agent-customer-support/"
+  "https://${HOST}/ai-agent-finance-ops/"
+  "https://${HOST}/ai-agent-internal-ops/"
   "https://${HOST}/blog/ai-agent-vs-hiring-human-how-to-decide/"
   "https://${HOST}/blog/what-is-aeo-why-every-saas-needs-it-now/"
   "https://${HOST}/blog/ai-agents-vs-automation-vs-workflows/"
@@ -139,6 +142,9 @@ URLS=(
   "https://${HOST}/blog/low-risk-way-to-trial-a-dedicated-developer/"
   "https://${HOST}/blog/dedicated-developer-replacement-and-exit-terms/"
   "https://${HOST}/blog/diy-vs-marketplace-vs-hand-picked-developers/"
+  "https://${HOST}/blog/which-customer-support-tickets-to-automate-first/"
+  "https://${HOST}/blog/which-finance-ops-tasks-to-automate-first/"
+  "https://${HOST}/blog/which-internal-ops-tasks-to-automate-first/"
 )
 
 # Build JSON payload
