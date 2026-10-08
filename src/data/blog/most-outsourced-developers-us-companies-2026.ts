@@ -48,7 +48,7 @@ const post: BlogPost = {
   <li><strong>SRE and Follow-the-Sun:</strong> The biggest driver in this category. A US team with on-call burnout problems pairs an India-based SRE pod for the night shift, so US engineers do not get paged at 3 a.m. The economics are simple: 24/7 coverage with two pods is cheaper than one US team running themselves into the ground.</li>
 </ul>
 
-<p>If you already know you want a dedicated platform engineer, the <a href="/hire/devops-engineers/">DevOps engineers</a> page covers how we staff this work, including Follow-the-Sun SRE pods. For pure cost-reduction engagements, the <a href="/hire/cloud-cost-engineer/">cloud cost engineer</a> path is the cleaner starting point.</p>
+<p>If you already know you want a dedicated platform engineer, the <a href="/hire/devops-engineers/">DevOps engineers</a> page covers how we staff this work, including Follow-the-Sun SRE pods. If you are wondering why this specific role got so much harder to fill, <a href="/blog/why-devops-hiring-got-harder-2026/">why DevOps hiring got harder in 2026</a> covers what changed and what to screen for. For pure cost-reduction engagements, the <a href="/hire/cloud-cost-engineer/">cloud cost engineer</a> path is the cleaner starting point.</p>
 
 <h3>3. Data and AI engineers</h3>
 
