@@ -2,6 +2,9 @@ import type { BlogPost, BlogFAQ } from "./blog/types";
 
 import twelveParametersAiMatchingToolsShouldEvaluate from "./blog/12-parameters-ai-matching-tools-should-evaluate";
 import diyVsMarketplaceVsHandPickedDevelopers from "./blog/diy-vs-marketplace-vs-hand-picked-developers";
+import whichCustomerSupportTicketsToAutomateFirst from "./blog/which-customer-support-tickets-to-automate-first";
+import whichFinanceOpsTasksToAutomateFirst from "./blog/which-finance-ops-tasks-to-automate-first";
+import whichInternalOpsTasksToAutomateFirst from "./blog/which-internal-ops-tasks-to-automate-first";
 import whatIsLifestyleFitMatchingInDeveloperHiring from "./blog/what-is-lifestyle-fit-matching-in-developer-hiring";
 import whyOffshoreDevelopersKeepLeaving from "./blog/why-offshore-developers-keep-leaving";
 import vibeCodingExplainedWhenToUseIt from "./blog/vibe-coding-explained-when-to-use-it";
@@ -125,4 +128,7 @@ export const blogPosts: BlogPost[] = [
   lowRiskWayToTrialADedicatedDeveloper,
   dedicatedDeveloperReplacementAndExitTerms,
   diyVsMarketplaceVsHandPickedDevelopers,
+  whichCustomerSupportTicketsToAutomateFirst,
+  whichFinanceOpsTasksToAutomateFirst,
+  whichInternalOpsTasksToAutomateFirst,
 ];

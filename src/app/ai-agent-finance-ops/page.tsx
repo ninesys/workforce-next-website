@@ -10,114 +10,117 @@ import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "AI SDR for Outreach: Hire an AI Agent or Human SDR",
+  title: "AI Agent for Finance Ops & Invoicing Automation",
   description:
-    "Done-for-you AI SDR setup service. Hire an AI agent or remote SDR to research accounts, write outbound, and book meetings. Built for US and Canada founders.",
+    "Done-for-you AI agent for finance ops. Processes invoices, reconciles transactions, and flags anomalies without growing your finance team. US and Canada founders and finance leads.",
   keywords: [
-    "AI SDR setup service",
-    "AI SDR for outreach",
-    "hire AI SDR",
+    "AI agent for finance ops",
+    "invoice automation AI agent",
+    "AP AR automation",
     "done-for-you AI agents",
-    "hire an AI agent or remote expert",
-    "AI agent for B2B outbound",
-    "AI sales development representative",
+    "reconciliation automation",
+    "AI agent quickbooks netsuite",
+    "finance ops automation",
   ],
   openGraph: {
-    ...ogDefaults("/ai-sdr-outreach/"),
+    ...ogDefaults("/ai-agent-finance-ops/"),
     images: ["/images/og-default.png"],
-    title: "AI SDR for Outreach: Hire an AI Agent or Human SDR",
+    title: "AI Agent for Finance Ops & Invoicing Automation",
     description:
-      "Done-for-you AI SDR setup. AI agent or human SDR runs your outbound, replies, and meeting bookings.",
+      "Done-for-you AI agent for finance ops. Processes invoices, reconciles transactions, and flags anomalies.",
   },
   alternates: {
-    canonical: `${siteMetadata.url}/ai-sdr-outreach/`,
+    canonical: `${siteMetadata.url}/ai-agent-finance-ops/`,
   },
 };
 
 const agentVsHuman = [
   {
-    label: "AI SDR AGENT",
+    label: "AI FINANCE AGENT",
     headline: "Best for volume.",
-    line: "Researches accounts, writes personalized outbound, sends, triages replies, and books meetings. Faster and cheaper per touch.",
+    line: "Invoice processing, reconciliation, anomaly flags, recurring reports. Every close-out task that is repeatable.",
     glyph: "AI",
   },
   {
-    label: "HUMAN SDR",
+    label: "FINANCE ANALYST",
     headline: "Best for judgment.",
-    line: "Handles strategic accounts, complex objections, and warm-handoff conversations. Slower per touch, stronger on conversion.",
-    glyph: "HU",
+    line: "Forecasting, board reporting, vendor negotiation, the calls that need real financial judgment.",
+    glyph: "FA",
   },
   {
     label: "BLEND",
-    headline: "Best for most teams.",
-    line: "AI runs top-of-funnel volume. Humans take over once a reply needs nuance or the deal goes multi-thread.",
+    headline: "Best for lean finance teams.",
+    line: "Agent does the repetitive close-out work. Analyst owns the decisions and anything that touches strategy.",
     glyph: "AI+",
   },
 ];
 
-const what = [
-  { tag: "RESEARCH", title: "Account intel", line: "Pulls firmographic, tech-stack, and intent signals on every account before writing." },
-  { tag: "WRITING", title: "Personalized outbound", line: "Generates first-touch and follow-up sequences in your brand voice with real personalization." },
-  { tag: "SEND + WARMUP", title: "Deliverability hardened", line: "Subdomain warmup, SPF/DKIM/DMARC, send caps per inbox, inbox rotation." },
-  { tag: "REPLIES", title: "Reply triage", line: "Classifies interested vs. not-now vs. unsubscribe. Routes hot replies to a human in seconds." },
-  { tag: "BOOKING", title: "Meeting booking", line: "Pulls calendar availability and schedules calls without back-and-forth." },
-  { tag: "REPORTING", title: "Pipeline tracking", line: "Weekly performance review: open rates, reply rates, meetings booked, qualified pipeline created." },
+const workflow = [
+  { tag: "INTAKE", title: "Invoice intake and extraction", line: "Reads invoices from email or upload, extracts line items, matches against the PO automatically." },
+  { tag: "AP AUTOMATION", title: "Approval routing and payment runs", line: "Routes for approval against your rules, schedules payment runs, no manual chasing for sign-off." },
+  { tag: "RECONCILIATION", title: "Transaction matching", line: "Matches transactions across bank feeds, ledger, and invoices. Flags mismatches instead of burying them." },
+  { tag: "ANOMALY DETECTION", title: "Flags before they become problems", line: "Duplicate payments, unusual vendor activity, and budget overruns surfaced as they happen, not at month-end." },
+  { tag: "REPORTING", title: "Recurring reports, generated automatically", line: "Monthly close packet, cash flow view, and burn rate, ready without a manual pull every cycle." },
+  { tag: "SYNC", title: "Reads and writes to your accounting system", line: "No manual re-entry between tools. The agent works inside the system you already use." },
+];
+
+const integrations = [
+  { tag: "QUICKBOOKS", line: "Native" },
+  { tag: "XERO", line: "Native" },
+  { tag: "NETSUITE", line: "Native" },
+  { tag: "BILL.COM", line: "Native" },
+  { tag: "STRIPE", line: "Native" },
+  { tag: "CUSTOM ERP", line: "API or webhook" },
 ];
 
 const steps = [
-  { num: "01", title: "Audit ICP + offer", line: "We map your ICP, value props, current outbound stack, and what is working." },
-  { num: "02", title: "Configure agent or place human", line: "Spin up the AI agent with your voice and personalization, or recruit a human SDR." },
-  { num: "03", title: "Launch + warm up", line: "Domains warmed, inboxes ramped, first sequences live within two weeks." },
-  { num: "04", title: "Tune the pipeline", line: "Weekly performance review, sequence iteration, ICP refinement based on real replies." },
+  { num: "01", title: "Map the close process", line: "We capture your invoice volume, approval chain, chart of accounts, and reporting cadence." },
+  { num: "02", title: "Configure the agent", line: "Matching rules, approval thresholds, and anomaly sensitivity set to your actual risk tolerance." },
+  { num: "03", title: "Launch against one entity or ledger", line: "Live on a contained scope first, verified against your existing close before it expands." },
+  { num: "04", title: "Analysts own the judgment calls", line: "Agent handles the repeatable close-out work. Your team reviews flags and owns strategic decisions." },
 ];
 
 const fitFor = [
-  { tag: "B2B SAAS FOUNDERS", line: "Need pipeline but cannot justify a full SDR team yet." },
-  { tag: "AGENCY OWNERS", line: "Outbound for clients without growing a service team." },
-  { tag: "SMB SALES LEADERS", line: "Top-of-funnel coverage without burning rep hours on research and writing." },
-  { tag: "REVENUE OPS", line: "Want AI-led outbound that integrates cleanly with the existing CRM and motion." },
-];
-
-const engagement = [
-  { tag: "SETUP", title: "One-time setup", line: "ICP audit, sending infrastructure, AI agent configuration, CRM and calendar integration, sequence v1." },
-  { tag: "MANAGED", title: "Monthly management", line: "Sequence tuning, reply oversight, weekly reporting, deliverability monitoring, ICP refinement." },
-  { tag: "BLEND", title: "AI + human SDR", line: "Add a placed human SDR alongside the agent for strategic accounts and warm hand-offs." },
+  { tag: "FINANCE LEADS AT GROWING STARTUPS", line: "Invoice and transaction volume outpacing the finance headcount." },
+  { tag: "FOUNDERS DOING THEIR OWN BOOKS", line: "No dedicated finance hire yet, need the close done reliably every month." },
+  { tag: "MULTI-ENTITY OR MULTI-CURRENCY OPS", line: "Reconciliation complexity that eats a disproportionate amount of time." },
+  { tag: "TEAMS DROWNING IN MANUAL RECONCILIATION", line: "Want the close done in days, not the better part of two weeks." },
 ];
 
 const faqItems: FAQ[] = [
   {
-    question: "What is an AI SDR and how is it different from a human SDR?",
+    question: "What does an AI agent for finance ops actually do?",
     answer:
-      "An AI SDR is an AI agent that handles outbound prospecting end to end: account research, message writing, sending, reply triage, and meeting booking. A human SDR does the same work manually. The AI SDR runs faster and cheaper per touch; a human SDR brings judgment to complex objections and high-value accounts. Most founders run a blend: AI SDR for top-of-funnel volume, human for the strategic accounts.",
+      "It processes invoices end to end, matches transactions across your bank feed and ledger, flags anomalies like duplicate payments or unusual vendor activity, and generates recurring reports like the monthly close packet. A human reviews flags and owns anything requiring judgment, the agent handles the repeatable close-out work.",
     category: "automation",
     categoryLabel: "Automation",
   },
   {
-    question: "Will the AI SDR get my domain flagged or blacklisted?",
+    question: "Is it safe to let an AI agent touch payments and reconciliation?",
     answer:
-      "Our setup includes deliverability hardening from day one: subdomain warmup, SPF/DKIM/DMARC configuration, send-volume ramp, inbox rotation, and reply-rate monitoring. We do not send from your primary domain, and we cap volume per inbox at deliverability-safe levels. The AI agent is configured to write personalized, non-spammy outbound by default.",
+      "The agent proposes and flags, it does not move money unsupervised. Payment runs go through your existing approval chain, and anomalies are surfaced for human review rather than auto-resolved. The risk profile is closer to a very fast, very consistent junior analyst than an autonomous system with payment authority.",
     category: "automation",
     categoryLabel: "Automation",
   },
   {
-    question: "What is included in the AI SDR setup service?",
+    question: "Can it integrate with our accounting system?",
     answer:
-      "Initial ICP and offer audit, sending infrastructure setup (domain, inboxes, warmup), AI agent configuration with your brand voice and value props, integration with your CRM and meeting tool, weekly performance tuning, and monthly reporting. We can also place a human SDR alongside the AI agent if your motion needs both.",
+      "Yes. Standard integrations with QuickBooks, Xero, NetSuite, Bill.com, and Stripe. Custom integrations for an in-house or less common ERP via API. The agent reads and writes directly to the system you already use, so there is no parallel spreadsheet to maintain.",
     category: "automation",
     categoryLabel: "Automation",
   },
 ];
 
-export default function AiSdrOutreachPage() {
+export default function AiAgentFinanceOpsPage() {
   const serviceSchema = generateServiceSchema(
-    "AI SDR for Outreach",
-    "Done-for-you AI SDR setup service. Hire an AI agent or human SDR to research accounts, write outbound, and book meetings.",
-    `${siteMetadata.url}/ai-sdr-outreach/`,
+    "AI Agent for Finance Ops",
+    "Done-for-you AI agent for finance ops. Processes invoices, reconciles transactions, and flags anomalies. Built for US and Canada founders and finance teams.",
+    `${siteMetadata.url}/ai-agent-finance-ops/`,
   );
 
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: siteMetadata.url },
-    { name: "AI SDR for Outreach", url: `${siteMetadata.url}/ai-sdr-outreach/` },
+    { name: "AI Agent for Finance Ops", url: `${siteMetadata.url}/ai-agent-finance-ops/` },
   ]);
 
   const faqSchema = generateFAQPageSchema(faqItems);
@@ -136,22 +139,22 @@ export default function AiSdrOutreachPage() {
         </div>
         <div className="container-custom relative max-w-5xl text-center">
           <Badge variant="primary" className="mb-6 bg-primary-500/20 text-primary-200 border-primary-400/30">
-            AI SDR FOR OUTREACH
+            AI AGENT FOR FINANCE OPS
           </Badge>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white leading-[1.05] tracking-tight">
-            Hire an AI SDR Agent
+            Run an AI Agent for Finance Ops,
             <br />
             <span className="bg-gradient-to-r from-primary-300 via-primary-400 to-primary-200 bg-clip-text text-transparent">
-              or a Human SDR to Run Your Outbound.
+              or Hire a Finance Analyst (or Both).
             </span>
           </h1>
           <p className="mt-8 text-lg md:text-xl text-primary-100/90 max-w-2xl mx-auto">
-            Done-for-you AI SDR setup service. Researches accounts, writes outbound, books meetings.
+            Processes invoices, reconciles transactions, and flags anomalies. Without growing your finance team.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
             <Button href="/contact/" size="lg">Book a discovery call</Button>
-            <Button href="#engagement" variant="outline" size="lg" className="!bg-white/10 !border-white/30 !text-white hover:!bg-white/20 hover:!text-white">
-              See engagement
+            <Button href="#workflow" variant="outline" size="lg" className="!bg-white/10 !border-white/30 !text-white hover:!bg-white/20 hover:!text-white">
+              See the workflow
             </Button>
           </div>
         </div>
@@ -163,7 +166,7 @@ export default function AiSdrOutreachPage() {
           <div className="text-center mb-14">
             <p className="text-sm font-bold text-primary-500 uppercase tracking-widest mb-3">Agent or human?</p>
             <h2 className="text-3xl md:text-5xl font-extrabold text-dark-900 dark:text-dark-50 leading-tight">
-              AI SDR vs. human SDR vs. blend.
+              AI finance agent vs. finance analyst.
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -185,17 +188,17 @@ export default function AiSdrOutreachPage() {
         </div>
       </section>
 
-      {/* WHAT IT DOES bento */}
-      <section className="section-padding bg-primary-50/40 dark:bg-dark-800">
+      {/* WORKFLOW */}
+      <section id="workflow" className="section-padding bg-primary-50/40 dark:bg-dark-800">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-14">
-            <p className="text-sm font-bold text-primary-500 uppercase tracking-widest mb-3">What it does</p>
+            <p className="text-sm font-bold text-primary-500 uppercase tracking-widest mb-3">Workflow</p>
             <h2 className="text-3xl md:text-4xl font-extrabold text-dark-900 dark:text-dark-50">
-              What does an AI SDR actually do for outreach?
+              Where the AI agent plugs into your finance workflow.
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {what.map((w) => (
+            {workflow.map((w) => (
               <div
                 key={w.title}
                 className="group relative p-6 rounded-2xl bg-white dark:bg-dark-900 border border-dark-50 dark:border-dark-700 hover:border-primary-300 dark:hover:border-primary-500/50 hover:shadow-xl hover:-translate-y-1 transition-all"
@@ -210,13 +213,36 @@ export default function AiSdrOutreachPage() {
         </div>
       </section>
 
+      {/* INTEGRATIONS */}
+      <section className="section-padding bg-dark-900 text-white">
+        <div className="container-custom max-w-6xl">
+          <div className="text-center mb-12">
+            <p className="text-sm font-bold text-primary-400 uppercase tracking-widest mb-3">Accounting integrations</p>
+            <h2 className="text-3xl md:text-4xl font-extrabold leading-tight">
+              Plugs into the accounting system you already use.
+            </h2>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            {integrations.map((s) => (
+              <div
+                key={s.tag}
+                className="p-5 rounded-xl bg-gradient-to-br from-dark-800 to-dark-900 border border-dark-700 hover:border-primary-500/50 transition-all text-center"
+              >
+                <p className="text-sm font-extrabold text-white">{s.tag}</p>
+                <p className="mt-1 text-xs font-bold text-primary-400 uppercase tracking-widest">{s.line}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* HOW IT WORKS */}
       <section className="section-padding bg-white dark:bg-dark-900">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-14">
             <p className="text-sm font-bold text-primary-500 uppercase tracking-widest mb-3">How it works</p>
             <h2 className="text-3xl md:text-4xl font-extrabold text-dark-900 dark:text-dark-50">
-              How does our AI SDR setup service work?
+              Four steps to live finance automation.
             </h2>
           </div>
           <div className="relative grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -230,33 +256,6 @@ export default function AiSdrOutreachPage() {
                 <p className="mt-1.5 text-sm text-dark-500 dark:text-dark-300">{s.line}</p>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ENGAGEMENT */}
-      <section id="engagement" className="section-padding bg-dark-900 text-white">
-        <div className="container-custom max-w-6xl">
-          <div className="text-center mb-14">
-            <p className="text-sm font-bold text-primary-400 uppercase tracking-widest mb-3">Engagement</p>
-            <h2 className="text-3xl md:text-4xl font-extrabold leading-tight">
-              Setup, managed, or AI plus human.
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-            {engagement.map((e) => (
-              <div
-                key={e.title}
-                className="p-7 rounded-2xl bg-gradient-to-br from-dark-800 to-dark-900 border border-dark-700 hover:border-primary-500/50 transition-all"
-              >
-                <p className="text-xs font-bold text-primary-400 uppercase tracking-widest">{e.tag}</p>
-                <h3 className="mt-2 text-2xl font-extrabold text-white">{e.title}</h3>
-                <p className="mt-4 text-sm text-dark-300 leading-relaxed">{e.line}</p>
-              </div>
-            ))}
-          </div>
-          <div className="mt-12 text-center">
-            <Button href="/contact/" size="lg">Scope your AI SDR</Button>
           </div>
         </div>
       </section>
@@ -292,29 +291,25 @@ export default function AiSdrOutreachPage() {
         <div className="container-custom max-w-4xl text-center">
           <p className="text-sm font-bold text-primary-500 uppercase tracking-widest mb-3">Related offerings</p>
           <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 mb-8">
-            Pair the SDR with the rest of the stack.
+            What we pair with finance ops automation.
           </h2>
           <p className="text-base sm:text-lg text-dark-500 dark:text-dark-300 leading-relaxed max-w-2xl mx-auto">
-            Pair the SDR with{" "}
-            <a href="/ai-developers-who-build-ai/" className="text-primary-500 hover:text-primary-600 font-bold underline">
-              AI developers who build the matching models
-            </a>{" "}
-            when you need custom personalization. Founders ranking on talent volume should also see{" "}
+            Clean finance data usually depends on clean data pipelines elsewhere. See our{" "}
             <a href="/hire-data-analysts-engineers/" className="text-primary-500 hover:text-primary-600 font-bold underline">
               data analysts and data engineers
             </a>{" "}
-            to track outbound performance. And once outbound pulls top engineering candidates, use{" "}
-            <a href="/ai-agent-hr-recruiting/" className="text-primary-500 hover:text-primary-600 font-bold underline">
-              our AI agent for recruiting outreach
+            if the reporting layer needs work too. If the agent needs custom logic beyond a done-for-you setup, our{" "}
+            <a href="/ai-developers-who-build-ai/" className="text-primary-500 hover:text-primary-600 font-bold underline">
+              AI developers who build AI models
             </a>{" "}
-            to handle them. Replies eventually turn into support volume too, see our{" "}
-            <a href="/ai-agent-customer-support/" className="text-primary-500 hover:text-primary-600 font-bold underline">
-              AI agent for customer support
-            </a>{" "}
-            for the other side of the customer lifecycle. For automation across more of your ops beyond outbound, see our{" "}
+            can build it bespoke. For a broader automation build across more of your ops, see our{" "}
             <a href="/hire/automation-consultants/" className="text-primary-500 hover:text-primary-600 font-bold underline">
               automation consultants
-            </a>.
+            </a>. Not sure where to start? See{" "}
+            <a href="/blog/which-finance-ops-tasks-to-automate-first/" className="text-primary-500 hover:text-primary-600 font-bold underline">
+              which finance tasks to automate first
+            </a>{" "}
+            and which should always stay with a human.
           </p>
         </div>
       </section>
@@ -353,9 +348,9 @@ export default function AiSdrOutreachPage() {
         </div>
         <div className="container-custom relative text-center max-w-3xl">
           <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-4 leading-tight">
-            Ready to put an AI SDR on your outbound?
+            Close your books without growing the finance team.
           </h2>
-          <p className="text-lg text-primary-50 mb-8">Tell us your ICP. Scoped proposal in 48 hours.</p>
+          <p className="text-lg text-primary-50 mb-8">Tell us your invoice volume. Scoped proposal in 48 hours.</p>
           <Button href="/contact/" variant="white" size="lg">Book a discovery call</Button>
         </div>
       </section>

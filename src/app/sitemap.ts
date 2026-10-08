@@ -64,6 +64,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/ai-developers-who-build-ai/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/hire-data-analysts-engineers/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/ai-agent-hr-recruiting/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${baseUrl}/ai-agent-customer-support/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${baseUrl}/ai-agent-finance-ops/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${baseUrl}/ai-agent-internal-ops/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     // Core pages
     { url: `${baseUrl}/how-we-work/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/why-teams-stay/`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },

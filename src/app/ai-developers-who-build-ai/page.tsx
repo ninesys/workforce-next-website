@@ -307,7 +307,18 @@ export default function AiDevelopersWhoBuildAiPage() {
             <a href="/ai-agent-hr-recruiting/" className="text-primary-500 hover:text-primary-600 font-bold underline">
               AI agent for HR and recruiting
             </a>{" "}
-            shows how productionised agents look in a non-customer-facing workflow.
+            shows how productionised agents look in a non-customer-facing workflow. Anomaly detection on financial data is one of the more common custom-model requests we get, see our{" "}
+            <a href="/ai-agent-finance-ops/" className="text-primary-500 hover:text-primary-600 font-bold underline">
+              AI agent for finance ops
+            </a>{" "}
+            for the done-for-you version before you commission something bespoke. If you need engineers who wire AI into your product rather than build the models themselves, see{" "}
+            <a href="/hire/ai-developers/" className="text-primary-500 hover:text-primary-600 font-bold underline">
+              AI and agentic developers
+            </a>{" "}
+            instead. For a broader automation build across your ops, see our{" "}
+            <a href="/hire/automation-consultants/" className="text-primary-500 hover:text-primary-600 font-bold underline">
+              automation consultants
+            </a>.
           </p>
         </div>
       </section>

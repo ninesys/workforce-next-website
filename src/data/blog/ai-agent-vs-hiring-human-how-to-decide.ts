@@ -100,6 +100,9 @@ const post: BlogPost = {
 <li>For <strong>AI engineering</strong>, we put a senior engineer in the driver's seat, using AI coding agents as a multiplier. That blend ships faster than humans alone and is safer than agents alone. See <a href="/ai-developers-who-build-ai/">AI developers who build AI models</a> for what we build.</li>
 <li>For <strong>data work</strong>, we layer an AI data agent on top of your warehouse so anyone can ask questions, and we place a human analyst for the strategic work. See <a href="/hire-data-analysts-engineers/">data analysts and data engineers</a> for the offering.</li>
 <li>For <strong>HR and recruiting</strong>, an AI agent sources and first-touches at volume; a human recruiter runs the close. See <a href="/ai-agent-hr-recruiting/">our AI agent for recruiting outreach</a> for how it plugs into your ATS.</li>
+<li>For <strong>customer support</strong>, an AI agent resolves routine tickets and drafts replies for anything outside its confidence threshold; a human owns escalations and anything emotionally charged. See <a href="/ai-agent-customer-support/">our AI agent for customer support</a> for how it plugs into your helpdesk.</li>
+<li>For <strong>finance ops</strong>, an AI agent handles invoice processing, reconciliation, and anomaly flags; a human analyst owns forecasting and judgment calls. See <a href="/ai-agent-finance-ops/">our AI agent for finance ops</a> for how it plugs into your accounting system.</li>
+<li>For <strong>internal ops</strong>, an AI agent handles access provisioning, onboarding checklists, and routine IT tickets; a human owns security exceptions. See <a href="/ai-agent-internal-ops/">our AI agent for internal ops</a> for how it plugs into your IT stack.</li>
 </ul>
 
 <p>Every engagement starts the same way: a discovery call, a scoped proposal within 48 hours, weekly delivery cadence, fixed scope. No retainer trap, no "vibes-based" project work.</p>

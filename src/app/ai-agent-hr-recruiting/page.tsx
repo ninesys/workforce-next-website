@@ -305,6 +305,13 @@ export default function AiAgentHrRecruitingPage() {
             so the AI agent knows the right roles to target. The same outreach mechanics that work for candidates also work for customers. See our{" "}
             <a href="/ai-sdr-outreach/" className="text-primary-500 hover:text-primary-600 font-bold underline">
               AI SDR setup service
+            </a>. Once someone accepts the offer, our{" "}
+            <a href="/ai-agent-internal-ops/" className="text-primary-500 hover:text-primary-600 font-bold underline">
+              AI agent for internal ops
+            </a>{" "}
+            covers onboarding and access provisioning from day one. For a broader automation build across more of your ops, see our{" "}
+            <a href="/hire/automation-consultants/" className="text-primary-500 hover:text-primary-600 font-bold underline">
+              automation consultants
             </a>.
           </p>
         </div>

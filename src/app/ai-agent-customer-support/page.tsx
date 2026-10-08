@@ -10,114 +10,117 @@ import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "AI SDR for Outreach: Hire an AI Agent or Human SDR",
+  title: "AI Agent for Customer Support Automation",
   description:
-    "Done-for-you AI SDR setup service. Hire an AI agent or remote SDR to research accounts, write outbound, and book meetings. Built for US and Canada founders.",
+    "Done-for-you AI agent for customer support. Resolves routine tickets, drafts replies, and triages escalations without burning support hours. US and Canada founders and support teams.",
   keywords: [
-    "AI SDR setup service",
-    "AI SDR for outreach",
-    "hire AI SDR",
+    "AI agent for customer support",
+    "AI customer support automation",
     "done-for-you AI agents",
-    "hire an AI agent or remote expert",
-    "AI agent for B2B outbound",
-    "AI sales development representative",
+    "hire an AI agent or human support team",
+    "support ticket automation",
+    "helpdesk automation",
+    "AI agent zendesk intercom",
   ],
   openGraph: {
-    ...ogDefaults("/ai-sdr-outreach/"),
+    ...ogDefaults("/ai-agent-customer-support/"),
     images: ["/images/og-default.png"],
-    title: "AI SDR for Outreach: Hire an AI Agent or Human SDR",
+    title: "AI Agent for Customer Support Automation",
     description:
-      "Done-for-you AI SDR setup. AI agent or human SDR runs your outbound, replies, and meeting bookings.",
+      "Done-for-you AI agent for customer support. Resolves tickets, drafts replies, and triages escalations.",
   },
   alternates: {
-    canonical: `${siteMetadata.url}/ai-sdr-outreach/`,
+    canonical: `${siteMetadata.url}/ai-agent-customer-support/`,
   },
 };
 
 const agentVsHuman = [
   {
-    label: "AI SDR AGENT",
+    label: "AI SUPPORT AGENT",
     headline: "Best for volume.",
-    line: "Researches accounts, writes personalized outbound, sends, triages replies, and books meetings. Faster and cheaper per touch.",
+    line: "Resolves routine tickets end to end, drafts replies for anything outside its confidence threshold, triages by urgency and sentiment.",
     glyph: "AI",
   },
   {
-    label: "HUMAN SDR",
+    label: "HUMAN AGENT",
     headline: "Best for judgment.",
-    line: "Handles strategic accounts, complex objections, and warm-handoff conversations. Slower per touch, stronger on conversion.",
+    line: "Account-specific calls, retention conversations, anything emotionally charged. Where real support experience matters.",
     glyph: "HU",
   },
   {
     label: "BLEND",
-    headline: "Best for most teams.",
-    line: "AI runs top-of-funnel volume. Humans take over once a reply needs nuance or the deal goes multi-thread.",
+    headline: "Best for support teams.",
+    line: "Agent resolves the routine. Human owns edge cases and anything that needs a real person. Senior agents stop doing tier-1 work.",
     glyph: "AI+",
   },
 ];
 
-const what = [
-  { tag: "RESEARCH", title: "Account intel", line: "Pulls firmographic, tech-stack, and intent signals on every account before writing." },
-  { tag: "WRITING", title: "Personalized outbound", line: "Generates first-touch and follow-up sequences in your brand voice with real personalization." },
-  { tag: "SEND + WARMUP", title: "Deliverability hardened", line: "Subdomain warmup, SPF/DKIM/DMARC, send caps per inbox, inbox rotation." },
-  { tag: "REPLIES", title: "Reply triage", line: "Classifies interested vs. not-now vs. unsubscribe. Routes hot replies to a human in seconds." },
-  { tag: "BOOKING", title: "Meeting booking", line: "Pulls calendar availability and schedules calls without back-and-forth." },
-  { tag: "REPORTING", title: "Pipeline tracking", line: "Weekly performance review: open rates, reply rates, meetings booked, qualified pipeline created." },
+const workflow = [
+  { tag: "TRIAGE", title: "Ticket classification", line: "Classifies by intent, urgency, and sentiment. Routes to the right queue automatically." },
+  { tag: "AUTO-RESOLVE", title: "Routine tickets, handled end to end", line: "Order status, password resets, billing lookups, anything repeatable and low-risk." },
+  { tag: "DRAFTING", title: "Drafts for human review", line: "Anything outside the agent's confidence threshold gets drafted, not sent blind, and queued for a human." },
+  { tag: "KNOWLEDGE BASE", title: "Stays current with your docs", line: "Reads your help center and macros directly. Updates to your docs update the agent, no retraining project." },
+  { tag: "ESCALATION", title: "Human handoff with full context", line: "Frustrated or high-value customers get flagged to a human immediately, with the full thread attached." },
+  { tag: "REPORTING", title: "Resolution and satisfaction tracking", line: "Deflection rate, resolution time, and CSAT, so you see what the agent is actually doing to your metrics." },
+];
+
+const integrations = [
+  { tag: "ZENDESK", line: "Native" },
+  { tag: "INTERCOM", line: "Native" },
+  { tag: "FRESHDESK", line: "Native" },
+  { tag: "HELP SCOUT", line: "Native" },
+  { tag: "CRISP", line: "Native" },
+  { tag: "CUSTOM HELPDESK", line: "API or webhook" },
 ];
 
 const steps = [
-  { num: "01", title: "Audit ICP + offer", line: "We map your ICP, value props, current outbound stack, and what is working." },
-  { num: "02", title: "Configure agent or place human", line: "Spin up the AI agent with your voice and personalization, or recruit a human SDR." },
-  { num: "03", title: "Launch + warm up", line: "Domains warmed, inboxes ramped, first sequences live within two weeks." },
-  { num: "04", title: "Tune the pipeline", line: "Weekly performance review, sequence iteration, ICP refinement based on real replies." },
+  { num: "01", title: "Map the tickets", line: "We capture your top ticket categories, existing macros, tone, and escalation rules." },
+  { num: "02", title: "Configure the agent", line: "Knowledge base ingestion, confidence thresholds, and escalation triggers set to your risk tolerance." },
+  { num: "03", title: "Launch on a slice of volume", line: "Live on a subset of tickets first, tuned weekly against actual resolution accuracy." },
+  { num: "04", title: "Humans own the edge cases", line: "Agent resolves the routine. Your team handles anything it flags or can't confidently answer." },
 ];
 
 const fitFor = [
-  { tag: "B2B SAAS FOUNDERS", line: "Need pipeline but cannot justify a full SDR team yet." },
-  { tag: "AGENCY OWNERS", line: "Outbound for clients without growing a service team." },
-  { tag: "SMB SALES LEADERS", line: "Top-of-funnel coverage without burning rep hours on research and writing." },
-  { tag: "REVENUE OPS", line: "Want AI-led outbound that integrates cleanly with the existing CRM and motion." },
-];
-
-const engagement = [
-  { tag: "SETUP", title: "One-time setup", line: "ICP audit, sending infrastructure, AI agent configuration, CRM and calendar integration, sequence v1." },
-  { tag: "MANAGED", title: "Monthly management", line: "Sequence tuning, reply oversight, weekly reporting, deliverability monitoring, ICP refinement." },
-  { tag: "BLEND", title: "AI + human SDR", line: "Add a placed human SDR alongside the agent for strategic accounts and warm hand-offs." },
+  { tag: "SUPPORT LEADS AT SAAS", line: "Ticket volume growing faster than the headcount budget." },
+  { tag: "FOUNDERS DOING SUPPORT THEMSELVES", line: "No dedicated support hire yet, need leverage now, not in a quarter." },
+  { tag: "ECOMMERCE AND MARKETPLACES", line: "Seasonal volume spikes that would otherwise need temp staff." },
+  { tag: "TEAMS DROWNING IN TIER-1", line: "Want senior agents focused on real problems, not password resets." },
 ];
 
 const faqItems: FAQ[] = [
   {
-    question: "What is an AI SDR and how is it different from a human SDR?",
+    question: "What does an AI agent for customer support actually do?",
     answer:
-      "An AI SDR is an AI agent that handles outbound prospecting end to end: account research, message writing, sending, reply triage, and meeting booking. A human SDR does the same work manually. The AI SDR runs faster and cheaper per touch; a human SDR brings judgment to complex objections and high-value accounts. Most founders run a blend: AI SDR for top-of-funnel volume, human for the strategic accounts.",
+      "It classifies incoming tickets by intent and urgency, resolves routine repeatable requests end to end, and drafts replies for anything outside its confidence threshold instead of guessing. A human reviews drafts and owns escalations. The agent handles the volume work that keeps senior support staff stuck on tier-1 tickets.",
     category: "automation",
     categoryLabel: "Automation",
   },
   {
-    question: "Will the AI SDR get my domain flagged or blacklisted?",
+    question: "Will customers notice they are talking to an AI agent?",
     answer:
-      "Our setup includes deliverability hardening from day one: subdomain warmup, SPF/DKIM/DMARC configuration, send-volume ramp, inbox rotation, and reply-rate monitoring. We do not send from your primary domain, and we cap volume per inbox at deliverability-safe levels. The AI agent is configured to write personalized, non-spammy outbound by default.",
+      "We do not set these up to impersonate a human, and we recommend disclosure as standard practice, not something to hide. In practice, the agent resolves routine requests quickly enough that most customers are satisfied with the speed. Anything that needs a human gets handed off, with context, rather than the customer having to repeat themselves.",
     category: "automation",
     categoryLabel: "Automation",
   },
   {
-    question: "What is included in the AI SDR setup service?",
+    question: "Can the AI agent integrate with our helpdesk?",
     answer:
-      "Initial ICP and offer audit, sending infrastructure setup (domain, inboxes, warmup), AI agent configuration with your brand voice and value props, integration with your CRM and meeting tool, weekly performance tuning, and monthly reporting. We can also place a human SDR alongside the AI agent if your motion needs both.",
+      "Yes. Standard integrations with Zendesk, Intercom, Freshdesk, Help Scout, and Crisp. Custom integrations for an in-house helpdesk via API or webhook. The agent reads your macros and knowledge base directly and writes resolutions back, so your team works in one tool, not two.",
     category: "automation",
     categoryLabel: "Automation",
   },
 ];
 
-export default function AiSdrOutreachPage() {
+export default function AiAgentCustomerSupportPage() {
   const serviceSchema = generateServiceSchema(
-    "AI SDR for Outreach",
-    "Done-for-you AI SDR setup service. Hire an AI agent or human SDR to research accounts, write outbound, and book meetings.",
-    `${siteMetadata.url}/ai-sdr-outreach/`,
+    "AI Agent for Customer Support",
+    "Done-for-you AI agent for customer support. Resolves tickets, drafts replies, and triages escalations. Built for US and Canada founders and support teams.",
+    `${siteMetadata.url}/ai-agent-customer-support/`,
   );
 
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: siteMetadata.url },
-    { name: "AI SDR for Outreach", url: `${siteMetadata.url}/ai-sdr-outreach/` },
+    { name: "AI Agent for Customer Support", url: `${siteMetadata.url}/ai-agent-customer-support/` },
   ]);
 
   const faqSchema = generateFAQPageSchema(faqItems);
@@ -136,22 +139,22 @@ export default function AiSdrOutreachPage() {
         </div>
         <div className="container-custom relative max-w-5xl text-center">
           <Badge variant="primary" className="mb-6 bg-primary-500/20 text-primary-200 border-primary-400/30">
-            AI SDR FOR OUTREACH
+            AI AGENT FOR CUSTOMER SUPPORT
           </Badge>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white leading-[1.05] tracking-tight">
-            Hire an AI SDR Agent
+            Run an AI Agent for Customer Support,
             <br />
             <span className="bg-gradient-to-r from-primary-300 via-primary-400 to-primary-200 bg-clip-text text-transparent">
-              or a Human SDR to Run Your Outbound.
+              or Hire a Human Team (or Both).
             </span>
           </h1>
           <p className="mt-8 text-lg md:text-xl text-primary-100/90 max-w-2xl mx-auto">
-            Done-for-you AI SDR setup service. Researches accounts, writes outbound, books meetings.
+            Resolves routine tickets, drafts replies, and triages escalations. Without burning support hours.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
             <Button href="/contact/" size="lg">Book a discovery call</Button>
-            <Button href="#engagement" variant="outline" size="lg" className="!bg-white/10 !border-white/30 !text-white hover:!bg-white/20 hover:!text-white">
-              See engagement
+            <Button href="#workflow" variant="outline" size="lg" className="!bg-white/10 !border-white/30 !text-white hover:!bg-white/20 hover:!text-white">
+              See the workflow
             </Button>
           </div>
         </div>
@@ -163,7 +166,7 @@ export default function AiSdrOutreachPage() {
           <div className="text-center mb-14">
             <p className="text-sm font-bold text-primary-500 uppercase tracking-widest mb-3">Agent or human?</p>
             <h2 className="text-3xl md:text-5xl font-extrabold text-dark-900 dark:text-dark-50 leading-tight">
-              AI SDR vs. human SDR vs. blend.
+              AI support agent vs. human support team.
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -185,17 +188,17 @@ export default function AiSdrOutreachPage() {
         </div>
       </section>
 
-      {/* WHAT IT DOES bento */}
-      <section className="section-padding bg-primary-50/40 dark:bg-dark-800">
+      {/* WORKFLOW */}
+      <section id="workflow" className="section-padding bg-primary-50/40 dark:bg-dark-800">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-14">
-            <p className="text-sm font-bold text-primary-500 uppercase tracking-widest mb-3">What it does</p>
+            <p className="text-sm font-bold text-primary-500 uppercase tracking-widest mb-3">Workflow</p>
             <h2 className="text-3xl md:text-4xl font-extrabold text-dark-900 dark:text-dark-50">
-              What does an AI SDR actually do for outreach?
+              Where the AI agent plugs into your support workflow.
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {what.map((w) => (
+            {workflow.map((w) => (
               <div
                 key={w.title}
                 className="group relative p-6 rounded-2xl bg-white dark:bg-dark-900 border border-dark-50 dark:border-dark-700 hover:border-primary-300 dark:hover:border-primary-500/50 hover:shadow-xl hover:-translate-y-1 transition-all"
@@ -210,13 +213,36 @@ export default function AiSdrOutreachPage() {
         </div>
       </section>
 
+      {/* INTEGRATIONS */}
+      <section className="section-padding bg-dark-900 text-white">
+        <div className="container-custom max-w-6xl">
+          <div className="text-center mb-12">
+            <p className="text-sm font-bold text-primary-400 uppercase tracking-widest mb-3">Helpdesk integrations</p>
+            <h2 className="text-3xl md:text-4xl font-extrabold leading-tight">
+              Plugs into the helpdesk you already use.
+            </h2>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            {integrations.map((s) => (
+              <div
+                key={s.tag}
+                className="p-5 rounded-xl bg-gradient-to-br from-dark-800 to-dark-900 border border-dark-700 hover:border-primary-500/50 transition-all text-center"
+              >
+                <p className="text-sm font-extrabold text-white">{s.tag}</p>
+                <p className="mt-1 text-xs font-bold text-primary-400 uppercase tracking-widest">{s.line}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* HOW IT WORKS */}
       <section className="section-padding bg-white dark:bg-dark-900">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-14">
             <p className="text-sm font-bold text-primary-500 uppercase tracking-widest mb-3">How it works</p>
             <h2 className="text-3xl md:text-4xl font-extrabold text-dark-900 dark:text-dark-50">
-              How does our AI SDR setup service work?
+              Four steps to live support automation.
             </h2>
           </div>
           <div className="relative grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -230,33 +256,6 @@ export default function AiSdrOutreachPage() {
                 <p className="mt-1.5 text-sm text-dark-500 dark:text-dark-300">{s.line}</p>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ENGAGEMENT */}
-      <section id="engagement" className="section-padding bg-dark-900 text-white">
-        <div className="container-custom max-w-6xl">
-          <div className="text-center mb-14">
-            <p className="text-sm font-bold text-primary-400 uppercase tracking-widest mb-3">Engagement</p>
-            <h2 className="text-3xl md:text-4xl font-extrabold leading-tight">
-              Setup, managed, or AI plus human.
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-            {engagement.map((e) => (
-              <div
-                key={e.title}
-                className="p-7 rounded-2xl bg-gradient-to-br from-dark-800 to-dark-900 border border-dark-700 hover:border-primary-500/50 transition-all"
-              >
-                <p className="text-xs font-bold text-primary-400 uppercase tracking-widest">{e.tag}</p>
-                <h3 className="mt-2 text-2xl font-extrabold text-white">{e.title}</h3>
-                <p className="mt-4 text-sm text-dark-300 leading-relaxed">{e.line}</p>
-              </div>
-            ))}
-          </div>
-          <div className="mt-12 text-center">
-            <Button href="/contact/" size="lg">Scope your AI SDR</Button>
           </div>
         </div>
       </section>
@@ -292,29 +291,25 @@ export default function AiSdrOutreachPage() {
         <div className="container-custom max-w-4xl text-center">
           <p className="text-sm font-bold text-primary-500 uppercase tracking-widest mb-3">Related offerings</p>
           <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 mb-8">
-            Pair the SDR with the rest of the stack.
+            What we pair with support automation.
           </h2>
           <p className="text-base sm:text-lg text-dark-500 dark:text-dark-300 leading-relaxed max-w-2xl mx-auto">
-            Pair the SDR with{" "}
-            <a href="/ai-developers-who-build-ai/" className="text-primary-500 hover:text-primary-600 font-bold underline">
-              AI developers who build the matching models
+            If the agent needs custom logic beyond what a done-for-you setup covers, our{" "}
+            <a href="/hire/chatbot-developers/" className="text-primary-500 hover:text-primary-600 font-bold underline">
+              chatbot developers
             </a>{" "}
-            when you need custom personalization. Founders ranking on talent volume should also see{" "}
-            <a href="/hire-data-analysts-engineers/" className="text-primary-500 hover:text-primary-600 font-bold underline">
-              data analysts and data engineers
+            can build it bespoke. Outbound and support usually need the same customer data layer, see our{" "}
+            <a href="/ai-sdr-outreach/" className="text-primary-500 hover:text-primary-600 font-bold underline">
+              AI SDR setup
             </a>{" "}
-            to track outbound performance. And once outbound pulls top engineering candidates, use{" "}
-            <a href="/ai-agent-hr-recruiting/" className="text-primary-500 hover:text-primary-600 font-bold underline">
-              our AI agent for recruiting outreach
-            </a>{" "}
-            to handle them. Replies eventually turn into support volume too, see our{" "}
-            <a href="/ai-agent-customer-support/" className="text-primary-500 hover:text-primary-600 font-bold underline">
-              AI agent for customer support
-            </a>{" "}
-            for the other side of the customer lifecycle. For automation across more of your ops beyond outbound, see our{" "}
+            if you also want outbound automated. For a broader automation build across more of your ops, see our{" "}
             <a href="/hire/automation-consultants/" className="text-primary-500 hover:text-primary-600 font-bold underline">
               automation consultants
-            </a>.
+            </a>. Not sure where to start? See{" "}
+            <a href="/blog/which-customer-support-tickets-to-automate-first/" className="text-primary-500 hover:text-primary-600 font-bold underline">
+              which ticket types to automate first
+            </a>{" "}
+            and which should stay with a human.
           </p>
         </div>
       </section>
@@ -353,9 +348,9 @@ export default function AiSdrOutreachPage() {
         </div>
         <div className="container-custom relative text-center max-w-3xl">
           <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-4 leading-tight">
-            Ready to put an AI SDR on your outbound?
+            Resolve tickets without burning support hours.
           </h2>
-          <p className="text-lg text-primary-50 mb-8">Tell us your ICP. Scoped proposal in 48 hours.</p>
+          <p className="text-lg text-primary-50 mb-8">Tell us your ticket volume. Scoped proposal in 48 hours.</p>
           <Button href="/contact/" variant="white" size="lg">Book a discovery call</Button>
         </div>
       </section>
