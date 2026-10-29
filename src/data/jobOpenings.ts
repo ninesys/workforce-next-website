@@ -41,6 +41,32 @@ export const jobOpenings: JobOpening[] = [
     maxSalary: 4000000,
   },
   {
+    slug: "full-stack-developer-php-noida",
+    title: "Full-Stack Developer (PHP Background, React.js / Node.js)",
+    department: "Engineering",
+    location: "Sector 153, Noida",
+    type: "Full-time (Work from Office)",
+    experience: "1+ years",
+    summary:
+      "Ship features across React.js frontends and Node.js backends for real client products. Strong PHP background required; current hands-on work is in React.js and Node.js.",
+    responsibilities: [
+      "Build responsive, accessible interfaces with React.js (roughly 60% of the role)",
+      "Design and maintain backend APIs and services with Node.js (roughly 40% of the role)",
+      "Work across both ends of the stack on real client features, not isolated tickets",
+      "Write clean, maintainable code and communicate progress and blockers clearly",
+      "Collaborate directly with the team and, where needed, with clients on scope",
+    ],
+    requirements: [
+      "Strong PHP background is a must",
+      "Currently working hands-on with Node.js and React.js",
+      "1+ years of professional development experience",
+      "Good communication skills, spoken and written",
+      "Comfortable working from our Sector 153, Noida office full-time",
+    ],
+    minSalary: 400000,
+    maxSalary: 600000,
+  },
+  {
     slug: "ai-ml-engineer",
     title: "AI / ML Engineer",
     department: "Engineering",
