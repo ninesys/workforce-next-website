@@ -382,6 +382,9 @@ export default function GccIndiaPage() {
             and{" "}
             <a href="/how-we-work/" className="text-primary-500 hover:text-primary-600 font-bold underline">
               how we work
+            </a>. And if you are still deciding between a full GCC and building your own India entity from scratch, read{" "}
+            <a href="/blog/gcc-build-operate-transfer-vs-own-entity-india/" className="text-primary-500 hover:text-primary-600 font-bold underline">
+              GCC Build-Operate-Transfer vs building your own entity
             </a>.
           </p>
         </div>

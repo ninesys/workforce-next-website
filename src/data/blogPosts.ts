@@ -3,6 +3,7 @@ import type { BlogPost, BlogFAQ } from "./blog/types";
 import twelveParametersAiMatchingToolsShouldEvaluate from "./blog/12-parameters-ai-matching-tools-should-evaluate";
 import diyVsMarketplaceVsHandPickedDevelopers from "./blog/diy-vs-marketplace-vs-hand-picked-developers";
 import whyDevopsHiringGotHarder2026 from "./blog/why-devops-hiring-got-harder-2026";
+import gccBuildOperateTransferVsOwnEntityIndia from "./blog/gcc-build-operate-transfer-vs-own-entity-india";
 import whichCustomerSupportTicketsToAutomateFirst from "./blog/which-customer-support-tickets-to-automate-first";
 import whichFinanceOpsTasksToAutomateFirst from "./blog/which-finance-ops-tasks-to-automate-first";
 import whichInternalOpsTasksToAutomateFirst from "./blog/which-internal-ops-tasks-to-automate-first";
@@ -133,4 +134,5 @@ export const blogPosts: BlogPost[] = [
   whichFinanceOpsTasksToAutomateFirst,
   whichInternalOpsTasksToAutomateFirst,
   whyDevopsHiringGotHarder2026,
+  gccBuildOperateTransferVsOwnEntityIndia,
 ];
