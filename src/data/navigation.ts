@@ -60,6 +60,7 @@ export const mainNavItems: NavItem[] = [
           { label: "For Founders (MVP Sprint)", href: "/for/founders" },
           { label: "For Funded Startups", href: "/for/startups" },
           { label: "For Enterprise", href: "/for/enterprise" },
+          { label: "GCC India (Build-Operate-Transfer)", href: "/for/gcc-india" },
         ],
       },
       {
@@ -122,6 +123,7 @@ export const footerLinks = {
     { label: "For Founders", href: "/for/founders" },
     { label: "For Funded Startups", href: "/for/startups" },
     { label: "For Enterprise", href: "/for/enterprise" },
+    { label: "GCC India (Build-Operate-Transfer)", href: "/for/gcc-india" },
   ],
   products: [
     { label: "SethAI Recruiter", href: "/products/seth-ai-recruiter" },

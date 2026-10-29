@@ -4,7 +4,7 @@ import { SESv2Client, SendEmailCommand } from "@aws-sdk/client-sesv2";
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
-const FORM_NAMES = ["contact", "careers", "seth-waitlist"] as const;
+const FORM_NAMES = ["contact", "careers", "seth-waitlist", "gcc-bot"] as const;
 type FormName = (typeof FORM_NAMES)[number];
 
 const HONEYPOT_FIELD = "website";
@@ -42,12 +42,14 @@ const INTERNAL_SUBJECTS: Record<FormName, string> = {
   contact: "New contact enquiry | workforcenext.in",
   careers: "New career application | workforcenext.in",
   "seth-waitlist": "New SethAI waitlist signup | workforcenext.in",
+  "gcc-bot": "New GCC / Build-Operate-Transfer enquiry | workforcenext.in",
 };
 
 const ACK_SUBJECTS: Record<FormName, string> = {
   contact: "We received your enquiry | Workforce Next",
   careers: "We received your application | Workforce Next",
   "seth-waitlist": "You're on the SethAI waitlist | Workforce Next",
+  "gcc-bot": "We received your GCC enquiry | Workforce Next",
 };
 
 const escapeHtml = (value: string) =>
@@ -161,6 +163,17 @@ https://wfnext.com/products/seth-ai-recruiter/${summary}
 Talk soon,
 The Workforce Next team
 `,
+  "gcc-bot": (greeting, summary) =>
+    `Hi ${greeting},
+
+Thanks for reaching out about setting up a Global Capability Center in India. We have received your enquiry and a senior team member will connect with you within one business day to understand your scope and timeline.
+
+If your request is urgent, you can also reach us directly at hello@workforcenext.in.${summary}
+
+Talk soon,
+The Workforce Next team
+https://wfnext.com
+`,
 };
 
 const ACK_BODY_HTML: Record<
@@ -192,6 +205,13 @@ const ACK_BODY_HTML: Record<
   <p>While you wait, read how SethAI evaluates candidates: <a href="https://wfnext.com/products/seth-ai-recruiter/">SethAI Recruiter</a>.</p>
   ${summary}
   <p>Talk soon,<br/>The Workforce Next team</p>
+</body></html>`,
+  "gcc-bot": (greeting, summary) => `<!doctype html><html><body style="font-family:-apple-system,Segoe UI,Roboto,sans-serif;color:#0f172a;max-width:560px;margin:0 auto;padding:24px;line-height:1.55">
+  <p>Hi ${escapeHtml(greeting)},</p>
+  <p>Thanks for reaching out about setting up a <strong>Global Capability Center in India</strong>. We have received your enquiry and a senior team member will connect with you within one business day to understand your scope and timeline.</p>
+  <p>If your request is urgent, you can also reach us directly at <a href="mailto:hello@workforcenext.in">hello@workforcenext.in</a>.</p>
+  ${summary}
+  <p>Talk soon,<br/>The Workforce Next team<br/><a href="https://wfnext.com">wfnext.com</a></p>
 </body></html>`,
 };
 
