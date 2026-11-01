@@ -10,10 +10,11 @@ import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "Hire AI & Agentic Developers from India",
+  title: "Hire AI Developers in India",
   description:
-    "Hire pre-vetted AI and agentic developers from India. LangChain, AutoGen, CrewAI, RAG pipelines, multi-agent systems, and more. SethAI-screened for skills and longevity.",
+    "Hire pre-vetted AI developers in India — LangChain, AutoGen, CrewAI, RAG pipelines, multi-agent systems, and agentic workflows. SethAI-screened for skills and longevity.",
   keywords: [
+    "hire ai developers in india",
     "hire AI developers India",
     "hire agentic developers",
     "LangChain developers India",
@@ -26,9 +27,9 @@ export const metadata: Metadata = {
   openGraph: {
     ...ogDefaults("/hire/ai-developers/"),
     images: ["/images/og-default.png"],
-    title: "Hire AI & Agentic Developers from India",
+    title: "Hire AI Developers in India",
     description:
-      "Hire pre-vetted AI and agentic developers from India. SethAI-screened for skills and longevity.",
+      "Hire pre-vetted AI developers in India. LangChain, AutoGen, CrewAI, RAG pipelines, multi-agent systems. SethAI-screened for skills and longevity.",
   },
   alternates: {
     canonical: `${siteMetadata.url}/hire/ai-developers/`,
@@ -285,11 +286,12 @@ export default function HireAIDevelopersPage() {
             HIRE AI DEVELOPERS
           </Badge>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-dark-900 dark:text-dark-50 leading-tight">
-            Hire AI &amp; Agentic Developers from India
+            Hire AI Developers in India
           </h1>
           <p className="mt-4 text-lg text-dark-700 dark:text-dark-200 max-w-2xl">
             Pre-vetted engineers who build production LLM applications, agentic
-            workflows, and retrieval-augmented systems. Screened by SethAI for
+            workflows, and retrieval-augmented systems. Based in India, available
+            to overlap with US, UK, and EU hours. Screened by SethAI for
             technical depth and long-term fit.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
