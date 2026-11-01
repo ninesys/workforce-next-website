@@ -107,6 +107,19 @@ Three ways to engage:
 Includes an architecture assessment.
 Page: https://wfnext.com/for/enterprise
 
+### Global Capability Center (GCC) Setup — Build-Operate-Transfer
+For US and UK companies that want a permanent engineering team in India without the risk and complexity of setting up an entity themselves. Workforce Next builds the team, operates it (hiring, payroll, HR, infrastructure, compliance, governance), and transfers full ownership to the client on the client's timeline. The result is a captive center the client owns outright, not a vendor relationship.
+
+What is included: role profiling and JD design, sourcing and SethAI screening, offer management, onboarding, Noida office setup or remote-first infrastructure, Indian labour law compliance, payroll, PF/ESI, IT procurement, security policy setup, and a governance framework ready for the transfer.
+
+Transfer timeline: typically 12 to 24 months, when the center is stable and the client's internal ops team is ready. No forced transfer date.
+
+Why BOT vs own entity: setting up a Private Limited Company in India takes 3 to 6 months, requires a Resident Director, and comes with ongoing compliance obligations before a single engineer is hired. BOT starts operations immediately under Workforce Next's existing entity.
+
+Page: https://wfnext.com/for/gcc-india
+Blog: GCC Build-Operate-Transfer vs setting up your own India entity: https://wfnext.com/blog/gcc-build-operate-transfer-vs-own-entity-india
+Blog: GCC vs staff augmentation — a decision guide for India expansion: https://wfnext.com/blog/gcc-vs-staff-augmentation-india-decision-guide
+
 ---
 
 ## Key Concepts

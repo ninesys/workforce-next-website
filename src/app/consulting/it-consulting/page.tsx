@@ -268,7 +268,8 @@ export default function ITConsultingPage() {
   const serviceSchema = generateServiceSchema(
     "IT Consulting Services",
     "Strategic IT consulting for startups to enterprises. Tech roadmaps, vendor selection, modernization, IT spend, security posture. Fractional CTO or project-based.",
-    `${siteMetadata.url}/consulting/it-consulting/`
+    `${siteMetadata.url}/consulting/it-consulting/`,
+    "Consulting"
   );
 
   const breadcrumbSchema = generateBreadcrumbSchema([

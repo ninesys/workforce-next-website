@@ -268,7 +268,8 @@ export default function ScalabilityConsultingPage() {
   const serviceSchema = generateServiceSchema(
     "Scalability Consulting",
     "Scalability consulting for growing companies. Performance audits, infrastructure scaling, database tuning, microservices migration, cloud cost optimization.",
-    `${siteMetadata.url}/consulting/scalability-consulting/`
+    `${siteMetadata.url}/consulting/scalability-consulting/`,
+    "Consulting"
   );
 
   const breadcrumbSchema = generateBreadcrumbSchema([

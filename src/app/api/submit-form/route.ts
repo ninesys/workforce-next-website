@@ -39,10 +39,10 @@ const isAllowedOrigin = (origin: string | null) => {
 };
 
 const INTERNAL_SUBJECTS: Record<FormName, string> = {
-  contact: "New contact enquiry | workforcenext.in",
-  careers: "New career application | workforcenext.in",
-  "seth-waitlist": "New SethAI waitlist signup | workforcenext.in",
-  "gcc-bot": "New GCC / Build-Operate-Transfer enquiry | workforcenext.in",
+  contact: "New contact enquiry | wfnext.com",
+  careers: "New career application | wfnext.com",
+  "seth-waitlist": "New SethAI waitlist signup | wfnext.com",
+  "gcc-bot": "New GCC / Build-Operate-Transfer enquiry | wfnext.com",
 };
 
 const ACK_SUBJECTS: Record<FormName, string> = {
@@ -131,7 +131,7 @@ const ACK_BODY_TEXT: Record<
 
 Thanks for reaching out to Workforce Next. We have received your enquiry and our team will connect with you within the next few hours.
 
-If your request is urgent, you can also reach us directly at hello@workforcenext.in or on WhatsApp via workforcenext.in/contact.${summary}
+If your request is urgent, you can also reach us directly at hello@workforcenext.in or on WhatsApp via wfnext.com/contact.${summary}
 
 Talk soon,
 The Workforce Next team

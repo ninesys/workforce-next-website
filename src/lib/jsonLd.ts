@@ -95,7 +95,8 @@ export function generateWebSiteSchema() {
 export function generateServiceSchema(
   name: string,
   description: string,
-  url: string
+  url: string,
+  serviceType = "Staff Augmentation"
 ) {
   return {
     "@context": "https://schema.org",
@@ -107,7 +108,7 @@ export function generateServiceSchema(
       name: siteMetadata.name,
       url: siteMetadata.url,
     },
-    serviceType: "Staff Augmentation",
+    serviceType,
     areaServed: "Worldwide",
     url,
   };

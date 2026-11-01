@@ -268,7 +268,8 @@ export default function MVPConsultingPage() {
   const serviceSchema = generateServiceSchema(
     "MVP Consulting for Founders",
     "MVP consulting for pre-seed and seed founders. Scope advisory, tech stack selection, build vs no-code, founding team shape, prelaunch validation.",
-    `${siteMetadata.url}/consulting/mvp-consulting/`
+    `${siteMetadata.url}/consulting/mvp-consulting/`,
+    "Consulting"
   );
 
   const breadcrumbSchema = generateBreadcrumbSchema([
