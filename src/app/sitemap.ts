@@ -61,6 +61,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/products/seth-ai-recruiter/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     // Standalone landing pages
     { url: `${baseUrl}/ai-automation-agency/`, lastModified: now, changeFrequency: "monthly", priority: 1.0 },
+    { url: `${baseUrl}/qa-testing-services/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${baseUrl}/nearshore-software-development/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/aeo-seo-for-saas/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/ai-sdr-outreach/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/ai-developers-who-build-ai/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
