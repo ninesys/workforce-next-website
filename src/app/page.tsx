@@ -12,9 +12,9 @@ import CTASection from "@/components/home/CTASection";
 import { generateHomepageHowToSchema } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
-  title: "Hire AI Agents or Expert Talent for Your Projects",
+  title: "Hire AI Developers & Engineers from India | Workforce Next",
   description:
-    "Done-for-you AI agents or human talent: consulting, AI SDR outreach, AI developers, data engineers, and HR agents for US and Canada founders.",
+    "Done-for-you AI agents or offshore talent from India: consulting, AI SDR outreach, AI developers, data engineers, and HR agents for US and Canada founders.",
   keywords: [
     "AI automation agency for founders",
     "AI automation agency for SaaS",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     ...ogDefaults("/"),
     images: ["/images/og-default.png"],
-    title: "Hire AI Agents or Expert Talent for Your Projects",
+    title: "Hire AI Developers & Engineers from India | Workforce Next",
     description:
       "Done-for-you AI agents and remote experts: product consulting, AI SDR outreach, AI development, data engineering, and HR agents.",
   },
