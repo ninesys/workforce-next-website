@@ -10,11 +10,11 @@ import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "Hire Python Developers from India",
+  title: "Hire Python Developers — India-based Engineers",
   description:
-    "Hire pre-vetted Python developers from India. Django, FastAPI, Flask, async Python, data engineering, ML, automation. SethAI-screened for depth and longevity.",
+    "Hire Python developers from India. Django, FastAPI, Flask, async Python, data engineering, ML pipelines, and automation. SethAI-screened for depth and longevity. Daily timezone overlap.",
   keywords: [
-    "hire Python developers",
+    "hire python developers",
     "hire Python developers India",
     "Python engineers India",
     "Django developers",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     ...ogDefaults("/hire/python-developers/"),
     images: ["/images/og-default.png"],
-    title: "Hire Python Developers from India",
+    title: "Hire Python Developers — India-based Engineers",
     description:
       "Pre-vetted Python engineers for APIs, data, ML, and automation. SethAI-screened.",
   },
@@ -291,7 +291,7 @@ export default function HirePythonDevelopersPage() {
         <div className="container-custom max-w-4xl">
           <Badge variant="primary" className="mb-4">HIRE PYTHON DEVELOPERS</Badge>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-dark-900 dark:text-dark-50 leading-tight">
-            Hire Python Developers from India
+            Hire Python developers from India.
           </h1>
           <p className="mt-4 text-lg text-dark-600 dark:text-dark-200 max-w-2xl">
             Pre-vetted engineers who ship Python in production. FastAPI, Django,
