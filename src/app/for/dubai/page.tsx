@@ -9,7 +9,7 @@ import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "Hire Indian Developers for Dubai & UAE Companies (GST+4)",
+  title: "Hire Indian Developers for Dubai and UAE",
   description:
     "Hire pre-vetted Indian developers for Dubai, Abu Dhabi, and UAE companies. 1.5 hour timezone gap, AED or USD invoicing, DIFC and ADGM aware, no UAE entity needed.",
   keywords: [

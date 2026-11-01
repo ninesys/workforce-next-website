@@ -10,7 +10,7 @@ import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "Hire Automation Consultants | AI Agents + Workflow Automation",
+  title: "Hire Automation Consultants from India",
   description:
     "Automation consultants who wire AI agents into your real business workflows. Sales ops, support, finance, content, and internal tooling. Project or retainer.",
   keywords: [
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     ...ogDefaults("/hire/automation-consultants/"),
     images: ["/images/og-default.png"],
-    title: "Hire Automation Consultants | AI Agents + Workflow Automation",
+    title: "Hire Automation Consultants from India",
     description:
       "Wire AI agents into the real workflows eating your team's time. Project or retainer.",
   },

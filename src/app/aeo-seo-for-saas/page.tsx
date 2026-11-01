@@ -10,7 +10,7 @@ import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "GenZ Asks AI, Not Google. Make AI Recommend Your SaaS. | AEO + SEO + GEO Sprint",
+  title: "AI Visibility for SaaS: AEO and GEO Sprint",
   description:
     "GenZ doesn't search anymore. They ask ChatGPT, Perplexity, Gemini. We control what AI tells them about your SaaS, so AI sends them straight to your product.",
   keywords: [

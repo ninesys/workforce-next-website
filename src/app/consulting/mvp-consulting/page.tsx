@@ -10,7 +10,7 @@ import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "MVP Consulting for Founders: Scope, Stack, and Ship",
+  title: "MVP Consulting for Founders",
   description:
     "MVP consulting for pre-seed and seed founders. Scope advisory, tech stack selection, build vs no-code, founding team shape, prelaunch validation, 12-week MVP roadmap.",
   keywords: [
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     ...ogDefaults("/consulting/mvp-consulting/"),
     images: ["/images/og-default.png"],
-    title: "MVP Consulting for Founders: Scope, Stack, and Ship",
+    title: "MVP Consulting for Founders",
     description:
       "Scope advisory, tech stack selection, build vs no-code, founding team shape, prelaunch validation. For pre-seed and seed founders.",
   },

@@ -8,7 +8,7 @@ import {
 } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
-  title: "Enterprise Engineering Services - On-Demand Specialists",
+  title: "Enterprise Engineering Services",
   description:
     "Expert on-demand, staff augmentation, and fixed-scope consulting for enterprise teams. Free 2-hour architecture assessment. AI, data, cloud, and full-stack specialists.",
   keywords: [
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     ...ogDefaults("/for/enterprise/"),
     images: ["/images/og-default.png"],
-    title: "Enterprise Engineering Services - On-Demand Specialists",
+    title: "Enterprise Engineering Services",
     description:
       "Expert on-demand, staff augmentation, and fixed-scope consulting for enterprise teams.",
   },

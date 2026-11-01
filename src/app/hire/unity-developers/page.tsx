@@ -10,7 +10,7 @@ import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "Hire Unity Developers from India (C#, Game Dev, AR/VR)",
+  title: "Hire Unity Developers from India",
   description:
     "Hire pre-vetted Unity developers from India. C#, mobile games, AR/VR, WebGL, multiplayer netcode, and Asset Store delivery. SethAI-screened for skills and longevity.",
   keywords: [

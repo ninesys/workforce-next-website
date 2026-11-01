@@ -8,7 +8,7 @@ import {
 } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
-  title: "MVP Sprint for Founders - AI Product in 4 Weeks",
+  title: "AI Product MVP Sprint for Founders",
   description:
     "Get a senior developer matched by SethAI for a 4-week MVP sprint. Fixed scope, 1-week paid trial, and a developer who stays with you past launch.",
   keywords: [
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     ...ogDefaults("/for/founders/"),
     images: ["/images/og-default.png"],
-    title: "MVP Sprint for Founders - AI Product in 4 Weeks",
+    title: "AI Product MVP Sprint for Founders",
     description:
       "Get a senior developer matched by SethAI for a 4-week MVP sprint. Fixed scope, 1-week paid trial.",
   },

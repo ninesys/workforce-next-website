@@ -9,7 +9,7 @@ import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "Hire a Fractional Project Manager from India",
+  title: "Hire Fractional Project Managers from India",
   description:
     "Hire a fractional or on-demand project manager from India. Senior-level roadmap, sprint, and stakeholder coordination at part-time cost. SethAI-screened.",
   keywords: [
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     ...ogDefaults("/hire/fractional-project-manager/"),
     images: ["/images/og-default.png"],
-    title: "Hire a Fractional Project Manager from India",
+    title: "Hire Fractional Project Managers from India",
     description:
       "Senior-level roadmap, sprint, and stakeholder coordination at part-time cost. Pre-vetted by SethAI for ownership and communication.",
   },

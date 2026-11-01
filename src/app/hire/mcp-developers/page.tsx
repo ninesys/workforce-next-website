@@ -10,7 +10,7 @@ import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "Hire MCP Developers from India (Model Context Protocol)",
+  title: "Hire MCP Developers from India",
   description:
     "Hire pre-vetted MCP developers from India who build Model Context Protocol servers, agent integrations, and LLM tooling for production AI products.",
   keywords: [

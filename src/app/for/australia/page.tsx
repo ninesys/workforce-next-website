@@ -9,7 +9,7 @@ import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "Hire Indian Developers for Australian Companies (AEST)",
+  title: "Hire Indian Developers for Australian Teams",
   description:
     "Hire pre-vetted Indian developers for Australian companies. 4.5+ hours of AEST overlap, AUD invoicing, Privacy Act ready, no Australian entity or sponsorship needed.",
   keywords: [

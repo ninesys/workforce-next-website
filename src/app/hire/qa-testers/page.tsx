@@ -6,7 +6,7 @@ import { generateServiceSchema, generateBreadcrumbSchema, generateFAQPageSchema 
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "Hire QA Engineers & Software Testers from India",
+  title: "Hire QA Engineers & Testers from India",
   description:
     "Hire QA engineers who think like users and break things before your customers do. Manual testing, automation, performance, security, and API testing. Context-matched to your product and industry.",
   keywords: [
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     ...ogDefaults("/hire/qa-testers/"),
     images: ["/images/og-default.png"],
-    title: "Hire QA Engineers & Software Testers from India",
+    title: "Hire QA Engineers & Testers from India",
     description:
       "QA engineers who care about quality, not just test cases. Manual, automation, performance, and security testing.",
   },

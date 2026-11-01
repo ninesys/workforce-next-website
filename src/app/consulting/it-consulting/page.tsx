@@ -10,7 +10,7 @@ import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "IT Consulting Services for Startups to Enterprises",
+  title: "IT Consulting for Startups and Enterprises",
   description:
     "Strategic IT consulting for startups to enterprises. Tech roadmaps, vendor selection, modernization, IT spend optimization, security posture. Fractional CTO or project-based.",
   keywords: [
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     ...ogDefaults("/consulting/it-consulting/"),
     images: ["/images/og-default.png"],
-    title: "IT Consulting Services for Startups to Enterprises",
+    title: "IT Consulting for Startups and Enterprises",
     description:
       "Strategic IT consulting. Tech roadmaps, vendor selection, modernization, IT spend, security posture. Fractional CTO or project-based.",
   },

@@ -10,7 +10,7 @@ import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "Scalability Consulting: Performance, Infrastructure, and Cost at Scale",
+  title: "Scalability Consulting for SaaS Startups",
   description:
     "Scalability consulting for growing companies hitting scale walls. Performance audits, infrastructure scaling, database tuning, microservices migration, cloud cost at scale.",
   keywords: [
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     ...ogDefaults("/consulting/scalability-consulting/"),
     images: ["/images/og-default.png"],
-    title: "Scalability Consulting: Performance, Infrastructure, and Cost at Scale",
+    title: "Scalability Consulting for SaaS Startups",
     description:
       "Performance audits, database scaling, microservices migration, cloud cost optimization. For growing companies hitting scale walls.",
   },

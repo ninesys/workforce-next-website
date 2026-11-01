@@ -10,7 +10,7 @@ import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "Hire Vibe-Code Optimisation Engineers from India",
+  title: "Hire Vibe-Code Engineers from India",
   description:
     "Hire pre-vetted vibe-code optimisation engineers who audit and refactor AI-generated code from Cursor, Copilot, and v0. Production-ready code, security audits, test coverage, and tech debt reduction.",
   keywords: [
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     ...ogDefaults("/hire/vibe-code-engineer/"),
     images: ["/images/og-default.png"],
-    title: "Hire Vibe-Code Optimisation Engineers from India",
+    title: "Hire Vibe-Code Engineers from India",
     description:
       "Engineers who turn AI-generated drafts into production-ready code. Cursor, Copilot, v0 audit specialists.",
   },

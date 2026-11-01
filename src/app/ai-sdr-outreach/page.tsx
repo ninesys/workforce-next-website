@@ -10,7 +10,7 @@ import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "AI SDR for Outreach: Hire an AI Agent or Human SDR",
+  title: "AI SDR Outreach: AI Agent or Human SDR",
   description:
     "Done-for-you AI SDR setup service. Hire an AI agent or remote SDR to research accounts, write outbound, and book meetings. Built for US and Canada founders.",
   keywords: [
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     ...ogDefaults("/ai-sdr-outreach/"),
     images: ["/images/og-default.png"],
-    title: "AI SDR for Outreach: Hire an AI Agent or Human SDR",
+    title: "AI SDR Outreach: AI Agent or Human SDR",
     description:
       "Done-for-you AI SDR setup. AI agent or human SDR runs your outbound, replies, and meeting bookings.",
   },

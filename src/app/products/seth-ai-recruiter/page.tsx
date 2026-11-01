@@ -10,7 +10,7 @@ import {
 } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
-  title: "SethAI - The AI Recruiter That Screens for What Matters",
+  title: "SethAI: The AI Recruiter for Tech Teams",
   description:
     "SethAI screens developers for technical skills and longevity signals like ownership mindset and career alignment. Get a 1-page match report for AI, agentic, data, and full-stack roles.",
   keywords: [
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     ...ogDefaults("/products/seth-ai-recruiter/"),
     images: ["/images/og-default.png"],
-    title: "SethAI - The AI Recruiter That Screens for What Matters",
+    title: "SethAI: The AI Recruiter for Tech Teams",
     description:
       "SethAI screens developers for technical skills and longevity signals. Join the waitlist.",
   },

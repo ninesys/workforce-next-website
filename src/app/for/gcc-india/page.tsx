@@ -12,7 +12,7 @@ import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "India GCC Setup with a Build-Operate-Transfer Model",
+  title: "India GCC: Build-Operate-Transfer Setup",
   description:
     "Build and operate your Global Capability Center in India, then transfer full ownership to you on your timeline. Hiring, entity setup, infrastructure, and governance handled end to end.",
   keywords: [
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     ...ogDefaults("/for/gcc-india/"),
     images: ["/images/pages/gcc-india-hero.webp"],
-    title: "India GCC Setup with a Build-Operate-Transfer Model",
+    title: "India GCC: Build-Operate-Transfer Setup",
     description:
       "Build and operate your Global Capability Center in India, then transfer full ownership to you on your timeline.",
   },

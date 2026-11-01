@@ -9,7 +9,7 @@ import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "Hire Remote Developers from India for Europe (CET / GMT)",
+  title: "Hire Indian Developers for European Teams",
   description:
     "Hire remote developers from India for European companies. Flexible hours, 4.5+ hours of CET and GMT overlap, 3 to 12 month engagements, EUR or GBP invoicing.",
   keywords: [
