@@ -10,11 +10,11 @@ import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "Hire React Native Developers from India",
+  title: "Hire React Native Developer — India-based Team",
   description:
-    "Hire pre-vetted React Native developers from India. New Architecture, TurboModules, Expo, code-push, native modules in Swift/Kotlin. SethAI-screened.",
+    "Hire a React Native developer from India. Pre-vetted engineers for New Architecture, TurboModules, Expo, code-push, and native modules in Swift/Kotlin. SethAI-screened, daily timezone overlap.",
   keywords: [
-    "hire React Native developers",
+    "hire react native developer",
     "hire React Native developers India",
     "Expo developers",
     "React Native TurboModules",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     ...ogDefaults("/hire/react-native-developers/"),
     images: ["/images/og-default.png"],
-    title: "Hire React Native Developers from India",
+    title: "Hire React Native Developer — India-based Team",
     description:
       "Pre-vetted React Native engineers for iOS and Android with shared JS codebase. SethAI-screened.",
   },
@@ -244,7 +244,7 @@ export default function HireReactNativeDevelopersPage() {
       <section className="bg-gradient-to-br from-primary-50 via-white to-primary-50/50 dark:from-dark-900 dark:via-dark-900 dark:to-dark-800 pt-32 pb-16 md:pt-40 md:pb-20">
         <div className="container-custom max-w-4xl">
           <Badge variant="primary" className="mb-4">HIRE REACT NATIVE DEVELOPERS</Badge>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-dark-900 dark:text-dark-50 leading-tight">Hire React Native Developers from India</h1>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-dark-900 dark:text-dark-50 leading-tight">Hire a React Native developer from India.</h1>
           <p className="mt-4 text-lg text-dark-600 dark:text-dark-200 max-w-2xl">
             Pre-vetted engineers who ship React Native in production. New
             Architecture, Expo, native modules, OTA updates. Screened by
