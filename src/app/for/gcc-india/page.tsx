@@ -191,7 +191,7 @@ export default function GccIndiaPage() {
             </span>
           </h1>
           <p className="mt-8 text-lg md:text-xl text-primary-100/90 max-w-2xl mx-auto">
-            We build and operate your Global Capability Center in India, then transfer the entity, the team, and the infrastructure to you on a timeline agreed up front.
+            We build and operate your Global Capability Center (GCC) in India, also called an offshore development center (ODC), then transfer the entity, the team, and the infrastructure to you on a timeline agreed up front.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
             <Button href="#lead-form" size="lg">Request a scoping call</Button>

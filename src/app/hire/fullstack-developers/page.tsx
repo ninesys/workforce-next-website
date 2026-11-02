@@ -398,8 +398,33 @@ export default function HireFullStackDevelopersPage() {
         </div>
       </section>
 
-      {/* When to hire a specialist vs generalist */}
+      {/* Domains we have built for */}
       <section className="section-padding bg-primary-50 dark:bg-dark-800">
+        <div className="container-custom max-w-4xl">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 mb-6">
+            Domains we have built for
+          </h2>
+          <p className="text-dark-600 dark:text-dark-200 leading-relaxed mb-8">
+            Full stack engineers who have only ever built CRUD apps struggle with the constraints that come with specialized data. Our engineers have shipped production systems in:
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {[
+              { title: "GIS and location-aware applications", detail: "Geospatial data pipelines, map rendering (Mapbox, MapLibre, Leaflet), PostGIS queries, fleet tracking overlays, and location-based filtering at scale." },
+              { title: "Fleet telematics and real-time dashboards", detail: "High-frequency GPS and sensor ingestion over MQTT and WebSockets, live vehicle tracking UIs, geofence alerts, and trip history replay." },
+              { title: "IoT web infrastructure and device management", detail: "Device registry and provisioning, OTA firmware update workflows, time-series telemetry storage, and operator dashboards for large device fleets." },
+              { title: "Time-series data pipelines", detail: "InfluxDB and TimescaleDB schema design, continuous aggregates, downsampling policies, and visualization layers for operational metrics and sensor data." },
+            ].map((domain) => (
+              <div key={domain.title} className="p-5 rounded-xl bg-white dark:bg-dark-900 border border-dark-50 dark:border-dark-700">
+                <h3 className="font-bold text-dark-900 dark:text-dark-50 mb-2">{domain.title}</h3>
+                <p className="text-sm text-dark-600 dark:text-dark-200 leading-relaxed">{domain.detail}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* When to hire a specialist vs generalist */}
+      <section className="section-padding bg-white dark:bg-dark-900">
         <div className="container-custom max-w-5xl">
           <h2 className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-dark-50 mb-6">
             Full stack or specialists: which do you need?
