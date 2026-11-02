@@ -148,6 +148,7 @@ URLS=(
   "https://${HOST}/qa-testing-services/"
   "https://${HOST}/nearshore-software-development/"
   "https://${HOST}/hire/mobile-app-developers/"
+  "https://${HOST}/blog/time-and-materials-vs-fixed-price-vs-dedicated-team/"
 )
 
 # Build JSON payload
