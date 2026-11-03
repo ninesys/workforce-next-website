@@ -12,7 +12,7 @@ import { FAQ } from "@/types";
 export const metadata: Metadata = {
   title: "Hire Software Architects from India",
   description:
-    "Hire pre-vetted software architects from India. System design, microservices, event-driven, cloud, scalability, security. Fractional or full-time. SethAI-screened.",
+    "Hire pre-vetted software architects from India. System design, microservices, event-driven, cloud, scalability, security. SethAI-screened.",
   keywords: [
     "hire software architect",
     "hire software architects India",

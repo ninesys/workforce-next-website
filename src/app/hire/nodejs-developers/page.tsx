@@ -12,7 +12,7 @@ import { FAQ } from "@/types";
 export const metadata: Metadata = {
   title: "Hire Node.js Developers from India",
   description:
-    "Hire pre-vetted Node.js developers from India. Express, NestJS, Fastify, TypeScript, real-time, microservices, and serverless. SethAI-screened for skills and longevity.",
+    "Hire pre-vetted Node.js developers from India. Express, NestJS, Fastify, TypeScript, real-time, microservices, and serverless. SethAI-screened.",
   keywords: [
     "hire Node.js developers",
     "hire Node.js developers India",

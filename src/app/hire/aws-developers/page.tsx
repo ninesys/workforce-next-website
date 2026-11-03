@@ -12,7 +12,7 @@ import { FAQ } from "@/types";
 export const metadata: Metadata = {
   title: "Hire AWS Developers from India",
   description:
-    "Hire pre-vetted AWS developers from India. ECS, EKS, Lambda, RDS, S3, IaC with Terraform/CDK, observability, FinOps. AWS Solutions Architect certified. SethAI-screened.",
+    "Hire pre-vetted AWS developers from India. ECS, EKS, Lambda, RDS, S3, IaC, observability, FinOps. AWS Solutions Architect certified. SethAI-screened.",
   keywords: [
     "hire AWS developers",
     "hire AWS developers India",

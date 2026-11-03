@@ -12,7 +12,7 @@ import { FAQ } from "@/types";
 export const metadata: Metadata = {
   title: "Hire RAG Pipeline Developers from India",
   description:
-    "Hire pre-vetted RAG pipeline developers from India. Vector databases, embedding models, chunking strategies, hybrid search, re-ranking, and evaluation. SethAI-screened.",
+    "Hire pre-vetted RAG pipeline developers from India. Vector databases, embedding models, chunking, hybrid search, re-ranking, and evaluation. SethAI-screened.",
   keywords: [
     "hire RAG developers India",
     "RAG pipeline developers",

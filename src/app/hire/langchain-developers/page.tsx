@@ -12,7 +12,7 @@ import { FAQ } from "@/types";
 export const metadata: Metadata = {
   title: "Hire LangChain Developers from India",
   description:
-    "Hire pre-vetted LangChain developers from India. LangGraph, LangSmith, chains, agents, tools, retrieval, memory, and output parsers. SethAI-screened for skills and longevity.",
+    "Hire pre-vetted LangChain developers from India. LangGraph, LangSmith, chains, agents, tools, retrieval, and memory. SethAI-screened for skills.",
   keywords: [
     "hire LangChain developers India",
     "LangGraph developers",

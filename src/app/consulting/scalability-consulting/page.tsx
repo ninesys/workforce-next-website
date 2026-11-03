@@ -12,7 +12,7 @@ import { FAQ } from "@/types";
 export const metadata: Metadata = {
   title: "Scalability Consulting for SaaS Startups",
   description:
-    "Scalability consulting for growing companies hitting scale walls. Performance audits, infrastructure scaling, database tuning, microservices migration, cloud cost at scale.",
+    "Scalability consulting for growing companies hitting scale walls. Performance audits, infrastructure scaling, database tuning, and migrations.",
   keywords: [
     "scalability consulting",
     "scalability consultant",

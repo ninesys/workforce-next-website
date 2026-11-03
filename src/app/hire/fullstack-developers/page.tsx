@@ -12,7 +12,7 @@ import { FAQ } from "@/types";
 export const metadata: Metadata = {
   title: "Hire Full Stack Developers from India",
   description:
-    "Hire pre-vetted full stack developers from India skilled in Node.js, Python, React, and AWS. End-to-end engineers who ship features across frontend, backend, and cloud. SethAI-screened for technical depth and longevity.",
+    "Hire pre-vetted full stack developers from India skilled in Node.js, Python, React, and AWS. End-to-end engineers screened by SethAI for depth and longevity.",
   keywords: [
     "hire full stack developers India",
     "full stack developer Node.js React",

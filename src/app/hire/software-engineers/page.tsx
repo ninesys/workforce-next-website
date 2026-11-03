@@ -12,7 +12,7 @@ import { FAQ } from "@/types";
 export const metadata: Metadata = {
   title: "Hire Software Engineers from India",
   description:
-    "Hire pre-vetted software engineers from India. Full-stack, backend, frontend, mobile, data, DevOps. Matched by context, screened by SethAI for skills and longevity.",
+    "Hire pre-vetted software engineers from India. Full-stack, backend, frontend, mobile, data, DevOps. Matched by context, screened by SethAI.",
   keywords: [
     "hire software engineer",
     "hire software engineers India",

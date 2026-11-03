@@ -12,7 +12,7 @@ import { FAQ } from "@/types";
 export const metadata: Metadata = {
   title: "Hire AI Developers in India",
   description:
-    "Hire pre-vetted AI developers in India — LangChain, AutoGen, CrewAI, RAG pipelines, multi-agent systems, and agentic workflows. SethAI-screened for skills and longevity.",
+    "Hire pre-vetted AI developers in India. LangChain, AutoGen, CrewAI, RAG pipelines, multi-agent systems, and agentic workflows. SethAI-screened for skills.",
   keywords: [
     "hire ai developers in india",
     "hire AI developers India",

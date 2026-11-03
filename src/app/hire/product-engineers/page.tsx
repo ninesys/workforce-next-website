@@ -8,7 +8,7 @@ import { FAQ } from "@/types";
 export const metadata: Metadata = {
   title: "Hire Product Engineers from India",
   description:
-    "Hire product engineers who understand your industry context. Not just coders. Engineers who have shipped products in your exact domain, whether that is fintech, logistics, healthtech, or SaaS.",
+    "Hire product engineers who understand your industry context. Engineers who have shipped products in your exact domain: fintech, logistics, healthtech, or SaaS.",
   keywords: [
     "hire product engineers India",
     "product engineering team",

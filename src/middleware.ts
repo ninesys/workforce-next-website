@@ -116,6 +116,14 @@ const EXACT: Record<string, string> = {
   "/blog/hr-document-automation-small-business-2026": "/hire/automation-consultants/",
   "/blog/page2": "/blog/",
   "/blog/page4": "/blog/",
+
+  // Renamed blog slugs still indexed by Google under their old URLs
+  // (found via GSC audit 2026-11-03, were 404ing instead of redirecting).
+  "/blog/expressjs-vs-nestjs-fastify": "/blog/expressjs-vs-fastify-vs-nestjs-2026/",
+  "/blog/nodejs-vs-java-go-enterprise-backend-2026":
+    "/blog/nodejs-vs-java-vs-go-enterprise-backend-2026/",
+  "/blog/vibe-coding-explained-when-to-use-it-and-when-to-avoid-it":
+    "/blog/vibe-coding-explained-when-to-use-it/",
   "/blog/stealth-employee-monitoring-software": "/blog/",
   "/blog/software-to-monitor-employees-working-from-home": "/blog/",
   "/blog/screen-monitoring-software": "/blog/",

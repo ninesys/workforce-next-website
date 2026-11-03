@@ -8,7 +8,7 @@ import { FAQ } from "@/types";
 export const metadata: Metadata = {
   title: "Hire QA Engineers & Testers from India",
   description:
-    "Hire QA engineers who think like users and break things before your customers do. Manual testing, automation, performance, security, and API testing. Context-matched to your product and industry.",
+    "Hire QA engineers who think like users and break things before customers do. Manual testing, automation, performance, security, and API testing.",
   keywords: [
     "hire QA engineers India",
     "hire software testers India",

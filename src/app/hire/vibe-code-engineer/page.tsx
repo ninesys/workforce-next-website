@@ -12,7 +12,7 @@ import { FAQ } from "@/types";
 export const metadata: Metadata = {
   title: "Hire Vibe-Code Engineers from India",
   description:
-    "Hire pre-vetted vibe-code optimisation engineers who audit and refactor AI-generated code from Cursor, Copilot, and v0. Production-ready code, security audits, test coverage, and tech debt reduction.",
+    "Hire pre-vetted vibe-code engineers who audit and refactor AI-generated code from Cursor, Copilot, and v0. Security audits, test coverage, tech debt reduction.",
   keywords: [
     "hire vibe code engineer",
     "AI code review engineer",

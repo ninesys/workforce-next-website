@@ -14,7 +14,7 @@ import { FAQ } from "@/types";
 export const metadata: Metadata = {
   title: "India GCC: Build-Operate-Transfer Setup",
   description:
-    "Build and operate your Global Capability Center in India, then transfer full ownership to you on your timeline. Hiring, entity setup, infrastructure, and governance handled end to end.",
+    "Build and operate your Global Capability Center in India, then transfer full ownership on your timeline. Hiring, entity, and infrastructure handled end to end.",
   keywords: [
     "GCC India",
     "build operate transfer India",

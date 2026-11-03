@@ -12,7 +12,7 @@ import { FAQ } from "@/types";
 export const metadata: Metadata = {
   title: "Hire Data Engineers from India",
   description:
-    "Hire pre-vetted data engineers from India. dbt, Airflow, Spark, Snowflake, Kafka, BigQuery, Dagster, and modern data lakehouses. SethAI-screened for skills and longevity.",
+    "Hire pre-vetted data engineers from India. dbt, Airflow, Spark, Snowflake, Kafka, BigQuery, and modern data lakehouses. SethAI-screened for skills.",
   keywords: [
     "hire data engineers India",
     "dbt developers India",

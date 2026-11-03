@@ -12,7 +12,7 @@ import { FAQ } from "@/types";
 export const metadata: Metadata = {
   title: "Hire Frontend Engineers from India",
   description:
-    "Hire pre-vetted frontend engineers from India. React, Next.js 14+, TypeScript, Tailwind, performance optimization, and accessibility. SethAI-screened for skills and longevity.",
+    "Hire pre-vetted frontend engineers from India. React, Next.js 14+, TypeScript, Tailwind, performance, and accessibility. SethAI-screened for skills.",
   keywords: [
     "hire frontend engineers India",
     "reactjs development service",

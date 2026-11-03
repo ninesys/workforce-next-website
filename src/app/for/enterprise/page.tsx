@@ -10,7 +10,7 @@ import {
 export const metadata: Metadata = {
   title: "Enterprise Engineering Services",
   description:
-    "Expert on-demand, staff augmentation, and fixed-scope consulting for enterprise teams. Free 2-hour architecture assessment. AI, data, cloud, and full-stack specialists.",
+    "Expert on-demand, staff augmentation, and fixed-scope consulting for enterprise teams. Free architecture assessment. AI, data, cloud, full-stack specialists.",
   keywords: [
     "enterprise staff augmentation India",
     "hire AI consultant",

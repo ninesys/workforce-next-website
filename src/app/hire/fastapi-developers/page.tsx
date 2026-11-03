@@ -12,7 +12,7 @@ import { FAQ } from "@/types";
 export const metadata: Metadata = {
   title: "Hire FastAPI Developers from India",
   description:
-    "Hire pre-vetted FastAPI developers from India. Pydantic, SQLAlchemy, async Python, WebSocket, background tasks, OAuth2, and OpenAPI. SethAI-screened for skills and longevity.",
+    "Hire pre-vetted FastAPI developers from India. Pydantic, SQLAlchemy, async Python, WebSocket, background tasks, OAuth2, and OpenAPI. SethAI-screened.",
   keywords: [
     "hire FastAPI developers India",
     "FastAPI Python developers",

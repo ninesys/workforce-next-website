@@ -12,7 +12,7 @@ import { FAQ } from "@/types";
 export const metadata: Metadata = {
   title: "Hire NLP Developers from India",
   description:
-    "Hire pre-vetted NLP developers from India. LLM fine-tuning, classification, NER, summarization, structured extraction, multilingual, embeddings. SethAI-screened.",
+    "Hire pre-vetted NLP developers from India. LLM fine-tuning, classification, NER, summarization, structured extraction, embeddings. SethAI-screened.",
   keywords: [
     "hire NLP developers",
     "hire NLP engineers India",

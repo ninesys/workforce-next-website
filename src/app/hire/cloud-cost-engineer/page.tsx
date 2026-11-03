@@ -12,7 +12,7 @@ import { FAQ } from "@/types";
 export const metadata: Metadata = {
   title: "Hire Cloud Cost Engineers from India",
   description:
-    "Hire pre-vetted cloud cost engineers from India. AWS, Azure, GCP FinOps, Kubernetes rightsizing, spot and reserved instances, Terraform cost estimation. Measurable cloud savings from month one.",
+    "Hire pre-vetted cloud cost engineers from India. AWS, Azure, GCP FinOps, Kubernetes rightsizing, spot and reserved instances, and cost estimation.",
   keywords: [
     "hire cloud cost engineer",
     "FinOps engineer India",

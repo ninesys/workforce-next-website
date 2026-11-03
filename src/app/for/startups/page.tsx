@@ -10,7 +10,7 @@ import {
 export const metadata: Metadata = {
   title: "Engineering Pods for Funded Startups",
   description:
-    "Build a dedicated 3-8 person engineering pod in 30 days. AI/backend lead, full-stack developers, QA, and optional data engineer. 48-hour profile delivery via SethAI.",
+    "Build a dedicated 3-8 person engineering pod in 30 days. AI/backend lead, full-stack developers, QA, and data engineer. Fast profile delivery via SethAI.",
   keywords: [
     "dedicated engineering team startup",
     "hire remote developers for startup",

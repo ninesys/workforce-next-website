@@ -12,7 +12,7 @@ import { FAQ } from "@/types";
 export const metadata: Metadata = {
   title: "Hire Flutter Developers from India",
   description:
-    "Hire pre-vetted Flutter developers from India. Dart 3, Flutter 3.x, iOS + Android + web from one codebase, state management, native channels, Firebase. SethAI-screened.",
+    "Hire pre-vetted Flutter developers from India. Dart 3, Flutter 3.x, iOS, Android, and web from one codebase, native channels, Firebase. SethAI-screened.",
   keywords: [
     "hire Flutter developers",
     "hire Flutter developers India",

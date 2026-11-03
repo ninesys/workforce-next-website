@@ -12,7 +12,7 @@ import { FAQ } from "@/types";
 export const metadata: Metadata = {
   title: "Hire WordPress Developers from India",
   description:
-    "Hire pre-vetted WordPress developers from India. Custom themes, plugins, Gutenberg blocks, WooCommerce, headless WordPress, performance and security. SethAI-screened.",
+    "Hire pre-vetted WordPress developers from India. Custom themes, plugins, Gutenberg blocks, WooCommerce, headless WordPress. SethAI-screened.",
   keywords: [
     "hire WordPress developers",
     "hire WordPress developers India",

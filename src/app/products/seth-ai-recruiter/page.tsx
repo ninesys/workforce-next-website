@@ -12,7 +12,7 @@ import {
 export const metadata: Metadata = {
   title: "SethAI: The AI Recruiter for Tech Teams",
   description:
-    "SethAI screens developers for technical skills and longevity signals like ownership mindset and career alignment. Get a 1-page match report for AI, agentic, data, and full-stack roles.",
+    "SethAI screens developers for technical skills and longevity signals like ownership mindset and career alignment. Get a match report for any technical role.",
   keywords: [
     "AI recruiter",
     "SethAI",

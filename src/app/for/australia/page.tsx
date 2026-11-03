@@ -11,7 +11,7 @@ import { FAQ } from "@/types";
 export const metadata: Metadata = {
   title: "Hire Indian Developers for Australian Teams",
   description:
-    "Hire pre-vetted Indian developers for Australian companies. 4.5+ hours of AEST overlap, AUD invoicing, Privacy Act ready, no Australian entity or sponsorship needed.",
+    "Hire pre-vetted Indian developers for Australian companies. Strong AEST overlap, AUD invoicing, Privacy Act ready, no entity or sponsorship needed.",
   keywords: [
     "hire indian developers australia",
     "hire indian developers sydney",

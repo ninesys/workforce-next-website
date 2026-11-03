@@ -12,7 +12,7 @@ import { FAQ } from "@/types";
 export const metadata: Metadata = {
   title: "IT Consulting for Startups and Enterprises",
   description:
-    "Strategic IT consulting for startups to enterprises. Tech roadmaps, vendor selection, modernization, IT spend optimization, security posture. Fractional CTO or project-based.",
+    "Strategic IT consulting for startups to enterprises. Tech roadmaps, vendor selection, modernization, IT spend, and security posture.",
   keywords: [
     "IT consulting",
     "IT consulting services",
