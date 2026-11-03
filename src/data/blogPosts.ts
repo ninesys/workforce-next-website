@@ -5,6 +5,8 @@ import diyVsMarketplaceVsHandPickedDevelopers from "./blog/diy-vs-marketplace-vs
 import whyDevopsHiringGotHarder2026 from "./blog/why-devops-hiring-got-harder-2026";
 import gccBuildOperateTransferVsOwnEntityIndia from "./blog/gcc-build-operate-transfer-vs-own-entity-india";
 import gccVsStaffAugmentationIndiaDecisionGuide from "./blog/gcc-vs-staff-augmentation-india-decision-guide";
+import howToUseOnyxEnterpriseMaximumBenefit from "./blog/how-to-use-onyx-enterprise-maximum-benefit";
+import selfHostedVsSaasAiSearchEnterpriseHrData from "./blog/self-hosted-vs-saas-ai-search-enterprise-hr-data";
 import timeAndMaterialsVsFixedPriceVsDedicatedTeam from "./blog/time-and-materials-vs-fixed-price-vs-dedicated-team";
 import whichCustomerSupportTicketsToAutomateFirst from "./blog/which-customer-support-tickets-to-automate-first";
 import whichFinanceOpsTasksToAutomateFirst from "./blog/which-finance-ops-tasks-to-automate-first";
@@ -139,4 +141,6 @@ export const blogPosts: BlogPost[] = [
   gccBuildOperateTransferVsOwnEntityIndia,
   gccVsStaffAugmentationIndiaDecisionGuide,
   timeAndMaterialsVsFixedPriceVsDedicatedTeam,
+  howToUseOnyxEnterpriseMaximumBenefit,
+  selfHostedVsSaasAiSearchEnterpriseHrData,
 ];

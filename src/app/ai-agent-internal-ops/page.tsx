@@ -59,7 +59,7 @@ const workflow = [
   { tag: "ACCESS REQUESTS", title: "Provisioning and deprovisioning", line: "Grants and revokes tool access against your policy automatically, with a full audit trail." },
   { tag: "ONBOARDING", title: "New-hire IT setup", line: "Runs the new-hire checklist end to end and pings the employee when everything is ready to use." },
   { tag: "TICKET TRIAGE", title: "Routine IT tickets, resolved", line: "Password resets, VPN access, software installs, handled without a human in the loop." },
-  { tag: "POLICY Q&A", title: "Answers from your actual docs", line: "Employee questions get answered against your internal documentation instead of pinging IT or HR directly." },
+  { tag: "POLICY Q&A", title: "Internal knowledge search, for IT and HR both", line: "Employee questions get answered against your actual docs, wikis, and HR policies from one search layer, instead of pinging IT or HR directly. Self-hosted deployment is available when HR or compliance data cannot leave your infrastructure." },
   { tag: "APPROVALS", title: "Routing to the right approver", line: "Spend, access, and policy-exception requests routed automatically, no chasing someone over Slack." },
   { tag: "AUDIT TRAIL", title: "Every action logged", line: "Full record for SOC 2, internal audit, or compliance review, without a manual reconciliation project." },
 ];
@@ -106,6 +106,13 @@ const faqItems: FAQ[] = [
     question: "Can it integrate with our existing IT stack?",
     answer:
       "Yes. Standard integrations with Slack, Okta, Google Workspace, Jira Service Management, and Microsoft Entra. Custom integrations for an in-house identity or ticketing system via API. The agent reads and writes directly into the tools your team already uses.",
+    category: "automation",
+    categoryLabel: "Automation",
+  },
+  {
+    question: "Can employees ask HR questions through the same agent that handles IT?",
+    answer:
+      "Yes. IT tickets and HR policy questions both get answered from the same underlying knowledge search layer, pointed at your docs, wiki, and HR policies. For teams that cannot send HR or compliance data to a third-party API, we deploy on self-hosted, open-source search infrastructure (such as Onyx) so that data stays inside your own environment.",
     category: "automation",
     categoryLabel: "Automation",
   },
