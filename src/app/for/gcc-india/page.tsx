@@ -385,7 +385,11 @@ export default function GccIndiaPage() {
             </a>. And if you are still deciding between a full GCC and building your own India entity from scratch, read{" "}
             <a href="/blog/gcc-build-operate-transfer-vs-own-entity-india/" className="text-primary-500 hover:text-primary-600 font-bold underline">
               GCC Build-Operate-Transfer vs building your own entity
-            </a>.
+            </a>. A GCC under this model is, in contract terms, a dedicated team at ODC scale. See{" "}
+            <a href="/blog/time-and-materials-vs-fixed-price-vs-dedicated-team/" className="text-primary-500 hover:text-primary-600 font-bold underline">
+              how that compares to time and materials or fixed price
+            </a>{" "}
+            if you are still sizing up the right engagement model.
           </p>
         </div>
       </section>

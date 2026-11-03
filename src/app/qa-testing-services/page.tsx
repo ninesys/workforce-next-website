@@ -129,21 +129,21 @@ const faqItems: FAQ[] = [
   {
     question: "How does offshore QA outsourcing to India compare to a local QA firm?",
     answer:
-      "The main tradeoffs are cost and timezone. India-based QA engineers work at a lower cost than local equivalents while covering the same test frameworks and methodologies. On timezone: every Workforce Next engagement includes at least 4 hours of daily overlap with your team. For US Pacific, we arrange morning-overlap schedules. The main risk in offshore QA is context loss when testers rotate — we address that through context documentation and dedicated assignments, not shared resource pools.",
+      "The main tradeoffs are cost and timezone. India-based QA engineers work at a lower cost than local equivalents while covering the same test frameworks and methodologies. On timezone: every Workforce Next engagement includes at least 4 hours of daily overlap with your team. For US Pacific, we arrange morning-overlap schedules. The main risk in offshore QA is context loss when testers rotate. We address that through context documentation and dedicated assignments, not shared resource pools.",
     category: "hiring",
     categoryLabel: "Hiring",
   },
   {
     question: "Can you take over an existing test suite or do you start from scratch?",
     answer:
-      "We start with an audit of what exists. Most codebases have some test coverage — we assess what is worth keeping, what is brittle and misleading, and what gaps are costing you the most. We then build on top of what is solid rather than discarding working tests. If the existing suite is genuinely unusable, we say so in the audit with evidence before recommending a rebuild.",
+      "We start with an audit of what exists. Most codebases have some test coverage. We assess what is worth keeping, what is brittle and misleading, and what gaps are costing you the most. We then build on top of what is solid rather than discarding working tests. If the existing suite is genuinely unusable, we say so in the audit with evidence before recommending a rebuild.",
     category: "automation",
     categoryLabel: "Automation",
   },
   {
     question: "How quickly can a QA engagement start?",
     answer:
-      "SethAI delivers matched QA profiles within 48 hours of your intake call. From requirements to a QA engineer starting their trial week is typically 7 to 10 business days. If you have a launch deadline driving urgency, tell us on the intake call — we maintain a bench of pre-screened QA engineers who can start in 3 to 5 days.",
+      "SethAI delivers matched QA profiles within 48 hours of your intake call. From requirements to a QA engineer starting their trial week is typically 7 to 10 business days. If you have a launch deadline driving urgency, tell us on the intake call. We maintain a bench of pre-screened QA engineers who can start in 3 to 5 days.",
     category: "hiring",
     categoryLabel: "Hiring",
   },

@@ -12,9 +12,9 @@ import CTASection from "@/components/home/CTASection";
 import { generateHomepageHowToSchema } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
-  title: "Hire AI Developers & Engineers from India",
+  title: "AI Automation Agency for Founders",
   description:
-    "Done-for-you AI agents or offshore talent from India: consulting, AI SDR outreach, AI developers, data engineers, and HR agents for US and Canada founders.",
+    "AI automation agency for founders and startups. AI agents, workflow automation, and offshore dedicated developers, from one partner.",
   keywords: [
     "AI automation agency for founders",
     "AI automation agency for SaaS",
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
   openGraph: {
     ...ogDefaults("/"),
     images: ["/images/og-default.png"],
-    title: "Hire AI Developers & Engineers from India",
+    title: "AI Automation Agency for Founders",
     description:
-      "Done-for-you AI agents and remote experts: product consulting, AI SDR outreach, AI development, data engineering, and HR agents.",
+      "AI automation agency for founders and startups. AI agents, workflow automation, and offshore dedicated developers, from one partner.",
   },
 };
 

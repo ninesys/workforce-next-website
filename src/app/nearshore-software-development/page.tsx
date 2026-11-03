@@ -10,7 +10,7 @@ import {
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "Nearshore Software Development Company — India",
+  title: "Nearshore Software Development Company, India",
   description:
     "Workforce Next is an India-based nearshore software development company serving US, UK, and EU clients. Dedicated engineering teams with 4+ hours daily overlap, SethAI-matched to your stack and industry.",
   keywords: [
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     ...ogDefaults("/nearshore-software-development/"),
     images: ["/images/og-default.png"],
-    title: "Nearshore Software Development Company — India",
+    title: "Nearshore Software Development Company, India",
     description:
       "India-based nearshore software development. Dedicated engineering teams with daily timezone overlap for US, UK, and EU clients. SethAI-matched engineers.",
   },
@@ -43,7 +43,7 @@ const comparison = [
   {
     criterion: "English fluency",
     nearshore: "High in Eastern Europe and LatAm tech hubs",
-    india: "High — English is the language of Indian engineering education and business",
+    india: "High. English is the language of Indian engineering education and business",
     verdict: "Comparable",
   },
   {
@@ -54,8 +54,8 @@ const comparison = [
   },
   {
     criterion: "Cost vs US hiring",
-    nearshore: "Typically 40-60% of US rates",
-    india: "Typically 30-50% of US rates",
+    nearshore: "Meaningfully lower than US rates",
+    india: "Meaningfully lower than US rates, typically below nearshore pricing too",
     verdict: "India advantage",
   },
   {
@@ -76,13 +76,13 @@ const services = [
   {
     title: "AI agents and automation",
     description:
-      "AI-native engineers who build production LLM applications, agentic workflows, and process automation — not just prototypes.",
+      "AI-native engineers who build production LLM applications, agentic workflows, and process automation, not just prototypes.",
     href: "/hire/ai-developers/",
   },
   {
     title: "Vibe-code hardening",
     description:
-      "Audit and harden AI-generated codebases before they face real traffic. Rate limiting, security, scalable architecture — in place, not rewritten.",
+      "Audit and harden AI-generated codebases before they face real traffic. Rate limiting, security, scalable architecture, in place, not rewritten.",
     href: "/hire/vibe-code-engineer/",
   },
   {
@@ -103,7 +103,7 @@ const faqItems: FAQ[] = [
   {
     question: "Is India considered nearshore for US companies?",
     answer:
-      "Technically, nearshore refers to geographic proximity — Eastern Europe for Western Europe, Latin America for North America. India is offshore in that strict definition. In practice, the qualities buyers seek from nearshore vendors are language fluency, time zone overlap, cultural alignment, and engineering depth — and India delivers all four when the engagement is structured correctly. A shifted-schedule India team working 1pm-10pm IST overlaps with US Eastern business hours almost entirely. The geography is different; the working relationship is comparable.",
+      "Technically, nearshore refers to geographic proximity: Eastern Europe for Western Europe, Latin America for North America. India is offshore in that strict definition. In practice, the qualities buyers seek from nearshore vendors are language fluency, time zone overlap, cultural alignment, and engineering depth, and India delivers all four when the engagement is structured correctly. A shifted-schedule India team working 1pm-10pm IST overlaps with US Eastern business hours almost entirely. The geography is different; the working relationship is comparable.",
     category: "hiring",
     categoryLabel: "Hiring",
   },
@@ -117,7 +117,7 @@ const faqItems: FAQ[] = [
   {
     question: "What makes Workforce Next different from other India-based software development companies?",
     answer:
-      "Two things. First, SethAI screens for industry context and longevity signals, not just technical keywords. An engineer matched to a fintech startup has actually shipped payment systems — not just listed fintech on their CV. Second, context continuity is built into every engagement: codebase walkthrough, domain glossary, architecture decision log. When the team grows or someone leaves, the next engineer ramps in days, not months.",
+      "Two things. First, SethAI screens for industry context and longevity signals, not just technical keywords. An engineer matched to a fintech startup has actually shipped payment systems, not just listed fintech on their CV. Second, context continuity is built into every engagement: codebase walkthrough, domain glossary, architecture decision log. When the team grows or someone leaves, the next engineer ramps in days, not months.",
     category: "hiring",
     categoryLabel: "Hiring",
   },
@@ -131,7 +131,7 @@ const faqItems: FAQ[] = [
   {
     question: "How quickly can a nearshore development team be assembled?",
     answer:
-      "SethAI delivers matched profiles within 48 hours of your intake call. From requirements to a developer starting their trial week is typically 7 to 10 business days. For a full engineering pod (3 to 5 engineers), allow 2 to 3 weeks for the matching and interview process across the team. Every engagement starts with a paid trial week — real work on your actual codebase — before you commit.",
+      "SethAI delivers matched profiles within 48 hours of your intake call. From requirements to a developer starting their trial week is typically 7 to 10 business days. For a full engineering pod (3 to 5 engineers), allow 2 to 3 weeks for the matching and interview process across the team. Every engagement starts with a paid trial week, real work on your actual codebase, before you commit.",
     category: "hiring",
     categoryLabel: "Hiring",
   },
@@ -139,7 +139,7 @@ const faqItems: FAQ[] = [
 
 export default function NearshoreSoftwareDevelopmentPage() {
   const serviceSchema = generateServiceSchema(
-    "Nearshore Software Development — India",
+    "Nearshore Software Development, India",
     "Dedicated nearshore software development teams from India. Daily timezone overlap for US, UK, and EU clients. SethAI-matched engineers screened for skills and longevity.",
     `${siteMetadata.url}/nearshore-software-development/`
   );

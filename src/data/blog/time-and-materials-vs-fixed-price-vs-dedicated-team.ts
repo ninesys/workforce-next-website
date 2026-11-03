@@ -7,7 +7,7 @@ const post: BlogPost = {
   excerpt:
     "The model you choose does not change who builds your software. It changes who carries the risk when requirements shift. Here is how to match each model to the actual shape of your project.",
   tldr:
-    "Fixed price works when the scope is genuinely final and small. T&M works when the scope is clear but you expect it to evolve. A dedicated team works when you are building continuously and want a team that accumulates context rather than starting fresh each engagement. Most product companies eventually move to a dedicated model because the other two reset context and renegotiate scope every time.",
+    "Fixed price works when the scope is genuinely final and small. T&M works when the scope is clear but you expect it to evolve. A dedicated team (sometimes called an offshore development center, or ODC, once it scales) works when you are building continuously and want a team that accumulates context rather than starting fresh each engagement. Most product companies eventually move to a dedicated model because the other two reset context and renegotiate scope every time.",
   body: `<p>Most conversations about development engagement models start with rates. That is the wrong place to start. The model you choose does not determine who builds your software. It determines who absorbs the risk when the scope changes, who has the incentive to flag problems early, and how much management overhead lands on you. Get the model wrong and you end up paying for two things: the work and the friction.</p>
 
 <h2>Fixed price: what it is and when it actually works</h2>
@@ -45,7 +45,7 @@ const post: BlogPost = {
 <p>T&M does not mean no accountability. The best T&M engagements define weekly or sprint-level outputs, track velocity, and align on what good looks like for each deliverable. The model is not the problem. The absence of structure within the model is.</p>
 
 <h2>Dedicated team: what it is and when it actually works</h2>
-<p>A dedicated team is a group of engineers who work exclusively on your product, operating as an extension of your internal team. The billing is typically a flat monthly cost per person, roughly like a full-time headcount you do not source, manage administratively, or replace on your own.</p>
+<p>A dedicated team is a group of engineers who work exclusively on your product, operating as an extension of your internal team. The billing is typically a flat monthly cost per person, roughly like a full-time headcount you do not source, manage administratively, or replace on your own. Once a dedicated team scales into a standing department, 25 or more people with its own leadership, this is the model usually called an offshore development center (ODC). The billing logic is the same, the difference is scale and permanence, not the underlying contract.</p>
 <p>The key difference from T&M is continuity. A T&M engagement bills for hours and can start fresh each sprint. A dedicated team accumulates context: about your codebase, your product decisions, your team dynamics, your technical debt, and your customers. That context is worth something. It is also what you lose when an engagement ends and you start over with a new vendor.</p>
 <p>Dedicated team works well for:</p>
 <ul>
@@ -70,7 +70,7 @@ const post: BlogPost = {
 <h2>How Workforce Next structures each model</h2>
 <p>For <strong>fixed-price work</strong>, we scope it carefully upfront with a written spec both sides sign off on, and we define acceptance criteria in the same document. Change orders are priced transparently before work begins. We do not quote fixed price on work where we cannot confidently define those criteria.</p>
 <p>For <strong>T&M engagements</strong>, every sprint has defined goals, and we report velocity weekly. You see exactly what was built, what was not, and why. No surprise invoices.</p>
-<p>For <strong>dedicated teams</strong>, we match engineers on 12 parameters that go beyond technical skills, including working-rhythm fit and long-term career alignment with your product, because a dedicated team member who leaves in four months is not actually dedicated. <a href="/for/startups/">See how we structure dedicated pods for startups</a>, or if you are at the scale where running your own India entity makes sense, <a href="/for/gcc-india/">see our Build-Operate-Transfer GCC model</a>.</p>
+<p>For <strong>dedicated teams</strong>, we match engineers on 12 parameters that go beyond technical skills, including working-rhythm fit and long-term career alignment with your product, because a dedicated team member who leaves in four months is not actually dedicated. <a href="/for/startups/">See how we structure dedicated pods for startups</a>, or if you are at the scale where running your own India entity makes sense, <a href="/for/gcc-india/">see our Build-Operate-Transfer GCC model</a>. For development and QA together under any of these three models, see our <a href="/nearshore-software-development/">nearshore development and QA page</a>.</p>
 <p>If you are not sure which model fits your current engagement, <a href="/contact/">start a conversation</a>. We will tell you honestly which one makes sense, including when fixed price or T&M is the right call and a dedicated team is not.</p>`,
   category: "hiring",
   categoryLabel: "Hiring & Teams",
@@ -91,6 +91,8 @@ const post: BlogPost = {
     "fixed price software development",
     "dedicated development team",
     "software outsourcing models",
+    "offshore development center ODC",
+    "ODC vs dedicated team",
   ],
   faq: [
     {
@@ -116,6 +118,10 @@ const post: BlogPost = {
     {
       q: "How does Workforce Next handle scope changes in fixed-price work?",
       a: "Every fixed-price engagement includes a written spec and acceptance criteria both parties sign off on before work begins. Change orders are scoped and priced transparently before they start. We do not quote fixed price on work where we cannot confidently define those criteria upfront.",
+    },
+    {
+      q: "Is an ODC the same thing as a dedicated team?",
+      a: "Functionally yes, the billing logic is the same per-person flat cost. The term ODC (offshore development center) usually gets used once a dedicated team scales into a standing department with its own leadership and infrastructure, typically 25 or more people. Below that scale, most teams just call it a dedicated team or a pod.",
     },
   ],
   image: "/images/blog/time-and-materials-vs-fixed-price-vs-dedicated-team.webp",

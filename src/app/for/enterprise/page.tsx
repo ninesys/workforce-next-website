@@ -179,6 +179,13 @@ export default function EnterprisePage() {
               </div>
             ))}
           </div>
+          <p className="mt-8 text-center text-sm text-dark-400 dark:text-dark-300">
+            In contract terms, these map to time and materials, fixed price, or a dedicated team. See{" "}
+            <a href="/blog/time-and-materials-vs-fixed-price-vs-dedicated-team/" className="text-primary-500 hover:text-primary-600 font-semibold underline">
+              how the three compare
+            </a>{" "}
+            before you pick one.
+          </p>
         </div>
       </section>
 

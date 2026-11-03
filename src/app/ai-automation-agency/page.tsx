@@ -42,7 +42,7 @@ const useCases = [
     ),
     title: "You built with AI tools and need it production-ready",
     description:
-      "Cursor, Claude Code, Bolt, Lovable — your app works in the demo. But it has no rate limiting, no bot protection, and architecture that won't survive real users. We audit and harden it without a rewrite.",
+      "Cursor, Claude Code, Bolt, Lovable: your app works in the demo. But it has no rate limiting, no bot protection, and architecture that won't survive real users. We audit and harden it without a rewrite.",
   },
   {
     icon: (
@@ -62,7 +62,7 @@ const useCases = [
     ),
     title: "You want to validate an idea with a working AI product fast",
     description:
-      "No internal team yet. You want a working, deployable product in weeks — not months — so you can test demand before building a full engineering org. One senior developer, fixed scope, fast turnaround.",
+      "No internal team yet. You want a working, deployable product in weeks, not months, so you can test demand before building a full engineering org. One senior developer, fixed scope, fast turnaround.",
   },
 ];
 
@@ -362,7 +362,7 @@ export default function AIAutomationAgencyPage() {
           <dl className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
               { stat: "48h", label: "Profile delivery via SethAI" },
-              { stat: "7–10", label: "Business days to trial start" },
+              { stat: "7-10", label: "Business days to trial start" },
               { stat: "4+", label: "Hours daily timezone overlap" },
               { stat: "2020", label: "Founded in Gurugram, India" },
             ].map(({ stat, label }) => (
