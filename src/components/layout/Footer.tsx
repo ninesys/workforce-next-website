@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { footerLinks } from "@/data/navigation";
 import { siteMetadata } from "@/data/siteMetadata";
+import FooterSkillsList from "@/components/layout/FooterSkillsList";
 
 export default function Footer() {
   return (
@@ -55,18 +56,7 @@ export default function Footer() {
             <h3 className="text-sm font-bold uppercase tracking-wider text-white mb-5">
               Hire by skill
             </h3>
-            <ul className="space-y-3">
-              {footerLinks.services.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-dark-300 hover:text-primary-400 transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <FooterSkillsList links={footerLinks.services} />
           </div>
 
           {/* Hire by region */}
