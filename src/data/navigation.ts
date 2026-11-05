@@ -32,11 +32,6 @@ export const mainNavItems: NavItem[] = [
           { label: "Computer Vision Developers", href: "/hire/computer-vision-developers" },
           { label: "Chatbot Developers", href: "/hire/chatbot-developers" },
           { label: "Vibe-Code Engineer", href: "/hire/vibe-code-engineer" },
-          { label: "AI Recruiting Agent", href: "/ai-agent-hr-recruiting" },
-          { label: "AI SDR Outreach", href: "/ai-sdr-outreach" },
-          { label: "AI Agent for Customer Support", href: "/ai-agent-customer-support" },
-          { label: "AI Agent for Finance Ops", href: "/ai-agent-finance-ops" },
-          { label: "AI Agent for Internal Ops", href: "/ai-agent-internal-ops" },
         ],
       },
       {
@@ -105,13 +100,6 @@ export const mainNavItems: NavItem[] = [
       },
     ],
   },
-  {
-    label: "Products",
-    href: "/products",
-    children: [
-      { label: "SethAI Recruiter", href: "/products/seth-ai-recruiter" },
-    ],
-  },
   { label: "How We Work", href: "/how-we-work" },
   { label: "Blog", href: "/blog" },
   { label: "Careers", href: "/careers" },
@@ -125,11 +113,6 @@ export const footerLinks = {
     { label: "Full Stack Developers", href: "/hire/fullstack-developers" },
     { label: "AI & Agentic Developers", href: "/hire/ai-developers" },
     { label: "AI/ML Model Engineers", href: "/ai-developers-who-build-ai" },
-    { label: "AI Recruiting Agent", href: "/ai-agent-hr-recruiting" },
-    { label: "AI SDR Outreach", href: "/ai-sdr-outreach" },
-    { label: "AI Agent for Customer Support", href: "/ai-agent-customer-support" },
-    { label: "AI Agent for Finance Ops", href: "/ai-agent-finance-ops" },
-    { label: "AI Agent for Internal Ops", href: "/ai-agent-internal-ops" },
     { label: "MCP Developers", href: "/hire/mcp-developers" },
     { label: "Data Engineers", href: "/hire/data-engineers" },
     { label: "Data Analysts & Engineers (Human or AI)", href: "/hire-data-analysts-engineers" },
@@ -157,9 +140,6 @@ export const footerLinks = {
     { label: "For Funded Startups", href: "/for/startups" },
     { label: "For Enterprise", href: "/for/enterprise" },
     { label: "GCC India (Build-Operate-Transfer)", href: "/for/gcc-india" },
-  ],
-  products: [
-    { label: "SethAI Recruiter", href: "/products/seth-ai-recruiter" },
   ],
   company: [
     { label: "How We Work", href: "/how-we-work" },

@@ -111,7 +111,7 @@ const post: BlogPost = {
   <li><strong>Test on a real Compose screen.</strong> Trial week work is the cleanest signal. Give the candidate a small Compose feature with a backend integration, see how the code reads, and you will know within five days.</li>
 </ol>
 
-<p>If you are about to hire an Android developer and want this kind of screen run for you, our <a href="/products/seth-ai-recruiter/">SethAI</a> match report covers Kotlin and Compose fluency, Coroutines correctness, Play Console delivery experience, and the longevity signals that predict whether the engineer stays past the first three months. Senior Android developers from India come at a meaningful cost advantage over equivalent US hires. The full breakdown of what drives that rate is in the <a href="/blog/senior-indian-developer-salary-2026/">senior India developer pricing post</a>.</p>
+<p>If you are about to hire an Android developer and want this kind of screen run for you, our SethAI match report covers Kotlin and Compose fluency, Coroutines correctness, Play Console delivery experience, and the longevity signals that predict whether the engineer stays past the first three months. Senior Android developers from India come at a meaningful cost advantage over equivalent US hires. The full breakdown of what drives that rate is in the <a href="/blog/senior-indian-developer-salary-2026/">senior India developer pricing post</a>.</p>
 
 <h2>Final word</h2>
 

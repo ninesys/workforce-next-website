@@ -11,11 +11,11 @@ const consulting = {
 const services = [
   {
     num: "02",
-    tag: "OUTBOUND",
-    title: "AI SDR for Outreach",
-    line: "An AI agent that researches accounts, writes outbound, books meetings, and learns from replies. You keep the qualified pipeline.",
-    href: "/ai-sdr-outreach/",
-    cta: "Hire an AI SDR",
+    tag: "WEB & MOBILE",
+    title: "MERN Stack and Mobile App Development",
+    line: "Full-stack web apps on React, Node.js, and MongoDB, plus native and cross-platform mobile builds. One extended team, every layer of the stack.",
+    href: "/hire/mobile-app-developers/",
+    cta: "Hire a web or mobile team",
     icon: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden="true" className="w-full h-full">
         <defs>
@@ -24,11 +24,12 @@ const services = [
             <stop offset="100%" stopColor="#022E5E" />
           </linearGradient>
         </defs>
-        <path d="M8 14h36l8 8v28H8z" fill="#E0EDFF" stroke="#022E5E" strokeWidth="2" />
-        <path d="M44 14v8h8" stroke="#022E5E" strokeWidth="2" fill="none" />
-        <path d="M14 30h24M14 36h20M14 42h22" stroke="#146EF5" strokeWidth="2" strokeLinecap="round" />
-        <circle cx="48" cy="42" r="8" fill="url(#svc1-g)" />
-        <path d="M45 42l2 2 4-4" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        <rect x="20" y="8" width="24" height="48" rx="4" fill="#E0EDFF" stroke="#022E5E" strokeWidth="2" />
+        <rect x="24" y="14" width="16" height="30" fill="white" stroke="#022E5E" strokeWidth="1.5" />
+        <circle cx="32" cy="49" r="2.5" fill="#022E5E" />
+        <path d="M8 24l-4 4 4 4M12 36l4-4-4-4" stroke="#146EF5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        <circle cx="48" cy="28" r="7" fill="url(#svc1-g)" />
+        <path d="M45 28l2 2 4-4" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     ),
   },
@@ -83,11 +84,11 @@ const services = [
   },
   {
     num: "05",
-    tag: "HR & RECRUITING",
-    title: "AI Agent for HR and Recruiting",
-    line: "An AI agent that screens resumes, runs first-round interviews, drafts offers, and keeps your ATS clean. Humans approve, AI executes.",
-    href: "/ai-agent-hr-recruiting/",
-    cta: "Hire the agent",
+    tag: "GCC / ODC",
+    title: "GCC and Offshore Development Center",
+    line: "Build and operate a dedicated India engineering center under a Build-Operate-Transfer model, then own it outright on your timeline.",
+    href: "/for/gcc-india/",
+    cta: "See the GCC model",
     icon: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden="true" className="w-full h-full">
         <defs>
@@ -96,10 +97,12 @@ const services = [
             <stop offset="100%" stopColor="#022E5E" />
           </linearGradient>
         </defs>
-        <circle cx="22" cy="22" r="6" fill="#E0EDFF" stroke="#022E5E" strokeWidth="2" />
-        <path d="M10 44c0-7 5-12 12-12s12 5 12 12" stroke="#022E5E" strokeWidth="2" fill="none" />
-        <circle cx="46" cy="38" r="10" fill="url(#svc4-g)" />
-        <path d="M43 38l2 2 5-5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M10 46V22l14-10 14 10v24z" fill="#E0EDFF" stroke="#022E5E" strokeWidth="2" />
+        <rect x="18" y="30" width="6" height="6" fill="#146EF5" />
+        <rect x="27" y="30" width="6" height="6" fill="#146EF5" />
+        <rect x="18" y="38" width="6" height="8" fill="#146EF5" />
+        <circle cx="46" cy="40" r="10" fill="url(#svc4-g)" />
+        <path d="M42 40h8M46 36v8" stroke="white" strokeWidth="2" strokeLinecap="round" />
       </svg>
     ),
   },

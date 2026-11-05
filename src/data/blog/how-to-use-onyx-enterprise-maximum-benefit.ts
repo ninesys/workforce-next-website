@@ -29,7 +29,7 @@ const post: BlogPost = {
 <h2>What should you fix first if your current Onyx deployment is underperforming?</h2>
 <p>Check connector count and permission accuracy first, since a thin index with permission gaps is the most common cause of both "it does not know anything" and "it surfaced something it should not have" complaints. Check assistant scoping second, since one generic assistant trying to serve every team is the most common cause of vague, low-trust answers. Maintenance ownership is third: a system with no clear owner degrades quietly until someone notices connectors have been broken for a month.</p>
 
-<p>If you want help deploying, expanding, or maintaining an Onyx instance for your company, including connector setup, permission auditing, and assistant configuration for IT, HR, and engineering separately, <a href="/contact/">talk to us</a>. We run this as an ongoing service rather than a one-time setup and walk away. For the broader context on how this fits into AI agents for internal ops generally, see our <a href="/ai-agent-internal-ops/">AI agent for internal ops page</a>.</p>`,
+<p>If you want help deploying, expanding, or maintaining an Onyx instance for your company, including connector setup, permission auditing, and assistant configuration for IT, HR, and engineering separately, <a href="/contact/">talk to us</a>. We run this as an ongoing service, an extended engineering team for the project, rather than a one-time setup and walk away.</p>`,
   slug: "how-to-use-onyx-enterprise-maximum-benefit",
   image: "/images/blog/how-to-use-onyx-enterprise-maximum-benefit.webp",
   title: "How to Use Onyx in the Enterprise to Get Maximum Benefit",

@@ -95,7 +95,7 @@ const post: BlogPost = {
 <li>Build toolchain setup (tsc, esbuild, SWC)</li>
 </ul>
 
-<p>Our <a href="/products/seth-ai-recruiter/">SethAI screening system</a> automatically evaluates TypeScript competency through code review and architecture questions.</p>
+<p>Our SethAI screening system automatically evaluates TypeScript competency through code review and architecture questions.</p>
 
 <h2>How much does it cost to hire Node.js developers from India?</h2>
 

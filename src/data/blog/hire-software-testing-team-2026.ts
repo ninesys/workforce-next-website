@@ -91,7 +91,7 @@ const post: BlogPost = {
   <li><strong>Manual collaboration.</strong> Ask how they work with the manual tester on the team. Strong candidates describe a feedback loop where manual sessions feed automation backlog. Weak ones treat the two roles as separate.</li>
 </ul>
 
-<p>For our own placements, every SDET is screened by <a href="/products/seth-ai-recruiter/">SethAI</a> on these six signals plus the longevity layer that determines whether the engineer stays past the first three months. The full hiring breakdown is on our <a href="/hire/qa-testers/">QA engineers and testers page</a>.</p>
+<p>For our own placements, every SDET is screened by SethAI on these six signals plus the longevity layer that determines whether the engineer stays past the first three months. The full hiring breakdown is on our <a href="/hire/qa-testers/">QA engineers and testers page</a>.</p>
 
 <h2>What testing stack does the modern pod ship in 2026?</h2>
 

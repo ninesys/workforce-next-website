@@ -58,20 +58,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/for/usa-canada/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/for/australia/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/for/dubai/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
-    // Products
-    { url: `${baseUrl}/products/seth-ai-recruiter/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     // Standalone landing pages
     { url: `${baseUrl}/ai-automation-agency/`, lastModified: now, changeFrequency: "monthly", priority: 1.0 },
     { url: `${baseUrl}/qa-testing-services/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/nearshore-software-development/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/aeo-seo-for-saas/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/ai-sdr-outreach/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/ai-developers-who-build-ai/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/hire-data-analysts-engineers/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
-    { url: `${baseUrl}/ai-agent-hr-recruiting/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
-    { url: `${baseUrl}/ai-agent-customer-support/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
-    { url: `${baseUrl}/ai-agent-finance-ops/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
-    { url: `${baseUrl}/ai-agent-internal-ops/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     // Core pages
     { url: `${baseUrl}/how-we-work/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/why-teams-stay/`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },

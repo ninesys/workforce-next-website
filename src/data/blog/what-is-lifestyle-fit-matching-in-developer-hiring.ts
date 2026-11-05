@@ -30,7 +30,7 @@ const post: BlogPost = {
   <li><strong>Longevity signals.</strong> Job-hopping patterns, reasons for leaving prior roles, stated career goals. Not used to discriminate, used to predict whether the match will survive to month 18.</li>
   <li><strong>Working environment stability.</strong> Home office setup, internet reliability, personal schedule predictability. Practical factors that determine whether a candidate can actually show up reliably.</li>
 </ol>
-<p>At <a href="/products/seth-ai-recruiter/">SethAI</a> we evaluate all 12 plus a handful of domain-specific signals depending on the role. Parameters are weighted differently for a fintech senior engineer than for an early-stage MVP builder, because the priorities are different.</p>
+<p>At SethAI we evaluate all 12 plus a handful of domain-specific signals depending on the role. Parameters are weighted differently for a fintech senior engineer than for an early-stage MVP builder, because the priorities are different.</p>
 
 <h2>How is lifestyle-fit matching different from Eightfold, SeekOut, and HireEZ?</h2>
 <p>The Gen 1 tools are not bad. They are optimized for a different buyer and a different era. Here is a direct comparison of how each approach handles the matching problem.</p>
@@ -62,7 +62,7 @@ const post: BlogPost = {
 <p>SethAI's approach is deliberate on three fronts:</p>
 <p><strong>Explicit consent and transparency.</strong> Every candidate knows exactly which signals are being evaluated and why. Nothing is scraped from external sources without disclosure. No shadow profiles.</p>
 <p><strong>Parameters over personality.</strong> We measure behavioral signals (writing samples, communication cadence, stated preferences) rather than inferring personality traits from background data. A candidate who prefers async work is telling us that; we are not guessing from their college or their birthplace.</p>
-<p><strong>Human override on every match.</strong> SethAI produces a ranked shortlist. A human recruiter reviews every shortlist before it reaches a customer. The system recommends; people decide. This is documented in our <a href="/products/seth-ai-recruiter/">SethAI product details</a>.</p>
+<p><strong>Human override on every match.</strong> SethAI produces a ranked shortlist. A human recruiter reviews every shortlist before it reaches a customer. The system recommends; people decide. This is documented in our SethAI product details.</p>
 
 <h2>What does a lifestyle-fit match look like in practice?</h2>
 <p>Example from a real engagement (details generalized). A US-based fintech startup needed a senior backend engineer. Gen 1 tools would have matched on "Python + FastAPI + payments" and returned hundreds of candidates.</p>

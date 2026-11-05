@@ -5,8 +5,9 @@ const FRONTEND = "/hire/frontend-engineers/";
 const BACKEND = "/hire/backend-engineers/";
 const UNITY = "/hire/unity-developers/";
 // EPI = legacy Employee Productivity Intelligence product. Removed 2026-05-15.
-// All inbound traffic redirects to the SethAI product page (the active product).
-const EPI = "/products/seth-ai-recruiter/";
+// The SethAI product page it redirected to was itself removed 2026-11-05
+// (off-vision cleanup), so this now lands on the homepage.
+const EPI = "/";
 
 // Exact-match legacy paths. Keys are stored without trailing slash; lookup
 // strips the slash from the incoming request so both /foo and /foo/ hit.
@@ -94,7 +95,7 @@ const EXACT: Record<string, string> = {
     "/blog/toptal-vs-andela-vs-turing-vs-workforcenext-comparison-2026/",
   "/blog/context-first-matching-why-tech-stack-is-not-enough":
     "/blog/ai-developer-interview-questions-what-to-ask/",
-  "/blog/how-does-ai-developer-matching-actually-work": "/products/seth-ai-recruiter/",
+  "/blog/how-does-ai-developer-matching-actually-work": "/for/startups/",
   "/blog/real-cost-of-switching-tech-partners":
     "/blog/dedicated-developer-vs-freelancer-vs-agency-total-cost/",
 
@@ -149,6 +150,22 @@ const EXACT: Record<string, string> = {
   "/software-consulting": "/",
   "/home": "/",
   "/feed": "/",
+
+  // Off-vision pages removed 2026-11-05: single-business-function AI agent
+  // products (sales, support, finance ops, internal ops, recruiting) and the
+  // SethAI product page did not match the core positioning (offering
+  // developers across dedicated hire / offshore team / GCC-ODC models, with
+  // expertise in AI development, MERN stack, automation, and mobile).
+  "/products/seth-ai-recruiter": "/",
+  "/ai-sdr-outreach": "/ai-automation-agency/",
+  "/ai-agent-customer-support": "/ai-automation-agency/",
+  "/ai-agent-finance-ops": "/ai-automation-agency/",
+  "/ai-agent-internal-ops": "/ai-automation-agency/",
+  "/ai-agent-hr-recruiting": "/ai-automation-agency/",
+  "/blog/which-customer-support-tickets-to-automate-first": "/ai-automation-agency/",
+  "/blog/which-finance-ops-tasks-to-automate-first": "/ai-automation-agency/",
+  "/blog/which-internal-ops-tasks-to-automate-first": "/ai-automation-agency/",
+  "/blog/ai-agent-vs-hiring-human-how-to-decide": "/blog/",
 };
 
 // Prefix redirects: if the pathname starts with `prefix + "/"`, redirect to `target`.

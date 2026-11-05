@@ -4,7 +4,7 @@ import { SESv2Client, SendEmailCommand } from "@aws-sdk/client-sesv2";
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
-const FORM_NAMES = ["contact", "careers", "seth-waitlist", "gcc-bot"] as const;
+const FORM_NAMES = ["contact", "careers", "gcc-bot"] as const;
 type FormName = (typeof FORM_NAMES)[number];
 
 const HONEYPOT_FIELD = "website";
@@ -41,14 +41,12 @@ const isAllowedOrigin = (origin: string | null) => {
 const INTERNAL_SUBJECTS: Record<FormName, string> = {
   contact: "New contact enquiry | wfnext.com",
   careers: "New career application | wfnext.com",
-  "seth-waitlist": "New SethAI waitlist signup | wfnext.com",
   "gcc-bot": "New GCC / Build-Operate-Transfer enquiry | wfnext.com",
 };
 
 const ACK_SUBJECTS: Record<FormName, string> = {
   contact: "We received your enquiry | Workforce Next",
   careers: "We received your application | Workforce Next",
-  "seth-waitlist": "You're on the SethAI waitlist | Workforce Next",
   "gcc-bot": "We received your GCC enquiry | Workforce Next",
 };
 
@@ -152,17 +150,6 @@ https://wfnext.com/blog/${summary}
 Best,
 The Workforce Next team
 `,
-  "seth-waitlist": (greeting, summary) =>
-    `Hi ${greeting},
-
-Thanks for joining the SethAI waitlist. We will reach out as soon as early access opens so you can start matching engineers for your open roles.
-
-While you wait, you can read how SethAI evaluates candidates here:
-https://wfnext.com/products/seth-ai-recruiter/${summary}
-
-Talk soon,
-The Workforce Next team
-`,
   "gcc-bot": (greeting, summary) =>
     `Hi ${greeting},
 
@@ -198,13 +185,6 @@ const ACK_BODY_HTML: Record<
   <p>In the meantime, feel free to explore what we are building on the <a href="https://wfnext.com/blog/">blog</a>.</p>
   ${summary}
   <p>Best,<br/>The Workforce Next team</p>
-</body></html>`,
-  "seth-waitlist": (greeting, summary) => `<!doctype html><html><body style="font-family:-apple-system,Segoe UI,Roboto,sans-serif;color:#0f172a;max-width:560px;margin:0 auto;padding:24px;line-height:1.55">
-  <p>Hi ${escapeHtml(greeting)},</p>
-  <p>Thanks for joining the <strong>SethAI</strong> waitlist. We will reach out as soon as early access opens so you can start matching engineers for your open roles.</p>
-  <p>While you wait, read how SethAI evaluates candidates: <a href="https://wfnext.com/products/seth-ai-recruiter/">SethAI Recruiter</a>.</p>
-  ${summary}
-  <p>Talk soon,<br/>The Workforce Next team</p>
 </body></html>`,
   "gcc-bot": (greeting, summary) => `<!doctype html><html><body style="font-family:-apple-system,Segoe UI,Roboto,sans-serif;color:#0f172a;max-width:560px;margin:0 auto;padding:24px;line-height:1.55">
   <p>Hi ${escapeHtml(greeting)},</p>

@@ -9,7 +9,7 @@ const post: BlogPost = {
   tldr: "AI-enabled remote staffing combines AI-powered candidate matching with human-vetted dedicated teams. The AI handles sourcing, skills validation, lifestyle and context matching, and bias auditing. The humans handle the parts that matter most: interviewing, embedding into customer culture, and the engineering management that keeps developers from churning at month four. In 2026 the platforms split into three categories: marketplaces (Turing, LatHire), matching engines (Andela, Uplers), and managed dedicated teams (Workforce Next). Picking the wrong category for your situation is the most expensive mistake buyers make.",
   body: `<p>AI-enabled remote staffing is the model that quietly took over how serious companies hire remote developers in 2026. It is not a single product. It is a category, with three distinct shapes, and the differences between them decide whether your remote hire ships for two years or churns at month four.</p>
 
-<p>This guide walks through what AI-enabled remote staffing actually does, what AI is good at in hiring (and what it is not), the three platform categories, how to evaluate any of them honestly, and where bias, compliance, and retention sit in the decision. If you want to see our take in product form, see <a href="/products/seth-ai-recruiter/">SethAI</a> and our <a href="/india-handled/">managed offshore team model</a>.</p>
+<p>This guide walks through what AI-enabled remote staffing actually does, what AI is good at in hiring (and what it is not), the three platform categories, how to evaluate any of them honestly, and where bias, compliance, and retention sit in the decision. If you want to see our take in product form, see SethAI and our <a href="/india-handled/">managed offshore team model</a>.</p>
 
 <h2>What is AI-enabled remote staffing?</h2>
 
@@ -90,7 +90,7 @@ const post: BlogPost = {
 </tr>
 <tr>
 <td>Managed dedicated team</td>
-<td>Workforce Next (with <a href="/products/seth-ai-recruiter/">SethAI</a>)</td>
+<td>Workforce Next (with SethAI)</td>
 <td>AI matching plus embedded engineering manager and context continuity</td>
 <td>Customers who want the engineer to ship for years, not months</td>
 <td>Higher all-in cost vs marketplace, lower TCO once retention is factored in</td>
@@ -114,7 +114,7 @@ const post: BlogPost = {
 <li><strong>Human shortlist confirmation.</strong> A recruiter validates the top 5 to 10 candidates before they reach the customer.</li>
 </ol>
 
-<p>For a deeper view of how our own matching engine works in production, see the <a href="/products/seth-ai-recruiter/">SethAI product page</a>. For the dimensions any matching tool should evaluate against, see <a href="/blog/12-parameters-ai-matching-tools-should-evaluate/">12 parameters AI matching tools should evaluate</a>.</p>
+<p>For a deeper view of how our own matching engine works in production, see the SethAI product page. For the dimensions any matching tool should evaluate against, see <a href="/blog/12-parameters-ai-matching-tools-should-evaluate/">12 parameters AI matching tools should evaluate</a>.</p>
 
 <h2>What is the real ROI of AI-enabled remote staffing?</h2>
 
@@ -256,7 +256,7 @@ const post: BlogPost = {
 
 <h2>Where does Workforce Next fit in?</h2>
 
-<p>We sit firmly in the managed dedicated team category. <a href="/products/seth-ai-recruiter/">SethAI</a> is our AI matching engine. It does the sourcing, skills validation, context matching, and bias auditing. Our human engineering managers do the parts AI cannot: the interview, the onboarding, the weekly 1:1, and the retention work that keeps developers from churning at month four.</p>
+<p>We sit firmly in the managed dedicated team category. SethAI is our AI matching engine. It does the sourcing, skills validation, context matching, and bias auditing. Our human engineering managers do the parts AI cannot: the interview, the onboarding, the weekly 1:1, and the retention work that keeps developers from churning at month four.</p>
 
 <p>If you want to see this in action, browse our <a href="/hire/ai-developers/">AI developers</a>, <a href="/hire/nodejs-developers/">Node.js developers</a>, or <a href="/hire/fullstack-developers/">full-stack developers</a> hire pages. For the operational model, see <a href="/india-handled/">India Handled</a>. To compare us directly to the marketplaces and matching engines, see <a href="/blog/toptal-vs-andela-vs-turing-vs-workforcenext-comparison-2026/">Toptal vs Andela vs Turing vs Workforce Next</a>. When you are ready to talk specifics, <a href="/contact/">tell us about your hire</a> and we will return a shortlist in 48 hours.</p>`,
   category: "hiring",

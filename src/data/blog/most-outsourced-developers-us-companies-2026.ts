@@ -177,7 +177,7 @@ const post: BlogPost = {
 <p>The buyer-side checklist that has emerged in 2026, after the market matured past the early "any agency will do" phase:</p>
 
 <ol>
-  <li><strong>Match by context, not just by stack.</strong> A senior backend engineer who shipped a payments product is not interchangeable with one who shipped a content recommendation product, even if both write Go. Ask the vendor how they screen for industry context. (We use <a href="/products/seth-ai-recruiter/">SethAI</a> for exactly this; the principle works regardless of vendor.)</li>
+  <li><strong>Match by context, not just by stack.</strong> A senior backend engineer who shipped a payments product is not interchangeable with one who shipped a content recommendation product, even if both write Go. Ask the vendor how they screen for industry context. (We use SethAI for exactly this; the principle works regardless of vendor.)</li>
   <li><strong>Insist on a paid trial week.</strong> Real work on the real codebase. If the vendor pushes back, walk.</li>
   <li><strong>Verify experience properly.</strong> Especially for India hires, the resume rounds the truth. The full checklist is in <a href="/blog/verify-indian-developer-experience-checklist-2026/">how to verify an Indian developer's real experience</a>.</li>
   <li><strong>Calculate switching cost before changing partners.</strong> Most teams underprice the cost of replacing a working vendor. The breakdown is in <a href="/blog/dedicated-developer-vs-freelancer-vs-agency-total-cost/">the real total cost of ownership across models</a>.</li>

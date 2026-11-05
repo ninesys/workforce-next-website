@@ -299,23 +299,18 @@ export default function HireDataAnalystsEngineersPage() {
             <a href="/ai-developers-who-build-ai/" className="text-primary-500 hover:text-primary-600 font-bold underline">
               AI developers who build AI models
             </a>{" "}
-            when the pipelines feed a custom model. Most outbound failures are data failures. See how our{" "}
-            <a href="/ai-sdr-outreach/" className="text-primary-500 hover:text-primary-600 font-bold underline">
-              AI SDR setup service
-            </a>{" "}
-            plugs into your CRM cleanly. And if you are hiring data engineers, our{" "}
-            <a href="/ai-agent-hr-recruiting/" className="text-primary-500 hover:text-primary-600 font-bold underline">
-              AI agent for recruiting outreach
-            </a>{" "}
-            can run the candidate sourcing for you. Clean pipelines are also what feeds a reliable close, see our{" "}
-            <a href="/ai-agent-finance-ops/" className="text-primary-500 hover:text-primary-600 font-bold underline">
-              AI agent for finance ops
-            </a>{" "}
-            if the data team&apos;s output is landing in financial reporting. If you already know you want a dedicated data engineer rather than the full AI-or-human blend covered here, our{" "}
+            when the pipelines feed a custom model. If you already know you want a dedicated data engineer rather than the full AI-or-human blend covered here, our{" "}
             <a href="/hire/data-engineers/" className="text-primary-500 hover:text-primary-600 font-bold underline">
               dedicated data engineers
             </a>{" "}
-            page is the more direct path.
+            page is the more direct path. For an ongoing, scaled extended team rather than a single hire, see our{" "}
+            <a href="/for/startups/" className="text-primary-500 hover:text-primary-600 font-bold underline">
+              engineering pods
+            </a>{" "}
+            or <a href="/for/gcc-india/" className="text-primary-500 hover:text-primary-600 font-bold underline">
+              GCC Build-Operate-Transfer
+            </a>{" "}
+            model.
           </p>
         </div>
       </section>

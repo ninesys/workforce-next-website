@@ -85,7 +85,7 @@ const post: BlogPost = {
   <li><strong>AI-specific security awareness.</strong> MCP servers face a new class of attacks: prompt injection, indirect injection through retrieved content, tool call abuse. Screen for engineers who think in terms of trust boundaries, not just standard input validation.</li>
 </ul>
 
-<p>If you are not running this kind of screen yourself, the <a href="/products/seth-ai-recruiter/">SethAI</a> match report covers all six signals plus the longevity layer that determines whether the engineer stays past the first three months.</p>
+<p>If you are not running this kind of screen yourself, the SethAI match report covers all six signals plus the longevity layer that determines whether the engineer stays past the first three months.</p>
 
 <h2>Which clients support MCP today?</h2>
 

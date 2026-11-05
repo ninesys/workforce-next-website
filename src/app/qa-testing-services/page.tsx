@@ -21,6 +21,8 @@ export const metadata: Metadata = {
     "qa outsourcing india",
     "hire qa engineers india",
     "offshore qa team india",
+    "quality assurance team",
+    "dedicated qa team",
   ],
   openGraph: {
     ...ogDefaults("/qa-testing-services/"),

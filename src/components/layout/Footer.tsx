@@ -23,7 +23,7 @@ export default function Footer() {
       </div>
 
       <div className="container-custom py-14 md:py-20">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 lg:gap-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 lg:gap-12">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="inline-block">
@@ -66,25 +66,6 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3">
               {footerLinks.byRegion.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-dark-300 hover:text-primary-400 transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Products */}
-          <div>
-            <h3 className="text-sm font-bold uppercase tracking-wider text-white mb-5">
-              Products
-            </h3>
-            <ul className="space-y-3">
-              {footerLinks.products.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}

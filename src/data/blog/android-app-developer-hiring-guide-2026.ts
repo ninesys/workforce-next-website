@@ -171,7 +171,7 @@ const post: BlogPost = {
 
 <p>The 2026 Android developer JD is a Kotlin-first, Compose-first, Coroutines-first document. It treats Java as a maintenance skill and Play Console delivery as a release blocker, not a nice-to-have. It asks for accessibility as a habit. It rejects RxJava, AsyncTask, and kapt as defaults. It is short, specific, and filters strongly on the signals that predict a real senior Android engineer.</p>
 
-<p>If you are about to hire one, <a href="/contact/">talk to us</a>. We will match a senior Kotlin and Compose engineer in 48 hours, run the screen above on every candidate via <a href="/products/seth-ai-recruiter/">SethAI</a>, and start a paid trial week so you can see how they think about your codebase before committing.</p>`,
+<p>If you are about to hire one, <a href="/contact/">talk to us</a>. We will match a senior Kotlin and Compose engineer in 48 hours, run the screen above on every candidate via SethAI, and start a paid trial week so you can see how they think about your codebase before committing.</p>`,
   category: "hiring",
   categoryLabel: "Hiring & Teams",
   author: "Gaurav",

@@ -100,7 +100,7 @@ const post: BlogPost = {
 </tbody>
 </table>
 
-<p>The challenge is log volume. Enterprise RAG systems process thousands of queries daily. <a href="/products/seth-ai-recruiter/">Our SethAI product</a> generates 2TB of audit logs monthly across client deployments.</p>
+<p>The challenge is log volume. Enterprise RAG systems process thousands of queries daily. Our SethAI product generates 2TB of audit logs monthly across client deployments.</p>
 
 <p>Store audit logs in append-only systems with tamper-evident signatures. Most clients use AWS CloudTrail or Azure Monitor with long-term storage in S3 Glacier for cost efficiency.</p>
 

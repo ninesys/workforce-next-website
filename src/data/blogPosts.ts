@@ -12,9 +12,6 @@ import howLongDoesItTakeToBuildAGccInIndia from "./blog/how-long-does-it-take-to
 import howToUseOnyxEnterpriseMaximumBenefit from "./blog/how-to-use-onyx-enterprise-maximum-benefit";
 import selfHostedVsSaasAiSearchEnterpriseHrData from "./blog/self-hosted-vs-saas-ai-search-enterprise-hr-data";
 import timeAndMaterialsVsFixedPriceVsDedicatedTeam from "./blog/time-and-materials-vs-fixed-price-vs-dedicated-team";
-import whichCustomerSupportTicketsToAutomateFirst from "./blog/which-customer-support-tickets-to-automate-first";
-import whichFinanceOpsTasksToAutomateFirst from "./blog/which-finance-ops-tasks-to-automate-first";
-import whichInternalOpsTasksToAutomateFirst from "./blog/which-internal-ops-tasks-to-automate-first";
 import whatIsLifestyleFitMatchingInDeveloperHiring from "./blog/what-is-lifestyle-fit-matching-in-developer-hiring";
 import whyOffshoreDevelopersKeepLeaving from "./blog/why-offshore-developers-keep-leaving";
 import vibeCodingExplainedWhenToUseIt from "./blog/vibe-coding-explained-when-to-use-it";
@@ -55,7 +52,6 @@ import saasWebApplicationDevelopmentGuideStartups2026 from "./blog/saas-web-appl
 import securingRagApplicationsDataIsolationPatterns2026 from "./blog/securing-rag-applications-data-isolation-patterns-2026";
 import aiCodeReviewSecurityEnterprisePipelines2026 from "./blog/ai-code-review-security-enterprise-pipelines-2026";
 import bestTechStackSaasMvp2026 from "./blog/best-tech-stack-saas-mvp-2026";
-import aiAgentVsHiringHumanHowToDecide from "./blog/ai-agent-vs-hiring-human-how-to-decide";
 import whatIsAeoWhyEverySaasNeedsItNow from "./blog/what-is-aeo-why-every-saas-needs-it-now";
 import aiAgentsVsAutomationVsWorkflows from "./blog/ai-agents-vs-automation-vs-workflows";
 import howToChooseTechStackForSaas from "./blog/how-to-choose-tech-stack-for-saas";
@@ -124,7 +120,6 @@ export const blogPosts: BlogPost[] = [
   securingRagApplicationsDataIsolationPatterns2026,
   aiCodeReviewSecurityEnterprisePipelines2026,
   bestTechStackSaasMvp2026,
-  aiAgentVsHiringHumanHowToDecide,
   whatIsAeoWhyEverySaasNeedsItNow,
   aiAgentsVsAutomationVsWorkflows,
   howToChooseTechStackForSaas,
@@ -138,9 +133,6 @@ export const blogPosts: BlogPost[] = [
   lowRiskWayToTrialADedicatedDeveloper,
   dedicatedDeveloperReplacementAndExitTerms,
   diyVsMarketplaceVsHandPickedDevelopers,
-  whichCustomerSupportTicketsToAutomateFirst,
-  whichFinanceOpsTasksToAutomateFirst,
-  whichInternalOpsTasksToAutomateFirst,
   whyDevopsHiringGotHarder2026,
   gccBuildOperateTransferVsOwnEntityIndia,
   gccVsStaffAugmentationIndiaDecisionGuide,
