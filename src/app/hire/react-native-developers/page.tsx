@@ -10,7 +10,7 @@ import { siteMetadata, ogDefaults } from "@/data/siteMetadata";
 import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "Hire React Native Developer — India-based Team",
+  title: "Hire React Native Developer, India-based Team",
   description:
     "Hire a React Native developer from India. Pre-vetted engineers for New Architecture, TurboModules, Expo, code-push, and native modules in Swift/Kotlin. SethAI-screened, daily timezone overlap.",
   keywords: [
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     ...ogDefaults("/hire/react-native-developers/"),
     images: ["/images/og-default.png"],
-    title: "Hire React Native Developer — India-based Team",
+    title: "Hire React Native Developer, India-based Team",
     description:
       "Pre-vetted React Native engineers for iOS and Android with shared JS codebase. SethAI-screened.",
   },
