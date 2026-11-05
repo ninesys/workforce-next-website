@@ -5,31 +5,73 @@ import Badge from "@/components/ui/Badge";
 import {
   generateServiceSchema,
   generateBreadcrumbSchema,
+  generateFAQPageSchema,
 } from "@/lib/jsonLd";
+import { FAQ } from "@/types";
 
 export const metadata: Metadata = {
-  title: "Engineering Pods for Funded Startups",
+  title: "Hire Dedicated Developers: Engineering Pods",
   description:
-    "Build a dedicated 3-8 person engineering pod in 30 days. AI/backend lead, full-stack developers, QA, and data engineer. Fast profile delivery via SethAI.",
+    "Hire dedicated developers who take ownership of your product, not just tickets. Build a 3 to 8 person engineering pod, screened by SethAI, in 30 days.",
   keywords: [
-    "dedicated engineering team startup",
-    "hire remote developers for startup",
+    "hire dedicated developers",
+    "dedicated engineering team",
+    "offshore development team",
+    "software development outsourcing company",
+    "offshore software development company",
+    "outsourcing development team",
     "engineering pod India",
-    "startup development team",
-    "dedicated development team India",
     "staff augmentation for startups",
   ],
   openGraph: {
     ...ogDefaults("/for/startups/"),
     images: ["/images/og-default.png"],
-    title: "Engineering Pods for Startups - Build Your Product Team in 30 Days",
+    title: "Hire Dedicated Developers: Engineering Pods for Startups",
     description:
-      "Build a dedicated 3-8 person engineering pod in 30 days. 48-hour profile delivery via SethAI.",
+      "Hire dedicated developers who take ownership of your product. Build a 3 to 8 person engineering pod, screened by SethAI, in 30 days.",
   },
   alternates: {
     canonical: "https://wfnext.com/for/startups/",
   },
 };
+
+const faqItems: FAQ[] = [
+  {
+    question: "What does it actually mean to hire dedicated developers?",
+    answer:
+      "A dedicated developer works exclusively on your product, inside your tools and your sprint, not split across other clients the way a typical outsourcing bench works. You get the continuity of a direct hire with the speed of an external team.",
+    category: "hiring",
+    categoryLabel: "Hiring & Teams",
+  },
+  {
+    question: "How is this different from a typical software development outsourcing company?",
+    answer:
+      "Most outsourcing companies rotate staff between clients and measure success by tickets closed, not product outcomes. Our developers are screened by SethAI for ownership mindset specifically, work exclusively on your product, and come with a Context Continuity Guarantee if someone needs to be replaced.",
+    category: "hiring",
+    categoryLabel: "Hiring & Teams",
+  },
+  {
+    question: "Can this work like an offshore development team for an ongoing engagement?",
+    answer:
+      "Yes. Most pods start at 3 to 8 people and run as an ongoing offshore development team embedded in your workflow, not a one-off project handoff. You can scale the pod up or down as your roadmap changes.",
+    category: "hiring",
+    categoryLabel: "Hiring & Teams",
+  },
+  {
+    question: "What does 'ownership mindset' actually mean when SethAI screens a developer?",
+    answer:
+      "It means the developer flags risks before being asked, owns a feature through production issues rather than handing it off at the ticket boundary, and treats your roadmap as something they are accountable for, not just a list of assigned tasks. SethAI screens for this specifically, alongside technical skill.",
+    category: "hiring",
+    categoryLabel: "Hiring & Teams",
+  },
+  {
+    question: "How fast can a dedicated engineering pod actually start?",
+    answer:
+      "Curated profiles within 48 hours, a paid trial week per developer, and the full pod embedded in your workflow within 30 days. If a developer is not the right fit during the trial, we replace them at no cost.",
+    category: "hiring",
+    categoryLabel: "Hiring & Teams",
+  },
+];
 
 const podRoles = [
   {
@@ -126,6 +168,8 @@ export default function StartupsPage() {
     { name: "For Startups", url: "https://wfnext.com/for/startups/" },
   ]);
 
+  const faqSchema = generateFAQPageSchema(faqItems);
+
   return (
     <>
       <script
@@ -136,6 +180,10 @@ export default function StartupsPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
 
       {/* Hero */}
       <section className="bg-gradient-to-br from-primary-50 via-white to-primary-50/50 dark:from-dark-900 dark:via-dark-900 dark:to-dark-800 pt-32 pb-16 md:pt-40 md:pb-20">
@@ -144,11 +192,12 @@ export default function StartupsPage() {
             FOR STARTUPS
           </Badge>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-dark-900 dark:text-dark-50 leading-tight">
-            Build your product engineering team in 30 days.
+            Hire dedicated developers who take ownership.
           </h1>
           <p className="mt-4 text-lg text-dark-400 dark:text-dark-300 max-w-2xl">
-            3-8 dedicated developers who work exclusively on your product. Matched
-            by SethAI, trial-tested, and built to stay.
+            3-8 dedicated developers who work exclusively on your product as your
+            own engineering pod, not a rotating bench from an outsourcing vendor.
+            Matched by SethAI for ownership mindset, trial-tested, and built to stay.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Button href="/contact/?offer=engineering-pod" size="lg">
@@ -193,13 +242,16 @@ export default function StartupsPage() {
       <section className="section-padding bg-primary-50 dark:bg-dark-800">
         <div className="container-custom max-w-3xl text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-dark-900 dark:text-dark-50 mb-4">
-            Agency staff rotate between clients. Your pod does not.
+            A typical outsourcing company rotates staff between clients. Your pod does not.
           </h2>
           <p className="text-lg text-dark-400 dark:text-dark-300 leading-relaxed">
             Your developers are not juggling three other projects. They are in your
             Slack, your Jira, your codebase. They know your domain, your users,
             and your technical debt. That context is what makes them productive,
-            and it is what you lose every time an agency rotates someone out.
+            and it is what you lose every time an outsourcing vendor rotates someone
+            out. SethAI screens every candidate for ownership mindset specifically,
+            not just technical skill, because a developer who does not own the
+            outcome will not build that context in the first place.
           </p>
         </div>
       </section>
@@ -257,6 +309,35 @@ export default function StartupsPage() {
                   </p>
                 </div>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="section-padding bg-white dark:bg-dark-900">
+        <div className="container-custom max-w-3xl">
+          <h2 className="text-2xl md:text-3xl font-bold text-dark-900 dark:text-dark-50 text-center mb-12">
+            Quick answers
+          </h2>
+          <p className="text-center text-sm text-dark-400 dark:text-dark-300 mb-8 -mt-6">
+            For the fuller breakdown, read{" "}
+            <a href="/blog/hire-dedicated-developers-who-take-ownership/" className="text-primary-500 hover:text-primary-600 font-semibold underline">
+              hire dedicated developers who actually take ownership, not just tickets
+            </a>.
+          </p>
+          <div className="space-y-3">
+            {faqItems.map((faq) => (
+              <details
+                key={faq.question}
+                className="group p-6 rounded-xl bg-primary-50/30 dark:bg-dark-800 border border-dark-50 dark:border-dark-700 hover:border-primary-300 dark:hover:border-primary-500/50 transition-all"
+              >
+                <summary className="flex items-center justify-between cursor-pointer list-none">
+                  <h3 className="font-bold text-dark-900 dark:text-dark-50 pr-4">{faq.question}</h3>
+                  <span className="flex-shrink-0 w-8 h-8 rounded-full bg-white dark:bg-dark-900 text-primary-500 flex items-center justify-center font-bold group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <p className="mt-4 text-dark-600 dark:text-dark-200 leading-relaxed">{faq.answer}</p>
+              </details>
             ))}
           </div>
         </div>
